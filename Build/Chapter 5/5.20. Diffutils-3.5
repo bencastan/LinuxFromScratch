@@ -1,0 +1,1012 @@
+5.20. Diffutils-3.5
+checking whether mbrtowc works as well as mbtowc... (cached) guessing yes
+checking whether wcrtomb return value is correct... guessing yes
+checking whether iswcntrl works... (cached) yes
+checking for towlower... (cached) yes
+checking for wctype_t... (cached) yes
+checking for wctrans_t... (cached) yes
+checking whether wctype is declared without a macro... (cached) yes
+checking whether iswctype is declared without a macro... (cached) yes
+checking whether wctrans is declared without a macro... (cached) yes
+checking whether towctrans is declared without a macro... (cached) yes
+checking whether wcwidth is declared... (cached) yes
+checking whether wcwidth works reasonably in UTF-8 locales... yes
+checking for stdint.h... (cached) yes
+checking whether inet_ntop is declared without a macro... yes
+checking whether inet_pton is declared without a macro... yes
+checking for a traditional french locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking for a traditional french locale... (cached) none
+checking for a turkish Unicode locale... none
+checking whether fdopen sets errno... yes
+checking for getpagesize... yes
+checking whether getpagesize is declared... (cached) yes
+checking for library containing inet_pton... none required
+checking whether inet_pton is declared... (cached) yes
+checking whether byte ordering is bigendian... no
+checking for ioctl... yes
+checking for ioctl with POSIX signature... no
+checking for a traditional french locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking for a traditional japanese locale... (cached) none
+checking for a transitional chinese locale... (cached) none
+checking for a turkish Unicode locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking for a traditional french locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking for a traditional japanese locale... (cached) none
+checking for a transitional chinese locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking for a transitional chinese locale... (cached) none
+checking for mmap... (cached) yes
+checking for MAP_ANONYMOUS... yes
+checking for library containing nanosleep... none required
+checking for working nanosleep... no (mishandles large arguments)
+checking whether <netinet/in.h> is self-contained... yes
+checking for a traditional french locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking whether perror matches strerror... yes
+checking for putenv compatible with GNU and SVID... yes
+checking for mmap... (cached) yes
+checking for MAP_ANONYMOUS... yes
+checking for mmap... (cached) yes
+checking for MAP_ANONYMOUS... yes
+checking whether select supports a 0 argument... (cached) yes
+checking whether select detects invalid fds... (cached) yes
+checking for a traditional french locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking for a traditional japanese locale... (cached) none
+checking for a transitional chinese locale... (cached) none
+checking whether sleep is declared... (cached) yes
+checking for working sleep... yes
+checking for snprintf... (cached) yes
+checking whether snprintf respects a size of 1... yes
+checking whether printf supports POSIX/XSI format strings with positions... yes
+checking for socklen_t... yes
+checking for working stdalign.h... yes
+checking for mmap... (cached) yes
+checking for MAP_ANONYMOUS... yes
+checking whether symlink handles trailing slash correctly... yes
+checking whether <sys/ioctl.h> declares ioctl... yes
+checking whether ioctl is declared without a macro... yes
+checking whether <sys/select.h> is self-contained... (cached) yes
+checking whether pselect is declared without a macro... (cached) yes
+checking whether select is declared without a macro... (cached) yes
+checking for a traditional french locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking for a traditional japanese locale... (cached) none
+checking for a transitional chinese locale... (cached) none
+checking whether wctob works... guessing yes
+checking whether wctob is declared... (cached) yes
+checking for inline... (cached) inline
+checking for variable-length arrays... (cached) yes
+checking for pr... /tools/bin/pr
+checking for struct stat.st_blksize... yes
+checking for struct stat.st_rdev... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/wait.h that is POSIX.1 compatible... (cached) yes
+checking for pid_t... (cached) yes
+checking whether closedir returns void... no
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating lib/Makefile
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating gnulib-tests/Makefile
+config.status: creating man/Makefile
+config.status: creating po/Makefile.in
+config.status: creating lib/config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+lfs@Minty /mnt/lfs/sources/diffutils-3.5 $ make
+Making all in lib
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/lib'
+Makefile:1777: target '.deps/alloca.Po' given more than once in the same rule
+  GEN      alloca.h
+  GEN      configmake.h
+  GEN      c++defs.h
+  GEN      warn-on-use.h
+  GEN      ctype.h
+  GEN      arg-nonnull.h
+  GEN      fcntl.h
+  GEN      iconv.h
+  GEN      inttypes.h
+  GEN      langinfo.h
+  GEN      locale.h
+  GEN      signal.h
+  GEN      unused-parameter.h
+  GEN      stdio.h
+  GEN      stdlib.h
+  GEN      string.h
+  GEN      strings.h
+  GEN      sys/stat.h
+  GEN      sys/time.h
+  GEN      sys/types.h
+  GEN      sys/wait.h
+  GEN      time.h
+  GEN      unistd.h
+  GEN      unistr.h
+  GEN      unitypes.h
+  GEN      uniwidth.h
+  GEN      wchar.h
+  GEN      wctype.h
+make  all-am
+make[2]: Entering directory '/mnt/lfs/sources/diffutils-3.5/lib'
+Makefile:1777: target '.deps/alloca.Po' given more than once in the same rule
+  CC       allocator.o
+  CC       areadlink.o
+  CC       argmatch.o
+  CC       binary-io.o
+  CC       bitrotate.o
+  CC       c-ctype.o
+  CC       c-stack.o
+  CC       c-strcasecmp.o
+  CC       c-strncasecmp.o
+  CC       careadlinkat.o
+  CC       dirname.o
+  CC       basename.o
+  CC       dirname-lgpl.o
+  CC       basename-lgpl.o
+  CC       stripslash.o
+  CC       exclude.o
+  CC       exitfail.o
+  CC       fd-hook.o
+  CC       file-type.o
+  CC       filenamecat.o
+  CC       filenamecat-lgpl.o
+  CC       freopen-safer.o
+  CC       gettime.o
+  CC       hard-locale.o
+  CC       hash.o
+  CC       imaxtostr.o
+  CC       inttostr.o
+  CC       offtostr.o
+  CC       uinttostr.o
+  CC       umaxtostr.o
+  CC       localcharset.o
+  CC       malloca.o
+  CC       mbchar.o
+  CC       mbiter.o
+  CC       mbscasecmp.o
+  CC       mbslen.o
+  CC       mbsstr.o
+  CC       mbuiter.o
+  CC       progname.o
+  CC       propername.o
+  CC       quotearg.o
+  CC       sh-quote.o
+  CC       sig-handler.o
+  CC       stat-time.o
+  CC       strftime.o
+  CC       striconv.o
+  CC       strnlen1.o
+  CC       system-quote.o
+  CC       tempname.o
+  CC       timespec.o
+  CC       trim.o
+  CC       unistd.o
+  CC       unistr/u8-mbtoucr.o
+  CC       unistr/u8-uctomb.o
+  CC       unistr/u8-uctomb-aux.o
+  CC       uniwidth/width.o
+  CC       version-etc.o
+  CC       version-etc-fsf.o
+  CC       wctype-h.o
+  CC       xmalloc.o
+  CC       xalloc-die.o
+  CC       xfreopen.o
+  CC       xreadlink.o
+  CC       xsize.o
+  CC       xstriconv.o
+  CC       xstrndup.o
+  CC       xstrtol.o
+  CC       xstrtoul.o
+  CC       xstrtol-error.o
+  CC       xstrtoumax.o
+  CC       xvasprintf.o
+  CC       xasprintf.o
+  CC       cmpbuf.o
+  CC       prepargs.o
+  CC       asnprintf.o
+  CC       fcntl.o
+  CC       mbrtowc.o
+  CC       mktime.o
+  CC       printf-args.o
+  CC       printf-parse.o
+  CC       time_rz.o
+  CC       vasnprintf.o
+  AR       libdiffutils.a
+  GEN      charset.alias
+  GEN      ref-add.sed
+  GEN      ref-del.sed
+make[2]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/lib'
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/lib'
+Making all in src
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/src'
+  GEN      paths.h
+  GEN      version.c
+  GEN      version.h
+make  all-am
+make[2]: Entering directory '/mnt/lfs/sources/diffutils-3.5/src'
+  CC       version.o
+  AR       libver.a
+  CC       cmp.o
+  CCLD     cmp
+  CC       analyze.o
+  CC       context.o
+  CC       diff.o
+  CC       dir.o
+  CC       ed.o
+  CC       ifdef.o
+  CC       io.o
+  CC       normal.o
+  CC       side.o
+  CC       util.o
+  CCLD     diff
+  CC       diff3.o
+  CCLD     diff3
+  CC       sdiff.o
+  CCLD     sdiff
+make[2]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/src'
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/src'
+Making all in tests
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/tests'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/tests'
+Making all in doc
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/doc'
+Making all in man
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/man'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/man'
+Making all in po
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/po'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/po'
+Making all in gnulib-tests
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+  GEN      c++defs.h
+  GEN      warn-on-use.h
+  GEN      arg-nonnull.h
+  GEN      arpa/inet.h
+  GEN      unused-parameter.h
+  GEN      sys/ioctl.h
+  GEN      sys/select.h
+  GEN      sys/socket.h
+  GEN      sys/uio.h
+make  all-recursive
+make[2]: Entering directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+Making all in .
+make[3]: Entering directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[2]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5'
+lfs@Minty /mnt/lfs/sources/diffutils-3.5 $ time make check
+Making check in lib
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/lib'
+Makefile:1777: target '.deps/alloca.Po' given more than once in the same rule
+make  check-am
+make[2]: Entering directory '/mnt/lfs/sources/diffutils-3.5/lib'
+Makefile:1777: target '.deps/alloca.Po' given more than once in the same rule
+make[2]: Nothing to be done for 'check-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/lib'
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/lib'
+Making check in src
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/src'
+make  check-am
+make[2]: Entering directory '/mnt/lfs/sources/diffutils-3.5/src'
+make[2]: Nothing to be done for 'check-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/src'
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/src'
+Making check in tests
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/tests'
+make  check-TESTS
+make[2]: Entering directory '/mnt/lfs/sources/diffutils-3.5/tests'
+make[3]: Entering directory '/mnt/lfs/sources/diffutils-3.5/tests'
+PASS: basic
+PASS: bignum
+PASS: binary
+PASS: brief-vs-stat-zero-kernel-lies
+PASS: colliding-file-names
+PASS: diff3
+PASS: excess-slash
+PASS: help-version
+PASS: function-line-vs-leading-space
+PASS: ignore-matching-lines
+PASS: label-vs-func
+PASS: new-file
+PASS: no-dereference
+PASS: no-newline-at-eof
+PASS: stdin
+PASS: strcoll-0-names
+PASS: filename-quoting
+PASS: colors
+============================================================================
+Testsuite summary for GNU diffutils 3.5
+============================================================================
+# TOTAL: 18
+# PASS:  18
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[3]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/tests'
+make[2]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/tests'
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/tests'
+Making check in doc
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/doc'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/doc'
+Making check in man
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/man'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/man'
+Making check in po
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/po'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/po'
+Making check in gnulib-tests
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make  check-recursive
+make[2]: Entering directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+Making check in .
+make[3]: Entering directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make  libtests.a test-accept test-alloca-opt test-areadlink test-argmatch test-arpa_inet test-binary-io test-bind test-bitrotate test-btowc test-c-ctype test-c-stack test-c-strcasecmp test-c-strncasecmp test-close test-connect test-ctype test-dirname test-dup2 test-environ test-errno test-exclude test-fcntl-h test-fcntl test-fdopen test-fgetc test-filenamecat test-float test-fnmatch test-fputc test-fread test-freopen-safer test-freopen test-fstat test-ftruncate test-fwrite test-getcwd-lgpl test-getdtablesize test-getopt test-gettimeofday test-hash test-iconv-h test-iconv test-ignore-value test-inet_pton test-intprops test-inttostr test-inttypes test-ioctl test-isblank test-iswblank test-langinfo test-listen test-locale test-localeconv test-lstat test-malloca test-mbrtowc test-mbrtowc-w32 test-mbscasecmp test-mbsinit test-mbsrtowcs test-mbsstr1 test-mbsstr2 test-mbsstr3 test-memchr test-nanosleep test-netinet_in test-nl_langinfo test-open test-pathmax test-perror test-perror2 test-pipe test-quotearg-simple test-raise test-rawmemchr test-readlink test-regex test-select test-select-fd test-select-stdin test-setenv test-setlocale1 test-setlocale2 test-setsockopt test-sh-quote test-sigaction test-signal-h test-sigprocmask test-sleep test-snprintf test-sockets test-stat test-stat-time test-stdalign test-stdbool test-stddef test-stdint test-stdio test-stdlib test-strerror test-strerror_r test-strftime test-striconv test-string test-strings test-strnlen test-strtoull test-strtoumax test-symlink test-sys_ioctl test-sys_select test-sys_socket test-sys_stat test-sys_time test-sys_types test-sys_uio test-sys_wait test-time test-timespec test-unistd test-u8-mbtoucr test-u8-uctomb test-uc_width test-uc_width2 test-unsetenv test-vasnprintf test-vasprintf test-verify test-version-etc test-wchar test-wcrtomb test-wcrtomb-w32 test-wctype-h test-wcwidth test-xalloc-die test-xstrtol test-xstrtoul test-xstrtoumax test-xvasprintf
+make[4]: Entering directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+  CC       dtotimespec.o
+  CC       hash-pjw.o
+  CC       sockets.o
+  CC       sys_socket.o
+  CC       timespec-add.o
+  CC       timespec-sub.o
+  CC       ioctl.o
+  CC       nanosleep.o
+  CC       strerror_r.o
+  AR       libtests.a
+  CC       test-accept.o
+  CCLD     test-accept
+  CC       test-alloca-opt.o
+  CCLD     test-alloca-opt
+  CC       test-areadlink.o
+  CCLD     test-areadlink
+  CC       test-argmatch.o
+  CCLD     test-argmatch
+  CC       test-arpa_inet.o
+  CCLD     test-arpa_inet
+  CC       test-binary-io.o
+  CCLD     test-binary-io
+  CC       test-bind.o
+  CCLD     test-bind
+  CC       test-bitrotate.o
+  CCLD     test-bitrotate
+  CC       test-btowc.o
+  CCLD     test-btowc
+  CC       test-c-ctype.o
+  CCLD     test-c-ctype
+  CC       test-c-stack.o
+  CCLD     test-c-stack
+  CC       test-c-strcasecmp.o
+  CCLD     test-c-strcasecmp
+  CC       test-c-strncasecmp.o
+  CCLD     test-c-strncasecmp
+  CC       test-close.o
+  CCLD     test-close
+  CC       test-connect.o
+  CCLD     test-connect
+  CC       test-ctype.o
+  CCLD     test-ctype
+  CC       test-dirname.o
+  CCLD     test-dirname
+  CC       test-dup2.o
+  CCLD     test-dup2
+  CC       test-environ.o
+  CCLD     test-environ
+  CC       test-errno.o
+  CCLD     test-errno
+  CC       test-exclude.o
+  CCLD     test-exclude
+  CC       test-fcntl-h.o
+  CCLD     test-fcntl-h
+  CC       test-fcntl.o
+  CCLD     test-fcntl
+  CC       test-fdopen.o
+  CCLD     test-fdopen
+  CC       test-fgetc.o
+  CCLD     test-fgetc
+  CC       test-filenamecat.o
+  CCLD     test-filenamecat
+  CC       test-float.o
+  CCLD     test-float
+  CC       test-fnmatch.o
+  CCLD     test-fnmatch
+  CC       test-fputc.o
+  CCLD     test-fputc
+  CC       test-fread.o
+  CCLD     test-fread
+  CC       test-freopen-safer.o
+  CCLD     test-freopen-safer
+  CC       test-freopen.o
+  CCLD     test-freopen
+  CC       test-fstat.o
+  CCLD     test-fstat
+  CC       test-ftruncate.o
+  CCLD     test-ftruncate
+  CC       test-fwrite.o
+  CCLD     test-fwrite
+  CC       test-getcwd-lgpl.o
+  CCLD     test-getcwd-lgpl
+  CC       test-getdtablesize.o
+  CCLD     test-getdtablesize
+  CC       test-getopt.o
+  CCLD     test-getopt
+  CC       test-gettimeofday.o
+  CCLD     test-gettimeofday
+  CC       test-hash.o
+  CCLD     test-hash
+  CC       test-iconv-h.o
+  CCLD     test-iconv-h
+  CC       test-iconv.o
+  CCLD     test-iconv
+  CC       test-ignore-value.o
+  CCLD     test-ignore-value
+  CC       test-inet_pton.o
+  CCLD     test-inet_pton
+  CC       test-intprops.o
+  CCLD     test-intprops
+  CC       test-inttostr.o
+  CCLD     test-inttostr
+  CC       test-inttypes.o
+  CCLD     test-inttypes
+  CC       test-ioctl.o
+  CCLD     test-ioctl
+  CC       test-isblank.o
+  CCLD     test-isblank
+  CC       test-iswblank.o
+  CCLD     test-iswblank
+  CC       test-langinfo.o
+  CCLD     test-langinfo
+  CC       test-listen.o
+  CCLD     test-listen
+  CC       test-locale.o
+  CCLD     test-locale
+  CC       test-localeconv.o
+  CCLD     test-localeconv
+  CC       test-lstat.o
+  CCLD     test-lstat
+  CC       test-malloca.o
+  CCLD     test-malloca
+  CC       test-mbrtowc.o
+  CCLD     test-mbrtowc
+  CC       test-mbrtowc-w32.o
+  CCLD     test-mbrtowc-w32
+  CC       test-mbscasecmp.o
+  CCLD     test-mbscasecmp
+  CC       test-mbsinit.o
+  CCLD     test-mbsinit
+  CC       test-mbsrtowcs.o
+  CCLD     test-mbsrtowcs
+  CC       test-mbsstr1.o
+  CCLD     test-mbsstr1
+  CC       test-mbsstr2.o
+  CCLD     test-mbsstr2
+  CC       test-mbsstr3.o
+  CCLD     test-mbsstr3
+  CC       test-memchr.o
+  CCLD     test-memchr
+  CC       test-nanosleep.o
+  CCLD     test-nanosleep
+  CC       test-netinet_in.o
+  CCLD     test-netinet_in
+  CC       test-nl_langinfo.o
+  CCLD     test-nl_langinfo
+  CC       test-open.o
+  CCLD     test-open
+  CC       test-pathmax.o
+  CCLD     test-pathmax
+  CC       test-perror.o
+  CCLD     test-perror
+  CC       test-perror2.o
+  CCLD     test-perror2
+  CC       test-pipe.o
+  CCLD     test-pipe
+  CC       test-quotearg-simple.o
+  CCLD     test-quotearg-simple
+  CC       test-raise.o
+  CCLD     test-raise
+  CC       test-rawmemchr.o
+  CCLD     test-rawmemchr
+  CC       test-readlink.o
+  CCLD     test-readlink
+  CC       test-regex.o
+  CCLD     test-regex
+  CC       test-select.o
+  CCLD     test-select
+  CC       test-select-fd.o
+  CCLD     test-select-fd
+  CC       test-select-stdin.o
+  CCLD     test-select-stdin
+  CC       test-setenv.o
+  CCLD     test-setenv
+  CC       test-setlocale1.o
+  CCLD     test-setlocale1
+  CC       test-setlocale2.o
+  CCLD     test-setlocale2
+  CC       test-setsockopt.o
+  CCLD     test-setsockopt
+  CC       test-sh-quote.o
+  CCLD     test-sh-quote
+  CC       test-sigaction.o
+  CCLD     test-sigaction
+  CC       test-signal-h.o
+  CCLD     test-signal-h
+  CC       test-sigprocmask.o
+  CCLD     test-sigprocmask
+  CC       test-sleep.o
+  CCLD     test-sleep
+  CC       test-snprintf.o
+  CCLD     test-snprintf
+  CC       test-sockets.o
+  CCLD     test-sockets
+  CC       test-stat.o
+  CCLD     test-stat
+  CC       test-stat-time.o
+  CCLD     test-stat-time
+  CC       test-stdalign.o
+  CCLD     test-stdalign
+  CC       test-stdbool.o
+  CCLD     test-stdbool
+  CC       test-stddef.o
+  CCLD     test-stddef
+  CC       test-stdint.o
+  CCLD     test-stdint
+  CC       test-stdio.o
+  CCLD     test-stdio
+  CC       test-stdlib.o
+  CCLD     test-stdlib
+  CC       test-strerror.o
+  CCLD     test-strerror
+  CC       test-strerror_r.o
+  CCLD     test-strerror_r
+  CC       test-strftime.o
+  CCLD     test-strftime
+  CC       test-striconv.o
+  CCLD     test-striconv
+  CC       test-string.o
+  CCLD     test-string
+  CC       test-strings.o
+  CCLD     test-strings
+  CC       test-strnlen.o
+  CCLD     test-strnlen
+  CC       test-strtoull.o
+  CCLD     test-strtoull
+  CC       test-strtoumax.o
+  CCLD     test-strtoumax
+  CC       test-symlink.o
+  CCLD     test-symlink
+  CC       test-sys_ioctl.o
+  CCLD     test-sys_ioctl
+  CC       test-sys_select.o
+  CCLD     test-sys_select
+  CC       test-sys_socket.o
+  CCLD     test-sys_socket
+  CC       test-sys_stat.o
+  CCLD     test-sys_stat
+  CC       test-sys_time.o
+  CCLD     test-sys_time
+  CC       test-sys_types.o
+  CCLD     test-sys_types
+  CC       test-sys_uio.o
+  CCLD     test-sys_uio
+  CC       test-sys_wait.o
+  CCLD     test-sys_wait
+  CC       test-time.o
+  CCLD     test-time
+  CC       test-timespec.o
+  CCLD     test-timespec
+  CC       test-unistd.o
+  CCLD     test-unistd
+  CC       unistr/test-u8-mbtoucr.o
+  CCLD     test-u8-mbtoucr
+  CC       unistr/test-u8-uctomb.o
+  CCLD     test-u8-uctomb
+  CC       uniwidth/test-uc_width.o
+  CCLD     test-uc_width
+  CC       uniwidth/test-uc_width2.o
+  CCLD     test-uc_width2
+  CC       test-unsetenv.o
+  CCLD     test-unsetenv
+  CC       test-vasnprintf.o
+  CCLD     test-vasnprintf
+  CC       test-vasprintf.o
+  CCLD     test-vasprintf
+  CC       test-verify.o
+  CCLD     test-verify
+  CC       test-version-etc.o
+  CCLD     test-version-etc
+  CC       test-wchar.o
+  CCLD     test-wchar
+  CC       test-wcrtomb.o
+  CCLD     test-wcrtomb
+  CC       test-wcrtomb-w32.o
+  CCLD     test-wcrtomb-w32
+  CC       test-wctype-h.o
+  CCLD     test-wctype-h
+  CC       test-wcwidth.o
+  CCLD     test-wcwidth
+  CC       test-xalloc-die.o
+  CCLD     test-xalloc-die
+  CC       test-xstrtol.o
+  CCLD     test-xstrtol
+  CC       test-xstrtoul.o
+  CCLD     test-xstrtoul
+  CC       test-xstrtoumax.o
+  CCLD     test-xstrtoumax
+  CC       test-xvasprintf.o
+  CCLD     test-xvasprintf
+make[4]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make  check-TESTS
+make[4]: Entering directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[5]: Entering directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+PASS: test-accept
+PASS: test-alloca-opt
+PASS: test-areadlink
+PASS: test-argmatch
+PASS: test-arpa_inet
+PASS: test-binary-io.sh
+PASS: test-bind
+PASS: test-bitrotate
+SKIP: test-btowc1.sh
+SKIP: test-btowc2.sh
+PASS: test-c-ctype
+PASS: test-c-stack.sh
+SKIP: test-c-stack2.sh
+PASS: test-c-strcase.sh
+PASS: test-close
+PASS: test-connect
+PASS: test-ctype
+PASS: test-dirname
+PASS: test-dup2
+PASS: test-environ
+PASS: test-errno
+PASS: test-exclude1.sh
+PASS: test-exclude2.sh
+PASS: test-exclude3.sh
+PASS: test-exclude4.sh
+PASS: test-exclude5.sh
+PASS: test-exclude6.sh
+PASS: test-exclude7.sh
+PASS: test-exclude8.sh
+PASS: test-fcntl-h
+PASS: test-fcntl
+PASS: test-fdopen
+PASS: test-fgetc
+PASS: test-filenamecat
+PASS: test-float
+PASS: test-fnmatch
+PASS: test-fputc
+PASS: test-fread
+PASS: test-freopen-safer
+PASS: test-freopen
+PASS: test-fstat
+PASS: test-ftruncate.sh
+PASS: test-fwrite
+PASS: test-getcwd-lgpl
+PASS: test-getdtablesize
+PASS: test-getopt
+PASS: test-gettimeofday
+PASS: test-hash
+PASS: test-iconv-h
+PASS: test-iconv
+PASS: test-ignore-value
+PASS: test-inet_pton
+PASS: test-intprops
+PASS: test-inttostr
+PASS: test-inttypes
+PASS: test-ioctl
+PASS: test-isblank
+PASS: test-iswblank
+PASS: test-langinfo
+PASS: test-listen
+PASS: test-locale
+PASS: test-localeconv
+PASS: test-lstat
+PASS: test-malloca
+SKIP: test-mbrtowc1.sh
+SKIP: test-mbrtowc2.sh
+SKIP: test-mbrtowc3.sh
+SKIP: test-mbrtowc4.sh
+PASS: test-mbrtowc5.sh
+SKIP: test-mbrtowc-w32-1.sh
+SKIP: test-mbrtowc-w32-2.sh
+SKIP: test-mbrtowc-w32-3.sh
+SKIP: test-mbrtowc-w32-4.sh
+SKIP: test-mbrtowc-w32-5.sh
+SKIP: test-mbscasecmp.sh
+SKIP: test-mbsinit.sh
+SKIP: test-mbsrtowcs1.sh
+SKIP: test-mbsrtowcs2.sh
+SKIP: test-mbsrtowcs3.sh
+SKIP: test-mbsrtowcs4.sh
+PASS: test-mbsstr1
+SKIP: test-mbsstr2.sh
+SKIP: test-mbsstr3.sh
+PASS: test-memchr
+PASS: test-nanosleep
+PASS: test-netinet_in
+PASS: test-nl_langinfo.sh
+PASS: test-open
+PASS: test-pathmax
+PASS: test-perror.sh
+PASS: test-perror2
+PASS: test-pipe
+PASS: test-quotearg-simple
+PASS: test-raise
+PASS: test-rawmemchr
+PASS: test-readlink
+PASS: test-regex
+PASS: test-select
+PASS: test-select-in.sh
+PASS: test-select-out.sh
+PASS: test-setenv
+SKIP: test-setlocale1.sh
+PASS: test-setlocale2.sh
+PASS: test-setsockopt
+PASS: test-sh-quote
+PASS: test-sigaction
+PASS: test-signal-h
+PASS: test-sigprocmask
+PASS: test-sleep
+PASS: test-snprintf
+PASS: test-sockets
+PASS: test-stat
+PASS: test-stat-time
+PASS: test-stdalign
+PASS: test-stdbool
+PASS: test-stddef
+PASS: test-stdint
+PASS: test-stdio
+PASS: test-stdlib
+PASS: test-strerror
+PASS: test-strerror_r
+PASS: test-strftime
+PASS: test-striconv
+PASS: test-string
+PASS: test-strings
+PASS: test-strnlen
+PASS: test-strtoull
+PASS: test-strtoumax
+PASS: test-symlink
+PASS: test-sys_ioctl
+PASS: test-sys_select
+PASS: test-sys_socket
+PASS: test-sys_stat
+PASS: test-sys_time
+PASS: test-sys_types
+PASS: test-sys_uio
+PASS: test-sys_wait
+PASS: test-init.sh
+PASS: test-time
+PASS: test-timespec
+PASS: test-unistd
+PASS: test-u8-mbtoucr
+PASS: test-u8-uctomb
+PASS: test-uc_width
+PASS: uniwidth/test-uc_width2.sh
+PASS: test-unsetenv
+PASS: test-update-copyright.sh
+PASS: test-vasnprintf
+PASS: test-vasprintf
+PASS: test-vc-list-files-git.sh
+SKIP: test-vc-list-files-cvs.sh
+PASS: test-verify
+PASS: test-verify.sh
+PASS: test-version-etc.sh
+PASS: test-wchar
+PASS: test-wcrtomb.sh
+SKIP: test-wcrtomb-w32-1.sh
+SKIP: test-wcrtomb-w32-2.sh
+SKIP: test-wcrtomb-w32-3.sh
+SKIP: test-wcrtomb-w32-4.sh
+SKIP: test-wcrtomb-w32-5.sh
+PASS: test-wctype-h
+PASS: test-wcwidth
+PASS: test-xalloc-die.sh
+PASS: test-xstrtol.sh
+PASS: test-xstrtoumax.sh
+PASS: test-xvasprintf
+============================================================================
+Testsuite summary for GNU diffutils 3.5
+============================================================================
+# TOTAL: 167
+# PASS:  140
+# SKIP:  27
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[5]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[4]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[3]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[2]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5'
+make[1]: Nothing to be done for 'check-am'.
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5'
+  GEN      public-submodule-commit
+
+real	0m20.165s
+user	0m7.988s
+sys	0m0.652s
+lfs@Minty /mnt/lfs/sources/diffutils-3.5 $ time make install
+Making install in lib
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/lib'
+Makefile:1777: target '.deps/alloca.Po' given more than once in the same rule
+make  install-am
+make[2]: Entering directory '/mnt/lfs/sources/diffutils-3.5/lib'
+Makefile:1777: target '.deps/alloca.Po' given more than once in the same rule
+make[3]: Entering directory '/mnt/lfs/sources/diffutils-3.5/lib'
+Makefile:1777: target '.deps/alloca.Po' given more than once in the same rule
+if test yes = no; then \
+  case 'linux-gnu' in \
+    darwin[56]*) \
+      need_charset_alias=true ;; \
+    darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+      need_charset_alias=false ;; \
+    *) \
+      need_charset_alias=true ;; \
+  esac ; \
+else \
+  need_charset_alias=false ; \
+fi ; \
+if $need_charset_alias; then \
+  /bin/sh /mnt/lfs/sources/diffutils-3.5/build-aux/install-sh -d /tools/lib ; \
+fi ; \
+if test -f /tools/lib/charset.alias; then \
+  sed -f ref-add.sed /tools/lib/charset.alias > /tools/lib/charset.tmp ; \
+  /tools/bin/install -c -m 644 /tools/lib/charset.tmp /tools/lib/charset.alias ; \
+  rm -f /tools/lib/charset.tmp ; \
+else \
+  if $need_charset_alias; then \
+    sed -f ref-add.sed charset.alias > /tools/lib/charset.tmp ; \
+    /tools/bin/install -c -m 644 /tools/lib/charset.tmp /tools/lib/charset.alias ; \
+    rm -f /tools/lib/charset.tmp ; \
+  fi ; \
+fi
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/lib'
+make[2]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/lib'
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/lib'
+Making install in src
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/src'
+make  install-am
+make[2]: Entering directory '/mnt/lfs/sources/diffutils-3.5/src'
+make[3]: Entering directory '/mnt/lfs/sources/diffutils-3.5/src'
+ /tools/bin/mkdir -p '/tools/bin'
+  /tools/bin/install -c cmp diff diff3 sdiff '/tools/bin'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/src'
+make[2]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/src'
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/src'
+Making install in tests
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/tests'
+make[2]: Entering directory '/mnt/lfs/sources/diffutils-3.5/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/tests'
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/tests'
+Making install in doc
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/doc'
+make[2]: Entering directory '/mnt/lfs/sources/diffutils-3.5/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /tools/bin/mkdir -p '/tools/share/info'
+ /tools/bin/install -c -m 644 ./diffutils.info '/tools/share/info'
+ install-info --info-dir='/tools/share/info' '/tools/share/info/diffutils.info'
+make[2]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/doc'
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/doc'
+Making install in man
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/man'
+make[2]: Entering directory '/mnt/lfs/sources/diffutils-3.5/man'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /tools/bin/mkdir -p '/tools/share/man/man1'
+ /tools/bin/install -c -m 644 cmp.1 diff.1 diff3.1 sdiff.1 '/tools/share/man/man1'
+make[2]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/man'
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/man'
+Making install in po
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/po'
+installing ca.gmo as /tools/share/locale/ca/LC_MESSAGES/diffutils.mo
+installing cs.gmo as /tools/share/locale/cs/LC_MESSAGES/diffutils.mo
+installing da.gmo as /tools/share/locale/da/LC_MESSAGES/diffutils.mo
+installing de.gmo as /tools/share/locale/de/LC_MESSAGES/diffutils.mo
+installing el.gmo as /tools/share/locale/el/LC_MESSAGES/diffutils.mo
+installing eo.gmo as /tools/share/locale/eo/LC_MESSAGES/diffutils.mo
+installing es.gmo as /tools/share/locale/es/LC_MESSAGES/diffutils.mo
+installing fi.gmo as /tools/share/locale/fi/LC_MESSAGES/diffutils.mo
+installing fr.gmo as /tools/share/locale/fr/LC_MESSAGES/diffutils.mo
+installing ga.gmo as /tools/share/locale/ga/LC_MESSAGES/diffutils.mo
+installing gl.gmo as /tools/share/locale/gl/LC_MESSAGES/diffutils.mo
+installing he.gmo as /tools/share/locale/he/LC_MESSAGES/diffutils.mo
+installing hr.gmo as /tools/share/locale/hr/LC_MESSAGES/diffutils.mo
+installing hu.gmo as /tools/share/locale/hu/LC_MESSAGES/diffutils.mo
+installing id.gmo as /tools/share/locale/id/LC_MESSAGES/diffutils.mo
+installing it.gmo as /tools/share/locale/it/LC_MESSAGES/diffutils.mo
+installing ja.gmo as /tools/share/locale/ja/LC_MESSAGES/diffutils.mo
+installing lv.gmo as /tools/share/locale/lv/LC_MESSAGES/diffutils.mo
+installing ms.gmo as /tools/share/locale/ms/LC_MESSAGES/diffutils.mo
+installing nb.gmo as /tools/share/locale/nb/LC_MESSAGES/diffutils.mo
+installing nl.gmo as /tools/share/locale/nl/LC_MESSAGES/diffutils.mo
+installing pl.gmo as /tools/share/locale/pl/LC_MESSAGES/diffutils.mo
+installing pt_BR.gmo as /tools/share/locale/pt_BR/LC_MESSAGES/diffutils.mo
+installing ro.gmo as /tools/share/locale/ro/LC_MESSAGES/diffutils.mo
+installing ru.gmo as /tools/share/locale/ru/LC_MESSAGES/diffutils.mo
+installing sr.gmo as /tools/share/locale/sr/LC_MESSAGES/diffutils.mo
+installing sv.gmo as /tools/share/locale/sv/LC_MESSAGES/diffutils.mo
+installing tr.gmo as /tools/share/locale/tr/LC_MESSAGES/diffutils.mo
+installing uk.gmo as /tools/share/locale/uk/LC_MESSAGES/diffutils.mo
+installing vi.gmo as /tools/share/locale/vi/LC_MESSAGES/diffutils.mo
+installing zh_CN.gmo as /tools/share/locale/zh_CN/LC_MESSAGES/diffutils.mo
+installing zh_TW.gmo as /tools/share/locale/zh_TW/LC_MESSAGES/diffutils.mo
+if test "diffutils" = "gettext-tools"; then \
+  /tools/bin/mkdir -p /tools/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /tools/bin/install -c -m 644 ./$file \
+		    /tools/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /tools/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/po'
+Making install in gnulib-tests
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make  install-recursive
+make[2]: Entering directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+Making install in .
+make[3]: Entering directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[4]: Entering directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[3]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[2]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5/gnulib-tests'
+make[1]: Entering directory '/mnt/lfs/sources/diffutils-3.5'
+make[2]: Entering directory '/mnt/lfs/sources/diffutils-3.5'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/diffutils-3.5'
+make[1]: Leaving directory '/mnt/lfs/sources/diffutils-3.5'
+
+real	0m0.342s
+user	0m0.184s
+sys	0m0.016s
+lfs@Minty /mnt/lfs/sources/diffutils-3.5 $ cd ..
+lfs@Minty /mnt/lfs/sources $ rm -rf diffutils-3.5
+lfs@Minty /mnt/lfs/sources $

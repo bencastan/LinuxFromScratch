@@ -1,0 +1,1014 @@
+5.25. Grep-3.0
+checking for mmap... (cached) yes
+checking for MAP_ANONYMOUS... yes
+checking whether setenv validates arguments... yes
+checking for a traditional french locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking for a traditional japanese locale... (cached) none
+checking for a transitional chinese locale... (cached) none
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... yes
+checking for snprintf... (cached) yes
+checking whether snprintf respects a size of 1... yes
+checking whether printf supports POSIX/XSI format strings with positions... yes
+checking for mmap... (cached) yes
+checking for MAP_ANONYMOUS... yes
+checking for mmap... (cached) yes
+checking for MAP_ANONYMOUS... yes
+checking whether symlink handles trailing slash correctly... yes
+checking for unsetenv... yes
+checking for unsetenv() return type... int
+checking whether unsetenv obeys POSIX... yes
+checking for ptrdiff_t... yes
+checking for a traditional french locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking for a traditional japanese locale... (cached) none
+checking for a transitional chinese locale... (cached) none
+checking for stdint.h... (cached) yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking whether closedir returns void... no
+checking whether NLS is requested... yes
+checking for msgfmt... /tools/bin/msgfmt
+checking for gmsgfmt... /tools/bin/msgfmt
+checking for xgettext... /tools/bin/xgettext
+checking for msgmerge... /tools/bin/msgmerge
+checking for CFPreferencesCopyAppValue... (cached) no
+checking for CFLocaleCopyCurrent... (cached) no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+configure: WARNING: Included lib/regex.c not used
+checking for PCRE... no
+checking for pcre_compile... no
+configure: WARNING: GNU grep will be built without pcre support.
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating po/Makefile.in
+config.status: creating doc/Makefile
+config.status: creating gnulib-tests/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+
+real	0m13.176s
+user	0m5.884s
+sys	0m0.924s
+lfs@Minty /mnt/lfs/sources/grep-3.0 $ time make
+make  all-recursive
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0'
+Making all in po
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/po'
+Making all in lib
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/lib'
+  GEN      alloca.h
+  GEN      configmake.h
+  GEN      c++defs.h
+  GEN      warn-on-use.h
+  GEN      ctype.h
+  GEN      arg-nonnull.h
+  GEN      dirent.h
+  GEN      fcntl.h
+  GEN      iconv.h
+  GEN      inttypes.h
+  GEN      langinfo.h
+  GEN      limits.h
+  GEN      locale.h
+  GEN      unused-parameter.h
+  GEN      stdio.h
+  GEN      stdlib.h
+  GEN      string.h
+  GEN      sys/stat.h
+  GEN      sys/time.h
+  GEN      sys/types.h
+  GEN      time.h
+  GEN      unistd.h
+  GEN      unistr.h
+  GEN      unitypes.h
+  GEN      uniwidth.h
+  GEN      wchar.h
+  GEN      wctype.h
+make  all-am
+make[3]: Entering directory '/mnt/lfs/sources/grep-3.0/lib'
+  CC       argmatch.o
+  CC       binary-io.o
+  CC       bitrotate.o
+  CC       c-ctype.o
+  CC       c-strcasecmp.o
+  CC       c-strncasecmp.o
+  CC       cloexec.o
+  CC       close-stream.o
+  CC       closeout.o
+  CC       cycle-check.o
+  CC       dfa.o
+  CC       localeinfo.o
+  CC       opendir-safer.o
+  CC       dirname-lgpl.o
+  CC       basename-lgpl.o
+  CC       stripslash.o
+  CC       exclude.o
+  CC       exitfail.o
+  CC       creat-safer.o
+  CC       open-safer.o
+  CC       fd-hook.o
+  CC       filenamecat-lgpl.o
+  CC       getprogname.o
+  CC       hard-locale.o
+  CC       hash.o
+  CC       i-ring.o
+  CC       localcharset.o
+  CC       glthread/lock.o
+  CC       malloca.o
+  CC       mbchar.o
+  CC       mbiter.o
+  CC       mbscasecmp.o
+  CC       mbslen.o
+  CC       mbsstr.o
+  CC       mbuiter.o
+  CC       memchr2.o
+  CC       openat-die.o
+  CC       openat-safer.o
+  CC       propername.o
+  CC       quotearg.o
+  CC       safe-read.o
+  CC       save-cwd.o
+  CC       striconv.o
+  CC       strnlen1.o
+  CC       glthread/threadlib.o
+  CC       trim.o
+  CC       unistd.o
+  CC       dup-safer.o
+  CC       fd-safer.o
+  CC       pipe-safer.o
+  CC       unistr/u8-mbtoucr.o
+  CC       unistr/u8-uctomb.o
+  CC       unistr/u8-uctomb-aux.o
+  CC       uniwidth/width.o
+  CC       version-etc.o
+  CC       version-etc-fsf.o
+  CC       wctype-h.o
+  CC       xmalloc.o
+  CC       xalloc-die.o
+  CC       xstriconv.o
+  CC       xstrtoimax.o
+  CC       xstrtol.o
+  CC       xstrtoul.o
+  CC       xstrtol-error.o
+  CC       colorize.o
+  CC       chdir-long.o
+  CC       fcntl.o
+  CC       fts.o
+  CC       mbrlen.o
+  CC       mbrtowc.o
+  CC       obstack.o
+  CC       openat-proc.o
+  AR       libgreputils.a
+  GEN      charset.alias
+  GEN      ref-add.sed
+  GEN      ref-del.sed
+make[3]: Leaving directory '/mnt/lfs/sources/grep-3.0/lib'
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/lib'
+Making all in doc
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/doc'
+  GEN      grep.1
+  GEN      fgrep.1
+  GEN      egrep.1
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/doc'
+Making all in src
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/src'
+  CC       dfasearch.o
+  CC       grep.o
+  CC       kwsearch.o
+  CC       kwset.o
+  CC       pcresearch.o
+  CC       searchutils.o
+  CCLD     grep
+  GEN      egrep
+  GEN      fgrep
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/src'
+Making all in tests
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/tests'
+Making all in gnulib-tests
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+  GEN      arg-nonnull.h
+  GEN      c++defs.h
+  GEN      unused-parameter.h
+  GEN      warn-on-use.h
+make  all-recursive
+make[3]: Entering directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+Making all in .
+make[4]: Entering directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[3]: Leaving directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0'
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0'
+
+real	0m5.081s
+user	0m4.116s
+sys	0m0.272s
+lfs@Minty /mnt/lfs/sources/grep-3.0 $ time make check
+Making check in po
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0/po'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0/po'
+Making check in lib
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0/lib'
+make  check-am
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/lib'
+make[2]: Nothing to be done for 'check-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/lib'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0/lib'
+Making check in doc
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0/doc'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0/doc'
+Making check in src
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0/src'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0/src'
+Making check in tests
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0/tests'
+make  get-mb-cur-max
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/tests'
+  CC       get-mb-cur-max.o
+  CCLD     get-mb-cur-max
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/tests'
+make  check-TESTS
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/tests'
+make[3]: Entering directory '/mnt/lfs/sources/grep-3.0/tests'
+PASS: backref
+XFAIL: backref-alt
+backref-multibyte-slow: skipped test: en_US.UTF-8 locale not found
+SKIP: backref-multibyte-slow
+PASS: backref-word
+backslash-s-and-repetition-operators: skipped test: en_US.UTF-8 locale not found
+SKIP: backslash-s-and-repetition-operators
+backslash-s-vs-invalid-multitype: skipped test: en_US.UTF-8 locale not found
+SKIP: backslash-s-vs-invalid-multitype
+big-hole: skipped test: expensive: disabled by default
+SKIP: big-hole
+big-match: skipped test: expensive: disabled by default
+SKIP: big-match
+PASS: bogus-wctob
+PASS: bre
+PASS: c-locale
+PASS: case-fold-backref
+PASS: case-fold-backslash-w
+PASS: case-fold-char-class
+PASS: case-fold-char-range
+PASS: case-fold-char-type
+case-fold-titlecase: skipped test: en_US.UTF-8 locale not found
+SKIP: case-fold-titlecase
+char-class-multibyte: skipped test: en_US.UTF-8 locale not found
+SKIP: char-class-multibyte
+char-class-multibyte2: skipped test: en_US.UTF-8 locale not found
+SKIP: char-class-multibyte2
+PASS: context-0
+PASS: count-newline
+dfa-coverage: skipped test: en_US.UTF-8 locale not found
+SKIP: dfa-coverage
+PASS: dfa-heap-overrun
+PASS: dfa-infloop
+PASS: dfaexec-multibyte
+PASS: empty
+PASS: empty-line
+empty-line-mb: skipped test: en_US.UTF-8 locale not found
+SKIP: empty-line-mb
+encoding-error: skipped test: en_US.UTF-8 locale not found
+SKIP: encoding-error
+PASS: epipe
+equiv-classes: skipped test: en_US.UTF-8 locale not found
+SKIP: equiv-classes
+PASS: ere
+euc-mb: skipped test: en_US.UTF-8 locale not found
+SKIP: euc-mb
+false-match-mb-non-utf8: skipped test: no support for the zh_CN.gb18030 locale
+SKIP: false-match-mb-non-utf8
+PASS: fedora
+fgrep-infloop: skipped test: en_US.UTF-8 locale not found
+SKIP: fgrep-infloop
+PASS: fgrep-longest
+PASS: file
+PASS: filename-lineno.pl
+fmbtest: skipped test: this system lacks the cs_CZ.UTF-8 locale
+SKIP: fmbtest
+PASS: foad1
+grep-dev-null: skipped test: en_US.UTF-8 locale not found
+SKIP: grep-dev-null
+PASS: grep-dev-null-out
+PASS: grep-dir
+PASS: help-version
+PASS: high-bit-range
+PASS: in-eq-out-infloop
+PASS: include-exclude
+PASS: inconsistent-range
+PASS: initial-tab
+invalid-multibyte-infloop: skipped test: en_US.UTF-8 locale not found
+SKIP: invalid-multibyte-infloop
+PASS: khadafy
+PASS: kwset-abuse
+long-line-vs-2GiB-read: skipped test: expensive: disabled by default
+SKIP: long-line-vs-2GiB-read
+long-pattern-perf: skipped test: expensive: disabled by default
+SKIP: long-pattern-perf
+PASS: match-lines
+PASS: max-count-overread
+PASS: max-count-vs-context
+PASS: mb-dot-newline
+mb-non-UTF8-overrun: skipped test:  locale not found
+SKIP: mb-non-UTF8-overrun
+mb-non-UTF8-performance: skipped test: expensive: disabled by default
+SKIP: mb-non-UTF8-performance
+multibyte-white-space: skipped test: en_US.UTF-8 locale not found
+SKIP: multibyte-white-space
+PASS: multiple-begin-or-end-line
+PASS: null-byte
+PASS: options
+pcre: skipped test: no PCRE support
+SKIP: pcre
+pcre-abort: skipped test: no PCRE support
+SKIP: pcre-abort
+pcre-context: skipped test: no PCRE support
+SKIP: pcre-context
+pcre-count: skipped test: no PCRE support
+SKIP: pcre-count
+pcre-infloop: skipped test: en_US.UTF-8 locale not found
+SKIP: pcre-infloop
+pcre-invalid-utf8-infloop: skipped test: en_US.UTF-8 locale not found
+SKIP: pcre-invalid-utf8-infloop
+pcre-invalid-utf8-input: skipped test: en_US.UTF-8 locale not found
+SKIP: pcre-invalid-utf8-input
+pcre-jitstack: skipped test: no PCRE support
+SKIP: pcre-jitstack
+pcre-o: skipped test: no PCRE support
+SKIP: pcre-o
+pcre-utf8: skipped test: en_US.UTF-8 locale not found
+SKIP: pcre-utf8
+pcre-w: skipped test: no PCRE support
+SKIP: pcre-w
+pcre-wx-backref: skipped test: no PCRE support
+SKIP: pcre-wx-backref
+pcre-z: skipped test: no PCRE support
+SKIP: pcre-z
+PASS: posix-bracket
+prefix-of-multibyte: skipped test: en_US.UTF-8 locale not found
+SKIP: prefix-of-multibyte
+PASS: proc
+PASS: r-dot
+PASS: repetition-overflow
+PASS: reversed-range-endpoints
+sjis-mb: skipped test: en_US.UTF-8 locale not found
+SKIP: sjis-mb
+PASS: skip-device
+PASS: skip-read
+PASS: spencer1
+PASS: spencer1-locale
+PASS: status
+surrogate-pair: skipped test: en_US.UTF-8 locale not found
+SKIP: surrogate-pair
+PASS: symlink
+XFAIL: triple-backref
+turkish-I: skipped test: en_US.UTF-8 locale not found
+SKIP: turkish-I
+turkish-I-without-dot: skipped test: tr_TR.UTF-8 locale not found
+SKIP: turkish-I-without-dot
+turkish-eyes: skipped test: en_US.UTF-8 locale not found
+SKIP: turkish-eyes
+two-chars: skipped test: en_US.UTF-8 locale not found
+SKIP: two-chars
+PASS: two-files
+PASS: unibyte-binary
+unibyte-bracket-expr: skipped test: ru_RU.KOI8-R locale not found
+SKIP: unibyte-bracket-expr
+PASS: unibyte-negated-circumflex
+utf8-bracket: skipped test: en_US.UTF-8 locale not found
+SKIP: utf8-bracket
+PASS: warn-char-classes
+word-delim-multibyte: skipped test: en_US.UTF-8 locale not found
+SKIP: word-delim-multibyte
+PASS: word-multi-file
+word-multibyte: skipped test: en_US.UTF-8 locale not found
+SKIP: word-multibyte
+PASS: write-error-msg
+PASS: yesno
+z-anchor-newline: skipped test: en_US.UTF-8 locale not found
+SKIP: z-anchor-newline
+============================================================================
+Testsuite summary for GNU grep 3.0
+============================================================================
+# TOTAL: 109
+# PASS:  59
+# SKIP:  48
+# XFAIL: 2
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[3]: Leaving directory '/mnt/lfs/sources/grep-3.0/tests'
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/tests'
+  GEN      check_executable_TESTS
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0/tests'
+Making check in gnulib-tests
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make  check-recursive
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+Making check in .
+make[3]: Entering directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make  libtests.a test-alignof test-alloca-opt test-argmatch test-binary-io test-bitrotate test-btowc test-c-ctype test-c-strcasecmp test-c-strncasecmp test-chdir test-cloexec test-close test-ctype dfa-match-aux test-dirent-safer test-dirent test-dup test-dup2 test-environ test-errno test-exclude test-fchdir test-fcntl-h test-fcntl-safer test-fcntl test-fdopen test-fdopendir test-fgetc test-float test-fnmatch test-fpending test-fputc test-fread test-fstat test-fstatat test-fwrite test-getcwd-lgpl test-getdtablesize test-getopt-gnu test-getopt-posix test-getprogname test-gettimeofday test-hash test-i-ring test-iconv-h test-iconv test-ignore-value test-intprops test-inttostr test-inttypes test-isatty test-isblank test-iswblank test-langinfo test-limits-h test-locale test-localeconv test-localename test-lseek test-lstat test-malloc-gnu test-malloca test-mbscasecmp test-mbsinit test-mbsrtowcs test-mbsstr1 test-mbsstr2 test-mbsstr3 test-memchr test-memchr2 test-memrchr test-nl_langinfo test-open test-openat-safer test-openat test-pathmax test-pipe test-quotearg-simple test-read test-realloc-gnu test-regex test-setenv test-setlocale1 test-setlocale2 test-snprintf test-stat test-stdalign test-stdbool test-stddef test-stdint test-stdio test-stdlib test-strerror test-striconv test-string test-strnlen test-strstr test-strtoimax test-strtoll test-strtoull test-strtoumax test-symlink test-sys_stat test-sys_time test-sys_types test-time test-dup-safer test-unistd test-u8-mbtoucr test-u8-uctomb test-uc_width test-uc_width2 test-unsetenv test-vasnprintf test-verify test-version-etc test-wchar test-wcrtomb test-wcrtomb-w32 test-wctype-h test-wcwidth test-xalloc-die test-xstrtoimax test-xstrtol test-xstrtoul
+make[4]: Entering directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+  CC       fd-safer-flag.o
+  CC       dup-safer-flag.o
+  CC       hash-pjw.o
+  CC       imaxtostr.o
+  CC       inttostr.o
+  CC       offtostr.o
+  CC       uinttostr.o
+  CC       umaxtostr.o
+  CC       localename.o
+  CC       xsize.o
+  CC       asnprintf.o
+  CC       printf-args.o
+  CC       printf-parse.o
+  CC       vasnprintf.o
+  AR       libtests.a
+  CC       test-alignof.o
+  CCLD     test-alignof
+  CC       test-alloca-opt.o
+  CCLD     test-alloca-opt
+  CC       test-argmatch.o
+  CCLD     test-argmatch
+  CC       test-binary-io.o
+  CCLD     test-binary-io
+  CC       test-bitrotate.o
+  CCLD     test-bitrotate
+  CC       test-btowc.o
+  CCLD     test-btowc
+  CC       test-c-ctype.o
+  CCLD     test-c-ctype
+  CC       test-c-strcasecmp.o
+  CCLD     test-c-strcasecmp
+  CC       test-c-strncasecmp.o
+  CCLD     test-c-strncasecmp
+  CC       test-chdir.o
+  CCLD     test-chdir
+  CC       test-cloexec.o
+  CCLD     test-cloexec
+  CC       test-close.o
+  CCLD     test-close
+  CC       test-ctype.o
+  CCLD     test-ctype
+  CC       dfa-match-aux.o
+  CCLD     dfa-match-aux
+  CC       test-dirent-safer.o
+  CCLD     test-dirent-safer
+  CC       test-dirent.o
+  CCLD     test-dirent
+  CC       test-dup.o
+  CCLD     test-dup
+  CC       test-dup2.o
+  CCLD     test-dup2
+  CC       test-environ.o
+  CCLD     test-environ
+  CC       test-errno.o
+  CCLD     test-errno
+  CC       test-exclude.o
+  CCLD     test-exclude
+  CC       test-fchdir.o
+  CCLD     test-fchdir
+  CC       test-fcntl-h.o
+  CCLD     test-fcntl-h
+  CC       test-fcntl-safer.o
+  CCLD     test-fcntl-safer
+  CC       test-fcntl.o
+  CCLD     test-fcntl
+  CC       test-fdopen.o
+  CCLD     test-fdopen
+  CC       test-fdopendir.o
+  CCLD     test-fdopendir
+  CC       test-fgetc.o
+  CCLD     test-fgetc
+  CC       test-float.o
+  CCLD     test-float
+  CC       test-fnmatch.o
+  CCLD     test-fnmatch
+  CC       test-fpending.o
+  CCLD     test-fpending
+  CC       test-fputc.o
+  CCLD     test-fputc
+  CC       test-fread.o
+  CCLD     test-fread
+  CC       test-fstat.o
+  CCLD     test-fstat
+  CC       test-fstatat.o
+  CCLD     test-fstatat
+  CC       test-fwrite.o
+  CCLD     test-fwrite
+  CC       test-getcwd-lgpl.o
+  CCLD     test-getcwd-lgpl
+  CC       test-getdtablesize.o
+  CCLD     test-getdtablesize
+  CC       test-getopt-gnu.o
+  CCLD     test-getopt-gnu
+  CC       test-getopt-posix.o
+  CCLD     test-getopt-posix
+  CC       test-getprogname.o
+  CCLD     test-getprogname
+  CC       test-gettimeofday.o
+  CCLD     test-gettimeofday
+  CC       test-hash.o
+  CCLD     test-hash
+  CC       test-i-ring.o
+  CCLD     test-i-ring
+  CC       test-iconv-h.o
+  CCLD     test-iconv-h
+  CC       test-iconv.o
+  CCLD     test-iconv
+  CC       test-ignore-value.o
+  CCLD     test-ignore-value
+  CC       test-intprops.o
+  CCLD     test-intprops
+  CC       test-inttostr.o
+  CCLD     test-inttostr
+  CC       test-inttypes.o
+  CCLD     test-inttypes
+  CC       test-isatty.o
+  CCLD     test-isatty
+  CC       test-isblank.o
+  CCLD     test-isblank
+  CC       test-iswblank.o
+  CCLD     test-iswblank
+  CC       test-langinfo.o
+  CCLD     test-langinfo
+  CC       test-limits-h.o
+  CCLD     test-limits-h
+  CC       test-locale.o
+  CCLD     test-locale
+  CC       test-localeconv.o
+  CCLD     test-localeconv
+  CC       test-localename.o
+  CCLD     test-localename
+  CC       test-lseek.o
+  CCLD     test-lseek
+  CC       test-lstat.o
+  CCLD     test-lstat
+  CC       test-malloc-gnu.o
+  CCLD     test-malloc-gnu
+  CC       test-malloca.o
+  CCLD     test-malloca
+  CC       test-mbscasecmp.o
+  CCLD     test-mbscasecmp
+  CC       test-mbsinit.o
+  CCLD     test-mbsinit
+  CC       test-mbsrtowcs.o
+  CCLD     test-mbsrtowcs
+  CC       test-mbsstr1.o
+  CCLD     test-mbsstr1
+  CC       test-mbsstr2.o
+  CCLD     test-mbsstr2
+  CC       test-mbsstr3.o
+  CCLD     test-mbsstr3
+  CC       test-memchr.o
+  CCLD     test-memchr
+  CC       test-memchr2.o
+  CCLD     test-memchr2
+  CC       test-memrchr.o
+  CCLD     test-memrchr
+  CC       test-nl_langinfo.o
+  CCLD     test-nl_langinfo
+  CC       test-open.o
+  CCLD     test-open
+  CC       test-openat-safer.o
+  CCLD     test-openat-safer
+  CC       test-openat.o
+  CCLD     test-openat
+  CC       test-pathmax.o
+  CCLD     test-pathmax
+  CC       test-pipe.o
+  CCLD     test-pipe
+  CC       test-quotearg-simple.o
+  CCLD     test-quotearg-simple
+  CC       test-read.o
+  CCLD     test-read
+  CC       test-realloc-gnu.o
+  CCLD     test-realloc-gnu
+  CC       test-regex.o
+  CCLD     test-regex
+  CC       test-setenv.o
+  CCLD     test-setenv
+  CC       test-setlocale1.o
+  CCLD     test-setlocale1
+  CC       test-setlocale2.o
+  CCLD     test-setlocale2
+  CC       test-snprintf.o
+  CCLD     test-snprintf
+  CC       test-stat.o
+  CCLD     test-stat
+  CC       test-stdalign.o
+  CCLD     test-stdalign
+  CC       test-stdbool.o
+  CCLD     test-stdbool
+  CC       test-stddef.o
+  CCLD     test-stddef
+  CC       test-stdint.o
+  CCLD     test-stdint
+  CC       test-stdio.o
+  CCLD     test-stdio
+  CC       test-stdlib.o
+  CCLD     test-stdlib
+  CC       test-strerror.o
+  CCLD     test-strerror
+  CC       test-striconv.o
+  CCLD     test-striconv
+  CC       test-string.o
+  CCLD     test-string
+  CC       test-strnlen.o
+  CCLD     test-strnlen
+  CC       test-strstr.o
+  CCLD     test-strstr
+  CC       test-strtoimax.o
+  CCLD     test-strtoimax
+  CC       test-strtoll.o
+  CCLD     test-strtoll
+  CC       test-strtoull.o
+  CCLD     test-strtoull
+  CC       test-strtoumax.o
+  CCLD     test-strtoumax
+  CC       test-symlink.o
+  CCLD     test-symlink
+  CC       test-sys_stat.o
+  CCLD     test-sys_stat
+  CC       test-sys_time.o
+  CCLD     test-sys_time
+  CC       test-sys_types.o
+  CCLD     test-sys_types
+  CC       test-time.o
+  CCLD     test-time
+  CC       test-dup-safer.o
+  CCLD     test-dup-safer
+  CC       test-unistd.o
+  CCLD     test-unistd
+  CC       unistr/test-u8-mbtoucr.o
+  CCLD     test-u8-mbtoucr
+  CC       unistr/test-u8-uctomb.o
+  CCLD     test-u8-uctomb
+  CC       uniwidth/test-uc_width.o
+  CCLD     test-uc_width
+  CC       uniwidth/test-uc_width2.o
+  CCLD     test-uc_width2
+  CC       test-unsetenv.o
+  CCLD     test-unsetenv
+  CC       test-vasnprintf.o
+  CCLD     test-vasnprintf
+  CC       test-verify.o
+  CCLD     test-verify
+  CC       test-version-etc.o
+  CCLD     test-version-etc
+  CC       test-wchar.o
+  CCLD     test-wchar
+  CC       test-wcrtomb.o
+  CCLD     test-wcrtomb
+  CC       test-wcrtomb-w32.o
+  CCLD     test-wcrtomb-w32
+  CC       test-wctype-h.o
+  CCLD     test-wctype-h
+  CC       test-wcwidth.o
+  CCLD     test-wcwidth
+  CC       test-xalloc-die.o
+  CCLD     test-xalloc-die
+  CC       test-xstrtoimax.o
+  CCLD     test-xstrtoimax
+  CC       test-xstrtol.o
+  CCLD     test-xstrtol
+  CC       test-xstrtoul.o
+  CCLD     test-xstrtoul
+make[4]: Leaving directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make  check-TESTS
+make[4]: Entering directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[5]: Entering directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+PASS: test-alignof
+PASS: test-alloca-opt
+PASS: test-argmatch
+PASS: test-binary-io.sh
+PASS: test-bitrotate
+SKIP: test-btowc1.sh
+SKIP: test-btowc2.sh
+PASS: test-c-ctype
+PASS: test-c-strcase.sh
+PASS: test-chdir
+PASS: test-cloexec
+PASS: test-close
+PASS: test-ctype
+PASS: dfa-invalid-char-class.sh
+PASS: dfa-match.sh
+PASS: test-dirent-safer
+PASS: test-dirent
+PASS: test-dup
+PASS: test-dup2
+PASS: test-environ
+PASS: test-errno
+PASS: test-exclude1.sh
+PASS: test-exclude2.sh
+PASS: test-exclude3.sh
+PASS: test-exclude4.sh
+PASS: test-exclude5.sh
+PASS: test-exclude6.sh
+PASS: test-exclude7.sh
+PASS: test-exclude8.sh
+PASS: test-fchdir
+PASS: test-fcntl-h
+PASS: test-fcntl-safer
+PASS: test-fcntl
+PASS: test-fdopen
+PASS: test-fdopendir
+PASS: test-fgetc
+PASS: test-float
+PASS: test-fnmatch
+PASS: test-fpending.sh
+PASS: test-fputc
+PASS: test-fread
+PASS: test-fstat
+PASS: test-fstatat
+PASS: test-fwrite
+PASS: test-getcwd-lgpl
+PASS: test-getdtablesize
+PASS: test-getopt-gnu
+PASS: test-getopt-posix
+PASS: test-getprogname
+PASS: test-gettimeofday
+PASS: test-hash
+PASS: test-i-ring
+PASS: test-iconv-h
+PASS: test-iconv
+PASS: test-ignore-value
+PASS: test-intprops
+PASS: test-inttostr
+PASS: test-inttypes
+PASS: test-isatty
+PASS: test-isblank
+PASS: test-iswblank
+PASS: test-langinfo
+PASS: test-limits-h
+PASS: test-locale
+PASS: test-localeconv
+PASS: test-localename
+PASS: test-lseek.sh
+PASS: test-lstat
+PASS: test-malloc-gnu
+PASS: test-malloca
+SKIP: test-mbscasecmp.sh
+SKIP: test-mbsinit.sh
+SKIP: test-mbsrtowcs1.sh
+SKIP: test-mbsrtowcs2.sh
+SKIP: test-mbsrtowcs3.sh
+SKIP: test-mbsrtowcs4.sh
+PASS: test-mbsstr1
+SKIP: test-mbsstr2.sh
+SKIP: test-mbsstr3.sh
+PASS: test-memchr
+PASS: test-memchr2
+PASS: test-memrchr
+PASS: test-nl_langinfo.sh
+PASS: test-open
+PASS: test-openat-safer
+PASS: test-openat
+PASS: test-pathmax
+PASS: test-pipe
+PASS: test-quotearg-simple
+PASS: test-read
+PASS: test-realloc-gnu
+PASS: test-regex
+PASS: test-setenv
+SKIP: test-setlocale1.sh
+PASS: test-setlocale2.sh
+PASS: test-snprintf
+PASS: test-stat
+PASS: test-stdalign
+PASS: test-stdbool
+PASS: test-stddef
+PASS: test-stdint
+PASS: test-stdio
+PASS: test-stdlib
+PASS: test-strerror
+PASS: test-striconv
+PASS: test-string
+PASS: test-strnlen
+PASS: test-strstr
+PASS: test-strtoimax
+PASS: test-strtoll
+PASS: test-strtoull
+PASS: test-strtoumax
+PASS: test-symlink
+PASS: test-sys_stat
+PASS: test-sys_time
+PASS: test-sys_types
+PASS: test-init.sh
+PASS: test-time
+PASS: test-dup-safer
+PASS: test-unistd
+PASS: test-u8-mbtoucr
+PASS: test-u8-uctomb
+PASS: test-uc_width
+PASS: uniwidth/test-uc_width2.sh
+PASS: test-unsetenv
+PASS: test-vasnprintf
+PASS: test-vc-list-files-git.sh
+SKIP: test-vc-list-files-cvs.sh
+PASS: test-verify
+PASS: test-verify.sh
+PASS: test-version-etc.sh
+PASS: test-wchar
+PASS: test-wcrtomb.sh
+SKIP: test-wcrtomb-w32-1.sh
+SKIP: test-wcrtomb-w32-2.sh
+SKIP: test-wcrtomb-w32-3.sh
+SKIP: test-wcrtomb-w32-4.sh
+SKIP: test-wcrtomb-w32-5.sh
+PASS: test-wctype-h
+PASS: test-wcwidth
+PASS: test-xalloc-die.sh
+PASS: test-xstrtoimax.sh
+PASS: test-xstrtol.sh
+============================================================================
+Testsuite summary for GNU grep 3.0
+============================================================================
+# TOTAL: 143
+# PASS:  126
+# SKIP:  17
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[5]: Leaving directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[4]: Leaving directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[3]: Leaving directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0'
+  GEN      public-submodule-commit
+
+real	0m16.628s
+user	0m9.100s
+sys	0m0.900s
+lfs@Minty /mnt/lfs/sources/grep-3.0 $ time make install
+Making install in po
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0/po'
+installing af.gmo as /tools/share/locale/af/LC_MESSAGES/grep.mo
+installing be.gmo as /tools/share/locale/be/LC_MESSAGES/grep.mo
+installing bg.gmo as /tools/share/locale/bg/LC_MESSAGES/grep.mo
+installing ca.gmo as /tools/share/locale/ca/LC_MESSAGES/grep.mo
+installing cs.gmo as /tools/share/locale/cs/LC_MESSAGES/grep.mo
+installing da.gmo as /tools/share/locale/da/LC_MESSAGES/grep.mo
+installing de.gmo as /tools/share/locale/de/LC_MESSAGES/grep.mo
+installing el.gmo as /tools/share/locale/el/LC_MESSAGES/grep.mo
+installing eo.gmo as /tools/share/locale/eo/LC_MESSAGES/grep.mo
+installing es.gmo as /tools/share/locale/es/LC_MESSAGES/grep.mo
+installing et.gmo as /tools/share/locale/et/LC_MESSAGES/grep.mo
+installing eu.gmo as /tools/share/locale/eu/LC_MESSAGES/grep.mo
+installing fi.gmo as /tools/share/locale/fi/LC_MESSAGES/grep.mo
+installing fr.gmo as /tools/share/locale/fr/LC_MESSAGES/grep.mo
+installing ga.gmo as /tools/share/locale/ga/LC_MESSAGES/grep.mo
+installing gl.gmo as /tools/share/locale/gl/LC_MESSAGES/grep.mo
+installing he.gmo as /tools/share/locale/he/LC_MESSAGES/grep.mo
+installing hr.gmo as /tools/share/locale/hr/LC_MESSAGES/grep.mo
+installing hu.gmo as /tools/share/locale/hu/LC_MESSAGES/grep.mo
+installing id.gmo as /tools/share/locale/id/LC_MESSAGES/grep.mo
+installing it.gmo as /tools/share/locale/it/LC_MESSAGES/grep.mo
+installing ja.gmo as /tools/share/locale/ja/LC_MESSAGES/grep.mo
+installing ko.gmo as /tools/share/locale/ko/LC_MESSAGES/grep.mo
+installing ky.gmo as /tools/share/locale/ky/LC_MESSAGES/grep.mo
+installing lt.gmo as /tools/share/locale/lt/LC_MESSAGES/grep.mo
+installing nb.gmo as /tools/share/locale/nb/LC_MESSAGES/grep.mo
+installing nl.gmo as /tools/share/locale/nl/LC_MESSAGES/grep.mo
+installing pa.gmo as /tools/share/locale/pa/LC_MESSAGES/grep.mo
+installing pl.gmo as /tools/share/locale/pl/LC_MESSAGES/grep.mo
+installing pt.gmo as /tools/share/locale/pt/LC_MESSAGES/grep.mo
+installing pt_BR.gmo as /tools/share/locale/pt_BR/LC_MESSAGES/grep.mo
+installing ro.gmo as /tools/share/locale/ro/LC_MESSAGES/grep.mo
+installing ru.gmo as /tools/share/locale/ru/LC_MESSAGES/grep.mo
+installing sk.gmo as /tools/share/locale/sk/LC_MESSAGES/grep.mo
+installing sl.gmo as /tools/share/locale/sl/LC_MESSAGES/grep.mo
+installing sr.gmo as /tools/share/locale/sr/LC_MESSAGES/grep.mo
+installing sv.gmo as /tools/share/locale/sv/LC_MESSAGES/grep.mo
+installing th.gmo as /tools/share/locale/th/LC_MESSAGES/grep.mo
+installing tr.gmo as /tools/share/locale/tr/LC_MESSAGES/grep.mo
+installing uk.gmo as /tools/share/locale/uk/LC_MESSAGES/grep.mo
+installing vi.gmo as /tools/share/locale/vi/LC_MESSAGES/grep.mo
+installing zh_CN.gmo as /tools/share/locale/zh_CN/LC_MESSAGES/grep.mo
+installing zh_TW.gmo as /tools/share/locale/zh_TW/LC_MESSAGES/grep.mo
+if test "grep" = "gettext-tools"; then \
+  /tools/bin/mkdir -p /tools/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /tools/bin/install -c -m 644 ./$file \
+		    /tools/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /tools/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0/po'
+Making install in lib
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0/lib'
+make  install-am
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/lib'
+make[3]: Entering directory '/mnt/lfs/sources/grep-3.0/lib'
+if test yes = no; then \
+  case 'linux-gnu' in \
+    darwin[56]*) \
+      need_charset_alias=true ;; \
+    darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+      need_charset_alias=false ;; \
+    *) \
+      need_charset_alias=true ;; \
+  esac ; \
+else \
+  need_charset_alias=false ; \
+fi ; \
+if $need_charset_alias; then \
+  /bin/sh /mnt/lfs/sources/grep-3.0/build-aux/install-sh -d /tools/lib ; \
+fi ; \
+if test -f /tools/lib/charset.alias; then \
+  sed -f ref-add.sed /tools/lib/charset.alias > /tools/lib/charset.tmp ; \
+  /tools/bin/install -c -m 644 /tools/lib/charset.tmp /tools/lib/charset.alias ; \
+  rm -f /tools/lib/charset.tmp ; \
+else \
+  if $need_charset_alias; then \
+    sed -f ref-add.sed charset.alias > /tools/lib/charset.tmp ; \
+    /tools/bin/install -c -m 644 /tools/lib/charset.tmp /tools/lib/charset.alias ; \
+    rm -f /tools/lib/charset.tmp ; \
+  fi ; \
+fi
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/mnt/lfs/sources/grep-3.0/lib'
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/lib'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0/lib'
+Making install in doc
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0/doc'
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /tools/bin/mkdir -p '/tools/share/info'
+ /tools/bin/install -c -m 644 ./grep.info '/tools/share/info'
+ install-info --info-dir='/tools/share/info' '/tools/share/info/grep.info'
+ /tools/bin/mkdir -p '/tools/share/man/man1'
+ /tools/bin/install -c -m 644 grep.1 fgrep.1 egrep.1 '/tools/share/man/man1'
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/doc'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0/doc'
+Making install in src
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0/src'
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/src'
+ /tools/bin/mkdir -p '/tools/bin'
+  /tools/bin/install -c grep '/tools/bin'
+ /tools/bin/mkdir -p '/tools/bin'
+ /tools/bin/install -c egrep fgrep '/tools/bin'
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/src'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0/src'
+Making install in tests
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0/tests'
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/tests'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0/tests'
+Making install in gnulib-tests
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make  install-recursive
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+Making install in .
+make[3]: Entering directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[4]: Entering directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[3]: Leaving directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0/gnulib-tests'
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.0'
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.0'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.0'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.0'
+
+real	0m0.362s
+user	0m0.164s
+sys	0m0.032s
+lfs@Minty /mnt/lfs/sources/grep-3.0 $ cd ..
+lfs@Minty /mnt/lfs/sources $ rm -rf grep-3.0
+lfs@Minty /mnt/lfs/sources $

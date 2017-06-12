@@ -1,0 +1,1010 @@
+5.19. Coreutils-8.26
+  CC       test-calloc-gnu.o
+  CCLD     test-calloc-gnu
+  CC       test-canonicalize.o
+  CCLD     test-canonicalize
+  CC       test-chdir.o
+  CCLD     test-chdir
+  CC       test-chown.o
+  CCLD     test-chown
+  CC       test-cloexec.o
+  CCLD     test-cloexec
+  CC       test-close.o
+  CCLD     test-close
+  CC       test-closein.o
+  CCLD     test-closein
+  CC       test-connect.o
+  CCLD     test-connect
+  CC       test-md5.o
+  CCLD     test-md5
+  CC       test-sha1.o
+  CCLD     test-sha1
+  CC       test-ctype.o
+  CCLD     test-ctype
+  CC       test-di-set.o
+  CCLD     test-di-set
+  CC       test-dirent-safer.o
+  CCLD     test-dirent-safer
+  CC       test-dirent.o
+  CCLD     test-dirent
+  CC       test-dirname.o
+  CCLD     test-dirname
+  CC       test-dup.o
+  CCLD     test-dup
+  CC       test-dup2.o
+  CCLD     test-dup2
+  CC       test-environ.o
+  CCLD     test-environ
+  CC       test-errno.o
+  CCLD     test-errno
+  CC       test-exclude.o
+  CCLD     test-exclude
+  CC       test-faccessat.o
+  CCLD     test-faccessat
+  CC       test-fadvise.o
+  CCLD     test-fadvise
+  CC       test-fchdir.o
+  CCLD     test-fchdir
+  CC       test-fchmodat.o
+  CCLD     test-fchmodat
+  CC       test-fchownat.o
+  CCLD     test-fchownat
+  CC       test-fclose.o
+  CCLD     test-fclose
+  CC       test-fcntl-h.o
+  CCLD     test-fcntl-h
+  CC       test-fcntl-safer.o
+  CCLD     test-fcntl-safer
+  CC       test-fcntl.o
+  CCLD     test-fcntl
+  CC       test-fdatasync.o
+  CCLD     test-fdatasync
+  CC       test-fdopen.o
+  CCLD     test-fdopen
+  CC       test-fdopendir.o
+  CCLD     test-fdopendir
+  CC       test-fdutimensat.o
+  CCLD     test-fdutimensat
+  CC       test-fflush.o
+  CCLD     test-fflush
+  CC       test-fflush2.o
+  CCLD     test-fflush2
+  CC       test-fgetc.o
+  CCLD     test-fgetc
+  CC       test-file-has-acl.o
+  CCLD     test-file-has-acl
+  CC       test-filenamecat.o
+  CCLD     test-filenamecat
+  CC       test-filevercmp.o
+  CCLD     test-filevercmp
+  CC       test-float.o
+  CCLD     test-float
+  CC       test-fnmatch.o
+  CCLD     test-fnmatch
+  CC       test-fopen-safer.o
+  CCLD     test-fopen-safer
+  CC       test-fopen.o
+  CCLD     test-fopen
+  CC       test-fpending.o
+  CCLD     test-fpending
+  CC       test-fpurge.o
+  CCLD     test-fpurge
+  CC       test-fputc.o
+  CCLD     test-fputc
+  CC       test-fread.o
+  CCLD     test-fread
+  CC       test-freadahead.o
+  CCLD     test-freadahead
+  CC       test-freading.o
+  CCLD     test-freading
+  CC       test-freadptr.o
+  CCLD     test-freadptr
+  CC       test-freadptr2.o
+  CCLD     test-freadptr2
+  CC       test-freadseek.o
+  CCLD     test-freadseek
+  CC       test-freopen-safer.o
+  CCLD     test-freopen-safer
+  CC       test-freopen.o
+  CCLD     test-freopen
+  CC       test-frexp.o
+  CC       randomd.o
+  CCLD     test-frexp-nolibm
+  CC       test-frexpl.o
+  CC       randoml.o
+  CCLD     test-frexpl-nolibm
+  CC       test-fseek.o
+  CCLD     test-fseek
+  CC       test-fseeko.o
+  CCLD     test-fseeko
+  CC       test-fseeko3.o
+  CCLD     test-fseeko3
+  CC       test-fseeko4.o
+  CCLD     test-fseeko4
+  CC       test-fseterr.o
+  CCLD     test-fseterr
+  CC       test-fstat.o
+  CCLD     test-fstat
+  CC       test-fstatat.o
+  CCLD     test-fstatat
+  CC       test-fsync.o
+  CCLD     test-fsync
+  CC       test-ftell.o
+  CCLD     test-ftell
+  CC       test-ftell3.o
+  CCLD     test-ftell3
+  CC       test-ftello.o
+  CCLD     test-ftello
+  CC       test-ftello3.o
+  CCLD     test-ftello3
+  CC       test-ftello4.o
+  CCLD     test-ftello4
+  CC       test-ftruncate.o
+  CCLD     test-ftruncate
+  CC       test-futimens.o
+  CCLD     test-futimens
+  CC       test-fwrite.o
+  CCLD     test-fwrite
+  CC       test-getaddrinfo.o
+  CCLD     test-getaddrinfo
+  CC       test-getcwd-lgpl.o
+  CCLD     test-getcwd-lgpl
+  CC       test-getcwd.o
+  CCLD     test-getcwd
+  CC       test-getdelim.o
+  CCLD     test-getdelim
+  CC       test-getdtablesize.o
+  CCLD     test-getdtablesize
+  CC       test-getgroups.o
+  CCLD     test-getgroups
+  CC       test-gethostname.o
+  CCLD     test-gethostname
+  CC       test-getline.o
+  CCLD     test-getline
+  CC       test-getloadavg.o
+  CCLD     test-getloadavg
+  CC       test-getlogin.o
+  CCLD     test-getlogin
+  CC       test-getndelim2.o
+  CCLD     test-getndelim2
+  CC       test-getopt.o
+  CCLD     test-getopt
+  CC       test-getprogname.o
+  CCLD     test-getprogname
+  CC       test-gettimeofday.o
+  CCLD     test-gettimeofday
+  CC       test-hash.o
+  CCLD     test-hash
+  CC       test-i-ring.o
+  CCLD     test-i-ring
+  CC       test-iconv-h.o
+  CCLD     test-iconv-h
+  CC       test-iconv.o
+  CCLD     test-iconv
+  CC       test-ignore-value.o
+  CCLD     test-ignore-value
+  CC       test-inet_ntop.o
+  CCLD     test-inet_ntop
+  CC       test-inet_pton.o
+  CCLD     test-inet_pton
+  CC       test-ino-map.o
+  CCLD     test-ino-map
+  CC       test-intprops.o
+  CCLD     test-intprops
+  CC       test-inttostr.o
+  CCLD     test-inttostr
+  CC       test-inttypes.o
+  CCLD     test-inttypes
+  CC       test-ioctl.o
+  CCLD     test-ioctl
+  CC       test-isatty.o
+  CCLD     test-isatty
+  CC       test-isblank.o
+  CCLD     test-isblank
+  CC       test-isnand-nolibm.o
+  CCLD     test-isnand-nolibm
+  CC       test-isnanf-nolibm.o
+  CCLD     test-isnanf-nolibm
+  CC       test-isnanl-nolibm.o
+  CCLD     test-isnanl-nolibm
+  CC       test-iswblank.o
+  CCLD     test-iswblank
+  CC       test-langinfo.o
+  CCLD     test-langinfo
+  CC       test-lchown.o
+  CCLD     test-lchown
+  CC       test-limits-h.o
+  CCLD     test-limits-h
+  CC       test-link.o
+  CCLD     test-link
+  CC       test-linkat.o
+  CCLD     test-linkat
+  CC       test-listen.o
+  CCLD     test-listen
+  CC       test-locale.o
+  CCLD     test-locale
+  CC       test-localeconv.o
+  CCLD     test-localeconv
+  CC       test-localename.o
+  CCLD     test-localename
+  CC       test_lock-test-lock.o
+  CCLD     test-lock
+  CC       test-lseek.o
+  CCLD     test-lseek
+  CC       test-lstat.o
+  CCLD     test-lstat
+  CC       test-malloc-gnu.o
+  CCLD     test-malloc-gnu
+  CC       test-malloca.o
+  CCLD     test-malloca
+  CC       test-math.o
+  CCLD     test-math
+  CC       test-mbrtowc.o
+  CCLD     test-mbrtowc
+  CC       test-mbrtowc-w32.o
+  CCLD     test-mbrtowc-w32
+  CC       test-mbsalign.o
+  CCLD     test-mbsalign
+  CC       test-mbscasecmp.o
+  CCLD     test-mbscasecmp
+  CC       test-mbsinit.o
+  CCLD     test-mbsinit
+  CC       test-mbsrtowcs.o
+  CCLD     test-mbsrtowcs
+  CC       test-mbsstr1.o
+  CCLD     test-mbsstr1
+  CC       test-mbsstr2.o
+  CCLD     test-mbsstr2
+  CC       test-mbsstr3.o
+  CCLD     test-mbsstr3
+  CC       test-memcasecmp.o
+  CCLD     test-memcasecmp
+  CC       test-memchr.o
+  CCLD     test-memchr
+  CC       test-memchr2.o
+  CCLD     test-memchr2
+  CC       test-memcoll.o
+  CCLD     test-memcoll
+  CC       test-memrchr.o
+  CCLD     test-memrchr
+  CC       test-mkdir.o
+  CCLD     test-mkdir
+  CC       test-mkfifo.o
+  CCLD     test-mkfifo
+  CC       test-mknod.o
+  CCLD     test-mknod
+  CC       test-nanosleep.o
+  CCLD     test-nanosleep
+  CC       test-netdb.o
+  CCLD     test-netdb
+  CC       test-netinet_in.o
+  CCLD     test-netinet_in
+  CC       test-nl_langinfo.o
+  CCLD     test-nl_langinfo
+  CC       test-open.o
+  CCLD     test-open
+  CC       test-openat-safer.o
+  CCLD     test-openat-safer
+  CC       test-openat.o
+  CCLD     test-openat
+  CC       test-parse-datetime.o
+  CCLD     test-parse-datetime
+  CC       test-pathmax.o
+  CCLD     test-pathmax
+  CC       test-perror.o
+  CCLD     test-perror
+  CC       test-perror2.o
+  CCLD     test-perror2
+  CC       test-pipe.o
+  CCLD     test-pipe
+  CC       test-posixtm.o
+  CCLD     test-posixtm
+  CC       test-printf-frexp.o
+  CCLD     test-printf-frexp
+  CC       test-printf-frexpl.o
+  CCLD     test-printf-frexpl
+  CC       test-priv-set.o
+  CCLD     test-priv-set
+  CC       test-quotearg-simple.o
+  CCLD     test-quotearg-simple
+  CC       test-raise.o
+  CCLD     test-raise
+  CC       test-rand-isaac.o
+  CCLD     test-rand-isaac
+  CC       test-read-file.o
+  CCLD     test-read-file
+  CC       test-read.o
+  CCLD     test-read
+  CC       test-readlink.o
+  CCLD     test-readlink
+  CC       test-readlinkat.o
+  CCLD     test-readlinkat
+  CC       test-readtokens.o
+  CCLD     test-readtokens
+  CC       test-realloc-gnu.o
+  CCLD     test-realloc-gnu
+  CC       test-regex.o
+  CCLD     test-regex
+  CC       test-remove.o
+  CCLD     test-remove
+  CC       test-rename.o
+  CCLD     test-rename
+  CC       test-rmdir.o
+  CCLD     test-rmdir
+  CC       test-sched.o
+  CCLD     test-sched
+  CC       test-select.o
+  CCLD     test-select
+  CC       test-select-fd.o
+  CCLD     test-select-fd
+  CC       test-select-stdin.o
+  CCLD     test-select-stdin
+  CC       test-setenv.o
+  CCLD     test-setenv
+  CC       test-setlocale1.o
+  CCLD     test-setlocale1
+  CC       test-setlocale2.o
+  CCLD     test-setlocale2
+  CC       test-setsockopt.o
+  CCLD     test-setsockopt
+  CC       test-sigaction.o
+  CCLD     test-sigaction
+  CC       test-signal-h.o
+  CCLD     test-signal-h
+  CC       test-signbit.o
+  CCLD     test-signbit
+  CC       test-sigprocmask.o
+  CCLD     test-sigprocmask
+  CC       test-sleep.o
+  CCLD     test-sleep
+  CC       test-snprintf.o
+  CCLD     test-snprintf
+  CC       test-sockets.o
+  CCLD     test-sockets
+  CC       test-stat.o
+  CCLD     test-stat
+  CC       test-stat-time.o
+  CCLD     test-stat-time
+  CC       test-statat.o
+  CCLD     test-statat
+  CC       test-stdalign.o
+  CCLD     test-stdalign
+  CC       test-stdbool.o
+  CCLD     test-stdbool
+  CC       test-stddef.o
+  CCLD     test-stddef
+  CC       test-stdint.o
+  CCLD     test-stdint
+  CC       test-stdio.o
+  CCLD     test-stdio
+  CC       test-stdlib.o
+  CCLD     test-stdlib
+  CC       test-strerror.o
+  CCLD     test-strerror
+  CC       test-strerror_r.o
+  CCLD     test-strerror_r
+  CC       test-strftime.o
+  CCLD     test-strftime
+  CC       test-striconv.o
+  CCLD     test-striconv
+  CC       test-string.o
+  CCLD     test-string
+  CC       test-strncat.o
+  CCLD     test-strncat
+  CC       test-strnlen.o
+  CCLD     test-strnlen
+  CC       test-strsignal.o
+  CCLD     test-strsignal
+  CC       test-strtod.o
+  CCLD     test-strtod
+  CC       test-strtoimax.o
+  CCLD     test-strtoimax
+  CC       test-strtoll.o
+  CCLD     test-strtoll
+  CC       test-strtoull.o
+  CCLD     test-strtoull
+  CC       test-strtoumax.o
+  CCLD     test-strtoumax
+  CC       test-symlink.o
+  CCLD     test-symlink
+  CC       test-symlinkat.o
+  CCLD     test-symlinkat
+  CC       test-sys_ioctl.o
+  CCLD     test-sys_ioctl
+  CC       test-sys_resource.o
+  CCLD     test-sys_resource
+  CC       test-sys_select.o
+  CCLD     test-sys_select
+  CC       test-sys_socket.o
+  CCLD     test-sys_socket
+  CC       test-sys_stat.o
+  CCLD     test-sys_stat
+  CC       test-sys_time.o
+  CCLD     test-sys_time
+  CC       test-sys_types.o
+  CCLD     test-sys_types
+  CC       test-sys_uio.o
+  CCLD     test-sys_uio
+  CC       test-sys_utsname.o
+  CCLD     test-sys_utsname
+  CC       test-sys_wait.o
+  CCLD     test-sys_wait
+  CC       test-termios.o
+  CCLD     test-termios
+  CC       test-thread_self.o
+  CCLD     test-thread_self
+  CC       test-thread_create.o
+  CCLD     test-thread_create
+  CC       test-time.o
+  CCLD     test-time
+  CC       test-timespec.o
+  CCLD     test-timespec
+  CC       test_tls-test-tls.o
+  CCLD     test-tls
+  CC       test-u64.o
+  CCLD     test-u64
+  CC       test-uname.o
+  CCLD     test-uname
+  CC       test-dup-safer.o
+  CCLD     test-dup-safer
+  CC       test-unistd.o
+  CCLD     test-unistd
+  CC       unistr/test-u8-mbtoucr.o
+  CCLD     test-u8-mbtoucr
+  CC       unistr/test-u8-uctomb.o
+  CCLD     test-u8-uctomb
+  CC       uniwidth/test-uc_width.o
+  CCLD     test-uc_width
+  CC       uniwidth/test-uc_width2.o
+  CCLD     test-uc_width2
+  CC       test-unlink.o
+  CCLD     test-unlink
+  CC       test-unlinkat.o
+  CCLD     test-unlinkat
+  CC       test-unsetenv.o
+  CCLD     test-unsetenv
+  CC       test-userspec.o
+  CCLD     test-userspec
+  CC       test-utimens.o
+  CCLD     test-utimens
+  CC       test-utimensat.o
+  CCLD     test-utimensat
+  CC       test-vasnprintf.o
+  CCLD     test-vasnprintf
+  CC       test-vasprintf-posix.o
+  CCLD     test-vasprintf-posix
+  CC       test-vasprintf.o
+  CCLD     test-vasprintf
+  CC       test-verify.o
+  CCLD     test-verify
+  CC       test-version-etc.o
+  CCLD     test-version-etc
+  CC       test-vfprintf-posix.o
+  CCLD     test-vfprintf-posix
+  CC       test-vprintf-posix.o
+  CCLD     test-vprintf-posix
+  CC       test-wchar.o
+  CCLD     test-wchar
+  CC       test-wcrtomb.o
+  CCLD     test-wcrtomb
+  CC       test-wcrtomb-w32.o
+  CCLD     test-wcrtomb-w32
+  CC       test-wctype-h.o
+  CCLD     test-wctype-h
+  CC       test-wcwidth.o
+  CCLD     test-wcwidth
+  CC       test-write.o
+  CCLD     test-write
+  CC       test-xalloc-die.o
+  CCLD     test-xalloc-die
+  CC       test-xfprintf-posix.o
+  CCLD     test-xfprintf-posix
+  CC       test-xprintf-posix.o
+  CCLD     test-xprintf-posix
+  CC       test-xstrtoimax.o
+  CCLD     test-xstrtoimax
+  CC       test-xstrtol.o
+  CCLD     test-xstrtol
+  CC       test-xstrtoul.o
+  CCLD     test-xstrtoul
+  CC       test-xstrtoumax.o
+  CCLD     test-xstrtoumax
+  CC       test_xvasprintf-test-xvasprintf.o
+  CCLD     test-xvasprintf
+  CC       test-yesno.o
+  CCLD     test-yesno
+make[5]: Leaving directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+make  check-TESTS
+make[5]: Entering directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+make[6]: Entering directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+PASS: test-accept
+SKIP: test-set-mode-acl.sh
+SKIP: test-set-mode-acl-1.sh
+SKIP: test-set-mode-acl-2.sh
+SKIP: test-copy-acl.sh
+SKIP: test-copy-acl-1.sh
+SKIP: test-copy-acl-2.sh
+PASS: test-alignof
+PASS: test-alloca-opt
+PASS: test-areadlink
+PASS: test-areadlink-with-size
+PASS: test-areadlinkat
+PASS: test-argmatch
+PASS: test-argv-iter
+PASS: test-arpa_inet
+PASS: test-base32
+PASS: test-base64
+PASS: test-binary-io.sh
+PASS: test-bind
+PASS: test-bitrotate
+SKIP: test-btowc1.sh
+SKIP: test-btowc2.sh
+PASS: test-c-ctype
+PASS: test-c-strcase.sh
+PASS: test-calloc-gnu
+PASS: test-canonicalize
+PASS: test-chdir
+PASS: test-chown
+PASS: test-cloexec
+PASS: test-close
+PASS: test-closein.sh
+PASS: test-connect
+PASS: test-md5
+PASS: test-sha1
+PASS: test-ctype
+PASS: test-di-set
+PASS: test-dirent-safer
+PASS: test-dirent
+PASS: test-dirname
+PASS: test-dup
+PASS: test-dup2
+PASS: test-environ
+PASS: test-errno
+PASS: test-exclude1.sh
+PASS: test-exclude2.sh
+PASS: test-exclude3.sh
+PASS: test-exclude4.sh
+PASS: test-exclude5.sh
+PASS: test-exclude6.sh
+PASS: test-exclude7.sh
+PASS: test-exclude8.sh
+PASS: test-faccessat
+PASS: test-fadvise
+PASS: test-fchdir
+PASS: test-fchmodat
+PASS: test-fchownat
+PASS: test-fclose
+PASS: test-fcntl-h
+PASS: test-fcntl-safer
+PASS: test-fcntl
+PASS: test-fdatasync
+PASS: test-fdopen
+PASS: test-fdopendir
+PASS: test-fdutimensat
+PASS: test-fflush
+PASS: test-fflush2.sh
+PASS: test-fgetc
+SKIP: test-file-has-acl.sh
+SKIP: test-file-has-acl-1.sh
+SKIP: test-file-has-acl-2.sh
+PASS: test-filenamecat
+PASS: test-filevercmp
+PASS: test-float
+PASS: test-fnmatch
+PASS: test-fopen-safer
+PASS: test-fopen
+PASS: test-fpending.sh
+PASS: test-fpurge
+PASS: test-fputc
+PASS: test-fread
+PASS: test-freadahead.sh
+PASS: test-freading
+PASS: test-freadptr.sh
+PASS: test-freadptr2.sh
+PASS: test-freadseek.sh
+PASS: test-freopen-safer
+PASS: test-freopen
+PASS: test-frexp-nolibm
+PASS: test-frexpl-nolibm
+PASS: test-fseek.sh
+PASS: test-fseek2.sh
+PASS: test-fseeko.sh
+PASS: test-fseeko2.sh
+PASS: test-fseeko3.sh
+PASS: test-fseeko4.sh
+PASS: test-fseterr
+PASS: test-fstat
+PASS: test-fstatat
+PASS: test-fsync
+PASS: test-ftell.sh
+PASS: test-ftell2.sh
+PASS: test-ftell3
+PASS: test-ftello.sh
+PASS: test-ftello2.sh
+PASS: test-ftello3
+PASS: test-ftello4.sh
+PASS: test-ftruncate.sh
+PASS: test-futimens
+PASS: test-fwrite
+PASS: test-getaddrinfo
+PASS: test-getcwd-lgpl
+PASS: test-getcwd.sh
+PASS: test-getdelim
+PASS: test-getdtablesize
+PASS: test-getgroups
+PASS: test-gethostname
+PASS: test-getline
+PASS: test-getloadavg
+PASS: test-getlogin
+PASS: test-getndelim2
+PASS: test-getopt
+PASS: test-getprogname
+PASS: test-gettimeofday
+PASS: test-hash
+PASS: test-i-ring
+PASS: test-iconv-h
+PASS: test-iconv
+PASS: test-ignore-value
+PASS: test-inet_ntop
+PASS: test-inet_pton
+PASS: test-ino-map
+PASS: test-intprops
+PASS: test-inttostr
+PASS: test-inttypes
+PASS: test-ioctl
+PASS: test-isatty
+PASS: test-isblank
+PASS: test-isnand-nolibm
+PASS: test-isnanf-nolibm
+PASS: test-isnanl-nolibm
+PASS: test-iswblank
+PASS: test-langinfo
+PASS: test-lchown
+PASS: test-limits-h
+PASS: test-link
+PASS: test-linkat
+PASS: test-listen
+PASS: test-locale
+PASS: test-localeconv
+PASS: test-localename
+PASS: test-lock
+PASS: test-lseek.sh
+PASS: test-lstat
+PASS: test-malloc-gnu
+PASS: test-malloca
+PASS: test-math
+SKIP: test-mbrtowc1.sh
+SKIP: test-mbrtowc2.sh
+SKIP: test-mbrtowc3.sh
+SKIP: test-mbrtowc4.sh
+PASS: test-mbrtowc5.sh
+SKIP: test-mbrtowc-w32-1.sh
+SKIP: test-mbrtowc-w32-2.sh
+SKIP: test-mbrtowc-w32-3.sh
+SKIP: test-mbrtowc-w32-4.sh
+SKIP: test-mbrtowc-w32-5.sh
+PASS: test-mbsalign
+SKIP: test-mbscasecmp.sh
+SKIP: test-mbsinit.sh
+SKIP: test-mbsrtowcs1.sh
+SKIP: test-mbsrtowcs2.sh
+SKIP: test-mbsrtowcs3.sh
+SKIP: test-mbsrtowcs4.sh
+PASS: test-mbsstr1
+SKIP: test-mbsstr2.sh
+SKIP: test-mbsstr3.sh
+PASS: test-memcasecmp
+PASS: test-memchr
+PASS: test-memchr2
+PASS: test-memcoll
+PASS: test-memrchr
+PASS: test-mkdir
+PASS: test-mkfifo
+PASS: test-mknod
+PASS: test-nanosleep
+PASS: test-netdb
+PASS: test-netinet_in
+PASS: test-nl_langinfo.sh
+PASS: test-open
+PASS: test-openat-safer
+PASS: test-openat
+PASS: test-parse-datetime
+PASS: test-pathmax
+PASS: test-perror.sh
+PASS: test-perror2
+PASS: test-pipe
+PASS: test-posixtm
+PASS: test-printf-frexp
+PASS: test-printf-frexpl
+PASS: test-priv-set
+PASS: test-quotearg-simple
+PASS: test-raise
+PASS: test-rand-isaac
+PASS: test-read-file
+PASS: test-read
+PASS: test-readlink
+PASS: test-readlinkat
+PASS: test-readtokens.sh
+PASS: test-realloc-gnu
+PASS: test-regex
+PASS: test-remove
+PASS: test-rename
+PASS: test-rmdir
+PASS: test-sched
+PASS: test-select
+PASS: test-select-in.sh
+PASS: test-select-out.sh
+PASS: test-setenv
+SKIP: test-setlocale1.sh
+PASS: test-setlocale2.sh
+PASS: test-setsockopt
+PASS: test-sigaction
+PASS: test-signal-h
+PASS: test-signbit
+PASS: test-sigprocmask
+PASS: test-sleep
+PASS: test-snprintf
+PASS: test-sockets
+PASS: test-stat
+PASS: test-stat-time
+PASS: test-statat
+PASS: test-stdalign
+PASS: test-stdbool
+PASS: test-stddef
+PASS: test-stdint
+PASS: test-stdio
+PASS: test-stdlib
+PASS: test-strerror
+PASS: test-strerror_r
+PASS: test-strftime
+PASS: test-striconv
+PASS: test-string
+PASS: test-strncat
+PASS: test-strnlen
+PASS: test-strsignal
+PASS: test-strtod
+PASS: test-strtoimax
+PASS: test-strtoll
+PASS: test-strtoull
+PASS: test-strtoumax
+PASS: test-symlink
+PASS: test-symlinkat
+PASS: test-sys_ioctl
+PASS: test-sys_resource
+PASS: test-sys_select
+PASS: test-sys_socket
+PASS: test-sys_stat
+PASS: test-sys_time
+PASS: test-sys_types
+PASS: test-sys_uio
+PASS: test-sys_utsname
+PASS: test-sys_wait
+PASS: test-termios
+PASS: test-init.sh
+PASS: test-thread_self
+PASS: test-thread_create
+PASS: test-time
+PASS: test-timespec
+PASS: test-tls
+PASS: test-u64
+PASS: test-uname
+PASS: test-dup-safer
+PASS: test-unistd
+PASS: test-u8-mbtoucr
+PASS: test-u8-uctomb
+PASS: test-uc_width
+PASS: uniwidth/test-uc_width2.sh
+PASS: test-unlink
+PASS: test-unlinkat
+PASS: test-unsetenv
+PASS: test-update-copyright.sh
+PASS: test-userspec
+PASS: test-utimens
+PASS: test-utimensat
+PASS: test-vasnprintf
+PASS: test-vasprintf-posix
+PASS: test-vasprintf
+PASS: test-vc-list-files-git.sh
+SKIP: test-vc-list-files-cvs.sh
+PASS: test-verify
+PASS: test-verify.sh
+PASS: test-version-etc.sh
+PASS: test-vfprintf-posix.sh
+PASS: test-vprintf-posix.sh
+PASS: test-wchar
+PASS: test-wcrtomb.sh
+SKIP: test-wcrtomb-w32-1.sh
+SKIP: test-wcrtomb-w32-2.sh
+SKIP: test-wcrtomb-w32-3.sh
+SKIP: test-wcrtomb-w32-4.sh
+SKIP: test-wcrtomb-w32-5.sh
+PASS: test-wctype-h
+PASS: test-wcwidth
+PASS: test-write
+PASS: test-xalloc-die.sh
+PASS: test-xprintf-posix.sh
+PASS: test-xstrtoimax.sh
+PASS: test-xstrtol.sh
+PASS: test-xstrtoumax.sh
+PASS: test-xvasprintf
+PASS: test-yesno.sh
+============================================================================
+Testsuite summary for GNU coreutils 8.26
+============================================================================
+# TOTAL: 311
+# PASS:  276
+# SKIP:  35
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[6]: Leaving directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+make[5]: Leaving directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+make[4]: Leaving directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+make[3]: Leaving directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+make[2]: Leaving directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+make[1]: Leaving directory '/mnt/lfs/sources/coreutils-8.26'
+lfs@Minty /mnt/lfs/sources/coreutils-8.26 $ make install
+make  install-recursive
+make[1]: Entering directory '/mnt/lfs/sources/coreutils-8.26'
+Making install in po
+make[2]: Entering directory '/mnt/lfs/sources/coreutils-8.26/po'
+installing af.gmo as /tools/share/locale/af/LC_MESSAGES/coreutils.mo
+installing af.gmo link as /tools/share/locale/af/LC_TIME/coreutils.mo
+installing be.gmo as /tools/share/locale/be/LC_MESSAGES/coreutils.mo
+installing be.gmo link as /tools/share/locale/be/LC_TIME/coreutils.mo
+installing bg.gmo as /tools/share/locale/bg/LC_MESSAGES/coreutils.mo
+installing bg.gmo link as /tools/share/locale/bg/LC_TIME/coreutils.mo
+installing ca.gmo as /tools/share/locale/ca/LC_MESSAGES/coreutils.mo
+installing ca.gmo link as /tools/share/locale/ca/LC_TIME/coreutils.mo
+installing cs.gmo as /tools/share/locale/cs/LC_MESSAGES/coreutils.mo
+installing cs.gmo link as /tools/share/locale/cs/LC_TIME/coreutils.mo
+installing da.gmo as /tools/share/locale/da/LC_MESSAGES/coreutils.mo
+installing da.gmo link as /tools/share/locale/da/LC_TIME/coreutils.mo
+installing de.gmo as /tools/share/locale/de/LC_MESSAGES/coreutils.mo
+installing de.gmo link as /tools/share/locale/de/LC_TIME/coreutils.mo
+installing el.gmo as /tools/share/locale/el/LC_MESSAGES/coreutils.mo
+installing el.gmo link as /tools/share/locale/el/LC_TIME/coreutils.mo
+installing eo.gmo as /tools/share/locale/eo/LC_MESSAGES/coreutils.mo
+installing eo.gmo link as /tools/share/locale/eo/LC_TIME/coreutils.mo
+installing es.gmo as /tools/share/locale/es/LC_MESSAGES/coreutils.mo
+installing es.gmo link as /tools/share/locale/es/LC_TIME/coreutils.mo
+installing et.gmo as /tools/share/locale/et/LC_MESSAGES/coreutils.mo
+installing et.gmo link as /tools/share/locale/et/LC_TIME/coreutils.mo
+installing eu.gmo as /tools/share/locale/eu/LC_MESSAGES/coreutils.mo
+installing eu.gmo link as /tools/share/locale/eu/LC_TIME/coreutils.mo
+installing fi.gmo as /tools/share/locale/fi/LC_MESSAGES/coreutils.mo
+installing fi.gmo link as /tools/share/locale/fi/LC_TIME/coreutils.mo
+installing fr.gmo as /tools/share/locale/fr/LC_MESSAGES/coreutils.mo
+installing fr.gmo link as /tools/share/locale/fr/LC_TIME/coreutils.mo
+installing ga.gmo as /tools/share/locale/ga/LC_MESSAGES/coreutils.mo
+installing ga.gmo link as /tools/share/locale/ga/LC_TIME/coreutils.mo
+installing gl.gmo as /tools/share/locale/gl/LC_MESSAGES/coreutils.mo
+installing gl.gmo link as /tools/share/locale/gl/LC_TIME/coreutils.mo
+installing hr.gmo as /tools/share/locale/hr/LC_MESSAGES/coreutils.mo
+installing hr.gmo link as /tools/share/locale/hr/LC_TIME/coreutils.mo
+installing hu.gmo as /tools/share/locale/hu/LC_MESSAGES/coreutils.mo
+installing hu.gmo link as /tools/share/locale/hu/LC_TIME/coreutils.mo
+installing ia.gmo as /tools/share/locale/ia/LC_MESSAGES/coreutils.mo
+installing ia.gmo link as /tools/share/locale/ia/LC_TIME/coreutils.mo
+installing id.gmo as /tools/share/locale/id/LC_MESSAGES/coreutils.mo
+installing id.gmo link as /tools/share/locale/id/LC_TIME/coreutils.mo
+installing it.gmo as /tools/share/locale/it/LC_MESSAGES/coreutils.mo
+installing it.gmo link as /tools/share/locale/it/LC_TIME/coreutils.mo
+installing ja.gmo as /tools/share/locale/ja/LC_MESSAGES/coreutils.mo
+installing ja.gmo link as /tools/share/locale/ja/LC_TIME/coreutils.mo
+installing kk.gmo as /tools/share/locale/kk/LC_MESSAGES/coreutils.mo
+installing kk.gmo link as /tools/share/locale/kk/LC_TIME/coreutils.mo
+installing ko.gmo as /tools/share/locale/ko/LC_MESSAGES/coreutils.mo
+installing ko.gmo link as /tools/share/locale/ko/LC_TIME/coreutils.mo
+installing lg.gmo as /tools/share/locale/lg/LC_MESSAGES/coreutils.mo
+installing lg.gmo link as /tools/share/locale/lg/LC_TIME/coreutils.mo
+installing lt.gmo as /tools/share/locale/lt/LC_MESSAGES/coreutils.mo
+installing lt.gmo link as /tools/share/locale/lt/LC_TIME/coreutils.mo
+installing ms.gmo as /tools/share/locale/ms/LC_MESSAGES/coreutils.mo
+installing ms.gmo link as /tools/share/locale/ms/LC_TIME/coreutils.mo
+installing nb.gmo as /tools/share/locale/nb/LC_MESSAGES/coreutils.mo
+installing nb.gmo link as /tools/share/locale/nb/LC_TIME/coreutils.mo
+installing nl.gmo as /tools/share/locale/nl/LC_MESSAGES/coreutils.mo
+installing nl.gmo link as /tools/share/locale/nl/LC_TIME/coreutils.mo
+installing pl.gmo as /tools/share/locale/pl/LC_MESSAGES/coreutils.mo
+installing pl.gmo link as /tools/share/locale/pl/LC_TIME/coreutils.mo
+installing pt.gmo as /tools/share/locale/pt/LC_MESSAGES/coreutils.mo
+installing pt.gmo link as /tools/share/locale/pt/LC_TIME/coreutils.mo
+installing pt_BR.gmo as /tools/share/locale/pt_BR/LC_MESSAGES/coreutils.mo
+installing pt_BR.gmo link as /tools/share/locale/pt_BR/LC_TIME/coreutils.mo
+installing ro.gmo as /tools/share/locale/ro/LC_MESSAGES/coreutils.mo
+installing ro.gmo link as /tools/share/locale/ro/LC_TIME/coreutils.mo
+installing ru.gmo as /tools/share/locale/ru/LC_MESSAGES/coreutils.mo
+installing ru.gmo link as /tools/share/locale/ru/LC_TIME/coreutils.mo
+installing sk.gmo as /tools/share/locale/sk/LC_MESSAGES/coreutils.mo
+installing sk.gmo link as /tools/share/locale/sk/LC_TIME/coreutils.mo
+installing sl.gmo as /tools/share/locale/sl/LC_MESSAGES/coreutils.mo
+installing sl.gmo link as /tools/share/locale/sl/LC_TIME/coreutils.mo
+installing sr.gmo as /tools/share/locale/sr/LC_MESSAGES/coreutils.mo
+installing sr.gmo link as /tools/share/locale/sr/LC_TIME/coreutils.mo
+installing sv.gmo as /tools/share/locale/sv/LC_MESSAGES/coreutils.mo
+installing sv.gmo link as /tools/share/locale/sv/LC_TIME/coreutils.mo
+installing tr.gmo as /tools/share/locale/tr/LC_MESSAGES/coreutils.mo
+installing tr.gmo link as /tools/share/locale/tr/LC_TIME/coreutils.mo
+installing uk.gmo as /tools/share/locale/uk/LC_MESSAGES/coreutils.mo
+installing uk.gmo link as /tools/share/locale/uk/LC_TIME/coreutils.mo
+installing vi.gmo as /tools/share/locale/vi/LC_MESSAGES/coreutils.mo
+installing vi.gmo link as /tools/share/locale/vi/LC_TIME/coreutils.mo
+installing zh_CN.gmo as /tools/share/locale/zh_CN/LC_MESSAGES/coreutils.mo
+installing zh_CN.gmo link as /tools/share/locale/zh_CN/LC_TIME/coreutils.mo
+installing zh_TW.gmo as /tools/share/locale/zh_TW/LC_MESSAGES/coreutils.mo
+installing zh_TW.gmo link as /tools/share/locale/zh_TW/LC_TIME/coreutils.mo
+if test "coreutils" = "gettext-tools"; then \
+  /bin/mkdir -p /tools/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /tools/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /tools/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/mnt/lfs/sources/coreutils-8.26/po'
+Making install in .
+make[2]: Entering directory '/mnt/lfs/sources/coreutils-8.26'
+make[3]: Entering directory '/mnt/lfs/sources/coreutils-8.26'
+ /bin/mkdir -p '/tools/bin'
+  src/ginstall -c src/ginstall '/tools/bin/./install'
+  src/ginstall -c src/chroot src/hostid src/nice src/who src/users src/pinky src/uptime src/stty src/df src/stdbuf src/[ src/b2sum src/base64 src/base32 src/basename src/cat src/chcon src/chgrp src/chmod src/chown src/cksum src/comm src/cp src/csplit src/cut src/date src/dd src/dir src/dircolors src/dirname src/du src/echo src/env src/expand src/expr src/factor src/false src/fmt src/fold src/groups src/head src/id src/join src/kill src/link src/ln src/logname src/ls src/md5sum src/mkdir src/mkfifo src/mknod src/mktemp src/mv src/nl src/nproc src/nohup src/numfmt src/od src/paste src/pathchk src/pr src/printenv src/printf src/ptx src/pwd src/readlink src/realpath src/rm src/rmdir src/runcon src/seq src/sha1sum src/sha224sum src/sha256sum src/sha384sum src/sha512sum src/shred src/shuf src/sleep src/sort src/split src/stat src/sum src/sync src/tac src/tail src/tee src/test src/timeout src/touch src/tr src/true src/truncate src/tsort src/tty src/uname src/unexpand src/uniq src/unlink src/vdir src/wc src/whoami src/yes src/hostname '/tools/bin'
+if test yes = no; then \
+  case 'linux-gnu' in \
+    darwin[56]*) \
+      need_charset_alias=true ;; \
+    darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+      need_charset_alias=false ;; \
+    *) \
+      need_charset_alias=true ;; \
+  esac ; \
+else \
+  need_charset_alias=false ; \
+fi ; \
+if $need_charset_alias; then \
+  /bin/sh /mnt/lfs/sources/coreutils-8.26/build-aux/install-sh -d /tools/lib ; \
+fi ; \
+if test -f /tools/lib/charset.alias; then \
+  sed -f lib/ref-add.sed /tools/lib/charset.alias > /tools/lib/charset.tmp ; \
+  src/ginstall -c -m 644 /tools/lib/charset.tmp /tools/lib/charset.alias ; \
+  rm -f /tools/lib/charset.tmp ; \
+else \
+  if $need_charset_alias; then \
+    sed -f lib/ref-add.sed lib/charset.alias > /tools/lib/charset.tmp ; \
+    src/ginstall -c -m 644 /tools/lib/charset.tmp /tools/lib/charset.alias ; \
+    rm -f /tools/lib/charset.tmp ; \
+  fi ; \
+fi
+ /bin/mkdir -p '/tools/libexec/coreutils'
+  src/ginstall -c src/libstdbuf.so '/tools/libexec/coreutils'
+make  install-exec-hook
+make[4]: Entering directory '/mnt/lfs/sources/coreutils-8.26'
+make[4]: Leaving directory '/mnt/lfs/sources/coreutils-8.26'
+ /bin/mkdir -p '/tools/share/info'
+ src/ginstall -c -m 644 ./doc/coreutils.info '/tools/share/info'
+ install-info --info-dir='/tools/share/info' '/tools/share/info/coreutils.info'
+ /bin/mkdir -p '/tools/share/man/man1'
+ src/ginstall -c -m 644 man/chroot.1 man/hostid.1 man/nice.1 man/who.1 man/users.1 man/pinky.1 man/uptime.1 man/stty.1 man/df.1 man/stdbuf.1 man/b2sum.1 man/base64.1 man/base32.1 man/basename.1 man/cat.1 man/chcon.1 man/chgrp.1 man/chmod.1 man/chown.1 man/cksum.1 man/comm.1 man/cp.1 man/csplit.1 man/cut.1 man/date.1 man/dd.1 man/dir.1 man/dircolors.1 man/dirname.1 man/du.1 man/echo.1 man/env.1 man/expand.1 man/expr.1 man/factor.1 man/false.1 man/fmt.1 man/fold.1 man/install.1 man/groups.1 '/tools/share/man/man1'
+ src/ginstall -c -m 644 man/head.1 man/id.1 man/join.1 man/kill.1 man/link.1 man/ln.1 man/logname.1 man/ls.1 man/md5sum.1 man/mkdir.1 man/mkfifo.1 man/mknod.1 man/mktemp.1 man/mv.1 man/nl.1 man/nproc.1 man/nohup.1 man/numfmt.1 man/od.1 man/paste.1 man/pathchk.1 man/pr.1 man/printenv.1 man/printf.1 man/ptx.1 man/pwd.1 man/readlink.1 man/realpath.1 man/rm.1 man/rmdir.1 man/runcon.1 man/seq.1 man/sha1sum.1 man/sha224sum.1 man/sha256sum.1 man/sha384sum.1 man/sha512sum.1 man/shred.1 man/shuf.1 man/sleep.1 '/tools/share/man/man1'
+ src/ginstall -c -m 644 man/sort.1 man/split.1 man/stat.1 man/sum.1 man/sync.1 man/tac.1 man/tail.1 man/tee.1 man/test.1 man/timeout.1 man/touch.1 man/tr.1 man/true.1 man/truncate.1 man/tsort.1 man/tty.1 man/uname.1 man/unexpand.1 man/uniq.1 man/unlink.1 man/vdir.1 man/wc.1 man/whoami.1 man/yes.1 man/hostname.1 '/tools/share/man/man1'
+make[3]: Leaving directory '/mnt/lfs/sources/coreutils-8.26'
+make[2]: Leaving directory '/mnt/lfs/sources/coreutils-8.26'
+Making install in gnulib-tests
+make[2]: Entering directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+make  install-recursive
+make[3]: Entering directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+Making install in .
+make[4]: Entering directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+make[5]: Entering directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+make[5]: Leaving directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+make[4]: Leaving directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+make[3]: Leaving directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+make[2]: Leaving directory '/mnt/lfs/sources/coreutils-8.26/gnulib-tests'
+make[1]: Leaving directory '/mnt/lfs/sources/coreutils-8.26'
+lfs@Minty /mnt/lfs/sources/coreutils-8.26 $

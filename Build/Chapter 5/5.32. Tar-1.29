@@ -1,0 +1,1005 @@
+5.32. Tar-1.29
+checking whether link obeys POSIX... yes
+checking for __xpg4... no
+checking whether link(2) dereferences a symlink... no
+checking whether linkat() can link symlinks... yes
+checking whether linkat handles trailing slash correctly... yes
+checking whether locale.h conforms to POSIX:2001... yes
+checking whether locale.h defines locale_t... yes
+checking whether struct lconv is properly defined... yes
+checking whether setlocale is declared without a macro... yes
+checking whether duplocale is declared without a macro... yes
+checking whether lseek detects pipes... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... (cached) yes
+checking whether mbrtowc handles incomplete characters... guessing yes
+checking whether mbrtowc works as well as mbtowc... guessing yes
+checking whether mbrtowc handles a NULL pwc argument... guessing yes
+checking whether mbrtowc handles a NULL string argument... guessing yes
+checking whether mbrtowc has a correct return value... guessing yes
+checking whether mbrtowc returns 0 when parsing a NUL character... guessing yes
+checking whether mbrtowc works on empty input... yes
+checking whether mbrtowc handles incomplete characters... (cached) guessing yes
+checking whether mbrtowc works as well as mbtowc... (cached) guessing yes
+checking whether mbrtowc handles incomplete characters... (cached) guessing yes
+checking whether mbrtowc works as well as mbtowc... (cached) guessing yes
+checking whether mbsrtowcs works... guessing yes
+checking for mempcpy... (cached) yes
+checking for memrchr... yes
+checking whether mkdir handles trailing slash... yes
+checking whether mkdir handles trailing dot... yes
+checking for mkdtemp... yes
+checking whether mkfifo rejects trailing slashes... yes
+checking whether mknod can create fifo without root privileges... yes
+checking for working mktime... yes
+checking for __mktime_internal... no
+checking whether YESEXPR works... yes
+checking for obstacks that work with any size object... no
+checking whether open recognizes a trailing slash... yes
+checking for opendir... yes
+checking for struct tm.tm_zone... yes
+checking for getppriv... no
+checking whether program_invocation_name is declared... (cached) yes
+checking whether program_invocation_short_name is declared... (cached) yes
+checking for raise... yes
+checking for rawmemchr... yes
+checking for readdir... yes
+checking whether readlink signature is correct... yes
+checking whether readlink handles trailing slash correctly... yes
+checking whether readlinkat signature is correct... yes
+checking for working re_compile_pattern... yes
+checking whether rename honors trailing slash on destination... yes
+checking whether rename honors trailing slash on source... yes
+checking whether rename manages hard links correctly... yes
+checking whether rename manages existing destinations correctly... yes
+checking for rewinddir... yes
+checking whether rmdir works... yes
+checking for rpmatch... yes
+checking selinux/flask.h usability... no
+checking selinux/flask.h presence... no
+checking for selinux/flask.h... no
+checking whether setenv validates arguments... yes
+checking for volatile sig_atomic_t... yes
+checking for sighandler_t... yes
+checking whether pthread_sigmask is declared without a macro... yes
+checking whether sigaction is declared without a macro... yes
+checking whether sigaddset is declared without a macro... yes
+checking whether sigdelset is declared without a macro... yes
+checking whether sigemptyset is declared without a macro... yes
+checking whether sigfillset is declared without a macro... yes
+checking whether sigismember is declared without a macro... yes
+checking whether sigpending is declared without a macro... yes
+checking whether sigprocmask is declared without a macro... yes
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... yes
+checking whether sleep is declared... yes
+checking for working sleep... yes
+checking for snprintf... (cached) yes
+checking whether snprintf respects a size of 1... yes
+checking whether printf supports POSIX/XSI format strings with positions... yes
+checking for ssize_t... (cached) yes
+checking whether stat handles trailing slashes on directories... yes
+checking whether stat handles trailing slashes on files... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for struct stat.st_birthtimespec.tv_nsec... no
+checking for struct stat.st_birthtimensec... no
+checking for struct stat.st_birthtim.tv_nsec... no
+checking for working stdalign.h... yes
+checking for va_copy... yes
+checking for max_align_t... (cached) yes
+checking whether NULL can be used in arbitrary expressions... (cached) yes
+checking which flavor of printf attribute matches inttypes macros... system
+checking whether dprintf is declared without a macro... yes
+checking whether fpurge is declared without a macro... no
+checking whether fseeko is declared without a macro... yes
+checking whether ftello is declared without a macro... yes
+checking whether getdelim is declared without a macro... yes
+checking whether getline is declared without a macro... yes
+checking whether gets is declared without a macro... no
+checking whether pclose is declared without a macro... yes
+checking whether popen is declared without a macro... yes
+checking whether renameat is declared without a macro... yes
+checking whether snprintf is declared without a macro... yes
+checking whether tmpfile is declared without a macro... yes
+checking whether vdprintf is declared without a macro... yes
+checking whether vsnprintf is declared without a macro... yes
+checking whether _Exit is declared without a macro... yes
+checking whether atoll is declared without a macro... yes
+checking whether canonicalize_file_name is declared without a macro... yes
+checking whether getloadavg is declared without a macro... yes
+checking whether getsubopt is declared without a macro... yes
+checking whether grantpt is declared without a macro... yes
+checking whether initstate is declared without a macro... yes
+checking whether initstate_r is declared without a macro... yes
+checking whether mkdtemp is declared without a macro... yes
+checking whether mkostemp is declared without a macro... yes
+checking whether mkostemps is declared without a macro... yes
+checking whether mkstemp is declared without a macro... yes
+checking whether mkstemps is declared without a macro... yes
+checking whether posix_openpt is declared without a macro... yes
+checking whether ptsname is declared without a macro... yes
+checking whether ptsname_r is declared without a macro... yes
+checking whether random is declared without a macro... yes
+checking whether random_r is declared without a macro... yes
+checking whether realpath is declared without a macro... yes
+checking whether rpmatch is declared without a macro... yes
+checking whether secure_getenv is declared without a macro... yes
+checking whether setenv is declared without a macro... yes
+checking whether setstate is declared without a macro... yes
+checking whether setstate_r is declared without a macro... yes
+checking whether srandom is declared without a macro... yes
+checking whether srandom_r is declared without a macro... yes
+checking whether strtod is declared without a macro... yes
+checking whether strtoll is declared without a macro... yes
+checking whether strtoull is declared without a macro... yes
+checking whether unlockpt is declared without a macro... yes
+checking whether unsetenv is declared without a macro... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strncasecmp... yes
+checking whether strncasecmp is declared... (cached) yes
+checking for strchrnul... yes
+checking whether strchrnul works... yes
+checking for working strerror function... yes
+checking for working strndup... yes
+checking for working strnlen... yes
+checking whether strtoimax works... yes
+checking for strtol... yes
+checking for strtoll... yes
+checking for strtoul... yes
+checking for strtoull... yes
+checking whether symlink handles trailing slash correctly... yes
+checking whether symlinkat handles trailing slash correctly... yes
+checking for nlink_t... (cached) yes
+checking whether fchmodat is declared without a macro... (cached) yes
+checking whether fstat is declared without a macro... (cached) yes
+checking whether fstatat is declared without a macro... (cached) yes
+checking whether futimens is declared without a macro... (cached) yes
+checking whether lchmod is declared without a macro... (cached) yes
+checking whether lstat is declared without a macro... (cached) yes
+checking whether mkdirat is declared without a macro... (cached) yes
+checking whether mkfifo is declared without a macro... (cached) yes
+checking whether mkfifoat is declared without a macro... (cached) yes
+checking whether mknod is declared without a macro... (cached) yes
+checking whether mknodat is declared without a macro... (cached) yes
+checking whether stat is declared without a macro... (cached) yes
+checking whether utimensat is declared without a macro... (cached) yes
+checking whether localtime_r is declared... yes
+checking whether localtime_r is compatible with its POSIX signature... yes
+checking for timezone_t... no
+checking whether chdir is declared without a macro... yes
+checking whether chown is declared without a macro... yes
+checking whether dup is declared without a macro... yes
+checking whether dup2 is declared without a macro... yes
+checking whether dup3 is declared without a macro... yes
+checking whether environ is declared without a macro... yes
+checking whether euidaccess is declared without a macro... yes
+checking whether faccessat is declared without a macro... yes
+checking whether fchdir is declared without a macro... yes
+checking whether fchownat is declared without a macro... yes
+checking whether fdatasync is declared without a macro... yes
+checking whether fsync is declared without a macro... yes
+checking whether ftruncate is declared without a macro... yes
+checking whether getcwd is declared without a macro... yes
+checking whether getdomainname is declared without a macro... yes
+checking whether getdtablesize is declared without a macro... yes
+checking whether getgroups is declared without a macro... yes
+checking whether gethostname is declared without a macro... yes
+checking whether getlogin is declared without a macro... yes
+checking whether getlogin_r is declared without a macro... yes
+checking whether getpagesize is declared without a macro... yes
+checking whether getusershell is declared without a macro... yes
+checking whether setusershell is declared without a macro... yes
+checking whether endusershell is declared without a macro... yes
+checking whether group_member is declared without a macro... yes
+checking whether isatty is declared without a macro... yes
+checking whether lchown is declared without a macro... yes
+checking whether link is declared without a macro... yes
+checking whether linkat is declared without a macro... yes
+checking whether lseek is declared without a macro... yes
+checking whether pipe is declared without a macro... yes
+checking whether pipe2 is declared without a macro... yes
+checking whether pread is declared without a macro... yes
+checking whether pwrite is declared without a macro... yes
+checking whether readlink is declared without a macro... yes
+checking whether readlinkat is declared without a macro... yes
+checking whether rmdir is declared without a macro... yes
+checking whether sethostname is declared without a macro... yes
+checking whether sleep is declared without a macro... yes
+checking whether symlink is declared without a macro... yes
+checking whether symlinkat is declared without a macro... yes
+checking whether ttyname_r is declared without a macro... yes
+checking whether unlink is declared without a macro... yes
+checking whether unlinkat is declared without a macro... yes
+checking whether usleep is declared without a macro... yes
+checking whether unlink honors trailing slashes... yes
+checking whether unlink of a parent directory fails as it should... guessing yes
+checking for unsetenv... yes
+checking for unsetenv() return type... int
+checking whether unsetenv obeys POSIX... yes
+checking whether utimensat works... needs runtime check
+checking for ptrdiff_t... yes
+checking for vasprintf... yes
+checking for vsnprintf... yes
+checking whether snprintf respects a size of 1... (cached) yes
+checking whether printf supports POSIX/XSI format strings with positions... (cached) yes
+checking whether btowc is declared without a macro... yes
+checking whether wctob is declared without a macro... yes
+checking whether mbsinit is declared without a macro... yes
+checking whether mbrtowc is declared without a macro... yes
+checking whether mbrlen is declared without a macro... yes
+checking whether mbsrtowcs is declared without a macro... yes
+checking whether mbsnrtowcs is declared without a macro... yes
+checking whether wcrtomb is declared without a macro... yes
+checking whether wcsrtombs is declared without a macro... yes
+checking whether wcsnrtombs is declared without a macro... yes
+checking whether wcwidth is declared without a macro... yes
+checking whether wmemchr is declared without a macro... yes
+checking whether wmemcmp is declared without a macro... yes
+checking whether wmemcpy is declared without a macro... yes
+checking whether wmemmove is declared without a macro... yes
+checking whether wmemset is declared without a macro... yes
+checking whether wcslen is declared without a macro... yes
+checking whether wcsnlen is declared without a macro... yes
+checking whether wcscpy is declared without a macro... yes
+checking whether wcpcpy is declared without a macro... yes
+checking whether wcsncpy is declared without a macro... yes
+checking whether wcpncpy is declared without a macro... yes
+checking whether wcscat is declared without a macro... yes
+checking whether wcsncat is declared without a macro... yes
+checking whether wcscmp is declared without a macro... yes
+checking whether wcsncmp is declared without a macro... yes
+checking whether wcscasecmp is declared without a macro... yes
+checking whether wcsncasecmp is declared without a macro... yes
+checking whether wcscoll is declared without a macro... yes
+checking whether wcsxfrm is declared without a macro... yes
+checking whether wcsdup is declared without a macro... yes
+checking whether wcschr is declared without a macro... yes
+checking whether wcsrchr is declared without a macro... yes
+checking whether wcscspn is declared without a macro... yes
+checking whether wcsspn is declared without a macro... yes
+checking whether wcspbrk is declared without a macro... yes
+checking whether wcsstr is declared without a macro... yes
+checking whether wcstok is declared without a macro... yes
+checking whether wcswidth is declared without a macro... yes
+checking whether mbrtowc handles incomplete characters... (cached) guessing yes
+checking whether mbrtowc works as well as mbtowc... (cached) guessing yes
+checking whether wcrtomb return value is correct... guessing yes
+checking whether iswcntrl works... (cached) yes
+checking for towlower... (cached) yes
+checking for wctype_t... (cached) yes
+checking for wctrans_t... (cached) yes
+checking whether wctype is declared without a macro... (cached) yes
+checking whether iswctype is declared without a macro... (cached) yes
+checking whether wctrans is declared without a macro... (cached) yes
+checking whether towctrans is declared without a macro... (cached) yes
+checking whether wcwidth is declared... (cached) yes
+checking whether wcwidth works reasonably in UTF-8 locales... yes
+checking for stdint.h... (cached) yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for struct stat.st_blksize... yes
+checking for library containing setsockopt... none required
+checking for library containing setsockopt... (cached) none required
+checking for sys/mtio.h... (cached) yes
+checking which ioctl field to test for reversed bytes... mt_type
+checking whether to build rmt... yes
+checking for remote tape header files... yes
+checking for sys/buf.h... (cached) no
+checking for struct stat.st_blksize... (cached) yes
+checking for library containing gethostbyname... none required
+checking sys/xattr.h usability... yes
+checking sys/xattr.h presence... yes
+checking for sys/xattr.h... yes
+checking for library containing getxattr... none required
+checking for library containing fgetxattr... none required
+checking for library containing lgetxattr... none required
+checking for library containing setxattr... none required
+checking for library containing fsetxattr... none required
+checking for library containing lsetxattr... none required
+checking for library containing listxattr... none required
+checking for library containing flistxattr... none required
+checking for library containing llistxattr... none required
+checking whether getgrgid is declared... yes
+checking whether getpwuid is declared... yes
+checking whether time is declared... yes
+checking for waitpid... yes
+checking for remote shell... /usr/bin/rsh
+checking for default archive format... GNU
+checking for default archive... -
+checking for default blocking... 20
+checking for default quoting style... escape
+checking for ld used by gcc... /mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld
+checking if the linker (/mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration...
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking iconv.h usability... yes
+checking iconv.h presence... yes
+checking for iconv.h... yes
+checking for iconv_t... yes
+checking for a sed that does not truncate output... /tools/bin/sed
+checking whether NLS is requested... yes
+checking for msgfmt... /tools/bin/msgfmt
+checking for gmsgfmt... /tools/bin/msgfmt
+checking for xgettext... /tools/bin/xgettext
+checking for msgmerge... /tools/bin/msgmerge
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating tests/Makefile
+config.status: creating tests/atlocal
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating gnu/Makefile
+config.status: creating lib/Makefile
+config.status: creating po/Makefile.in
+config.status: creating scripts/Makefile
+config.status: creating rmt/Makefile
+config.status: creating src/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing tests/atconfig commands
+lfs@Minty /mnt/lfs/sources/tar-1.29 $ make
+make  all-recursive
+make[1]: Entering directory '/mnt/lfs/sources/tar-1.29'
+Making all in doc
+make[2]: Entering directory '/mnt/lfs/sources/tar-1.29/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/tar-1.29/doc'
+Making all in gnu
+make[2]: Entering directory '/mnt/lfs/sources/tar-1.29/gnu'
+  GEN      alloca.h
+  GEN      configmake.h
+  GEN      c++defs.h
+  GEN      arg-nonnull.h
+  GEN      warn-on-use.h
+  GEN      dirent.h
+  GEN      fcntl.h
+  GEN      getopt.h
+  GEN      inttypes.h
+  GEN      langinfo.h
+  GEN      locale.h
+  GEN      unused-parameter.h
+  GEN      selinux/selinux.h
+  GEN      selinux/context.h
+  GEN      signal.h
+  GEN      stdio.h
+  GEN      stdlib.h
+  GEN      string.h
+  GEN      strings.h
+  GEN      sys/stat.h
+  GEN      sys/time.h
+  GEN      sys/types.h
+  GEN      time.h
+  GEN      unistd.h
+  GEN      unitypes.h
+  GEN      uniwidth.h
+  GEN      wchar.h
+  GEN      wctype.h
+make  all-recursive
+make[3]: Entering directory '/mnt/lfs/sources/tar-1.29/gnu'
+make[4]: Entering directory '/mnt/lfs/sources/tar-1.29/gnu'
+  CC       acl-errno-valid.o
+  CC       acl-internal.o
+  CC       get-permissions.o
+  CC       set-permissions.o
+  CC       allocator.o
+  CC       areadlink.o
+  CC       areadlink-with-size.o
+  CC       areadlinkat.o
+  CC       areadlinkat-with-size.o
+  CC       argmatch.o
+  CC       argp-ba.o
+  CC       argp-eexst.o
+  CC       argp-fmtstream.o
+  CC       argp-fs-xinl.o
+  CC       argp-help.o
+  CC       argp-parse.o
+  CC       argp-pin.o
+  CC       argp-pv.o
+  CC       argp-pvh.o
+  CC       argp-xinl.o
+  CC       argp-version-etc.o
+  CC       backupfile.o
+  CC       bitrotate.o
+  CC       c-ctype.o
+  CC       c-strcasecmp.o
+  CC       c-strncasecmp.o
+  CC       careadlinkat.o
+  CC       cloexec.o
+  CC       close-stream.o
+  CC       closeout.o
+  CC       opendir-safer.o
+  CC       dirname.o
+  CC       basename.o
+  CC       dirname-lgpl.o
+  CC       basename-lgpl.o
+  CC       stripslash.o
+  CC       exclude.o
+  CC       exitfail.o
+  CC       chmodat.o
+  CC       chownat.o
+  CC       fd-hook.o
+  CC       fdutimensat.o
+  CC       file-has-acl.o
+  CC       filenamecat-lgpl.o
+  CC       fprintftime.o
+  CC       full-write.o
+  CC       gettime.o
+  CC       hash.o
+  CC       human.o
+  CC       imaxtostr.o
+  CC       inttostr.o
+  CC       offtostr.o
+  CC       uinttostr.o
+  CC       umaxtostr.o
+  CC       localcharset.o
+  CC       malloca.o
+  CC       mbchar.o
+  CC       mbscasecmp.o
+  CC       mbuiter.o
+  CC       modechange.o
+  CC       openat-die.o
+  CC       parse-datetime.o
+  CC       priv-set.o
+  CC       progname.o
+  CC       quotearg.o
+  CC       safe-read.o
+  CC       safe-write.o
+  CC       save-cwd.o
+  CC       savedir.o
+  CC       se-context.o
+  CC       se-selinux.o
+  CC       stat-time.o
+  CC       statat.o
+  CC       strftime.o
+  CC       strnlen1.o
+  CC       tempname.o
+  CC       timespec.o
+  CC       timespec-sub.o
+  CC       unistd.o
+  CC       dup-safer.o
+  CC       fd-safer.o
+  CC       pipe-safer.o
+  CC       uniwidth/width.o
+  CC       unlinkdir.o
+  CC       utimens.o
+  CC       version-etc.o
+  CC       version-etc-fsf.o
+  CC       wctype-h.o
+  CC       xmalloc.o
+  CC       xalloc-die.o
+  CC       xgetcwd.o
+  CC       xsize.o
+  CC       xstrndup.o
+  CC       xstrtol.o
+  CC       xstrtoul.o
+  CC       xstrtol-error.o
+  CC       xstrtoumax.o
+  CC       xvasprintf.o
+  CC       xasprintf.o
+  CC       asnprintf.o
+  CC       chdir-long.o
+  CC       fcntl.o
+  CC       futimens.o
+  CC       getopt.o
+  CC       getopt1.o
+  CC       mktime.o
+  CC       obstack.o
+  CC       openat-proc.o
+  CC       printf-args.o
+  CC       printf-parse.o
+  CC       selinux-at.o
+  CC       time_rz.o
+  CC       utimensat.o
+  CC       vasnprintf.o
+  AR       libgnu.a
+  GEN      charset.alias
+  GEN      ref-add.sed
+  GEN      ref-del.sed
+make[4]: Leaving directory '/mnt/lfs/sources/tar-1.29/gnu'
+make[3]: Leaving directory '/mnt/lfs/sources/tar-1.29/gnu'
+make[2]: Leaving directory '/mnt/lfs/sources/tar-1.29/gnu'
+Making all in lib
+make[2]: Entering directory '/mnt/lfs/sources/tar-1.29/lib'
+  GEN      rmt-command.h
+make  all-am
+make[3]: Entering directory '/mnt/lfs/sources/tar-1.29/lib'
+  CC       paxerror.o
+  CC       paxexit-status.o
+  CC       paxnames.o
+  CC       rtapelib.o
+  CC       stdopen.o
+  CC       wordsplit.o
+  CC       xattr-at.o
+  AR       libtar.a
+make[3]: Leaving directory '/mnt/lfs/sources/tar-1.29/lib'
+make[2]: Leaving directory '/mnt/lfs/sources/tar-1.29/lib'
+Making all in rmt
+make[2]: Entering directory '/mnt/lfs/sources/tar-1.29/rmt'
+  CC       rmt.o
+  CCLD     rmt
+make[2]: Leaving directory '/mnt/lfs/sources/tar-1.29/rmt'
+Making all in src
+make[2]: Entering directory '/mnt/lfs/sources/tar-1.29/src'
+  CC       buffer.o
+  CC       checkpoint.o
+  CC       compare.o
+  CC       create.o
+create.c: In function 'start_header':
+create.c:860:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+       major_t devmajor = major (st->stat.st_rdev);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+create.c:861:13: warning: In the GNU C Library, "minor" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "minor", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "minor", you should undefine it after including <sys/types.h>.
+       minor_t devminor = minor (st->stat.st_rdev);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+create.c: In function 'dump_file0':
+create.c:1946:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+         header->header.devmajor);
+             ^~~~~~~~~~~~~~~~~~~~~
+create.c:1948:13: warning: In the GNU C Library, "minor" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "minor", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "minor", you should undefine it after including <sys/types.h>.
+         header->header.devminor);
+             ^~~~~~~~~~~~~~~~~~~~~
+  CC       delete.o
+  CC       exit.o
+  CC       exclist.o
+  CC       extract.o
+  CC       xheader.o
+  CC       incremen.o
+  CC       list.o
+list.c: In function 'decode_header':
+list.c:686:13: warning: In the GNU C Library, "makedev" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "makedev", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "makedev", you should undefine it after including <sys/types.h>.
+        MINOR_FROM_HEADER (header->header.devminor));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+list.c: In function 'simple_print_header':
+list.c:1239:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+     STRINGIFY_BIGINT (major (st->stat.st_rdev), uintbuf));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+list.c:1242:13: warning: In the GNU C Library, "minor" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "minor", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "minor", you should undefine it after including <sys/types.h>.
+     STRINGIFY_BIGINT (minor (st->stat.st_rdev), uintbuf));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       map.o
+  CC       misc.o
+  CC       names.o
+  CC       sparse.o
+  CC       suffix.o
+  CC       system.o
+system.c: In function 'stat_to_env':
+system.c:705:13: warning: In the GNU C Library, "minor" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "minor", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "minor", you should undefine it after including <sys/types.h>.
+       dec_to_env ("TAR_MINOR", minor (st->stat.st_rdev));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+system.c:706:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+       dec_to_env ("TAR_MAJOR", major (st->stat.st_rdev));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       tar.o
+  CC       transform.o
+  CC       unlink.o
+  CC       update.o
+  CC       utf8.o
+  CC       warning.o
+  CC       xattrs.o
+  CCLD     tar
+make[2]: Leaving directory '/mnt/lfs/sources/tar-1.29/src'
+Making all in scripts
+make[2]: Entering directory '/mnt/lfs/sources/tar-1.29/scripts'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/tar-1.29/scripts'
+Making all in po
+make[2]: Entering directory '/mnt/lfs/sources/tar-1.29/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/tar-1.29/po'
+Making all in tests
+make[2]: Entering directory '/mnt/lfs/sources/tar-1.29/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/tar-1.29/tests'
+make[2]: Entering directory '/mnt/lfs/sources/tar-1.29'
+make[2]: Leaving directory '/mnt/lfs/sources/tar-1.29'
+make[1]: Leaving directory '/mnt/lfs/sources/tar-1.29'
+lfs@Minty /mnt/lfs/sources/tar-1.29 $ make check
+Making check in doc
+make[1]: Entering directory '/mnt/lfs/sources/tar-1.29/doc'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/tar-1.29/doc'
+Making check in gnu
+make[1]: Entering directory '/mnt/lfs/sources/tar-1.29/gnu'
+make  check-recursive
+make[2]: Entering directory '/mnt/lfs/sources/tar-1.29/gnu'
+make[3]: Entering directory '/mnt/lfs/sources/tar-1.29/gnu'
+make[3]: Nothing to be done for 'check-am'.
+make[3]: Leaving directory '/mnt/lfs/sources/tar-1.29/gnu'
+make[2]: Leaving directory '/mnt/lfs/sources/tar-1.29/gnu'
+make[1]: Leaving directory '/mnt/lfs/sources/tar-1.29/gnu'
+Making check in lib
+make[1]: Entering directory '/mnt/lfs/sources/tar-1.29/lib'
+make  check-am
+make[2]: Entering directory '/mnt/lfs/sources/tar-1.29/lib'
+make[2]: Nothing to be done for 'check-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/tar-1.29/lib'
+make[1]: Leaving directory '/mnt/lfs/sources/tar-1.29/lib'
+Making check in rmt
+make[1]: Entering directory '/mnt/lfs/sources/tar-1.29/rmt'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/tar-1.29/rmt'
+Making check in src
+make[1]: Entering directory '/mnt/lfs/sources/tar-1.29/src'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/tar-1.29/src'
+Making check in scripts
+make[1]: Entering directory '/mnt/lfs/sources/tar-1.29/scripts'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/tar-1.29/scripts'
+Making check in po
+make[1]: Entering directory '/mnt/lfs/sources/tar-1.29/po'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/tar-1.29/po'
+Making check in tests
+make[1]: Entering directory '/mnt/lfs/sources/tar-1.29/tests'
+make  genfile checkseekhole ckmtime
+make[2]: Entering directory '/mnt/lfs/sources/tar-1.29/tests'
+  CC       genfile.o
+  CC       argcv.o
+  CCLD     genfile
+  CC       checkseekhole.o
+  CCLD     checkseekhole
+  CC       ckmtime.o
+  CCLD     ckmtime
+make[2]: Leaving directory '/mnt/lfs/sources/tar-1.29/tests'
+make  check-local
+make[2]: Entering directory '/mnt/lfs/sources/tar-1.29/tests'
+/bin/sh ./testsuite
+## ------------------------ ##
+## GNU tar 1.29 test suite. ##
+## ------------------------ ##
+  1: tar version                                     ok
+  2: decompressing from stdin                        ok
+  3: mixing options                                  ok
+  4: interspersed options                            ok
+
+Option compatibility
+
+  5: occurrence compatibility                        ok
+  6: occurrence compatibility                        ok
+  7: --verify compatibility                          ok
+  8: compress option compatibility                   ok
+  9: --pax-option compatibility                      ok
+ 10: --pax-option compatibility                      skipped (opcomp06.at:24)
+
+The -T option
+
+ 11: multiple file lists                             ok
+ 12: nested file lists                               ok
+ 13: recursive file lists                            ok
+ 14: files-from & recurse: toggle                    ok
+ 15: toggle --recursion (not) from -T                ok
+ 16: -C in file lists                                ok
+ 17: empty entries                                   ok
+ 18: 0-separated file without -0                     ok
+ 19: --null enables verbatim reading                 ok
+ 20: empty file                                      ok
+ 21: entries with missing newlines                   ok
+ 22: recursive extraction from --files-from          ok
+ 23: trailing slash in --files-from                  ok
+
+Various options
+
+ 24: tar --index-file=FILE --file=-                  ok
+ 25: tar cvf -                                       ok
+ 26: gzip                                            ok
+ 27: recurse                                         ok
+ 28: recurse: toggle                                 ok
+ 29: short records                                   ok
+ 30: --numeric-owner basic tests                     ok
+
+The --same-order option
+
+ 31: working -C with --same-order                    ok
+ 32: multiple -C options                             ok
+
+Append
+
+ 33: append                                          ok
+ 34: appending files with long names                 ok
+ 35: append vs. create                               ok
+ 36: append with name transformation                 ok
+ 37: append with verify                              ok
+ 38: append after changed blocking                   ok
+
+Transforms
+
+ 39: transforming hard links on create               ok
+ 40: transformations and GNU volume labels           ok
+ 41: transforming escaped delimiters on create       ok
+
+Exclude
+
+ 42: exclude                                         ok
+ 43: exclude wildcards                               ok
+ 44: exclude: anchoring                              ok
+ 45: exclude: wildcards match slash                  ok
+ 46: exclude: case insensitive                       ok
+ 47: exclude: lots of excludes                       ok
+ 48: exclude: long files in pax archives             ok
+ 49: exclude: --exclude-backups option               ok
+ 50: --exclude-tag option                            ok
+ 51: --exclude-tag option and --listed-incremental   ok
+ 52: --exclude-tag option in incremental pass        ok
+ 53: --exclude-tag-under option                      ok
+ 54: --exclude-tag-under and --listed-incremental    ok
+ 55: --exclude-tag-under option in incremental pass  ok
+ 56: --exclude-tag-all option                        ok
+ 57: --exclude-tag-all and --listed-incremental      ok
+ 58: --exclude-tag-all option in incremental pass    ok
+
+Deletions
+
+ 59: deleting a member after a big one               ok
+ 60: deleting a member from stdin archive            ok
+ 61: deleting members with long names                ok
+ 62: deleting a large last member                    ok
+ 63: deleting non-existing member                    ok
+
+Extracting
+
+ 64: extract over an existing directory              ok
+ 65: extracting symlinks over an existing file       ok
+ 66: extraction loops                                ok
+ 67: extract + fnmatch                               ok
+ 68: extracting selected members from pax            ok
+ 69: mode of extracted directories                   ok
+ 70: extracting symlinks to a read-only dir          ok
+ 71: restoring mode on existing directory            ok
+ 72: extracting even when . and .. are unreadable    ok
+ 73: -C and delayed setting of metadata              ok
+ 74: scarce file descriptors                         ok
+ 75: extract dot permissions                         ok
+ 76: extract over symlinks                           ok
+ 77: extract -C symlink                              ok
+ 78: extract parent mkdir failure                    ok
+ 79: extract empty directory with -C                 ok
+ 80: name matching/transformation ordering           ok
+ 81: keep-old-files                                  ok
+ 82: skip-old-files                                  ok
+ 83: extracting existing dir with --backup           ok
+
+Volume label operations
+
+ 84: single-volume label                             ok
+ 85: multi-volume label                              ok
+ 86: test-label option                               ok
+ 87: label with non-create option                    ok
+ 88: label with non-create option                    ok
+
+Incremental archives
+
+ 89: incremental                                     ok
+ 90: restore broken symlinks from incremental        ok
+ 91: restoring timestamps from incremental           ok
+ 92: --listed for individual files                   ok
+ 93: working --listed                                ok
+ 94: incremental dump when the parent directory is unreadable ok
+ 95: --listed-incremental and --one-file-system      ok
+ 96: --listed-incremental and remounted directories  skipped (listed05.at:36)
+ 97: renamed files in incrementals                   ok
+ 98: proper icontents initialization                 ok
+ 99: incremental dumps with -C                       ok
+100: incremental dumps of nested directories         ok
+101: incremental restores with -C                    ok
+102: filename normalization                          ok
+103: incremental with alternating -C                 ok
+104: concatenated incremental archives (deletes)     ok
+105: concatenated incremental archives (renames)     ok
+
+Files removed while archiving
+
+106: file removed as we read it (ca. 22 seconds)     ok
+107: toplevel file removed (ca. 24 seconds)          ok
+
+Renames
+
+108: renamed dirs in incrementals                    ok
+109: move between hierarchies                        ok
+110: cyclic renames                                  ok
+111: renamed directory containing subdirectories     ok
+112: renamed subdirectories                          ok
+113: changed file types in incrementals              ok
+
+Ignore failing reads
+
+114: ignfail                                         ok
+
+Link handling
+
+115: link count gt 2                                 ok
+116: preserve hard links with --remove-files         ok
+117: working -l with --remove-files                  ok
+118: link count is 1 but multiple occurrences        ok
+
+Specific archive formats
+
+119: long names in V7 archives                       ok
+120: long file names divisible by block size         ok
+121: ustar: unsplittable file name                   ok
+122: ustar: unsplittable path name                   ok
+123: ustar: splitting long names                     ok
+124: old archives                                    ok
+125: time: tricky time stamps                        ok
+126: time: clamping mtime                            ok
+
+Multivolume archives
+
+127: multivolume dumps from pipes                    ok
+128: skipping a straddling member                    ok
+129: MV archive & long filenames                     ok
+130: split directory members in a MV archive         ok
+131: Restoring after an out of sync volume           ok
+132: Multivolumes with L=record_size                 ok
+133: volumes split at an extended header             skipped (multiv07.at:31)
+134: multivolume header creation                     ok
+135: bad next volume                                 ok
+
+Owner and Groups
+
+136: --owner and --group                             ok
+137: --owner-map and --group-map                     ok
+
+Sparse files
+
+138: sparse files                                    ok
+139: extracting sparse file over a pipe              ok
+140: storing sparse files > 8G                       ok
+141: storing long sparse file names                  ok
+142: listing sparse files bigger than 2^33 B         ok
+143: storing sparse file using seek method           ok
+144: sparse files in MV archives                     ok
+145: sparse files in PAX MV archives, v.0.0          ok
+146: sparse files in PAX MV archives, v.0.1          ok
+147: sparse files in PAX MV archives, v.1.0          ok
+
+Updates
+
+148: update unchanged directories                    ok
+149: update directories                              ok
+150: update changed files                            ok
+
+Verifying the archive
+
+151: verify                                          ok
+
+Volume operations
+
+152: volume                                          ok
+153: volume header size                              skipped (volsize.at:32)
+
+154: compressed format recognition                   ok
+155: short input files                               ok
+156: updating short archives                         ok
+157: truncate                                        ok
+158: grow                                            ok
+159: sigpipe handling                                ok
+160: compressor program failure                      ok
+
+Removing files after archiving
+
+161: remove-files with compression                   ok
+162: remove-files with compression: grand-child      ok
+163: remove-files with symbolic links                ok
+164: remove-files with -C:rel in -c/non-incr. mode   ok
+165: remove-files with -C:rel in -c/incr. mode       ok
+166: remove-files with -C:rel in -r mode             ok
+167: remove-files with -C:rel,rel in -c/non-incr. mode ok
+168: remove-files with -C:rel,rel in -c/incr. mode   ok
+169: remove-files with -C:rel,rel in -r mode         ok
+170: remove-files with -C:rel,abs in -c/non-incr. mode ok
+171: remove-files with -C:rel,abs in -c/incr. mode   ok
+172: remove-files with -C:rel,abs in -r mode         ok
+173: remove-files with -C:abs,rel in -c/non-incr. mode ok
+174: remove-files with -C:abs,rel in -c/incr. mode   ok
+175: remove-files with -C:abs,rel in -r mode         ok
+176: remove-files deleting two subdirs in -c/non-incr. mode ok
+177: remove-files deleting two subdirs in -c/incr. mode ok
+178: remove-files deleting two subdirs in -r mode    ok
+179: remove-files on full directory in -c/non-incr. mode ok
+180: remove-files on full directory in -c/incr. mode ok
+181: remove-files on full directory in -r mode       ok
+182: remove-files                                    ok
+
+Extended attributes
+
+183: xattrs: basic functionality                     ok
+184: xattrs: change directory with -C option         ok
+185: xattrs: trusted.* attributes                    skipped (xattr03.at:28)
+186: xattrs: s/open/openat/ regression               ok
+187: xattrs: keywords with '=' and '%'               ok
+188: acls: basic functionality                       skipped (acls01.at:28)
+189: acls: work with -C                              skipped (acls02.at:28)
+190: acls: default ACLs                              skipped (acls03.at:47)
+191: selinux: basic store/restore                    skipped (selnx01.at:28)
+192: acls/selinux: special files & fifos             skipped (selacl01.at:28)
+193: capabilities: binary store/restore              skipped (capabs_raw01.at:28)
+
+One top level
+
+194: tar --one-top-level                             ok
+195: tar --one-top-level --show-transformed          ok
+196: tar --one-top-level --transform                 ok
+197: tar --one-top-level --transform                 ok
+198: tar --one-top-level restoring permissions       ok
+
+Star tests
+
+199: gtarfail                                        skipped (gtarfail.at:27)
+200: gtarfail2                                       skipped (gtarfail2.at:27)
+201: multi-fail                                      skipped (multi-fail.at:27)
+202: ustar-big-2g                                    skipped (ustar-big-2g.at:27)
+203: ustar-big-8g                                    skipped (ustar-big-8g.at:27)
+204: pax-big-10g                                     skipped (pax-big-10g.at:27)
+
+## ------------- ##
+## Test results. ##
+## ------------- ##
+
+187 tests were successful.
+17 tests were skipped.
+make[2]: Leaving directory '/mnt/lfs/sources/tar-1.29/tests'
+make[1]: Leaving directory '/mnt/lfs/sources/tar-1.29/tests'
+make[1]: Entering directory '/mnt/lfs/sources/tar-1.29'
+make[1]: Leaving directory '/mnt/lfs/sources/tar-1.29'
+lfs@Minty /mnt/lfs/sources/tar-1.29 $ cd ..
+lfs@Minty /mnt/lfs/sources $ rm -rf tar
+lfs@Minty /mnt/lfs/sources $ rm -rf tar-1.29
+lfs@Minty /mnt/lfs/sources $

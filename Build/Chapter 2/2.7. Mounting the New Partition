@@ -1,0 +1,6 @@
+2.7. Mounting the New Partition 
+
+Minty ~ # mkdir -pv $LFS
+mkdir: created directory '/mnt/lfs'
+Minty ~ # mount -v -t ext4 /dev/sda5 $LFS
+mount: /dev/sda5 mounted on /mnt/lfs.

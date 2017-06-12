@@ -1,0 +1,14 @@
+4.3. Adding the LFS User 
+Minty benc # groupadd lfs
+Minty benc # useradd -s /bin/bash -g lfs -m -k /dev/null lfs
+Minty benc # passwd lfs
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+Minty benc # chown -v lfs $LFS/tools
+changed ownership of '/mnt/lfs/tools' from root to lfs
+Minty benc # chown -v lfs $LFS/sources
+changed ownership of '/mnt/lfs/sources' from root to lfs
+Minty benc # su - lfs
+lfs@Minty ~ $ 
+

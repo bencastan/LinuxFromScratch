@@ -1,0 +1,4 @@
+4.5. About SBUs 
+
+lfs@Minty ~ $ export MAKEFLAGS='-j 2'
+lfs@Minty ~ $ 
