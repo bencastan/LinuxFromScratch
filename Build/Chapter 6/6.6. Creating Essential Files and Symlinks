@@ -1,0 +1,66 @@
+6.6. Creating Essential Files and Symlinks
+"Some programs use hard-wired paths to programs which do not exist yet. In order to satisfy these programs, create a number of symbolic links which will be replaced by real files throughout the course of this chapter after the software has been installed:"
+I have no name!:/# clear
+I have no name!:/# ln -sv /tools/bin/{bash,cat,echo,pwd,stty} /bin
+'/bin/bash' -> '/tools/bin/bash'
+'/bin/cat' -> '/tools/bin/cat'
+'/bin/echo' -> '/tools/bin/echo'
+'/bin/pwd' -> '/tools/bin/pwd'
+'/bin/stty' -> '/tools/bin/stty'
+I have no name!:/# ln -sv /tools/bin/perl /usr/bin
+'/usr/bin/perl' -> '/tools/bin/perl'
+I have no name!:/# ln -sv /tools/lib/libgcc_s.so{,.1} /usr/lib
+'/usr/lib/libgcc_s.so' -> '/tools/lib/libgcc_s.so'
+'/usr/lib/libgcc_s.so.1' -> '/tools/lib/libgcc_s.so.1'
+I have no name!:/# ln -sv /tools/lib/libstdc++.so{,.6} /usr/lib
+'/usr/lib/libstdc++.so' -> '/tools/lib/libstdc++.so'
+'/usr/lib/libstdc++.so.6' -> '/tools/lib/libstdc++.so.6'
+I have no name!:/# sed 's/tools/usr/' /tools/lib/libstdc++.la > /usr/lib/libstdc++.la
+I have no name!:/# ln -sv bash /bin/sh
+'/bin/sh' -> 'bash'
+I have no name!:/# ln -sv /proc/self/mounts /etc/mtab
+'/etc/mtab' -> '/proc/self/mounts'
+I have no name!:/# cat > /etc/passwd << "EOF"
+> root:x:0:0:root:/root:/bin/bash
+> bin:x:1:1:bin:/dev/null:/bin/false
+> daemon:x:6:6:Daemon User:/dev/null:/bin/false
+> messagebus:x:18:18:D-Bus Message Daemon User:/var/run/dbus:/bin/false
+> nobody:x:99:99:Unprivileged User:/dev/null:/bin/false
+> EOF
+I have no name!:/# cat > /etc/group << "EOF"
+> root:x:0:
+> bin:x:1:daemon
+> sys:x:2:
+> kmem:x:3:
+> tape:x:4:
+> tty:x:5:
+> daemon:x:6:
+> floppy:x:7:
+> disk:x:8:
+> lp:x:9:
+> dialout:x:10:
+> audio:x:11:
+> video:x:12:
+> utmp:x:13:
+> usb:x:14:
+> cdrom:x:15:
+> adm:x:16:
+> messagebus:x:18:
+> systemd-journal:x:23:
+> input:x:24:
+> mail:x:34:
+> nogroup:x:99:
+> users:x:999:
+> EOF
+I have no name!:/# exec /tools/bin/bash --login +h
+root:/#
+root:/#
+root:/# touch /var/log/{btmp,lastlog,faillog,wtmp}
+root:/# chgrp -v utmp /var/log/lastlog
+changed group of '/var/log/lastlog' from root to utmp
+root:/# chmod -v 664  /var/log/lastlog
+mode of '/var/log/lastlog' changed from 0644 (rw-r--r--) to 0664 (rw-rw-r--)
+root:/# chmod -v 600  /var/log/btmp
+mode of '/var/log/btmp' changed from 0644 (rw-r--r--) to 0600 (rw-------)
+root:/#
+
