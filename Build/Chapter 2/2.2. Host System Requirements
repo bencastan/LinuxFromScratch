@@ -1,134 +1,8 @@
 2.2. Host System Requirements 
 
-benc@Minty ~ $ cat > version-check.sh << "EOF"
-> #!/bin/bash
-> # Simple script to list version numbers of critical development tools
-> export LC_ALL=C
-> bash --version | head -n1 | cut -d" " -f2-4
-> MYSH=$(readlink -f /bin/sh)
-> echo "/bin/sh -> $MYSH"
-> echo $MYSH | grep -q bash || echo "ERROR: /bin/sh does not point to bash"
-> unset MYSH
-> 
-> echo -n "Binutils: "; ld --version | head -n1 | cut -d" " -f3-
-> bison --version | head -n1
-> 
-> if [ -h /usr/bin/yacc ]; then
->   echo "/usr/bin/yacc -> `readlink -f /usr/bin/yacc`";
-> elif [ -x /usr/bin/yacc ]; then
->   echo yacc is `/usr/bin/yacc --version | head -n1`
-> else
->   echo "yacc not found" 
-> fi
-> 
-> bzip2 --version 2>&1 < /dev/null | head -n1 | cut -d" " -f1,6-
-> echo -n "Coreutils: "; chown --version | head -n1 | cut -d")" -f2
-> diff --version | head -n1
-> find --version | head -n1
-> gawk --version | head -n1
-> 
-> if [ -h /usr/bin/awk ]; then
->   echo "/usr/bin/awk -> `readlink -f /usr/bin/awk`";
-> elif [ -x /usr/bin/awk ]; then
->   echo awk is `/usr/bin/awk --version | head -n1`
-> else 
->   echo "awk not found" 
-> fi
-> 
-> gcc --version | head -n1
-> g++ --version | head -n1
-> ldd --version | head -n1 | cut -d" " -f2-  # glibc version
-> grep --version | head -n1
-> gzip --version | head -n1
-> cat /proc/version
-> m4 --version | head -n1
-> make --version | head -n1
-> patch --version | head -n1
-> echo Perl `perl -V:version`
-> sed --version | head -n1
-> tar --version | head -n1
-> makeinfo --version | head -n1
-> xz --version | head -n1
-> 
-> echo 'int main(){}' > dummy.c && g++ -o dummy dummy.c
-> if [ -x dummy ]
->   then echo "g++ compilation OK";
->   else echo "g++ compilation failed"; fi
-> rm -f dummy.c dummy
-> EOF
-benc@Minty ~ $ 
-benc@Minty ~ $ bash version-check.sh
+Minty benc # bash version-check.sh
 bash, version 4.3.48(1)-release
-/bin/sh -> /bin/dash
-ERROR: /bin/sh does not point to bash
-Binutils: (GNU Binutils for Ubuntu) 2.26.1
-bison (GNU Bison) 3.0.4
-/usr/bin/yacc -> /usr/bin/bison.yacc
-bzip2,  Version 1.0.6, 6-Sept-2010.
-Coreutils:  8.25
-diff (GNU diffutils) 3.3
-find (GNU findutils) 4.7.0-git
-GNU Awk 4.1.3, API: 1.1 (GNU MPFR 3.1.4, GNU MP 6.1.0)
-/usr/bin/awk -> /usr/bin/gawk
-gcc (Ubuntu 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609
-version-check.sh: line 36: g++: command not found
-(Ubuntu GLIBC 2.23-0ubuntu7) 2.23
-grep (GNU grep) 2.25
-gzip 1.6
-Linux version 4.4.0-78-generic (buildd@lgw01-11) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) #99-Ubuntu SMP Thu Apr 27 15:29:09 UTC 2017
-m4 (GNU M4) 1.4.17
-GNU Make 4.1
-GNU patch 2.7.5
-Perl version='5.22.1';
-sed (GNU sed) 4.2.2
-tar (GNU tar) 1.28
-version-check.sh: line 47: makeinfo: command not found
-xz (XZ Utils) 5.1.0alpha
-version-check.sh: line 50: g++: command not found
-g++ compilation failed
-benc@Minty ~ $ sudo apt-get install build-essential
-[sudo] password for benc: 
-Reading package lists... Done
-Building dependency tree       
-Reading state information... Done
-The following additional packages will be installed:
-  g++ g++-5 libstdc++-5-dev
-Suggested packages:
-  g++-multilib g++-5-multilib gcc-5-doc libstdc++6-5-dbg libstdc++-5-doc
-The following NEW packages will be installed:
-  build-essential g++ g++-5 libstdc++-5-dev
-0 to upgrade, 4 to newly install, 0 to remove and 0 not to upgrade.
-Need to get 9,732 kB of archives.
-After this operation, 39.1 MB of additional disk space will be used.
-Do you want to continue? [Y/n] y
-Get:1 http://mirror.optus.net/ubuntu xenial-updates/main amd64 libstdc++-5-dev amd64 5.4.0-6ubuntu1~16.04.4 [1,426 kB]
-Get:2 http://mirror.optus.net/ubuntu xenial-updates/main amd64 g++-5 amd64 5.4.0-6ubuntu1~16.04.4 [8,300 kB]
-Get:3 http://mirror.optus.net/ubuntu xenial/main amd64 g++ amd64 4:5.3.1-1ubuntu1 [1,504 B]
-Get:4 http://mirror.optus.net/ubuntu xenial/main amd64 build-essential amd64 12.1ubuntu2 [4,758 B]
-Fetched 9,732 kB in 5s (1,640 kB/s)   
-Selecting previously unselected package libstdc++-5-dev:amd64.
-(Reading database ... 240988 files and directories currently installed.)
-Preparing to unpack .../libstdc++-5-dev_5.4.0-6ubuntu1~16.04.4_amd64.deb ...
-Unpacking libstdc++-5-dev:amd64 (5.4.0-6ubuntu1~16.04.4) ...
-Selecting previously unselected package g++-5.
-Preparing to unpack .../g++-5_5.4.0-6ubuntu1~16.04.4_amd64.deb ...
-Unpacking g++-5 (5.4.0-6ubuntu1~16.04.4) ...
-Selecting previously unselected package g++.
-Preparing to unpack .../g++_4%3a5.3.1-1ubuntu1_amd64.deb ...
-Unpacking g++ (4:5.3.1-1ubuntu1) ...
-Selecting previously unselected package build-essential.
-Preparing to unpack .../build-essential_12.1ubuntu2_amd64.deb ...
-Unpacking build-essential (12.1ubuntu2) ...
-Processing triggers for man-db (2.7.5-1) ...
-Setting up libstdc++-5-dev:amd64 (5.4.0-6ubuntu1~16.04.4) ...
-Setting up g++-5 (5.4.0-6ubuntu1~16.04.4) ...
-Setting up g++ (4:5.3.1-1ubuntu1) ...
-update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
-Setting up build-essential (12.1ubuntu2) ...
-benc@Minty ~ $ bash version-check.sh
-bash, version 4.3.48(1)-release
-/bin/sh -> /bin/dash
-ERROR: /bin/sh does not point to bash
+/bin/sh -> /bin/bash
 Binutils: (GNU Binutils for Ubuntu) 2.26.1
 bison (GNU Bison) 3.0.4
 /usr/bin/yacc -> /usr/bin/bison.yacc
@@ -143,101 +17,7 @@ g++ (Ubuntu 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609
 (Ubuntu GLIBC 2.23-0ubuntu7) 2.23
 grep (GNU grep) 2.25
 gzip 1.6
-Linux version 4.4.0-78-generic (buildd@lgw01-11) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) #99-Ubuntu SMP Thu Apr 27 15:29:09 UTC 2017
-m4 (GNU M4) 1.4.17
-GNU Make 4.1
-GNU patch 2.7.5
-Perl version='5.22.1';
-sed (GNU sed) 4.2.2
-tar (GNU tar) 1.28
-version-check.sh: line 47: makeinfo: command not found
-xz (XZ Utils) 5.1.0alpha
-g++ compilation OK
-benc@Minty ~ $ sudo apt-get install texinfo
-Reading package lists... Done
-Building dependency tree       
-Reading state information... Done
-The following additional packages will be installed:
-  libtext-unidecode-perl libxml-libxml-perl libxml-namespacesupport-perl libxml-sax-base-perl libxml-sax-perl tex-common
-Suggested packages:
-  texlive-base texlive-latex-base texlive-generic-recommended texinfo-doc-nonfree
-Recommended packages:
-  libxml-sax-expat-perl
-The following NEW packages will be installed:
-  libtext-unidecode-perl libxml-libxml-perl libxml-namespacesupport-perl libxml-sax-base-perl libxml-sax-perl tex-common texinfo
-0 to upgrade, 7 to newly install, 0 to remove and 0 not to upgrade.
-Need to get 1,808 kB of archives.
-After this operation, 9,988 kB of additional disk space will be used.
-Do you want to continue? [Y/n] y
-Get:1 http://mirror.optus.net/ubuntu xenial/universe amd64 libtext-unidecode-perl all 1.27-1 [103 kB]
-Get:2 http://mirror.optus.net/ubuntu xenial/main amd64 libxml-namespacesupport-perl all 1.11-1 [13.2 kB]
-Get:3 http://mirror.optus.net/ubuntu xenial/main amd64 libxml-sax-base-perl all 1.07-1 [21.5 kB]
-Get:4 http://mirror.optus.net/ubuntu xenial/main amd64 libxml-sax-perl all 0.99+dfsg-2ubuntu1 [64.6 kB]
-Get:5 http://mirror.optus.net/ubuntu xenial/main amd64 libxml-libxml-perl amd64 2.0123+dfsg-1build1 [316 kB]
-Get:6 http://mirror.optus.net/ubuntu xenial/main amd64 tex-common all 6.04 [545 kB]
-Get:7 http://mirror.optus.net/ubuntu xenial/universe amd64 texinfo amd64 6.1.0.dfsg.1-5 [744 kB]
-Fetched 1,808 kB in 1s (1,147 kB/s)
-Selecting previously unselected package libtext-unidecode-perl.
-(Reading database ... 241785 files and directories currently installed.)
-Preparing to unpack .../libtext-unidecode-perl_1.27-1_all.deb ...
-Unpacking libtext-unidecode-perl (1.27-1) ...
-Selecting previously unselected package libxml-namespacesupport-perl.
-Preparing to unpack .../libxml-namespacesupport-perl_1.11-1_all.deb ...
-Unpacking libxml-namespacesupport-perl (1.11-1) ...
-Selecting previously unselected package libxml-sax-base-perl.
-Preparing to unpack .../libxml-sax-base-perl_1.07-1_all.deb ...
-Unpacking libxml-sax-base-perl (1.07-1) ...
-Selecting previously unselected package libxml-sax-perl.
-Preparing to unpack .../libxml-sax-perl_0.99+dfsg-2ubuntu1_all.deb ...
-Unpacking libxml-sax-perl (0.99+dfsg-2ubuntu1) ...
-Selecting previously unselected package libxml-libxml-perl.
-Preparing to unpack .../libxml-libxml-perl_2.0123+dfsg-1build1_amd64.deb ...
-Unpacking libxml-libxml-perl (2.0123+dfsg-1build1) ...
-Selecting previously unselected package tex-common.
-Preparing to unpack .../tex-common_6.04_all.deb ...
-Unpacking tex-common (6.04) ...
-Selecting previously unselected package texinfo.
-Preparing to unpack .../texinfo_6.1.0.dfsg.1-5_amd64.deb ...
-Unpacking texinfo (6.1.0.dfsg.1-5) ...
-Processing triggers for man-db (2.7.5-1) ...
-Processing triggers for doc-base (0.10.7) ...
-Processing 2 added doc-base files...
-Registering documents with scrollkeeper...
-Setting up libtext-unidecode-perl (1.27-1) ...
-Setting up libxml-namespacesupport-perl (1.11-1) ...
-Setting up libxml-sax-base-perl (1.07-1) ...
-Setting up libxml-sax-perl (0.99+dfsg-2ubuntu1) ...
-update-perl-sax-parsers: Registering Perl SAX parser XML::SAX::PurePerl with priority 10...
-update-perl-sax-parsers: Updating overall Perl SAX parser modules info file...
-
-Creating config file /etc/perl/XML/SAX/ParserDetails.ini with new version
-Setting up libxml-libxml-perl (2.0123+dfsg-1build1) ...
-update-perl-sax-parsers: Registering Perl SAX parser XML::LibXML::SAX::Parser with priority 50...
-update-perl-sax-parsers: Registering Perl SAX parser XML::LibXML::SAX with priority 50...
-update-perl-sax-parsers: Updating overall Perl SAX parser modules info file...
-Replacing config file /etc/perl/XML/SAX/ParserDetails.ini with new version
-Setting up tex-common (6.04) ...
-update-language: texlive-base not installed and configured, doing nothing!
-Setting up texinfo (6.1.0.dfsg.1-5) ...
-benc@Minty ~ $ bash version-check.sh
-bash, version 4.3.48(1)-release
-/bin/sh -> /bin/dash
-ERROR: /bin/sh does not point to bash  <<--- I fixed this.
-Binutils: (GNU Binutils for Ubuntu) 2.26.1
-bison (GNU Bison) 3.0.4
-/usr/bin/yacc -> /usr/bin/bison.yacc
-bzip2,  Version 1.0.6, 6-Sept-2010.
-Coreutils:  8.25
-diff (GNU diffutils) 3.3
-find (GNU findutils) 4.7.0-git
-GNU Awk 4.1.3, API: 1.1 (GNU MPFR 3.1.4, GNU MP 6.1.0)
-/usr/bin/awk -> /usr/bin/gawk
-gcc (Ubuntu 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609
-g++ (Ubuntu 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609
-(Ubuntu GLIBC 2.23-0ubuntu7) 2.23
-grep (GNU grep) 2.25
-gzip 1.6
-Linux version 4.4.0-78-generic (buildd@lgw01-11) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) #99-Ubuntu SMP Thu Apr 27 15:29:09 UTC 2017
+Linux version 4.4.0-79-generic (buildd@lcy01-30) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) #100-Ubuntu SMP Wed May 17 19:58:14 UTC 2017
 m4 (GNU M4) 1.4.17
 GNU Make 4.1
 GNU patch 2.7.5
@@ -247,19 +27,36 @@ tar (GNU tar) 1.28
 texi2any (GNU texinfo) 6.1
 xz (XZ Utils) 5.1.0alpha
 g++ compilation OK
-benc@Minty ~ $ 
 
-benc@Minty ~ $ cat > library-check.sh << "EOF"
-> #!/bin/bash
-> for lib in lib{gmp,mpfr,mpc}.la; do
->   echo $lib: $(if find /usr/lib* -name $lib|
->                grep -q $lib;then :;else echo not;fi) found
-> done
-> unset lib
-> EOF
-benc@Minty ~ $ 
-benc@Minty ~ $ bash library-check.sh
+Minty benc # bash version-check.sh 
+bash, version 4.3.48(1)-release
+/bin/sh -> /bin/bash
+Binutils: (GNU Binutils for Ubuntu) 2.26.1
+bison (GNU Bison) 3.0.4
+/usr/bin/yacc -> /usr/bin/bison.yacc
+bzip2,  Version 1.0.6, 6-Sept-2010.
+Coreutils:  8.25
+diff (GNU diffutils) 3.3
+find (GNU findutils) 4.7.0-git
+GNU Awk 4.1.3, API: 1.1 (GNU MPFR 3.1.4, GNU MP 6.1.0)
+/usr/bin/awk -> /usr/bin/gawk
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609
+g++ (Ubuntu 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609
+(Ubuntu GLIBC 2.23-0ubuntu7) 2.23
+grep (GNU grep) 2.25
+gzip 1.6
+Linux version 4.4.0-79-generic (buildd@lcy01-30) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) #100-Ubuntu SMP Wed May 17 19:58:14 UTC 2017
+m4 (GNU M4) 1.4.17
+GNU Make 4.1
+GNU patch 2.7.5
+Perl version='5.22.1';
+sed (GNU sed) 4.2.2
+tar (GNU tar) 1.28
+texi2any (GNU texinfo) 6.1
+xz (XZ Utils) 5.1.0alpha
+g++ compilation OK
+
+Minty benc # bash library-check.sh 
 libgmp.la: not found
 libmpfr.la: not found
 libmpc.la: not found
-benc@Minty ~ $ 

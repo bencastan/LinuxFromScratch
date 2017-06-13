@@ -1,241 +1,352 @@
-3.1. Introduction 
+ 3.1. Introduction 
 
-Minty ~ # mkdir -v $LFS/sources
+ Minty benc # clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Minty benc # mkdir -v $LFS/sources
 mkdir: created directory '/mnt/lfs/sources'
-Minty ~ # chmod -v a+wt $LFS/sources
+Minty benc # chmod -v a+wt $LFS/sources
 mode of '/mnt/lfs/sources' changed from 0755 (rwxr-xr-x) to 1777 (rwxrwxrwt)
-Minty ~ # vi wget-list
-Minty ~ # 
-Minty ~ # wget --input-file=wget-list --continue --directory-prefix=$LFS/sources
---2017-05-31 14:20:20--  http://download.savannah.gnu.org/releases/acl/acl-2.2.52.src.tar.gz
+Minty benc # ls -la
+total 188
+drwxr-xr-x 32 benc benc 4096 Jun 13 19:59 .
+drwxr-xr-x  4 root root 4096 May 31 15:44 ..
+drwx------  3 benc benc 4096 May 30 14:19 .adobe
+-rw-------  1 benc benc 3722 Jun 12 14:01 .bash_history
+-rw-r--r--  1 benc benc  220 May 30 14:01 .bash_logout
+-rw-r--r--  1 root root   20 May 31 14:15 .bash_profile
+-rw-r--r--  1 benc benc 4058 Jun  5 09:49 .bashrc
+drwxr-xr-x  6 benc benc 4096 May 30 16:07 bupster
+drwx------ 15 benc benc 4096 Jun  3 10:32 .cache
+drwxr-xr-x  4 benc benc 4096 Jun 13 19:41 .cinnamon
+drwxr-xr-x 17 benc benc 4096 Jun 13 19:51 .config
+drwx------  3 benc benc 4096 May 30 14:14 .dbus
+drwxr-xr-x  2 benc benc 4096 May 30 14:14 Desktop
+-rw-------  1 benc benc   29 Jun 13 19:41 .dmrc
+drwxr-xr-x 33 benc benc 4096 May 31 14:12 Documents
+drwxr-xr-x  2 benc benc 4096 May 30 14:57 Downloads
+drwxr-xr-x  4 benc benc 4096 Jun 10 12:47 .dvdcss
+drwx------  2 benc benc 4096 Jun 13 19:41 .gconf
+-rw-r-----  1 benc benc    0 Jun 13 19:48 .gksu.lock
+drwx------  3 benc benc 4096 May 30 14:33 .gnome
+drwx------  2 benc benc 4096 May 30 16:08 .gnome2
+-rw-------  1 benc benc 5024 Jun 13 19:41 .ICEauthority
+drwxr-xr-x  4 benc benc 4096 May 30 14:33 .java
+-rwxr-xr-x  1 root root  330 Jun  5 09:53 LFS_chroot.sh
+-rwxr-xr-x  1 root root  208 Jun 13 19:59 LFS_Mount.sh
+-rw-r--r--  1 benc benc  167 May 31 14:13 library-check.sh
+drwxr-xr-x  4 benc benc 4096 May 30 14:14 .linuxmint
+drwxr-xr-x  3 benc benc 4096 May 30 14:14 .local
+drwxr-xr-x  6 benc benc 4096 Jun 13 19:41 .luckyBackup
+drwx------  3 benc benc 4096 May 30 14:19 .macromedia
+drwxr-xr-x  4 benc benc 4096 May 30 14:19 .mozilla
+drwxr-xr-x  2 benc benc 4096 May 30 14:14 Music
+drwx------  3 benc benc 4096 May 31 07:52 .nv
+drwxr-xr-x  2 benc benc 4096 May 30 14:14 Pictures
+drwx------  3 benc benc 4096 May 30 15:43 .pki
+-rw-r--r--  1 benc benc  655 May 30 14:01 .profile
+drwxr-xr-x  2 benc benc 4096 May 30 14:14 Public
+drwxr-xr-x  4 benc benc 4096 May 30 14:32 .PyCharm2017.1
+drwxr-xr-x 14 benc benc 4096 May 30 16:06 PycharmProjects
+drwx------  2 benc benc 4096 May 30 16:10 .ssh
+-rw-r--r--  1 benc benc    0 May 30 14:15 .sudo_as_admin_successful
+drwxr-xr-x  2 benc benc 4096 May 30 14:14 Templates
+drwx------  4 benc benc 4096 May 30 15:45 .thunderbird
+-rw-r--r--  1 benc benc 1533 Jun 13 19:52 version-check.sh
+drwxr-xr-x  2 benc benc 4096 May 30 14:14 Videos
+-rw-------  1 benc benc  116 Jun 13 19:41 .Xauthority
+-rw-r--r--  1 benc benc 4209 Jun 13 19:59 .xsession-errors
+Minty benc # ls
+bupster  Documents  LFS_chroot.sh  library-check.sh  Pictures  PycharmProjects  version-check.sh
+Desktop  Downloads  LFS_Mount.sh   Music             Public    Templates        Videos
+Minty benc # 
+Minty benc # 
+Minty benc # 
+Minty benc # 
+Minty benc # 
+Minty benc # vi wget-list
+Minty benc # 
+Minty benc # 
+Minty benc # 
+Minty benc # 
+Minty benc # wget --input-file=wget-list --continue --directory-prefix=$LFS/sources
+--2017-06-13 20:01:18--  http://download.savannah.gnu.org/releases/acl/acl-2.2.52.src.tar.gz
 Resolving download.savannah.gnu.org (download.savannah.gnu.org)... 208.118.235.200
 Connecting to download.savannah.gnu.org (download.savannah.gnu.org)|208.118.235.200|:80... connected.
 HTTP request sent, awaiting response... 302 Moved Temporarily
 Location: http://ftp.yzu.edu.tw/nongnu/acl/acl-2.2.52.src.tar.gz [following]
---2017-05-31 14:20:21--  http://ftp.yzu.edu.tw/nongnu/acl/acl-2.2.52.src.tar.gz
+--2017-06-13 20:01:19--  http://ftp.yzu.edu.tw/nongnu/acl/acl-2.2.52.src.tar.gz
 Resolving ftp.yzu.edu.tw (ftp.yzu.edu.tw)... 140.138.144.170
 Connecting to ftp.yzu.edu.tw (ftp.yzu.edu.tw)|140.138.144.170|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 386604 (378K) [application/octet-stream]
 Saving to: '/mnt/lfs/sources/acl-2.2.52.src.tar.gz’
 
-acl-2.2.52.src.tar.gz               100%[==================================================================>] 377.54K   427KB/s    in 0.9s    
+acl-2.2.52.src.tar.gz        100%[=============================================>] 377.54K   460KB/s    in 0.8s    
 
-2017-05-31 14:20:23 (427 KB/s) - '/mnt/lfs/sources/acl-2.2.52.src.tar.gz’ saved [386604/386604]
+2017-06-13 20:01:21 (460 KB/s) - '/mnt/lfs/sources/acl-2.2.52.src.tar.gz’ saved [386604/386604]
 
---2017-05-31 14:20:23--  http://download.savannah.gnu.org/releases/attr/attr-2.4.47.src.tar.gz
+--2017-06-13 20:01:21--  http://download.savannah.gnu.org/releases/attr/attr-2.4.47.src.tar.gz
 Connecting to download.savannah.gnu.org (download.savannah.gnu.org)|208.118.235.200|:80... connected.
 HTTP request sent, awaiting response... 302 Moved Temporarily
 Location: http://ftp.yzu.edu.tw/nongnu/attr/attr-2.4.47.src.tar.gz [following]
---2017-05-31 14:20:23--  http://ftp.yzu.edu.tw/nongnu/attr/attr-2.4.47.src.tar.gz
+--2017-06-13 20:01:22--  http://ftp.yzu.edu.tw/nongnu/attr/attr-2.4.47.src.tar.gz
 Connecting to ftp.yzu.edu.tw (ftp.yzu.edu.tw)|140.138.144.170|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 343692 (336K) [application/octet-stream]
 Saving to: '/mnt/lfs/sources/attr-2.4.47.src.tar.gz’
 
-attr-2.4.47.src.tar.gz              100%[==================================================================>] 335.64K   358KB/s    in 0.9s    
+attr-2.4.47.src.tar.gz       100%[=============================================>] 335.64K   442KB/s    in 0.8s    
 
-2017-05-31 14:20:25 (358 KB/s) - '/mnt/lfs/sources/attr-2.4.47.src.tar.gz’ saved [343692/343692]
+2017-06-13 20:01:23 (442 KB/s) - '/mnt/lfs/sources/attr-2.4.47.src.tar.gz’ saved [343692/343692]
 
---2017-05-31 14:20:25--  http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.xz
+--2017-06-13 20:01:23--  http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.xz
 Resolving ftp.gnu.org (ftp.gnu.org)... 208.118.235.20, 2001:4830:134:3::b
 Connecting to ftp.gnu.org (ftp.gnu.org)|208.118.235.20|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1214744 (1.2M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/autoconf-2.69.tar.xz’
 
-autoconf-2.69.tar.xz                100%[==================================================================>]   1.16M   422KB/s    in 2.8s    
+autoconf-2.69.tar.xz         100%[=============================================>]   1.16M   395KB/s    in 3.0s    
 
-2017-05-31 14:20:28 (422 KB/s) - '/mnt/lfs/sources/autoconf-2.69.tar.xz’ saved [1214744/1214744]
+2017-06-13 20:01:27 (395 KB/s) - '/mnt/lfs/sources/autoconf-2.69.tar.xz’ saved [1214744/1214744]
 
---2017-05-31 14:20:28--  http://ftp.gnu.org/gnu/automake/automake-1.15.tar.xz
+--2017-06-13 20:01:27--  http://ftp.gnu.org/gnu/automake/automake-1.15.tar.xz
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1496708 (1.4M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/automake-1.15.tar.xz’
 
-automake-1.15.tar.xz                100%[==================================================================>]   1.43M   469KB/s    in 3.1s    
+automake-1.15.tar.xz         100%[=============================================>]   1.43M   439KB/s    in 3.3s    
 
-2017-05-31 14:20:32 (469 KB/s) - '/mnt/lfs/sources/automake-1.15.tar.xz’ saved [1496708/1496708]
+2017-06-13 20:01:30 (439 KB/s) - '/mnt/lfs/sources/automake-1.15.tar.xz’ saved [1496708/1496708]
 
---2017-05-31 14:20:32--  http://ftp.gnu.org/gnu/bash/bash-4.4.tar.gz
+--2017-06-13 20:01:30--  http://ftp.gnu.org/gnu/bash/bash-4.4.tar.gz
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 9377313 (8.9M) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/bash-4.4.tar.gz’
 
-bash-4.4.tar.gz                     100%[==================================================================>]   8.94M   473KB/s    in 23s     
+bash-4.4.tar.gz              100%[=============================================>]   8.94M   316KB/s    in 34s     
 
-2017-05-31 14:20:55 (397 KB/s) - '/mnt/lfs/sources/bash-4.4.tar.gz’ saved [9377313/9377313]
+2017-06-13 20:02:05 (270 KB/s) - '/mnt/lfs/sources/bash-4.4.tar.gz’ saved [9377313/9377313]
 
---2017-05-31 14:20:55--  http://alpha.gnu.org/gnu/bc/bc-1.06.95.tar.bz2
+--2017-06-13 20:02:05--  http://alpha.gnu.org/gnu/bc/bc-1.06.95.tar.bz2
 Resolving alpha.gnu.org (alpha.gnu.org)... 208.118.235.21, 2001:4830:134:3::c
 Connecting to alpha.gnu.org (alpha.gnu.org)|208.118.235.21|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 290069 (283K) [application/x-bzip2]
 Saving to: '/mnt/lfs/sources/bc-1.06.95.tar.bz2’
 
-bc-1.06.95.tar.bz2                  100%[==================================================================>] 283.27K   204KB/s    in 1.4s    
+bc-1.06.95.tar.bz2           100%[=============================================>] 283.27K   204KB/s    in 1.4s    
 
-2017-05-31 14:20:57 (204 KB/s) - '/mnt/lfs/sources/bc-1.06.95.tar.bz2’ saved [290069/290069]
+2017-06-13 20:02:07 (204 KB/s) - '/mnt/lfs/sources/bc-1.06.95.tar.bz2’ saved [290069/290069]
 
---2017-05-31 14:20:57--  http://ftp.gnu.org/gnu/binutils/binutils-2.27.tar.bz2
+--2017-06-13 20:02:07--  http://ftp.gnu.org/gnu/binutils/binutils-2.27.tar.bz2
 Connecting to ftp.gnu.org (ftp.gnu.org)|208.118.235.20|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 26099568 (25M) [application/x-bzip2]
 Saving to: '/mnt/lfs/sources/binutils-2.27.tar.bz2’
 
-binutils-2.27.tar.bz2               100%[==================================================================>]  24.89M  1.03MB/s    in 27s     
+binutils-2.27.tar.bz2        100%[=============================================>]  24.89M  1.06MB/s    in 54s     
 
-2017-05-31 14:21:25 (947 KB/s) - '/mnt/lfs/sources/binutils-2.27.tar.bz2’ saved [26099568/26099568]
+2017-06-13 20:03:02 (471 KB/s) - '/mnt/lfs/sources/binutils-2.27.tar.bz2’ saved [26099568/26099568]
 
---2017-05-31 14:21:25--  http://ftp.gnu.org/gnu/bison/bison-3.0.4.tar.xz
+--2017-06-13 20:03:02--  http://ftp.gnu.org/gnu/bison/bison-3.0.4.tar.xz
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1973796 (1.9M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/bison-3.0.4.tar.xz’
 
-bison-3.0.4.tar.xz                  100%[==================================================================>]   1.88M   686KB/s    in 2.8s    
+bison-3.0.4.tar.xz           100%[=============================================>]   1.88M   603KB/s    in 3.2s    
 
-2017-05-31 14:21:28 (686 KB/s) - '/mnt/lfs/sources/bison-3.0.4.tar.xz’ saved [1973796/1973796]
+2017-06-13 20:03:05 (603 KB/s) - '/mnt/lfs/sources/bison-3.0.4.tar.xz’ saved [1973796/1973796]
 
---2017-05-31 14:21:28--  http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
+--2017-06-13 20:03:05--  http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
 Resolving www.bzip.org (www.bzip.org)... 46.235.226.80, 2a00:1098:0:86:1000:44:0:80
 Connecting to www.bzip.org (www.bzip.org)|46.235.226.80|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 782025 (764K) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/bzip2-1.0.6.tar.gz’
 
-bzip2-1.0.6.tar.gz                  100%[==================================================================>] 763.70K   275KB/s    in 2.8s    
+bzip2-1.0.6.tar.gz           100%[=============================================>] 763.70K   228KB/s    in 3.3s    
 
-2017-05-31 14:21:32 (275 KB/s) - '/mnt/lfs/sources/bzip2-1.0.6.tar.gz’ saved [782025/782025]
+2017-06-13 20:03:09 (228 KB/s) - '/mnt/lfs/sources/bzip2-1.0.6.tar.gz’ saved [782025/782025]
 
---2017-05-31 14:21:32--  https://github.com/libcheck/check/releases/download/0.11.0/check-0.11.0.tar.gz
-Resolving github.com (github.com)... 192.30.253.113, 192.30.253.112
-Connecting to github.com (github.com)|192.30.253.113|:443... connected.
+--2017-06-13 20:03:09--  https://github.com/libcheck/check/releases/download/0.11.0/check-0.11.0.tar.gz
+Resolving github.com (github.com)... 192.30.253.112, 192.30.253.113
+Connecting to github.com (github.com)|192.30.253.112|:443... connected.
 HTTP request sent, awaiting response... 302 Found
-Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/48520045/72ac8288-c488-11e6-8af9-ec3259bb7b33?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170531%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170531T042133Z&X-Amz-Expires=300&X-Amz-Signature=c5e8647421f7ae4c3ae629cc02bda40c73d8cc6e39b78e6d909b68c991a9ba37&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dcheck-0.11.0.tar.gz&response-content-type=application%2Foctet-stream [following]
---2017-05-31 14:21:33--  https://github-production-release-asset-2e65be.s3.amazonaws.com/48520045/72ac8288-c488-11e6-8af9-ec3259bb7b33?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170531%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170531T042133Z&X-Amz-Expires=300&X-Amz-Signature=c5e8647421f7ae4c3ae629cc02bda40c73d8cc6e39b78e6d909b68c991a9ba37&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dcheck-0.11.0.tar.gz&response-content-type=application%2Foctet-stream
-Resolving github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)... 52.216.226.200
-Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.216.226.200|:443... connected.
+Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/48520045/72ac8288-c488-11e6-8af9-ec3259bb7b33?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170613%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170613T100310Z&X-Amz-Expires=300&X-Amz-Signature=6a18207f1c779090390e9be5be7535a7b8d38f18034feb48cf4a26ff9d7a0a81&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dcheck-0.11.0.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2017-06-13 20:03:10--  https://github-production-release-asset-2e65be.s3.amazonaws.com/48520045/72ac8288-c488-11e6-8af9-ec3259bb7b33?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170613%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170613T100310Z&X-Amz-Expires=300&X-Amz-Signature=6a18207f1c779090390e9be5be7535a7b8d38f18034feb48cf4a26ff9d7a0a81&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dcheck-0.11.0.tar.gz&response-content-type=application%2Foctet-stream
+Resolving github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)... 52.216.226.136
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.216.226.136|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 753535 (736K) [application/octet-stream]
 Saving to: '/mnt/lfs/sources/check-0.11.0.tar.gz’
 
-check-0.11.0.tar.gz                 100%[==================================================================>] 735.87K   275KB/s    in 2.7s    
+check-0.11.0.tar.gz          100%[=============================================>] 735.87K   336KB/s    in 2.2s    
 
-2017-05-31 14:21:37 (275 KB/s) - '/mnt/lfs/sources/check-0.11.0.tar.gz’ saved [753535/753535]
+2017-06-13 20:03:14 (336 KB/s) - '/mnt/lfs/sources/check-0.11.0.tar.gz’ saved [753535/753535]
 
---2017-05-31 14:21:37--  http://ftp.gnu.org/gnu/coreutils/coreutils-8.26.tar.xz
+--2017-06-13 20:03:14--  http://ftp.gnu.org/gnu/coreutils/coreutils-8.26.tar.xz
 Connecting to ftp.gnu.org (ftp.gnu.org)|208.118.235.20|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 5810244 (5.5M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/coreutils-8.26.tar.xz’
 
-coreutils-8.26.tar.xz               100%[==================================================================>]   5.54M   601KB/s    in 12s     
+coreutils-8.26.tar.xz        100%[=============================================>]   5.54M   612KB/s    in 10s     
 
-2017-05-31 14:21:50 (463 KB/s) - '/mnt/lfs/sources/coreutils-8.26.tar.xz’ saved [5810244/5810244]
+2017-06-13 20:03:25 (562 KB/s) - '/mnt/lfs/sources/coreutils-8.26.tar.xz’ saved [5810244/5810244]
 
---2017-05-31 14:21:50--  http://dbus.freedesktop.org/releases/dbus/dbus-1.10.14.tar.gz
+--2017-06-13 20:03:25--  http://dbus.freedesktop.org/releases/dbus/dbus-1.10.14.tar.gz
 Resolving dbus.freedesktop.org (dbus.freedesktop.org)... 131.252.210.176, 2610:10:20:722:a800:ff:feda:470f
 Connecting to dbus.freedesktop.org (dbus.freedesktop.org)|131.252.210.176|:80... connected.
 HTTP request sent, awaiting response... 301 Moved Permanently
 Location: https://dbus.freedesktop.org/releases/dbus/dbus-1.10.14.tar.gz [following]
---2017-05-31 14:21:51--  https://dbus.freedesktop.org/releases/dbus/dbus-1.10.14.tar.gz
+--2017-06-13 20:03:25--  https://dbus.freedesktop.org/releases/dbus/dbus-1.10.14.tar.gz
 Connecting to dbus.freedesktop.org (dbus.freedesktop.org)|131.252.210.176|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1985828 (1.9M) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/dbus-1.10.14.tar.gz’
 
-dbus-1.10.14.tar.gz                 100%[==================================================================>]   1.89M   390KB/s    in 5.0s    
+dbus-1.10.14.tar.gz          100%[=============================================>]   1.89M   302KB/s    in 6.8s    
 
-2017-05-31 14:21:57 (390 KB/s) - '/mnt/lfs/sources/dbus-1.10.14.tar.gz’ saved [1985828/1985828]
+2017-06-13 20:03:33 (285 KB/s) - '/mnt/lfs/sources/dbus-1.10.14.tar.gz’ saved [1985828/1985828]
 
---2017-05-31 14:21:57--  http://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.tar.gz
+--2017-06-13 20:03:33--  http://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.tar.gz
 Connecting to ftp.gnu.org (ftp.gnu.org)|208.118.235.20|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 523969 (512K) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/dejagnu-1.6.tar.gz’
 
-dejagnu-1.6.tar.gz                  100%[==================================================================>] 511.69K   305KB/s    in 1.7s    
+dejagnu-1.6.tar.gz           100%[=============================================>] 511.69K   282KB/s    in 1.8s    
 
-2017-05-31 14:21:59 (305 KB/s) - '/mnt/lfs/sources/dejagnu-1.6.tar.gz’ saved [523969/523969]
+2017-06-13 20:03:36 (282 KB/s) - '/mnt/lfs/sources/dejagnu-1.6.tar.gz’ saved [523969/523969]
 
---2017-05-31 14:21:59--  http://ftp.gnu.org/gnu/diffutils/diffutils-3.5.tar.xz
+--2017-06-13 20:03:36--  http://ftp.gnu.org/gnu/diffutils/diffutils-3.5.tar.xz
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1360996 (1.3M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/diffutils-3.5.tar.xz’
 
-diffutils-3.5.tar.xz                100%[==================================================================>]   1.30M   272KB/s    in 4.9s    
+diffutils-3.5.tar.xz         100%[=============================================>]   1.30M   340KB/s    in 3.9s    
 
-2017-05-31 14:22:04 (272 KB/s) - '/mnt/lfs/sources/diffutils-3.5.tar.xz’ saved [1360996/1360996]
+2017-06-13 20:03:40 (340 KB/s) - '/mnt/lfs/sources/diffutils-3.5.tar.xz’ saved [1360996/1360996]
 
---2017-05-31 14:22:04--  http://dev.gentoo.org/~blueness/eudev/eudev-3.2.1.tar.gz
+--2017-06-13 20:03:40--  http://dev.gentoo.org/~blueness/eudev/eudev-3.2.1.tar.gz
 Resolving dev.gentoo.org (dev.gentoo.org)... 140.211.166.183, 2001:470:ea4a:1:5054:ff:fec7:86e4
 Connecting to dev.gentoo.org (dev.gentoo.org)|140.211.166.183|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1820514 (1.7M) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/eudev-3.2.1.tar.gz’
 
-eudev-3.2.1.tar.gz                  100%[==================================================================>]   1.74M   603KB/s    in 3.0s    
+eudev-3.2.1.tar.gz           100%[=============================================>]   1.74M   472KB/s    in 3.8s    
 
-2017-05-31 14:22:08 (603 KB/s) - '/mnt/lfs/sources/eudev-3.2.1.tar.gz’ saved [1820514/1820514]
+2017-06-13 20:03:44 (472 KB/s) - '/mnt/lfs/sources/eudev-3.2.1.tar.gz’ saved [1820514/1820514]
 
---2017-05-31 14:22:08--  http://downloads.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.43.4/e2fsprogs-1.43.4.tar.gz
+--2017-06-13 20:03:44--  http://downloads.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.43.4/e2fsprogs-1.43.4.tar.gz
 Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 216.34.181.59
 Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:80... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://nchc.dl.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.43.4/e2fsprogs-1.43.4.tar.gz [following]
---2017-05-31 14:22:08--  https://nchc.dl.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.43.4/e2fsprogs-1.43.4.tar.gz
+--2017-06-13 20:03:45--  https://nchc.dl.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.43.4/e2fsprogs-1.43.4.tar.gz
 Resolving nchc.dl.sourceforge.net (nchc.dl.sourceforge.net)... 211.79.60.17, 2001:e10:ffff:1f02::17
 Connecting to nchc.dl.sourceforge.net (nchc.dl.sourceforge.net)|211.79.60.17|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 7552516 (7.2M) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/e2fsprogs-1.43.4.tar.gz’
 
-e2fsprogs-1.43.4.tar.gz             100%[==================================================================>]   7.20M  1.23MB/s    in 6.8s    
+e2fsprogs-1.43.4.tar.gz      100%[=============================================>]   7.20M   561KB/s    in 13s     
 
-2017-05-31 14:22:16 (1.06 MB/s) - '/mnt/lfs/sources/e2fsprogs-1.43.4.tar.gz’ saved [7552516/7552516]
+2017-06-13 20:03:59 (548 KB/s) - '/mnt/lfs/sources/e2fsprogs-1.43.4.tar.gz’ saved [7552516/7552516]
 
---2017-05-31 14:22:16--  http://prdownloads.sourceforge.net/expat/expat-2.2.0.tar.bz2
+--2017-06-13 20:03:59--  http://prdownloads.sourceforge.net/expat/expat-2.2.0.tar.bz2
 Resolving prdownloads.sourceforge.net (prdownloads.sourceforge.net)... 216.34.181.59
 Connecting to prdownloads.sourceforge.net (prdownloads.sourceforge.net)|216.34.181.59|:80... connected.
 HTTP request sent, awaiting response... 301 Moved Permanently
 Location: http://downloads.sourceforge.net/project/expat/expat/2.2.0/expat-2.2.0.tar.bz2 [following]
---2017-05-31 14:22:17--  http://downloads.sourceforge.net/project/expat/expat/2.2.0/expat-2.2.0.tar.bz2
+--2017-06-13 20:04:00--  http://downloads.sourceforge.net/project/expat/expat/2.2.0/expat-2.2.0.tar.bz2
 Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:80... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://nchc.dl.sourceforge.net/project/expat/expat/2.2.0/expat-2.2.0.tar.bz2 [following]
---2017-05-31 14:22:17--  https://nchc.dl.sourceforge.net/project/expat/expat/2.2.0/expat-2.2.0.tar.bz2
+--2017-06-13 20:04:00--  https://nchc.dl.sourceforge.net/project/expat/expat/2.2.0/expat-2.2.0.tar.bz2
 Connecting to nchc.dl.sourceforge.net (nchc.dl.sourceforge.net)|211.79.60.17|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 414352 (405K) [application/octet-stream]
 Saving to: '/mnt/lfs/sources/expat-2.2.0.tar.bz2’
 
-expat-2.2.0.tar.bz2                 100%[==================================================================>] 404.64K   430KB/s    in 0.9s    
+expat-2.2.0.tar.bz2          100%[=============================================>] 404.64K   459KB/s    in 0.9s    
 
-2017-05-31 14:22:19 (430 KB/s) - '/mnt/lfs/sources/expat-2.2.0.tar.bz2’ saved [414352/414352]
+2017-06-13 20:04:02 (459 KB/s) - '/mnt/lfs/sources/expat-2.2.0.tar.bz2’ saved [414352/414352]
 
---2017-05-31 14:22:19--  http://prdownloads.sourceforge.net/expect/expect5.45.tar.gz
+--2017-06-13 20:04:02--  http://prdownloads.sourceforge.net/expect/expect5.45.tar.gz
 Connecting to prdownloads.sourceforge.net (prdownloads.sourceforge.net)|216.34.181.59|:80... connected.
 HTTP request sent, awaiting response... 301 Moved Permanently
 Location: http://downloads.sourceforge.net/project/expect/Expect/5.45/expect5.45.tar.gz [following]
---2017-05-31 14:22:19--  http://downloads.sourceforge.net/project/expect/Expect/5.45/expect5.45.tar.gz
+--2017-06-13 20:04:03--  http://downloads.sourceforge.net/project/expect/Expect/5.45/expect5.45.tar.gz
 Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:80... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://nchc.dl.sourceforge.net/project/expect/Expect/5.45/expect5.45.tar.gz [following]
---2017-05-31 14:22:20--  https://nchc.dl.sourceforge.net/project/expect/Expect/5.45/expect5.45.tar.gz
+--2017-06-13 20:04:03--  https://nchc.dl.sourceforge.net/project/expect/Expect/5.45/expect5.45.tar.gz
 Connecting to nchc.dl.sourceforge.net (nchc.dl.sourceforge.net)|211.79.60.17|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 628808 (614K) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/expect5.45.tar.gz’
 
-expect5.45.tar.gz                   100%[==================================================================>] 614.07K   559KB/s    in 1.1s    
+expect5.45.tar.gz            100%[=============================================>] 614.07K   585KB/s    in 1.0s    
 
-2017-05-31 14:22:22 (559 KB/s) - '/mnt/lfs/sources/expect5.45.tar.gz’ saved [628808/628808]
+2017-06-13 20:04:05 (585 KB/s) - '/mnt/lfs/sources/expect5.45.tar.gz’ saved [628808/628808]
 
---2017-05-31 14:22:22--  ftp://ftp.astron.com/pub/file/file-5.30.tar.gz
+--2017-06-13 20:04:05--  ftp://ftp.astron.com/pub/file/file-5.30.tar.gz
            => '/mnt/lfs/sources/file-5.30.tar.gz’
 Resolving ftp.astron.com (ftp.astron.com)... 38.117.134.18
 Connecting to ftp.astron.com (ftp.astron.com)|38.117.134.18|:21... connected.
@@ -246,571 +357,568 @@ Logging in as anonymous ... Logged in!
 ==> PASV ... done.    ==> RETR file-5.30.tar.gz ... done.
 Length: 789345 (771K) (unauthoritative)
 
-file-5.30.tar.gz                    100%[==================================================================>] 770.84K  91.3KB/s    in 8.3s    
+file-5.30.tar.gz             100%[=============================================>] 770.84K  95.3KB/s    in 9.6s    
 
-2017-05-31 14:22:35 (92.6 KB/s) - '/mnt/lfs/sources/file-5.30.tar.gz’ saved [789345]
+2017-06-13 20:04:19 (80.5 KB/s) - '/mnt/lfs/sources/file-5.30.tar.gz’ saved [789345]
 
---2017-05-31 14:22:35--  http://ftp.gnu.org/gnu/findutils/findutils-4.6.0.tar.gz
+--2017-06-13 20:04:19--  http://ftp.gnu.org/gnu/findutils/findutils-4.6.0.tar.gz
 Connecting to ftp.gnu.org (ftp.gnu.org)|208.118.235.20|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 3780154 (3.6M) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/findutils-4.6.0.tar.gz’
 
-findutils-4.6.0.tar.gz              100%[==================================================================>]   3.60M   487KB/s    in 8.1s    
+findutils-4.6.0.tar.gz       100%[=============================================>]   3.60M   634KB/s    in 6.6s    
 
-2017-05-31 14:22:44 (453 KB/s) - '/mnt/lfs/sources/findutils-4.6.0.tar.gz’ saved [3780154/3780154]
+2017-06-13 20:04:26 (558 KB/s) - '/mnt/lfs/sources/findutils-4.6.0.tar.gz’ saved [3780154/3780154]
 
---2017-05-31 14:22:44--  https://github.com/westes/flex/releases/download/v2.6.3/flex-2.6.3.tar.gz
-Connecting to github.com (github.com)|192.30.253.113|:443... connected.
+--2017-06-13 20:04:26--  https://github.com/westes/flex/releases/download/v2.6.3/flex-2.6.3.tar.gz
+Connecting to github.com (github.com)|192.30.253.112|:443... connected.
 HTTP request sent, awaiting response... 302 Found
-Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/14521001/8dd51720-ce90-11e6-8085-8c383531b03e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170531%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170531T042245Z&X-Amz-Expires=300&X-Amz-Signature=caaf8cb2ef9467838cd90181b6b808da3e257a8d8509bd736f9fd59c7afe0d1a&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dflex-2.6.3.tar.gz&response-content-type=application%2Foctet-stream [following]
---2017-05-31 14:22:45--  https://github-production-release-asset-2e65be.s3.amazonaws.com/14521001/8dd51720-ce90-11e6-8085-8c383531b03e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170531%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170531T042245Z&X-Amz-Expires=300&X-Amz-Signature=caaf8cb2ef9467838cd90181b6b808da3e257a8d8509bd736f9fd59c7afe0d1a&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dflex-2.6.3.tar.gz&response-content-type=application%2Foctet-stream
-Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.216.226.200|:443... connected.
+Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/14521001/8dd51720-ce90-11e6-8085-8c383531b03e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170613%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170613T100427Z&X-Amz-Expires=300&X-Amz-Signature=ed6d2c6d079d895f785855abf88f06a7a782d2a3cf826030c94c186d7bd9d856&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dflex-2.6.3.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2017-06-13 20:04:27--  https://github-production-release-asset-2e65be.s3.amazonaws.com/14521001/8dd51720-ce90-11e6-8085-8c383531b03e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170613%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170613T100427Z&X-Amz-Expires=300&X-Amz-Signature=ed6d2c6d079d895f785855abf88f06a7a782d2a3cf826030c94c186d7bd9d856&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dflex-2.6.3.tar.gz&response-content-type=application%2Foctet-stream
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.216.226.136|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1405560 (1.3M) [application/octet-stream]
 Saving to: '/mnt/lfs/sources/flex-2.6.3.tar.gz’
 
-flex-2.6.3.tar.gz                   100%[==================================================================>]   1.34M   403KB/s    in 3.4s    
+flex-2.6.3.tar.gz            100%[=============================================>]   1.34M   458KB/s    in 3.0s    
 
-2017-05-31 14:22:49 (403 KB/s) - '/mnt/lfs/sources/flex-2.6.3.tar.gz’ saved [1405560/1405560]
+2017-06-13 20:04:32 (458 KB/s) - '/mnt/lfs/sources/flex-2.6.3.tar.gz’ saved [1405560/1405560]
 
---2017-05-31 14:22:49--  http://ftp.gnu.org/gnu/gawk/gawk-4.1.4.tar.xz
+--2017-06-13 20:04:32--  http://ftp.gnu.org/gnu/gawk/gawk-4.1.4.tar.xz
 Connecting to ftp.gnu.org (ftp.gnu.org)|208.118.235.20|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 2367832 (2.3M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/gawk-4.1.4.tar.xz’
 
-gawk-4.1.4.tar.xz                   100%[==================================================================>]   2.26M   434KB/s    in 5.3s    
+gawk-4.1.4.tar.xz            100%[=============================================>]   2.26M   512KB/s    in 4.8s    
 
-2017-05-31 14:22:55 (434 KB/s) - '/mnt/lfs/sources/gawk-4.1.4.tar.xz’ saved [2367832/2367832]
+2017-06-13 20:04:37 (484 KB/s) - '/mnt/lfs/sources/gawk-4.1.4.tar.xz’ saved [2367832/2367832]
 
---2017-05-31 14:22:55--  http://ftp.gnu.org/gnu/gcc/gcc-6.3.0/gcc-6.3.0.tar.bz2
+--2017-06-13 20:04:37--  http://ftp.gnu.org/gnu/gcc/gcc-6.3.0/gcc-6.3.0.tar.bz2
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 99903185 (95M) [application/x-bzip2]
 Saving to: '/mnt/lfs/sources/gcc-6.3.0.tar.bz2’
 
-gcc-6.3.0.tar.bz2                   100%[==================================================================>]  95.27M   699KB/s    in 2m 27s  
+gcc-6.3.0.tar.bz2            100%[=============================================>]  95.27M   705KB/s    in 2m 39s  
 
-2017-05-31 14:25:22 (664 KB/s) - '/mnt/lfs/sources/gcc-6.3.0.tar.bz2’ saved [99903185/99903185]
+2017-06-13 20:07:16 (615 KB/s) - '/mnt/lfs/sources/gcc-6.3.0.tar.bz2’ saved [99903185/99903185]
 
---2017-05-31 14:25:22--  http://ftp.gnu.org/gnu/gdbm/gdbm-1.12.tar.gz
+--2017-06-13 20:07:16--  http://ftp.gnu.org/gnu/gdbm/gdbm-1.12.tar.gz
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 841213 (821K) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/gdbm-1.12.tar.gz’
 
-gdbm-1.12.tar.gz                    100%[==================================================================>] 821.50K   364KB/s    in 2.3s    
+gdbm-1.12.tar.gz             100%[=============================================>] 821.50K   443KB/s    in 1.9s    
 
-2017-05-31 14:25:25 (364 KB/s) - '/mnt/lfs/sources/gdbm-1.12.tar.gz’ saved [841213/841213]
+2017-06-13 20:07:18 (443 KB/s) - '/mnt/lfs/sources/gdbm-1.12.tar.gz’ saved [841213/841213]
 
---2017-05-31 14:25:25--  http://ftp.gnu.org/gnu/gettext/gettext-0.19.8.1.tar.xz
+--2017-06-13 20:07:18--  http://ftp.gnu.org/gnu/gettext/gettext-0.19.8.1.tar.xz
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 7209808 (6.9M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/gettext-0.19.8.1.tar.xz’
 
-gettext-0.19.8.1.tar.xz             100%[==================================================================>]   6.88M   726KB/s    in 16s     
+gettext-0.19.8.1.tar.xz      100%[=============================================>]   6.88M   565KB/s    in 15s     
 
-2017-05-31 14:25:41 (449 KB/s) - '/mnt/lfs/sources/gettext-0.19.8.1.tar.xz’ saved [7209808/7209808]
+2017-06-13 20:07:33 (483 KB/s) - '/mnt/lfs/sources/gettext-0.19.8.1.tar.xz’ saved [7209808/7209808]
 
---2017-05-31 14:25:41--  http://ftp.gnu.org/gnu/glibc/glibc-2.25.tar.xz
+--2017-06-13 20:07:33--  http://ftp.gnu.org/gnu/glibc/glibc-2.25.tar.xz
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 13873900 (13M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/glibc-2.25.tar.xz’
 
-glibc-2.25.tar.xz                   100%[==================================================================>]  13.23M  1.14MB/s    in 16s     
+glibc-2.25.tar.xz            100%[=============================================>]  13.23M   818KB/s    in 29s     
 
-2017-05-31 14:25:57 (865 KB/s) - '/mnt/lfs/sources/glibc-2.25.tar.xz’ saved [13873900/13873900]
+2017-06-13 20:08:02 (472 KB/s) - '/mnt/lfs/sources/glibc-2.25.tar.xz’ saved [13873900/13873900]
 
---2017-05-31 14:25:57--  http://ftp.gnu.org/gnu/gmp/gmp-6.1.2.tar.xz
+--2017-06-13 20:08:02--  http://ftp.gnu.org/gnu/gmp/gmp-6.1.2.tar.xz
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1946336 (1.9M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/gmp-6.1.2.tar.xz’
 
-gmp-6.1.2.tar.xz                    100%[==================================================================>]   1.86M   826KB/s    in 2.3s    
+gmp-6.1.2.tar.xz             100%[=============================================>]   1.86M   525KB/s    in 3.6s    
 
-2017-05-31 14:25:59 (826 KB/s) - '/mnt/lfs/sources/gmp-6.1.2.tar.xz’ saved [1946336/1946336]
+2017-06-13 20:08:06 (525 KB/s) - '/mnt/lfs/sources/gmp-6.1.2.tar.xz’ saved [1946336/1946336]
 
---2017-05-31 14:25:59--  http://ftp.gnu.org/gnu/gperf/gperf-3.0.4.tar.gz
+--2017-06-13 20:08:06--  http://ftp.gnu.org/gnu/gperf/gperf-3.0.4.tar.gz
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 983500 (960K) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/gperf-3.0.4.tar.gz’
 
-gperf-3.0.4.tar.gz                  100%[==================================================================>] 960.45K   539KB/s    in 1.8s    
+gperf-3.0.4.tar.gz           100%[=============================================>] 960.45K   441KB/s    in 2.2s    
 
-2017-05-31 14:26:02 (539 KB/s) - '/mnt/lfs/sources/gperf-3.0.4.tar.gz’ saved [983500/983500]
+2017-06-13 20:08:08 (441 KB/s) - '/mnt/lfs/sources/gperf-3.0.4.tar.gz’ saved [983500/983500]
 
---2017-05-31 14:26:02--  http://ftp.gnu.org/gnu/grep/grep-3.0.tar.xz
+--2017-06-13 20:08:08--  http://ftp.gnu.org/gnu/grep/grep-3.0.tar.xz
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1375156 (1.3M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/grep-3.0.tar.xz’
 
-grep-3.0.tar.xz                     100%[==================================================================>]   1.31M   518KB/s    in 2.6s    
+grep-3.0.tar.xz              100%[=============================================>]   1.31M   376KB/s    in 3.6s    
 
-2017-05-31 14:26:04 (518 KB/s) - '/mnt/lfs/sources/grep-3.0.tar.xz’ saved [1375156/1375156]
+2017-06-13 20:08:12 (376 KB/s) - '/mnt/lfs/sources/grep-3.0.tar.xz’ saved [1375156/1375156]
 
---2017-05-31 14:26:04--  http://ftp.gnu.org/gnu/groff/groff-1.22.3.tar.gz
+--2017-06-13 20:08:12--  http://ftp.gnu.org/gnu/groff/groff-1.22.3.tar.gz
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 4188772 (4.0M) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/groff-1.22.3.tar.gz’
 
-groff-1.22.3.tar.gz                 100%[==================================================================>]   3.99M   411KB/s    in 9.9s    
+groff-1.22.3.tar.gz          100%[=============================================>]   3.99M   299KB/s    in 12s     
 
-2017-05-31 14:26:15 (412 KB/s) - '/mnt/lfs/sources/groff-1.22.3.tar.gz’ saved [4188772/4188772]
+2017-06-13 20:08:25 (343 KB/s) - '/mnt/lfs/sources/groff-1.22.3.tar.gz’ saved [4188772/4188772]
 
---2017-05-31 14:26:15--  http://alpha.gnu.org/gnu/grub/grub-2.02~beta3.tar.xz
+--2017-06-13 20:08:25--  http://alpha.gnu.org/gnu/grub/grub-2.02~beta3.tar.xz
 Connecting to alpha.gnu.org (alpha.gnu.org)|208.118.235.21|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 6030784 (5.8M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/grub-2.02~beta3.tar.xz’
 
-grub-2.02~beta3.tar.xz              100%[==================================================================>]   5.75M   575KB/s    in 13s     
+grub-2.02~beta3.tar.xz       100%[=============================================>]   5.75M   568KB/s    in 12s     
 
-2017-05-31 14:26:29 (439 KB/s) - '/mnt/lfs/sources/grub-2.02~beta3.tar.xz’ saved [6030784/6030784]
+2017-06-13 20:08:37 (492 KB/s) - '/mnt/lfs/sources/grub-2.02~beta3.tar.xz’ saved [6030784/6030784]
 
---2017-05-31 14:26:29--  http://ftp.gnu.org/gnu/gzip/gzip-1.8.tar.xz
+--2017-06-13 20:08:37--  http://ftp.gnu.org/gnu/gzip/gzip-1.8.tar.xz
 Connecting to ftp.gnu.org (ftp.gnu.org)|208.118.235.20|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 728116 (711K) [application/x-tar]
 Saving to: '/mnt/lfs/sources/gzip-1.8.tar.xz’
 
-gzip-1.8.tar.xz                     100%[==================================================================>] 711.05K   322KB/s    in 2.2s    
+gzip-1.8.tar.xz              100%[=============================================>] 711.05K   195KB/s    in 3.6s    
 
-2017-05-31 14:26:31 (322 KB/s) - '/mnt/lfs/sources/gzip-1.8.tar.xz’ saved [728116/728116]
+2017-06-13 20:08:41 (195 KB/s) - '/mnt/lfs/sources/gzip-1.8.tar.xz’ saved [728116/728116]
 
---2017-05-31 14:26:31--  http://anduin.linuxfromscratch.org/LFS/iana-etc-2.30.tar.bz2
+--2017-06-13 20:08:41--  http://anduin.linuxfromscratch.org/LFS/iana-etc-2.30.tar.bz2
 Resolving anduin.linuxfromscratch.org (anduin.linuxfromscratch.org)... 45.33.5.237
 Connecting to anduin.linuxfromscratch.org (anduin.linuxfromscratch.org)|45.33.5.237|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 205618 (201K) [application/x-bzip2]
 Saving to: '/mnt/lfs/sources/iana-etc-2.30.tar.bz2’
 
-iana-etc-2.30.tar.bz2               100%[==================================================================>] 200.80K   256KB/s    in 0.8s    
+iana-etc-2.30.tar.bz2        100%[=============================================>] 200.80K   104KB/s    in 1.9s    
 
-2017-05-31 14:26:33 (256 KB/s) - '/mnt/lfs/sources/iana-etc-2.30.tar.bz2’ saved [205618/205618]
+2017-06-13 20:08:44 (104 KB/s) - '/mnt/lfs/sources/iana-etc-2.30.tar.bz2’ saved [205618/205618]
 
---2017-05-31 14:26:33--  http://ftp.gnu.org/gnu/inetutils/inetutils-1.9.4.tar.xz
+--2017-06-13 20:08:44--  http://ftp.gnu.org/gnu/inetutils/inetutils-1.9.4.tar.xz
 Connecting to ftp.gnu.org (ftp.gnu.org)|208.118.235.20|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1364408 (1.3M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/inetutils-1.9.4.tar.xz’
 
-inetutils-1.9.4.tar.xz              100%[==================================================================>]   1.30M   313KB/s    in 4.3s    
+inetutils-1.9.4.tar.xz       100%[=============================================>]   1.30M   374KB/s    in 3.6s    
 
-2017-05-31 14:26:38 (313 KB/s) - '/mnt/lfs/sources/inetutils-1.9.4.tar.xz’ saved [1364408/1364408]
+2017-06-13 20:08:48 (374 KB/s) - '/mnt/lfs/sources/inetutils-1.9.4.tar.xz’ saved [1364408/1364408]
 
---2017-05-31 14:26:38--  http://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
+--2017-06-13 20:08:48--  http://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
 Resolving launchpad.net (launchpad.net)... 91.189.89.223, 91.189.89.222
 Connecting to launchpad.net (launchpad.net)|91.189.89.223|:80... connected.
 HTTP request sent, awaiting response... 303 See Other
 Location: https://launchpadlibrarian.net/199705878/intltool-0.51.0.tar.gz [following]
---2017-05-31 14:26:39--  https://launchpadlibrarian.net/199705878/intltool-0.51.0.tar.gz
-Resolving launchpadlibrarian.net (launchpadlibrarian.net)... 91.189.89.228, 91.189.89.229
-Connecting to launchpadlibrarian.net (launchpadlibrarian.net)|91.189.89.228|:443... connected.
+--2017-06-13 20:08:49--  https://launchpadlibrarian.net/199705878/intltool-0.51.0.tar.gz
+Resolving launchpadlibrarian.net (launchpadlibrarian.net)... 91.189.89.229, 91.189.89.228
+Connecting to launchpadlibrarian.net (launchpadlibrarian.net)|91.189.89.229|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 162286 (158K) [application/x-tar]
 Saving to: '/mnt/lfs/sources/intltool-0.51.0.tar.gz’
 
-intltool-0.51.0.tar.gz              100%[==================================================================>] 158.48K   154KB/s    in 1.0s    
+intltool-0.51.0.tar.gz       100%[=============================================>] 158.48K   156KB/s    in 1.0s    
 
-2017-05-31 14:26:42 (154 KB/s) - '/mnt/lfs/sources/intltool-0.51.0.tar.gz’ saved [162286/162286]
+2017-06-13 20:08:52 (156 KB/s) - '/mnt/lfs/sources/intltool-0.51.0.tar.gz’ saved [162286/162286]
 
---2017-05-31 14:26:42--  https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-4.9.0.tar.xz
+--2017-06-13 20:08:52--  https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-4.9.0.tar.xz
 Resolving www.kernel.org (www.kernel.org)... 147.75.110.187, 2604:1380:3000:3500::3
 Connecting to www.kernel.org (www.kernel.org)|147.75.110.187|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 613032 (599K) [application/x-xz]
 Saving to: '/mnt/lfs/sources/iproute2-4.9.0.tar.xz’
 
-iproute2-4.9.0.tar.xz               100%[==================================================================>] 598.66K   173KB/s    in 3.5s    
+iproute2-4.9.0.tar.xz        100%[=============================================>] 598.66K   181KB/s    in 3.3s    
 
-2017-05-31 14:26:47 (173 KB/s) - '/mnt/lfs/sources/iproute2-4.9.0.tar.xz’ saved [613032/613032]
+2017-06-13 20:08:57 (181 KB/s) - '/mnt/lfs/sources/iproute2-4.9.0.tar.xz’ saved [613032/613032]
 
---2017-05-31 14:26:47--  https://www.kernel.org/pub/linux/utils/kbd/kbd-2.0.4.tar.xz
+--2017-06-13 20:08:57--  https://www.kernel.org/pub/linux/utils/kbd/kbd-2.0.4.tar.xz
 Reusing existing connection to www.kernel.org:443.
 HTTP request sent, awaiting response... 200 OK
 Length: 1031864 (1008K) [application/x-xz]
 Saving to: '/mnt/lfs/sources/kbd-2.0.4.tar.xz’
 
-kbd-2.0.4.tar.xz                    100%[==================================================================>]   1008K   140KB/s    in 7.9s    
+kbd-2.0.4.tar.xz             100%[=============================================>]   1008K   156KB/s    in 7.1s    
 
-2017-05-31 14:26:55 (128 KB/s) - '/mnt/lfs/sources/kbd-2.0.4.tar.xz’ saved [1031864/1031864]
+2017-06-13 20:09:04 (142 KB/s) - '/mnt/lfs/sources/kbd-2.0.4.tar.xz’ saved [1031864/1031864]
 
---2017-05-31 14:26:55--  https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-23.tar.xz
+--2017-06-13 20:09:04--  https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-23.tar.xz
 Reusing existing connection to www.kernel.org:443.
 HTTP request sent, awaiting response... 200 OK
 Length: 450376 (440K) [application/x-xz]
 Saving to: '/mnt/lfs/sources/kmod-23.tar.xz’
 
-kmod-23.tar.xz                      100%[==================================================================>] 439.82K   141KB/s    in 3.1s    
+kmod-23.tar.xz               100%[=============================================>] 439.82K   161KB/s    in 2.7s    
 
-2017-05-31 14:26:58 (141 KB/s) - '/mnt/lfs/sources/kmod-23.tar.xz’ saved [450376/450376]
+2017-06-13 20:09:07 (161 KB/s) - '/mnt/lfs/sources/kmod-23.tar.xz’ saved [450376/450376]
 
---2017-05-31 14:26:58--  http://www.greenwoodsoftware.com/less/less-481.tar.gz
+--2017-06-13 20:09:07--  http://www.greenwoodsoftware.com/less/less-481.tar.gz
 Resolving www.greenwoodsoftware.com (www.greenwoodsoftware.com)... 104.200.21.227
 Connecting to www.greenwoodsoftware.com (www.greenwoodsoftware.com)|104.200.21.227|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 316622 (309K) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/less-481.tar.gz’
 
-less-481.tar.gz                     100%[==================================================================>] 309.20K   259KB/s    in 1.2s    
+less-481.tar.gz              100%[=============================================>] 309.20K   212KB/s    in 1.5s    
 
-2017-05-31 14:27:00 (259 KB/s) - '/mnt/lfs/sources/less-481.tar.gz’ saved [316622/316622]
+2017-06-13 20:09:09 (212 KB/s) - '/mnt/lfs/sources/less-481.tar.gz’ saved [316622/316622]
 
---2017-05-31 14:27:00--  http://www.linuxfromscratch.org/lfs/downloads/8.0/lfs-bootscripts-20150222.tar.bz2
+--2017-06-13 20:09:09--  http://www.linuxfromscratch.org/lfs/downloads/8.0/lfs-bootscripts-20150222.tar.bz2
 Resolving www.linuxfromscratch.org (www.linuxfromscratch.org)... 192.155.86.174, 2600:3c01::f03c:91ff:fe70:25e8
 Connecting to www.linuxfromscratch.org (www.linuxfromscratch.org)|192.155.86.174|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 31568 (31K) [application/x-bzip2]
 Saving to: '/mnt/lfs/sources/lfs-bootscripts-20150222.tar.bz2’
 
-lfs-bootscripts-20150222.tar.bz2    100%[==================================================================>]  30.83K   114KB/s    in 0.3s    
+lfs-bootscripts-20150222.tar 100%[=============================================>]  30.83K   114KB/s    in 0.3s    
 
-2017-05-31 14:27:01 (114 KB/s) - '/mnt/lfs/sources/lfs-bootscripts-20150222.tar.bz2’ saved [31568/31568]
+2017-06-13 20:09:10 (114 KB/s) - '/mnt/lfs/sources/lfs-bootscripts-20150222.tar.bz2’ saved [31568/31568]
 
---2017-05-31 14:27:01--  https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.25.tar.xz
+--2017-06-13 20:09:10--  https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.25.tar.xz
 Connecting to www.kernel.org (www.kernel.org)|147.75.110.187|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 63672 (62K) [application/x-xz]
 Saving to: '/mnt/lfs/sources/libcap-2.25.tar.xz’
 
-libcap-2.25.tar.xz                  100%[==================================================================>]  62.18K  98.4KB/s    in 0.6s    
+libcap-2.25.tar.xz           100%[=============================================>]  62.18K   106KB/s    in 0.6s    
 
-2017-05-31 14:27:03 (98.4 KB/s) - '/mnt/lfs/sources/libcap-2.25.tar.xz’ saved [63672/63672]
+2017-06-13 20:09:12 (106 KB/s) - '/mnt/lfs/sources/libcap-2.25.tar.xz’ saved [63672/63672]
 
---2017-05-31 14:27:03--  http://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.4.1.tar.gz
+--2017-06-13 20:09:12--  http://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.4.1.tar.gz
 Connecting to download.savannah.gnu.org (download.savannah.gnu.org)|208.118.235.200|:80... connected.
 HTTP request sent, awaiting response... 302 Moved Temporarily
 Location: http://ftp.yzu.edu.tw/nongnu/libpipeline/libpipeline-1.4.1.tar.gz [following]
---2017-05-31 14:27:04--  http://ftp.yzu.edu.tw/nongnu/libpipeline/libpipeline-1.4.1.tar.gz
+--2017-06-13 20:09:13--  http://ftp.yzu.edu.tw/nongnu/libpipeline/libpipeline-1.4.1.tar.gz
 Connecting to ftp.yzu.edu.tw (ftp.yzu.edu.tw)|140.138.144.170|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 805172 (786K) [application/octet-stream]
 Saving to: '/mnt/lfs/sources/libpipeline-1.4.1.tar.gz’
 
-libpipeline-1.4.1.tar.gz            100%[==================================================================>] 786.30K   716KB/s    in 1.1s    
+libpipeline-1.4.1.tar.gz     100%[=============================================>] 786.30K   735KB/s    in 1.1s    
 
-2017-05-31 14:27:05 (716 KB/s) - '/mnt/lfs/sources/libpipeline-1.4.1.tar.gz’ saved [805172/805172]
+2017-06-13 20:09:14 (735 KB/s) - '/mnt/lfs/sources/libpipeline-1.4.1.tar.gz’ saved [805172/805172]
 
---2017-05-31 14:27:05--  http://ftp.gnu.org/gnu/libtool/libtool-2.4.6.tar.xz
+--2017-06-13 20:09:14--  http://ftp.gnu.org/gnu/libtool/libtool-2.4.6.tar.xz
 Connecting to ftp.gnu.org (ftp.gnu.org)|208.118.235.20|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 973080 (950K) [application/x-tar]
 Saving to: '/mnt/lfs/sources/libtool-2.4.6.tar.xz’
 
-libtool-2.4.6.tar.xz                100%[==================================================================>] 950.27K   308KB/s    in 3.1s    
+libtool-2.4.6.tar.xz         100%[=============================================>] 950.27K   290KB/s    in 3.3s    
 
-2017-05-31 14:27:09 (308 KB/s) - '/mnt/lfs/sources/libtool-2.4.6.tar.xz’ saved [973080/973080]
+2017-06-13 20:09:18 (290 KB/s) - '/mnt/lfs/sources/libtool-2.4.6.tar.xz’ saved [973080/973080]
 
---2017-05-31 14:27:09--  https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.9.9.tar.xz
+--2017-06-13 20:09:18--  https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.9.9.tar.xz
 Connecting to www.kernel.org (www.kernel.org)|147.75.110.187|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 93208832 (89M) [application/x-xz]
 Saving to: '/mnt/lfs/sources/linux-4.9.9.tar.xz’
 
-linux-4.9.9.tar.xz                  100%[==================================================================>]  88.89M   592KB/s    in 2m 13s  
+linux-4.9.9.tar.xz           100%[=============================================>]  88.89M   438KB/s    in 2m 39s  
 
-2017-05-31 14:29:24 (682 KB/s) - '/mnt/lfs/sources/linux-4.9.9.tar.xz’ saved [93208832/93208832]
+2017-06-13 20:11:59 (571 KB/s) - '/mnt/lfs/sources/linux-4.9.9.tar.xz’ saved [93208832/93208832]
 
---2017-05-31 14:29:24--  http://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.xz
+--2017-06-13 20:11:59--  http://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.xz
 Connecting to ftp.gnu.org (ftp.gnu.org)|208.118.235.20|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1207688 (1.2M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/m4-1.4.18.tar.xz’
 
-m4-1.4.18.tar.xz                    100%[==================================================================>]   1.15M   350KB/s    in 3.4s    
+m4-1.4.18.tar.xz             100%[=============================================>]   1.15M   353KB/s    in 3.3s    
 
-2017-05-31 14:29:27 (350 KB/s) - '/mnt/lfs/sources/m4-1.4.18.tar.xz’ saved [1207688/1207688]
+2017-06-13 20:12:02 (353 KB/s) - '/mnt/lfs/sources/m4-1.4.18.tar.xz’ saved [1207688/1207688]
 
---2017-05-31 14:29:27--  http://ftp.gnu.org/gnu/make/make-4.2.1.tar.bz2
+--2017-06-13 20:12:02--  http://ftp.gnu.org/gnu/make/make-4.2.1.tar.bz2
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1407126 (1.3M) [application/x-bzip2]
 Saving to: '/mnt/lfs/sources/make-4.2.1.tar.bz2’
 
-make-4.2.1.tar.bz2                  100%[==================================================================>]   1.34M   405KB/s    in 3.4s    
+make-4.2.1.tar.bz2           100%[=============================================>]   1.34M   405KB/s    in 3.4s    
 
-2017-05-31 14:29:31 (405 KB/s) - '/mnt/lfs/sources/make-4.2.1.tar.bz2’ saved [1407126/1407126]
+2017-06-13 20:12:06 (405 KB/s) - '/mnt/lfs/sources/make-4.2.1.tar.bz2’ saved [1407126/1407126]
 
---2017-05-31 14:29:31--  http://download.savannah.gnu.org/releases/man-db/man-db-2.7.6.1.tar.xz
+--2017-06-13 20:12:06--  http://download.savannah.gnu.org/releases/man-db/man-db-2.7.6.1.tar.xz
 Connecting to download.savannah.gnu.org (download.savannah.gnu.org)|208.118.235.200|:80... connected.
 HTTP request sent, awaiting response... 302 Moved Temporarily
 Location: http://ftp.yzu.edu.tw/nongnu/man-db/man-db-2.7.6.1.tar.xz [following]
---2017-05-31 14:29:32--  http://ftp.yzu.edu.tw/nongnu/man-db/man-db-2.7.6.1.tar.xz
+--2017-06-13 20:12:07--  http://ftp.yzu.edu.tw/nongnu/man-db/man-db-2.7.6.1.tar.xz
 Connecting to ftp.yzu.edu.tw (ftp.yzu.edu.tw)|140.138.144.170|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1541316 (1.5M) [application/octet-stream]
 Saving to: '/mnt/lfs/sources/man-db-2.7.6.1.tar.xz’
 
-man-db-2.7.6.1.tar.xz               100%[==================================================================>]   1.47M   581KB/s    in 2.6s    
+man-db-2.7.6.1.tar.xz        100%[=============================================>]   1.47M   951KB/s    in 1.6s    
 
-2017-05-31 14:29:35 (581 KB/s) - '/mnt/lfs/sources/man-db-2.7.6.1.tar.xz’ saved [1541316/1541316]
+2017-06-13 20:12:09 (951 KB/s) - '/mnt/lfs/sources/man-db-2.7.6.1.tar.xz’ saved [1541316/1541316]
 
---2017-05-31 14:29:35--  https://www.kernel.org/pub/linux/docs/man-pages/man-pages-4.09.tar.xz
+--2017-06-13 20:12:09--  https://www.kernel.org/pub/linux/docs/man-pages/man-pages-4.09.tar.xz
 Connecting to www.kernel.org (www.kernel.org)|147.75.110.187|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1521560 (1.5M) [application/x-xz]
 Saving to: '/mnt/lfs/sources/man-pages-4.09.tar.xz’
 
-man-pages-4.09.tar.xz               100%[==================================================================>]   1.45M   150KB/s    in 9.9s    
+man-pages-4.09.tar.xz        100%[=============================================>]   1.45M   154KB/s    in 10s     
 
-2017-05-31 14:29:46 (150 KB/s) - '/mnt/lfs/sources/man-pages-4.09.tar.xz’ saved [1521560/1521560]
+2017-06-13 20:12:20 (147 KB/s) - '/mnt/lfs/sources/man-pages-4.09.tar.xz’ saved [1521560/1521560]
 
---2017-05-31 14:29:46--  http://www.multiprecision.org/mpc/download/mpc-1.0.3.tar.gz
+--2017-06-13 20:12:20--  http://www.multiprecision.org/mpc/download/mpc-1.0.3.tar.gz
 Resolving www.multiprecision.org (www.multiprecision.org)... 46.30.213.151
 Connecting to www.multiprecision.org (www.multiprecision.org)|46.30.213.151|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 669925 (654K) [application/x-tar]
 Saving to: '/mnt/lfs/sources/mpc-1.0.3.tar.gz’
 
-mpc-1.0.3.tar.gz                    100%[==================================================================>] 654.22K   221KB/s    in 3.0s    
+mpc-1.0.3.tar.gz             100%[=============================================>] 654.22K   221KB/s    in 3.0s    
 
-2017-05-31 14:29:50 (221 KB/s) - '/mnt/lfs/sources/mpc-1.0.3.tar.gz’ saved [669925/669925]
+2017-06-13 20:12:24 (221 KB/s) - '/mnt/lfs/sources/mpc-1.0.3.tar.gz’ saved [669925/669925]
 
---2017-05-31 14:29:50--  http://www.mpfr.org/mpfr-3.1.5/mpfr-3.1.5.tar.xz
+--2017-06-13 20:12:24--  http://www.mpfr.org/mpfr-3.1.5/mpfr-3.1.5.tar.xz
 Resolving www.mpfr.org (www.mpfr.org)... 152.81.144.6
 Connecting to www.mpfr.org (www.mpfr.org)|152.81.144.6|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1126668 (1.1M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/mpfr-3.1.5.tar.xz’
 
-mpfr-3.1.5.tar.xz                   100%[==================================================================>]   1.07M   191KB/s    in 5.8s    
+mpfr-3.1.5.tar.xz            100%[=============================================>]   1.07M   138KB/s    in 8.0s    
 
-2017-05-31 14:29:57 (191 KB/s) - '/mnt/lfs/sources/mpfr-3.1.5.tar.xz’ saved [1126668/1126668]
+2017-06-13 20:12:34 (138 KB/s) - '/mnt/lfs/sources/mpfr-3.1.5.tar.xz’ saved [1126668/1126668]
 
---2017-05-31 14:29:57--  http://ftp.gnu.org/gnu//ncurses/ncurses-6.0.tar.gz
+--2017-06-13 20:12:34--  http://ftp.gnu.org/gnu//ncurses/ncurses-6.0.tar.gz
 Connecting to ftp.gnu.org (ftp.gnu.org)|208.118.235.20|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 3131891 (3.0M) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/ncurses-6.0.tar.gz’
 
-ncurses-6.0.tar.gz                  100%[==================================================================>]   2.99M   539KB/s    in 5.7s    
+ncurses-6.0.tar.gz           100%[=============================================>]   2.99M   505KB/s    in 6.1s    
 
-2017-05-31 14:30:04 (539 KB/s) - '/mnt/lfs/sources/ncurses-6.0.tar.gz’ saved [3131891/3131891]
+2017-06-13 20:12:41 (505 KB/s) - '/mnt/lfs/sources/ncurses-6.0.tar.gz’ saved [3131891/3131891]
 
---2017-05-31 14:30:04--  http://ftp.gnu.org/gnu/patch/patch-2.7.5.tar.xz
+--2017-06-13 20:12:41--  http://ftp.gnu.org/gnu/patch/patch-2.7.5.tar.xz
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 727704 (711K) [application/x-tar]
 Saving to: '/mnt/lfs/sources/patch-2.7.5.tar.xz’
 
-patch-2.7.5.tar.xz                  100%[==================================================================>] 710.65K   475KB/s    in 1.5s    
+patch-2.7.5.tar.xz           100%[=============================================>] 710.65K   584KB/s    in 1.2s    
 
-2017-05-31 14:30:05 (475 KB/s) - '/mnt/lfs/sources/patch-2.7.5.tar.xz’ saved [727704/727704]
+2017-06-13 20:12:42 (584 KB/s) - '/mnt/lfs/sources/patch-2.7.5.tar.xz’ saved [727704/727704]
 
---2017-05-31 14:30:05--  http://www.cpan.org/src/5.0/perl-5.24.1.tar.bz2
+--2017-06-13 20:12:42--  http://www.cpan.org/src/5.0/perl-5.24.1.tar.bz2
 Resolving www.cpan.org (www.cpan.org)... 151.101.2.49, 151.101.66.49, 151.101.130.49, ...
 Connecting to www.cpan.org (www.cpan.org)|151.101.2.49|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 14088312 (13M) [application/x-bzip2]
 Saving to: '/mnt/lfs/sources/perl-5.24.1.tar.bz2’
 
-perl-5.24.1.tar.bz2                 100%[==================================================================>]  13.44M  1.83MB/s    in 7.4s    
+perl-5.24.1.tar.bz2          100%[=============================================>]  13.44M  1.84MB/s    in 7.4s    
 
-2017-05-31 14:30:13 (1.82 MB/s) - '/mnt/lfs/sources/perl-5.24.1.tar.bz2’ saved [14088312/14088312]
+2017-06-13 20:12:58 (1.83 MB/s) - '/mnt/lfs/sources/perl-5.24.1.tar.bz2’ saved [14088312/14088312]
 
---2017-05-31 14:30:13--  https://pkg-config.freedesktop.org/releases/pkg-config-0.29.1.tar.gz
+--2017-06-13 20:12:58--  https://pkg-config.freedesktop.org/releases/pkg-config-0.29.1.tar.gz
 Resolving pkg-config.freedesktop.org (pkg-config.freedesktop.org)... 131.252.210.176, 2610:10:20:722:a800:ff:feda:470f
 Connecting to pkg-config.freedesktop.org (pkg-config.freedesktop.org)|131.252.210.176|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 2013454 (1.9M) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/pkg-config-0.29.1.tar.gz’
 
-pkg-config-0.29.1.tar.gz            100%[==================================================================>]   1.92M   292KB/s    in 7.2s    
+pkg-config-0.29.1.tar.gz     100%[=============================================>]   1.92M   363KB/s    in 5.4s    
 
-2017-05-31 14:30:22 (273 KB/s) - '/mnt/lfs/sources/pkg-config-0.29.1.tar.gz’ saved [2013454/2013454]
+2017-06-13 20:13:04 (363 KB/s) - '/mnt/lfs/sources/pkg-config-0.29.1.tar.gz’ saved [2013454/2013454]
 
---2017-05-31 14:30:22--  http://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.12.tar.xz
+URL transformed to HTTPS due to an HSTS policy
+--2017-06-13 20:13:04--  https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.12.tar.xz
 Resolving sourceforge.net (sourceforge.net)... 216.34.181.60
-Connecting to sourceforge.net (sourceforge.net)|216.34.181.60|:80... connected.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.12.tar.xz [following]
---2017-05-31 14:30:22--  https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.12.tar.xz
 Connecting to sourceforge.net (sourceforge.net)|216.34.181.60|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.12.tar.xz/download [following]
---2017-05-31 14:30:24--  https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.12.tar.xz/download
+--2017-06-13 20:13:06--  https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.12.tar.xz/download
 Connecting to sourceforge.net (sourceforge.net)|216.34.181.60|:443... connected.
 HTTP request sent, awaiting response... 302 Found
-Location: https://downloads.sourceforge.net/project/procps-ng/Production/procps-ng-3.3.12.tar.xz?r=&ts=1496205025&use_mirror=nchc [following]
---2017-05-31 14:30:25--  https://downloads.sourceforge.net/project/procps-ng/Production/procps-ng-3.3.12.tar.xz?r=&ts=1496205025&use_mirror=nchc
+Location: https://downloads.sourceforge.net/project/procps-ng/Production/procps-ng-3.3.12.tar.xz?r=&ts=1497348787&use_mirror=nchc [following]
+--2017-06-13 20:13:07--  https://downloads.sourceforge.net/project/procps-ng/Production/procps-ng-3.3.12.tar.xz?r=&ts=1497348787&use_mirror=nchc
 Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://nchc.dl.sourceforge.net/project/procps-ng/Production/procps-ng-3.3.12.tar.xz [following]
---2017-05-31 14:30:27--  https://nchc.dl.sourceforge.net/project/procps-ng/Production/procps-ng-3.3.12.tar.xz
+--2017-06-13 20:13:09--  https://nchc.dl.sourceforge.net/project/procps-ng/Production/procps-ng-3.3.12.tar.xz
 Connecting to nchc.dl.sourceforge.net (nchc.dl.sourceforge.net)|211.79.60.17|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 845484 (826K) [application/octet-stream]
 Saving to: '/mnt/lfs/sources/procps-ng-3.3.12.tar.xz’
 
-procps-ng-3.3.12.tar.xz             100%[==================================================================>] 825.67K   639KB/s    in 1.3s    
+procps-ng-3.3.12.tar.xz      100%[=============================================>] 825.67K   658KB/s    in 1.3s    
 
-2017-05-31 14:30:29 (639 KB/s) - '/mnt/lfs/sources/procps-ng-3.3.12.tar.xz’ saved [845484/845484]
+2017-06-13 20:13:11 (658 KB/s) - '/mnt/lfs/sources/procps-ng-3.3.12.tar.xz’ saved [845484/845484]
 
---2017-05-31 14:30:29--  http://downloads.sourceforge.net/project/psmisc/psmisc/psmisc-22.21.tar.gz
+--2017-06-13 20:13:11--  http://downloads.sourceforge.net/project/psmisc/psmisc/psmisc-22.21.tar.gz
 Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:80... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://nchc.dl.sourceforge.net/project/psmisc/psmisc/psmisc-22.21.tar.gz [following]
---2017-05-31 14:30:29--  https://nchc.dl.sourceforge.net/project/psmisc/psmisc/psmisc-22.21.tar.gz
+--2017-06-13 20:13:11--  https://nchc.dl.sourceforge.net/project/psmisc/psmisc/psmisc-22.21.tar.gz
 Connecting to nchc.dl.sourceforge.net (nchc.dl.sourceforge.net)|211.79.60.17|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 457702 (447K) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/psmisc-22.21.tar.gz’
 
-psmisc-22.21.tar.gz                 100%[==================================================================>] 446.97K   479KB/s    in 0.9s    
+psmisc-22.21.tar.gz          100%[=============================================>] 446.97K   509KB/s    in 0.9s    
 
-2017-05-31 14:30:31 (479 KB/s) - '/mnt/lfs/sources/psmisc-22.21.tar.gz’ saved [457702/457702]
+2017-06-13 20:13:13 (509 KB/s) - '/mnt/lfs/sources/psmisc-22.21.tar.gz’ saved [457702/457702]
 
---2017-05-31 14:30:31--  http://ftp.gnu.org/gnu/readline/readline-7.0.tar.gz
+--2017-06-13 20:13:13--  http://ftp.gnu.org/gnu/readline/readline-7.0.tar.gz
 Connecting to ftp.gnu.org (ftp.gnu.org)|208.118.235.20|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 2910016 (2.8M) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/readline-7.0.tar.gz’
 
-readline-7.0.tar.gz                 100%[==================================================================>]   2.77M   515KB/s    in 5.5s    
+readline-7.0.tar.gz          100%[=============================================>]   2.77M   603KB/s    in 5.8s    
 
-2017-05-31 14:30:37 (515 KB/s) - '/mnt/lfs/sources/readline-7.0.tar.gz’ saved [2910016/2910016]
+2017-06-13 20:13:19 (491 KB/s) - '/mnt/lfs/sources/readline-7.0.tar.gz’ saved [2910016/2910016]
 
---2017-05-31 14:30:37--  http://ftp.gnu.org/gnu/sed/sed-4.4.tar.xz
+--2017-06-13 20:13:19--  http://ftp.gnu.org/gnu/sed/sed-4.4.tar.xz
 Reusing existing connection to ftp.gnu.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1181664 (1.1M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/sed-4.4.tar.xz’
 
-sed-4.4.tar.xz                      100%[==================================================================>]   1.13M   460KB/s    in 2.5s    
+sed-4.4.tar.xz               100%[=============================================>]   1.13M   479KB/s    in 2.4s    
 
-2017-05-31 14:30:40 (460 KB/s) - '/mnt/lfs/sources/sed-4.4.tar.xz’ saved [1181664/1181664]
+2017-06-13 20:13:22 (479 KB/s) - '/mnt/lfs/sources/sed-4.4.tar.xz’ saved [1181664/1181664]
 
---2017-05-31 14:30:40--  https://github.com/shadow-maint/shadow/releases/download/4.4/shadow-4.4.tar.xz
-Connecting to github.com (github.com)|192.30.253.113|:443... connected.
+--2017-06-13 20:13:22--  https://github.com/shadow-maint/shadow/releases/download/4.4/shadow-4.4.tar.xz
+Connecting to github.com (github.com)|192.30.253.112|:443... connected.
 HTTP request sent, awaiting response... 302 Found
-Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/10508169/287bd336-c784-11e6-94c0-ae3f3023c511?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170531%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170531T043041Z&X-Amz-Expires=300&X-Amz-Signature=09b4b7a4971d09edd8a369b48435b67336695accf430563ba459f69e11fa6f6d&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dshadow-4.4.tar.xz&response-content-type=application%2Foctet-stream [following]
---2017-05-31 14:30:41--  https://github-production-release-asset-2e65be.s3.amazonaws.com/10508169/287bd336-c784-11e6-94c0-ae3f3023c511?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170531%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170531T043041Z&X-Amz-Expires=300&X-Amz-Signature=09b4b7a4971d09edd8a369b48435b67336695accf430563ba459f69e11fa6f6d&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dshadow-4.4.tar.xz&response-content-type=application%2Foctet-stream
-Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.216.226.200|:443... connected.
+Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/10508169/287bd336-c784-11e6-94c0-ae3f3023c511?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170613%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170613T101323Z&X-Amz-Expires=300&X-Amz-Signature=f9911bac007791f64acd06b135636b41965b9bf1919690e77a0f82004273cc13&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dshadow-4.4.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2017-06-13 20:13:23--  https://github-production-release-asset-2e65be.s3.amazonaws.com/10508169/287bd336-c784-11e6-94c0-ae3f3023c511?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170613%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170613T101323Z&X-Amz-Expires=300&X-Amz-Signature=f9911bac007791f64acd06b135636b41965b9bf1919690e77a0f82004273cc13&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dshadow-4.4.tar.xz&response-content-type=application%2Foctet-stream
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.216.226.136|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1631120 (1.6M) [application/octet-stream]
 Saving to: '/mnt/lfs/sources/shadow-4.4.tar.xz’
 
-shadow-4.4.tar.xz                   100%[==================================================================>]   1.55M   315KB/s    in 5.1s    
+shadow-4.4.tar.xz            100%[=============================================>]   1.55M   414KB/s    in 3.8s    
 
-2017-05-31 14:30:47 (315 KB/s) - '/mnt/lfs/sources/shadow-4.4.tar.xz’ saved [1631120/1631120]
+2017-06-13 20:13:28 (414 KB/s) - '/mnt/lfs/sources/shadow-4.4.tar.xz’ saved [1631120/1631120]
 
---2017-05-31 14:30:47--  http://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.1.tar.gz
+--2017-06-13 20:13:28--  http://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.1.tar.gz
 Resolving www.infodrom.org (www.infodrom.org)... 217.114.79.202
 Connecting to www.infodrom.org (www.infodrom.org)|217.114.79.202|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 90011 (88K) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/sysklogd-1.5.1.tar.gz’
 
-sysklogd-1.5.1.tar.gz               100%[==================================================================>]  87.90K   121KB/s    in 0.7s    
+sysklogd-1.5.1.tar.gz        100%[=============================================>]  87.90K   113KB/s    in 0.8s    
 
-2017-05-31 14:30:49 (121 KB/s) - '/mnt/lfs/sources/sysklogd-1.5.1.tar.gz’ saved [90011/90011]
+2017-06-13 20:13:31 (113 KB/s) - '/mnt/lfs/sources/sysklogd-1.5.1.tar.gz’ saved [90011/90011]
 
---2017-05-31 14:30:49--  http://anduin.linuxfromscratch.org/sources/other/systemd/systemd-232.tar.xz
+--2017-06-13 20:13:31--  http://anduin.linuxfromscratch.org/sources/other/systemd/systemd-232.tar.xz
 Connecting to anduin.linuxfromscratch.org (anduin.linuxfromscratch.org)|45.33.5.237|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 4040664 (3.9M) [application/x-xz]
 Saving to: '/mnt/lfs/sources/systemd-232.tar.xz’
 
-systemd-232.tar.xz                  100%[==================================================================>]   3.85M   464KB/s    in 9.5s    
+systemd-232.tar.xz           100%[=============================================>]   3.85M   855KB/s    in 5.7s    
 
-2017-05-31 14:30:59 (417 KB/s) - '/mnt/lfs/sources/systemd-232.tar.xz’ saved [4040664/4040664]
+2017-06-13 20:13:38 (689 KB/s) - '/mnt/lfs/sources/systemd-232.tar.xz’ saved [4040664/4040664]
 
---2017-05-31 14:30:59--  http://download.savannah.gnu.org/releases/sysvinit/sysvinit-2.88dsf.tar.bz2
+--2017-06-13 20:13:38--  http://download.savannah.gnu.org/releases/sysvinit/sysvinit-2.88dsf.tar.bz2
 Connecting to download.savannah.gnu.org (download.savannah.gnu.org)|208.118.235.200|:80... connected.
 HTTP request sent, awaiting response... 302 Moved Temporarily
 Location: http://ftp.yzu.edu.tw/nongnu/sysvinit/sysvinit-2.88dsf.tar.bz2 [following]
---2017-05-31 14:31:00--  http://ftp.yzu.edu.tw/nongnu/sysvinit/sysvinit-2.88dsf.tar.bz2
+--2017-06-13 20:13:38--  http://ftp.yzu.edu.tw/nongnu/sysvinit/sysvinit-2.88dsf.tar.bz2
 Connecting to ftp.yzu.edu.tw (ftp.yzu.edu.tw)|140.138.144.170|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 105551 (103K) [application/octet-stream]
 Saving to: '/mnt/lfs/sources/sysvinit-2.88dsf.tar.bz2’
 
-sysvinit-2.88dsf.tar.bz2            100%[==================================================================>] 103.08K   213KB/s    in 0.5s    
+sysvinit-2.88dsf.tar.bz2     100%[=============================================>] 103.08K   226KB/s    in 0.5s    
 
-2017-05-31 14:31:01 (213 KB/s) - '/mnt/lfs/sources/sysvinit-2.88dsf.tar.bz2’ saved [105551/105551]
+2017-06-13 20:13:39 (226 KB/s) - '/mnt/lfs/sources/sysvinit-2.88dsf.tar.bz2’ saved [105551/105551]
 
---2017-05-31 14:31:01--  http://ftp.gnu.org/gnu/tar/tar-1.29.tar.xz
+--2017-06-13 20:13:39--  http://ftp.gnu.org/gnu/tar/tar-1.29.tar.xz
 Connecting to ftp.gnu.org (ftp.gnu.org)|208.118.235.20|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1996000 (1.9M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/tar-1.29.tar.xz’
 
-tar-1.29.tar.xz                     100%[==================================================================>]   1.90M   394KB/s    in 4.9s    
+tar-1.29.tar.xz              100%[=============================================>]   1.90M   393KB/s    in 5.0s    
 
-2017-05-31 14:31:07 (394 KB/s) - '/mnt/lfs/sources/tar-1.29.tar.xz’ saved [1996000/1996000]
+2017-06-13 20:13:45 (393 KB/s) - '/mnt/lfs/sources/tar-1.29.tar.xz’ saved [1996000/1996000]
 
 URL transformed to HTTPS due to an HSTS policy
---2017-05-31 14:31:07--  https://sourceforge.net/projects/tcl/files/Tcl/8.6.6/tcl-core8.6.6-src.tar.gz
+--2017-06-13 20:13:45--  https://sourceforge.net/projects/tcl/files/Tcl/8.6.6/tcl-core8.6.6-src.tar.gz
 Connecting to sourceforge.net (sourceforge.net)|216.34.181.60|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://sourceforge.net/projects/tcl/files/Tcl/8.6.6/tcl-core8.6.6-src.tar.gz/download [following]
---2017-05-31 14:31:08--  https://sourceforge.net/projects/tcl/files/Tcl/8.6.6/tcl-core8.6.6-src.tar.gz/download
+--2017-06-13 20:13:46--  https://sourceforge.net/projects/tcl/files/Tcl/8.6.6/tcl-core8.6.6-src.tar.gz/download
 Connecting to sourceforge.net (sourceforge.net)|216.34.181.60|:443... connected.
 HTTP request sent, awaiting response... 302 Found
-Location: https://downloads.sourceforge.net/project/tcl/Tcl/8.6.6/tcl-core8.6.6-src.tar.gz?r=&ts=1496205069&use_mirror=nchc [following]
---2017-05-31 14:31:09--  https://downloads.sourceforge.net/project/tcl/Tcl/8.6.6/tcl-core8.6.6-src.tar.gz?r=&ts=1496205069&use_mirror=nchc
+Location: https://downloads.sourceforge.net/project/tcl/Tcl/8.6.6/tcl-core8.6.6-src.tar.gz?r=&ts=1497348827&use_mirror=nchc [following]
+--2017-06-13 20:13:47--  https://downloads.sourceforge.net/project/tcl/Tcl/8.6.6/tcl-core8.6.6-src.tar.gz?r=&ts=1497348827&use_mirror=nchc
 Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://nchc.dl.sourceforge.net/project/tcl/Tcl/8.6.6/tcl-core8.6.6-src.tar.gz [following]
---2017-05-31 14:31:11--  https://nchc.dl.sourceforge.net/project/tcl/Tcl/8.6.6/tcl-core8.6.6-src.tar.gz
+--2017-06-13 20:13:49--  https://nchc.dl.sourceforge.net/project/tcl/Tcl/8.6.6/tcl-core8.6.6-src.tar.gz
 Connecting to nchc.dl.sourceforge.net (nchc.dl.sourceforge.net)|211.79.60.17|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 5868427 (5.6M) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/tcl-core8.6.6-src.tar.gz’
 
-tcl-core8.6.6-src.tar.gz            100%[==================================================================>]   5.60M  1.18MB/s    in 5.6s    
+tcl-core8.6.6-src.tar.gz     100%[=============================================>]   5.60M  1.23MB/s    in 5.3s    
 
-2017-05-31 14:31:17 (1.00 MB/s) - '/mnt/lfs/sources/tcl-core8.6.6-src.tar.gz’ saved [5868427/5868427]
+2017-06-13 20:13:55 (1.05 MB/s) - '/mnt/lfs/sources/tcl-core8.6.6-src.tar.gz’ saved [5868427/5868427]
 
---2017-05-31 14:31:17--  http://ftp.gnu.org/gnu/texinfo/texinfo-6.3.tar.xz
+--2017-06-13 20:13:55--  http://ftp.gnu.org/gnu/texinfo/texinfo-6.3.tar.xz
 Connecting to ftp.gnu.org (ftp.gnu.org)|208.118.235.20|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 4468048 (4.3M) [application/x-tar]
 Saving to: '/mnt/lfs/sources/texinfo-6.3.tar.xz’
 
-texinfo-6.3.tar.xz                  100%[==================================================================>]   4.26M   655KB/s    in 8.0s    
+texinfo-6.3.tar.xz           100%[=============================================>]   4.26M   509KB/s    in 10s     
 
-2017-05-31 14:31:26 (545 KB/s) - '/mnt/lfs/sources/texinfo-6.3.tar.xz’ saved [4468048/4468048]
+2017-06-13 20:14:05 (435 KB/s) - '/mnt/lfs/sources/texinfo-6.3.tar.xz’ saved [4468048/4468048]
 
---2017-05-31 14:31:26--  http://www.iana.org/time-zones/repository/releases/tzdata2016j.tar.gz
+--2017-06-13 20:14:05--  http://www.iana.org/time-zones/repository/releases/tzdata2016j.tar.gz
 Resolving www.iana.org (www.iana.org)... 192.0.32.8, 2620:0:2d0:200::8
 Connecting to www.iana.org (www.iana.org)|192.0.32.8|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 321185 (314K) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/tzdata2016j.tar.gz’
 
-tzdata2016j.tar.gz                  100%[==================================================================>] 313.66K   292KB/s    in 1.1s    
+tzdata2016j.tar.gz           100%[=============================================>] 313.66K   290KB/s    in 1.1s    
 
-2017-05-31 14:31:28 (292 KB/s) - '/mnt/lfs/sources/tzdata2016j.tar.gz’ saved [321185/321185]
+2017-06-13 20:14:08 (290 KB/s) - '/mnt/lfs/sources/tzdata2016j.tar.gz’ saved [321185/321185]
 
---2017-05-31 14:31:28--  http://anduin.linuxfromscratch.org/LFS/udev-lfs-20140408.tar.bz2
+--2017-06-13 20:14:08--  http://anduin.linuxfromscratch.org/LFS/udev-lfs-20140408.tar.bz2
 Connecting to anduin.linuxfromscratch.org (anduin.linuxfromscratch.org)|45.33.5.237|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 10575 (10K) [application/x-bzip2]
 Saving to: '/mnt/lfs/sources/udev-lfs-20140408.tar.bz2’
 
-udev-lfs-20140408.tar.bz2           100%[==================================================================>]  10.33K  --.-KB/s    in 0.004s  
+udev-lfs-20140408.tar.bz2    100%[=============================================>]  10.33K  --.-KB/s    in 0.005s  
 
-2017-05-31 14:31:28 (2.35 MB/s) - '/mnt/lfs/sources/udev-lfs-20140408.tar.bz2’ saved [10575/10575]
+2017-06-13 20:14:08 (2.01 MB/s) - '/mnt/lfs/sources/udev-lfs-20140408.tar.bz2’ saved [10575/10575]
 
---2017-05-31 14:31:28--  https://www.kernel.org/pub/linux/utils/util-linux/v2.29/util-linux-2.29.1.tar.xz
+--2017-06-13 20:14:08--  https://www.kernel.org/pub/linux/utils/util-linux/v2.29/util-linux-2.29.1.tar.xz
 Connecting to www.kernel.org (www.kernel.org)|147.75.110.187|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 4278756 (4.1M) [application/x-xz]
 Saving to: '/mnt/lfs/sources/util-linux-2.29.1.tar.xz’
 
-util-linux-2.29.1.tar.xz            100%[==================================================================>]   4.08M   322KB/s    in 20s     
+util-linux-2.29.1.tar.xz     100%[=============================================>]   4.08M   337KB/s    in 20s     
 
-2017-05-31 14:31:49 (207 KB/s) - '/mnt/lfs/sources/util-linux-2.29.1.tar.xz’ saved [4278756/4278756]
+2017-06-13 20:14:29 (212 KB/s) - '/mnt/lfs/sources/util-linux-2.29.1.tar.xz’ saved [4278756/4278756]
 
---2017-05-31 14:31:49--  ftp://ftp.vim.org/pub/vim/unix/vim-8.0.069.tar.bz2
+--2017-06-13 20:14:29--  ftp://ftp.vim.org/pub/vim/unix/vim-8.0.069.tar.bz2
            => '/mnt/lfs/sources/vim-8.0.069.tar.bz2’
 Resolving ftp.vim.org (ftp.vim.org)... 145.220.21.40, 2001:67c:6ec:221:145:220:21:40
 Connecting to ftp.vim.org (ftp.vim.org)|145.220.21.40|:21... connected.
@@ -821,122 +929,172 @@ Logging in as anonymous ... Logged in!
 ==> PASV ... done.    ==> RETR vim-8.0.069.tar.bz2 ... done.
 Length: 10637407 (10M) (unauthoritative)
 
-vim-8.0.069.tar.bz2                 100%[==================================================================>]  10.14M   799KB/s    in 14s     
+vim-8.0.069.tar.bz2          100%[=============================================>]  10.14M   852KB/s    in 16s     
 
-2017-05-31 14:32:09 (736 KB/s) - '/mnt/lfs/sources/vim-8.0.069.tar.bz2’ saved [10637407]
+2017-06-13 20:14:50 (649 KB/s) - '/mnt/lfs/sources/vim-8.0.069.tar.bz2’ saved [10637407]
 
---2017-05-31 14:32:09--  http://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.44.tar.gz
-Resolving cpan.metacpan.org (cpan.metacpan.org)... 151.101.128.249, 151.101.0.249, 151.101.192.249, ...
-Connecting to cpan.metacpan.org (cpan.metacpan.org)|151.101.128.249|:80... connected.
+--2017-06-13 20:14:50--  http://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.44.tar.gz
+Resolving cpan.metacpan.org (cpan.metacpan.org)... 151.101.0.249, 151.101.64.249, 151.101.128.249, ...
+Connecting to cpan.metacpan.org (cpan.metacpan.org)|151.101.0.249|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 237377 (232K) [application/x-gzip]
 Saving to: '/mnt/lfs/sources/XML-Parser-2.44.tar.gz’
 
-XML-Parser-2.44.tar.gz              100%[==================================================================>] 231.81K  --.-KB/s    in 0.1s    
+XML-Parser-2.44.tar.gz       100%[=============================================>] 231.81K  --.-KB/s    in 0.1s    
 
-2017-05-31 14:32:09 (1.59 MB/s) - '/mnt/lfs/sources/XML-Parser-2.44.tar.gz’ saved [237377/237377]
+2017-06-13 20:14:51 (1.75 MB/s) - '/mnt/lfs/sources/XML-Parser-2.44.tar.gz’ saved [237377/237377]
 
---2017-05-31 14:32:09--  http://tukaani.org/xz/xz-5.2.3.tar.xz
+URL transformed to HTTPS due to an HSTS policy
+--2017-06-13 20:14:51--  https://tukaani.org/xz/xz-5.2.3.tar.xz
 Resolving tukaani.org (tukaani.org)... 84.34.147.45
-Connecting to tukaani.org (tukaani.org)|84.34.147.45|:80... connected.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://tukaani.org/xz/xz-5.2.3.tar.xz [following]
---2017-05-31 14:32:10--  https://tukaani.org/xz/xz-5.2.3.tar.xz
 Connecting to tukaani.org (tukaani.org)|84.34.147.45|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1032248 (1008K) [application/x-tar]
 Saving to: '/mnt/lfs/sources/xz-5.2.3.tar.xz’
 
-xz-5.2.3.tar.xz                     100%[==================================================================>]   1008K   262KB/s    in 3.8s    
+xz-5.2.3.tar.xz              100%[=============================================>]   1008K   269KB/s    in 3.7s    
 
-2017-05-31 14:32:16 (262 KB/s) - '/mnt/lfs/sources/xz-5.2.3.tar.xz’ saved [1032248/1032248]
+2017-06-13 20:14:57 (269 KB/s) - '/mnt/lfs/sources/xz-5.2.3.tar.xz’ saved [1032248/1032248]
 
---2017-05-31 14:32:16--  http://zlib.net/zlib-1.2.11.tar.xz
+--2017-06-13 20:14:57--  http://zlib.net/zlib-1.2.11.tar.xz
 Resolving zlib.net (zlib.net)... 69.73.182.198
 Connecting to zlib.net (zlib.net)|69.73.182.198|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 467960 (457K) [application/x-xz]
 Saving to: '/mnt/lfs/sources/zlib-1.2.11.tar.xz’
 
-zlib-1.2.11.tar.xz                  100%[==================================================================>] 456.99K   299KB/s    in 1.5s    
+zlib-1.2.11.tar.xz           100%[=============================================>] 456.99K   305KB/s    in 1.5s    
 
-2017-05-31 14:32:18 (299 KB/s) - '/mnt/lfs/sources/zlib-1.2.11.tar.xz’ saved [467960/467960]
+2017-06-13 20:14:59 (305 KB/s) - '/mnt/lfs/sources/zlib-1.2.11.tar.xz’ saved [467960/467960]
 
---2017-05-31 14:32:18--  http://www.linuxfromscratch.org/patches/lfs/8.0/bash-4.4-upstream_fixes-1.patch
+--2017-06-13 20:14:59--  http://www.linuxfromscratch.org/patches/lfs/8.0/bash-4.4-upstream_fixes-1.patch
 Connecting to www.linuxfromscratch.org (www.linuxfromscratch.org)|192.155.86.174|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 16659 (16K) [text/x-diff]
 Saving to: '/mnt/lfs/sources/bash-4.4-upstream_fixes-1.patch’
 
-bash-4.4-upstream_fixes-1.patch     100%[==================================================================>]  16.27K  61.9KB/s    in 0.3s    
+bash-4.4-upstream_fixes-1.pa 100%[=============================================>]  16.27K  61.2KB/s    in 0.3s    
 
-2017-05-31 14:32:19 (61.9 KB/s) - '/mnt/lfs/sources/bash-4.4-upstream_fixes-1.patch’ saved [16659/16659]
+2017-06-13 20:15:00 (61.2 KB/s) - '/mnt/lfs/sources/bash-4.4-upstream_fixes-1.patch’ saved [16659/16659]
 
---2017-05-31 14:32:19--  http://www.linuxfromscratch.org/patches/lfs/8.0/bc-1.06.95-memory_leak-1.patch
+--2017-06-13 20:15:00--  http://www.linuxfromscratch.org/patches/lfs/8.0/bc-1.06.95-memory_leak-1.patch
 Reusing existing connection to www.linuxfromscratch.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1414 (1.4K) [text/x-diff]
 Saving to: '/mnt/lfs/sources/bc-1.06.95-memory_leak-1.patch’
 
-bc-1.06.95-memory_leak-1.patch      100%[==================================================================>]   1.38K  --.-KB/s    in 0s      
+bc-1.06.95-memory_leak-1.pat 100%[=============================================>]   1.38K  --.-KB/s    in 0s      
 
-2017-05-31 14:32:19 (83.5 MB/s) - '/mnt/lfs/sources/bc-1.06.95-memory_leak-1.patch’ saved [1414/1414]
+2017-06-13 20:15:00 (361 MB/s) - '/mnt/lfs/sources/bc-1.06.95-memory_leak-1.patch’ saved [1414/1414]
 
---2017-05-31 14:32:19--  http://www.linuxfromscratch.org/patches/lfs/8.0/bzip2-1.0.6-install_docs-1.patch
+--2017-06-13 20:15:00--  http://www.linuxfromscratch.org/patches/lfs/8.0/bzip2-1.0.6-install_docs-1.patch
 Reusing existing connection to www.linuxfromscratch.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1684 (1.6K) [text/x-diff]
 Saving to: '/mnt/lfs/sources/bzip2-1.0.6-install_docs-1.patch’
 
-bzip2-1.0.6-install_docs-1.patch    100%[==================================================================>]   1.64K  --.-KB/s    in 0s      
+bzip2-1.0.6-install_docs-1.p 100%[=============================================>]   1.64K  --.-KB/s    in 0s      
 
-2017-05-31 14:32:19 (120 MB/s) - '/mnt/lfs/sources/bzip2-1.0.6-install_docs-1.patch’ saved [1684/1684]
+2017-06-13 20:15:01 (110 MB/s) - '/mnt/lfs/sources/bzip2-1.0.6-install_docs-1.patch’ saved [1684/1684]
 
---2017-05-31 14:32:19--  http://www.linuxfromscratch.org/patches/lfs/8.0/coreutils-8.26-i18n-1.patch
+--2017-06-13 20:15:01--  http://www.linuxfromscratch.org/patches/lfs/8.0/coreutils-8.26-i18n-1.patch
 Reusing existing connection to www.linuxfromscratch.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 171359 (167K) [text/x-diff]
 Saving to: '/mnt/lfs/sources/coreutils-8.26-i18n-1.patch’
 
-coreutils-8.26-i18n-1.patch         100%[==================================================================>] 167.34K   297KB/s    in 0.6s    
+coreutils-8.26-i18n-1.patch  100%[=============================================>] 167.34K   293KB/s    in 0.6s    
 
-2017-05-31 14:32:20 (297 KB/s) - '/mnt/lfs/sources/coreutils-8.26-i18n-1.patch’ saved [171359/171359]
+2017-06-13 20:15:01 (293 KB/s) - '/mnt/lfs/sources/coreutils-8.26-i18n-1.patch’ saved [171359/171359]
 
---2017-05-31 14:32:20--  http://www.linuxfromscratch.org/patches/lfs/8.0/glibc-2.25-fhs-1.patch
+--2017-06-13 20:15:01--  http://www.linuxfromscratch.org/patches/lfs/8.0/glibc-2.25-fhs-1.patch
 Reusing existing connection to www.linuxfromscratch.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 2804 (2.7K) [text/x-diff]
 Saving to: '/mnt/lfs/sources/glibc-2.25-fhs-1.patch’
 
-glibc-2.25-fhs-1.patch              100%[==================================================================>]   2.74K  --.-KB/s    in 0s      
+glibc-2.25-fhs-1.patch       100%[=============================================>]   2.74K  --.-KB/s    in 0s      
 
-2017-05-31 14:32:20 (6.10 MB/s) - '/mnt/lfs/sources/glibc-2.25-fhs-1.patch’ saved [2804/2804]
+2017-06-13 20:15:02 (5.93 MB/s) - '/mnt/lfs/sources/glibc-2.25-fhs-1.patch’ saved [2804/2804]
 
---2017-05-31 14:32:20--  http://www.linuxfromscratch.org/patches/lfs/8.0/kbd-2.0.4-backspace-1.patch
+--2017-06-13 20:15:02--  http://www.linuxfromscratch.org/patches/lfs/8.0/kbd-2.0.4-backspace-1.patch
 Reusing existing connection to www.linuxfromscratch.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 12640 (12K) [text/x-diff]
 Saving to: '/mnt/lfs/sources/kbd-2.0.4-backspace-1.patch’
 
-kbd-2.0.4-backspace-1.patch         100%[==================================================================>]  12.34K  --.-KB/s    in 0.006s  
+kbd-2.0.4-backspace-1.patch  100%[=============================================>]  12.34K  --.-KB/s    in 0.006s  
 
-2017-05-31 14:32:21 (1.98 MB/s) - '/mnt/lfs/sources/kbd-2.0.4-backspace-1.patch’ saved [12640/12640]
+2017-06-13 20:15:02 (2.04 MB/s) - '/mnt/lfs/sources/kbd-2.0.4-backspace-1.patch’ saved [12640/12640]
 
---2017-05-31 14:32:21--  http://www.linuxfromscratch.org/patches/lfs/8.0/sysvinit-2.88dsf-consolidated-1.patch
+--2017-06-13 20:15:02--  http://www.linuxfromscratch.org/patches/lfs/8.0/sysvinit-2.88dsf-consolidated-1.patch
 Reusing existing connection to www.linuxfromscratch.org:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 3937 (3.8K) [text/x-diff]
 Saving to: '/mnt/lfs/sources/sysvinit-2.88dsf-consolidated-1.patch’
 
-sysvinit-2.88dsf-consolidated-1.pat 100%[==================================================================>]   3.84K  --.-KB/s    in 0.001s  
+sysvinit-2.88dsf-consolidate 100%[=============================================>]   3.84K  --.-KB/s    in 0.001s  
 
-2017-05-31 14:32:21 (3.01 MB/s) - '/mnt/lfs/sources/sysvinit-2.88dsf-consolidated-1.patch’ saved [3937/3937]
+2017-06-13 20:15:02 (2.61 MB/s) - '/mnt/lfs/sources/sysvinit-2.88dsf-consolidated-1.patch’ saved [3937/3937]
 
-FINISHED --2017-05-31 14:32:21--
-Total wall clock time: 12m 1s
-Downloaded: 79 files, 358M in 10m 37s (576 KB/s)
-Minty ~ # pushd $LFS/sources
-/mnt/lfs/sources ~
+FINISHED --2017-06-13 20:15:02--
+Total wall clock time: 13m 44s
+Downloaded: 79 files, 358M in 12m 12s (501 KB/s)
+Minty benc # 
+Minty benc # 
+Minty benc # 
+Minty benc # pushd $LFS/sources
+/mnt/lfs/sources /home/benc
+Minty sources # md5sum -c md5sums
+md5sum: md5sums: No such file or directory
+Minty sources # popd
+/home/benc
+Minty benc # vi md5sums
+Minty benc # pushd $LFS/sources
+/mnt/lfs/sources /home/benc
+Minty sources # md5sum -c md5sums
+md5sum: md5sums: No such file or directory
+Minty sources # ls
+acl-2.2.52.src.tar.gz             gdbm-1.12.tar.gz                  mpc-1.0.3.tar.gz
+attr-2.4.47.src.tar.gz            gettext-0.19.8.1.tar.xz           mpfr-3.1.5.tar.xz
+autoconf-2.69.tar.xz              glibc-2.25-fhs-1.patch            ncurses-6.0.tar.gz
+automake-1.15.tar.xz              glibc-2.25.tar.xz                 patch-2.7.5.tar.xz
+bash-4.4.tar.gz                   gmp-6.1.2.tar.xz                  perl-5.24.1.tar.bz2
+bash-4.4-upstream_fixes-1.patch   gperf-3.0.4.tar.gz                pkg-config-0.29.1.tar.gz
+bc-1.06.95-memory_leak-1.patch    grep-3.0.tar.xz                   procps-ng-3.3.12.tar.xz
+bc-1.06.95.tar.bz2                groff-1.22.3.tar.gz               psmisc-22.21.tar.gz
+binutils-2.27.tar.bz2             grub-2.02~beta3.tar.xz            readline-7.0.tar.gz
+bison-3.0.4.tar.xz                gzip-1.8.tar.xz                   sed-4.4.tar.xz
+bzip2-1.0.6-install_docs-1.patch  iana-etc-2.30.tar.bz2             shadow-4.4.tar.xz
+bzip2-1.0.6.tar.gz                inetutils-1.9.4.tar.xz            sysklogd-1.5.1.tar.gz
+check-0.11.0.tar.gz               intltool-0.51.0.tar.gz            systemd-232.tar.xz
+coreutils-8.26-i18n-1.patch       iproute2-4.9.0.tar.xz             sysvinit-2.88dsf-consolidated-1.patch
+coreutils-8.26.tar.xz             kbd-2.0.4-backspace-1.patch       sysvinit-2.88dsf.tar.bz2
+dbus-1.10.14.tar.gz               kbd-2.0.4.tar.xz                  tar-1.29.tar.xz
+dejagnu-1.6.tar.gz                kmod-23.tar.xz                    tcl-core8.6.6-src.tar.gz
+diffutils-3.5.tar.xz              less-481.tar.gz                   texinfo-6.3.tar.xz
+e2fsprogs-1.43.4.tar.gz           lfs-bootscripts-20150222.tar.bz2  tzdata2016j.tar.gz
+eudev-3.2.1.tar.gz                libcap-2.25.tar.xz                udev-lfs-20140408.tar.bz2
+expat-2.2.0.tar.bz2               libpipeline-1.4.1.tar.gz          util-linux-2.29.1.tar.xz
+expect5.45.tar.gz                 libtool-2.4.6.tar.xz              vim-8.0.069.tar.bz2
+file-5.30.tar.gz                  linux-4.9.9.tar.xz                XML-Parser-2.44.tar.gz
+findutils-4.6.0.tar.gz            m4-1.4.18.tar.xz                  xz-5.2.3.tar.xz
+flex-2.6.3.tar.gz                 make-4.2.1.tar.bz2                zlib-1.2.11.tar.xz
+gawk-4.1.4.tar.xz                 man-db-2.7.6.1.tar.xz
+gcc-6.3.0.tar.bz2                 man-pages-4.09.tar.xz
+Minty sources # cd ~
+Minty ~ # 
+Minty ~ # 
+Minty ~ # 
+Minty ~ # pwd
+/root
+Minty ~ # cd /home/benc/
+Minty benc # ls
+bupster  Documents  LFS_chroot.sh  library-check.sh  Music     Public           Templates         Videos
+Desktop  Downloads  LFS_Mount.sh   md5sums           Pictures  PycharmProjects  version-check.sh  wget-list
+Minty benc # cp md5sums /mnt/lfs/sources/
+Minty benc # pushd $LFS/sources
+/mnt/lfs/sources /home/benc /home/benc
 Minty sources # md5sum -c md5sums
 acl-2.2.52.src.tar.gz: OK
 attr-2.4.47.src.tar.gz: OK
@@ -1011,6 +1169,9 @@ bzip2-1.0.6-install_docs-1.patch: OK
 coreutils-8.26-i18n-1.patch: OK
 glibc-2.25-fhs-1.patch: OK
 kbd-2.0.4-backspace-1.patch: OK
+md5sum: WARNING: 1 line is improperly formatted
+Minty sources # 
+Minty sources # 
 Minty sources # popd
-~
-Minty ~ # 
+/home/benc /home/benc
+Minty benc # 

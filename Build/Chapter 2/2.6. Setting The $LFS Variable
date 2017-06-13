@@ -1,0 +1,19 @@
+2.6. Setting The $LFS Variable 
+
+This small script can be run as root to do the needed stuff
+######################
+#!/bin/bash
+#
+## 20170614 BC
+## Made for LFS.8 to set the $LFS variable and mount the LFS partiton
+## You mustbe the root user
+#Check if root user
+# Can not do a mount if not
+if [[ $EUID -ne 0 ]]; then
+        echo "You must  be a root user" 2>&1
+        exit 1
+else
+        source /home/benc/.bash_profile
+        mount -v -t ext4 /dev/sda5 $LFS
+fi
+$$$$$$$$$$$$

@@ -1,6 +1,5 @@
-4.4. Setting Up the Environment 
-
-lfs@Minty ~ $ cat > ~/.bash_profile << "EOF"
+ 4.4. Setting Up the Environment 
+ lfs@Minty ~ $ cat > ~/.bash_profile << "EOF"
 > exec env -i HOME=$HOME TERM=$TERM PS1='\u:\w\$ ' /bin/bash
 > EOF
 lfs@Minty ~ $ cat > ~/.bashrc << "EOF"
@@ -14,3 +13,6 @@ lfs@Minty ~ $ cat > ~/.bashrc << "EOF"
 > EOF
 lfs@Minty ~ $ source ~/.bash_profile
 lfs@Minty ~ $ 
+
+
+
