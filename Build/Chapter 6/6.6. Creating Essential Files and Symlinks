@@ -1,5 +1,10 @@
 6.6. Creating Essential Files and Symlinks
-"Some programs use hard-wired paths to programs which do not exist yet. In order to satisfy these programs, create a number of symbolic links which will be replaced by real files throughout the course of this chapter after the software has been installed:"
+
+Some programs use hard-wired paths to programs which do not exist yet. In order to satisfy these programs, create a number of symbolic links which will be replaced by real files throughout the course of this chapter after the software has been installed:
+
+Note
+The /run/utmp file records the users that are currently logged in. This file is created dynamically in the boot scripts.
+
 I have no name!:/# clear
 I have no name!:/# ln -sv /tools/bin/{bash,cat,echo,pwd,stty} /bin
 '/bin/bash' -> '/tools/bin/bash'
@@ -53,8 +58,6 @@ I have no name!:/# cat > /etc/group << "EOF"
 > users:x:999:
 > EOF
 I have no name!:/# exec /tools/bin/bash --login +h
-root:/#
-root:/#
 root:/# touch /var/log/{btmp,lastlog,faillog,wtmp}
 root:/# chgrp -v utmp /var/log/lastlog
 changed group of '/var/log/lastlog' from root to utmp
@@ -63,4 +66,3 @@ mode of '/var/log/lastlog' changed from 0644 (rw-r--r--) to 0664 (rw-rw-r--)
 root:/# chmod -v 600  /var/log/btmp
 mode of '/var/log/btmp' changed from 0644 (rw-r--r--) to 0600 (rw-------)
 root:/#
-

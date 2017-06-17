@@ -1,0 +1,111 @@
+6.5. Creating Directories
+
+It is time to create some structure in the LFS file system. Create a standard directory tree by issuing the following commands:
+
+root@Minty ~ # chroot "$LFS" /tools/bin/env -i \
+>     HOME=/root                  \
+>     TERM="$TERM"                \
+>     PS1='\u:\w\$ '              \
+>     PATH=/bin:/usr/bin:/sbin:/usr/sbin:/tools/bin \
+>     /tools/bin/bash --login +h
+I have no name!:/# clear
+I have no name!:/# mkdir -pv /{bin,boot,etc/{opt,sysconfig},home,lib/firmware,mnt,opt}
+mkdir: created directory '/bin'
+mkdir: created directory '/boot'
+mkdir: created directory '/etc'
+mkdir: created directory '/etc/opt'
+mkdir: created directory '/etc/sysconfig'
+mkdir: created directory '/home'
+mkdir: created directory '/lib'
+mkdir: created directory '/lib/firmware'
+mkdir: created directory '/mnt'
+mkdir: created directory '/opt'
+I have no name!:/# mkdir -pv /{media/{floppy,cdrom},sbin,srv,var}
+mkdir: created directory '/media'
+mkdir: created directory '/media/floppy'
+mkdir: created directory '/media/cdrom'
+mkdir: created directory '/sbin'
+mkdir: created directory '/srv'
+mkdir: created directory '/var'
+I have no name!:/# install -dv -m 0750 /root
+install: creating directory '/root'
+I have no name!:/# install -dv -m 1777 /tmp /var/tmp
+install: creating directory '/tmp'
+install: creating directory '/var/tmp'
+I have no name!:/# mkdir -pv /usr/{,local/}{bin,include,lib,sbin,src}
+mkdir: created directory '/usr'
+mkdir: created directory '/usr/bin'
+mkdir: created directory '/usr/include'
+mkdir: created directory '/usr/lib'
+mkdir: created directory '/usr/sbin'
+mkdir: created directory '/usr/src'
+mkdir: created directory '/usr/local'
+mkdir: created directory '/usr/local/bin'
+mkdir: created directory '/usr/local/include'
+mkdir: created directory '/usr/local/lib'
+mkdir: created directory '/usr/local/sbin'
+mkdir: created directory '/usr/local/src'
+I have no name!:/# mkdir -pv /usr/{,local/}share/{color,dict,doc,info,locale,man}
+mkdir: created directory '/usr/share'
+mkdir: created directory '/usr/share/color'
+mkdir: created directory '/usr/share/dict'
+mkdir: created directory '/usr/share/doc'
+mkdir: created directory '/usr/share/info'
+mkdir: created directory '/usr/share/locale'
+mkdir: created directory '/usr/share/man'
+mkdir: created directory '/usr/local/share'
+mkdir: created directory '/usr/local/share/color'
+mkdir: created directory '/usr/local/share/dict'
+mkdir: created directory '/usr/local/share/doc'
+mkdir: created directory '/usr/local/share/info'
+mkdir: created directory '/usr/local/share/locale'
+mkdir: created directory '/usr/local/share/man'
+I have no name!:/# mkdir -v  /usr/{,local/}share/{misc,terminfo,zoneinfo}
+mkdir: created directory '/usr/share/misc'
+mkdir: created directory '/usr/share/terminfo'
+mkdir: created directory '/usr/share/zoneinfo'
+mkdir: created directory '/usr/local/share/misc'
+mkdir: created directory '/usr/local/share/terminfo'
+mkdir: created directory '/usr/local/share/zoneinfo'
+I have no name!:/# mkdir -v  /usr/libexec
+mkdir: created directory '/usr/libexec'
+I have no name!:/# mkdir -pv /usr/{,local/}share/man/man{1..8}
+mkdir: created directory '/usr/share/man/man1'
+mkdir: created directory '/usr/share/man/man2'
+mkdir: created directory '/usr/share/man/man3'
+mkdir: created directory '/usr/share/man/man4'
+mkdir: created directory '/usr/share/man/man5'
+mkdir: created directory '/usr/share/man/man6'
+mkdir: created directory '/usr/share/man/man7'
+mkdir: created directory '/usr/share/man/man8'
+mkdir: created directory '/usr/local/share/man/man1'
+mkdir: created directory '/usr/local/share/man/man2'
+mkdir: created directory '/usr/local/share/man/man3'
+mkdir: created directory '/usr/local/share/man/man4'
+mkdir: created directory '/usr/local/share/man/man5'
+mkdir: created directory '/usr/local/share/man/man6'
+mkdir: created directory '/usr/local/share/man/man7'
+mkdir: created directory '/usr/local/share/man/man8'
+I have no name!:/#
+I have no name!:/# case $(uname -m) in
+>  x86_64) mkdir -v /lib64 ;;
+> esac
+mkdir: created directory '/lib64'
+I have no name!:/#
+I have no name!:/# mkdir -v /var/{log,mail,spool}
+mkdir: created directory '/var/log'
+mkdir: created directory '/var/mail'
+mkdir: created directory '/var/spool'
+I have no name!:/# ln -sv /run /var/run
+'/var/run' -> '/run'
+I have no name!:/# ln -sv /run/lock /var/lock
+'/var/lock' -> '/run/lock'
+I have no name!:/# mkdir -pv /var/{opt,cache,lib/{color,misc,locate},local}
+mkdir: created directory '/var/opt'
+mkdir: created directory '/var/cache'
+mkdir: created directory '/var/lib'
+mkdir: created directory '/var/lib/color'
+mkdir: created directory '/var/lib/misc'
+mkdir: created directory '/var/lib/locate'
+mkdir: created directory '/var/local'
+I have no name!:/#

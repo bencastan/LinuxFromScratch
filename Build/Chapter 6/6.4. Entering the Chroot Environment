@@ -1,0 +1,14 @@
+6.4. Entering the Chroot Environment
+
+It is time to enter the chroot environment to begin building and installing the final LFS system. As user root, run the following command to enter the realm that is, at the moment, populated with only the temporary tools:
+
+ Note
+It is important that all the commands throughout the remainder of this chapter and the following chapters are run from within the chroot environment. If you leave this environment for any reason (rebooting for example), ensure that the virtual kernel filesystems are mounted as explained in Section 6.2.2, “Mounting and Populating /dev” and Section 6.2.3, “Mounting Virtual Kernel File Systems” and enter chroot again before continuing with the installation.
+
+root@Minty ~ # chroot "$LFS" /tools/bin/env -i \
+>     HOME=/root                  \
+>     TERM="$TERM"                \
+>     PS1='\u:\w\$ '              \
+>     PATH=/bin:/usr/bin:/sbin:/usr/sbin:/tools/bin \
+>     /tools/bin/bash --login +h
+I have no name!:/#

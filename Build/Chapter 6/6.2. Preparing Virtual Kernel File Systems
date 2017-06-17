@@ -1,23 +1,48 @@
 6.2. Preparing Virtual Kernel File Systems
 
-Minty benc # mkdir -pv $LFS/{dev,proc,sys,run}
+Various file systems exported by the kernel are used to communicate to and from the kernel itself. These file systems are virtual in that no disk space is used for them. The content of the file systems resides in memory.
+
+Begin by creating directories onto which the file systems will be mounted:
+
+benc@10.100.1.152's password:
+Welcome to Linux Mint 18.1 Serena (GNU/Linux 4.4.0-79-generic x86_64)
+
+ * Documentation:  https://www.linuxmint.com
+Last login: Sat Jun 17 14:02:37 2017 from 10.100.1.173
+benc@Minty ~ $ su -
+Password:
+root@Minty ~ # df -h
+Filesystem             Size  Used Avail Use% Mounted on
+udev                   7.8G     0  7.8G   0% /dev
+tmpfs                  1.6G  9.5M  1.6G   1% /run
+/dev/sda4               79G   33G   42G  44% /
+tmpfs                  7.9G  808K  7.9G   1% /dev/shm
+tmpfs                  5.0M  4.0K  5.0M   1% /run/lock
+tmpfs                  7.9G     0  7.9G   0% /sys/fs/cgroup
+/dev/sda1              511M  3.6M  508M   1% /boot/efi
+/dev/mapper/Data-Data  3.6T  378G  3.1T  11% /Data
+cgmfs                  100K     0  100K   0% /run/cgmanager/fs
+tmpfs                  1.6G   20K  1.6G   1% /run/user/1000
+/dev/sda5               20G  1.6G   18G   9% /mnt/lfs
+root@Minty ~ # mkdir -pv $LFS/{dev,proc,sys,run}
 mkdir: created directory '/mnt/lfs/dev'
 mkdir: created directory '/mnt/lfs/proc'
 mkdir: created directory '/mnt/lfs/sys'
 mkdir: created directory '/mnt/lfs/run'
-Minty benc # mknod -m 600 $LFS/dev/console c 5 1
-Minty benc # mknod -m 666 $LFS/dev/null c 1 3
-Minty benc # mount -v --bind /dev $LFS/dev
+root@Minty ~ # mknod -m 600 $LFS/dev/console c 5 1
+root@Minty ~ # mknod -m 666 $LFS/dev/null c 1 3
+root@Minty ~ # mount -v --bind /dev $LFS/dev
 mount: /dev bound on /mnt/lfs/dev.
-Minty benc # mount -vt devpts devpts $LFS/dev/pts -o gid=5,mode=620
+root@Minty ~ # mount -vt devpts devpts $LFS/dev/pts -o gid=5,mode=620
 mount: devpts mounted on /mnt/lfs/dev/pts.
-Minty benc # mount -vt proc proc $LFS/proc
+root@Minty ~ # mount -vt proc proc $LFS/proc
 mount: proc mounted on /mnt/lfs/proc.
-Minty benc # mount -vt sysfs sysfs $LFS/sys
+root@Minty ~ # mount -vt sysfs sysfs $LFS/sys
 mount: sysfs mounted on /mnt/lfs/sys.
-Minty benc # mount -vt tmpfs tmpfs $LFS/run
+root@Minty ~ # mount -vt tmpfs tmpfs $LFS/run
 mount: tmpfs mounted on /mnt/lfs/run.
-Minty benc # if [ -h $LFS/dev/shm ]; then
+root@Minty ~ #
+root@Minty ~ # if [ -h $LFS/dev/shm ]; then
 >   mkdir -pv $LFS/$(readlink $LFS/dev/shm)
 > fi
-Minty benc #
+root@Minty ~ #
