@@ -1,0 +1,3315 @@
+5.34. Util-linux-2.29.1
+The Util-linux package contains miscellaneous utility programs.
+
+Approximate build time:
+0.9 SBU
+Required disk space:
+118 MB
+lfs@Minty /mnt/lfs/sources $ clear
+lfs@Minty /mnt/lfs/sources $ tar -xvf util-linux-2.29.1.tar.xz
+util-linux-2.29.1/
+util-linux-2.29.1/COPYING
+util-linux-2.29.1/config.h.in
+util-linux-2.29.1/ABOUT-NLS
+util-linux-2.29.1/ChangeLog
+util-linux-2.29.1/term-utils/
+util-linux-2.29.1/term-utils/Makemodule.am
+util-linux-2.29.1/term-utils/scriptreplay.1
+util-linux-2.29.1/term-utils/ttymsg.h
+util-linux-2.29.1/term-utils/wall.c
+util-linux-2.29.1/term-utils/mesg.c
+util-linux-2.29.1/term-utils/setterm.1
+util-linux-2.29.1/term-utils/scriptreplay.c
+util-linux-2.29.1/term-utils/wall.1
+util-linux-2.29.1/term-utils/ttymsg.c
+util-linux-2.29.1/term-utils/mesg.1
+util-linux-2.29.1/term-utils/agetty.8
+util-linux-2.29.1/term-utils/reset.1
+util-linux-2.29.1/term-utils/script.c
+util-linux-2.29.1/term-utils/write.c
+util-linux-2.29.1/term-utils/setterm.c
+util-linux-2.29.1/term-utils/reset
+util-linux-2.29.1/term-utils/write.1
+util-linux-2.29.1/term-utils/script.1
+util-linux-2.29.1/term-utils/agetty.c
+util-linux-2.29.1/config/
+util-linux-2.29.1/config/install-sh
+util-linux-2.29.1/config/depcomp
+util-linux-2.29.1/config/compile
+util-linux-2.29.1/config/config.guess
+util-linux-2.29.1/config/config.sub
+util-linux-2.29.1/config/config.rpath
+util-linux-2.29.1/config/py-compile
+util-linux-2.29.1/config/gtk-doc.make
+util-linux-2.29.1/config/missing
+util-linux-2.29.1/config/ltmain.sh
+util-linux-2.29.1/Documentation/
+util-linux-2.29.1/Documentation/howto-contribute.txt
+util-linux-2.29.1/Documentation/releases/
+util-linux-2.29.1/Documentation/releases/v2.24-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.20-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.28-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.23-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.25-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.27-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.16-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.29.1-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.15-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.17-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.26-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.18-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.19-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.14-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.29-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.22-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.13-ReleaseNotes
+util-linux-2.29.1/Documentation/releases/v2.21-ReleaseNotes
+util-linux-2.29.1/Documentation/PAM-configuration.txt
+util-linux-2.29.1/Documentation/howto-tests.txt
+util-linux-2.29.1/Documentation/pg.txt
+util-linux-2.29.1/Documentation/getopt.txt
+util-linux-2.29.1/Documentation/licenses/
+util-linux-2.29.1/Documentation/licenses/COPYING.UCB
+util-linux-2.29.1/Documentation/licenses/COPYING.BSD-3
+util-linux-2.29.1/Documentation/licenses/COPYING.GPLv2
+util-linux-2.29.1/Documentation/licenses/COPYING.LGPLv2.1
+util-linux-2.29.1/Documentation/modems-with-agetty.txt
+util-linux-2.29.1/Documentation/getopt_changelog.txt
+util-linux-2.29.1/Documentation/mount.txt
+util-linux-2.29.1/Documentation/boilerplate.c
+util-linux-2.29.1/Documentation/00-about-docs.txt
+util-linux-2.29.1/Documentation/poeigl.txt
+util-linux-2.29.1/Documentation/TODO
+util-linux-2.29.1/Documentation/hwclock.txt
+util-linux-2.29.1/Documentation/howto-compilation.txt
+util-linux-2.29.1/Documentation/deprecated.txt
+util-linux-2.29.1/Documentation/howto-pull-request.txt
+util-linux-2.29.1/Documentation/howto-usage-function.txt
+util-linux-2.29.1/Documentation/source-code-management.txt
+util-linux-2.29.1/Documentation/release-schedule.txt
+util-linux-2.29.1/Documentation/howto-man-page.txt
+util-linux-2.29.1/Documentation/howto-debug.txt
+util-linux-2.29.1/Documentation/example.files/
+util-linux-2.29.1/Documentation/example.files/shells
+util-linux-2.29.1/Documentation/example.files/motd
+util-linux-2.29.1/Documentation/example.files/filesystems
+util-linux-2.29.1/Documentation/example.files/fstab
+util-linux-2.29.1/Documentation/example.files/udev-raw.rules
+util-linux-2.29.1/Documentation/example.files/securetty
+util-linux-2.29.1/Documentation/howto-build-sys.txt
+util-linux-2.29.1/Documentation/col.txt
+util-linux-2.29.1/Documentation/blkid.txt
+util-linux-2.29.1/Documentation/cal.txt
+util-linux-2.29.1/libsmartcols/
+util-linux-2.29.1/libsmartcols/COPYING
+util-linux-2.29.1/libsmartcols/Makemodule.am
+util-linux-2.29.1/libsmartcols/src/
+util-linux-2.29.1/libsmartcols/src/Makemodule.am
+util-linux-2.29.1/libsmartcols/src/version.c
+util-linux-2.29.1/libsmartcols/src/libsmartcols.h
+util-linux-2.29.1/libsmartcols/src/table.c
+util-linux-2.29.1/libsmartcols/src/libsmartcols.h.in
+util-linux-2.29.1/libsmartcols/src/table_print.c
+util-linux-2.29.1/libsmartcols/src/init.c
+util-linux-2.29.1/libsmartcols/src/line.c
+util-linux-2.29.1/libsmartcols/src/libsmartcols.sym
+util-linux-2.29.1/libsmartcols/src/symbols.c
+util-linux-2.29.1/libsmartcols/src/iter.c
+util-linux-2.29.1/libsmartcols/src/smartcolsP.h
+util-linux-2.29.1/libsmartcols/src/cell.c
+util-linux-2.29.1/libsmartcols/src/column.c
+util-linux-2.29.1/libsmartcols/smartcols.pc.in
+util-linux-2.29.1/libsmartcols/docs/
+util-linux-2.29.1/libsmartcols/docs/libsmartcols-sections.txt
+util-linux-2.29.1/libsmartcols/docs/version.xml.in
+util-linux-2.29.1/libsmartcols/docs/libsmartcols-docs.xml
+util-linux-2.29.1/libsmartcols/docs/Makefile.am
+util-linux-2.29.1/libsmartcols/docs/version.xml
+util-linux-2.29.1/libsmartcols/docs/Makefile.in
+util-linux-2.29.1/libsmartcols/samples/
+util-linux-2.29.1/libsmartcols/samples/Makemodule.am
+util-linux-2.29.1/libsmartcols/samples/wrap.c
+util-linux-2.29.1/libsmartcols/samples/fromfile.c
+util-linux-2.29.1/libsmartcols/samples/maxout.c
+util-linux-2.29.1/libsmartcols/samples/title.c
+util-linux-2.29.1/libsmartcols/samples/tree.c
+util-linux-2.29.1/libsmartcols/samples/continuous.c
+util-linux-2.29.1/text-utils/
+util-linux-2.29.1/text-utils/hexdump.c
+util-linux-2.29.1/text-utils/Makemodule.am
+util-linux-2.29.1/text-utils/hexdump-display.c
+util-linux-2.29.1/text-utils/pg.c
+util-linux-2.29.1/text-utils/col.1
+util-linux-2.29.1/text-utils/more.c
+util-linux-2.29.1/text-utils/hexdump.h
+util-linux-2.29.1/text-utils/line.c
+util-linux-2.29.1/text-utils/colcrt.c
+util-linux-2.29.1/text-utils/colcrt.1
+util-linux-2.29.1/text-utils/tailf.c
+util-linux-2.29.1/text-utils/pg.1
+util-linux-2.29.1/text-utils/rev.1
+util-linux-2.29.1/text-utils/rev.c
+util-linux-2.29.1/text-utils/column.1
+util-linux-2.29.1/text-utils/hexdump-conv.c
+util-linux-2.29.1/text-utils/ul.1
+util-linux-2.29.1/text-utils/hexdump-parse.c
+util-linux-2.29.1/text-utils/colrm.c
+util-linux-2.29.1/text-utils/colrm.1
+util-linux-2.29.1/text-utils/more.1
+util-linux-2.29.1/text-utils/column.c
+util-linux-2.29.1/text-utils/line.1
+util-linux-2.29.1/text-utils/ul.c
+util-linux-2.29.1/text-utils/hexdump.1
+util-linux-2.29.1/text-utils/tailf.1
+util-linux-2.29.1/text-utils/col.c
+util-linux-2.29.1/disk-utils/
+util-linux-2.29.1/disk-utils/cramfs_common.c
+util-linux-2.29.1/disk-utils/mkfs.minix.8
+util-linux-2.29.1/disk-utils/cfdisk.c
+util-linux-2.29.1/disk-utils/partx.8
+util-linux-2.29.1/disk-utils/fsck.cramfs.c
+util-linux-2.29.1/disk-utils/fdisk-list.c
+util-linux-2.29.1/disk-utils/delpart.c
+util-linux-2.29.1/disk-utils/Makemodule.am
+util-linux-2.29.1/disk-utils/resizepart.8
+util-linux-2.29.1/disk-utils/fsck.minix.c
+util-linux-2.29.1/disk-utils/minix_programs.h
+util-linux-2.29.1/disk-utils/fsck.c
+util-linux-2.29.1/disk-utils/fdisk.c
+util-linux-2.29.1/disk-utils/mkfs.bfs.8
+util-linux-2.29.1/disk-utils/sfdisk.8
+util-linux-2.29.1/disk-utils/raw.c
+util-linux-2.29.1/disk-utils/fdformat.c
+util-linux-2.29.1/disk-utils/mkfs.c
+util-linux-2.29.1/disk-utils/delpart.8
+util-linux-2.29.1/disk-utils/cramfs.h
+util-linux-2.29.1/disk-utils/addpart.c
+util-linux-2.29.1/disk-utils/fdisk.8
+util-linux-2.29.1/disk-utils/fdisk.h
+util-linux-2.29.1/disk-utils/fsck.cramfs.8
+util-linux-2.29.1/disk-utils/sfdisk.c
+util-linux-2.29.1/disk-utils/raw.8
+util-linux-2.29.1/disk-utils/fsck.minix.8
+util-linux-2.29.1/disk-utils/addpart.8
+util-linux-2.29.1/disk-utils/fdformat.8
+util-linux-2.29.1/disk-utils/blockdev.c
+util-linux-2.29.1/disk-utils/fsck.8
+util-linux-2.29.1/disk-utils/cfdisk.8
+util-linux-2.29.1/disk-utils/mkfs.8
+util-linux-2.29.1/disk-utils/mkswap.c
+util-linux-2.29.1/disk-utils/fdisk-list.h
+util-linux-2.29.1/disk-utils/mkfs.bfs.c
+util-linux-2.29.1/disk-utils/mkswap.8
+util-linux-2.29.1/disk-utils/partx.c
+util-linux-2.29.1/disk-utils/swaplabel.c
+util-linux-2.29.1/disk-utils/partx.h
+util-linux-2.29.1/disk-utils/blockdev.8
+util-linux-2.29.1/disk-utils/fdisk-menu.c
+util-linux-2.29.1/disk-utils/mkfs.minix.c
+util-linux-2.29.1/disk-utils/isosize.8
+util-linux-2.29.1/disk-utils/isosize.c
+util-linux-2.29.1/disk-utils/resizepart.c
+util-linux-2.29.1/disk-utils/mkfs.cramfs.c
+util-linux-2.29.1/disk-utils/mkfs.cramfs.8
+util-linux-2.29.1/disk-utils/swaplabel.8
+util-linux-2.29.1/libblkid/
+util-linux-2.29.1/libblkid/COPYING
+util-linux-2.29.1/libblkid/Makemodule.am
+util-linux-2.29.1/libblkid/src/
+util-linux-2.29.1/libblkid/src/Makemodule.am
+util-linux-2.29.1/libblkid/src/read.c
+util-linux-2.29.1/libblkid/src/devname.c
+util-linux-2.29.1/libblkid/src/superblocks/
+util-linux-2.29.1/libblkid/src/superblocks/cramfs.c
+util-linux-2.29.1/libblkid/src/superblocks/xfs.c
+util-linux-2.29.1/libblkid/src/superblocks/linux_raid.c
+util-linux-2.29.1/libblkid/src/superblocks/f2fs.c
+util-linux-2.29.1/libblkid/src/superblocks/isw_raid.c
+util-linux-2.29.1/libblkid/src/superblocks/vxfs.c
+util-linux-2.29.1/libblkid/src/superblocks/nilfs.c
+util-linux-2.29.1/libblkid/src/superblocks/vmfs.c
+util-linux-2.29.1/libblkid/src/superblocks/nvidia_raid.c
+util-linux-2.29.1/libblkid/src/superblocks/iso9660.h
+util-linux-2.29.1/libblkid/src/superblocks/ocfs.c
+util-linux-2.29.1/libblkid/src/superblocks/gfs.c
+util-linux-2.29.1/libblkid/src/superblocks/jfs.c
+util-linux-2.29.1/libblkid/src/superblocks/superblocks.c
+util-linux-2.29.1/libblkid/src/superblocks/reiserfs.c
+util-linux-2.29.1/libblkid/src/superblocks/adaptec_raid.c
+util-linux-2.29.1/libblkid/src/superblocks/lsi_raid.c
+util-linux-2.29.1/libblkid/src/superblocks/jmicron_raid.c
+util-linux-2.29.1/libblkid/src/superblocks/via_raid.c
+util-linux-2.29.1/libblkid/src/superblocks/minix.c
+util-linux-2.29.1/libblkid/src/superblocks/luks.c
+util-linux-2.29.1/libblkid/src/superblocks/bfs.c
+util-linux-2.29.1/libblkid/src/superblocks/vfat.c
+util-linux-2.29.1/libblkid/src/superblocks/befs.c
+util-linux-2.29.1/libblkid/src/superblocks/highpoint_raid.c
+util-linux-2.29.1/libblkid/src/superblocks/btrfs.c
+util-linux-2.29.1/libblkid/src/superblocks/hpfs.c
+util-linux-2.29.1/libblkid/src/superblocks/sysv.c
+util-linux-2.29.1/libblkid/src/superblocks/hfs.c
+util-linux-2.29.1/libblkid/src/superblocks/ext.c
+util-linux-2.29.1/libblkid/src/superblocks/ddf_raid.c
+util-linux-2.29.1/libblkid/src/superblocks/swap.c
+util-linux-2.29.1/libblkid/src/superblocks/zfs.c
+util-linux-2.29.1/libblkid/src/superblocks/exfat.c
+util-linux-2.29.1/libblkid/src/superblocks/drbd.c
+util-linux-2.29.1/libblkid/src/superblocks/iso9660.c
+util-linux-2.29.1/libblkid/src/superblocks/refs.c
+util-linux-2.29.1/libblkid/src/superblocks/udf.c
+util-linux-2.29.1/libblkid/src/superblocks/lvm.c
+util-linux-2.29.1/libblkid/src/superblocks/squashfs.c
+util-linux-2.29.1/libblkid/src/superblocks/netware.c
+util-linux-2.29.1/libblkid/src/superblocks/romfs.c
+util-linux-2.29.1/libblkid/src/superblocks/bcache.c
+util-linux-2.29.1/libblkid/src/superblocks/drbdmanage.c
+util-linux-2.29.1/libblkid/src/superblocks/superblocks.h
+util-linux-2.29.1/libblkid/src/superblocks/ubifs.c
+util-linux-2.29.1/libblkid/src/superblocks/ufs.c
+util-linux-2.29.1/libblkid/src/superblocks/promise_raid.c
+util-linux-2.29.1/libblkid/src/superblocks/silicon_raid.c
+util-linux-2.29.1/libblkid/src/superblocks/ntfs.c
+util-linux-2.29.1/libblkid/src/superblocks/drbdproxy_datalog.c
+util-linux-2.29.1/libblkid/src/evaluate.c
+util-linux-2.29.1/libblkid/src/version.c
+util-linux-2.29.1/libblkid/src/blkid.h.in
+util-linux-2.29.1/libblkid/src/encode.c
+util-linux-2.29.1/libblkid/src/blkid.h
+util-linux-2.29.1/libblkid/src/cache.c
+util-linux-2.29.1/libblkid/src/resolve.c
+util-linux-2.29.1/libblkid/src/init.c
+util-linux-2.29.1/libblkid/src/dev.c
+util-linux-2.29.1/libblkid/src/probe.c
+util-linux-2.29.1/libblkid/src/save.c
+util-linux-2.29.1/libblkid/src/tag.c
+util-linux-2.29.1/libblkid/src/devno.c
+util-linux-2.29.1/libblkid/src/partitions/
+util-linux-2.29.1/libblkid/src/partitions/bsd.c
+util-linux-2.29.1/libblkid/src/partitions/ultrix.c
+util-linux-2.29.1/libblkid/src/partitions/sun.c
+util-linux-2.29.1/libblkid/src/partitions/minix.c
+util-linux-2.29.1/libblkid/src/partitions/unixware.c
+util-linux-2.29.1/libblkid/src/partitions/aix.h
+util-linux-2.29.1/libblkid/src/partitions/solaris_x86.c
+util-linux-2.29.1/libblkid/src/partitions/aix.c
+util-linux-2.29.1/libblkid/src/partitions/sgi.c
+util-linux-2.29.1/libblkid/src/partitions/gpt.c
+util-linux-2.29.1/libblkid/src/partitions/partitions.c
+util-linux-2.29.1/libblkid/src/partitions/dos.c
+util-linux-2.29.1/libblkid/src/partitions/mac.c
+util-linux-2.29.1/libblkid/src/partitions/partitions.h
+util-linux-2.29.1/libblkid/src/llseek.c
+util-linux-2.29.1/libblkid/src/config.c
+util-linux-2.29.1/libblkid/src/topology/
+util-linux-2.29.1/libblkid/src/topology/sysfs.c
+util-linux-2.29.1/libblkid/src/topology/md.c
+util-linux-2.29.1/libblkid/src/topology/ioctl.c
+util-linux-2.29.1/libblkid/src/topology/evms.c
+util-linux-2.29.1/libblkid/src/topology/dm.c
+util-linux-2.29.1/libblkid/src/topology/lvm.c
+util-linux-2.29.1/libblkid/src/topology/topology.c
+util-linux-2.29.1/libblkid/src/topology/topology.h
+util-linux-2.29.1/libblkid/src/getsize.c
+util-linux-2.29.1/libblkid/src/libblkid.sym
+util-linux-2.29.1/libblkid/src/blkidP.h
+util-linux-2.29.1/libblkid/src/verify.c
+util-linux-2.29.1/libblkid/libblkid.3
+util-linux-2.29.1/libblkid/docs/
+util-linux-2.29.1/libblkid/docs/version.xml.in
+util-linux-2.29.1/libblkid/docs/libblkid-sections.txt
+util-linux-2.29.1/libblkid/docs/Makefile.am
+util-linux-2.29.1/libblkid/docs/version.xml
+util-linux-2.29.1/libblkid/docs/libblkid-docs.xml
+util-linux-2.29.1/libblkid/docs/libblkid-config.xml
+util-linux-2.29.1/libblkid/docs/Makefile.in
+util-linux-2.29.1/libblkid/samples/
+util-linux-2.29.1/libblkid/samples/Makemodule.am
+util-linux-2.29.1/libblkid/samples/mkfs.c
+util-linux-2.29.1/libblkid/samples/superblocks.c
+util-linux-2.29.1/libblkid/samples/partitions.c
+util-linux-2.29.1/libblkid/samples/topology.c
+util-linux-2.29.1/libblkid/blkid.pc.in
+util-linux-2.29.1/libmount/
+util-linux-2.29.1/libmount/COPYING
+util-linux-2.29.1/libmount/Makemodule.am
+util-linux-2.29.1/libmount/src/
+util-linux-2.29.1/libmount/src/Makemodule.am
+util-linux-2.29.1/libmount/src/monitor.c
+util-linux-2.29.1/libmount/src/mountP.h
+util-linux-2.29.1/libmount/src/version.c
+util-linux-2.29.1/libmount/src/libmount.h
+util-linux-2.29.1/libmount/src/tab_update.c
+util-linux-2.29.1/libmount/src/cache.c
+util-linux-2.29.1/libmount/src/test.c
+util-linux-2.29.1/libmount/src/optstr.c
+util-linux-2.29.1/libmount/src/init.c
+util-linux-2.29.1/libmount/src/lock.c
+util-linux-2.29.1/libmount/src/context_mount.c
+util-linux-2.29.1/libmount/src/libmount.sym
+util-linux-2.29.1/libmount/src/context_loopdev.c
+util-linux-2.29.1/libmount/src/btrfs.c
+util-linux-2.29.1/libmount/src/optmap.c
+util-linux-2.29.1/libmount/src/tab.c
+util-linux-2.29.1/libmount/src/utils.c
+util-linux-2.29.1/libmount/src/tab_parse.c
+util-linux-2.29.1/libmount/src/fs.c
+util-linux-2.29.1/libmount/src/iter.c
+util-linux-2.29.1/libmount/src/context.c
+util-linux-2.29.1/libmount/src/context_umount.c
+util-linux-2.29.1/libmount/src/libmount.h.in
+util-linux-2.29.1/libmount/src/tab_diff.c
+util-linux-2.29.1/libmount/python/
+util-linux-2.29.1/libmount/python/test_mount_tab.py
+util-linux-2.29.1/libmount/python/Makemodule.am
+util-linux-2.29.1/libmount/python/test_mount_tab_update.py
+util-linux-2.29.1/libmount/python/test_mount_context.py
+util-linux-2.29.1/libmount/python/tab.c
+util-linux-2.29.1/libmount/python/__init__.py
+util-linux-2.29.1/libmount/python/fs.c
+util-linux-2.29.1/libmount/python/context.c
+util-linux-2.29.1/libmount/python/pylibmount.c
+util-linux-2.29.1/libmount/python/pylibmount.h
+util-linux-2.29.1/libmount/docs/
+util-linux-2.29.1/libmount/docs/libmount-docs.xml
+util-linux-2.29.1/libmount/docs/version.xml.in
+util-linux-2.29.1/libmount/docs/Makefile.am
+util-linux-2.29.1/libmount/docs/libmount-sections.txt
+util-linux-2.29.1/libmount/docs/version.xml
+util-linux-2.29.1/libmount/docs/Makefile.in
+util-linux-2.29.1/libmount/mount.pc.in
+util-linux-2.29.1/login-utils/
+util-linux-2.29.1/login-utils/lslogins.1
+util-linux-2.29.1/login-utils/Makemodule.am
+util-linux-2.29.1/login-utils/setpwnam.h
+util-linux-2.29.1/login-utils/setpwnam.c
+util-linux-2.29.1/login-utils/runuser.1
+util-linux-2.29.1/login-utils/utmpdump.c
+util-linux-2.29.1/login-utils/ch-common.c
+util-linux-2.29.1/login-utils/su-common.c
+util-linux-2.29.1/login-utils/selinux_utils.h
+util-linux-2.29.1/login-utils/auth.h
+util-linux-2.29.1/login-utils/islocal.c
+util-linux-2.29.1/login-utils/su.c
+util-linux-2.29.1/login-utils/vipw.c
+util-linux-2.29.1/login-utils/utmpdump.1
+util-linux-2.29.1/login-utils/lastb.1
+util-linux-2.29.1/login-utils/login.1
+util-linux-2.29.1/login-utils/logindefs.h
+util-linux-2.29.1/login-utils/vigr.8
+util-linux-2.29.1/login-utils/runuser.c
+util-linux-2.29.1/login-utils/nologin.8
+util-linux-2.29.1/login-utils/su.1
+util-linux-2.29.1/login-utils/chsh.c
+util-linux-2.29.1/login-utils/chfn.1
+util-linux-2.29.1/login-utils/lslogins.c
+util-linux-2.29.1/login-utils/islocal.h
+util-linux-2.29.1/login-utils/sulogin.8
+util-linux-2.29.1/login-utils/logindefs.c
+util-linux-2.29.1/login-utils/sulogin-consoles.c
+util-linux-2.29.1/login-utils/selinux_utils.c
+util-linux-2.29.1/login-utils/ch-common.h
+util-linux-2.29.1/login-utils/newgrp.c
+util-linux-2.29.1/login-utils/chsh.1
+util-linux-2.29.1/login-utils/su-common.h
+util-linux-2.29.1/login-utils/chfn.c
+util-linux-2.29.1/login-utils/last.1
+util-linux-2.29.1/login-utils/login.c
+util-linux-2.29.1/login-utils/vipw.8
+util-linux-2.29.1/login-utils/libuser.c
+util-linux-2.29.1/login-utils/newgrp.1
+util-linux-2.29.1/login-utils/nologin.c
+util-linux-2.29.1/login-utils/sulogin-consoles.h
+util-linux-2.29.1/login-utils/sulogin.c
+util-linux-2.29.1/login-utils/last.c
+util-linux-2.29.1/login-utils/auth.c
+util-linux-2.29.1/login-utils/libuser.h
+util-linux-2.29.1/README
+util-linux-2.29.1/lib/
+util-linux-2.29.1/lib/fileutils.c
+util-linux-2.29.1/lib/timer.c
+util-linux-2.29.1/lib/cpuset.c
+util-linux-2.29.1/lib/Makemodule.am
+util-linux-2.29.1/lib/exec_shell.c
+util-linux-2.29.1/lib/sysfs.c
+util-linux-2.29.1/lib/terminal-colors.d.5
+util-linux-2.29.1/lib/match.c
+util-linux-2.29.1/lib/crc32.c
+util-linux-2.29.1/lib/pager.c
+util-linux-2.29.1/lib/ismounted.c
+util-linux-2.29.1/lib/colors.c
+util-linux-2.29.1/lib/mangle.c
+util-linux-2.29.1/lib/path.c
+util-linux-2.29.1/lib/randutils.c
+util-linux-2.29.1/lib/env.c
+util-linux-2.29.1/lib/blkdev.c
+util-linux-2.29.1/lib/langinfo.c
+util-linux-2.29.1/lib/linux_version.c
+util-linux-2.29.1/lib/setproctitle.c
+util-linux-2.29.1/lib/monotonic.c
+util-linux-2.29.1/lib/swapprober.c
+util-linux-2.29.1/lib/procutils.c
+util-linux-2.29.1/lib/md5.c
+util-linux-2.29.1/lib/strutils.c
+util-linux-2.29.1/lib/timeutils.c
+util-linux-2.29.1/lib/plymouth-ctrl.c
+util-linux-2.29.1/lib/canonicalize.c
+util-linux-2.29.1/lib/ttyutils.c
+util-linux-2.29.1/lib/strv.c
+util-linux-2.29.1/lib/idcache.c
+util-linux-2.29.1/lib/color-names.c
+util-linux-2.29.1/lib/mbsalign.c
+util-linux-2.29.1/lib/loopdev.c
+util-linux-2.29.1/schedutils/
+util-linux-2.29.1/schedutils/chrt.1
+util-linux-2.29.1/schedutils/Makemodule.am
+util-linux-2.29.1/schedutils/ionice.1
+util-linux-2.29.1/schedutils/chrt.c
+util-linux-2.29.1/schedutils/taskset.c
+util-linux-2.29.1/schedutils/taskset.1
+util-linux-2.29.1/schedutils/ionice.c
+util-linux-2.29.1/Makefile.am
+util-linux-2.29.1/configure.ac
+util-linux-2.29.1/include/
+util-linux-2.29.1/include/fileutils.h
+util-linux-2.29.1/include/randutils.h
+util-linux-2.29.1/include/timeutils.h
+util-linux-2.29.1/include/strv.h
+util-linux-2.29.1/include/Makemodule.am
+util-linux-2.29.1/include/widechar.h
+util-linux-2.29.1/include/xalloc.h
+util-linux-2.29.1/include/nls.h
+util-linux-2.29.1/include/statfs_magic.h
+util-linux-2.29.1/include/mangle.h
+util-linux-2.29.1/include/pathnames.h
+util-linux-2.29.1/include/sysfs.h
+util-linux-2.29.1/include/list.h
+util-linux-2.29.1/include/namespace.h
+util-linux-2.29.1/include/colors.h
+util-linux-2.29.1/include/pt-sgi.h
+util-linux-2.29.1/include/color-names.h
+util-linux-2.29.1/include/idcache.h
+util-linux-2.29.1/include/pamfail.h
+util-linux-2.29.1/include/pt-mbr-partnames.h
+util-linux-2.29.1/include/ismounted.h
+util-linux-2.29.1/include/md5.h
+util-linux-2.29.1/include/loopdev.h
+util-linux-2.29.1/include/minix.h
+util-linux-2.29.1/include/pt-mbr.h
+util-linux-2.29.1/include/swapheader.h
+util-linux-2.29.1/include/ttyutils.h
+util-linux-2.29.1/include/exitcodes.h
+util-linux-2.29.1/include/env.h
+util-linux-2.29.1/include/linux_version.h
+util-linux-2.29.1/include/strutils.h
+util-linux-2.29.1/include/setproctitle.h
+util-linux-2.29.1/include/pt-sun.h
+util-linux-2.29.1/include/c.h
+util-linux-2.29.1/include/rpmatch.h
+util-linux-2.29.1/include/closestream.h
+util-linux-2.29.1/include/mbsalign.h
+util-linux-2.29.1/include/debug.h
+util-linux-2.29.1/include/pt-bsd.h
+util-linux-2.29.1/include/plymouth-ctrl.h
+util-linux-2.29.1/include/optutils.h
+util-linux-2.29.1/include/carefulputc.h
+util-linux-2.29.1/include/procutils.h
+util-linux-2.29.1/include/exec_shell.h
+util-linux-2.29.1/include/swapprober.h
+util-linux-2.29.1/include/timer.h
+util-linux-2.29.1/include/all-io.h
+util-linux-2.29.1/include/monotonic.h
+util-linux-2.29.1/include/blkdev.h
+util-linux-2.29.1/include/pager.h
+util-linux-2.29.1/include/path.h
+util-linux-2.29.1/include/canonicalize.h
+util-linux-2.29.1/include/cpuset.h
+util-linux-2.29.1/include/crc32.h
+util-linux-2.29.1/include/match.h
+util-linux-2.29.1/include/bitops.h
+util-linux-2.29.1/configure
+util-linux-2.29.1/.tarball-version
+util-linux-2.29.1/autogen.sh
+util-linux-2.29.1/libuuid/
+util-linux-2.29.1/libuuid/COPYING
+util-linux-2.29.1/libuuid/Makemodule.am
+util-linux-2.29.1/libuuid/src/
+util-linux-2.29.1/libuuid/src/Makemodule.am
+util-linux-2.29.1/libuuid/src/libuuid.sym
+util-linux-2.29.1/libuuid/src/unparse.c
+util-linux-2.29.1/libuuid/src/compare.c
+util-linux-2.29.1/libuuid/src/test_uuid.c
+util-linux-2.29.1/libuuid/src/clear.c
+util-linux-2.29.1/libuuid/src/gen_uuid.c
+util-linux-2.29.1/libuuid/src/uuidP.h
+util-linux-2.29.1/libuuid/src/parse.c
+util-linux-2.29.1/libuuid/src/copy.c
+util-linux-2.29.1/libuuid/src/uuid_time.c
+util-linux-2.29.1/libuuid/src/unpack.c
+util-linux-2.29.1/libuuid/src/pack.c
+util-linux-2.29.1/libuuid/src/uuid.h
+util-linux-2.29.1/libuuid/src/uuidd.h
+util-linux-2.29.1/libuuid/src/isnull.c
+util-linux-2.29.1/libuuid/man/
+util-linux-2.29.1/libuuid/man/uuid_generate_time.3
+util-linux-2.29.1/libuuid/man/Makemodule.am
+util-linux-2.29.1/libuuid/man/uuid_clear.3
+util-linux-2.29.1/libuuid/man/uuid_generate_time_safe.3
+util-linux-2.29.1/libuuid/man/uuid_is_null.3
+util-linux-2.29.1/libuuid/man/uuid.3
+util-linux-2.29.1/libuuid/man/uuid_parse.3
+util-linux-2.29.1/libuuid/man/uuid_copy.3
+util-linux-2.29.1/libuuid/man/uuid_time.3
+util-linux-2.29.1/libuuid/man/uuid_compare.3
+util-linux-2.29.1/libuuid/man/uuid_generate_random.3
+util-linux-2.29.1/libuuid/man/uuid_unparse.3
+util-linux-2.29.1/libuuid/man/uuid_generate.3
+util-linux-2.29.1/libuuid/uuid.pc.in
+util-linux-2.29.1/NEWS
+util-linux-2.29.1/misc-utils/
+util-linux-2.29.1/misc-utils/findmnt-verify.c
+util-linux-2.29.1/misc-utils/namei.1
+util-linux-2.29.1/misc-utils/Makemodule.am
+util-linux-2.29.1/misc-utils/lsblk.8
+util-linux-2.29.1/misc-utils/look.c
+util-linux-2.29.1/misc-utils/findmnt.8
+util-linux-2.29.1/misc-utils/getopt.1
+util-linux-2.29.1/misc-utils/look.1
+util-linux-2.29.1/misc-utils/kill.1
+util-linux-2.29.1/misc-utils/mcookie.1
+util-linux-2.29.1/misc-utils/wipefs.8
+util-linux-2.29.1/misc-utils/getopt-parse.tcsh
+util-linux-2.29.1/misc-utils/findmnt.h
+util-linux-2.29.1/misc-utils/uuidgen.1
+util-linux-2.29.1/misc-utils/uuidd.8
+util-linux-2.29.1/misc-utils/lsblk.c
+util-linux-2.29.1/misc-utils/rename.1
+util-linux-2.29.1/misc-utils/blkid.8
+util-linux-2.29.1/misc-utils/findfs.8
+util-linux-2.29.1/misc-utils/findmnt.c
+util-linux-2.29.1/misc-utils/cal.1
+util-linux-2.29.1/misc-utils/uuidd.rc.in
+util-linux-2.29.1/misc-utils/namei.c
+util-linux-2.29.1/misc-utils/rename.c
+util-linux-2.29.1/misc-utils/uuidd.c
+util-linux-2.29.1/misc-utils/logger.1
+util-linux-2.29.1/misc-utils/cal.c
+util-linux-2.29.1/misc-utils/kill.c
+util-linux-2.29.1/misc-utils/uuidd.8.in
+util-linux-2.29.1/misc-utils/whereis.c
+util-linux-2.29.1/misc-utils/lslocks.8
+util-linux-2.29.1/misc-utils/test_uuidd.c
+util-linux-2.29.1/misc-utils/mcookie.c
+util-linux-2.29.1/misc-utils/wipefs.c
+util-linux-2.29.1/misc-utils/lslocks.c
+util-linux-2.29.1/misc-utils/uuidd.socket.in
+util-linux-2.29.1/misc-utils/findfs.c
+util-linux-2.29.1/misc-utils/uuidd.service.in
+util-linux-2.29.1/misc-utils/blkid.c
+util-linux-2.29.1/misc-utils/getopt.c
+util-linux-2.29.1/misc-utils/logger.c
+util-linux-2.29.1/misc-utils/whereis.1
+util-linux-2.29.1/misc-utils/uuidgen.c
+util-linux-2.29.1/misc-utils/getopt-parse.bash
+util-linux-2.29.1/bash-completion/
+util-linux-2.29.1/bash-completion/wdctl
+util-linux-2.29.1/bash-completion/mkfs.bfs
+util-linux-2.29.1/bash-completion/nsenter
+util-linux-2.29.1/bash-completion/wall
+util-linux-2.29.1/bash-completion/swapon
+util-linux-2.29.1/bash-completion/tailf
+util-linux-2.29.1/bash-completion/fallocate
+util-linux-2.29.1/bash-completion/lsblk
+util-linux-2.29.1/bash-completion/Makemodule.am
+util-linux-2.29.1/bash-completion/getopt
+util-linux-2.29.1/bash-completion/umount
+util-linux-2.29.1/bash-completion/mkswap
+util-linux-2.29.1/bash-completion/ionice
+util-linux-2.29.1/bash-completion/setterm
+util-linux-2.29.1/bash-completion/lsipc
+util-linux-2.29.1/bash-completion/blockdev
+util-linux-2.29.1/bash-completion/scriptreplay
+util-linux-2.29.1/bash-completion/eject
+util-linux-2.29.1/bash-completion/zramctl
+util-linux-2.29.1/bash-completion/chcpu
+util-linux-2.29.1/bash-completion/utmpdump
+util-linux-2.29.1/bash-completion/lsns
+util-linux-2.29.1/bash-completion/setsid
+util-linux-2.29.1/bash-completion/ipcmk
+util-linux-2.29.1/bash-completion/pg
+util-linux-2.29.1/bash-completion/ipcrm
+util-linux-2.29.1/bash-completion/fsfreeze
+util-linux-2.29.1/bash-completion/colrm
+util-linux-2.29.1/bash-completion/write
+util-linux-2.29.1/bash-completion/tunelp
+util-linux-2.29.1/bash-completion/more
+util-linux-2.29.1/bash-completion/col
+util-linux-2.29.1/bash-completion/fsck
+util-linux-2.29.1/bash-completion/last
+util-linux-2.29.1/bash-completion/taskset
+util-linux-2.29.1/bash-completion/look
+util-linux-2.29.1/bash-completion/hexdump
+util-linux-2.29.1/bash-completion/swapoff
+util-linux-2.29.1/bash-completion/partx
+util-linux-2.29.1/bash-completion/mkfs
+util-linux-2.29.1/bash-completion/resizepart
+util-linux-2.29.1/bash-completion/rename
+util-linux-2.29.1/bash-completion/delpart
+util-linux-2.29.1/bash-completion/addpart
+util-linux-2.29.1/bash-completion/column
+util-linux-2.29.1/bash-completion/ctrlaltdel
+util-linux-2.29.1/bash-completion/uuidgen
+util-linux-2.29.1/bash-completion/chrt
+util-linux-2.29.1/bash-completion/sfdisk
+util-linux-2.29.1/bash-completion/mount
+util-linux-2.29.1/bash-completion/losetup
+util-linux-2.29.1/bash-completion/unshare
+util-linux-2.29.1/bash-completion/fsck.cramfs
+util-linux-2.29.1/bash-completion/rev
+util-linux-2.29.1/bash-completion/fstrim
+util-linux-2.29.1/bash-completion/pivot_root
+util-linux-2.29.1/bash-completion/setarch
+util-linux-2.29.1/bash-completion/fsck.minix
+util-linux-2.29.1/bash-completion/mkfs.cramfs
+util-linux-2.29.1/bash-completion/colcrt
+util-linux-2.29.1/bash-completion/chsh
+util-linux-2.29.1/bash-completion/lscpu
+util-linux-2.29.1/bash-completion/logger
+util-linux-2.29.1/bash-completion/newgrp
+util-linux-2.29.1/bash-completion/blkdiscard
+util-linux-2.29.1/bash-completion/mcookie
+util-linux-2.29.1/bash-completion/raw
+util-linux-2.29.1/bash-completion/script
+util-linux-2.29.1/bash-completion/ul
+util-linux-2.29.1/bash-completion/hwclock
+util-linux-2.29.1/bash-completion/blkid
+util-linux-2.29.1/bash-completion/dmesg
+util-linux-2.29.1/bash-completion/rtcwake
+util-linux-2.29.1/bash-completion/whereis
+util-linux-2.29.1/bash-completion/prlimit
+util-linux-2.29.1/bash-completion/mkfs.minix
+util-linux-2.29.1/bash-completion/lslogins
+util-linux-2.29.1/bash-completion/flock
+util-linux-2.29.1/bash-completion/isosize
+util-linux-2.29.1/bash-completion/renice
+util-linux-2.29.1/bash-completion/chfn
+util-linux-2.29.1/bash-completion/wipefs
+util-linux-2.29.1/bash-completion/su
+util-linux-2.29.1/bash-completion/cal
+util-linux-2.29.1/bash-completion/swaplabel
+util-linux-2.29.1/bash-completion/namei
+util-linux-2.29.1/bash-completion/fdisk
+util-linux-2.29.1/bash-completion/cfdisk
+util-linux-2.29.1/bash-completion/ipcs
+util-linux-2.29.1/bash-completion/setpriv
+util-linux-2.29.1/bash-completion/ldattach
+util-linux-2.29.1/bash-completion/lslocks
+util-linux-2.29.1/bash-completion/fdformat
+util-linux-2.29.1/bash-completion/mountpoint
+util-linux-2.29.1/bash-completion/findmnt
+util-linux-2.29.1/bash-completion/readprofile
+util-linux-2.29.1/bash-completion/uuidd
+util-linux-2.29.1/bash-completion/mesg
+util-linux-2.29.1/tools/
+util-linux-2.29.1/tools/Makemodule.am
+util-linux-2.29.1/tools/checkincludes.pl
+util-linux-2.29.1/tools/checkxalloc.sh
+util-linux-2.29.1/tools/checkcompletion.sh
+util-linux-2.29.1/tools/git-version-gen
+util-linux-2.29.1/tools/checkmans.sh
+util-linux-2.29.1/tools/checkdecl.sh
+util-linux-2.29.1/tools/checkconfig.sh
+util-linux-2.29.1/tests/
+util-linux-2.29.1/tests/Makemodule.am
+util-linux-2.29.1/tests/helpers/
+util-linux-2.29.1/tests/helpers/test_byteswap.c
+util-linux-2.29.1/tests/helpers/Makemodule.am
+util-linux-2.29.1/tests/helpers/test_pathnames.c
+util-linux-2.29.1/tests/helpers/test_tiocsti.c
+util-linux-2.29.1/tests/helpers/test_md5.c
+util-linux-2.29.1/tests/helpers/test_sysinfo.c
+util-linux-2.29.1/tests/helpers/test_sigreceive.c
+util-linux-2.29.1/tests/commands.sh
+util-linux-2.29.1/tests/expected/
+util-linux-2.29.1/tests/expected/paths/
+util-linux-2.29.1/tests/expected/paths/built-in
+util-linux-2.29.1/tests/expected/swapon/
+util-linux-2.29.1/tests/expected/swapon/fixsig
+util-linux-2.29.1/tests/expected/swapon/uuid
+util-linux-2.29.1/tests/expected/swapon/fixpgsz
+util-linux-2.29.1/tests/expected/swapon/devname
+util-linux-2.29.1/tests/expected/swapon/label
+util-linux-2.29.1/tests/expected/tailf/
+util-linux-2.29.1/tests/expected/tailf/simple
+util-linux-2.29.1/tests/expected/getopt/
+util-linux-2.29.1/tests/expected/getopt/options-long_option_ambiguous_1
+util-linux-2.29.1/tests/expected/getopt/options-test_for_enhanced_getopt
+util-linux-2.29.1/tests/expected/getopt/options-name_option_long
+util-linux-2.29.1/tests/expected/getopt/options-non-option
+util-linux-2.29.1/tests/expected/getopt/options-unquoted_option_bash
+util-linux-2.29.1/tests/expected/getopt/options-alternative_option_long
+util-linux-2.29.1/tests/expected/getopt/options-csh
+util-linux-2.29.1/tests/expected/getopt/options-invocation_model_two_as_one
+util-linux-2.29.1/tests/expected/getopt/options-invocation_model_one
+util-linux-2.29.1/tests/expected/getopt/options-posix_correctly
+util-linux-2.29.1/tests/expected/getopt/options-weird_quoting_bash
+util-linux-2.29.1/tests/expected/getopt/options-quiet_option_long
+util-linux-2.29.1/tests/expected/getopt/options-compatible
+util-linux-2.29.1/tests/expected/getopt/options-longopts
+util-linux-2.29.1/tests/expected/getopt/options-alternative_option_short
+util-linux-2.29.1/tests/expected/getopt/options-invocation_model_three_as_one
+util-linux-2.29.1/tests/expected/getopt/options-quiet_output_option_long
+util-linux-2.29.1/tests/expected/getopt/options-unquoted_option_tcsh
+util-linux-2.29.1/tests/expected/getopt/options-weird_quoting_tcsh
+util-linux-2.29.1/tests/expected/getopt/options-invocation_without_parameters
+util-linux-2.29.1/tests/expected/getopt/options-invalid_getopt_option
+util-linux-2.29.1/tests/expected/getopt/options-same_long_short_options
+util-linux-2.29.1/tests/expected/getopt/basic
+util-linux-2.29.1/tests/expected/getopt/options-quiet_option_short
+util-linux-2.29.1/tests/expected/getopt/options-alternative_option_clash
+util-linux-2.29.1/tests/expected/getopt/options-no-arguments
+util-linux-2.29.1/tests/expected/getopt/options-sh
+util-linux-2.29.1/tests/expected/getopt/options-unknown_options
+util-linux-2.29.1/tests/expected/getopt/options-quiet_output_option_short
+util-linux-2.29.1/tests/expected/getopt/options-name_option_short
+util-linux-2.29.1/tests/expected/eject/
+util-linux-2.29.1/tests/expected/eject/umount-by-partition-mounted
+util-linux-2.29.1/tests/expected/eject/umount-by-disk-mounted
+util-linux-2.29.1/tests/expected/eject/umount-by-disk
+util-linux-2.29.1/tests/expected/eject/umount-by-partition
+util-linux-2.29.1/tests/expected/eject/umount-by-disk-mounted-partition
+util-linux-2.29.1/tests/expected/libsmartcols/
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-strictwidth
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-raw
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-tree-json
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-right-maxout
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-trunc
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-wrapnl-tree
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-column-separator
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-wrap-tree
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-export
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-hidden
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-tree-middle
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-noextremes
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-wrapnl
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-tree
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-wrap
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-right
+util-linux-2.29.1/tests/expected/libsmartcols/fromfile-tree-end
+util-linux-2.29.1/tests/expected/libsmartcols/title
+util-linux-2.29.1/tests/expected/cramfs/
+util-linux-2.29.1/tests/expected/cramfs/doubles
+util-linux-2.29.1/tests/expected/cramfs/mkfs
+util-linux-2.29.1/tests/expected/cramfs/mkfs-endianness
+util-linux-2.29.1/tests/expected/cramfs/fsck-endianness
+util-linux-2.29.1/tests/expected/minix/
+util-linux-2.29.1/tests/expected/minix/fsck-images-badblocks
+util-linux-2.29.1/tests/expected/minix/mkfs-v2c14
+util-linux-2.29.1/tests/expected/minix/mkfs-v2c30
+util-linux-2.29.1/tests/expected/minix/fsck-images-v1c30
+util-linux-2.29.1/tests/expected/minix/mkfs-v2i65535
+util-linux-2.29.1/tests/expected/minix/fsck-images-v1c30.BE
+util-linux-2.29.1/tests/expected/minix/fsck-images-check-blocks
+util-linux-2.29.1/tests/expected/minix/fsck
+util-linux-2.29.1/tests/expected/minix/fsck-images-v2c14
+util-linux-2.29.1/tests/expected/minix/fsck-images-v1c14
+util-linux-2.29.1/tests/expected/minix/fsck-images-badblocks.BE
+util-linux-2.29.1/tests/expected/minix/fsck-images-v2c14.BE
+util-linux-2.29.1/tests/expected/minix/mkfs-v3c60
+util-linux-2.29.1/tests/expected/minix/mkfs-v1c30
+util-linux-2.29.1/tests/expected/minix/fsck-images-broken-root
+util-linux-2.29.1/tests/expected/minix/fsck-images-bug.773892
+util-linux-2.29.1/tests/expected/minix/fsck-images-auto-fix
+util-linux-2.29.1/tests/expected/minix/mkfs-v1c14
+util-linux-2.29.1/tests/expected/minix/fsck-images-check-blocks.BE
+util-linux-2.29.1/tests/expected/minix/fsck-images-v2c30
+util-linux-2.29.1/tests/expected/minix/fsck-images-v2c30.BE
+util-linux-2.29.1/tests/expected/minix/fsck-images-v3c60.BE
+util-linux-2.29.1/tests/expected/minix/fsck-images-v1c14.BE
+util-linux-2.29.1/tests/expected/minix/fsck-images-v3c60
+util-linux-2.29.1/tests/expected/colrm/
+util-linux-2.29.1/tests/expected/colrm/rm2-2
+util-linux-2.29.1/tests/expected/uuid/
+util-linux-2.29.1/tests/expected/uuid/uuidgen
+util-linux-2.29.1/tests/expected/uuid/uuid_parser
+util-linux-2.29.1/tests/expected/uuid/uuidd
+util-linux-2.29.1/tests/expected/libmount/
+util-linux-2.29.1/tests/expected/libmount/utils-mountpoint-root
+util-linux-2.29.1/tests/expected/libmount/context-utab-umount-by-devname
+util-linux-2.29.1/tests/expected/libmount/optstr-remove
+util-linux-2.29.1/tests/expected/libmount/tabfiles-tags-py-fstab-uuid
+util-linux-2.29.1/tests/expected/libmount/optstr-set-new
+util-linux-2.29.1/tests/expected/libmount/utils-match-options-list
+util-linux-2.29.1/tests/expected/libmount/debug-set-from-code
+util-linux-2.29.1/tests/expected/libmount/tabfiles-py-parse-fstab-full
+util-linux-2.29.1/tests/expected/libmount/update-fstab-replace
+util-linux-2.29.1/tests/expected/libmount/tabfiles-py-find-target2
+util-linux-2.29.1/tests/expected/libmount/tabfiles-tags-py-fstab-label2dev
+util-linux-2.29.1/tests/expected/libmount/tabfiles-find-target3
+util-linux-2.29.1/tests/expected/libmount/lock
+util-linux-2.29.1/tests/expected/libmount/utils-match-options-neg
+util-linux-2.29.1/tests/expected/libmount/tabfiles-find-target2
+util-linux-2.29.1/tests/expected/libmount/update-mtab-move
+util-linux-2.29.1/tests/expected/libmount/context-x-mount.mkdir
+util-linux-2.29.1/tests/expected/libmount/context-utab-umount
+util-linux-2.29.1/tests/expected/libmount/tabfiles-parse-fstab-broken
+util-linux-2.29.1/tests/expected/libmount/context-py-x-mount.mkdir
+util-linux-2.29.1/tests/expected/libmount/utils-match-options-neg-list
+util-linux-2.29.1/tests/expected/libmount/tabfiles-tags-py-fstab-dev
+util-linux-2.29.1/tests/expected/libmount/tabfiles-parse-fstab
+util-linux-2.29.1/tests/expected/libmount/context-umount-by-mountpoint
+util-linux-2.29.1/tests/expected/libmount/context-mount-by-uuid
+util-linux-2.29.1/tests/expected/libmount/tabfiles-py-parse-fstab
+util-linux-2.29.1/tests/expected/libmount/context-utab-mount-uhelper
+util-linux-2.29.1/tests/expected/libmount/context-mount-flags
+util-linux-2.29.1/tests/expected/libmount/utils-mountpoint-subdir
+util-linux-2.29.1/tests/expected/libmount/update-utab-move
+util-linux-2.29.1/tests/expected/libmount/context-utab-mount-by-devname
+util-linux-2.29.1/tests/expected/libmount/context-utab-mount-uhelper-subvol
+util-linux-2.29.1/tests/expected/libmount/update-mtab-remount
+util-linux-2.29.1/tests/expected/libmount/context-py-mount-by-label
+util-linux-2.29.1/tests/expected/libmount/utils-match-fstype
+util-linux-2.29.1/tests/expected/libmount/utils-match-options-neg-list2
+util-linux-2.29.1/tests/expected/libmount/context-utab-py-umount-subvol
+util-linux-2.29.1/tests/expected/libmount/update-mtab-mount
+util-linux-2.29.1/tests/expected/libmount/utils-mountpoint
+util-linux-2.29.1/tests/expected/libmount/optstr-set-new-empty
+util-linux-2.29.1/tests/expected/libmount/tabfiles-tags-py-fstab-label2uuid
+util-linux-2.29.1/tests/expected/libmount/context-py-mount-by-uuid
+util-linux-2.29.1/tests/expected/libmount/optstr-prepend-value
+util-linux-2.29.1/tests/expected/libmount/tabfiles-tags-fstab-label2dev
+util-linux-2.29.1/tests/expected/libmount/tabdiff-umount
+util-linux-2.29.1/tests/expected/libmount/context
+util-linux-2.29.1/tests/expected/libmount/utils-ends-with
+util-linux-2.29.1/tests/expected/libmount/utils-match-fstype-neg2
+util-linux-2.29.1/tests/expected/libmount/optstr-apply-linux
+util-linux-2.29.1/tests/expected/libmount/optstr-apply-user
+util-linux-2.29.1/tests/expected/libmount/tabfiles-py-find-source
+util-linux-2.29.1/tests/expected/libmount/context-py-umount-by-devname
+util-linux-2.29.1/tests/expected/libmount/utils-match-options
+util-linux-2.29.1/tests/expected/libmount/optstr-set-new-end
+util-linux-2.29.1/tests/expected/libmount/optstr-get-value
+util-linux-2.29.1/tests/expected/libmount/optstr-remove-empty-value
+util-linux-2.29.1/tests/expected/libmount/update-fstab-add
+util-linux-2.29.1/tests/expected/libmount/optstr-remove-quoted
+util-linux-2.29.1/tests/expected/libmount/context-py-mount-loopdev
+util-linux-2.29.1/tests/expected/libmount/optstr-append-value
+util-linux-2.29.1/tests/expected/libmount/optstr-set-large
+util-linux-2.29.1/tests/expected/libmount/context-utab-py-umount
+util-linux-2.29.1/tests/expected/libmount/optstr-prepend-empty-value
+util-linux-2.29.1/tests/expected/libmount/tabfiles-py-find-pair
+util-linux-2.29.1/tests/expected/libmount/tabfiles-py-find-target
+util-linux-2.29.1/tests/expected/libmount/tabfiles-py-parse-mountinfo
+util-linux-2.29.1/tests/expected/libmount/tabfiles-find-target
+util-linux-2.29.1/tests/expected/libmount/optstr-split
+util-linux-2.29.1/tests/expected/libmount/utils-kernel-cmdline
+util-linux-2.29.1/tests/expected/libmount/context-mount-by-devname
+util-linux-2.29.1/tests/expected/libmount/tabfiles-tags-fstab-dev2label
+util-linux-2.29.1/tests/expected/libmount/tabfiles-tags-fstab-label
+util-linux-2.29.1/tests/expected/libmount/optstr-append
+util-linux-2.29.1/tests/expected/libmount/tabfiles-py-parse-fstab-broken
+util-linux-2.29.1/tests/expected/libmount/tabfiles-parse-fstab-full
+util-linux-2.29.1/tests/expected/libmount/tabdiff-move
+util-linux-2.29.1/tests/expected/libmount/tabfiles-tags-fstab-label2uuid
+util-linux-2.29.1/tests/expected/libmount/optstr-set-small
+util-linux-2.29.1/tests/expected/libmount/update-mtab-umount
+util-linux-2.29.1/tests/expected/libmount/context-mount-loopdev
+util-linux-2.29.1/tests/expected/libmount/context-py-mount-flags
+util-linux-2.29.1/tests/expected/libmount/optstr-set-new-end-empty
+util-linux-2.29.1/tests/expected/libmount/tabfiles-copy
+util-linux-2.29.1/tests/expected/libmount/optstr-flags
+util-linux-2.29.1/tests/expected/libmount/tabfiles-find-pair
+util-linux-2.29.1/tests/expected/libmount/tabfiles-py-find-target3
+util-linux-2.29.1/tests/expected/libmount/utils-starts-with
+util-linux-2.29.1/tests/expected/libmount/optstr-set-empty
+util-linux-2.29.1/tests/expected/libmount/tabfiles-py-parse-mtab
+util-linux-2.29.1/tests/expected/libmount/tabdiff-remount
+util-linux-2.29.1/tests/expected/libmount/tabfiles-py-copy
+util-linux-2.29.1/tests/expected/libmount/optstr-fix
+util-linux-2.29.1/tests/expected/libmount/context-utab
+util-linux-2.29.1/tests/expected/libmount/context-utab-py-mount-by-devname
+util-linux-2.29.1/tests/expected/libmount/tabfiles-tags-py-fstab-dev2label
+util-linux-2.29.1/tests/expected/libmount/context-py
+util-linux-2.29.1/tests/expected/libmount/loop-overlay
+util-linux-2.29.1/tests/expected/libmount/optstr-deduplicate
+util-linux-2.29.1/tests/expected/libmount/tabfiles-find-source
+util-linux-2.29.1/tests/expected/libmount/update-utab-mount
+util-linux-2.29.1/tests/expected/libmount/tabdiff-mount
+util-linux-2.29.1/tests/expected/libmount/context-py-mount-by-devname
+util-linux-2.29.1/tests/expected/libmount/optstr-get
+util-linux-2.29.1/tests/expected/libmount/context-umount-by-devname
+util-linux-2.29.1/tests/expected/libmount/context-utab-py
+util-linux-2.29.1/tests/expected/libmount/context-py-umount-by-mountpoint
+util-linux-2.29.1/tests/expected/libmount/update-py-fstab-replace
+util-linux-2.29.1/tests/expected/libmount/tabfiles-parse-mtab
+util-linux-2.29.1/tests/expected/libmount/context-utab-py-umount-by-devname
+util-linux-2.29.1/tests/expected/libmount/debug-set-from-env-str
+util-linux-2.29.1/tests/expected/libmount/optstr-remove-value
+util-linux-2.29.1/tests/expected/libmount/optstr-deduplicate-empty
+util-linux-2.29.1/tests/expected/libmount/tabfiles-tags-fstab-dev
+util-linux-2.29.1/tests/expected/libmount/context-utab-py-mount-uhelper
+util-linux-2.29.1/tests/expected/libmount/tabfiles-parse-mountinfo
+util-linux-2.29.1/tests/expected/libmount/utils-match-fstype-neg
+util-linux-2.29.1/tests/expected/libmount/tabfiles-tags-py-fstab-label
+util-linux-2.29.1/tests/expected/libmount/context-utab-umount-subvol
+util-linux-2.29.1/tests/expected/libmount/debug-set-from-env-int
+util-linux-2.29.1/tests/expected/libmount/context-mount-by-label
+util-linux-2.29.1/tests/expected/libmount/optstr-prepend
+util-linux-2.29.1/tests/expected/libmount/optstr-append-empty-value
+util-linux-2.29.1/tests/expected/libmount/update-utab-umount
+util-linux-2.29.1/tests/expected/libmount/context-utab-py-mount-uhelper-subvol
+util-linux-2.29.1/tests/expected/libmount/tabfiles-tags-fstab-uuid
+util-linux-2.29.1/tests/expected/libmount/optstr-set-remove
+util-linux-2.29.1/tests/expected/libmount/update-utab-remount
+util-linux-2.29.1/tests/expected/more/
+util-linux-2.29.1/tests/expected/more/squeeze
+util-linux-2.29.1/tests/expected/more/regexp
+util-linux-2.29.1/tests/expected/col/
+util-linux-2.29.1/tests/expected/col/multibyte
+util-linux-2.29.1/tests/expected/fsck/
+util-linux-2.29.1/tests/expected/fsck/ismounted
+util-linux-2.29.1/tests/expected/look/
+util-linux-2.29.1/tests/expected/look/separator
+util-linux-2.29.1/tests/expected/hexdump/
+util-linux-2.29.1/tests/expected/hexdump/highlighting-4b_dec-1
+util-linux-2.29.1/tests/expected/hexdump/highlighting-4b_dec-7
+util-linux-2.29.1/tests/expected/hexdump/highlighting-4b_dec-4.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_char-3
+util-linux-2.29.1/tests/expected/hexdump/format-strings-canon
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-7
+util-linux-2.29.1/tests/expected/hexdump/highlighting-2b_dec-4
+util-linux-2.29.1/tests/expected/hexdump/highlighting-canon-2
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-3
+util-linux-2.29.1/tests/expected/hexdump/highlighting-2b_dec-1.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-4b_dec-5
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-7.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-2b_dec-6
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-4.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-2b_dec-2
+util-linux-2.29.1/tests/expected/hexdump/highlighting-2b_dec-5
+util-linux-2.29.1/tests/expected/hexdump/highlighting-2b_dec-8
+util-linux-2.29.1/tests/expected/hexdump/format-strings-empty-format.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-6
+util-linux-2.29.1/tests/expected/hexdump/format-strings-1b_octal
+util-linux-2.29.1/tests/expected/hexdump/highlighting-2b_dec-3
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-9
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-5
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_char-1
+util-linux-2.29.1/tests/expected/hexdump/format-strings-2b_dec.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-2
+util-linux-2.29.1/tests/expected/hexdump/highlighting-4b_dec-3
+util-linux-2.29.1/tests/expected/hexdump/highlighting-2b_dec-3.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-2b_dec-8.BE
+util-linux-2.29.1/tests/expected/hexdump/format-strings-2b_hex
+util-linux-2.29.1/tests/expected/hexdump/highlighting-2b_dec-1
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-9.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-8.BE
+util-linux-2.29.1/tests/expected/hexdump/format-strings-2b_dec
+util-linux-2.29.1/tests/expected/hexdump/highlighting-2b_dec-2.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-4
+util-linux-2.29.1/tests/expected/hexdump/format-strings-empty-format
+util-linux-2.29.1/tests/expected/hexdump/highlighting-4b_dec-2.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-canon-1.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-2b_dec-5.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-4b_dec-2
+util-linux-2.29.1/tests/expected/hexdump/highlighting-4b_dec-4
+util-linux-2.29.1/tests/expected/hexdump/format-strings-2b_octal.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-4b_dec-7.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-2.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-8
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-5.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-2b_dec-4.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-canon-1
+util-linux-2.29.1/tests/expected/hexdump/highlighting-4b_dec-6.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-4b_dec-6
+util-linux-2.29.1/tests/expected/hexdump/format-strings-1b_char
+util-linux-2.29.1/tests/expected/hexdump/highlighting-4b_dec-3.BE
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_octal-1
+util-linux-2.29.1/tests/expected/hexdump/format-strings-2b_octal
+util-linux-2.29.1/tests/expected/hexdump/highlighting-1b_char-2
+util-linux-2.29.1/tests/expected/hexdump/highlighting-2b_dec-7
+util-linux-2.29.1/tests/expected/hexdump/highlighting-4b_dec-1.BE
+util-linux-2.29.1/tests/expected/hexdump/format-strings-2b_hex.BE
+util-linux-2.29.1/tests/expected/partx/
+util-linux-2.29.1/tests/expected/partx/partx-sun
+util-linux-2.29.1/tests/expected/partx/partx-delete-all
+util-linux-2.29.1/tests/expected/partx/partx-delpart
+util-linux-2.29.1/tests/expected/partx/partx-delete-one
+util-linux-2.29.1/tests/expected/partx/partx-gpt
+util-linux-2.29.1/tests/expected/partx/partx-change-by-range
+util-linux-2.29.1/tests/expected/partx/partx-bsd
+util-linux-2.29.1/tests/expected/partx/partx-dos+bsd
+util-linux-2.29.1/tests/expected/partx/partx-sgi
+util-linux-2.29.1/tests/expected/partx/partx-delete-non-existent
+util-linux-2.29.1/tests/expected/partx/partx-update-one
+util-linux-2.29.1/tests/expected/partx/partx-add-all
+util-linux-2.29.1/tests/expected/partx/partx-add-existing
+util-linux-2.29.1/tests/expected/partx/partx-detect-parts
+util-linux-2.29.1/tests/expected/partx/partx-addpart
+util-linux-2.29.1/tests/expected/misc/
+util-linux-2.29.1/tests/expected/misc/fallocate
+util-linux-2.29.1/tests/expected/misc/ionice
+util-linux-2.29.1/tests/expected/misc/setarch-options
+util-linux-2.29.1/tests/expected/misc/setsid
+util-linux-2.29.1/tests/expected/misc/flock-exclusive
+util-linux-2.29.1/tests/expected/misc/flock-non-block
+util-linux-2.29.1/tests/expected/misc/flock-no-fork
+util-linux-2.29.1/tests/expected/misc/setarch-uname26
+util-linux-2.29.1/tests/expected/misc/setarch-uname26-version
+util-linux-2.29.1/tests/expected/misc/rev
+util-linux-2.29.1/tests/expected/misc/flock-timeout
+util-linux-2.29.1/tests/expected/misc/mcookie
+util-linux-2.29.1/tests/expected/misc/strtosize
+util-linux-2.29.1/tests/expected/misc/ul
+util-linux-2.29.1/tests/expected/misc/flock-time-check
+util-linux-2.29.1/tests/expected/misc/whereis
+util-linux-2.29.1/tests/expected/misc/flock
+util-linux-2.29.1/tests/expected/misc/swaplabel
+util-linux-2.29.1/tests/expected/misc/line
+util-linux-2.29.1/tests/expected/misc/flock-shared
+util-linux-2.29.1/tests/expected/rename/
+util-linux-2.29.1/tests/expected/rename/symlink
+util-linux-2.29.1/tests/expected/rename/exit_codes
+util-linux-2.29.1/tests/expected/rename/subdir
+util-linux-2.29.1/tests/expected/rename/basic
+util-linux-2.29.1/tests/expected/schedutils/
+util-linux-2.29.1/tests/expected/schedutils/chrt-batch
+util-linux-2.29.1/tests/expected/schedutils/chrt
+util-linux-2.29.1/tests/expected/schedutils/chrt-rr
+util-linux-2.29.1/tests/expected/schedutils/chrt-fifo
+util-linux-2.29.1/tests/expected/schedutils/chrt-non-root-batch-vs-nice
+util-linux-2.29.1/tests/expected/schedutils/cpuset
+util-linux-2.29.1/tests/expected/schedutils/chrt-idle
+util-linux-2.29.1/tests/expected/schedutils/chrt-deadline
+util-linux-2.29.1/tests/expected/schedutils/chrt-other
+util-linux-2.29.1/tests/expected/column/
+util-linux-2.29.1/tests/expected/column/invalid-multibyte
+util-linux-2.29.1/tests/expected/column/multi-file
+util-linux-2.29.1/tests/expected/column/fillrow
+util-linux-2.29.1/tests/expected/column/separator_table
+util-linux-2.29.1/tests/expected/sfdisk/
+util-linux-2.29.1/tests/expected/sfdisk/gpt-write-json
+util-linux-2.29.1/tests/expected/sfdisk/dos-read-dump-case
+util-linux-2.29.1/tests/expected/sfdisk/gpt-attrs-broken-nosep
+util-linux-2.29.1/tests/expected/sfdisk/gpt-attrs-unsupported
+util-linux-2.29.1/tests/expected/sfdisk/resize-gpt-1-move-down-absolute
+util-linux-2.29.1/tests/expected/sfdisk/gpt-attrs-guid
+util-linux-2.29.1/tests/expected/sfdisk/script-broken-3
+util-linux-2.29.1/tests/expected/sfdisk/script-type-and-id
+util-linux-2.29.1/tests/expected/sfdisk/resize-dos-3-move-down-relative
+util-linux-2.29.1/tests/expected/sfdisk/gpt-write-dump
+util-linux-2.29.1/tests/expected/sfdisk/script-quotes
+util-linux-2.29.1/tests/expected/sfdisk/script-separator
+util-linux-2.29.1/tests/expected/sfdisk/dos-explicit-size
+util-linux-2.29.1/tests/expected/sfdisk/gpt-list-pmbr
+util-linux-2.29.1/tests/expected/sfdisk/resize-dos-13-max-last
+util-linux-2.29.1/tests/expected/sfdisk/dos-simple-commas
+util-linux-2.29.1/tests/expected/sfdisk/resize-dos-5-reduce-absolute
+util-linux-2.29.1/tests/expected/sfdisk/resize-gpt-6-enlarge-relative
+util-linux-2.29.1/tests/expected/sfdisk/dos-dump-gaps
+util-linux-2.29.1/tests/expected/sfdisk/resize-dos-11-absolute-move-resize
+util-linux-2.29.1/tests/expected/sfdisk/resize-dos-7-reduce-relative
+util-linux-2.29.1/tests/expected/sfdisk/resize-dos-6-enlarge-relative
+util-linux-2.29.1/tests/expected/sfdisk/resize-dos-8-enlarge-all
+util-linux-2.29.1/tests/expected/sfdisk/movedata-non-overlay
+util-linux-2.29.1/tests/expected/sfdisk/resize-gpt-4-enlarge-absolute
+util-linux-2.29.1/tests/expected/sfdisk/resize-dos-10-down-enlarge
+util-linux-2.29.1/tests/expected/sfdisk/dos-simple-space
+util-linux-2.29.1/tests/expected/sfdisk/script-broken-2
+util-linux-2.29.1/tests/expected/sfdisk/gpt-attrs-with-typo
+util-linux-2.29.1/tests/expected/sfdisk/resize-dos-2-move-up-relative
+util-linux-2.29.1/tests/expected/sfdisk/resize-gpt-5-reduce-absolute
+util-linux-2.29.1/tests/expected/sfdisk/gpt-type
+util-linux-2.29.1/tests/expected/sfdisk/gpt-reorder
+util-linux-2.29.1/tests/expected/sfdisk/gpt-attrs
+util-linux-2.29.1/tests/expected/sfdisk/gpt-attrs-broken-guid
+util-linux-2.29.1/tests/expected/sfdisk/script-broken-1
+util-linux-2.29.1/tests/expected/sfdisk/resize-gpt-2-move-up-relative
+util-linux-2.29.1/tests/expected/sfdisk/dos-activate
+util-linux-2.29.1/tests/expected/sfdisk/movedata-down
+util-linux-2.29.1/tests/expected/sfdisk/gpt-attrs-space
+util-linux-2.29.1/tests/expected/sfdisk/resize-gpt-9-up-preduce
+util-linux-2.29.1/tests/expected/sfdisk/resize-gpt-10-down-enlarge
+util-linux-2.29.1/tests/expected/sfdisk/resize-gpt-11-absolute-move-resize
+util-linux-2.29.1/tests/expected/sfdisk/gpt-uuid
+util-linux-2.29.1/tests/expected/sfdisk/resize-gpt-0-move-up-absolute
+util-linux-2.29.1/tests/expected/sfdisk/resize-gpt-13-max-last
+util-linux-2.29.1/tests/expected/sfdisk/dos-write-dump
+util-linux-2.29.1/tests/expected/sfdisk/movedata-up
+util-linux-2.29.1/tests/expected/sfdisk/resize-dos-0-move-up-absolute
+util-linux-2.29.1/tests/expected/sfdisk/dos-resize
+util-linux-2.29.1/tests/expected/sfdisk/gpt-label
+util-linux-2.29.1/tests/expected/sfdisk/resize-dos-9-up-preduce
+util-linux-2.29.1/tests/expected/sfdisk/resize-gpt-7-reduce-relative
+util-linux-2.29.1/tests/expected/sfdisk/dos-read-dump
+util-linux-2.29.1/tests/expected/sfdisk/resize-gpt-3-move-down-relative
+util-linux-2.29.1/tests/expected/sfdisk/resize-dos-4-enlarge-absolute
+util-linux-2.29.1/tests/expected/sfdisk/resize-gpt-12-reduce-midle
+util-linux-2.29.1/tests/expected/sfdisk/script-broken-5
+util-linux-2.29.1/tests/expected/sfdisk/resize-dos-1-move-down-absolute
+util-linux-2.29.1/tests/expected/sfdisk/resize-gpt-8-enlarge-all
+util-linux-2.29.1/tests/expected/sfdisk/dos-write-json
+util-linux-2.29.1/tests/expected/sfdisk/resize-dos-12-reduce-midle
+util-linux-2.29.1/tests/expected/sfdisk/gpt-all-defaults
+util-linux-2.29.1/tests/expected/sfdisk/gpt-resize
+util-linux-2.29.1/tests/expected/sfdisk/script-broken-4
+util-linux-2.29.1/tests/expected/sfdisk/dos-dump-old
+util-linux-2.29.1/tests/expected/sfdisk/gpt-read-dump
+util-linux-2.29.1/tests/expected/mount/
+util-linux-2.29.1/tests/expected/mount/fstab-none
+util-linux-2.29.1/tests/expected/mount/special
+util-linux-2.29.1/tests/expected/mount/fstab-broken-mount
+util-linux-2.29.1/tests/expected/mount/fstab-uuid
+util-linux-2.29.1/tests/expected/mount/fstab-devname2label
+util-linux-2.29.1/tests/expected/mount/remount
+util-linux-2.29.1/tests/expected/mount/fstab-broken-mount-all
+util-linux-2.29.1/tests/expected/mount/uuid
+util-linux-2.29.1/tests/expected/mount/shared-subtree-make-shared
+util-linux-2.29.1/tests/expected/mount/umount-alltargets-all-targets-mnt
+util-linux-2.29.1/tests/expected/mount/umount-alltargets-all-targets-dev
+util-linux-2.29.1/tests/expected/mount/fstab-btrfs-btrfs
+util-linux-2.29.1/tests/expected/mount/fslists-type-pattern-neg
+util-linux-2.29.1/tests/expected/mount/fstab-symlink
+util-linux-2.29.1/tests/expected/mount/shared-subtree-mount-private
+util-linux-2.29.1/tests/expected/mount/fslists-type-pattern
+util-linux-2.29.1/tests/expected/mount/shared-subtree-mount-private-ro
+util-linux-2.29.1/tests/expected/mount/fstab-broken
+util-linux-2.29.1/tests/expected/mount/shared-subtree
+util-linux-2.29.1/tests/expected/mount/fstab-uuid2label
+util-linux-2.29.1/tests/expected/mount/fstab-devname
+util-linux-2.29.1/tests/expected/mount/umount-alltargets
+util-linux-2.29.1/tests/expected/mount/fstab-loop
+util-linux-2.29.1/tests/expected/mount/devname
+util-linux-2.29.1/tests/expected/mount/regfile
+util-linux-2.29.1/tests/expected/mount/move
+util-linux-2.29.1/tests/expected/mount/fstab-btrfs-auto
+util-linux-2.29.1/tests/expected/mount/shared-subtree-make-unbindable
+util-linux-2.29.1/tests/expected/mount/shared-subtree-make-private
+util-linux-2.29.1/tests/expected/mount/rlimit-umount
+util-linux-2.29.1/tests/expected/mount/fslists-more-types-fstab
+util-linux-2.29.1/tests/expected/mount/fstab-uuid2devname
+util-linux-2.29.1/tests/expected/mount/label
+util-linux-2.29.1/tests/expected/mount/shared-subtree-bind-shared
+util-linux-2.29.1/tests/expected/mount/fslists-more-types
+util-linux-2.29.1/tests/expected/mount/umount-recursive
+util-linux-2.29.1/tests/expected/mount/rlimit
+util-linux-2.29.1/tests/expected/mount/fstab-label2uuid
+util-linux-2.29.1/tests/expected/mount/fslists-one-type
+util-linux-2.29.1/tests/expected/mount/fstab-label
+util-linux-2.29.1/tests/expected/mount/fstab-devname2uuid
+util-linux-2.29.1/tests/expected/mount/rlimit-mount
+util-linux-2.29.1/tests/expected/mount/fstab-label2devname
+util-linux-2.29.1/tests/expected/mount/umount-alltargets-all-targets-recursive
+util-linux-2.29.1/tests/expected/mount/fslists
+util-linux-2.29.1/tests/expected/losetup/
+util-linux-2.29.1/tests/expected/losetup/losetup-loop-find-re-use
+util-linux-2.29.1/tests/expected/losetup/losetup-file-secton
+util-linux-2.29.1/tests/expected/losetup/losetup-file-sizelimit
+util-linux-2.29.1/tests/expected/losetup/losetup-blkdev-show
+util-linux-2.29.1/tests/expected/losetup/losetup-file-offset
+util-linux-2.29.1/tests/expected/losetup/losetup-loop-plain-re-use
+util-linux-2.29.1/tests/expected/losetup/losetup-loop-find-no-re-use
+util-linux-2.29.1/tests/expected/losetup/losetup-loop-find-conflict-readonly
+util-linux-2.29.1/tests/expected/losetup/losetup-blkdev-offset
+util-linux-2.29.1/tests/expected/losetup/losetup-loop-plain-readonly
+util-linux-2.29.1/tests/expected/losetup/losetup-loop-plain-conflict
+util-linux-2.29.1/tests/expected/losetup/losetup-loop-find-ok-no-sizelimit
+util-linux-2.29.1/tests/expected/losetup/losetup-blkdev-sizelimit
+util-linux-2.29.1/tests/expected/losetup/losetup-loop-find-conflict-no-sizelimit
+util-linux-2.29.1/tests/expected/losetup/losetup-loop
+util-linux-2.29.1/tests/expected/losetup/losetup-blkdev-section
+util-linux-2.29.1/tests/expected/losetup/losetup-loop-find-race-condition
+util-linux-2.29.1/tests/expected/losetup/losetup-file-section
+util-linux-2.29.1/tests/expected/losetup/losetup-loop-find-conflict
+util-linux-2.29.1/tests/expected/losetup/losetup-file-show
+util-linux-2.29.1/tests/expected/utmp/
+util-linux-2.29.1/tests/expected/utmp/utmpdump-circle
+util-linux-2.29.1/tests/expected/utmp/last-ipv6-nodns
+util-linux-2.29.1/tests/expected/utmp/last-dns
+util-linux-2.29.1/tests/expected/utmp/last-ipv6-dns
+util-linux-2.29.1/tests/expected/utmp/utmpdump-subsecond
+util-linux-2.29.1/tests/expected/utmp/last-nodns
+util-linux-2.29.1/tests/expected/utmp/utmpdump-totxt-ipv6
+util-linux-2.29.1/tests/expected/utmp/utmpdump-tobin-ipv6
+util-linux-2.29.1/tests/expected/utmp/utmpdump-totxt
+util-linux-2.29.1/tests/expected/utmp/utmpdump-tobin
+util-linux-2.29.1/tests/expected/colcrt/
+util-linux-2.29.1/tests/expected/colcrt/regressions-crash2
+util-linux-2.29.1/tests/expected/colcrt/regressions-crash1
+util-linux-2.29.1/tests/expected/colcrt/regressions-hang1
+util-linux-2.29.1/tests/expected/colcrt/functional-no-options
+util-linux-2.29.1/tests/expected/colcrt/functional-short-options
+util-linux-2.29.1/tests/expected/colcrt/functional-half-lines
+util-linux-2.29.1/tests/expected/colcrt/functional-no-underlining
+util-linux-2.29.1/tests/expected/lscpu/
+util-linux-2.29.1/tests/expected/lscpu/lscpu-s390-zvm
+util-linux-2.29.1/tests/expected/lscpu/lscpu-s390-lpar-drawer
+util-linux-2.29.1/tests/expected/lscpu/lscpu-x86_64-64cpu
+util-linux-2.29.1/tests/expected/lscpu/lscpu-ppc64-POWER7-64cpu
+util-linux-2.29.1/tests/expected/lscpu/lscpu-s390-kvm
+util-linux-2.29.1/tests/expected/lscpu/lscpu-vbox-win
+util-linux-2.29.1/tests/expected/lscpu/lscpu-s390-lpar
+util-linux-2.29.1/tests/expected/lscpu/lscpu-x86_64-dell_e4310
+util-linux-2.29.1/tests/expected/lscpu/lscpu-ppc64-POWER7
+util-linux-2.29.1/tests/expected/lscpu/lscpu-ppc-qemu
+util-linux-2.29.1/tests/expected/lscpu/lscpu-sparc64
+util-linux-2.29.1/tests/expected/lscpu/lscpu-armv7
+util-linux-2.29.1/tests/expected/logger/
+util-linux-2.29.1/tests/expected/logger/options-input_file_skip_empty
+util-linux-2.29.1/tests/expected/logger/errors-multi-line
+util-linux-2.29.1/tests/expected/logger/errors-check_socket
+util-linux-2.29.1/tests/expected/logger/errors-invalid_prio
+util-linux-2.29.1/tests/expected/logger/formats-rfc5424_msgid
+util-linux-2.29.1/tests/expected/logger/errors-rfc5424_msgid_with_space
+util-linux-2.29.1/tests/expected/logger/errors-invalid_socket
+util-linux-2.29.1/tests/expected/logger/errors-tcp
+util-linux-2.29.1/tests/expected/logger/options-log_pid_long
+util-linux-2.29.1/tests/expected/logger/options-check_socket
+util-linux-2.29.1/tests/expected/logger/options-log_pid_define
+util-linux-2.29.1/tests/expected/logger/errors-kern_priority
+util-linux-2.29.1/tests/expected/logger/options-input_file_prio_prefix
+util-linux-2.29.1/tests/expected/logger/formats-rfc5424_notime
+util-linux-2.29.1/tests/expected/logger/formats-rfc3164
+util-linux-2.29.1/tests/expected/logger/input_simple
+util-linux-2.29.1/tests/expected/logger/input_prio_prefix
+util-linux-2.29.1/tests/expected/logger/options-input_file_simple
+util-linux-2.29.1/tests/expected/logger/formats-octet_counting
+util-linux-2.29.1/tests/expected/logger/errors-rfc5424_exceed_size
+util-linux-2.29.1/tests/expected/logger/formats-rfc5424_simple
+util-linux-2.29.1/tests/expected/logger/formats-rfc5424_nohost
+util-linux-2.29.1/tests/expected/logger/input_empty_line
+util-linux-2.29.1/tests/expected/logger/errors-kern_priority_numeric
+util-linux-2.29.1/tests/expected/logger/options-log_pid
+util-linux-2.29.1/tests/expected/logger/options-log_pid_no_arg
+util-linux-2.29.1/tests/expected/logger/options-simple
+util-linux-2.29.1/tests/expected/logger/options-input_file_empty_line
+util-linux-2.29.1/tests/expected/logger/formats-priorities
+util-linux-2.29.1/tests/expected/logger/journald
+util-linux-2.29.1/tests/expected/logger/errors-tag_with_space
+util-linux-2.29.1/tests/expected/logger/errors-id_with_space
+util-linux-2.29.1/tests/expected/logger/formats-check_socket
+util-linux-2.29.1/tests/expected/blkdiscard/
+util-linux-2.29.1/tests/expected/blkdiscard/offsets
+util-linux-2.29.1/tests/expected/script/
+util-linux-2.29.1/tests/expected/script/options-force
+util-linux-2.29.1/tests/expected/script/options-append
+util-linux-2.29.1/tests/expected/script/replay
+util-linux-2.29.1/tests/expected/script/options-return
+util-linux-2.29.1/tests/expected/script/options-quiet
+util-linux-2.29.1/tests/expected/script/race
+util-linux-2.29.1/tests/expected/script/buffering-race
+util-linux-2.29.1/tests/expected/blkid/
+util-linux-2.29.1/tests/expected/blkid/low-probe-bcache-B
+util-linux-2.29.1/tests/expected/blkid/lowprobe-pt-gpt
+util-linux-2.29.1/tests/expected/blkid/low-probe-ubifs
+util-linux-2.29.1/tests/expected/blkid/low-probe-udf-hdd-mkudffs
+util-linux-2.29.1/tests/expected/blkid/low-probe-lvm2
+util-linux-2.29.1/tests/expected/blkid/low-probe-via-raid
+util-linux-2.29.1/tests/expected/blkid/low-probe-small-fat32
+util-linux-2.29.1/tests/expected/blkid/low-probe-xfs
+util-linux-2.29.1/tests/expected/blkid/low-probe-iso-joliet
+util-linux-2.29.1/tests/expected/blkid/low-probe-vmfs_volume
+util-linux-2.29.1/tests/expected/blkid/low-probe-ddf-raid
+util-linux-2.29.1/tests/expected/blkid/low-probe-udf-hdd-udfclient-0.7.5
+util-linux-2.29.1/tests/expected/blkid/lowprobe-pt-bsd
+util-linux-2.29.1/tests/expected/blkid/low-probe-lsi-raid
+util-linux-2.29.1/tests/expected/blkid/md-raid1-part
+util-linux-2.29.1/tests/expected/blkid/low-probe-iso-rr-joliet
+util-linux-2.29.1/tests/expected/blkid/lowprobe-pt-dos+bsd
+util-linux-2.29.1/tests/expected/blkid/low-probe-fat16_noheads
+util-linux-2.29.1/tests/expected/blkid/low-probe-drbdmanage-control-volume
+util-linux-2.29.1/tests/expected/blkid/low-probe-swap0
+util-linux-2.29.1/tests/expected/blkid/low-probe-swap1
+util-linux-2.29.1/tests/expected/blkid/low-probe-minix-LE
+util-linux-2.29.1/tests/expected/blkid/low-probe-hpt37x-raid
+util-linux-2.29.1/tests/expected/blkid/low-probe-reiser3
+util-linux-2.29.1/tests/expected/blkid/low-probe-ntfs
+util-linux-2.29.1/tests/expected/blkid/low-probe-adaptec-raid
+util-linux-2.29.1/tests/expected/blkid/low-probe-befs
+util-linux-2.29.1/tests/expected/blkid/low-probe-ocfs2
+util-linux-2.29.1/tests/expected/blkid/low-probe-udf-hdd-udfclient-0.7.7
+util-linux-2.29.1/tests/expected/blkid/low-probe-ext2
+util-linux-2.29.1/tests/expected/blkid/low-probe-hfsplus
+util-linux-2.29.1/tests/expected/blkid/low-probe-isw-raid
+util-linux-2.29.1/tests/expected/blkid/low-probe-hpt45x-raid
+util-linux-2.29.1/tests/expected/blkid/low-probe-romfs
+util-linux-2.29.1/tests/expected/blkid/low-probe-hfs
+util-linux-2.29.1/tests/expected/blkid/md-raid1-whole
+util-linux-2.29.1/tests/expected/blkid/low-probe-iso
+util-linux-2.29.1/tests/expected/blkid/low-probe-nvidia-raid
+util-linux-2.29.1/tests/expected/blkid/low-probe-vmfs
+util-linux-2.29.1/tests/expected/blkid/low-probe-xfs-log
+util-linux-2.29.1/tests/expected/blkid/low-probe-jbd
+util-linux-2.29.1/tests/expected/blkid/mbr-wholedisk-fake-vfat
+util-linux-2.29.1/tests/expected/blkid/low-probe-tuxonice
+util-linux-2.29.1/tests/expected/blkid/low-probe-silicon-raid
+util-linux-2.29.1/tests/expected/blkid/low-probe-f2fs
+util-linux-2.29.1/tests/expected/blkid/lowprobe-pt-sun
+util-linux-2.29.1/tests/expected/blkid/low-probe-fat
+util-linux-2.29.1/tests/expected/blkid/low-probe-nilfs2
+util-linux-2.29.1/tests/expected/blkid/low-probe-fat32_label_64MB
+util-linux-2.29.1/tests/expected/blkid/low-probe-jmicron-raid
+util-linux-2.29.1/tests/expected/blkid/lowprobe-pt-sgi
+util-linux-2.29.1/tests/expected/blkid/low-probe-mdraid
+util-linux-2.29.1/tests/expected/blkid/low-probe-bfs
+util-linux-2.29.1/tests/expected/blkid/md-raid0-whole
+util-linux-2.29.1/tests/expected/blkid/low-probe-exfat
+util-linux-2.29.1/tests/expected/blkid/low-probe-udf-hdd-win7
+util-linux-2.29.1/tests/expected/blkid/low-probe-jfs
+util-linux-2.29.1/tests/expected/blkid/low-probe-cramfs
+util-linux-2.29.1/tests/expected/blkid/low-probe-minix-BE
+util-linux-2.29.1/tests/expected/blkid/low-probe-udf-hdd-mkudffs2
+util-linux-2.29.1/tests/expected/blkid/low-probe-ufs
+util-linux-2.29.1/tests/expected/blkid/low-probe-netware
+util-linux-2.29.1/tests/expected/blkid/low-probe-bcache-C
+util-linux-2.29.1/tests/expected/blkid/low-probe-ext3
+util-linux-2.29.1/tests/expected/blkid/low-probe-reiser4
+util-linux-2.29.1/tests/expected/blkid/low-probe-udf
+util-linux-2.29.1/tests/expected/blkid/low-probe-gfs2
+util-linux-2.29.1/tests/expected/blkid/low-probe-hpfs
+util-linux-2.29.1/tests/expected/blkid/low-probe-promise-raid
+util-linux-2.29.1/tests/expected/blkid/dm-err
+util-linux-2.29.1/tests/expected/blkid/low-probe-zfs
+util-linux-2.29.1/tests/expected/md5/
+util-linux-2.29.1/tests/expected/md5/md5
+util-linux-2.29.1/tests/expected/dmesg/
+util-linux-2.29.1/tests/expected/dmesg/decode
+util-linux-2.29.1/tests/expected/dmesg/delta
+util-linux-2.29.1/tests/expected/dmesg/indentation
+util-linux-2.29.1/tests/expected/dmesg/facilities
+util-linux-2.29.1/tests/expected/dmesg/colors
+util-linux-2.29.1/tests/expected/dmesg/console-levels
+util-linux-2.29.1/tests/expected/isosize/
+util-linux-2.29.1/tests/expected/isosize/print-size-default_output
+util-linux-2.29.1/tests/expected/isosize/print-size-divisor_output
+util-linux-2.29.1/tests/expected/isosize/print-size-sector_output
+util-linux-2.29.1/tests/expected/login/
+util-linux-2.29.1/tests/expected/login/islocal
+util-linux-2.29.1/tests/expected/login/logindefs
+util-linux-2.29.1/tests/expected/wipefs/
+util-linux-2.29.1/tests/expected/wipefs/wipefs
+util-linux-2.29.1/tests/expected/cal/
+util-linux-2.29.1/tests/expected/cal/weeknum
+util-linux-2.29.1/tests/expected/cal/sep1752
+util-linux-2.29.1/tests/expected/cal/1m
+util-linux-2.29.1/tests/expected/cal/sep1752w
+util-linux-2.29.1/tests/expected/cal/3mw
+util-linux-2.29.1/tests/expected/cal/bigyearw
+util-linux-2.29.1/tests/expected/cal/jan1753
+util-linux-2.29.1/tests/expected/cal/colorw
+util-linux-2.29.1/tests/expected/cal/year
+util-linux-2.29.1/tests/expected/cal/1mw
+util-linux-2.29.1/tests/expected/cal/weekarg
+util-linux-2.29.1/tests/expected/cal/color
+util-linux-2.29.1/tests/expected/cal/yearw
+util-linux-2.29.1/tests/expected/cal/3m
+util-linux-2.29.1/tests/expected/cal/bigyear
+util-linux-2.29.1/tests/expected/build-sys/
+util-linux-2.29.1/tests/expected/build-sys/config-chfnsh-libuser
+util-linux-2.29.1/tests/expected/build-sys/config-core
+util-linux-2.29.1/tests/expected/build-sys/config-disable-all
+util-linux-2.29.1/tests/expected/build-sys/config-chfnsh-no-password
+util-linux-2.29.1/tests/expected/build-sys/config-non-libuuid
+util-linux-2.29.1/tests/expected/build-sys/config-non-libsmartcols
+util-linux-2.29.1/tests/expected/build-sys/config-slang
+util-linux-2.29.1/tests/expected/build-sys/config-all
+util-linux-2.29.1/tests/expected/build-sys/config-selinux
+util-linux-2.29.1/tests/expected/build-sys/config-non-libblkid
+util-linux-2.29.1/tests/expected/build-sys/config-all-non-nls
+util-linux-2.29.1/tests/expected/build-sys/config-all-devel
+util-linux-2.29.1/tests/expected/build-sys/config-non-nls
+util-linux-2.29.1/tests/expected/build-sys/config-chfnsh-pam
+util-linux-2.29.1/tests/expected/build-sys/config-static
+util-linux-2.29.1/tests/expected/build-sys/config-non-libmount
+util-linux-2.29.1/tests/expected/build-sys/config-non-libs
+util-linux-2.29.1/tests/expected/build-sys/config-devel-new-mount
+util-linux-2.29.1/tests/expected/build-sys/config-devel-non-docs
+util-linux-2.29.1/tests/expected/build-sys/config-devel
+util-linux-2.29.1/tests/expected/build-sys/config-audit
+util-linux-2.29.1/tests/expected/namei/
+util-linux-2.29.1/tests/expected/namei/logic
+util-linux-2.29.1/tests/expected/fdisk/
+util-linux-2.29.1/tests/expected/fdisk/bsd_0_64.LE
+util-linux-2.29.1/tests/expected/fdisk/align-512-4K-md
+util-linux-2.29.1/tests/expected/fdisk/bsd_0_64.BE
+util-linux-2.29.1/tests/expected/fdisk/sunlabel
+util-linux-2.29.1/tests/expected/fdisk/id
+util-linux-2.29.1/tests/expected/fdisk/oddinput.toosmall
+util-linux-2.29.1/tests/expected/fdisk/align-512-512-topology
+util-linux-2.29.1/tests/expected/fdisk/id.sparc
+util-linux-2.29.1/tests/expected/fdisk/bsd_1_0.BE
+util-linux-2.29.1/tests/expected/fdisk/align-512-512
+util-linux-2.29.1/tests/expected/fdisk/mbr-nondos-mode
+util-linux-2.29.1/tests/expected/fdisk/mbr-sort
+util-linux-2.29.1/tests/expected/fdisk/mbr-nondos-mode.sparc
+util-linux-2.29.1/tests/expected/fdisk/oddinput
+util-linux-2.29.1/tests/expected/fdisk/mbr-dos-mode
+util-linux-2.29.1/tests/expected/fdisk/bsd_1_0.LE
+util-linux-2.29.1/tests/expected/fdisk/bsd_0_64_alpha.LE
+util-linux-2.29.1/tests/expected/fdisk/align-512-4K-63
+util-linux-2.29.1/tests/expected/fdisk/gpt
+util-linux-2.29.1/tests/expected/fdisk/align-512-4K
+util-linux-2.29.1/tests/expected/bitops/
+util-linux-2.29.1/tests/expected/bitops/swapbytes
+util-linux-2.29.1/tests/expected/kill/
+util-linux-2.29.1/tests/expected/kill/name_to_number
+util-linux-2.29.1/tests/expected/kill/all_processes
+util-linux-2.29.1/tests/expected/kill/options
+util-linux-2.29.1/tests/expected/kill/queue
+util-linux-2.29.1/tests/expected/kill/print_pid
+util-linux-2.29.1/tests/expected/ipcs/
+util-linux-2.29.1/tests/expected/ipcs/limits2
+util-linux-2.29.1/tests/expected/ipcs/mk-rm-sem
+util-linux-2.29.1/tests/expected/ipcs/limits
+util-linux-2.29.1/tests/expected/ipcs/mk-rm-shm
+util-linux-2.29.1/tests/expected/ipcs/mk-rm-msg
+util-linux-2.29.1/tests/expected/ipcs/headers
+util-linux-2.29.1/tests/expected/libfdisk/
+util-linux-2.29.1/tests/expected/libfdisk/gpt-getattr
+util-linux-2.29.1/tests/expected/libfdisk/gpt-all-defaults-with-typo
+util-linux-2.29.1/tests/expected/libfdisk/gpt-setattr
+util-linux-2.29.1/tests/expected/libfdisk/gpt-all-defaults
+util-linux-2.29.1/tests/ts/
+util-linux-2.29.1/tests/ts/paths/
+util-linux-2.29.1/tests/ts/paths/built-in
+util-linux-2.29.1/tests/ts/swapon/
+util-linux-2.29.1/tests/ts/swapon/fixsig
+util-linux-2.29.1/tests/ts/swapon/uuid
+util-linux-2.29.1/tests/ts/swapon/fixpgsz
+util-linux-2.29.1/tests/ts/swapon/devname
+util-linux-2.29.1/tests/ts/swapon/label
+util-linux-2.29.1/tests/ts/tailf/
+util-linux-2.29.1/tests/ts/tailf/simple
+util-linux-2.29.1/tests/ts/getopt/
+util-linux-2.29.1/tests/ts/getopt/options
+util-linux-2.29.1/tests/ts/getopt/basic
+util-linux-2.29.1/tests/ts/eject/
+util-linux-2.29.1/tests/ts/eject/umount
+util-linux-2.29.1/tests/ts/libsmartcols/
+util-linux-2.29.1/tests/ts/libsmartcols/files/
+util-linux-2.29.1/tests/ts/libsmartcols/files/col-name
+util-linux-2.29.1/tests/ts/libsmartcols/files/col-string
+util-linux-2.29.1/tests/ts/libsmartcols/files/col-number
+util-linux-2.29.1/tests/ts/libsmartcols/files/col-id
+util-linux-2.29.1/tests/ts/libsmartcols/files/data-number-tiny
+util-linux-2.29.1/tests/ts/libsmartcols/files/col-noextremes
+util-linux-2.29.1/tests/ts/libsmartcols/files/col-tree
+util-linux-2.29.1/tests/ts/libsmartcols/files/data-string-long
+util-linux-2.29.1/tests/ts/libsmartcols/files/col-strict
+util-linux-2.29.1/tests/ts/libsmartcols/files/col-hidden
+util-linux-2.29.1/tests/ts/libsmartcols/files/data-string-extreme
+util-linux-2.29.1/tests/ts/libsmartcols/files/data-id
+util-linux-2.29.1/tests/ts/libsmartcols/files/data-parent
+util-linux-2.29.1/tests/ts/libsmartcols/files/col-wrap
+util-linux-2.29.1/tests/ts/libsmartcols/files/col-wrapnl
+util-linux-2.29.1/tests/ts/libsmartcols/files/data-string-nl
+util-linux-2.29.1/tests/ts/libsmartcols/files/data-number
+util-linux-2.29.1/tests/ts/libsmartcols/files/col-parent
+util-linux-2.29.1/tests/ts/libsmartcols/files/data-string
+util-linux-2.29.1/tests/ts/libsmartcols/files/col-trunc
+util-linux-2.29.1/tests/ts/libsmartcols/fromfile
+util-linux-2.29.1/tests/ts/libsmartcols/title
+util-linux-2.29.1/tests/ts/cramfs/
+util-linux-2.29.1/tests/ts/cramfs/cramfs-little.img
+util-linux-2.29.1/tests/ts/cramfs/cramfs-big.img
+util-linux-2.29.1/tests/ts/cramfs/doubles
+util-linux-2.29.1/tests/ts/cramfs/mkfs
+util-linux-2.29.1/tests/ts/cramfs/mkfs-endianness
+util-linux-2.29.1/tests/ts/cramfs/fsck-endianness
+util-linux-2.29.1/tests/ts/minix/
+util-linux-2.29.1/tests/ts/minix/fsck
+util-linux-2.29.1/tests/ts/minix/mkfs
+util-linux-2.29.1/tests/ts/minix/broken-root
+util-linux-2.29.1/tests/ts/minix/debian.bug.773892
+util-linux-2.29.1/tests/ts/minix/fsck-images
+util-linux-2.29.1/tests/ts/colrm/
+util-linux-2.29.1/tests/ts/colrm/rm2-2
+util-linux-2.29.1/tests/ts/uuid/
+util-linux-2.29.1/tests/ts/uuid/uuidgen
+util-linux-2.29.1/tests/ts/uuid/uuid_parser
+util-linux-2.29.1/tests/ts/uuid/uuidd
+util-linux-2.29.1/tests/ts/libmount/
+util-linux-2.29.1/tests/ts/libmount/tabfiles-py
+util-linux-2.29.1/tests/ts/libmount/lock
+util-linux-2.29.1/tests/ts/libmount/update-py
+util-linux-2.29.1/tests/ts/libmount/tabfiles
+util-linux-2.29.1/tests/ts/libmount/utils
+util-linux-2.29.1/tests/ts/libmount/context
+util-linux-2.29.1/tests/ts/libmount/tabdiff
+util-linux-2.29.1/tests/ts/libmount/tabfiles-tags-py
+util-linux-2.29.1/tests/ts/libmount/update
+util-linux-2.29.1/tests/ts/libmount/debug
+util-linux-2.29.1/tests/ts/libmount/files/
+util-linux-2.29.1/tests/ts/libmount/files/fstab.comment
+util-linux-2.29.1/tests/ts/libmount/files/mtab
+util-linux-2.29.1/tests/ts/libmount/files/fstab.broken
+util-linux-2.29.1/tests/ts/libmount/files/mountinfo
+util-linux-2.29.1/tests/ts/libmount/files/mountinfo_mv
+util-linux-2.29.1/tests/ts/libmount/files/mountinfo_re
+util-linux-2.29.1/tests/ts/libmount/files/mountinfo_u
+util-linux-2.29.1/tests/ts/libmount/files/kernel_cmdline
+util-linux-2.29.1/tests/ts/libmount/files/fstab
+util-linux-2.29.1/tests/ts/libmount/optstr
+util-linux-2.29.1/tests/ts/libmount/context-utab
+util-linux-2.29.1/tests/ts/libmount/context-py
+util-linux-2.29.1/tests/ts/libmount/loop-overlay
+util-linux-2.29.1/tests/ts/libmount/context-utab-py
+util-linux-2.29.1/tests/ts/libmount/tabfiles-tags
+util-linux-2.29.1/tests/ts/more/
+util-linux-2.29.1/tests/ts/more/squeeze
+util-linux-2.29.1/tests/ts/more/regexp
+util-linux-2.29.1/tests/ts/col/
+util-linux-2.29.1/tests/ts/col/multibyte.data
+util-linux-2.29.1/tests/ts/col/multibyte
+util-linux-2.29.1/tests/ts/fsck/
+util-linux-2.29.1/tests/ts/fsck/ismounted
+util-linux-2.29.1/tests/ts/look/
+util-linux-2.29.1/tests/ts/look/words
+util-linux-2.29.1/tests/ts/look/separator
+util-linux-2.29.1/tests/ts/hexdump/
+util-linux-2.29.1/tests/ts/hexdump/format-strings
+util-linux-2.29.1/tests/ts/hexdump/files/
+util-linux-2.29.1/tests/ts/hexdump/files/ascii.in
+util-linux-2.29.1/tests/ts/hexdump/highlighting
+util-linux-2.29.1/tests/ts/partx/
+util-linux-2.29.1/tests/ts/partx/partx
+util-linux-2.29.1/tests/ts/misc/
+util-linux-2.29.1/tests/ts/misc/fallocate
+util-linux-2.29.1/tests/ts/misc/ionice
+util-linux-2.29.1/tests/ts/misc/setsid
+util-linux-2.29.1/tests/ts/misc/rev
+util-linux-2.29.1/tests/ts/misc/setarch
+util-linux-2.29.1/tests/ts/misc/mcookie
+util-linux-2.29.1/tests/ts/misc/strtosize
+util-linux-2.29.1/tests/ts/misc/ul
+util-linux-2.29.1/tests/ts/misc/whereis
+util-linux-2.29.1/tests/ts/misc/flock
+util-linux-2.29.1/tests/ts/misc/swaplabel
+util-linux-2.29.1/tests/ts/misc/line
+util-linux-2.29.1/tests/ts/rename/
+util-linux-2.29.1/tests/ts/rename/symlink
+util-linux-2.29.1/tests/ts/rename/exit_codes
+util-linux-2.29.1/tests/ts/rename/subdir
+util-linux-2.29.1/tests/ts/rename/basic
+util-linux-2.29.1/tests/ts/schedutils/
+util-linux-2.29.1/tests/ts/schedutils/chrt
+util-linux-2.29.1/tests/ts/schedutils/chrt-non-root
+util-linux-2.29.1/tests/ts/schedutils/cpuset
+util-linux-2.29.1/tests/ts/column/
+util-linux-2.29.1/tests/ts/column/input
+util-linux-2.29.1/tests/ts/column/invalid-multibyte
+util-linux-2.29.1/tests/ts/column/multi-file
+util-linux-2.29.1/tests/ts/column/fillrow
+util-linux-2.29.1/tests/ts/column/separator_table
+util-linux-2.29.1/tests/ts/sfdisk/
+util-linux-2.29.1/tests/ts/sfdisk/movedata
+util-linux-2.29.1/tests/ts/sfdisk/files/
+util-linux-2.29.1/tests/ts/sfdisk/files/dump-gaps
+util-linux-2.29.1/tests/ts/sfdisk/files/dump-old
+util-linux-2.29.1/tests/ts/sfdisk/script
+util-linux-2.29.1/tests/ts/sfdisk/resize
+util-linux-2.29.1/tests/ts/sfdisk/dos
+util-linux-2.29.1/tests/ts/sfdisk/gpt
+util-linux-2.29.1/tests/ts/mount/
+util-linux-2.29.1/tests/ts/mount/fstab-none
+util-linux-2.29.1/tests/ts/mount/special
+util-linux-2.29.1/tests/ts/mount/fstab-uuid
+util-linux-2.29.1/tests/ts/mount/fstab-devname2label
+util-linux-2.29.1/tests/ts/mount/remount
+util-linux-2.29.1/tests/ts/mount/uuid
+util-linux-2.29.1/tests/ts/mount/fstab-symlink
+util-linux-2.29.1/tests/ts/mount/fstab-broken
+util-linux-2.29.1/tests/ts/mount/shared-subtree
+util-linux-2.29.1/tests/ts/mount/fstab-uuid2label
+util-linux-2.29.1/tests/ts/mount/fstab-devname
+util-linux-2.29.1/tests/ts/mount/umount-alltargets
+util-linux-2.29.1/tests/ts/mount/fstab-loop
+util-linux-2.29.1/tests/ts/mount/devname
+util-linux-2.29.1/tests/ts/mount/regfile
+util-linux-2.29.1/tests/ts/mount/move
+util-linux-2.29.1/tests/ts/mount/fstab-uuid2devname
+util-linux-2.29.1/tests/ts/mount/fstab-btrfs
+util-linux-2.29.1/tests/ts/mount/label
+util-linux-2.29.1/tests/ts/mount/umount-recursive
+util-linux-2.29.1/tests/ts/mount/rlimit
+util-linux-2.29.1/tests/ts/mount/fstab-label2uuid
+util-linux-2.29.1/tests/ts/mount/fstab-label
+util-linux-2.29.1/tests/ts/mount/fstab-devname2uuid
+util-linux-2.29.1/tests/ts/mount/fstab-label2devname
+util-linux-2.29.1/tests/ts/mount/fslists
+util-linux-2.29.1/tests/ts/losetup/
+util-linux-2.29.1/tests/ts/losetup/losetup
+util-linux-2.29.1/tests/ts/losetup/losetup-loop
+util-linux-2.29.1/tests/ts/losetup/losetup-blkdev
+util-linux-2.29.1/tests/ts/losetup/losetup_functions.sh
+util-linux-2.29.1/tests/ts/utmp/
+util-linux-2.29.1/tests/ts/utmp/wtmp-ipv6.LE
+util-linux-2.29.1/tests/ts/utmp/wtmp-a.LE
+util-linux-2.29.1/tests/ts/utmp/txt-b-old
+util-linux-2.29.1/tests/ts/utmp/utmp_functions.sh
+util-linux-2.29.1/tests/ts/utmp/utmpdump-circle
+util-linux-2.29.1/tests/ts/utmp/txt-ipv6-old
+util-linux-2.29.1/tests/ts/utmp/subsec
+util-linux-2.29.1/tests/ts/utmp/wtmp-ipv6.BE
+util-linux-2.29.1/tests/ts/utmp/last
+util-linux-2.29.1/tests/ts/utmp/wtmp-a.BE
+util-linux-2.29.1/tests/ts/utmp/last-ipv6
+util-linux-2.29.1/tests/ts/utmp/txt-ipv6
+util-linux-2.29.1/tests/ts/utmp/txt-a
+util-linux-2.29.1/tests/ts/utmp/wtmp-b.LE
+util-linux-2.29.1/tests/ts/utmp/txt-a-old
+util-linux-2.29.1/tests/ts/utmp/txt-b
+util-linux-2.29.1/tests/ts/utmp/wtmp-b.BE
+util-linux-2.29.1/tests/ts/utmp/utmpdump-subsecond
+util-linux-2.29.1/tests/ts/utmp/utmpdump-totxt-ipv6
+util-linux-2.29.1/tests/ts/utmp/utmpdump-tobin-ipv6
+util-linux-2.29.1/tests/ts/utmp/utmpdump-totxt
+util-linux-2.29.1/tests/ts/utmp/utmpdump-tobin
+util-linux-2.29.1/tests/ts/colcrt/
+util-linux-2.29.1/tests/ts/colcrt/functional
+util-linux-2.29.1/tests/ts/colcrt/nasty-input
+util-linux-2.29.1/tests/ts/colcrt/crash1
+util-linux-2.29.1/tests/ts/colcrt/hang1
+util-linux-2.29.1/tests/ts/colcrt/underlines
+util-linux-2.29.1/tests/ts/colcrt/crash2
+util-linux-2.29.1/tests/ts/colcrt/regressions
+util-linux-2.29.1/tests/ts/lscpu/
+util-linux-2.29.1/tests/ts/lscpu/dumps/
+util-linux-2.29.1/tests/ts/lscpu/dumps/ppc64-POWER7-64cpu.tar.gz
+util-linux-2.29.1/tests/ts/lscpu/dumps/s390-zvm.tar.gz
+util-linux-2.29.1/tests/ts/lscpu/dumps/ppc64-POWER7.tar.gz
+util-linux-2.29.1/tests/ts/lscpu/dumps/ppc-qemu.tar.gz
+util-linux-2.29.1/tests/ts/lscpu/dumps/s390-lpar.tar.gz
+util-linux-2.29.1/tests/ts/lscpu/dumps/sparc64.tar.gz
+util-linux-2.29.1/tests/ts/lscpu/dumps/vbox-win.tar.gz
+util-linux-2.29.1/tests/ts/lscpu/dumps/s390-lpar-drawer.tar.gz
+util-linux-2.29.1/tests/ts/lscpu/dumps/armv7.tar.gz
+util-linux-2.29.1/tests/ts/lscpu/dumps/s390-kvm.tar.gz
+util-linux-2.29.1/tests/ts/lscpu/dumps/x86_64-dell_e4310.tar.gz
+util-linux-2.29.1/tests/ts/lscpu/dumps/x86_64-64cpu.tar.gz
+util-linux-2.29.1/tests/ts/lscpu/lscpu
+util-linux-2.29.1/tests/ts/lscpu/mk-input.sh
+util-linux-2.29.1/tests/ts/logger/
+util-linux-2.29.1/tests/ts/logger/errors
+util-linux-2.29.1/tests/ts/logger/options
+util-linux-2.29.1/tests/ts/logger/formats
+util-linux-2.29.1/tests/ts/logger/journald
+util-linux-2.29.1/tests/ts/blkdiscard/
+util-linux-2.29.1/tests/ts/blkdiscard/offsets
+util-linux-2.29.1/tests/ts/script/
+util-linux-2.29.1/tests/ts/script/replay
+util-linux-2.29.1/tests/ts/script/options
+util-linux-2.29.1/tests/ts/script/race
+util-linux-2.29.1/tests/ts/script/buffering-race
+util-linux-2.29.1/tests/ts/hwclock/
+util-linux-2.29.1/tests/ts/hwclock/systohc
+util-linux-2.29.1/tests/ts/blkid/
+util-linux-2.29.1/tests/ts/blkid/low-probe
+util-linux-2.29.1/tests/ts/blkid/images-fs/
+util-linux-2.29.1/tests/ts/blkid/images-fs/hfsplus.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/ubifs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/silicon-raid.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/lsi-raid.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/xfs-log.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/netware.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/exfat.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/adaptec-raid.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/romfs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/iso.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/zfs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/ddf-raid.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/jmicron-raid.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/iso-joliet.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/ufs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/udf-hdd-mkudffs2.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/jfs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/reiser3.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/hpt37x-raid.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/ext2.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/ocfs2.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/bcache-B.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/nvidia-raid.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/udf-hdd-win7.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/xfs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/hfs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/minix-BE.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/swap0.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/fat.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/vmfs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/ext3.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/hpt45x-raid.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/gfs2.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/minix-LE.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/isw-raid.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/ntfs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/bcache-C.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/lvm2.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/fat32_label_64MB.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/iso-rr-joliet.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/swap1.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/via-raid.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/udf-hdd-mkudffs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/cramfs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/tuxonice.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/drbdmanage-control-volume.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/bfs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/udf.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/mdraid.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/hpfs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/promise-raid.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/udf-hdd-udfclient-0.7.5.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/small-fat32.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/jbd.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/fat16_noheads.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/befs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/vmfs_volume.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/udf-hdd-udfclient-0.7.7.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/reiser4.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/f2fs.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-fs/nilfs2.img.xz
+util-linux-2.29.1/tests/ts/blkid/md-raid1-part
+util-linux-2.29.1/tests/ts/blkid/mbr-wholedisk
+util-linux-2.29.1/tests/ts/blkid/images-pt/
+util-linux-2.29.1/tests/ts/blkid/images-pt/dos+bsd.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-pt/bsd.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-pt/sgi.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-pt/sun.img.xz
+util-linux-2.29.1/tests/ts/blkid/images-pt/gpt.img.xz
+util-linux-2.29.1/tests/ts/blkid/md-raid1-whole
+util-linux-2.29.1/tests/ts/blkid/lowprobe-pt
+util-linux-2.29.1/tests/ts/blkid/md-raid0-whole
+util-linux-2.29.1/tests/ts/blkid/mbr-wholedisk-vfat.img
+util-linux-2.29.1/tests/ts/blkid/dm-err
+util-linux-2.29.1/tests/ts/md5/
+util-linux-2.29.1/tests/ts/md5/data
+util-linux-2.29.1/tests/ts/md5/md5
+util-linux-2.29.1/tests/ts/dmesg/
+util-linux-2.29.1/tests/ts/dmesg/decode
+util-linux-2.29.1/tests/ts/dmesg/input
+util-linux-2.29.1/tests/ts/dmesg/delta
+util-linux-2.29.1/tests/ts/dmesg/indentation
+util-linux-2.29.1/tests/ts/dmesg/newlines
+util-linux-2.29.1/tests/ts/dmesg/facilities
+util-linux-2.29.1/tests/ts/dmesg/colors
+util-linux-2.29.1/tests/ts/dmesg/console-levels
+util-linux-2.29.1/tests/ts/isosize/
+util-linux-2.29.1/tests/ts/isosize/print-size
+util-linux-2.29.1/tests/ts/isosize/sample.iso.gz
+util-linux-2.29.1/tests/ts/login/
+util-linux-2.29.1/tests/ts/login/islocal.data
+util-linux-2.29.1/tests/ts/login/islocal
+util-linux-2.29.1/tests/ts/login/logindefs
+util-linux-2.29.1/tests/ts/login/logindefs.data
+util-linux-2.29.1/tests/ts/wipefs/
+util-linux-2.29.1/tests/ts/wipefs/wipefs
+util-linux-2.29.1/tests/ts/cal/
+util-linux-2.29.1/tests/ts/cal/weeknum
+util-linux-2.29.1/tests/ts/cal/sep1752
+util-linux-2.29.1/tests/ts/cal/1m
+util-linux-2.29.1/tests/ts/cal/sep1752w
+util-linux-2.29.1/tests/ts/cal/3mw
+util-linux-2.29.1/tests/ts/cal/bigyearw
+util-linux-2.29.1/tests/ts/cal/jan1753
+util-linux-2.29.1/tests/ts/cal/colorw
+util-linux-2.29.1/tests/ts/cal/year
+util-linux-2.29.1/tests/ts/cal/1mw
+util-linux-2.29.1/tests/ts/cal/weekarg
+util-linux-2.29.1/tests/ts/cal/color
+util-linux-2.29.1/tests/ts/cal/yearw
+util-linux-2.29.1/tests/ts/cal/3m
+util-linux-2.29.1/tests/ts/cal/bigyear
+util-linux-2.29.1/tests/ts/build-sys/
+util-linux-2.29.1/tests/ts/build-sys/config
+util-linux-2.29.1/tests/ts/namei/
+util-linux-2.29.1/tests/ts/namei/logic
+util-linux-2.29.1/tests/ts/fdisk/
+util-linux-2.29.1/tests/ts/fdisk/align-512-4K-md
+util-linux-2.29.1/tests/ts/fdisk/sunlabel
+util-linux-2.29.1/tests/ts/fdisk/id
+util-linux-2.29.1/tests/ts/fdisk/align-512-512-topology
+util-linux-2.29.1/tests/ts/fdisk/align-512-512
+util-linux-2.29.1/tests/ts/fdisk/bsd
+util-linux-2.29.1/tests/ts/fdisk/mbr-nondos-mode
+util-linux-2.29.1/tests/ts/fdisk/mbr-sort
+util-linux-2.29.1/tests/ts/fdisk/oddinput
+util-linux-2.29.1/tests/ts/fdisk/mbr-dos-mode
+util-linux-2.29.1/tests/ts/fdisk/align-512-4K-63
+util-linux-2.29.1/tests/ts/fdisk/gpt
+util-linux-2.29.1/tests/ts/fdisk/align-512-4K
+util-linux-2.29.1/tests/ts/bitops/
+util-linux-2.29.1/tests/ts/bitops/swapbytes
+util-linux-2.29.1/tests/ts/kill/
+util-linux-2.29.1/tests/ts/kill/name_to_number
+util-linux-2.29.1/tests/ts/kill/all_processes
+util-linux-2.29.1/tests/ts/kill/options
+util-linux-2.29.1/tests/ts/kill/queue
+util-linux-2.29.1/tests/ts/kill/print_pid
+util-linux-2.29.1/tests/ts/kill/kill_functions.sh
+util-linux-2.29.1/tests/ts/ipcs/
+util-linux-2.29.1/tests/ts/ipcs/limits2
+util-linux-2.29.1/tests/ts/ipcs/mk-rm-sem
+util-linux-2.29.1/tests/ts/ipcs/limits
+util-linux-2.29.1/tests/ts/ipcs/mk-rm-shm
+util-linux-2.29.1/tests/ts/ipcs/functions.sh
+util-linux-2.29.1/tests/ts/ipcs/mk-rm-msg
+util-linux-2.29.1/tests/ts/ipcs/headers
+util-linux-2.29.1/tests/ts/libfdisk/
+util-linux-2.29.1/tests/ts/libfdisk/gpt
+util-linux-2.29.1/tests/run.sh
+util-linux-2.29.1/tests/functions.sh
+util-linux-2.29.1/README.licensing
+util-linux-2.29.1/po/
+util-linux-2.29.1/po/sv.po
+util-linux-2.29.1/po/zh_TW.po
+util-linux-2.29.1/po/sv.gmo
+util-linux-2.29.1/po/hu.gmo
+util-linux-2.29.1/po/zh_CN.gmo
+util-linux-2.29.1/po/et.po
+util-linux-2.29.1/po/id.po
+util-linux-2.29.1/po/pt_BR.po
+util-linux-2.29.1/po/gl.gmo
+util-linux-2.29.1/po/de.gmo
+util-linux-2.29.1/po/hr.gmo
+util-linux-2.29.1/po/et.gmo
+util-linux-2.29.1/po/sl.po
+util-linux-2.29.1/po/hu.po
+util-linux-2.29.1/po/stamp-po
+util-linux-2.29.1/po/remove-potcdate.sin
+util-linux-2.29.1/po/pl.gmo
+util-linux-2.29.1/po/da.po
+util-linux-2.29.1/po/cs.gmo
+util-linux-2.29.1/po/util-linux.pot
+util-linux-2.29.1/po/nl.gmo
+util-linux-2.29.1/po/pt_BR.gmo
+util-linux-2.29.1/po/update-potfiles
+util-linux-2.29.1/po/it.gmo
+util-linux-2.29.1/po/it.po
+util-linux-2.29.1/po/zh_CN.po
+util-linux-2.29.1/po/cs.po
+util-linux-2.29.1/po/Makevars
+util-linux-2.29.1/po/eu.gmo
+util-linux-2.29.1/po/vi.gmo
+util-linux-2.29.1/po/ja.po
+util-linux-2.29.1/po/ja.gmo
+util-linux-2.29.1/po/en@quot.header
+util-linux-2.29.1/po/fi.gmo
+util-linux-2.29.1/po/insert-header.sin
+util-linux-2.29.1/po/da.gmo
+util-linux-2.29.1/po/ca.gmo
+util-linux-2.29.1/po/Rules-quot
+util-linux-2.29.1/po/Makefile.in.in
+util-linux-2.29.1/po/es.gmo
+util-linux-2.29.1/po/de.po
+util-linux-2.29.1/po/en@boldquot.header
+util-linux-2.29.1/po/vi.po
+util-linux-2.29.1/po/zh_TW.gmo
+util-linux-2.29.1/po/gl.po
+util-linux-2.29.1/po/fr.gmo
+util-linux-2.29.1/po/ru.po
+util-linux-2.29.1/po/eu.po
+util-linux-2.29.1/po/sl.gmo
+util-linux-2.29.1/po/pl.po
+util-linux-2.29.1/po/fr.po
+util-linux-2.29.1/po/uk.gmo
+util-linux-2.29.1/po/quot.sed
+util-linux-2.29.1/po/tr.gmo
+util-linux-2.29.1/po/nl.po
+util-linux-2.29.1/po/boldquot.sed
+util-linux-2.29.1/po/fi.po
+util-linux-2.29.1/po/hr.po
+util-linux-2.29.1/po/ca.po
+util-linux-2.29.1/po/es.po
+util-linux-2.29.1/po/tr.po
+util-linux-2.29.1/po/id.gmo
+util-linux-2.29.1/po/POTFILES.in
+util-linux-2.29.1/po/ru.gmo
+util-linux-2.29.1/po/uk.po
+util-linux-2.29.1/AUTHORS
+util-linux-2.29.1/m4/
+util-linux-2.29.1/m4/lt~obsolete.m4
+util-linux-2.29.1/m4/libtool.m4
+util-linux-2.29.1/m4/lib-ld.m4
+util-linux-2.29.1/m4/iconv.m4
+util-linux-2.29.1/m4/gettext.m4
+util-linux-2.29.1/m4/ltsugar.m4
+util-linux-2.29.1/m4/ax_check_vscript.m4
+util-linux-2.29.1/m4/compiler.m4
+util-linux-2.29.1/m4/intlmacosx.m4
+util-linux-2.29.1/m4/tls.m4
+util-linux-2.29.1/m4/progtest.m4
+util-linux-2.29.1/m4/gtk-doc.m4
+util-linux-2.29.1/m4/po.m4
+util-linux-2.29.1/m4/lib-link.m4
+util-linux-2.29.1/m4/ltoptions.m4
+util-linux-2.29.1/m4/lib-prefix.m4
+util-linux-2.29.1/m4/ul.m4
+util-linux-2.29.1/m4/ltversion.m4
+util-linux-2.29.1/m4/nls.m4
+util-linux-2.29.1/.version
+util-linux-2.29.1/aclocal.m4
+util-linux-2.29.1/sys-utils/
+util-linux-2.29.1/sys-utils/ctrlaltdel.8
+util-linux-2.29.1/sys-utils/lscpu-dmi.c
+util-linux-2.29.1/sys-utils/prlimit.1
+util-linux-2.29.1/sys-utils/ldattach.c
+util-linux-2.29.1/sys-utils/fstrim.8
+util-linux-2.29.1/sys-utils/rtcwake.8
+util-linux-2.29.1/sys-utils/Makemodule.am
+util-linux-2.29.1/sys-utils/blkdiscard.c
+util-linux-2.29.1/sys-utils/mount.c
+util-linux-2.29.1/sys-utils/ipcs.c
+util-linux-2.29.1/sys-utils/switch_root.8
+util-linux-2.29.1/sys-utils/ipcutils.c
+util-linux-2.29.1/sys-utils/nsenter.c
+util-linux-2.29.1/sys-utils/swapoff.8
+util-linux-2.29.1/sys-utils/fsfreeze.8
+util-linux-2.29.1/sys-utils/zramctl.c
+util-linux-2.29.1/sys-utils/switch_root.c
+util-linux-2.29.1/sys-utils/lscpu.c
+util-linux-2.29.1/sys-utils/flock.c
+util-linux-2.29.1/sys-utils/fsfreeze.c
+util-linux-2.29.1/sys-utils/chcpu.c
+util-linux-2.29.1/sys-utils/eject.1
+util-linux-2.29.1/sys-utils/unshare.1
+util-linux-2.29.1/sys-utils/setarch.8
+util-linux-2.29.1/sys-utils/dmesg.c
+util-linux-2.29.1/sys-utils/fallocate.1
+util-linux-2.29.1/sys-utils/swapon-common.h
+util-linux-2.29.1/sys-utils/wdctl.8
+util-linux-2.29.1/sys-utils/lsipc.1
+util-linux-2.29.1/sys-utils/lsns.8
+util-linux-2.29.1/sys-utils/flock.1
+util-linux-2.29.1/sys-utils/setsid.1
+util-linux-2.29.1/sys-utils/ldattach.8
+util-linux-2.29.1/sys-utils/eject.c
+util-linux-2.29.1/sys-utils/ipcmk.1
+util-linux-2.29.1/sys-utils/readprofile.8
+util-linux-2.29.1/sys-utils/swapon.c
+util-linux-2.29.1/sys-utils/mountpoint.c
+util-linux-2.29.1/sys-utils/hwclock-cmos.c
+util-linux-2.29.1/sys-utils/setpriv.1
+util-linux-2.29.1/sys-utils/ipcrm.1
+util-linux-2.29.1/sys-utils/ipcrm.c
+util-linux-2.29.1/sys-utils/hwclock-rtc.c
+util-linux-2.29.1/sys-utils/tunelp.8
+util-linux-2.29.1/sys-utils/wdctl.c
+util-linux-2.29.1/sys-utils/hwclock.8
+util-linux-2.29.1/sys-utils/lsipc.c
+util-linux-2.29.1/sys-utils/losetup.c
+util-linux-2.29.1/sys-utils/ctrlaltdel.c
+util-linux-2.29.1/sys-utils/ipcutils.h
+util-linux-2.29.1/sys-utils/mount.8
+util-linux-2.29.1/sys-utils/nsenter.1
+util-linux-2.29.1/sys-utils/losetup.8
+util-linux-2.29.1/sys-utils/fallocate.c
+util-linux-2.29.1/sys-utils/chcpu.8
+util-linux-2.29.1/sys-utils/hwclock.8.in
+util-linux-2.29.1/sys-utils/zramctl.8
+util-linux-2.29.1/sys-utils/renice.1
+util-linux-2.29.1/sys-utils/rtcwake.c
+util-linux-2.29.1/sys-utils/readprofile.c
+util-linux-2.29.1/sys-utils/lscpu.1
+util-linux-2.29.1/sys-utils/hwclock.c
+util-linux-2.29.1/sys-utils/lscpu.h
+util-linux-2.29.1/sys-utils/fstrim.timer
+util-linux-2.29.1/sys-utils/lsns.c
+util-linux-2.29.1/sys-utils/umount.c
+util-linux-2.29.1/sys-utils/fstab.5
+util-linux-2.29.1/sys-utils/swapoff.c
+util-linux-2.29.1/sys-utils/umount.8
+util-linux-2.29.1/sys-utils/fstrim.c
+util-linux-2.29.1/sys-utils/pivot_root.c
+util-linux-2.29.1/sys-utils/blkdiscard.8
+util-linux-2.29.1/sys-utils/unshare.c
+util-linux-2.29.1/sys-utils/mountpoint.1
+util-linux-2.29.1/sys-utils/tunelp.c
+util-linux-2.29.1/sys-utils/renice.c
+util-linux-2.29.1/sys-utils/prlimit.c
+util-linux-2.29.1/sys-utils/rtcwake.8.in
+util-linux-2.29.1/sys-utils/setarch.c
+util-linux-2.29.1/sys-utils/fstrim.service.in
+util-linux-2.29.1/sys-utils/swapon-common.c
+util-linux-2.29.1/sys-utils/setsid.c
+util-linux-2.29.1/sys-utils/pivot_root.8
+util-linux-2.29.1/sys-utils/ipcs.1
+util-linux-2.29.1/sys-utils/setpriv.c
+util-linux-2.29.1/sys-utils/swapon.8
+util-linux-2.29.1/sys-utils/hwclock.h
+util-linux-2.29.1/sys-utils/lp.h
+util-linux-2.29.1/sys-utils/dmesg.1
+util-linux-2.29.1/sys-utils/ipcmk.c
+util-linux-2.29.1/libfdisk/
+util-linux-2.29.1/libfdisk/COPYING
+util-linux-2.29.1/libfdisk/Makemodule.am
+util-linux-2.29.1/libfdisk/src/
+util-linux-2.29.1/libfdisk/src/bsd.c
+util-linux-2.29.1/libfdisk/src/Makemodule.am
+util-linux-2.29.1/libfdisk/src/libfdisk.h.in
+util-linux-2.29.1/libfdisk/src/version.c
+util-linux-2.29.1/libfdisk/src/item.c
+util-linux-2.29.1/libfdisk/src/table.c
+util-linux-2.29.1/libfdisk/src/test.c
+util-linux-2.29.1/libfdisk/src/sun.c
+util-linux-2.29.1/libfdisk/src/libfdisk.h
+util-linux-2.29.1/libfdisk/src/init.c
+util-linux-2.29.1/libfdisk/src/parttype.c
+util-linux-2.29.1/libfdisk/src/utils.c
+util-linux-2.29.1/libfdisk/src/sgi.c
+util-linux-2.29.1/libfdisk/src/iter.c
+util-linux-2.29.1/libfdisk/src/gpt.c
+util-linux-2.29.1/libfdisk/src/label.c
+util-linux-2.29.1/libfdisk/src/partition.c
+util-linux-2.29.1/libfdisk/src/libfdisk.sym
+util-linux-2.29.1/libfdisk/src/dos.c
+util-linux-2.29.1/libfdisk/src/context.c
+util-linux-2.29.1/libfdisk/src/ask.c
+util-linux-2.29.1/libfdisk/src/field.c
+util-linux-2.29.1/libfdisk/src/fdiskP.h
+util-linux-2.29.1/libfdisk/src/script.c
+util-linux-2.29.1/libfdisk/src/alignment.c
+util-linux-2.29.1/libfdisk/src/wipe.c
+util-linux-2.29.1/libfdisk/docs/
+util-linux-2.29.1/libfdisk/docs/version.xml.in
+util-linux-2.29.1/libfdisk/docs/Makefile.am
+util-linux-2.29.1/libfdisk/docs/version.xml
+util-linux-2.29.1/libfdisk/docs/libfdisk-sections.txt
+util-linux-2.29.1/libfdisk/docs/libfdisk-docs.xml
+util-linux-2.29.1/libfdisk/docs/Makefile.in
+util-linux-2.29.1/libfdisk/fdisk.pc.in
+util-linux-2.29.1/Makefile.in
+lfs@Minty /mnt/lfs/sources $ cd util-linux-2.29.1
+lfs@Minty /mnt/lfs/sources/util-linux-2.29.1 $ ./configure --prefix=/tools                \
+>             --without-python               \
+>             --disable-makeinstall-chown    \
+>             --without-systemdsystemunitdir \
+>             PKG_CONFIG=""
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /tools/bin/grep
+checking for egrep... /tools/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for a BSD-compatible install... /tools/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /tools/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking whether make supports nested variables... yes
+checking how to create a pax tar archive... gnutar
+checking dependency style of gcc... gcc3
+checking whether make supports nested variables... (cached) yes
+checking for gcc option to accept ISO C99... none needed
+checking for gcc option to accept ISO Standard C... (cached) none needed
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for an ANSI C-conforming const... yes
+checking for working volatile... yes
+checking whether byte ordering is bigendian... no
+checking whether compiler handles -fno-common... yes
+checking whether compiler handles -Wall... yes
+checking whether compiler handles -Werror=sequence-point... yes
+checking whether compiler handles -Wextra... yes
+checking whether compiler handles -Wextra-semi... no
+checking whether compiler handles -Wembedded-directive... no
+checking whether compiler handles -Wmissing-declarations... yes
+checking whether compiler handles -Wmissing-parameter-type... yes
+checking whether compiler handles -Wmissing-prototypes... yes
+checking whether compiler handles -Wno-missing-field-initializers... yes
+checking whether compiler handles -Wredundant-decls... yes
+checking whether compiler handles -Wsign-compare... yes
+checking whether compiler handles -Wtype-limits... yes
+checking whether compiler handles -Wuninitialized... yes
+checking whether compiler handles -Wunused-but-set-parameter... yes
+checking whether compiler handles -Wunused-but-set-variable... yes
+checking whether compiler handles -Wunused-parameter... yes
+checking whether compiler handles -Wunused-result... yes
+checking whether compiler handles -Wunused-variable... yes
+checking whether compiler handles -Wnested-externs... yes
+checking whether compiler handles -Wpointer-arith... yes
+checking whether compiler handles -Wstrict-prototypes... yes
+checking whether compiler handles -Wformat-security... no
+checking whether compiler handles -Wimplicit-function-declaration... yes
+checking whether compiler handles -Wno-clobbered... yes
+checking whether compiler handles -Wno-unused-parameter... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /tools/bin/sed
+checking for fgrep... /tools/bin/grep -F
+checking for ld used by gcc... /mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld
+checking if the linker (/mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /tools/bin/nm -B
+checking the name lister (/tools/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /tools/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /tools/bin/dd
+checking how to truncate binary pipes... /tools/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking linker version script flag... --version-script
+checking if version scripts can use complex wildcards... yes
+checking whether to build gtk-doc documentation... no
+checking for gtkdoc-check... no
+checking for xsltproc... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking whether to enable assertions... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /tools/bin/msgfmt
+checking for gmsgfmt... /tools/bin/msgfmt
+checking for xgettext... /tools/bin/xgettext
+checking for msgmerge... /tools/bin/msgmerge
+checking for ld used by gcc... /mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld -m elf_x86_64
+checking if the linker (/mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for linux/compiler.h... no
+checking for linux/blkpg.h... yes
+checking for linux/major.h... yes
+checking asm/io.h usability... no
+checking asm/io.h presence... no
+checking for asm/io.h... no
+checking err.h usability... yes
+checking err.h presence... yes
+checking for err.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking for inttypes.h... (cached) yes
+checking linux/btrfs.h usability... yes
+checking linux/btrfs.h presence... yes
+checking for linux/btrfs.h... yes
+checking linux/cdrom.h usability... yes
+checking linux/cdrom.h presence... yes
+checking for linux/cdrom.h... yes
+checking linux/falloc.h usability... yes
+checking linux/falloc.h presence... yes
+checking for linux/falloc.h... yes
+checking linux/watchdog.h usability... yes
+checking linux/watchdog.h presence... yes
+checking for linux/watchdog.h... yes
+checking linux/fd.h usability... yes
+checking linux/fd.h presence... yes
+checking for linux/fd.h... yes
+checking linux/raw.h usability... yes
+checking linux/raw.h presence... yes
+checking for linux/raw.h... yes
+checking linux/tiocl.h usability... yes
+checking linux/tiocl.h presence... yes
+checking for linux/tiocl.h... yes
+checking linux/version.h usability... yes
+checking linux/version.h presence... yes
+checking for linux/version.h... yes
+checking linux/securebits.h usability... yes
+checking linux/securebits.h presence... yes
+checking for linux/securebits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking mntent.h usability... yes
+checking mntent.h presence... yes
+checking for mntent.h... yes
+checking net/if.h usability... yes
+checking net/if.h presence... yes
+checking for net/if.h... yes
+checking net/if_dl.h usability... no
+checking net/if_dl.h presence... no
+checking for net/if_dl.h... no
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking paths.h usability... yes
+checking paths.h presence... yes
+checking for paths.h... yes
+checking pty.h usability... yes
+checking pty.h presence... yes
+checking for pty.h... yes
+checking security/pam_appl.h usability... no
+checking security/pam_appl.h presence... no
+checking for security/pam_appl.h... no
+checking for stdint.h... (cached) yes
+checking stdio_ext.h usability... yes
+checking stdio_ext.h presence... yes
+checking for stdio_ext.h... yes
+checking for stdlib.h... (cached) yes
+checking endian.h usability... yes
+checking endian.h presence... yes
+checking for endian.h... yes
+checking byteswap.h usability... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking sys/endian.h usability... no
+checking sys/endian.h presence... no
+checking for sys/endian.h... no
+checking sys/disk.h usability... no
+checking sys/disk.h presence... no
+checking for sys/disk.h... no
+checking sys/disklabel.h usability... no
+checking sys/disklabel.h presence... no
+checking for sys/disklabel.h... no
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/io.h usability... yes
+checking sys/io.h presence... yes
+checking for sys/io.h... yes
+checking sys/ioccom.h usability... no
+checking sys/ioccom.h presence... no
+checking for sys/ioccom.h... no
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/mkdev.h usability... no
+checking sys/mkdev.h presence... no
+checking for sys/mkdev.h... no
+checking sys/mount.h usability... yes
+checking sys/mount.h presence... yes
+checking for sys/mount.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/prctl.h usability... yes
+checking sys/prctl.h presence... yes
+checking for sys/prctl.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/signalfd.h usability... yes
+checking sys/signalfd.h presence... yes
+checking for sys/signalfd.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/sockio.h usability... no
+checking sys/sockio.h presence... no
+checking for sys/sockio.h... no
+checking for sys/stat.h... (cached) yes
+checking sys/sysmacros.h usability... yes
+checking sys/sysmacros.h presence... yes
+checking for sys/sysmacros.h... yes
+checking sys/swap.h usability... yes
+checking sys/swap.h presence... yes
+checking for sys/swap.h... yes
+checking sys/syscall.h usability... yes
+checking sys/syscall.h presence... yes
+checking for sys/syscall.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/timex.h usability... yes
+checking sys/timex.h presence... yes
+checking for sys/timex.h... yes
+checking sys/ttydefaults.h usability... yes
+checking sys/ttydefaults.h presence... yes
+checking for sys/ttydefaults.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/ucred.h usability... no
+checking sys/ucred.h presence... no
+checking for sys/ucred.h... no
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking for unistd.h... (cached) yes
+checking shadow.h usability... yes
+checking shadow.h presence... yes
+checking for shadow.h... yes
+checking utmp.h usability... yes
+checking utmp.h presence... yes
+checking for utmp.h... yes
+checking for linux/gsmmux.h... no
+checking for security/pam_misc.h... no
+checking for security/openpam.h... no
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking for struct termios.c_line... yes
+checking for struct stat.st_mtim.tv_nsec... yes
+checking whether _NL_TIME_WEEK_1STDAY is declared... yes
+checking whether llseek is declared... no
+checking whether lseek64 is declared... yes
+checking whether environ is declared... yes
+checking whether strsignal is declared... yes
+checking whether TIOCGLCKTRMIOS is declared... yes
+checking whether SOCK_CLOEXEC is declared... yes
+checking whether SOCK_NONBLOCK is declared... yes
+checking whether SO_PASSCRED is declared... yes
+checking for __fpending... yes
+checking for secure_getenv... yes
+checking for __secure_getenv... no
+checking for err... yes
+checking for errx... yes
+checking for fsync... yes
+checking for utimensat... yes
+checking for getdomainname... yes
+checking for getdtablesize... yes
+checking for getexecname... no
+checking for getmntinfo... no
+checking for getrlimit... yes
+checking for getsgnam... yes
+checking for inotify_init... yes
+checking for jrand48... yes
+checking for lchown... yes
+checking for llseek... yes
+checking for lseek64... yes
+checking for mempcpy... yes
+checking for mkostemp... yes
+checking for nanosleep... yes
+checking for ntp_gettime... yes
+checking for personality... yes
+checking for posix_fadvise... yes
+checking for prctl... yes
+checking for qsort_r... yes
+checking for rpmatch... yes
+checking for scandirat... yes
+checking for setprogname... no
+checking for setresgid... yes
+checking for setresuid... yes
+checking for sched_setattr... no
+checking for sched_setscheduler... yes
+checking for sigqueue... yes
+checking for srandom... yes
+checking for strnchr... no
+checking for strndup... yes
+checking for strnlen... yes
+checking for sysconf... yes
+checking for sysinfo... yes
+checking for updwtmp... yes
+checking for usleep... yes
+checking for warn... yes
+checking for warnx... yes
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for openat... yes
+checking for fstatat... yes
+checking for unlinkat... yes
+checking for ioperm... yes
+checking for iopl... yes
+checking for futimens... yes
+checking for inotify_init1... yes
+checking for open_memstream... yes
+checking for reboot... yes
+checking for isnan... yes
+checking for clock_gettime... yes
+checking for timer_create... no
+checking for timer_create in -lrt... yes
+checking for rtas_get_sysparm in -lrtas... no
+checking for struct sockaddr.sa_len... no
+checking for library containing socket... none required
+checking for dirfd... yes
+checking whether program_invocation_short_name is defined... yes
+checking whether __progname is defined... yes
+checking whether the target supports thread-local storage... yes
+checking scanf string alloc modifiers... (%ms) yes
+checking for openpty in -lutil... yes
+checking for union semun... no
+checking for loff_t... yes
+checking wchar_t support... yes
+checking for cpu_set_t... yes
+checking for sighandler_t... yes
+checking whether CPU_ALLOC is declared... yes
+checking crypt.h usability... yes
+checking crypt.h presence... yes
+checking for crypt.h... yes
+checking for udev_new in -ludev... no
+checking for NCURSESW... no
+checking for ncursesw6-config... ncursesw6-config
+checking ncursesw/ncurses.h usability... no
+checking ncursesw/ncurses.h presence... no
+checking for ncursesw/ncurses.h... no
+checking ncurses.h usability... yes
+checking ncurses.h presence... yes
+checking for ncurses.h... yes
+checking for use_default_colors in -lncursesw... yes
+checking for resizeterm in -lncursesw... yes
+checking for TINFO... no
+checking for tgetent in -ltinfo... no
+checking for readline in -lreadline... no
+checking for syscall fallocate... SYS_fallocate
+checking for valid fallocate() function... yes
+checking for syscall unshare... SYS_unshare
+checking for unshare... yes
+checking for syscall setns... SYS_setns
+checking for setns... yes
+checking for capng_apply in -lcap-ng... no
+configure: WARNING: libcap-ng library not found; not building setpriv
+checking for crc32 in -lz... no
+configure: WARNING: z library not found; not building cramfs
+checking for syscall prlimit64... SYS_prlimit64
+checking for prlimit... yes
+checking for syscall pivot_root... SYS_pivot_root
+checking for LIBUSER... no
+configure: WARNING: PAM header file not found; not building chfn_chsh
+configure: WARNING: PAM header file not found; not building login
+configure: WARNING: PAM header file not found; not building su
+configure: WARNING: PAM header file not found; not building runuser
+checking for syscall ioprio_set... SYS_ioprio_set
+checking for syscall ioprio_get... SYS_ioprio_get
+checking for syscall sched_getaffinity... SYS_sched_getaffinity
+checking for syscall sched_setattr... SYS_sched_setattr
+checking for SYSTEMD... no
+checking for SYSTEMD_DAEMON... no
+checking for SYSTEMD_JOURNAL... no
+./configure: line 29270: --exists: command not found
+configure: WARNING: libpython not found; not building pylibmount
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libblkid/docs/Makefile
+config.status: creating libblkid/docs/version.xml
+config.status: creating libblkid/src/blkid.h
+config.status: creating libfdisk/docs/Makefile
+config.status: creating libfdisk/docs/version.xml
+config.status: creating libfdisk/src/libfdisk.h
+config.status: creating libmount/docs/Makefile
+config.status: creating libmount/docs/version.xml
+config.status: creating libmount/src/libmount.h
+config.status: creating libsmartcols/docs/Makefile
+config.status: creating libsmartcols/docs/version.xml
+config.status: creating libsmartcols/src/libsmartcols.h
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+
+	util-linux  2.29.1
+
+	prefix:            /tools
+	exec prefix:       ${prefix}
+
+	localstatedir:     ${prefix}/var
+	bindir:            ${exec_prefix}/bin
+	sbindir:           ${exec_prefix}/sbin
+	libdir:            ${exec_prefix}/lib
+	includedir:        ${prefix}/include
+	usrbin_execdir:    ${exec_prefix}/bin
+	usrsbin_execdir:   ${exec_prefix}/sbin
+	usrlib_execdir:    ${exec_prefix}/lib
+
+	compiler:          gcc
+	cflags:            -g -O2
+	suid cflags:
+	ldflags:
+	suid ldflags:
+
+	Python:
+	Python version:
+	Python libs:
+
+	Bash completions:  ${datarootdir}/bash-completion/completions
+	Systemd support:   no
+	Btrfs support:     yes
+	Wide-char support: yes
+
+	warnings:
+
+ -fno-common -Wall -Werror=sequence-point -Wextra -Wmissing-declarations -Wmissing-parameter-type -Wmissing-prototypes -Wno-missing-field-initializers -Wredundant-decls -Wsign-compare -Wtype-limits -Wuninitialized -Wunused-but-set-parameter -Wunused-but-set-variable -Wunused-parameter -Wunused-result -Wunused-variable -Wnested-externs -Wpointer-arith -Wstrict-prototypes -Wimplicit-function-declaration
+
+	Type 'make' or 'make <utilname>' to compile.
+
+lfs@Minty /mnt/lfs/sources/util-linux-2.29.1 $ make
+make  all-recursive
+make[1]: Entering directory '/mnt/lfs/sources/util-linux-2.29.1'
+Making all in po
+make[2]: Entering directory '/mnt/lfs/sources/util-linux-2.29.1/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/util-linux-2.29.1/po'
+make[2]: Entering directory '/mnt/lfs/sources/util-linux-2.29.1'
+  CC       lib/libcommon_la-blkdev.lo
+  CC       lib/libcommon_la-canonicalize.lo
+  CC       lib/libcommon_la-crc32.lo
+  CC       lib/libcommon_la-env.lo
+  CC       lib/libcommon_la-idcache.lo
+  CC       lib/libcommon_la-fileutils.lo
+  CC       lib/libcommon_la-ismounted.lo
+  CC       lib/libcommon_la-color-names.lo
+  CC       lib/libcommon_la-mangle.lo
+  CC       lib/libcommon_la-match.lo
+  CC       lib/libcommon_la-mbsalign.lo
+  CC       lib/libcommon_la-md5.lo
+  CC       lib/libcommon_la-pager.lo
+  CC       lib/libcommon_la-path.lo
+  CC       lib/libcommon_la-randutils.lo
+  CC       lib/libcommon_la-setproctitle.lo
+  CC       lib/libcommon_la-strutils.lo
+  CC       lib/libcommon_la-timeutils.lo
+  CC       lib/libcommon_la-ttyutils.lo
+  CC       lib/libcommon_la-exec_shell.lo
+  CC       lib/libcommon_la-strv.lo
+  CC       lib/libcommon_la-linux_version.lo
+  CC       lib/libcommon_la-loopdev.lo
+  CC       lib/libcommon_la-plymouth-ctrl.lo
+  CC       lib/libcommon_la-cpuset.lo
+  CC       lib/libcommon_la-procutils.lo
+  CC       lib/libcommon_la-sysfs.lo
+  CCLD     libcommon.la
+  CC       lib/libtcolors_la-colors.lo
+  CC       lib/libtcolors_la-color-names.lo
+  CCLD     libtcolors.la
+  CC       libuuid/src/libuuid_la-clear.lo
+  CC       libuuid/src/libuuid_la-compare.lo
+  CC       libuuid/src/libuuid_la-copy.lo
+  CC       libuuid/src/libuuid_la-gen_uuid.lo
+  CC       libuuid/src/libuuid_la-isnull.lo
+  CC       libuuid/src/libuuid_la-pack.lo
+  CC       libuuid/src/libuuid_la-parse.lo
+  CC       libuuid/src/libuuid_la-unpack.lo
+  CC       libuuid/src/libuuid_la-unparse.lo
+  CC       libuuid/src/libuuid_la-uuid_time.lo
+  CC       lib/libuuid_la-randutils.lo
+  CCLD     libuuid.la
+  CC       libblkid/src/libblkid_la-init.lo
+  CC       libblkid/src/libblkid_la-cache.lo
+  CC       libblkid/src/libblkid_la-config.lo
+  CC       libblkid/src/libblkid_la-dev.lo
+  CC       libblkid/src/libblkid_la-devname.lo
+  CC       libblkid/src/libblkid_la-devno.lo
+  CC       libblkid/src/libblkid_la-encode.lo
+  CC       libblkid/src/libblkid_la-evaluate.lo
+  CC       libblkid/src/libblkid_la-getsize.lo
+  CC       libblkid/src/libblkid_la-llseek.lo
+  CC       libblkid/src/libblkid_la-probe.lo
+  CC       libblkid/src/libblkid_la-read.lo
+  CC       libblkid/src/libblkid_la-resolve.lo
+  CC       libblkid/src/libblkid_la-save.lo
+  CC       libblkid/src/libblkid_la-tag.lo
+  CC       libblkid/src/libblkid_la-verify.lo
+  CC       libblkid/src/libblkid_la-version.lo
+  CC       libblkid/src/partitions/libblkid_la-aix.lo
+  CC       libblkid/src/partitions/libblkid_la-bsd.lo
+  CC       libblkid/src/partitions/libblkid_la-dos.lo
+  CC       libblkid/src/partitions/libblkid_la-gpt.lo
+  CC       libblkid/src/partitions/libblkid_la-mac.lo
+  CC       libblkid/src/partitions/libblkid_la-minix.lo
+  CC       libblkid/src/partitions/libblkid_la-partitions.lo
+  CC       libblkid/src/partitions/libblkid_la-sgi.lo
+  CC       libblkid/src/partitions/libblkid_la-solaris_x86.lo
+  CC       libblkid/src/partitions/libblkid_la-sun.lo
+  CC       libblkid/src/partitions/libblkid_la-ultrix.lo
+  CC       libblkid/src/partitions/libblkid_la-unixware.lo
+  CC       libblkid/src/superblocks/libblkid_la-adaptec_raid.lo
+  CC       libblkid/src/superblocks/libblkid_la-bcache.lo
+  CC       libblkid/src/superblocks/libblkid_la-befs.lo
+  CC       libblkid/src/superblocks/libblkid_la-bfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-btrfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-cramfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-ddf_raid.lo
+  CC       libblkid/src/superblocks/libblkid_la-drbd.lo
+  CC       libblkid/src/superblocks/libblkid_la-drbdproxy_datalog.lo
+  CC       libblkid/src/superblocks/libblkid_la-drbdmanage.lo
+  CC       libblkid/src/superblocks/libblkid_la-exfat.lo
+  CC       libblkid/src/superblocks/libblkid_la-ext.lo
+  CC       libblkid/src/superblocks/libblkid_la-f2fs.lo
+  CC       libblkid/src/superblocks/libblkid_la-gfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-hfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-highpoint_raid.lo
+  CC       libblkid/src/superblocks/libblkid_la-hpfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-iso9660.lo
+  CC       libblkid/src/superblocks/libblkid_la-isw_raid.lo
+  CC       libblkid/src/superblocks/libblkid_la-jfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-jmicron_raid.lo
+  CC       libblkid/src/superblocks/libblkid_la-linux_raid.lo
+  CC       libblkid/src/superblocks/libblkid_la-lsi_raid.lo
+  CC       libblkid/src/superblocks/libblkid_la-luks.lo
+  CC       libblkid/src/superblocks/libblkid_la-lvm.lo
+  CC       libblkid/src/superblocks/libblkid_la-minix.lo
+  CC       libblkid/src/superblocks/libblkid_la-netware.lo
+  CC       libblkid/src/superblocks/libblkid_la-nilfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-ntfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-refs.lo
+  CC       libblkid/src/superblocks/libblkid_la-nvidia_raid.lo
+  CC       libblkid/src/superblocks/libblkid_la-ocfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-promise_raid.lo
+  CC       libblkid/src/superblocks/libblkid_la-reiserfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-romfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-silicon_raid.lo
+  CC       libblkid/src/superblocks/libblkid_la-squashfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-superblocks.lo
+  CC       libblkid/src/superblocks/libblkid_la-swap.lo
+  CC       libblkid/src/superblocks/libblkid_la-sysv.lo
+  CC       libblkid/src/superblocks/libblkid_la-ubifs.lo
+  CC       libblkid/src/superblocks/libblkid_la-udf.lo
+  CC       libblkid/src/superblocks/libblkid_la-ufs.lo
+  CC       libblkid/src/superblocks/libblkid_la-vfat.lo
+  CC       libblkid/src/superblocks/libblkid_la-via_raid.lo
+  CC       libblkid/src/superblocks/libblkid_la-vmfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-vxfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-xfs.lo
+  CC       libblkid/src/superblocks/libblkid_la-zfs.lo
+  CC       libblkid/src/topology/libblkid_la-topology.lo
+  CC       libblkid/src/topology/libblkid_la-dm.lo
+  CC       libblkid/src/topology/libblkid_la-evms.lo
+  CC       libblkid/src/topology/libblkid_la-ioctl.lo
+  CC       libblkid/src/topology/libblkid_la-lvm.lo
+  CC       libblkid/src/topology/libblkid_la-md.lo
+  CC       libblkid/src/topology/libblkid_la-sysfs.lo
+  CCLD     libblkid.la
+copying selected object files to avoid basename conflicts...
+  CC       lib/libmount_la-monotonic.lo
+  CC       libmount/src/libmount_la-cache.lo
+  CC       libmount/src/libmount_la-fs.lo
+  CC       libmount/src/libmount_la-init.lo
+  CC       libmount/src/libmount_la-iter.lo
+  CC       libmount/src/libmount_la-lock.lo
+  CC       libmount/src/libmount_la-optmap.lo
+  CC       libmount/src/libmount_la-optstr.lo
+  CC       libmount/src/libmount_la-tab.lo
+  CC       libmount/src/libmount_la-tab_diff.lo
+  CC       libmount/src/libmount_la-tab_parse.lo
+  CC       libmount/src/libmount_la-tab_update.lo
+  CC       libmount/src/libmount_la-test.lo
+  CC       libmount/src/libmount_la-utils.lo
+  CC       libmount/src/libmount_la-version.lo
+  CC       libmount/src/libmount_la-context.lo
+  CC       libmount/src/libmount_la-context_loopdev.lo
+  CC       libmount/src/libmount_la-context_mount.lo
+  CC       libmount/src/libmount_la-context_umount.lo
+  CC       libmount/src/libmount_la-monitor.lo
+  CC       libmount/src/libmount_la-btrfs.lo
+  CCLD     libmount.la
+  CC       libsmartcols/src/libsmartcols_la-iter.lo
+  CC       libsmartcols/src/libsmartcols_la-symbols.lo
+  CC       libsmartcols/src/libsmartcols_la-cell.lo
+  CC       libsmartcols/src/libsmartcols_la-column.lo
+  CC       libsmartcols/src/libsmartcols_la-line.lo
+  CC       libsmartcols/src/libsmartcols_la-table.lo
+  CC       libsmartcols/src/libsmartcols_la-table_print.lo
+  CC       libsmartcols/src/libsmartcols_la-version.lo
+  CC       libsmartcols/src/libsmartcols_la-init.lo
+  CCLD     libsmartcols.la
+  CC       libfdisk/src/libfdisk_la-init.lo
+  CC       libfdisk/src/libfdisk_la-field.lo
+  CC       libfdisk/src/libfdisk_la-item.lo
+  CC       libfdisk/src/libfdisk_la-test.lo
+  CC       libfdisk/src/libfdisk_la-ask.lo
+  CC       libfdisk/src/libfdisk_la-alignment.lo
+  CC       libfdisk/src/libfdisk_la-label.lo
+  CC       libfdisk/src/libfdisk_la-utils.lo
+  CC       libfdisk/src/libfdisk_la-context.lo
+  CC       libfdisk/src/libfdisk_la-parttype.lo
+  CC       libfdisk/src/libfdisk_la-partition.lo
+  CC       libfdisk/src/libfdisk_la-table.lo
+  CC       libfdisk/src/libfdisk_la-iter.lo
+  CC       libfdisk/src/libfdisk_la-script.lo
+  CC       libfdisk/src/libfdisk_la-version.lo
+  CC       libfdisk/src/libfdisk_la-wipe.lo
+  CC       libfdisk/src/libfdisk_la-sun.lo
+  CC       libfdisk/src/libfdisk_la-sgi.lo
+  CC       libfdisk/src/libfdisk_la-dos.lo
+  CC       libfdisk/src/libfdisk_la-bsd.lo
+  CC       libfdisk/src/libfdisk_la-gpt.lo
+  CCLD     libfdisk.la
+  CC       text-utils/more-more.o
+  CCLD     more
+  CC       sys-utils/dmesg-dmesg.o
+  CC       lib/dmesg-monotonic.o
+  CCLD     dmesg
+  CC       sys-utils/mount-mount.o
+  CCLD     mount
+  CC       sys-utils/umount-umount.o
+  CCLD     umount
+  CC       sys-utils/wdctl-wdctl.o
+  CCLD     wdctl
+  CC       sys-utils/mountpoint-mountpoint.o
+  CCLD     mountpoint
+  CC       misc-utils/lsblk-lsblk.o
+  CCLD     lsblk
+  CC       misc-utils/findmnt-findmnt.o
+  CC       misc-utils/findmnt-findmnt-verify.o
+  CCLD     findmnt
+  CC       misc-utils/kill.o
+  CCLD     kill
+  CC       term-utils/agetty.o
+  CCLD     agetty
+  CC       login-utils/sulogin.o
+  CC       login-utils/sulogin-consoles.o
+  CCLD     sulogin
+  CC       login-utils/nologin.o
+  CCLD     nologin
+  CC       sys-utils/fstrim-fstrim.o
+  CCLD     fstrim
+  CC       sys-utils/ctrlaltdel.o
+  CCLD     ctrlaltdel
+  CC       sys-utils/fsfreeze.o
+  CCLD     fsfreeze
+  CC       sys-utils/blkdiscard.o
+  CC       lib/monotonic.o
+  CCLD     blkdiscard
+  CC       sys-utils/losetup-losetup.o
+  CCLD     losetup
+  CC       sys-utils/zramctl-zramctl.o
+  CCLD     zramctl
+  CC       sys-utils/swapon-swapon.o
+  CC       sys-utils/swapon-swapon-common.o
+  CC       lib/swapon-swapprober.o
+  CCLD     swapon
+  CC       sys-utils/swapoff-swapoff.o
+  CC       sys-utils/swapoff-swapon-common.o
+  CC       lib/swapoff-swapprober.o
+  CCLD     swapoff
+  CC       sys-utils/chcpu.o
+  CCLD     chcpu
+  CC       sys-utils/pivot_root.o
+  CCLD     pivot_root
+  CC       sys-utils/switch_root.o
+  CCLD     switch_root
+  CC       sys-utils/hwclock.o
+  CC       sys-utils/hwclock-cmos.o
+  CC       sys-utils/hwclock-rtc.o
+  CCLD     hwclock
+  CC       misc-utils/blkid-blkid.o
+  CCLD     blkid
+  CC       misc-utils/findfs-findfs.o
+  CCLD     findfs
+  CC       misc-utils/wipefs-wipefs.o
+  CCLD     wipefs
+  CC       disk-utils/fsck.minix.o
+  CCLD     fsck.minix
+  CC       disk-utils/mkfs.minix.o
+  CCLD     mkfs.minix
+  CC       disk-utils/mkfs.o
+  CCLD     mkfs
+  CC       disk-utils/mkfs.bfs.o
+  CCLD     mkfs.bfs
+  CC       disk-utils/mkswap-mkswap.o
+  CCLD     mkswap
+  CC       disk-utils/swaplabel-swaplabel.o
+  CC       lib/swaplabel-swapprober.o
+  CCLD     swaplabel
+  CC       disk-utils/fsck-fsck.o
+  CC       lib/fsck-monotonic.o
+  CCLD     fsck
+  CC       disk-utils/raw.o
+  CCLD     raw
+  CC       disk-utils/blockdev.o
+  CCLD     blockdev
+  CC       disk-utils/fdisk-fdisk.o
+  CC       disk-utils/fdisk-fdisk-menu.o
+  CC       disk-utils/fdisk-fdisk-list.o
+  CCLD     fdisk
+  CC       disk-utils/sfdisk-sfdisk.o
+  CC       disk-utils/sfdisk-fdisk-list.o
+  CCLD     sfdisk
+  CC       disk-utils/cfdisk-cfdisk.o
+  CCLD     cfdisk
+  CC       schedutils/chrt.o
+  CCLD     chrt
+  CC       schedutils/ionice.o
+  CCLD     ionice
+  CC       schedutils/taskset.o
+  CCLD     taskset
+  CC       text-utils/col.o
+  CCLD     col
+  CC       text-utils/colcrt.o
+  CCLD     colcrt
+  CC       text-utils/colrm.o
+  CCLD     colrm
+  CC       text-utils/column.o
+  CCLD     column
+  CC       text-utils/hexdump-conv.o
+  CC       text-utils/hexdump-display.o
+  CC       text-utils/hexdump.o
+  CC       text-utils/hexdump-parse.o
+  CCLD     hexdump
+  CC       text-utils/rev.o
+  CCLD     rev
+  CC       text-utils/tailf.o
+  CCLD     tailf
+  CC       text-utils/ul-ul.o
+  CCLD     ul
+  CC       term-utils/script-script.o
+  CC       lib/script-monotonic.o
+  CCLD     script
+  CC       term-utils/scriptreplay.o
+  CCLD     scriptreplay
+  CC       term-utils/setterm-setterm.o
+  CCLD     setterm
+  CC       term-utils/mesg.o
+  CCLD     mesg
+  CC       term-utils/wall-wall.o
+  CC       term-utils/wall-ttymsg.o
+  CCLD     wall
+  CC       login-utils/last.o
+  CCLD     last
+  CC       login-utils/utmpdump.o
+  CCLD     utmpdump
+  CC       login-utils/lslogins-lslogins.o
+  CC       login-utils/lslogins-logindefs.o
+  CCLD     lslogins
+  CC       sys-utils/flock.o
+  CC       lib/timer.o
+  CCLD     flock
+  CC       sys-utils/ipcmk.o
+  CCLD     ipcmk
+  CC       sys-utils/ipcrm.o
+  CCLD     ipcrm
+  CC       sys-utils/ipcs.o
+  CC       sys-utils/ipcutils.o
+  CCLD     ipcs
+  CC       sys-utils/lsipc-lsipc.o
+  CC       sys-utils/lsipc-ipcutils.o
+  CCLD     lsipc
+  CC       sys-utils/renice.o
+  CCLD     renice
+  CC       sys-utils/setsid.o
+  CCLD     setsid
+  CC       sys-utils/setarch.o
+  CCLD     setarch
+  CC       sys-utils/eject-eject.o
+  CC       lib/eject-monotonic.o
+  CCLD     eject
+  CC       sys-utils/prlimit-prlimit.o
+  CCLD     prlimit
+  CC       sys-utils/lsns-lsns.o
+  CCLD     lsns
+  CC       sys-utils/lscpu-lscpu.o
+  CC       sys-utils/lscpu-lscpu-dmi.o
+  CCLD     lscpu
+  CC       sys-utils/fallocate.o
+  CCLD     fallocate
+  CC       sys-utils/unshare-unshare.o
+  CCLD     unshare
+  CC       sys-utils/nsenter.o
+  CCLD     nsenter
+  CC       misc-utils/cal-cal.o
+  CCLD     cal
+  CC       misc-utils/logger-logger.o
+  CC       lib/logger-strutils.o
+  CC       lib/logger-strv.o
+  CCLD     logger
+  CC       misc-utils/look.o
+  CCLD     look
+  CC       misc-utils/mcookie.o
+  CC       lib/md5.o
+  CCLD     mcookie
+  CC       misc-utils/namei.o
+  CC       lib/strutils.o
+  CC       lib/idcache.o
+  CCLD     namei
+  CC       misc-utils/whereis.o
+  CCLD     whereis
+  CC       misc-utils/lslocks-lslocks.o
+  CCLD     lslocks
+  CC       misc-utils/uuidgen-uuidgen.o
+  CCLD     uuidgen
+  CC       misc-utils/rename.o
+  CCLD     rename
+  CC       misc-utils/getopt.o
+  CCLD     getopt
+  CC       disk-utils/isosize.o
+  CCLD     isosize
+  CC       sys-utils/readprofile.o
+  CCLD     readprofile
+  CC       sys-utils/ldattach.o
+  CCLD     ldattach
+  CC       sys-utils/rtcwake.o
+  CCLD     rtcwake
+  CC       misc-utils/uuidd-uuidd.o
+  CC       lib/uuidd-monotonic.o
+  CC       lib/uuidd-timer.o
+  CCLD     uuidd
+  CC       disk-utils/fdformat.o
+  CCLD     fdformat
+  CC       disk-utils/partx-partx.o
+  CCLD     partx
+  CC       disk-utils/addpart.o
+  CCLD     addpart
+  CC       disk-utils/delpart.o
+  CCLD     delpart
+  CC       disk-utils/resizepart.o
+  CCLD     resizepart
+  GEN      sys-utils/rtcwake.8
+  GEN      sys-utils/hwclock.8
+  GEN      misc-utils/uuidd.8
+  GEN      sys-utils/uname26.8
+  GEN      sys-utils/linux32.8
+  GEN      sys-utils/linux64.8
+  GEN      sys-utils/i386.8
+  GEN      sys-utils/x86_64.8
+  GEN      libuuid/uuid.pc
+  GEN      libblkid/blkid.pc
+  GEN      libmount/mount.pc
+  GEN      libsmartcols/smartcols.pc
+  GEN      libfdisk/fdisk.pc
+make[2]: Leaving directory '/mnt/lfs/sources/util-linux-2.29.1'
+make[1]: Leaving directory '/mnt/lfs/sources/util-linux-2.29.1'
+lfs@Minty /mnt/lfs/sources/util-linux-2.29.1 $ make install
+make  install-recursive
+make[1]: Entering directory '/mnt/lfs/sources/util-linux-2.29.1'
+Making install in po
+make[2]: Entering directory '/mnt/lfs/sources/util-linux-2.29.1/po'
+installing ca.gmo as /tools/share/locale/ca/LC_MESSAGES/util-linux.mo
+installing cs.gmo as /tools/share/locale/cs/LC_MESSAGES/util-linux.mo
+installing da.gmo as /tools/share/locale/da/LC_MESSAGES/util-linux.mo
+installing de.gmo as /tools/share/locale/de/LC_MESSAGES/util-linux.mo
+installing es.gmo as /tools/share/locale/es/LC_MESSAGES/util-linux.mo
+installing et.gmo as /tools/share/locale/et/LC_MESSAGES/util-linux.mo
+installing eu.gmo as /tools/share/locale/eu/LC_MESSAGES/util-linux.mo
+installing fi.gmo as /tools/share/locale/fi/LC_MESSAGES/util-linux.mo
+installing fr.gmo as /tools/share/locale/fr/LC_MESSAGES/util-linux.mo
+installing gl.gmo as /tools/share/locale/gl/LC_MESSAGES/util-linux.mo
+installing hr.gmo as /tools/share/locale/hr/LC_MESSAGES/util-linux.mo
+installing hu.gmo as /tools/share/locale/hu/LC_MESSAGES/util-linux.mo
+installing id.gmo as /tools/share/locale/id/LC_MESSAGES/util-linux.mo
+installing it.gmo as /tools/share/locale/it/LC_MESSAGES/util-linux.mo
+installing ja.gmo as /tools/share/locale/ja/LC_MESSAGES/util-linux.mo
+installing nl.gmo as /tools/share/locale/nl/LC_MESSAGES/util-linux.mo
+installing pl.gmo as /tools/share/locale/pl/LC_MESSAGES/util-linux.mo
+installing pt_BR.gmo as /tools/share/locale/pt_BR/LC_MESSAGES/util-linux.mo
+installing ru.gmo as /tools/share/locale/ru/LC_MESSAGES/util-linux.mo
+installing sl.gmo as /tools/share/locale/sl/LC_MESSAGES/util-linux.mo
+installing sv.gmo as /tools/share/locale/sv/LC_MESSAGES/util-linux.mo
+installing tr.gmo as /tools/share/locale/tr/LC_MESSAGES/util-linux.mo
+installing uk.gmo as /tools/share/locale/uk/LC_MESSAGES/util-linux.mo
+installing vi.gmo as /tools/share/locale/vi/LC_MESSAGES/util-linux.mo
+installing zh_CN.gmo as /tools/share/locale/zh_CN/LC_MESSAGES/util-linux.mo
+installing zh_TW.gmo as /tools/share/locale/zh_TW/LC_MESSAGES/util-linux.mo
+if test "util-linux" = "gettext-tools"; then \
+  /tools/bin/mkdir -p /tools/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /tools/bin/install -c -m 644 ./$file \
+		    /tools/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /tools/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/mnt/lfs/sources/util-linux-2.29.1/po'
+make[2]: Entering directory '/mnt/lfs/sources/util-linux-2.29.1'
+make[3]: Entering directory '/mnt/lfs/sources/util-linux-2.29.1'
+ /tools/bin/mkdir -p '/tools/bin'
+  /bin/sh ./libtool   --mode=install /tools/bin/install -c more dmesg mount umount wdctl mountpoint lsblk findmnt kill '/tools/bin'
+libtool: install: /tools/bin/install -c more /tools/bin/more
+libtool: install: /tools/bin/install -c dmesg /tools/bin/dmesg
+libtool: warning: 'libmount.la' has not been installed in '/tools/lib'
+libtool: warning: '/mnt/lfs/sources/util-linux-2.29.1/libblkid.la' has not been installed in '/tools/lib'
+libtool: warning: '/mnt/lfs/sources/util-linux-2.29.1/libuuid.la' has not been installed in '/tools/lib'
+libtool: install: /tools/bin/install -c .libs/mount /tools/bin/mount
+libtool: warning: 'libmount.la' has not been installed in '/tools/lib'
+libtool: warning: '/mnt/lfs/sources/util-linux-2.29.1/libblkid.la' has not been installed in '/tools/lib'
+libtool: warning: '/mnt/lfs/sources/util-linux-2.29.1/libuuid.la' has not been installed in '/tools/lib'
+libtool: install: /tools/bin/install -c .libs/umount /tools/bin/umount
+libtool: warning: 'libsmartcols.la' has not been installed in '/tools/lib'
+libtool: install: /tools/bin/install -c .libs/wdctl /tools/bin/wdctl
+libtool: warning: 'libmount.la' has not been installed in '/tools/lib'
+libtool: warning: '/mnt/lfs/sources/util-linux-2.29.1/libblkid.la' has not been installed in '/tools/lib'
+libtool: warning: '/mnt/lfs/sources/util-linux-2.29.1/libuuid.la' has not been installed in '/tools/lib'
+libtool: install: /tools/bin/install -c .libs/mountpoint /tools/bin/mountpoint
+libtool: warning: 'libblkid.la' has not been installed in '/tools/lib'
+libtool: warning: 'libmount.la' has not been installed in '/tools/lib'
+libtool: warning: '/mnt/lfs/sources/util-linux-2.29.1/libblkid.la' has not been installed in '/tools/lib'
+libtool: warning: '/mnt/lfs/sources/util-linux-2.29.1/libuuid.la' has not been installed in '/tools/lib'
+libtool: warning: 'libsmartcols.la' has not been installed in '/tools/lib'
+libtool: install: /tools/bin/install -c .libs/lsblk /tools/bin/lsblk
+libtool: warning: 'libmount.la' has not been installed in '/tools/lib'
+libtool: warning: '/mnt/lfs/sources/util-linux-2.29.1/libblkid.la' has not been installed in '/tools/lib'
+libtool: warning: 'libsmartcols.la' has not been installed in '/tools/lib'
+libtool: warning: 'libblkid.la' has not been installed in '/tools/lib'
+libtool: warning: '/mnt/lfs/sources/util-linux-2.29.1/libuuid.la' has not been installed in '/tools/lib'
+libtool: install: /tools/bin/install -c .libs/findmnt /tools/bin/findmnt
+libtool: install: /tools/bin/install -c kill /tools/bin/kill
+ /tools/bin/mkdir -p '/tools/lib'
+ /bin/sh ./libtool   --mode=install /tools/bin/install -c   libuuid.la libblkid.la libmount.la libsmartcols.la libfdisk.la '/tools/lib'
+libtool: install: /tools/bin/install -c .libs/libuuid.so.1.3.0 /tools/lib/libuuid.so.1.3.0
+libtool: install: (cd /tools/lib && { ln -s -f libuuid.so.1.3.0 libuuid.so.1 || { rm -f libuuid.so.1 && ln -s libuuid.so.1.3.0 libuuid.so.1; }; })
+libtool: install: (cd /tools/lib && { ln -s -f libuuid.so.1.3.0 libuuid.so || { rm -f libuuid.so && ln -s libuuid.so.1.3.0 libuuid.so; }; })
+libtool: install: /tools/bin/install -c .libs/libuuid.lai /tools/lib/libuuid.la
+libtool: warning: relinking 'libblkid.la'
+libtool: install: (cd /mnt/lfs/sources/util-linux-2.29.1; /bin/sh "/mnt/lfs/sources/util-linux-2.29.1/libtool"  --silent --tag CC --mode=relink gcc -fsigned-char -fno-common -Wall -Werror=sequence-point -Wextra -Wmissing-declarations -Wmissing-parameter-type -Wmissing-prototypes -Wno-missing-field-initializers -Wredundant-decls -Wsign-compare -Wtype-limits -Wuninitialized -Wunused-but-set-parameter -Wunused-but-set-variable -Wunused-parameter -Wunused-result -Wunused-variable -Wnested-externs -Wpointer-arith -Wstrict-prototypes -Wimplicit-function-declaration -I./libblkid/src -I./libblkid/src -I./libuuid/src -g -O2 -Wl,--version-script,./libblkid/src/libblkid.sym -version-info 2:0:1 -o libblkid.la -rpath /tools/lib libblkid/src/libblkid_la-init.lo libblkid/src/libblkid_la-cache.lo libblkid/src/libblkid_la-config.lo libblkid/src/libblkid_la-dev.lo libblkid/src/libblkid_la-devname.lo libblkid/src/libblkid_la-devno.lo libblkid/src/libblkid_la-encode.lo libblkid/src/libblkid_la-evaluate.lo libblkid/src/libblkid_la-getsize.lo libblkid/src/libblkid_la-llseek.lo libblkid/src/libblkid_la-probe.lo libblkid/src/libblkid_la-read.lo libblkid/src/libblkid_la-resolve.lo libblkid/src/libblkid_la-save.lo libblkid/src/libblkid_la-tag.lo libblkid/src/libblkid_la-verify.lo libblkid/src/libblkid_la-version.lo libblkid/src/partitions/libblkid_la-aix.lo libblkid/src/partitions/libblkid_la-bsd.lo libblkid/src/partitions/libblkid_la-dos.lo libblkid/src/partitions/libblkid_la-gpt.lo libblkid/src/partitions/libblkid_la-mac.lo libblkid/src/partitions/libblkid_la-minix.lo libblkid/src/partitions/libblkid_la-partitions.lo libblkid/src/partitions/libblkid_la-sgi.lo libblkid/src/partitions/libblkid_la-solaris_x86.lo libblkid/src/partitions/libblkid_la-sun.lo libblkid/src/partitions/libblkid_la-ultrix.lo libblkid/src/partitions/libblkid_la-unixware.lo libblkid/src/superblocks/libblkid_la-adaptec_raid.lo libblkid/src/superblocks/libblkid_la-bcache.lo libblkid/src/superblocks/libblkid_la-befs.lo libblkid/src/superblocks/libblkid_la-bfs.lo libblkid/src/superblocks/libblkid_la-btrfs.lo libblkid/src/superblocks/libblkid_la-cramfs.lo libblkid/src/superblocks/libblkid_la-ddf_raid.lo libblkid/src/superblocks/libblkid_la-drbd.lo libblkid/src/superblocks/libblkid_la-drbdproxy_datalog.lo libblkid/src/superblocks/libblkid_la-drbdmanage.lo libblkid/src/superblocks/libblkid_la-exfat.lo libblkid/src/superblocks/libblkid_la-ext.lo libblkid/src/superblocks/libblkid_la-f2fs.lo libblkid/src/superblocks/libblkid_la-gfs.lo libblkid/src/superblocks/libblkid_la-hfs.lo libblkid/src/superblocks/libblkid_la-highpoint_raid.lo libblkid/src/superblocks/libblkid_la-hpfs.lo libblkid/src/superblocks/libblkid_la-iso9660.lo libblkid/src/superblocks/libblkid_la-isw_raid.lo libblkid/src/superblocks/libblkid_la-jfs.lo libblkid/src/superblocks/libblkid_la-jmicron_raid.lo libblkid/src/superblocks/libblkid_la-linux_raid.lo libblkid/src/superblocks/libblkid_la-lsi_raid.lo libblkid/src/superblocks/libblkid_la-luks.lo libblkid/src/superblocks/libblkid_la-lvm.lo libblkid/src/superblocks/libblkid_la-minix.lo libblkid/src/superblocks/libblkid_la-netware.lo libblkid/src/superblocks/libblkid_la-nilfs.lo libblkid/src/superblocks/libblkid_la-ntfs.lo libblkid/src/superblocks/libblkid_la-refs.lo libblkid/src/superblocks/libblkid_la-nvidia_raid.lo libblkid/src/superblocks/libblkid_la-ocfs.lo libblkid/src/superblocks/libblkid_la-promise_raid.lo libblkid/src/superblocks/libblkid_la-reiserfs.lo libblkid/src/superblocks/libblkid_la-romfs.lo libblkid/src/superblocks/libblkid_la-silicon_raid.lo libblkid/src/superblocks/libblkid_la-squashfs.lo libblkid/src/superblocks/libblkid_la-superblocks.lo libblkid/src/superblocks/libblkid_la-swap.lo libblkid/src/superblocks/libblkid_la-sysv.lo libblkid/src/superblocks/libblkid_la-ubifs.lo libblkid/src/superblocks/libblkid_la-udf.lo libblkid/src/superblocks/libblkid_la-ufs.lo libblkid/src/superblocks/libblkid_la-vfat.lo libblkid/src/superblocks/libblkid_la-via_raid.lo libblkid/src/superblocks/libblkid_la-vmfs.lo libblkid/src/superblocks/libblkid_la-vxfs.lo libblkid/src/superblocks/libblkid_la-xfs.lo libblkid/src/superblocks/libblkid_la-zfs.lo libblkid/src/topology/libblkid_la-topology.lo libblkid/src/topology/libblkid_la-dm.lo libblkid/src/topology/libblkid_la-evms.lo libblkid/src/topology/libblkid_la-ioctl.lo libblkid/src/topology/libblkid_la-lvm.lo libblkid/src/topology/libblkid_la-md.lo libblkid/src/topology/libblkid_la-sysfs.lo libcommon.la libuuid.la )
+libtool: install: /tools/bin/install -c .libs/libblkid.so.1.1.0T /tools/lib/libblkid.so.1.1.0
+libtool: install: (cd /tools/lib && { ln -s -f libblkid.so.1.1.0 libblkid.so.1 || { rm -f libblkid.so.1 && ln -s libblkid.so.1.1.0 libblkid.so.1; }; })
+libtool: install: (cd /tools/lib && { ln -s -f libblkid.so.1.1.0 libblkid.so || { rm -f libblkid.so && ln -s libblkid.so.1.1.0 libblkid.so; }; })
+libtool: install: /tools/bin/install -c .libs/libblkid.lai /tools/lib/libblkid.la
+libtool: warning: relinking 'libmount.la'
+libtool: install: (cd /mnt/lfs/sources/util-linux-2.29.1; /bin/sh "/mnt/lfs/sources/util-linux-2.29.1/libtool"  --silent --tag CC --mode=relink gcc -fsigned-char -fno-common -Wall -Werror=sequence-point -Wextra -Wmissing-declarations -Wmissing-parameter-type -Wmissing-prototypes -Wno-missing-field-initializers -Wredundant-decls -Wsign-compare -Wtype-limits -Wuninitialized -Wunused-but-set-parameter -Wunused-but-set-variable -Wunused-parameter -Wunused-result -Wunused-variable -Wnested-externs -Wpointer-arith -Wstrict-prototypes -Wimplicit-function-declaration -I./libblkid/src -I./libmount/src -I./libmount/src -g -O2 -Wl,--version-script,./libmount/src/libmount.sym -version-info 2:0:1 -o libmount.la -rpath /tools/lib lib/libmount_la-monotonic.lo libmount/src/libmount_la-cache.lo libmount/src/libmount_la-fs.lo libmount/src/libmount_la-init.lo libmount/src/libmount_la-iter.lo libmount/src/libmount_la-lock.lo libmount/src/libmount_la-optmap.lo libmount/src/libmount_la-optstr.lo libmount/src/libmount_la-tab.lo libmount/src/libmount_la-tab_diff.lo libmount/src/libmount_la-tab_parse.lo libmount/src/libmount_la-tab_update.lo libmount/src/libmount_la-test.lo libmount/src/libmount_la-utils.lo libmount/src/libmount_la-version.lo libmount/src/libmount_la-context.lo libmount/src/libmount_la-context_loopdev.lo libmount/src/libmount_la-context_mount.lo libmount/src/libmount_la-context_umount.lo libmount/src/libmount_la-monitor.lo libmount/src/libmount_la-btrfs.lo libcommon.la libblkid.la -lrt )
+libtool: install: /tools/bin/install -c .libs/libmount.so.1.1.0T /tools/lib/libmount.so.1.1.0
+libtool: install: (cd /tools/lib && { ln -s -f libmount.so.1.1.0 libmount.so.1 || { rm -f libmount.so.1 && ln -s libmount.so.1.1.0 libmount.so.1; }; })
+libtool: install: (cd /tools/lib && { ln -s -f libmount.so.1.1.0 libmount.so || { rm -f libmount.so && ln -s libmount.so.1.1.0 libmount.so; }; })
+libtool: install: /tools/bin/install -c .libs/libmount.lai /tools/lib/libmount.la
+libtool: install: /tools/bin/install -c .libs/libsmartcols.so.1.1.0 /tools/lib/libsmartcols.so.1.1.0
+libtool: install: (cd /tools/lib && { ln -s -f libsmartcols.so.1.1.0 libsmartcols.so.1 || { rm -f libsmartcols.so.1 && ln -s libsmartcols.so.1.1.0 libsmartcols.so.1; }; })
+libtool: install: (cd /tools/lib && { ln -s -f libsmartcols.so.1.1.0 libsmartcols.so || { rm -f libsmartcols.so && ln -s libsmartcols.so.1.1.0 libsmartcols.so; }; })
+libtool: install: /tools/bin/install -c .libs/libsmartcols.lai /tools/lib/libsmartcols.la
+libtool: warning: relinking 'libfdisk.la'
+libtool: install: (cd /mnt/lfs/sources/util-linux-2.29.1; /bin/sh "/mnt/lfs/sources/util-linux-2.29.1/libtool"  --silent --tag CC --mode=relink gcc -fsigned-char -fno-common -Wall -Werror=sequence-point -Wextra -Wmissing-declarations -Wmissing-parameter-type -Wmissing-prototypes -Wno-missing-field-initializers -Wredundant-decls -Wsign-compare -Wtype-limits -Wuninitialized -Wunused-but-set-parameter -Wunused-but-set-variable -Wunused-parameter -Wunused-result -Wunused-variable -Wnested-externs -Wpointer-arith -Wstrict-prototypes -Wimplicit-function-declaration -I./libuuid/src -I./libfdisk/src -I./libfdisk/src -I./libblkid/src -g -O2 -Wl,--version-script,./libfdisk/src/libfdisk.sym -version-info 2:0:1 -o libfdisk.la -rpath /tools/lib libfdisk/src/libfdisk_la-init.lo libfdisk/src/libfdisk_la-field.lo libfdisk/src/libfdisk_la-item.lo libfdisk/src/libfdisk_la-test.lo libfdisk/src/libfdisk_la-ask.lo libfdisk/src/libfdisk_la-alignment.lo libfdisk/src/libfdisk_la-label.lo libfdisk/src/libfdisk_la-utils.lo libfdisk/src/libfdisk_la-context.lo libfdisk/src/libfdisk_la-parttype.lo libfdisk/src/libfdisk_la-partition.lo libfdisk/src/libfdisk_la-table.lo libfdisk/src/libfdisk_la-iter.lo libfdisk/src/libfdisk_la-script.lo libfdisk/src/libfdisk_la-version.lo libfdisk/src/libfdisk_la-wipe.lo libfdisk/src/libfdisk_la-sun.lo libfdisk/src/libfdisk_la-sgi.lo libfdisk/src/libfdisk_la-dos.lo libfdisk/src/libfdisk_la-bsd.lo libfdisk/src/libfdisk_la-gpt.lo libcommon.la libuuid.la libblkid.la )
+libtool: install: /tools/bin/install -c .libs/libfdisk.so.1.1.0T /tools/lib/libfdisk.so.1.1.0
+libtool: install: (cd /tools/lib && { ln -s -f libfdisk.so.1.1.0 libfdisk.so.1 || { rm -f libfdisk.so.1 && ln -s libfdisk.so.1.1.0 libfdisk.so.1; }; })
+libtool: install: (cd /tools/lib && { ln -s -f libfdisk.so.1.1.0 libfdisk.so || { rm -f libfdisk.so && ln -s libfdisk.so.1.1.0 libfdisk.so; }; })
+libtool: install: /tools/bin/install -c .libs/libfdisk.lai /tools/lib/libfdisk.la
+libtool: install: /tools/bin/install -c .libs/libuuid.a /tools/lib/libuuid.a
+libtool: install: chmod 644 /tools/lib/libuuid.a
+libtool: install: ranlib /tools/lib/libuuid.a
+libtool: install: /tools/bin/install -c .libs/libblkid.a /tools/lib/libblkid.a
+libtool: install: chmod 644 /tools/lib/libblkid.a
+libtool: install: ranlib /tools/lib/libblkid.a
+libtool: install: /tools/bin/install -c .libs/libmount.a /tools/lib/libmount.a
+libtool: install: chmod 644 /tools/lib/libmount.a
+libtool: install: ranlib /tools/lib/libmount.a
+libtool: install: /tools/bin/install -c .libs/libsmartcols.a /tools/lib/libsmartcols.a
+libtool: install: chmod 644 /tools/lib/libsmartcols.a
+libtool: install: ranlib /tools/lib/libsmartcols.a
+libtool: install: /tools/bin/install -c .libs/libfdisk.a /tools/lib/libfdisk.a
+libtool: install: chmod 644 /tools/lib/libfdisk.a
+libtool: install: ranlib /tools/lib/libfdisk.a
+libtool: finish: PATH="/tools/bin:/bin:/usr/bin:/sbin" ldconfig -n /tools/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /tools/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /tools/bin/mkdir -p '/tools/sbin'
+  /bin/sh ./libtool   --mode=install /tools/bin/install -c agetty sulogin nologin fstrim ctrlaltdel fsfreeze blkdiscard losetup zramctl swapon swapoff chcpu pivot_root switch_root hwclock blkid findfs wipefs fsck.minix mkfs.minix mkfs mkfs.bfs mkswap swaplabel fsck raw blockdev fdisk sfdisk cfdisk '/tools/sbin'
+libtool: install: /tools/bin/install -c agetty /tools/sbin/agetty
+libtool: install: /tools/bin/install -c sulogin /tools/sbin/sulogin
+libtool: install: /tools/bin/install -c nologin /tools/sbin/nologin
+libtool: install: /tools/bin/install -c .libs/fstrim /tools/sbin/fstrim
+libtool: install: /tools/bin/install -c ctrlaltdel /tools/sbin/ctrlaltdel
+libtool: install: /tools/bin/install -c fsfreeze /tools/sbin/fsfreeze
+libtool: install: /tools/bin/install -c blkdiscard /tools/sbin/blkdiscard
+libtool: install: /tools/bin/install -c .libs/losetup /tools/sbin/losetup
+libtool: install: /tools/bin/install -c .libs/zramctl /tools/sbin/zramctl
+libtool: install: /tools/bin/install -c .libs/swapon /tools/sbin/swapon
+libtool: install: /tools/bin/install -c .libs/swapoff /tools/sbin/swapoff
+libtool: install: /tools/bin/install -c chcpu /tools/sbin/chcpu
+libtool: install: /tools/bin/install -c pivot_root /tools/sbin/pivot_root
+libtool: install: /tools/bin/install -c switch_root /tools/sbin/switch_root
+libtool: install: /tools/bin/install -c hwclock /tools/sbin/hwclock
+libtool: install: /tools/bin/install -c .libs/blkid /tools/sbin/blkid
+libtool: install: /tools/bin/install -c .libs/findfs /tools/sbin/findfs
+libtool: install: /tools/bin/install -c .libs/wipefs /tools/sbin/wipefs
+libtool: install: /tools/bin/install -c fsck.minix /tools/sbin/fsck.minix
+libtool: install: /tools/bin/install -c mkfs.minix /tools/sbin/mkfs.minix
+libtool: install: /tools/bin/install -c mkfs /tools/sbin/mkfs
+libtool: install: /tools/bin/install -c mkfs.bfs /tools/sbin/mkfs.bfs
+libtool: install: /tools/bin/install -c .libs/mkswap /tools/sbin/mkswap
+libtool: install: /tools/bin/install -c .libs/swaplabel /tools/sbin/swaplabel
+libtool: install: /tools/bin/install -c .libs/fsck /tools/sbin/fsck
+libtool: install: /tools/bin/install -c raw /tools/sbin/raw
+libtool: install: /tools/bin/install -c blockdev /tools/sbin/blockdev
+libtool: install: /tools/bin/install -c .libs/fdisk /tools/sbin/fdisk
+libtool: install: /tools/bin/install -c .libs/sfdisk /tools/sbin/sfdisk
+libtool: install: /tools/bin/install -c .libs/cfdisk /tools/sbin/cfdisk
+ /tools/bin/mkdir -p '/tools/bin'
+  /bin/sh ./libtool   --mode=install /tools/bin/install -c chrt ionice taskset col colcrt colrm column hexdump rev tailf ul script scriptreplay setterm mesg wall last utmpdump lslogins flock ipcmk ipcrm ipcs lsipc renice setsid setarch eject prlimit lsns lscpu fallocate unshare nsenter cal logger look mcookie namei whereis lslocks uuidgen rename getopt isosize '/tools/bin'
+libtool: install: /tools/bin/install -c chrt /tools/bin/chrt
+libtool: install: /tools/bin/install -c ionice /tools/bin/ionice
+libtool: install: /tools/bin/install -c taskset /tools/bin/taskset
+libtool: install: /tools/bin/install -c col /tools/bin/col
+libtool: install: /tools/bin/install -c colcrt /tools/bin/colcrt
+libtool: install: /tools/bin/install -c colrm /tools/bin/colrm
+libtool: install: /tools/bin/install -c column /tools/bin/column
+libtool: install: /tools/bin/install -c hexdump /tools/bin/hexdump
+libtool: install: /tools/bin/install -c rev /tools/bin/rev
+libtool: install: /tools/bin/install -c tailf /tools/bin/tailf
+libtool: install: /tools/bin/install -c ul /tools/bin/ul
+libtool: install: /tools/bin/install -c script /tools/bin/script
+libtool: install: /tools/bin/install -c scriptreplay /tools/bin/scriptreplay
+libtool: install: /tools/bin/install -c setterm /tools/bin/setterm
+libtool: install: /tools/bin/install -c mesg /tools/bin/mesg
+libtool: install: /tools/bin/install -c wall /tools/bin/wall
+libtool: install: /tools/bin/install -c last /tools/bin/last
+libtool: install: /tools/bin/install -c utmpdump /tools/bin/utmpdump
+libtool: install: /tools/bin/install -c .libs/lslogins /tools/bin/lslogins
+libtool: install: /tools/bin/install -c flock /tools/bin/flock
+libtool: install: /tools/bin/install -c ipcmk /tools/bin/ipcmk
+libtool: install: /tools/bin/install -c ipcrm /tools/bin/ipcrm
+libtool: install: /tools/bin/install -c ipcs /tools/bin/ipcs
+libtool: install: /tools/bin/install -c .libs/lsipc /tools/bin/lsipc
+libtool: install: /tools/bin/install -c renice /tools/bin/renice
+libtool: install: /tools/bin/install -c setsid /tools/bin/setsid
+libtool: install: /tools/bin/install -c setarch /tools/bin/setarch
+libtool: install: /tools/bin/install -c .libs/eject /tools/bin/eject
+libtool: install: /tools/bin/install -c .libs/prlimit /tools/bin/prlimit
+libtool: install: /tools/bin/install -c .libs/lsns /tools/bin/lsns
+libtool: install: /tools/bin/install -c .libs/lscpu /tools/bin/lscpu
+libtool: install: /tools/bin/install -c fallocate /tools/bin/fallocate
+libtool: install: /tools/bin/install -c unshare /tools/bin/unshare
+libtool: install: /tools/bin/install -c nsenter /tools/bin/nsenter
+libtool: install: /tools/bin/install -c cal /tools/bin/cal
+libtool: install: /tools/bin/install -c logger /tools/bin/logger
+libtool: install: /tools/bin/install -c look /tools/bin/look
+libtool: install: /tools/bin/install -c mcookie /tools/bin/mcookie
+libtool: install: /tools/bin/install -c namei /tools/bin/namei
+libtool: install: /tools/bin/install -c whereis /tools/bin/whereis
+libtool: install: /tools/bin/install -c .libs/lslocks /tools/bin/lslocks
+libtool: install: /tools/bin/install -c .libs/uuidgen /tools/bin/uuidgen
+libtool: install: /tools/bin/install -c rename /tools/bin/rename
+libtool: install: /tools/bin/install -c getopt /tools/bin/getopt
+libtool: install: /tools/bin/install -c isosize /tools/bin/isosize
+ /tools/bin/mkdir -p '/tools/sbin'
+  /bin/sh ./libtool   --mode=install /tools/bin/install -c readprofile ldattach rtcwake uuidd fdformat partx addpart delpart resizepart '/tools/sbin'
+libtool: install: /tools/bin/install -c readprofile /tools/sbin/readprofile
+libtool: install: /tools/bin/install -c ldattach /tools/sbin/ldattach
+libtool: install: /tools/bin/install -c rtcwake /tools/sbin/rtcwake
+libtool: install: /tools/bin/install -c .libs/uuidd /tools/sbin/uuidd
+libtool: install: /tools/bin/install -c fdformat /tools/sbin/fdformat
+libtool: install: /tools/bin/install -c .libs/partx /tools/sbin/partx
+libtool: install: /tools/bin/install -c addpart /tools/sbin/addpart
+libtool: install: /tools/bin/install -c delpart /tools/sbin/delpart
+libtool: install: /tools/bin/install -c resizepart /tools/sbin/resizepart
+make  install-exec-hook
+make[4]: Entering directory '/mnt/lfs/sources/util-linux-2.29.1'
+if test "/tools/lib" != "/tools/lib" -a -f "/tools/lib/libuuid.so"; then \
+	/tools/bin/mkdir -p /tools/lib; \
+	mv /tools/lib/libuuid.so.* /tools/lib; \
+	so_img_name=$(readlink /tools/lib/libuuid.so); \
+	so_img_rel_target=$(echo /tools/lib | sed 's,\(^/\|\)[^/][^/]*,..,g'); \
+	(cd /tools/lib && \
+		rm -f libuuid.so && \
+		ln -s $so_img_rel_target/tools/lib/$so_img_name libuuid.so); \
+fi
+if test "/tools/lib" != "/tools/lib" -a -f "/tools/lib/libblkid.so"; then \
+	/tools/bin/mkdir -p /tools/lib; \
+	mv /tools/lib/libblkid.so.* /tools/lib; \
+	so_img_name=$(readlink /tools/lib/libblkid.so); \
+	so_img_rel_target=$(echo /tools/lib | sed 's,\(^/\|\)[^/][^/]*,..,g'); \
+	(cd /tools/lib && \
+		rm -f libblkid.so && \
+		ln -s $so_img_rel_target/tools/lib/$so_img_name libblkid.so); \
+fi
+if test "/tools/lib" != "/tools/lib" -a -f "/tools/lib/libmount.so"; then \
+	/tools/bin/mkdir -p /tools/lib; \
+	mv /tools/lib/libmount.so.* /tools/lib; \
+	so_img_name=$(readlink /tools/lib/libmount.so); \
+	so_img_rel_target=$(echo /tools/lib | sed 's,\(^/\|\)[^/][^/]*,..,g'); \
+	(cd /tools/lib && \
+		rm -f libmount.so && \
+		ln -s $so_img_rel_target/tools/lib/$so_img_name libmount.so); \
+fi
+if test "/tools/lib" != "/tools/lib" -a -f "/tools/lib/libsmartcols.so"; then \
+	/tools/bin/mkdir -p /tools/lib; \
+	mv /tools/lib/libsmartcols.so.* /tools/lib; \
+	so_img_name=$(readlink /tools/lib/libsmartcols.so); \
+	so_img_rel_target=$(echo /tools/lib | sed 's,\(^/\|\)[^/][^/]*,..,g'); \
+	(cd /tools/lib && \
+		rm -f libsmartcols.so && \
+		ln -s $so_img_rel_target/tools/lib/$so_img_name libsmartcols.so); \
+fi
+if test "/tools/lib" != "/tools/lib" -a -f "/tools/lib/libfdisk.so"; then \
+	/tools/bin/mkdir -p /tools/lib; \
+	mv /tools/lib/libfdisk.so.* /tools/lib; \
+	so_img_name=$(readlink /tools/lib/libfdisk.so); \
+	so_img_rel_target=$(echo /tools/lib | sed 's,\(^/\|\)[^/][^/]*,..,g'); \
+	(cd /tools/lib && \
+		rm -f libfdisk.so && \
+		ln -s $so_img_rel_target/tools/lib/$so_img_name libfdisk.so); \
+fi
+cd /tools/bin && ln -sf last lastb
+for I in uname26 linux32 linux64   i386 x86_64     ; do \
+	cd /tools/bin && ln -sf setarch $I ; \
+done
+chmod 4755 /tools/bin/mount
+chmod 4755 /tools/bin/umount
+make[4]: Leaving directory '/mnt/lfs/sources/util-linux-2.29.1'
+ /tools/bin/mkdir -p '/tools/share/bash-completion/completions'
+ /tools/bin/install -c -m 644 bash-completion/blkid bash-completion/cal bash-completion/col bash-completion/colcrt bash-completion/colrm bash-completion/column bash-completion/findmnt bash-completion/flock bash-completion/getopt bash-completion/hexdump bash-completion/ipcmk bash-completion/ipcrm bash-completion/ipcs bash-completion/isosize bash-completion/logger bash-completion/look bash-completion/lsipc bash-completion/lsns bash-completion/mcookie bash-completion/mkfs bash-completion/mkswap bash-completion/namei bash-completion/prlimit bash-completion/readprofile bash-completion/renice bash-completion/rev bash-completion/script bash-completion/scriptreplay bash-completion/setsid bash-completion/tailf bash-completion/whereis bash-completion/wipefs bash-completion/fsck bash-completion/mkfs.bfs bash-completion/fsck.minix bash-completion/mkfs.minix bash-completion/addpart bash-completion/delpart bash-completion/resizepart bash-completion/partx '/tools/share/bash-completion/completions'
+ /tools/bin/install -c -m 644 bash-completion/raw bash-completion/swaplabel bash-completion/fdformat bash-completion/blockdev bash-completion/fdisk bash-completion/sfdisk bash-completion/cfdisk bash-completion/last bash-completion/lslogins bash-completion/utmpdump bash-completion/uuidgen bash-completion/uuidd bash-completion/lsblk bash-completion/lslocks bash-completion/rename bash-completion/chrt bash-completion/ionice bash-completion/taskset bash-completion/chcpu bash-completion/eject bash-completion/fallocate bash-completion/hwclock bash-completion/lscpu bash-completion/losetup bash-completion/mount bash-completion/umount bash-completion/mountpoint bash-completion/nsenter bash-completion/pivot_root bash-completion/swapon bash-completion/swapoff bash-completion/unshare bash-completion/wdctl bash-completion/blkdiscard bash-completion/ctrlaltdel bash-completion/dmesg bash-completion/fsfreeze bash-completion/fstrim bash-completion/ldattach bash-completion/rtcwake '/tools/share/bash-completion/completions'
+ /tools/bin/install -c -m 644 bash-completion/setarch bash-completion/zramctl bash-completion/mesg bash-completion/wall bash-completion/setterm bash-completion/more bash-completion/ul '/tools/share/bash-completion/completions'
+ /tools/bin/mkdir -p '/tools/share/doc/util-linux/getopt/'
+ /tools/bin/install -c misc-utils/getopt-parse.bash misc-utils/getopt-parse.tcsh '/tools/share/doc/util-linux/getopt/'
+ /tools/bin/mkdir -p '/tools/share/man/man1'
+ /tools/bin/install -c -m 644 schedutils/chrt.1 schedutils/ionice.1 schedutils/taskset.1 text-utils/col.1 text-utils/colcrt.1 text-utils/colrm.1 text-utils/column.1 text-utils/hexdump.1 text-utils/rev.1 text-utils/tailf.1 text-utils/ul.1 text-utils/more.1 term-utils/script.1 term-utils/scriptreplay.1 term-utils/setterm.1 term-utils/mesg.1 term-utils/wall.1 login-utils/last.1 login-utils/lastb.1 login-utils/utmpdump.1 login-utils/lslogins.1 sys-utils/flock.1 sys-utils/ipcmk.1 sys-utils/ipcrm.1 sys-utils/ipcs.1 sys-utils/lsipc.1 sys-utils/renice.1 sys-utils/setsid.1 sys-utils/dmesg.1 sys-utils/eject.1 sys-utils/prlimit.1 sys-utils/lscpu.1 sys-utils/mountpoint.1 sys-utils/fallocate.1 sys-utils/unshare.1 sys-utils/nsenter.1 misc-utils/cal.1 misc-utils/logger.1 misc-utils/look.1 misc-utils/mcookie.1 '/tools/share/man/man1'
+ /tools/bin/install -c -m 644 misc-utils/namei.1 misc-utils/whereis.1 misc-utils/uuidgen.1 misc-utils/kill.1 misc-utils/rename.1 misc-utils/getopt.1 '/tools/share/man/man1'
+ /tools/bin/mkdir -p '/tools/share/man/man3'
+ /tools/bin/install -c -m 644 libuuid/man/uuid.3 libuuid/man/uuid_clear.3 libuuid/man/uuid_compare.3 libuuid/man/uuid_copy.3 libuuid/man/uuid_generate.3 libuuid/man/uuid_is_null.3 libuuid/man/uuid_parse.3 libuuid/man/uuid_time.3 libuuid/man/uuid_unparse.3 libuuid/man/uuid_generate_random.3 libuuid/man/uuid_generate_time.3 libuuid/man/uuid_generate_time_safe.3 libblkid/libblkid.3 '/tools/share/man/man3'
+ /tools/bin/mkdir -p '/tools/share/man/man5'
+ /tools/bin/install -c -m 644 lib/terminal-colors.d.5 sys-utils/fstab.5 '/tools/share/man/man5'
+ /tools/bin/mkdir -p '/tools/share/man/man8'
+ /tools/bin/install -c -m 644 term-utils/agetty.8 login-utils/sulogin.8 login-utils/nologin.8 sys-utils/readprofile.8 sys-utils/fstrim.8 sys-utils/ctrlaltdel.8 sys-utils/fsfreeze.8 sys-utils/blkdiscard.8 sys-utils/ldattach.8 sys-utils/rtcwake.8 sys-utils/setarch.8 sys-utils/losetup.8 sys-utils/zramctl.8 sys-utils/lsns.8 sys-utils/mount.8 sys-utils/umount.8 sys-utils/swapoff.8 sys-utils/swapon.8 sys-utils/chcpu.8 sys-utils/wdctl.8 sys-utils/pivot_root.8 sys-utils/switch_root.8 sys-utils/hwclock.8 misc-utils/lslocks.8 misc-utils/lsblk.8 misc-utils/uuidd.8 misc-utils/blkid.8 misc-utils/findfs.8 misc-utils/wipefs.8 misc-utils/findmnt.8 disk-utils/fsck.minix.8 disk-utils/mkfs.minix.8 disk-utils/mkfs.8 disk-utils/isosize.8 disk-utils/mkfs.bfs.8 disk-utils/mkswap.8 disk-utils/swaplabel.8 disk-utils/fsck.8 disk-utils/raw.8 disk-utils/fdformat.8 '/tools/share/man/man8'
+ /tools/bin/install -c -m 644 disk-utils/blockdev.8 disk-utils/fdisk.8 disk-utils/sfdisk.8 disk-utils/cfdisk.8 disk-utils/addpart.8 disk-utils/delpart.8 disk-utils/resizepart.8 disk-utils/partx.8 sys-utils/uname26.8 sys-utils/linux32.8 sys-utils/linux64.8 sys-utils/i386.8 sys-utils/x86_64.8 '/tools/share/man/man8'
+ /tools/bin/mkdir -p '/tools/include/blkid'
+ /tools/bin/install -c -m 644 ./libblkid/src/blkid.h '/tools/include/blkid'
+ /tools/bin/mkdir -p '/tools/include/libfdisk'
+ /tools/bin/install -c -m 644 ./libfdisk/src/libfdisk.h '/tools/include/libfdisk'
+ /tools/bin/mkdir -p '/tools/include/libmount'
+ /tools/bin/install -c -m 644 ./libmount/src/libmount.h '/tools/include/libmount'
+ /tools/bin/mkdir -p '/tools/include/libsmartcols'
+ /tools/bin/install -c -m 644 ./libsmartcols/src/libsmartcols.h '/tools/include/libsmartcols'
+ /tools/bin/mkdir -p '/tools/lib/pkgconfig'
+ /tools/bin/install -c -m 644 libuuid/uuid.pc libblkid/blkid.pc libmount/mount.pc libsmartcols/smartcols.pc libfdisk/fdisk.pc '/tools/lib/pkgconfig'
+ /tools/bin/mkdir -p '/tools/include/uuid'
+ /tools/bin/install -c -m 644 libuuid/src/uuid.h '/tools/include/uuid'
+make  install-data-hook
+make[4]: Entering directory '/mnt/lfs/sources/util-linux-2.29.1'
+make[4]: Nothing to be done for 'install-data-hook'.
+make[4]: Leaving directory '/mnt/lfs/sources/util-linux-2.29.1'
+make[3]: Leaving directory '/mnt/lfs/sources/util-linux-2.29.1'
+make[2]: Leaving directory '/mnt/lfs/sources/util-linux-2.29.1'
+make[1]: Leaving directory '/mnt/lfs/sources/util-linux-2.29.1'
+lfs@Minty /mnt/lfs/sources/util-linux-2.29.1 $

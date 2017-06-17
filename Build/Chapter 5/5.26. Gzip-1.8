@@ -1,0 +1,987 @@
+5.26. Gzip-1.8
+The Gzip package contains programs for compressing and decompressing files.
+
+Approximate build time:
+0.1 SBU
+Required disk space:
+9 MB
+lfs@Minty /mnt/lfs/sources $ clear
+lfs@Minty /mnt/lfs/sources $
+lfs@Minty /mnt/lfs/sources $
+lfs@Minty /mnt/lfs/sources $ tar -xvf gzip-1.8.tar.xz
+gzip-1.8/
+gzip-1.8/gzip.1
+gzip-1.8/zcmp.in
+gzip-1.8/cfg.mk
+gzip-1.8/configure.ac
+gzip-1.8/gunzip.1
+gzip-1.8/zmore.in
+gzip-1.8/zip.c
+gzip-1.8/zless.in
+gzip-1.8/zforce.in
+gzip-1.8/zgrep.in
+gzip-1.8/unlzw.c
+gzip-1.8/m4/
+gzip-1.8/m4/utimens.m4
+gzip-1.8/m4/gettime.m4
+gzip-1.8/m4/fstat.m4
+gzip-1.8/m4/yesno.m4
+gzip-1.8/m4/utimes.m4
+gzip-1.8/m4/dirent-safer.m4
+gzip-1.8/m4/lstat.m4
+gzip-1.8/m4/printf.m4
+gzip-1.8/m4/clock_time.m4
+gzip-1.8/m4/gnulib-common.m4
+gzip-1.8/m4/close.m4
+gzip-1.8/m4/printf-posix-rpl.m4
+gzip-1.8/m4/exponentf.m4
+gzip-1.8/m4/strerror.m4
+gzip-1.8/m4/stdint.m4
+gzip-1.8/m4/frexpl.m4
+gzip-1.8/m4/unlink.m4
+gzip-1.8/m4/malloc.m4
+gzip-1.8/m4/frexp.m4
+gzip-1.8/m4/fcntl-o.m4
+gzip-1.8/m4/ldexpl.m4
+gzip-1.8/m4/pathmax.m4
+gzip-1.8/m4/ftell.m4
+gzip-1.8/m4/signbit.m4
+gzip-1.8/m4/stdlib_h.m4
+gzip-1.8/m4/ftello.m4
+gzip-1.8/m4/msvc-nothrow.m4
+gzip-1.8/m4/warnings.m4
+gzip-1.8/m4/readdir.m4
+gzip-1.8/m4/fprintf-posix.m4
+gzip-1.8/m4/memchr.m4
+gzip-1.8/m4/save-cwd.m4
+gzip-1.8/m4/fcntl_h.m4
+gzip-1.8/m4/00gnulib.m4
+gzip-1.8/m4/realloc.m4
+gzip-1.8/m4/fcntl.m4
+gzip-1.8/m4/stddef_h.m4
+gzip-1.8/m4/lock.m4
+gzip-1.8/m4/stat-time.m4
+gzip-1.8/m4/multiarch.m4
+gzip-1.8/m4/printf-frexp.m4
+gzip-1.8/m4/opendir.m4
+gzip-1.8/m4/lib-link.m4
+gzip-1.8/m4/gettimeofday.m4
+gzip-1.8/m4/nocrash.m4
+gzip-1.8/m4/rmdir.m4
+gzip-1.8/m4/string_h.m4
+gzip-1.8/m4/dup.m4
+gzip-1.8/m4/unistd_h.m4
+gzip-1.8/m4/freading.m4
+gzip-1.8/m4/dup2.m4
+gzip-1.8/m4/fsync.m4
+gzip-1.8/m4/mempcpy.m4
+gzip-1.8/m4/fpurge.m4
+gzip-1.8/m4/isnanl.m4
+gzip-1.8/m4/inttypes_h.m4
+gzip-1.8/m4/printf-frexpl.m4
+gzip-1.8/m4/stpcpy.m4
+gzip-1.8/m4/isnand.m4
+gzip-1.8/m4/threadlib.m4
+gzip-1.8/m4/savedir.m4
+gzip-1.8/m4/timespec.m4
+gzip-1.8/m4/wchar_t.m4
+gzip-1.8/m4/fpieee.m4
+gzip-1.8/m4/unlinkat.m4
+gzip-1.8/m4/stdint_h.m4
+gzip-1.8/m4/lib-prefix.m4
+gzip-1.8/m4/msvc-inval.m4
+gzip-1.8/m4/fdopendir.m4
+gzip-1.8/m4/largefile.m4
+gzip-1.8/m4/dirfd.m4
+gzip-1.8/m4/memrchr.m4
+gzip-1.8/m4/fcntl-safer.m4
+gzip-1.8/m4/exponentd.m4
+gzip-1.8/m4/sys_stat_h.m4
+gzip-1.8/m4/stdbool.m4
+gzip-1.8/m4/open.m4
+gzip-1.8/m4/asm-underscore.m4
+gzip-1.8/m4/sys_socket_h.m4
+gzip-1.8/m4/ssize_t.m4
+gzip-1.8/m4/fseterr.m4
+gzip-1.8/m4/extern-inline.m4
+gzip-1.8/m4/error.m4
+gzip-1.8/m4/filenamecat.m4
+gzip-1.8/m4/time_h.m4
+gzip-1.8/m4/closedir.m4
+gzip-1.8/m4/manywarnings.m4
+gzip-1.8/m4/getdtablesize.m4
+gzip-1.8/m4/calloc.m4
+gzip-1.8/m4/size_max.m4
+gzip-1.8/m4/alloca.m4
+gzip-1.8/m4/wchar_h.m4
+gzip-1.8/m4/exponentl.m4
+gzip-1.8/m4/fchdir.m4
+gzip-1.8/m4/intmax_t.m4
+gzip-1.8/m4/chdir-long.m4
+gzip-1.8/m4/unistd-safer.m4
+gzip-1.8/m4/mode_t.m4
+gzip-1.8/m4/getopt.m4
+gzip-1.8/m4/stdio_h.m4
+gzip-1.8/m4/math_h.m4
+gzip-1.8/m4/xalloc.m4
+gzip-1.8/m4/off_t.m4
+gzip-1.8/m4/dirent_h.m4
+gzip-1.8/m4/fdatasync.m4
+gzip-1.8/m4/isnanf.m4
+gzip-1.8/m4/lib-ignore.m4
+gzip-1.8/m4/fseek.m4
+gzip-1.8/m4/stat.m4
+gzip-1.8/m4/gnu-make.m4
+gzip-1.8/m4/lseek.m4
+gzip-1.8/m4/dirname.m4
+gzip-1.8/m4/double-slash-root.m4
+gzip-1.8/m4/absolute-header.m4
+gzip-1.8/m4/errno_h.m4
+gzip-1.8/m4/fstatat.m4
+gzip-1.8/m4/strdup.m4
+gzip-1.8/m4/getcwd.m4
+gzip-1.8/m4/utimbuf.m4
+gzip-1.8/m4/perror.m4
+gzip-1.8/m4/shell.m4
+gzip-1.8/m4/strerror_r.m4
+gzip-1.8/m4/include_next.m4
+gzip-1.8/m4/wint_t.m4
+gzip-1.8/m4/sys_types_h.m4
+gzip-1.8/m4/longlong.m4
+gzip-1.8/m4/mmap-anon.m4
+gzip-1.8/m4/lib-ld.m4
+gzip-1.8/m4/fclose.m4
+gzip-1.8/m4/fflush.m4
+gzip-1.8/m4/xsize.m4
+gzip-1.8/m4/gnulib-comp.m4
+gzip-1.8/m4/vasnprintf.m4
+gzip-1.8/m4/extensions.m4
+gzip-1.8/m4/fseeko.m4
+gzip-1.8/m4/float_h.m4
+gzip-1.8/m4/sys_time_h.m4
+gzip-1.8/m4/vfprintf-posix.m4
+gzip-1.8/m4/openat.m4
+gzip-1.8/lzw.c
+gzip-1.8/build-aux/
+gzip-1.8/build-aux/git-version-gen
+gzip-1.8/build-aux/gnu-web-doc-update
+gzip-1.8/build-aux/config.guess
+gzip-1.8/build-aux/test-driver
+gzip-1.8/build-aux/compile
+gzip-1.8/build-aux/snippet/
+gzip-1.8/build-aux/snippet/arg-nonnull.h
+gzip-1.8/build-aux/snippet/_Noreturn.h
+gzip-1.8/build-aux/snippet/unused-parameter.h
+gzip-1.8/build-aux/snippet/c++defs.h
+gzip-1.8/build-aux/snippet/warn-on-use.h
+gzip-1.8/build-aux/update-copyright
+gzip-1.8/build-aux/vc-list-files
+gzip-1.8/build-aux/gendocs.sh
+gzip-1.8/build-aux/gitlog-to-changelog
+gzip-1.8/build-aux/texinfo.tex
+gzip-1.8/build-aux/config.rpath
+gzip-1.8/build-aux/announce-gen
+gzip-1.8/build-aux/useless-if-before-free
+gzip-1.8/build-aux/config.sub
+gzip-1.8/build-aux/gnupload
+gzip-1.8/build-aux/do-release-commit-and-tag
+gzip-1.8/build-aux/mdate-sh
+gzip-1.8/build-aux/missing
+gzip-1.8/build-aux/ar-lib
+gzip-1.8/build-aux/depcomp
+gzip-1.8/build-aux/install-sh
+gzip-1.8/Makefile.am
+gzip-1.8/doc/
+gzip-1.8/doc/stamp-vti
+gzip-1.8/doc/Makefile.am
+gzip-1.8/doc/gzip.texi
+gzip-1.8/doc/Makefile.in
+gzip-1.8/doc/version.texi
+gzip-1.8/doc/gzip.info
+gzip-1.8/doc/fdl.texi
+gzip-1.8/NEWS
+gzip-1.8/zcat.in
+gzip-1.8/gzexe.in
+gzip-1.8/gzip.doc
+gzip-1.8/INSTALL
+gzip-1.8/unzip.c
+gzip-1.8/COPYING
+gzip-1.8/README
+gzip-1.8/aclocal.m4
+gzip-1.8/maint.mk
+gzip-1.8/sample/
+gzip-1.8/sample/makecrc.c
+gzip-1.8/sample/zread.c
+gzip-1.8/sample/add.c
+gzip-1.8/sample/sub.c
+gzip-1.8/sample/zfile
+gzip-1.8/sample/ztouch
+gzip-1.8/AUTHORS
+gzip-1.8/lib/
+gzip-1.8/lib/cloexec.h
+gzip-1.8/lib/dirent.in.h
+gzip-1.8/lib/asnprintf.c
+gzip-1.8/lib/chdir-long.c
+gzip-1.8/lib/utimens.c
+gzip-1.8/lib/lseek.c
+gzip-1.8/lib/fseeko.c
+gzip-1.8/lib/utimens.h
+gzip-1.8/lib/strerror.c
+gzip-1.8/lib/at-func.c
+gzip-1.8/lib/getopt.c
+gzip-1.8/lib/printf-frexpl.c
+gzip-1.8/lib/unlink.c
+gzip-1.8/lib/basename-lgpl.c
+gzip-1.8/lib/fcntl.in.h
+gzip-1.8/lib/savedir.c
+gzip-1.8/lib/vasnprintf.c
+gzip-1.8/lib/signbitl.c
+gzip-1.8/lib/printf-frexpl.h
+gzip-1.8/lib/fpucw.h
+gzip-1.8/lib/fcntl.c
+gzip-1.8/lib/fsync.c
+gzip-1.8/lib/config.hin
+gzip-1.8/lib/stdio.in.h
+gzip-1.8/lib/lstat.c
+gzip-1.8/lib/error.h
+gzip-1.8/lib/dirent-private.h
+gzip-1.8/lib/isnanf.c
+gzip-1.8/lib/memchr.valgrind
+gzip-1.8/lib/timespec.h
+gzip-1.8/lib/exitfail.c
+gzip-1.8/lib/getdtablesize.c
+gzip-1.8/lib/error.c
+gzip-1.8/lib/match.c
+gzip-1.8/lib/frexp.c
+gzip-1.8/lib/ftello.c
+gzip-1.8/lib/save-cwd.h
+gzip-1.8/lib/string.in.h
+gzip-1.8/lib/time.in.h
+gzip-1.8/lib/malloc.c
+gzip-1.8/lib/fd-hook.c
+gzip-1.8/lib/fdopendir.c
+gzip-1.8/lib/open-safer.c
+gzip-1.8/lib/opendir.c
+gzip-1.8/lib/perror.c
+gzip-1.8/lib/calloc.c
+gzip-1.8/lib/printf-args.c
+gzip-1.8/lib/vfprintf.c
+gzip-1.8/lib/stdint.in.h
+gzip-1.8/lib/assure.h
+gzip-1.8/lib/Makefile.am
+gzip-1.8/lib/filename.h
+gzip-1.8/lib/openat-die.c
+gzip-1.8/lib/frexpl.c
+gzip-1.8/lib/fstat.c
+gzip-1.8/lib/pipe-safer.c
+gzip-1.8/lib/float.in.h
+gzip-1.8/lib/fcntl-safer.h
+gzip-1.8/lib/sys_stat.in.h
+gzip-1.8/lib/closedir.c
+gzip-1.8/lib/fseek.c
+gzip-1.8/lib/gettext.h
+gzip-1.8/lib/getcwd-lgpl.c
+gzip-1.8/lib/close.c
+gzip-1.8/lib/getopt1.c
+gzip-1.8/lib/xmalloc.c
+gzip-1.8/lib/dirent-safer.h
+gzip-1.8/lib/ftell.c
+gzip-1.8/lib/glthread/
+gzip-1.8/lib/glthread/threadlib.c
+gzip-1.8/lib/glthread/lock.h
+gzip-1.8/lib/glthread/lock.c
+gzip-1.8/lib/strerror-override.c
+gzip-1.8/lib/fpurge.c
+gzip-1.8/lib/printf.c
+gzip-1.8/lib/msvc-nothrow.c
+gzip-1.8/lib/printf-args.h
+gzip-1.8/lib/yesno.c
+gzip-1.8/lib/stat.c
+gzip-1.8/lib/getopt_int.h
+gzip-1.8/lib/isnanl.c
+gzip-1.8/lib/fstatat.c
+gzip-1.8/lib/fclose.c
+gzip-1.8/lib/isnanf-nolibm.h
+gzip-1.8/lib/filenamecat.h
+gzip-1.8/lib/openat.h
+gzip-1.8/lib/timespec.c
+gzip-1.8/lib/gettimeofday.c
+gzip-1.8/lib/strerror-override.h
+gzip-1.8/lib/xalloc.h
+gzip-1.8/lib/isnand.c
+gzip-1.8/lib/creat-safer.c
+gzip-1.8/lib/xalloc-oversized.h
+gzip-1.8/lib/dosname.h
+gzip-1.8/lib/size_max.h
+gzip-1.8/lib/rmdir.c
+gzip-1.8/lib/strdup.c
+gzip-1.8/lib/xsize.c
+gzip-1.8/lib/fprintf.c
+gzip-1.8/lib/intprops.h
+gzip-1.8/lib/fseterr.c
+gzip-1.8/lib/Makefile.in
+gzip-1.8/lib/exitfail.h
+gzip-1.8/lib/save-cwd.c
+gzip-1.8/lib/statat.c
+gzip-1.8/lib/errno.in.h
+gzip-1.8/lib/msvc-nothrow.h
+gzip-1.8/lib/signbitd.c
+gzip-1.8/lib/dirname-lgpl.c
+gzip-1.8/lib/open.c
+gzip-1.8/lib/stdbool.in.h
+gzip-1.8/lib/chdir-long.h
+gzip-1.8/lib/unistd.c
+gzip-1.8/lib/stat-time.h
+gzip-1.8/lib/memchr.c
+gzip-1.8/lib/printf-frexp.c
+gzip-1.8/lib/math.in.h
+gzip-1.8/lib/fseterr.h
+gzip-1.8/lib/stddef.in.h
+gzip-1.8/lib/stdlib.in.h
+gzip-1.8/lib/fd-hook.h
+gzip-1.8/lib/ignore-value.h
+gzip-1.8/lib/dup.c
+gzip-1.8/lib/stdio-impl.h
+gzip-1.8/lib/readdir.c
+gzip-1.8/lib/stpcpy.c
+gzip-1.8/lib/freading.h
+gzip-1.8/lib/pathmax.h
+gzip-1.8/lib/yesno.h
+gzip-1.8/lib/isnan.c
+gzip-1.8/lib/printf-parse.c
+gzip-1.8/lib/float+.h
+gzip-1.8/lib/openat.c
+gzip-1.8/lib/float.c
+gzip-1.8/lib/openat-proc.c
+gzip-1.8/lib/fd-safer.c
+gzip-1.8/lib/openat-priv.h
+gzip-1.8/lib/openat-safer.c
+gzip-1.8/lib/math.c
+gzip-1.8/lib/dup-safer.c
+gzip-1.8/lib/gnulib.mk
+gzip-1.8/lib/fchdir.c
+gzip-1.8/lib/dirfd.c
+gzip-1.8/lib/stat-time.c
+gzip-1.8/lib/unistd.in.h
+gzip-1.8/lib/sys_time.in.h
+gzip-1.8/lib/printf-frexp.h
+gzip-1.8/lib/getopt.in.h
+gzip-1.8/lib/fdatasync.c
+gzip-1.8/lib/itold.c
+gzip-1.8/lib/alloca.in.h
+gzip-1.8/lib/isnanl-nolibm.h
+gzip-1.8/lib/msvc-inval.h
+gzip-1.8/lib/xalloc-die.c
+gzip-1.8/lib/signbitf.c
+gzip-1.8/lib/printf-parse.h
+gzip-1.8/lib/filenamecat-lgpl.c
+gzip-1.8/lib/dup2.c
+gzip-1.8/lib/savedir.h
+gzip-1.8/lib/memrchr.c
+gzip-1.8/lib/vasnprintf.h
+gzip-1.8/lib/isnand-nolibm.h
+gzip-1.8/lib/dirent--.h
+gzip-1.8/lib/msvc-inval.c
+gzip-1.8/lib/verify.h
+gzip-1.8/lib/fflush.c
+gzip-1.8/lib/dirname.h
+gzip-1.8/lib/fcntl--.h
+gzip-1.8/lib/opendir-safer.c
+gzip-1.8/lib/gettime.c
+gzip-1.8/lib/xsize.h
+gzip-1.8/lib/sys_types.in.h
+gzip-1.8/lib/cloexec.c
+gzip-1.8/lib/unlinkat.c
+gzip-1.8/lib/stripslash.c
+gzip-1.8/lib/unistd--.h
+gzip-1.8/lib/freading.c
+gzip-1.8/lib/realloc.c
+gzip-1.8/lib/unistd-safer.h
+gzip-1.8/lib/strerror_r.c
+gzip-1.8/lib/wchar.in.h
+gzip-1.8/lib/mempcpy.c
+gzip-1.8/tailor.h
+gzip-1.8/tests/
+gzip-1.8/tests/helin-segv
+gzip-1.8/tests/znew-k
+gzip-1.8/tests/Makefile.am
+gzip-1.8/tests/hufts-segv.gz
+gzip-1.8/tests/mixed
+gzip-1.8/tests/zgrep-f
+gzip-1.8/tests/null-suffix-clobber
+gzip-1.8/tests/stdin
+gzip-1.8/tests/init.cfg
+gzip-1.8/tests/memcpy-abuse
+gzip-1.8/tests/init.sh
+gzip-1.8/tests/zdiff
+gzip-1.8/tests/Makefile.in
+gzip-1.8/tests/zgrep-signal
+gzip-1.8/tests/unpack-invalid
+gzip-1.8/tests/z-suffix
+gzip-1.8/tests/trailing-nul
+gzip-1.8/tests/keep
+gzip-1.8/tests/list
+gzip-1.8/tests/hufts
+gzip-1.8/tests/gzip-env
+gzip-1.8/tests/zgrep-context
+gzip-1.8/tests/help-version
+gzip-1.8/ChangeLog
+gzip-1.8/Makefile.in
+gzip-1.8/deflate.c
+gzip-1.8/gzip.c
+gzip-1.8/bits.c
+gzip-1.8/revision.h
+gzip-1.8/algorithm.doc
+gzip-1.8/znew.in
+gzip-1.8/trees.c
+gzip-1.8/zforce.1
+gzip-1.8/zcmp.1
+gzip-1.8/configure
+gzip-1.8/README-release
+gzip-1.8/zgrep.1
+gzip-1.8/ChangeLog-2007
+gzip-1.8/zdiff.1
+gzip-1.8/zcat.1
+gzip-1.8/gunzip.in
+gzip-1.8/TODO
+gzip-1.8/.tarball-version
+gzip-1.8/dist-check.mk
+gzip-1.8/gzip.h
+gzip-1.8/inflate.c
+gzip-1.8/zdiff.in
+gzip-1.8/lzw.h
+gzip-1.8/zegrep.in
+gzip-1.8/unlzh.c
+gzip-1.8/THANKS
+gzip-1.8/zfgrep.in
+gzip-1.8/GNUmakefile
+gzip-1.8/unpack.c
+gzip-1.8/zless.1
+gzip-1.8/znew.1
+gzip-1.8/util.c
+gzip-1.8/gzexe.1
+gzip-1.8/zmore.1
+lfs@Minty /mnt/lfs/sources $ cd gzip-1.8
+lfs@Minty /mnt/lfs/sources/gzip-1.8 $ ./configure --prefix=/tools
+checking for a BSD-compatible install... /tools/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /tools/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /tools/bin/grep
+checking for nm... nm
+checking whether ln -s works... yes
+checking for ranlib... ranlib
+checking for a POSIX-compliant shell... /bin/sh
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for sys/param.h... yes
+checking for sys/socket.h... yes
+checking for dirent.h... yes
+checking for features.h... yes
+checking for getopt.h... yes
+checking for sys/time.h... yes
+checking for math.h... yes
+checking for sys/mman.h... yes
+checking for wchar.h... yes
+checking for utime.h... yes
+checking for fcntl.h... yes
+checking for limits.h... yes
+checking for memory.h... yes
+checking for time.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for egrep... /tools/bin/grep -E
+checking for Minix Amsterdam compiler... no
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking for ar... (cached) ar
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether malloc, realloc, calloc are POSIX compliant... yes
+checking for _set_invalid_parameter_handler... no
+checking for fchdir... yes
+checking for fdopendir... yes
+checking for strerror_r... yes
+checking for fcntl... yes
+checking for symlink... yes
+checking for mempcpy... yes
+checking for vasnprintf... no
+checking for snprintf... yes
+checking for fpurge... no
+checking for __fpurge... yes
+checking for __freading... yes
+checking for __fseterr... no
+checking for fstatat... yes
+checking for fsync... yes
+checking for getdtablesize... yes
+checking for gettimeofday... yes
+checking for nanotime... no
+checking for lstat... yes
+checking for mprotect... yes
+checking for openat... yes
+checking for __xpg_strerror_r... yes
+checking for strdup... yes
+checking for catgets... yes
+checking for pipe... yes
+checking for unlinkat... yes
+checking for futimes... yes
+checking for futimesat... yes
+checking for futimens... yes
+checking for utimensat... yes
+checking for lutimes... yes
+checking for chown... yes
+checking for fchmod... yes
+checking for fchown... yes
+checking for siginterrupt... yes
+checking whether the preprocessor supports include_next... yes
+checking whether system header files limit the line length... no
+checking how gcc reports undeclared, standard C functions... error
+checking whether // is distinct from /... no
+checking for complete errno.h... yes
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking whether fchdir is declared... yes
+checking for working fcntl.h... yes
+checking for pid_t... yes
+checking for mode_t... yes
+checking for promoted mode_t type... mode_t
+checking whether fdatasync is declared... yes
+checking for stdint.h... yes
+checking for inttypes.h... yes
+checking whether printf supports size specifiers as in C99... yes
+checking whether printf supports 'long double' arguments... yes
+checking whether printf supports infinite 'double' arguments... yes
+checking whether byte ordering is bigendian... no
+checking whether long double and double are the same... no
+checking whether printf supports infinite 'long double' arguments... yes
+checking whether printf supports the 'a' and 'A' directives... yes
+checking whether printf supports the 'F' directive... yes
+checking whether printf supports the 'n' directive... yes
+checking whether printf supports the 'ls' directive... yes
+checking whether printf supports POSIX/XSI format strings with positions... yes
+checking whether printf supports the grouping flag... yes
+checking whether printf supports the left-adjust flag correctly... yes
+checking whether printf supports the zero flag correctly... yes
+checking whether printf supports large precisions... yes
+checking whether printf survives out-of-memory conditions... yes
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking for intmax_t... yes
+checking where to find the exponent in a 'double'... word 1 bit 20
+checking whether snprintf returns a byte count as in C99... yes
+checking for snprintf... (cached) yes
+checking for strnlen... yes
+checking for wcslen... yes
+checking for wcsnlen... yes
+checking for mbrtowc... yes
+checking for wcrtomb... yes
+checking whether _snprintf is declared... no
+checking whether frexp() can be used without linking with libm... yes
+checking whether alarm is declared... yes
+checking whether stdin defaults to large file offsets... yes
+checking whether fseeko is declared... yes
+checking for fseeko... yes
+checking whether fflush works on input streams... no
+checking whether stat file-mode macros are broken... no
+checking for nlink_t... yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether ftello is declared... yes
+checking for ftello... yes
+checking whether ftello works... yes
+checking whether getcwd (NULL, 0) allocates memory for result... yes
+checking for getcwd with POSIX signature... yes
+checking whether getdtablesize is declared... yes
+checking for getopt.h... (cached) yes
+checking for getopt_long_only... yes
+checking whether getopt is POSIX compatible... yes
+checking for working GNU getopt function... yes
+checking for working GNU getopt_long function... yes
+checking whether getenv is declared... yes
+checking for C/C++ restrict keyword... __restrict
+checking for struct timeval... yes
+checking for wide-enough struct timeval.tv_sec member... yes
+checking where to find the exponent in a 'float'... word 0 bit 23
+checking for ld used by gcc... /mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld
+checking if the linker (/mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking whether imported symbols can be declared weak... yes
+checking for pthread.h... yes
+checking for multithread API to use... posix
+checking for a sed that does not truncate output... /bin/sed
+checking for mmap... yes
+checking for MAP_ANONYMOUS... yes
+checking whether memchr works... yes
+checking whether memrchr is declared... yes
+checking whether strerror(0) succeeds... yes
+checking for strerror_r with POSIX signature... no
+checking whether __xpg_strerror_r works... yes
+checking whether C symbols are prefixed with underscore at the linker level... no
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking whether stdint.h conforms to C99... yes
+checking whether stdint.h predates C++11... no
+checking whether strdup is declared... yes
+checking for struct timespec in <time.h>... yes
+checking whether the utimes function works... yes
+checking for struct utimbuf... yes
+checking whether <wchar.h> uses 'inline' correctly... yes
+checking for alloca as a compiler built-in... yes
+checking for GNU libc compatible calloc... yes
+checking whether this system has an arbitrary file name length limit... yes
+checking for library containing clock_gettime... none required
+checking for clock_gettime... yes
+checking for clock_settime... yes
+checking for closedir... yes
+checking for dirfd... yes
+checking whether dirfd is declared... yes
+checking whether dirfd is a macro... no
+checking whether // is distinct from /... (cached) no
+checking whether dup works... yes
+checking whether dup2 works... yes
+checking for error_at_line... yes
+checking whether fflush works on input streams... (cached) no
+checking whether fcntl handles F_DUPFD correctly... yes
+checking whether fcntl understands F_DUPFD_CLOEXEC... needs runtime check
+checking for library containing fdatasync... none required
+checking whether fdopendir is declared... yes
+checking whether fdopendir works... yes
+checking whether fflush works on input streams... (cached) no
+checking whether conversion from 'int' to 'long double' works... yes
+checking whether fpurge is declared... no
+checking whether frexp works... yes
+checking whether frexpl is declared... yes
+checking whether frexpl() can be used without linking with libm... yes
+checking whether frexpl works... yes
+checking for fseeko... (cached) yes
+checking whether fflush works on input streams... (cached) no
+checking for _fseeki64... no
+checking whether fstatat (..., 0) works... yes
+checking for ftello... (cached) yes
+checking whether ftello works... (cached) yes
+checking whether getdtablesize works... yes
+checking whether gettimeofday clobbers localtime buffer... no
+checking for gettimeofday with POSIX signature... almost
+checking whether isnan(double) can be used without linking with libm... yes
+checking whether isnan(float) can be used without linking with libm... yes
+checking whether isnan(float) works... yes
+checking whether isnan(long double) can be used without linking with libm... yes
+checking whether isnanl works... yes
+checking for C compiler flag to ignore unused libraries... -Wl,--as-needed
+checking for pthread_rwlock_t... yes
+checking whether lseek detects pipes... yes
+checking for stdlib.h... yes
+checking for GNU libc compatible malloc... yes
+checking whether NAN macro works... yes
+checking whether HUGE_VAL works... yes
+checking for mempcpy... (cached) yes
+checking for memrchr... yes
+checking whether open recognizes a trailing slash... yes
+checking for opendir... yes
+checking whether perror matches strerror... yes
+checking whether frexp works... (cached) yes
+checking whether ldexp can be used without linking with libm... yes
+checking whether frexpl() can be used without linking with libm... (cached) yes
+checking whether frexpl works... (cached) yes
+checking whether frexpl is declared... (cached) yes
+checking whether ldexpl() can be used without linking with libm... yes
+checking whether ldexpl works... yes
+checking whether ldexpl is declared... yes
+checking for readdir... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking whether rmdir works... yes
+checking for signbit macro... yes
+checking for signbit compiler built-ins... yes
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... yes
+checking for ssize_t... yes
+checking whether stat handles trailing slashes on directories... yes
+checking whether stat handles trailing slashes on files... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for struct stat.st_birthtimespec.tv_nsec... no
+checking for struct stat.st_birthtimensec... no
+checking for struct stat.st_birthtim.tv_nsec... no
+checking for max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking which flavor of printf attribute matches inttypes macros... system
+checking for stpcpy... yes
+checking for working strerror function... yes
+checking for nlink_t... (cached) yes
+checking whether unlink honors trailing slashes... yes
+checking whether unlink of a parent directory fails as it should... guessing yes
+checking for ptrdiff_t... yes
+checking for stdint.h... (cached) yes
+checking for underline in external names... no
+checking for an assembler syntax supported by this package... no
+checking for library containing strerror... none required
+checking for an ANSI C-conforming const... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking return type of signal handlers... void
+checking for size_t... (cached) yes
+checking for off_t... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating lib/Makefile
+config.status: creating tests/Makefile
+config.status: creating lib/config.h
+config.status: executing depfiles commands
+lfs@Minty /mnt/lfs/sources/gzip-1.8 $ make
+  GEN      version.c
+  GEN      version.h
+make  all-recursive
+make[1]: Entering directory '/mnt/lfs/sources/gzip-1.8'
+Making all in lib
+make[2]: Entering directory '/mnt/lfs/sources/gzip-1.8/lib'
+  GEN      alloca.h
+  GEN      c++defs.h
+  GEN      arg-nonnull.h
+  GEN      warn-on-use.h
+  GEN      dirent.h
+  GEN      fcntl.h
+  GEN      math.h
+  GEN      unused-parameter.h
+  GEN      stdio.h
+  GEN      stdlib.h
+  GEN      string.h
+  GEN      sys/stat.h
+  GEN      sys/time.h
+  GEN      sys/types.h
+  GEN      time.h
+  GEN      unistd.h
+  GEN      wchar.h
+make  all-am
+make[3]: Entering directory '/mnt/lfs/sources/gzip-1.8/lib'
+  CC       cloexec.o
+  CC       opendir-safer.o
+  CC       dirname-lgpl.o
+  CC       basename-lgpl.o
+  CC       stripslash.o
+  CC       exitfail.o
+  CC       creat-safer.o
+  CC       open-safer.o
+  CC       fd-hook.o
+  CC       filenamecat-lgpl.o
+  CC       freading.o
+  CC       gettime.o
+  CC       glthread/lock.o
+  CC       math.o
+  CC       openat-die.o
+  CC       openat-safer.o
+  CC       printf-frexp.o
+  CC       printf-frexpl.o
+  CC       save-cwd.o
+  CC       savedir.o
+  CC       stat-time.o
+  CC       statat.o
+  CC       glthread/threadlib.o
+  CC       timespec.o
+  CC       unistd.o
+  CC       dup-safer.o
+  CC       fd-safer.o
+  CC       pipe-safer.o
+  CC       utimens.o
+  CC       xmalloc.o
+  CC       xalloc-die.o
+  CC       xsize.o
+  CC       yesno.o
+  CC       asnprintf.o
+  CC       chdir-long.o
+  CC       fclose.o
+  CC       fcntl.o
+  CC       fflush.o
+  CC       fpurge.o
+  CC       fseek.o
+  CC       fseeko.o
+  CC       fseterr.o
+  CC       openat-proc.o
+  CC       printf-args.o
+  CC       printf-parse.o
+  CC       strerror_r.o
+  CC       vasnprintf.o
+  AR       libgzip.a
+make[3]: Leaving directory '/mnt/lfs/sources/gzip-1.8/lib'
+make[2]: Leaving directory '/mnt/lfs/sources/gzip-1.8/lib'
+Making all in doc
+make[2]: Entering directory '/mnt/lfs/sources/gzip-1.8/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/gzip-1.8/doc'
+Making all in .
+make[2]: Entering directory '/mnt/lfs/sources/gzip-1.8'
+  CC       version.o
+  AR       libver.a
+  CC       bits.o
+  CC       deflate.o
+  CC       gzip.o
+  CC       inflate.o
+  CC       lzw.o
+  CC       trees.o
+  CC       unlzh.o
+  CC       unlzw.o
+  CC       unpack.o
+  CC       unzip.o
+  CC       util.o
+  CC       zip.o
+  CCLD     gzip
+  GEN      gunzip
+  GEN      gzexe
+  GEN      zcat
+  GEN      zcmp
+  GEN      zdiff
+  GEN      zegrep
+  GEN      zfgrep
+  GEN      zforce
+  GEN      zgrep
+  GEN      zless
+  GEN      zmore
+  GEN      znew
+make[2]: Leaving directory '/mnt/lfs/sources/gzip-1.8'
+Making all in tests
+make[2]: Entering directory '/mnt/lfs/sources/gzip-1.8/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/gzip-1.8/tests'
+make[1]: Leaving directory '/mnt/lfs/sources/gzip-1.8'
+lfs@Minty /mnt/lfs/sources/gzip-1.8 $ make check
+  GEN      public-submodule-commit
+make  check-recursive
+make[1]: Entering directory '/mnt/lfs/sources/gzip-1.8'
+Making check in lib
+make[2]: Entering directory '/mnt/lfs/sources/gzip-1.8/lib'
+make  check-am
+make[3]: Entering directory '/mnt/lfs/sources/gzip-1.8/lib'
+make[3]: Leaving directory '/mnt/lfs/sources/gzip-1.8/lib'
+make[2]: Leaving directory '/mnt/lfs/sources/gzip-1.8/lib'
+Making check in doc
+make[2]: Entering directory '/mnt/lfs/sources/gzip-1.8/doc'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/mnt/lfs/sources/gzip-1.8/doc'
+Making check in .
+make[2]: Entering directory '/mnt/lfs/sources/gzip-1.8'
+make  check-local
+make[3]: Entering directory '/mnt/lfs/sources/gzip-1.8'
+  GEN      gzip.doc.gz
+  GEN      check-local
+make[3]: Leaving directory '/mnt/lfs/sources/gzip-1.8'
+make[2]: Leaving directory '/mnt/lfs/sources/gzip-1.8'
+Making check in tests
+make[2]: Entering directory '/mnt/lfs/sources/gzip-1.8/tests'
+make  check-TESTS
+make[3]: Entering directory '/mnt/lfs/sources/gzip-1.8/tests'
+make[4]: Entering directory '/mnt/lfs/sources/gzip-1.8/tests'
+PASS: gzip-env
+PASS: helin-segv
+PASS: help-version
+PASS: hufts
+PASS: keep
+PASS: list
+PASS: memcpy-abuse
+PASS: mixed
+PASS: null-suffix-clobber
+PASS: stdin
+PASS: trailing-nul
+PASS: unpack-invalid
+PASS: z-suffix
+PASS: zdiff
+PASS: zgrep-f
+PASS: zgrep-context
+PASS: zgrep-signal
+PASS: znew-k
+============================================================================
+Testsuite summary for gzip 1.8
+============================================================================
+# TOTAL: 18
+# PASS:  18
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[4]: Leaving directory '/mnt/lfs/sources/gzip-1.8/tests'
+make[3]: Leaving directory '/mnt/lfs/sources/gzip-1.8/tests'
+make[2]: Leaving directory '/mnt/lfs/sources/gzip-1.8/tests'
+make[1]: Leaving directory '/mnt/lfs/sources/gzip-1.8'
+lfs@Minty /mnt/lfs/sources/gzip-1.8 $ make install
+make  install-recursive
+make[1]: Entering directory '/mnt/lfs/sources/gzip-1.8'
+Making install in lib
+make[2]: Entering directory '/mnt/lfs/sources/gzip-1.8/lib'
+make  install-am
+make[3]: Entering directory '/mnt/lfs/sources/gzip-1.8/lib'
+make[4]: Entering directory '/mnt/lfs/sources/gzip-1.8/lib'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/mnt/lfs/sources/gzip-1.8/lib'
+make[3]: Leaving directory '/mnt/lfs/sources/gzip-1.8/lib'
+make[2]: Leaving directory '/mnt/lfs/sources/gzip-1.8/lib'
+Making install in doc
+make[2]: Entering directory '/mnt/lfs/sources/gzip-1.8/doc'
+make[3]: Entering directory '/mnt/lfs/sources/gzip-1.8/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /tools/bin/mkdir -p '/tools/share/info'
+ /tools/bin/install -c -m 644 ./gzip.info '/tools/share/info'
+ install-info --info-dir='/tools/share/info' '/tools/share/info/gzip.info'
+make[3]: Leaving directory '/mnt/lfs/sources/gzip-1.8/doc'
+make[2]: Leaving directory '/mnt/lfs/sources/gzip-1.8/doc'
+Making install in .
+make[2]: Entering directory '/mnt/lfs/sources/gzip-1.8'
+make[3]: Entering directory '/mnt/lfs/sources/gzip-1.8'
+ /tools/bin/mkdir -p '/tools/bin'
+  /tools/bin/install -c gzip '/tools/bin'
+ /tools/bin/mkdir -p '/tools/bin'
+ /tools/bin/install -c gunzip gzexe zcat zcmp zdiff zegrep zfgrep zforce zgrep zless zmore znew '/tools/bin'
+make  install-exec-hook
+make[4]: Entering directory '/mnt/lfs/sources/gzip-1.8'
++ cd /tools/bin
++ rm -f uncompress
++ case remove-installed-links in
++ cd /tools/bin
++ rm -f uncompress
++ case install-exec-hook in
++ ln gunzip uncompress
+make[4]: Leaving directory '/mnt/lfs/sources/gzip-1.8'
+ /tools/bin/mkdir -p '/tools/share/man/man1'
+ /tools/bin/install -c -m 644 gunzip.1 gzexe.1 gzip.1 zcat.1 zcmp.1 zdiff.1 zforce.1 zgrep.1 zless.1 zmore.1 znew.1 '/tools/share/man/man1'
+make[3]: Leaving directory '/mnt/lfs/sources/gzip-1.8'
+make[2]: Leaving directory '/mnt/lfs/sources/gzip-1.8'
+Making install in tests
+make[2]: Entering directory '/mnt/lfs/sources/gzip-1.8/tests'
+make[3]: Entering directory '/mnt/lfs/sources/gzip-1.8/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/mnt/lfs/sources/gzip-1.8/tests'
+make[2]: Leaving directory '/mnt/lfs/sources/gzip-1.8/tests'
+make[1]: Leaving directory '/mnt/lfs/sources/gzip-1.8'
+lfs@Minty /mnt/lfs/sources/gzip-1.8 $

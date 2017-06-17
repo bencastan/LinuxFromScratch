@@ -1,0 +1,2804 @@
+5.23. Gawk-4.1.4
+The Gawk package contains programs for manipulating text files.
+
+Approximate build time:
+0.2 SBU
+Required disk space:
+35 MB
+
+lfs@Minty /mnt/lfs/sources $ clear
+lfs@Minty /mnt/lfs/sources $
+lfs@Minty /mnt/lfs/sources $ tar -xvf gawk-4.1.4.tar.xz
+gawk-4.1.4/
+gawk-4.1.4/regex.c
+gawk-4.1.4/eval.c
+gawk-4.1.4/awk.h
+gawk-4.1.4/regex_internal.h
+gawk-4.1.4/POSIX.STD
+gawk-4.1.4/awklib/
+gawk-4.1.4/awklib/ChangeLog
+gawk-4.1.4/awklib/ChangeLog.0
+gawk-4.1.4/awklib/extract.awk
+gawk-4.1.4/awklib/stamp-eg
+gawk-4.1.4/awklib/eg/
+gawk-4.1.4/awklib/eg/data/
+gawk-4.1.4/awklib/eg/data/class_data2
+gawk-4.1.4/awklib/eg/data/mail-list
+gawk-4.1.4/awklib/eg/data/guide.po
+gawk-4.1.4/awklib/eg/data/class_data1
+gawk-4.1.4/awklib/eg/data/guide-mellow.po
+gawk-4.1.4/awklib/eg/data/inventory-shipped
+gawk-4.1.4/awklib/eg/prog/
+gawk-4.1.4/awklib/eg/prog/egrep.awk
+gawk-4.1.4/awklib/eg/prog/histsort.awk
+gawk-4.1.4/awklib/eg/prog/wordfreq.awk
+gawk-4.1.4/awklib/eg/prog/wc.awk
+gawk-4.1.4/awklib/eg/prog/indirectcall.awk
+gawk-4.1.4/awklib/eg/prog/cut.awk
+gawk-4.1.4/awklib/eg/prog/split.awk
+gawk-4.1.4/awklib/eg/prog/translate.awk
+gawk-4.1.4/awklib/eg/prog/id.awk
+gawk-4.1.4/awklib/eg/prog/guide.awk
+gawk-4.1.4/awklib/eg/prog/uniq.awk
+gawk-4.1.4/awklib/eg/prog/labels.awk
+gawk-4.1.4/awklib/eg/prog/extract.awk
+gawk-4.1.4/awklib/eg/prog/alarm.awk
+gawk-4.1.4/awklib/eg/prog/igawk.sh
+gawk-4.1.4/awklib/eg/prog/tee.awk
+gawk-4.1.4/awklib/eg/prog/awksed.awk
+gawk-4.1.4/awklib/eg/prog/testbits.awk
+gawk-4.1.4/awklib/eg/prog/dupword.awk
+gawk-4.1.4/awklib/eg/prog/anagram.awk
+gawk-4.1.4/awklib/eg/network/
+gawk-4.1.4/awklib/eg/network/protbase.result
+gawk-4.1.4/awklib/eg/network/protbase.awk
+gawk-4.1.4/awklib/eg/network/protbase.request
+gawk-4.1.4/awklib/eg/network/fingerclient.awk
+gawk-4.1.4/awklib/eg/network/stoxpred.awk
+gawk-4.1.4/awklib/eg/network/statist.awk
+gawk-4.1.4/awklib/eg/network/PostAgent.sh
+gawk-4.1.4/awklib/eg/network/webgrab.awk
+gawk-4.1.4/awklib/eg/network/remconf.awk
+gawk-4.1.4/awklib/eg/network/urlchk.awk
+gawk-4.1.4/awklib/eg/network/geturl.awk
+gawk-4.1.4/awklib/eg/network/panic.awk
+gawk-4.1.4/awklib/eg/network/hello-serv.awk
+gawk-4.1.4/awklib/eg/network/mobag.awk
+gawk-4.1.4/awklib/eg/network/stoxdata.txt
+gawk-4.1.4/awklib/eg/network/eliza.awk
+gawk-4.1.4/awklib/eg/network/maze.awk
+gawk-4.1.4/awklib/eg/network/testserv.awk
+gawk-4.1.4/awklib/eg/network/coreserv.awk
+gawk-4.1.4/awklib/eg/misc/
+gawk-4.1.4/awklib/eg/misc/arraymax.awk
+gawk-4.1.4/awklib/eg/misc/findpat.awk
+gawk-4.1.4/awklib/eg/misc/simple-csv.awk
+gawk-4.1.4/awklib/eg/misc/addresses.csv
+gawk-4.1.4/awklib/eg/misc/arraymax.data
+gawk-4.1.4/awklib/eg/misc/findpat.data
+gawk-4.1.4/awklib/eg/lib/
+gawk-4.1.4/awklib/eg/lib/assert.awk
+gawk-4.1.4/awklib/eg/lib/noassign.awk
+gawk-4.1.4/awklib/eg/lib/cliff_rand.awk
+gawk-4.1.4/awklib/eg/lib/readable.awk
+gawk-4.1.4/awklib/eg/lib/readfile.awk
+gawk-4.1.4/awklib/eg/lib/getopt.awk
+gawk-4.1.4/awklib/eg/lib/ctime.awk
+gawk-4.1.4/awklib/eg/lib/passwdawk.in
+gawk-4.1.4/awklib/eg/lib/ftrans.awk
+gawk-4.1.4/awklib/eg/lib/quicksort.awk
+gawk-4.1.4/awklib/eg/lib/pwcat.c
+gawk-4.1.4/awklib/eg/lib/gettime.awk
+gawk-4.1.4/awklib/eg/lib/zerofile.awk
+gawk-4.1.4/awklib/eg/lib/inplace.awk
+gawk-4.1.4/awklib/eg/lib/libintl.awk
+gawk-4.1.4/awklib/eg/lib/walkarray.awk
+gawk-4.1.4/awklib/eg/lib/strtonum.awk
+gawk-4.1.4/awklib/eg/lib/join.awk
+gawk-4.1.4/awklib/eg/lib/bits2str.awk
+gawk-4.1.4/awklib/eg/lib/grcat.c
+gawk-4.1.4/awklib/eg/lib/shellquote.awk
+gawk-4.1.4/awklib/eg/lib/processarray.awk
+gawk-4.1.4/awklib/eg/lib/rewind.awk
+gawk-4.1.4/awklib/eg/lib/groupawk.in
+gawk-4.1.4/awklib/eg/lib/ord.awk
+gawk-4.1.4/awklib/eg/lib/round.awk
+gawk-4.1.4/awklib/Makefile.am
+gawk-4.1.4/awklib/Makefile.in
+gawk-4.1.4/getopt_int.h
+gawk-4.1.4/NEWS
+gawk-4.1.4/field.c
+gawk-4.1.4/README_d/
+gawk-4.1.4/README_d/README.zos
+gawk-4.1.4/README_d/ChangeLog
+gawk-4.1.4/README_d/ChangeLog.0
+gawk-4.1.4/README_d/README.hacking
+gawk-4.1.4/README_d/README.VMS
+gawk-4.1.4/README_d/README.os2
+gawk-4.1.4/README_d/README.multibyte
+gawk-4.1.4/README_d/README.pc
+gawk-4.1.4/README_d/README.zLinux
+gawk-4.1.4/README_d/README.tests
+gawk-4.1.4/README_d/README.solaris
+gawk-4.1.4/README_d/README.bootstrap
+gawk-4.1.4/README_d/README.macosx
+gawk-4.1.4/README_d/README.gcc-3
+gawk-4.1.4/README_d/README.mpfr
+gawk-4.1.4/io.c
+gawk-4.1.4/cmd.h
+gawk-4.1.4/node.c
+gawk-4.1.4/bisonfix.awk
+gawk-4.1.4/test/
+gawk-4.1.4/test/getlnbuf.ok
+gawk-4.1.4/test/incdupe5.ok
+gawk-4.1.4/test/rwarray.in
+gawk-4.1.4/test/aryprm7.awk
+gawk-4.1.4/test/gsubtst6.ok
+gawk-4.1.4/test/printhuge.ok
+gawk-4.1.4/test/uninit3.ok
+gawk-4.1.4/test/mpfrbigint.awk
+gawk-4.1.4/test/procinfs.awk
+gawk-4.1.4/test/substr.ok
+gawk-4.1.4/test/match3.awk
+gawk-4.1.4/test/reginttrad.ok
+gawk-4.1.4/test/rwarray.ok
+gawk-4.1.4/test/aryprm9.ok
+gawk-4.1.4/test/watchpoint1.awk
+gawk-4.1.4/test/symtab7.ok
+gawk-4.1.4/test/sortu.ok
+gawk-4.1.4/test/asgext.awk
+gawk-4.1.4/test/rtlen01.ok
+gawk-4.1.4/test/aryprm6.awk
+gawk-4.1.4/test/fordel.awk
+gawk-4.1.4/test/arrayref.awk
+gawk-4.1.4/test/uninit5.awk
+gawk-4.1.4/test/mbprintf3.awk
+gawk-4.1.4/test/opasnslf.ok
+gawk-4.1.4/test/rscompat.awk
+gawk-4.1.4/test/gsubasgn.awk
+gawk-4.1.4/test/gensub.in
+gawk-4.1.4/test/lintold.ok
+gawk-4.1.4/test/fwtest.in
+gawk-4.1.4/test/sort1.ok
+gawk-4.1.4/test/synerr2.awk
+gawk-4.1.4/test/nested.in
+gawk-4.1.4/test/prdupval.awk
+gawk-4.1.4/test/inftest.awk
+gawk-4.1.4/test/arysubnm.awk
+gawk-4.1.4/test/funlen.awk
+gawk-4.1.4/test/closebad.ok
+gawk-4.1.4/test/fcall_exit2.ok
+gawk-4.1.4/test/resplit.awk
+gawk-4.1.4/test/rsnul1nl.in
+gawk-4.1.4/test/match1.awk
+gawk-4.1.4/test/intest.awk
+gawk-4.1.4/test/arrymem1.awk
+gawk-4.1.4/test/pipeio1.awk
+gawk-4.1.4/test/profile0.ok
+gawk-4.1.4/test/backw.awk
+gawk-4.1.4/test/symtab8.awk
+gawk-4.1.4/test/fsspcoln.in
+gawk-4.1.4/test/subslash.awk
+gawk-4.1.4/test/symtab6.ok
+gawk-4.1.4/test/pty1.ok
+gawk-4.1.4/test/hex2.in
+gawk-4.1.4/test/fpatnull.awk
+gawk-4.1.4/test/profile6.awk
+gawk-4.1.4/test/icasefs.awk
+gawk-4.1.4/test/arrayprm2.awk
+gawk-4.1.4/test/dynlj.awk
+gawk-4.1.4/test/regexprange.awk
+gawk-4.1.4/test/icasers.awk
+gawk-4.1.4/test/gnuops2.awk
+gawk-4.1.4/test/symtab7.in
+gawk-4.1.4/test/match3.in
+gawk-4.1.4/test/double1.ok
+gawk-4.1.4/test/compare2.awk
+gawk-4.1.4/test/addcomma.awk
+gawk-4.1.4/test/reindops.in
+gawk-4.1.4/test/ofmtfidl.ok
+gawk-4.1.4/test/longsub.in
+gawk-4.1.4/test/mbstr1.ok
+gawk-4.1.4/test/rtlenmb.ok
+gawk-4.1.4/test/charasbytes.awk
+gawk-4.1.4/test/sortglos.ok
+gawk-4.1.4/test/nfloop.ok
+gawk-4.1.4/test/subback.awk
+gawk-4.1.4/test/dtdgport.awk
+gawk-4.1.4/test/sortempty.awk
+gawk-4.1.4/test/regrange.ok
+gawk-4.1.4/test/getline4.in
+gawk-4.1.4/test/fnmatch.ok
+gawk-4.1.4/test/subslash.ok
+gawk-4.1.4/test/rs.awk
+gawk-4.1.4/test/swaplns.awk
+gawk-4.1.4/test/argtest.ok
+gawk-4.1.4/test/prtoeval.awk
+gawk-4.1.4/test/gensub2.ok
+gawk-4.1.4/test/subamp.ok
+gawk-4.1.4/test/defref.ok
+gawk-4.1.4/test/fork.ok
+gawk-4.1.4/test/widesub3.in
+gawk-4.1.4/test/nastyparm.ok
+gawk-4.1.4/test/prmarscl.ok
+gawk-4.1.4/test/fstabplus.awk
+gawk-4.1.4/test/getlnhd.awk
+gawk-4.1.4/test/numsubstr.ok
+gawk-4.1.4/test/id.ok
+gawk-4.1.4/test/inplace3.1.ok
+gawk-4.1.4/test/fork.awk
+gawk-4.1.4/test/jarebug.ok
+gawk-4.1.4/test/reindops.awk
+gawk-4.1.4/test/rs.in
+gawk-4.1.4/test/backsmalls1.awk
+gawk-4.1.4/test/readfile2.awk
+gawk-4.1.4/test/wjposer1.in
+gawk-4.1.4/test/mpfrexprange.ok
+gawk-4.1.4/test/crlf.awk
+gawk-4.1.4/test/mpfrnegzero.ok
+gawk-4.1.4/test/strnum1.ok
+gawk-4.1.4/test/uparrfs.awk
+gawk-4.1.4/test/backsmalls2.awk
+gawk-4.1.4/test/aasort.awk
+gawk-4.1.4/test/double2.awk
+gawk-4.1.4/test/swaplns.ok
+gawk-4.1.4/test/arryref3.awk
+gawk-4.1.4/test/aryprm5.ok
+gawk-4.1.4/test/aasorti.awk
+gawk-4.1.4/test/xref.awk
+gawk-4.1.4/test/subback.in
+gawk-4.1.4/test/mbprintf4.ok
+gawk-4.1.4/test/rri1.ok
+gawk-4.1.4/test/rsnulbig.ok
+gawk-4.1.4/test/fnarydel.awk
+gawk-4.1.4/test/gensub.ok
+gawk-4.1.4/test/compare.awk
+gawk-4.1.4/test/shadow.awk
+gawk-4.1.4/test/getlndir.awk
+gawk-4.1.4/test/symtab1.ok
+gawk-4.1.4/test/arynocls.in
+gawk-4.1.4/test/longwrds.in
+gawk-4.1.4/test/negexp.ok
+gawk-4.1.4/test/forsimp.ok
+gawk-4.1.4/test/rand-mpfr.ok
+gawk-4.1.4/test/mpfrnegzero.awk
+gawk-4.1.4/test/regnul2.awk
+gawk-4.1.4/test/nfloop.awk
+gawk-4.1.4/test/gsubtst5.awk
+gawk-4.1.4/test/nofmtch.ok
+gawk-4.1.4/test/minusstr.awk
+gawk-4.1.4/test/fpat2.ok
+gawk-4.1.4/test/widesub3.awk
+gawk-4.1.4/test/symtab10.ok
+gawk-4.1.4/test/devfd.in1
+gawk-4.1.4/test/getline.ok
+gawk-4.1.4/test/rstest2.ok
+gawk-4.1.4/test/getline5.awk
+gawk-4.1.4/test/wideidx.ok
+gawk-4.1.4/test/aryprm6.ok
+gawk-4.1.4/test/exitval2.awk
+gawk-4.1.4/test/arrayref.ok
+gawk-4.1.4/test/zero2.awk
+gawk-4.1.4/test/leaddig.ok
+gawk-4.1.4/test/rsnul1nl.ok
+gawk-4.1.4/test/swaplns.in
+gawk-4.1.4/test/scalar.awk
+gawk-4.1.4/test/octsub.ok
+gawk-4.1.4/test/functab2.ok
+gawk-4.1.4/test/subamp.in
+gawk-4.1.4/test/fpat5.awk
+gawk-4.1.4/test/clos1way3.awk
+gawk-4.1.4/test/profile7.ok
+gawk-4.1.4/test/next.sh
+gawk-4.1.4/test/revout.ok
+gawk-4.1.4/test/double2.ok
+gawk-4.1.4/test/fnaryscl.awk
+gawk-4.1.4/test/mtchi18n.ok
+gawk-4.1.4/test/arrayprm3.ok
+gawk-4.1.4/test/convfmt.ok
+gawk-4.1.4/test/fsrs.awk
+gawk-4.1.4/test/lint.awk
+gawk-4.1.4/test/printfbad2.in
+gawk-4.1.4/test/range1.awk
+gawk-4.1.4/test/fnarray.awk
+gawk-4.1.4/test/sortfor2.in
+gawk-4.1.4/test/iobug1.ok
+gawk-4.1.4/test/jarebug.sh
+gawk-4.1.4/test/hex.ok
+gawk-4.1.4/test/testext.ok
+gawk-4.1.4/test/fwtest.ok
+gawk-4.1.4/test/incdupe2.ok
+gawk-4.1.4/test/backbigs1.in
+gawk-4.1.4/test/aasorti.ok
+gawk-4.1.4/test/ofmtbig.ok
+gawk-4.1.4/test/badbuild.awk
+gawk-4.1.4/test/asort.ok
+gawk-4.1.4/test/charasbytes.in
+gawk-4.1.4/test/tradanch.awk
+gawk-4.1.4/test/printf0.awk
+gawk-4.1.4/test/symtab8.in
+gawk-4.1.4/test/clos1way5.awk
+gawk-4.1.4/test/splitargv.in
+gawk-4.1.4/test/pipeio1.ok
+gawk-4.1.4/test/symtab5.ok
+gawk-4.1.4/test/delargv.ok
+gawk-4.1.4/test/symtab9.awk
+gawk-4.1.4/test/rebuf.in
+gawk-4.1.4/test/gsubasgn.ok
+gawk-4.1.4/test/symtab3.awk
+gawk-4.1.4/test/inplace1.2.ok
+gawk-4.1.4/test/funstack.in
+gawk-4.1.4/test/backsmalls2.ok
+gawk-4.1.4/test/backbigs1.ok
+gawk-4.1.4/test/regnul2.ok
+gawk-4.1.4/test/paramuninitglobal.ok
+gawk-4.1.4/test/reint2.awk
+gawk-4.1.4/test/intprec.ok
+gawk-4.1.4/test/indirectcall2.ok
+gawk-4.1.4/test/printhuge.awk
+gawk-4.1.4/test/mbprintf1.in
+gawk-4.1.4/test/rebuf.awk
+gawk-4.1.4/test/fwtest2.awk
+gawk-4.1.4/test/fnmatch.awk
+gawk-4.1.4/test/ChangeLog
+gawk-4.1.4/test/fsspcoln.awk
+gawk-4.1.4/test/incdupe.ok
+gawk-4.1.4/test/split_after_fpat.ok
+gawk-4.1.4/test/printfloat.awk
+gawk-4.1.4/test/parsefld.awk
+gawk-4.1.4/test/rscompat.ok
+gawk-4.1.4/test/aryprm5.awk
+gawk-4.1.4/test/sclforin.ok
+gawk-4.1.4/test/mpfrrnd.awk
+gawk-4.1.4/test/ofmts.ok
+gawk-4.1.4/test/clobber.ok
+gawk-4.1.4/test/splitarg4.awk
+gawk-4.1.4/test/fldchg.ok
+gawk-4.1.4/test/nondec2.awk
+gawk-4.1.4/test/regeq.in
+gawk-4.1.4/test/argarray.awk
+gawk-4.1.4/test/back89.in
+gawk-4.1.4/test/arryref4.awk
+gawk-4.1.4/test/indirectcall.in
+gawk-4.1.4/test/wjposer1.ok
+gawk-4.1.4/test/ofmtbig.in
+gawk-4.1.4/test/aryprm9.awk
+gawk-4.1.4/test/xref.original
+gawk-4.1.4/test/inpref.in
+gawk-4.1.4/test/widesub2.ok
+gawk-4.1.4/test/symtab4.in
+gawk-4.1.4/test/fsspcoln.ok
+gawk-4.1.4/test/backgsub.awk
+gawk-4.1.4/test/longdbl.ok
+gawk-4.1.4/test/gsubtst5.ok
+gawk-4.1.4/test/arrayind1.ok
+gawk-4.1.4/test/longdbl.awk
+gawk-4.1.4/test/inplace3.ok
+gawk-4.1.4/test/callparam.ok
+gawk-4.1.4/test/sigpipe1.ok
+gawk-4.1.4/test/fts.awk
+gawk-4.1.4/test/functab2.awk
+gawk-4.1.4/test/fmtspcl.tok
+gawk-4.1.4/test/back89.awk
+gawk-4.1.4/test/clsflnam.awk
+gawk-4.1.4/test/delfunc.ok
+gawk-4.1.4/test/paramdup.awk
+gawk-4.1.4/test/fnamedat.ok
+gawk-4.1.4/test/indirectcall.awk
+gawk-4.1.4/test/ChangeLog.0
+gawk-4.1.4/test/uninitialized.awk
+gawk-4.1.4/test/rstest6.awk
+gawk-4.1.4/test/hello.awk
+gawk-4.1.4/test/exit.sh
+gawk-4.1.4/test/devfd1.awk
+gawk-4.1.4/test/datanonl.in
+gawk-4.1.4/test/ordchr2.ok
+gawk-4.1.4/test/nlinstr.ok
+gawk-4.1.4/test/rstest3.ok
+gawk-4.1.4/test/wideidx.in
+gawk-4.1.4/test/rwarray.awk
+gawk-4.1.4/test/negexp.awk
+gawk-4.1.4/test/poundbang.awk
+gawk-4.1.4/test/fnarydel-mpfr.ok
+gawk-4.1.4/test/mbprintf1.ok
+gawk-4.1.4/test/time.ok
+gawk-4.1.4/test/negtime.ok
+gawk-4.1.4/test/childin.in
+gawk-4.1.4/test/widesub4.ok
+gawk-4.1.4/test/nlfldsep.awk
+gawk-4.1.4/test/uparrfs.in
+gawk-4.1.4/test/jarebug.awk
+gawk-4.1.4/test/rand.ok
+gawk-4.1.4/test/devfd1.ok
+gawk-4.1.4/test/ofs1.in
+gawk-4.1.4/test/pipeio2.in
+gawk-4.1.4/test/colonwarn.in
+gawk-4.1.4/test/match3.ok
+gawk-4.1.4/test/profile7.awk
+gawk-4.1.4/test/compare.ok
+gawk-4.1.4/test/symtab3.ok
+gawk-4.1.4/test/asorti.ok
+gawk-4.1.4/test/posix.in
+gawk-4.1.4/test/functab4.awk
+gawk-4.1.4/test/arraysort.awk
+gawk-4.1.4/test/hex.awk
+gawk-4.1.4/test/iobug1.awk
+gawk-4.1.4/test/rebt8b2.awk
+gawk-4.1.4/test/rtlen01.sh
+gawk-4.1.4/test/regx8bit.awk
+gawk-4.1.4/test/numindex.in
+gawk-4.1.4/test/dfamb1.in
+gawk-4.1.4/test/rtlen.sh
+gawk-4.1.4/test/zero2.ok
+gawk-4.1.4/test/asorti.awk
+gawk-4.1.4/test/id.awk
+gawk-4.1.4/test/asgext.in
+gawk-4.1.4/test/dfastress.awk
+gawk-4.1.4/test/nondec.awk
+gawk-4.1.4/test/aadelete2.awk
+gawk-4.1.4/test/numindex.awk
+gawk-4.1.4/test/inpref.awk
+gawk-4.1.4/test/sortfor.ok
+gawk-4.1.4/test/symtab6.awk
+gawk-4.1.4/test/printfbad3.awk
+gawk-4.1.4/test/gsubtest.ok
+gawk-4.1.4/test/icasers.ok
+gawk-4.1.4/test/clsflnam.ok
+gawk-4.1.4/test/nondec.ok
+gawk-4.1.4/test/parse1.ok
+gawk-4.1.4/test/backsmalls1.ok
+gawk-4.1.4/test/fldchgnf.awk
+gawk-4.1.4/test/lintold.awk
+gawk-4.1.4/test/mbprintf1.awk
+gawk-4.1.4/test/posix.awk
+gawk-4.1.4/test/splitdef.awk
+gawk-4.1.4/test/exit2.awk
+gawk-4.1.4/test/getlndir.ok
+gawk-4.1.4/test/switch2.awk
+gawk-4.1.4/test/rand.awk
+gawk-4.1.4/test/childin.awk
+gawk-4.1.4/test/awkpath.ok
+gawk-4.1.4/test/fnarray2.in
+gawk-4.1.4/test/out1.ok
+gawk-4.1.4/test/igncdym.in
+gawk-4.1.4/test/paramres.ok
+gawk-4.1.4/test/fieldwdth.awk
+gawk-4.1.4/test/delarpm2.ok
+gawk-4.1.4/test/backgsub.ok
+gawk-4.1.4/test/rstest3.awk
+gawk-4.1.4/test/nasty.ok
+gawk-4.1.4/test/fwtest3.in
+gawk-4.1.4/test/patsplit.awk
+gawk-4.1.4/test/ignrcas2.ok
+gawk-4.1.4/test/fstabplus.ok
+gawk-4.1.4/test/regeq.ok
+gawk-4.1.4/test/forref.ok
+gawk-4.1.4/test/fmttest.ok
+gawk-4.1.4/test/exitval3.ok
+gawk-4.1.4/test/concat1.awk
+gawk-4.1.4/test/tradanch.in
+gawk-4.1.4/test/membug1.in
+gawk-4.1.4/test/wideidx2.ok
+gawk-4.1.4/test/rstest4.awk
+gawk-4.1.4/test/delsub.ok
+gawk-4.1.4/test/mtchi18n.in
+gawk-4.1.4/test/backw.ok
+gawk-4.1.4/test/fnparydl-mpfr.ok
+gawk-4.1.4/test/getnr2tm.ok
+gawk-4.1.4/test/back89.ok
+gawk-4.1.4/test/space.ok
+gawk-4.1.4/test/igncfs.ok
+gawk-4.1.4/test/uninitialized.ok
+gawk-4.1.4/test/paramasfunc1.awk
+gawk-4.1.4/test/splitvar.in
+gawk-4.1.4/test/mpfrsort.awk
+gawk-4.1.4/test/prtoeval.ok
+gawk-4.1.4/test/colonwarn.ok
+gawk-4.1.4/test/paramasfunc2.awk
+gawk-4.1.4/test/rstest1.awk
+gawk-4.1.4/test/fsbs.ok
+gawk-4.1.4/test/gtlnbufv.awk
+gawk-4.1.4/test/sprintfc.awk
+gawk-4.1.4/test/litoct.awk
+gawk-4.1.4/test/fwtest.awk
+gawk-4.1.4/test/paramres.awk
+gawk-4.1.4/test/incdupe7.ok
+gawk-4.1.4/test/igncfs.awk
+gawk-4.1.4/test/concat4.ok
+gawk-4.1.4/test/include.ok
+gawk-4.1.4/test/fpat2.awk
+gawk-4.1.4/test/getline2.ok
+gawk-4.1.4/test/argarray.ok
+gawk-4.1.4/test/colonwarn.awk
+gawk-4.1.4/test/mbfw1.ok
+gawk-4.1.4/test/printfbad3.ok
+gawk-4.1.4/test/synerr2.ok
+gawk-4.1.4/test/reparse.awk
+gawk-4.1.4/test/rebt8b1.ok
+gawk-4.1.4/test/unterm.awk
+gawk-4.1.4/test/devfd.in2
+gawk-4.1.4/test/profile0.awk
+gawk-4.1.4/test/nonl.awk
+gawk-4.1.4/test/backbigs1.awk
+gawk-4.1.4/test/fsrs.in
+gawk-4.1.4/test/fsfwfs.awk
+gawk-4.1.4/test/ignrcas3.ok
+gawk-4.1.4/test/nofmtch.awk
+gawk-4.1.4/test/range1.in
+gawk-4.1.4/test/strtod.ok
+gawk-4.1.4/test/fpatnull.in
+gawk-4.1.4/test/substr.awk
+gawk-4.1.4/test/exit2.ok
+gawk-4.1.4/test/rri1.in
+gawk-4.1.4/test/intformat.ok
+gawk-4.1.4/test/rebrackloc.in
+gawk-4.1.4/test/argtest.awk
+gawk-4.1.4/test/onlynl.in
+gawk-4.1.4/test/incdupe6.ok
+gawk-4.1.4/test/mpfrsort.ok
+gawk-4.1.4/test/ordchr.awk
+gawk-4.1.4/test/jarebug.in
+gawk-4.1.4/test/ofmt.in
+gawk-4.1.4/test/math.ok
+gawk-4.1.4/test/delargv.awk
+gawk-4.1.4/test/clos1way4.ok
+gawk-4.1.4/test/nonl.ok
+gawk-4.1.4/test/gsubtst7.ok
+gawk-4.1.4/test/profile8.awk
+gawk-4.1.4/test/watchpoint1.script
+gawk-4.1.4/test/printfbad1.ok
+gawk-4.1.4/test/fstabplus.in
+gawk-4.1.4/test/hsprint.awk
+gawk-4.1.4/test/clobber.awk
+gawk-4.1.4/test/fnarray.ok
+gawk-4.1.4/test/mpfrsqrt.ok
+gawk-4.1.4/test/nulinsrc.awk
+gawk-4.1.4/test/widesub2.awk
+gawk-4.1.4/test/arrayprm3.awk
+gawk-4.1.4/test/splitwht.ok
+gawk-4.1.4/test/fsnul1.awk
+gawk-4.1.4/test/nors.in
+gawk-4.1.4/test/argarray.in
+gawk-4.1.4/test/include.awk
+gawk-4.1.4/test/widesub3.ok
+gawk-4.1.4/test/subi18n.awk
+gawk-4.1.4/test/aryprm3.ok
+gawk-4.1.4/test/mbprintf4.awk
+gawk-4.1.4/test/aryprm1.awk
+gawk-4.1.4/test/arrayparm.ok
+gawk-4.1.4/test/ignrcase.awk
+gawk-4.1.4/test/lint.ok
+gawk-4.1.4/test/rs.ok
+gawk-4.1.4/test/prt1eval.awk
+gawk-4.1.4/test/nested.ok
+gawk-4.1.4/test/fnasgnm.ok
+gawk-4.1.4/test/inplace1.1.ok
+gawk-4.1.4/test/README
+gawk-4.1.4/test/exitval2.ok
+gawk-4.1.4/test/parseme.awk
+gawk-4.1.4/test/rstest4.ok
+gawk-4.1.4/test/badargs.ok
+gawk-4.1.4/test/beginfile1.ok
+gawk-4.1.4/test/functab1.awk
+gawk-4.1.4/test/parse1.in
+gawk-4.1.4/test/profile5.ok
+gawk-4.1.4/test/aryprm7.ok
+gawk-4.1.4/test/aadelete2.ok
+gawk-4.1.4/test/indirectbuiltin.ok
+gawk-4.1.4/test/readfile2.ok
+gawk-4.1.4/test/devfd.in4
+gawk-4.1.4/test/nofile.ok
+gawk-4.1.4/test/printfbad4.ok
+gawk-4.1.4/test/tradanch.ok
+gawk-4.1.4/test/functab3.awk
+gawk-4.1.4/test/mbprintf3.ok
+gawk-4.1.4/test/fcall_exit2.awk
+gawk-4.1.4/test/profile2.ok
+gawk-4.1.4/test/ofmts.awk
+gawk-4.1.4/test/manyfiles.awk
+gawk-4.1.4/test/rri1.awk
+gawk-4.1.4/test/prmarscl.awk
+gawk-4.1.4/test/redfilnm.awk
+gawk-4.1.4/test/badbuild.in
+gawk-4.1.4/test/dumpvars.in
+gawk-4.1.4/test/getlnbuf.awk
+gawk-4.1.4/test/rsgetline.ok
+gawk-4.1.4/test/mbprintf4.in
+gawk-4.1.4/test/redfilnm.ok
+gawk-4.1.4/test/concat1.ok
+gawk-4.1.4/test/fnamedat.in
+gawk-4.1.4/test/negtime.awk
+gawk-4.1.4/test/symtab9.ok
+gawk-4.1.4/test/splitwht.awk
+gawk-4.1.4/test/gsubtst8.ok
+gawk-4.1.4/test/sigpipe1.awk
+gawk-4.1.4/test/fflush.sh
+gawk-4.1.4/test/widesub.ok
+gawk-4.1.4/test/printfbad2.ok
+gawk-4.1.4/test/fwtest3.ok
+gawk-4.1.4/test/revout.awk
+gawk-4.1.4/test/asgext.ok
+gawk-4.1.4/test/inplace3.2.ok
+gawk-4.1.4/test/exitval1.ok
+gawk-4.1.4/test/numsubstr.awk
+gawk-4.1.4/test/funlen.ok
+gawk-4.1.4/test/aryprm8.ok
+gawk-4.1.4/test/printf1.ok
+gawk-4.1.4/test/sortglos.in
+gawk-4.1.4/test/gsubtst3.awk
+gawk-4.1.4/test/ignrcas3.awk
+gawk-4.1.4/test/delarprm.ok
+gawk-4.1.4/test/fcall_exit.awk
+gawk-4.1.4/test/rstest1.ok
+gawk-4.1.4/test/childin.ok
+gawk-4.1.4/test/gnureops.awk
+gawk-4.1.4/test/fnarydel.ok
+gawk-4.1.4/test/genpot.awk
+gawk-4.1.4/test/nlfldsep.in
+gawk-4.1.4/test/delarprm.awk
+gawk-4.1.4/test/printfbad1.awk
+gawk-4.1.4/test/aarray1.awk
+gawk-4.1.4/test/parse1.awk
+gawk-4.1.4/test/rswhite.awk
+gawk-4.1.4/test/mbstr2.ok
+gawk-4.1.4/test/revtwoway.ok
+gawk-4.1.4/test/sortfor.in
+gawk-4.1.4/test/profile5.awk
+gawk-4.1.4/test/ofmt.ok
+gawk-4.1.4/test/fork2.awk
+gawk-4.1.4/test/nasty2.ok
+gawk-4.1.4/test/prmreuse.ok
+gawk-4.1.4/test/nested.awk
+gawk-4.1.4/test/inplace2.ok
+gawk-4.1.4/test/gsubtst6.awk
+gawk-4.1.4/test/sclifin.awk
+gawk-4.1.4/test/symtab10.awk
+gawk-4.1.4/test/strtod.awk
+gawk-4.1.4/test/fflush.ok
+gawk-4.1.4/test/aasort.ok
+gawk-4.1.4/test/mpfrrnd.ok
+gawk-4.1.4/test/prdupval.ok
+gawk-4.1.4/test/uparrfs.ok
+gawk-4.1.4/test/rsstart1.awk
+gawk-4.1.4/test/mpfrnr.ok
+gawk-4.1.4/test/addcomma.ok
+gawk-4.1.4/test/rebt8b2.ok
+gawk-4.1.4/test/rsgetline.in
+gawk-4.1.4/test/pid.awk
+gawk-4.1.4/test/defref.awk
+gawk-4.1.4/test/nulinsrc.ok
+gawk-4.1.4/test/shadow.ok
+gawk-4.1.4/test/opasnidx.awk
+gawk-4.1.4/test/noloop2.awk
+gawk-4.1.4/test/rebt8b1.awk
+gawk-4.1.4/test/inplace2.1.ok
+gawk-4.1.4/test/functab1.ok
+gawk-4.1.4/test/rstest5.awk
+gawk-4.1.4/test/fcall_exit.ok
+gawk-4.1.4/test/prt1eval.ok
+gawk-4.1.4/test/rsgetline.awk
+gawk-4.1.4/test/leadnl.awk
+gawk-4.1.4/test/lintold.in
+gawk-4.1.4/test/double1.awk
+gawk-4.1.4/test/rscompat.in
+gawk-4.1.4/test/strftlng.ok
+gawk-4.1.4/test/printf0.ok
+gawk-4.1.4/test/fsbs.awk
+gawk-4.1.4/test/aryprm4.awk
+gawk-4.1.4/test/ordchr.ok
+gawk-4.1.4/test/strcat1.ok
+gawk-4.1.4/test/posix.ok
+gawk-4.1.4/test/profile4.ok
+gawk-4.1.4/test/forsimp.awk
+gawk-4.1.4/test/watchpoint1.ok
+gawk-4.1.4/test/ofmta.ok
+gawk-4.1.4/test/match1.ok
+gawk-4.1.4/test/revtwoway.awk
+gawk-4.1.4/test/arynocls.ok
+gawk-4.1.4/test/mpfrnr.awk
+gawk-4.1.4/test/arynasty.awk
+gawk-4.1.4/test/getline2.awk
+gawk-4.1.4/test/dfamb1.ok
+gawk-4.1.4/test/aadelete1.ok
+gawk-4.1.4/test/fldchg.in
+gawk-4.1.4/test/nlstrina.awk
+gawk-4.1.4/test/nlinstr.awk
+gawk-4.1.4/test/getlnhd.ok
+gawk-4.1.4/test/tweakfld.ok
+gawk-4.1.4/test/inclib.awk
+gawk-4.1.4/test/printf1.awk
+gawk-4.1.4/test/sortfor2.ok
+gawk-4.1.4/test/fldchgnf.in
+gawk-4.1.4/test/fnasgnm.in
+gawk-4.1.4/test/mpfrexprange.awk
+gawk-4.1.4/test/profile3.awk
+gawk-4.1.4/test/dfamb1.awk
+gawk-4.1.4/test/devfd2.ok
+gawk-4.1.4/test/sprintfc.ok
+gawk-4.1.4/test/fpat4.ok
+gawk-4.1.4/test/inplace2.2.ok
+gawk-4.1.4/test/readbuf.ok
+gawk-4.1.4/test/lib/
+gawk-4.1.4/test/lib/awkpath.awk
+gawk-4.1.4/test/parsefld.ok
+gawk-4.1.4/test/funsemnl.awk
+gawk-4.1.4/test/splitdef.ok
+gawk-4.1.4/test/inplace3.2.bak.ok
+gawk-4.1.4/test/profile6.ok
+gawk-4.1.4/test/indirectcall2.awk
+gawk-4.1.4/test/symtab5.awk
+gawk-4.1.4/test/mbprintf2.ok
+gawk-4.1.4/test/resplit.in
+gawk-4.1.4/test/uninit3.awk
+gawk-4.1.4/test/clos1way2.ok
+gawk-4.1.4/test/gsubtst7.awk
+gawk-4.1.4/test/igncdym.awk
+gawk-4.1.4/test/rtlen.ok
+gawk-4.1.4/test/mbstr2.awk
+gawk-4.1.4/test/fnmisc.ok
+gawk-4.1.4/test/lintwarn.ok
+gawk-4.1.4/test/numsubstr.in
+gawk-4.1.4/test/reint2.ok
+gawk-4.1.4/test/symtab10.in
+gawk-4.1.4/test/hex2.ok
+gawk-4.1.4/test/clos1way5.ok
+gawk-4.1.4/test/clos1way3.ok
+gawk-4.1.4/test/procinfs.ok
+gawk-4.1.4/test/Maketests
+gawk-4.1.4/test/match2.awk
+gawk-4.1.4/test/inplace2.1.bak.ok
+gawk-4.1.4/test/rswhite.in
+gawk-4.1.4/test/beginfile2.in
+gawk-4.1.4/test/nlfldsep.ok
+gawk-4.1.4/test/fpat1.ok
+gawk-4.1.4/test/concat3.awk
+gawk-4.1.4/test/readdir.awk
+gawk-4.1.4/test/fsfwfs.in
+gawk-4.1.4/test/mbfw1.awk
+gawk-4.1.4/test/fnparydl.ok
+gawk-4.1.4/test/lc_num1.awk
+gawk-4.1.4/test/fmttest.awk
+gawk-4.1.4/test/opasnidx.ok
+gawk-4.1.4/test/nfset.in
+gawk-4.1.4/test/rebuf.ok
+gawk-4.1.4/test/mbprintf3.in
+gawk-4.1.4/test/widesub.awk
+gawk-4.1.4/test/getline4.ok
+gawk-4.1.4/test/pid.sh
+gawk-4.1.4/test/rsstart3.ok
+gawk-4.1.4/test/fnaryscl.ok
+gawk-4.1.4/test/watchpoint1.in
+gawk-4.1.4/test/pid.ok
+gawk-4.1.4/test/fsfwfs.ok
+gawk-4.1.4/test/profile3.ok
+gawk-4.1.4/test/arryref5.awk
+gawk-4.1.4/test/reint.in
+gawk-4.1.4/test/crlf.ok
+gawk-4.1.4/test/uninit4.ok
+gawk-4.1.4/test/gsubtst5.in
+gawk-4.1.4/test/rsstart2.ok
+gawk-4.1.4/test/prdupval.in
+gawk-4.1.4/test/patsplit.ok
+gawk-4.1.4/test/getnr2tb.in
+gawk-4.1.4/test/mbstr1.awk
+gawk-4.1.4/test/noparms.awk
+gawk-4.1.4/test/inplace3.1.bak.ok
+gawk-4.1.4/test/beginfile2.ok
+gawk-4.1.4/test/arrymem1.ok
+gawk-4.1.4/test/posix2008sub.ok
+gawk-4.1.4/test/nasty2.awk
+gawk-4.1.4/test/arraysort.ok
+gawk-4.1.4/test/fpat3.ok
+gawk-4.1.4/test/scalar.ok
+gawk-4.1.4/test/gsubtst7.in
+gawk-4.1.4/test/clos1way2.awk
+gawk-4.1.4/test/fmtspcl.awk
+gawk-4.1.4/test/concat4.awk
+gawk-4.1.4/test/symtab1.awk
+gawk-4.1.4/test/fsnul1.in
+gawk-4.1.4/test/getline.awk
+gawk-4.1.4/test/delsub.awk
+gawk-4.1.4/test/hex2.awk
+gawk-4.1.4/test/igncfs.in
+gawk-4.1.4/test/closebad.awk
+gawk-4.1.4/test/profile0.in
+gawk-4.1.4/test/fldchgnf.ok
+gawk-4.1.4/test/Gentests.vms
+gawk-4.1.4/test/devfd.in5
+gawk-4.1.4/test/regexprange.ok
+gawk-4.1.4/test/fnparydl.awk
+gawk-4.1.4/test/funstack.ok
+gawk-4.1.4/test/inplace.in
+gawk-4.1.4/test/arrayind1.in
+gawk-4.1.4/test/mbfw1.in
+gawk-4.1.4/test/localenl.sh
+gawk-4.1.4/test/fwtest3.awk
+gawk-4.1.4/test/fcall_exit2.in
+gawk-4.1.4/test/aryprm8.awk
+gawk-4.1.4/test/fnmisc.awk
+gawk-4.1.4/test/regexpbrack2.in
+gawk-4.1.4/test/gsubtst3.ok
+gawk-4.1.4/test/delfunc.awk
+gawk-4.1.4/test/badbuild.ok
+gawk-4.1.4/test/rsstart1.ok
+gawk-4.1.4/test/range1.ok
+gawk-4.1.4/test/profile4.awk
+gawk-4.1.4/test/rsnulbig2.ok
+gawk-4.1.4/test/splitarg4.ok
+gawk-4.1.4/test/localenl.ok
+gawk-4.1.4/test/printlang.awk
+gawk-4.1.4/test/dfastress.ok
+gawk-4.1.4/test/lintwarn.awk
+gawk-4.1.4/test/fpat1.in
+gawk-4.1.4/test/nulrsend.ok
+gawk-4.1.4/test/fldchg.awk
+gawk-4.1.4/test/compare.in
+gawk-4.1.4/test/Gentests
+gawk-4.1.4/test/indirectbuiltin.awk
+gawk-4.1.4/test/convfmt.awk
+gawk-4.1.4/test/nors.ok
+gawk-4.1.4/test/fwtest2.ok
+gawk-4.1.4/test/fpat3.awk
+gawk-4.1.4/test/noeffect.awk
+gawk-4.1.4/test/fsrs.ok
+gawk-4.1.4/test/math.awk
+gawk-4.1.4/test/mpfrsqrt.awk
+gawk-4.1.4/test/fpat1.awk
+gawk-4.1.4/test/nfset.awk
+gawk-4.1.4/test/fpat5.in
+gawk-4.1.4/test/manyfiles.ok
+gawk-4.1.4/test/funstack.awk
+gawk-4.1.4/test/nfset.ok
+gawk-4.1.4/test/arrayind1.awk
+gawk-4.1.4/test/out2.ok
+gawk-4.1.4/test/mbstr2.in
+gawk-4.1.4/test/nasty.awk
+gawk-4.1.4/test/getnr2tb.awk
+gawk-4.1.4/test/readbuf.awk
+gawk-4.1.4/test/printfbad2.awk
+gawk-4.1.4/test/noloop1.awk
+gawk-4.1.4/test/pcntplus.ok
+gawk-4.1.4/test/mpfrmemok1.awk
+gawk-4.1.4/test/profile8.ok
+gawk-4.1.4/test/messages.awk
+gawk-4.1.4/test/minusstr.ok
+gawk-4.1.4/test/regrange.awk
+gawk-4.1.4/test/noloop1.in
+gawk-4.1.4/test/gnureops.ok
+gawk-4.1.4/test/longwrds.awk
+gawk-4.1.4/test/backw.in
+gawk-4.1.4/test/regtest.sh
+gawk-4.1.4/test/genpot.ok
+gawk-4.1.4/test/redfilnm.in
+gawk-4.1.4/test/regexpbrack.in
+gawk-4.1.4/test/fpat4.awk
+gawk-4.1.4/test/concat2.awk
+gawk-4.1.4/test/longwrds.ok
+gawk-4.1.4/test/paramasfunc1.ok
+gawk-4.1.4/test/intformat.awk
+gawk-4.1.4/test/inplace.2.in
+gawk-4.1.4/test/gsubtst2.ok
+gawk-4.1.4/test/incdupe4.ok
+gawk-4.1.4/test/nfldstr.ok
+gawk-4.1.4/test/leadnl.ok
+gawk-4.1.4/test/splitvar.ok
+gawk-4.1.4/test/getnr2tm.in
+gawk-4.1.4/test/regexpbrack2.awk
+gawk-4.1.4/test/mpfrmemok1.ok
+gawk-4.1.4/test/filefuncs.ok
+gawk-4.1.4/test/exitval1.awk
+gawk-4.1.4/test/next.ok
+gawk-4.1.4/test/posix2008sub.awk
+gawk-4.1.4/test/regeq.awk
+gawk-4.1.4/test/nlinstr.in
+gawk-4.1.4/test/sclforin.awk
+gawk-4.1.4/test/devfd.ok
+gawk-4.1.4/test/ignrcase.ok
+gawk-4.1.4/test/membug1.awk
+gawk-4.1.4/test/inplace1.ok
+gawk-4.1.4/test/concat1.in
+gawk-4.1.4/test/binmode1.ok
+gawk-4.1.4/test/gsubtst4.awk
+gawk-4.1.4/test/nulrsend.in
+gawk-4.1.4/test/noloop2.in
+gawk-4.1.4/test/splitarg4.in
+gawk-4.1.4/test/gsubtst2.awk
+gawk-4.1.4/test/strtonum.awk
+gawk-4.1.4/test/fnarray2.awk
+gawk-4.1.4/test/manglprm.in
+gawk-4.1.4/test/aryprm2.ok
+gawk-4.1.4/test/arryref3.ok
+gawk-4.1.4/test/regnul1.awk
+gawk-4.1.4/test/zeroe0.ok
+gawk-4.1.4/test/funsmnam.ok
+gawk-4.1.4/test/ofmtstrnum.awk
+gawk-4.1.4/test/readdir0.awk
+gawk-4.1.4/test/anchgsub.ok
+gawk-4.1.4/test/rsstart2.awk
+gawk-4.1.4/test/compare2.ok
+gawk-4.1.4/test/igncdym.ok
+gawk-4.1.4/test/inpref.ok
+gawk-4.1.4/test/icasers.in
+gawk-4.1.4/test/mbprintf2.awk
+gawk-4.1.4/test/eofsplit.awk
+gawk-4.1.4/test/mpfrnr.in
+gawk-4.1.4/test/inplace.1.in
+gawk-4.1.4/test/gsubtest.awk
+gawk-4.1.4/test/longdbl.in
+gawk-4.1.4/test/ofmta.awk
+gawk-4.1.4/test/getline3.awk
+gawk-4.1.4/test/rsglstdin.ok
+gawk-4.1.4/test/fork2.ok
+gawk-4.1.4/test/backgsub.in
+gawk-4.1.4/test/sprintfc.in
+gawk-4.1.4/test/numindex.ok
+gawk-4.1.4/test/tweakfld.in
+gawk-4.1.4/test/uninit2.ok
+gawk-4.1.4/test/regx8bit.ok
+gawk-4.1.4/test/leadnl.in
+gawk-4.1.4/test/sort1.awk
+gawk-4.1.4/test/fwtest2.in
+gawk-4.1.4/test/getline3.ok
+gawk-4.1.4/test/nfneg.awk
+gawk-4.1.4/test/arryref2.awk
+gawk-4.1.4/test/membug1.ok
+gawk-4.1.4/test/onlynl.awk
+gawk-4.1.4/test/dbugeval.ok
+gawk-4.1.4/test/prec.ok
+gawk-4.1.4/test/fieldwdth.ok
+gawk-4.1.4/test/regexpbrack2.ok
+gawk-4.1.4/test/hsprint.ok
+gawk-4.1.4/test/arryref4.ok
+gawk-4.1.4/test/fpat5.ok
+gawk-4.1.4/test/aarray1.ok
+gawk-4.1.4/test/gsubtst8.awk
+gawk-4.1.4/test/noloop2.ok
+gawk-4.1.4/test/dbugeval.in
+gawk-4.1.4/test/datanonl.awk
+gawk-4.1.4/test/switch2.ok
+gawk-4.1.4/test/nfldstr.in
+gawk-4.1.4/test/strcat1.awk
+gawk-4.1.4/test/exitval2.w32
+gawk-4.1.4/test/gsubtst8.in
+gawk-4.1.4/test/onlynl.ok
+gawk-4.1.4/test/inputred.awk
+gawk-4.1.4/test/arynasty.ok
+gawk-4.1.4/test/clos1way4.awk
+gawk-4.1.4/test/pcntplus.awk
+gawk-4.1.4/test/splitvar.awk
+gawk-4.1.4/test/zeroe0.awk
+gawk-4.1.4/test/nfldstr.awk
+gawk-4.1.4/test/exitval3.awk
+gawk-4.1.4/test/beginfile1.awk
+gawk-4.1.4/test/getline5.ok
+gawk-4.1.4/test/beginfile2.sh
+gawk-4.1.4/test/gnuops3.ok
+gawk-4.1.4/test/parsefld.in
+gawk-4.1.4/test/uninit2.awk
+gawk-4.1.4/test/ofmtbig.awk
+gawk-4.1.4/test/fmtspcl-mpfr.ok
+gawk-4.1.4/test/split_after_fpat.awk
+gawk-4.1.4/test/include2.ok
+gawk-4.1.4/test/pipeio2.awk
+gawk-4.1.4/test/fnarray2.ok
+gawk-4.1.4/test/clos1way.awk
+gawk-4.1.4/test/rstest6.ok
+gawk-4.1.4/test/octsub.awk
+gawk-4.1.4/test/reint.ok
+gawk-4.1.4/test/exit.ok
+gawk-4.1.4/test/ofmtstrnum.ok
+gawk-4.1.4/test/time.awk
+gawk-4.1.4/test/pipeio2.ok
+gawk-4.1.4/test/aryprm1.ok
+gawk-4.1.4/test/mtchi18n.awk
+gawk-4.1.4/test/parseme.ok
+gawk-4.1.4/test/splitarr.awk
+gawk-4.1.4/test/subsepnm.awk
+gawk-4.1.4/test/gnuops2.ok
+gawk-4.1.4/test/nfneg.ok
+gawk-4.1.4/test/badassign1.awk
+gawk-4.1.4/test/getline4.awk
+gawk-4.1.4/test/functab3.ok
+gawk-4.1.4/test/charasbytes.ok
+gawk-4.1.4/test/reparse.in
+gawk-4.1.4/test/arryref5.ok
+gawk-4.1.4/test/inputred.ok
+gawk-4.1.4/test/leaddig.awk
+gawk-4.1.4/test/badassign1.ok
+gawk-4.1.4/test/inftest.ok
+gawk-4.1.4/test/rstest5.ok
+gawk-4.1.4/test/aadelete1.awk
+gawk-4.1.4/test/ofmtfidl.in
+gawk-4.1.4/test/sortu.awk
+gawk-4.1.4/test/uninit5.ok
+gawk-4.1.4/test/anchgsub.awk
+gawk-4.1.4/test/fpat3.in
+gawk-4.1.4/test/opasnslf.awk
+gawk-4.1.4/test/fsnul1.ok
+gawk-4.1.4/test/rsnul1nl.awk
+gawk-4.1.4/test/fpatnull.ok
+gawk-4.1.4/test/arryref2.ok
+gawk-4.1.4/test/forref.awk
+gawk-4.1.4/test/dynlj.ok
+gawk-4.1.4/test/checknegtime.awk
+gawk-4.1.4/test/prec.awk
+gawk-4.1.4/test/nulrsend.awk
+gawk-4.1.4/test/clos1way.ok
+gawk-4.1.4/test/sortfor2.awk
+gawk-4.1.4/test/functab4.ok
+gawk-4.1.4/test/ofs1.awk
+gawk-4.1.4/test/synerr1.awk
+gawk-4.1.4/test/symtab2.ok
+gawk-4.1.4/test/tweakfld.awk
+gawk-4.1.4/test/zeroflag.awk
+gawk-4.1.4/test/funsemnl.ok
+gawk-4.1.4/test/paramasfunc2.ok
+gawk-4.1.4/test/filefuncs.awk
+gawk-4.1.4/test/longsub.ok
+gawk-4.1.4/test/mpfrrem.ok
+gawk-4.1.4/test/arynocls.awk
+gawk-4.1.4/test/dumpvars.ok
+gawk-4.1.4/test/gnuops3.awk
+gawk-4.1.4/test/negrange.ok
+gawk-4.1.4/test/splitargv.ok
+gawk-4.1.4/test/getline.in
+gawk-4.1.4/test/getnr2tb.ok
+gawk-4.1.4/test/intest.ok
+gawk-4.1.4/test/icasefs.ok
+gawk-4.1.4/test/lc_num1.ok
+gawk-4.1.4/test/clos1way2.in
+gawk-4.1.4/test/symtab4.awk
+gawk-4.1.4/test/concat4.in
+gawk-4.1.4/test/negrange.awk
+gawk-4.1.4/test/fnasgnm.awk
+gawk-4.1.4/test/rebrackloc.ok
+gawk-4.1.4/test/incdupe3.ok
+gawk-4.1.4/test/fordel.ok
+gawk-4.1.4/test/paramtyp.ok
+gawk-4.1.4/test/subsepnm.ok
+gawk-4.1.4/test/splitargv.awk
+gawk-4.1.4/test/prmreuse.awk
+gawk-4.1.4/test/symtab7.awk
+gawk-4.1.4/test/unterm.ok
+gawk-4.1.4/test/reindops.ok
+gawk-4.1.4/test/reparse.ok
+gawk-4.1.4/test/paramdup.ok
+gawk-4.1.4/test/arysubnm.ok
+gawk-4.1.4/test/arrayprm2.ok
+gawk-4.1.4/test/noparms.ok
+gawk-4.1.4/test/nastyparm.awk
+gawk-4.1.4/test/indirectcall.ok
+gawk-4.1.4/test/widesub4.awk
+gawk-4.1.4/test/mpfrrem.awk
+gawk-4.1.4/test/strftime.awk
+gawk-4.1.4/test/reint.awk
+gawk-4.1.4/test/sortfor.awk
+gawk-4.1.4/test/subi18n.ok
+gawk-4.1.4/test/ofmtfidl.awk
+gawk-4.1.4/test/getlnbuf.in
+gawk-4.1.4/test/gsubtst4.ok
+gawk-4.1.4/test/symtab4.ok
+gawk-4.1.4/test/regexpbrack.ok
+gawk-4.1.4/test/concat3.ok
+gawk-4.1.4/test/mpfrieee.ok
+gawk-4.1.4/test/rsstart1.in
+gawk-4.1.4/test/wjposer1.awk
+gawk-4.1.4/test/noeffect.ok
+gawk-4.1.4/test/anchgsub.in
+gawk-4.1.4/test/funsmnam.awk
+gawk-4.1.4/test/ignrcase.in
+gawk-4.1.4/test/aryprm4.ok
+gawk-4.1.4/test/intprec.awk
+gawk-4.1.4/test/paramuninitglobal.awk
+gawk-4.1.4/test/pty1.awk
+gawk-4.1.4/test/manglprm.ok
+gawk-4.1.4/test/ofmt.awk
+gawk-4.1.4/test/strnum1.awk
+gawk-4.1.4/test/ofs1.ok
+gawk-4.1.4/test/fsbs.in
+gawk-4.1.4/test/gensub.awk
+gawk-4.1.4/test/symtab8.ok
+gawk-4.1.4/test/subback.ok
+gawk-4.1.4/test/rstest6.in
+gawk-4.1.4/test/Makefile.am
+gawk-4.1.4/test/aryprm2.awk
+gawk-4.1.4/test/printfbad4.awk
+gawk-4.1.4/test/wideidx.awk
+gawk-4.1.4/test/muldimposix.awk
+gawk-4.1.4/test/reg/
+gawk-4.1.4/test/reg/exp-eq.in
+gawk-4.1.4/test/reg/func2.awk
+gawk-4.1.4/test/reg/exp-eq.awk
+gawk-4.1.4/test/reg/exp-eq.good
+gawk-4.1.4/test/reg/func.in
+gawk-4.1.4/test/reg/Obsolete/
+gawk-4.1.4/test/reg/Obsolete/log.good
+gawk-4.1.4/test/reg/Obsolete/log.awk
+gawk-4.1.4/test/reg/Obsolete/exp.awk
+gawk-4.1.4/test/reg/Obsolete/exp.good
+gawk-4.1.4/test/reg/Obsolete/exp.in
+gawk-4.1.4/test/reg/Obsolete/log.in
+gawk-4.1.4/test/reg/func2.good
+gawk-4.1.4/test/reg/func2.in
+gawk-4.1.4/test/reg/func.good
+gawk-4.1.4/test/reg/func.awk
+gawk-4.1.4/test/muldimposix.ok
+gawk-4.1.4/test/eofsplit.ok
+gawk-4.1.4/test/inchello.awk
+gawk-4.1.4/test/strtonum.ok
+gawk-4.1.4/test/inplace2.2.bak.ok
+gawk-4.1.4/test/gensub2.awk
+gawk-4.1.4/test/strtod.in
+gawk-4.1.4/test/funlen.in
+gawk-4.1.4/test/uninit4.awk
+gawk-4.1.4/test/regnul1.ok
+gawk-4.1.4/test/litoct.ok
+gawk-4.1.4/test/aryprm3.awk
+gawk-4.1.4/test/arrayparm.awk
+gawk-4.1.4/test/Makefile.in
+gawk-4.1.4/test/strftlng.awk
+gawk-4.1.4/test/sortglos.awk
+gawk-4.1.4/test/backsmalls1.in
+gawk-4.1.4/test/symtab2.awk
+gawk-4.1.4/test/fnamedat.awk
+gawk-4.1.4/test/clsflnam.in
+gawk-4.1.4/test/mixed1.ok
+gawk-4.1.4/test/noloop1.ok
+gawk-4.1.4/test/delarpm2.awk
+gawk-4.1.4/test/paramtyp.awk
+gawk-4.1.4/test/wideidx2.awk
+gawk-4.1.4/test/ofmts.in
+gawk-4.1.4/test/zeroflag.ok
+gawk-4.1.4/test/sclifin.ok
+gawk-4.1.4/test/manglprm.awk
+gawk-4.1.4/test/reginttrad.awk
+gawk-4.1.4/test/rebrackloc.awk
+gawk-4.1.4/test/fieldwdth.in
+gawk-4.1.4/test/splitarr.ok
+gawk-4.1.4/test/asort.awk
+gawk-4.1.4/test/callparam.awk
+gawk-4.1.4/test/concat2.ok
+gawk-4.1.4/test/addcomma.in
+gawk-4.1.4/test/mpfrbigint.ok
+gawk-4.1.4/test/out3.ok
+gawk-4.1.4/test/split_after_fpat.in
+gawk-4.1.4/test/mpfrieee.awk
+gawk-4.1.4/test/reint2.in
+gawk-4.1.4/test/mmap8k.in
+gawk-4.1.4/test/symtab5.in
+gawk-4.1.4/test/datanonl.ok
+gawk-4.1.4/test/match2.ok
+gawk-4.1.4/test/rstest2.awk
+gawk-4.1.4/test/getnr2tm.awk
+gawk-4.1.4/test/regexpbrack.awk
+gawk-4.1.4/test/nlstrina.ok
+gawk-4.1.4/test/subamp.awk
+gawk-4.1.4/test/resplit.ok
+gawk-4.1.4/test/gsubtst3.in
+gawk-4.1.4/test/longsub.awk
+gawk-4.1.4/test/nondec2.ok
+gawk-4.1.4/test/synerr1.ok
+gawk-4.1.4/test/sortempty.ok
+gawk-4.1.4/test/rswhite.ok
+gawk-4.1.4/test/ignrcas2.awk
+gawk-4.1.4/random.h
+gawk-4.1.4/awkgram.c
+gawk-4.1.4/mbsupport.h
+gawk-4.1.4/ChangeLog
+gawk-4.1.4/depcomp
+gawk-4.1.4/po/
+gawk-4.1.4/po/en@boldquot.header
+gawk-4.1.4/po/it.po
+gawk-4.1.4/po/nl.po
+gawk-4.1.4/po/POTFILES.in
+gawk-4.1.4/po/boldquot.sed
+gawk-4.1.4/po/Makevars
+gawk-4.1.4/po/ca.po
+gawk-4.1.4/po/vi.gmo
+gawk-4.1.4/po/ja.po
+gawk-4.1.4/po/remove-potcdate.sin
+gawk-4.1.4/po/de.po
+gawk-4.1.4/po/ChangeLog
+gawk-4.1.4/po/fr.po
+gawk-4.1.4/po/da.po
+gawk-4.1.4/po/ChangeLog.0
+gawk-4.1.4/po/quot.sed
+gawk-4.1.4/po/fi.po
+gawk-4.1.4/po/es.po
+gawk-4.1.4/po/sv.gmo
+gawk-4.1.4/po/en@quot.header
+gawk-4.1.4/po/pl.gmo
+gawk-4.1.4/po/ja.gmo
+gawk-4.1.4/po/README
+gawk-4.1.4/po/ms.gmo
+gawk-4.1.4/po/LINGUAS
+gawk-4.1.4/po/gawk.pot
+gawk-4.1.4/po/vi.po
+gawk-4.1.4/po/fr.gmo
+gawk-4.1.4/po/insert-header.sin
+gawk-4.1.4/po/id.po
+gawk-4.1.4/po/ca.gmo
+gawk-4.1.4/po/es.gmo
+gawk-4.1.4/po/fi.gmo
+gawk-4.1.4/po/it.gmo
+gawk-4.1.4/po/Rules-quot
+gawk-4.1.4/po/nl.gmo
+gawk-4.1.4/po/pl.po
+gawk-4.1.4/po/de.gmo
+gawk-4.1.4/po/Makefile.in.in
+gawk-4.1.4/po/sv.po
+gawk-4.1.4/po/zh_CN.po
+gawk-4.1.4/po/da.gmo
+gawk-4.1.4/po/ms.po
+gawk-4.1.4/po/stamp-po
+gawk-4.1.4/po/zh_CN.gmo
+gawk-4.1.4/po/id.gmo
+gawk-4.1.4/protos.h
+gawk-4.1.4/mkinstalldirs
+gawk-4.1.4/dfa.c
+gawk-4.1.4/ChangeLog.0
+gawk-4.1.4/awkgram.y
+gawk-4.1.4/re.c
+gawk-4.1.4/ABOUT-NLS
+gawk-4.1.4/str_array.c
+gawk-4.1.4/builtin.c
+gawk-4.1.4/aclocal.m4
+gawk-4.1.4/nonposix.h
+gawk-4.1.4/regexec.c
+gawk-4.1.4/command.y
+gawk-4.1.4/doc/
+gawk-4.1.4/doc/gawkinet.texi
+gawk-4.1.4/doc/gawk.info
+gawk-4.1.4/doc/api-figure2.eps
+gawk-4.1.4/doc/rflashlight.eps
+gawk-4.1.4/doc/api-figure1.txt
+gawk-4.1.4/doc/no.colors
+gawk-4.1.4/doc/rflashlight.pdf
+gawk-4.1.4/doc/lflashlight.pdf
+gawk-4.1.4/doc/gawktexi.in
+gawk-4.1.4/doc/api-figure3.txt
+gawk-4.1.4/doc/ChangeLog
+gawk-4.1.4/doc/gawk.1
+gawk-4.1.4/doc/api-figure3.pdf
+gawk-4.1.4/doc/ChangeLog.0
+gawk-4.1.4/doc/statist.eps
+gawk-4.1.4/doc/general-program.txt
+gawk-4.1.4/doc/README.card
+gawk-4.1.4/doc/api-figure1.fig
+gawk-4.1.4/doc/cardfonts
+gawk-4.1.4/doc/lflashlight.eps
+gawk-4.1.4/doc/array-elements.eps
+gawk-4.1.4/doc/macros
+gawk-4.1.4/doc/gawk.texi
+gawk-4.1.4/doc/array-elements.pdf
+gawk-4.1.4/doc/process-flow.png
+gawk-4.1.4/doc/api-figure1.png
+gawk-4.1.4/doc/general-program.fig
+gawk-4.1.4/doc/colors
+gawk-4.1.4/doc/process-flow.txt
+gawk-4.1.4/doc/process-flow.fig
+gawk-4.1.4/doc/ad.block
+gawk-4.1.4/doc/rflashlight-small.xpic
+gawk-4.1.4/doc/texinfo.tex
+gawk-4.1.4/doc/lflashlight-small.xpic
+gawk-4.1.4/doc/api-figure3.eps
+gawk-4.1.4/doc/gawkinet.info
+gawk-4.1.4/doc/setter.outline
+gawk-4.1.4/doc/wordlist
+gawk-4.1.4/doc/array-elements.fig
+gawk-4.1.4/doc/general-program.eps
+gawk-4.1.4/doc/awkforai.txt
+gawk-4.1.4/doc/sidebar.awk
+gawk-4.1.4/doc/api-figure3.png
+gawk-4.1.4/doc/awkcard.in
+gawk-4.1.4/doc/api-figure2.png
+gawk-4.1.4/doc/array-elements.txt
+gawk-4.1.4/doc/array-elements.png
+gawk-4.1.4/doc/general-program.pdf
+gawk-4.1.4/doc/general-program.png
+gawk-4.1.4/doc/api-figure3.fig
+gawk-4.1.4/doc/igawk.1
+gawk-4.1.4/doc/api-figure1.pdf
+gawk-4.1.4/doc/api-figure2.txt
+gawk-4.1.4/doc/statist.pdf
+gawk-4.1.4/doc/bc_notes
+gawk-4.1.4/doc/process-flow.pdf
+gawk-4.1.4/doc/statist.jpg
+gawk-4.1.4/doc/api-figure1.eps
+gawk-4.1.4/doc/api-figure2.fig
+gawk-4.1.4/doc/Makefile.am
+gawk-4.1.4/doc/process-flow.eps
+gawk-4.1.4/doc/Makefile.in
+gawk-4.1.4/doc/api-figure2.pdf
+gawk-4.1.4/regcomp.c
+gawk-4.1.4/random.c
+gawk-4.1.4/main.c
+gawk-4.1.4/install-sh
+gawk-4.1.4/version.c
+gawk-4.1.4/getopt1.c
+gawk-4.1.4/dfa.h
+gawk-4.1.4/README
+gawk-4.1.4/ylwrap
+gawk-4.1.4/configure
+gawk-4.1.4/msg.c
+gawk-4.1.4/config.guess
+gawk-4.1.4/configh.in
+gawk-4.1.4/getopt.c
+gawk-4.1.4/regex_internal.c
+gawk-4.1.4/floatcomp.c
+gawk-4.1.4/gawkapi.h
+gawk-4.1.4/NEWS.0
+gawk-4.1.4/vms/
+gawk-4.1.4/vms/compare_gawk_source.com
+gawk-4.1.4/vms/gawk.cld
+gawk-4.1.4/vms/vms_crtl_init.c
+gawk-4.1.4/vms/make_pcsi_gawk_kit_name.com
+gawk-4.1.4/vms/gawk_plugin.opt
+gawk-4.1.4/vms/ChangeLog
+gawk-4.1.4/vms/pcsi_gawk_file_list.txt
+gawk-4.1.4/vms/ChangeLog.0
+gawk-4.1.4/vms/vmstest.com
+gawk-4.1.4/vms/redirect.h
+gawk-4.1.4/vms/vms_misc.c
+gawk-4.1.4/vms/gawkmisc.vms
+gawk-4.1.4/vms/gawk_alias_setup.com
+gawk-4.1.4/vms/vms_args.c
+gawk-4.1.4/vms/build_gawk_pcsi_text.com
+gawk-4.1.4/vms/vms_popen.c
+gawk-4.1.4/vms/descrip.mms
+gawk-4.1.4/vms/vms_sort.com
+gawk-4.1.4/vms/vms_cli.c
+gawk-4.1.4/vms/vmsbuild.com
+gawk-4.1.4/vms/gawk_release_note_start.txt
+gawk-4.1.4/vms/gnv_gawk_startup.com
+gawk-4.1.4/vms/vax/
+gawk-4.1.4/vms/vax/gawk_plugin_xfer.mar_exact
+gawk-4.1.4/vms/vax/ChangeLog
+gawk-4.1.4/vms/vax/macro32_exactcase.patch
+gawk-4.1.4/vms/vax/macro32_exactcase.com
+gawk-4.1.4/vms/vax/gawk_plugin_xfer.opt
+gawk-4.1.4/vms/posix-cc.sh
+gawk-4.1.4/vms/stage_gawk_install.com
+gawk-4.1.4/vms/vms_fwrite.c
+gawk-4.1.4/vms/gawk_ident.com
+gawk-4.1.4/vms/unixlib.h
+gawk-4.1.4/vms/pcsi_product_gawk.com
+gawk-4.1.4/vms/build_gawk_release_notes.com
+gawk-4.1.4/vms/build_gawk_pcsi_desc.com
+gawk-4.1.4/vms/gawk.hlp
+gawk-4.1.4/vms/config_h.com
+gawk-4.1.4/vms/remove_old_gawk.com
+gawk-4.1.4/vms/vms_gawk.c
+gawk-4.1.4/vms/backup_gawk_src.com
+gawk-4.1.4/vms/vms.h
+gawk-4.1.4/vms/generate_config_vms_h_gawk.com
+gawk-4.1.4/vms/gawk_build_steps.txt
+gawk-4.1.4/vms/varargs.h
+gawk-4.1.4/vms/gawk_verb.com
+gawk-4.1.4/gettext.h
+gawk-4.1.4/gawkmisc.c
+gawk-4.1.4/xalloc.h
+gawk-4.1.4/config.sub
+gawk-4.1.4/mpfr.c
+gawk-4.1.4/missing_d/
+gawk-4.1.4/missing_d/snprintf.c
+gawk-4.1.4/missing_d/fnmatch.h
+gawk-4.1.4/missing_d/gawkbool.h
+gawk-4.1.4/missing_d/setenv.c
+gawk-4.1.4/missing_d/wcmisc.c
+gawk-4.1.4/missing_d/strftime.c
+gawk-4.1.4/missing_d/ChangeLog
+gawk-4.1.4/missing_d/ChangeLog.0
+gawk-4.1.4/missing_d/memcpy.c
+gawk-4.1.4/missing_d/strncasecmp.c
+gawk-4.1.4/missing_d/getaddrinfo.c
+gawk-4.1.4/missing_d/README
+gawk-4.1.4/missing_d/strerror.c
+gawk-4.1.4/missing_d/COPYING.LIB
+gawk-4.1.4/missing_d/strchr.c
+gawk-4.1.4/missing_d/mktime.c
+gawk-4.1.4/missing_d/fnmatch.c
+gawk-4.1.4/missing_d/system.c
+gawk-4.1.4/missing_d/strtoul.c
+gawk-4.1.4/missing_d/strcoll.c
+gawk-4.1.4/missing_d/tzset.c
+gawk-4.1.4/missing_d/strtod.c
+gawk-4.1.4/missing_d/getaddrinfo.h
+gawk-4.1.4/missing_d/usleep.c
+gawk-4.1.4/missing_d/memcmp.c
+gawk-4.1.4/missing_d/memmove.c
+gawk-4.1.4/missing_d/memset.c
+gawk-4.1.4/gawkapi.c
+gawk-4.1.4/pc/
+gawk-4.1.4/pc/Makefile.tst
+gawk-4.1.4/pc/awklib/
+gawk-4.1.4/pc/awklib/igawk.bat
+gawk-4.1.4/pc/awklib/igawk
+gawk-4.1.4/pc/awklib/igawk.awk
+gawk-4.1.4/pc/mkinstal.sh
+gawk-4.1.4/pc/Makefile.ext
+gawk-4.1.4/pc/ChangeLog
+gawk-4.1.4/pc/ChangeLog.0
+gawk-4.1.4/pc/configpk.sed
+gawk-4.1.4/pc/gawk.def
+gawk-4.1.4/pc/dlfcn.h
+gawk-4.1.4/pc/popen.c
+gawk-4.1.4/pc/testoutcmp.awk
+gawk-4.1.4/pc/install.awk
+gawk-4.1.4/pc/getid.c
+gawk-4.1.4/pc/Makefile
+gawk-4.1.4/pc/config.h
+gawk-4.1.4/pc/make-config.bat
+gawk-4.1.4/pc/socket.h
+gawk-4.1.4/pc/gawkmisc.pc
+gawk-4.1.4/pc/in.h
+gawk-4.1.4/pc/popen.h
+gawk-4.1.4/pc/config.sed
+gawk-4.1.4/floatmagic.h
+gawk-4.1.4/compile
+gawk-4.1.4/array.c
+gawk-4.1.4/replace.c
+gawk-4.1.4/cint_array.c
+gawk-4.1.4/command.c
+gawk-4.1.4/missing
+gawk-4.1.4/int_array.c
+gawk-4.1.4/getopt.h
+gawk-4.1.4/config.rpath
+gawk-4.1.4/interpret.h
+gawk-4.1.4/profile.c
+gawk-4.1.4/configure.ac
+gawk-4.1.4/m4/
+gawk-4.1.4/m4/threadlib.m4
+gawk-4.1.4/m4/intmax.m4
+gawk-4.1.4/m4/longlong.m4
+gawk-4.1.4/m4/isc-posix.m4
+gawk-4.1.4/m4/intdiv0.m4
+gawk-4.1.4/m4/longdouble.m4
+gawk-4.1.4/m4/lcmessage.m4
+gawk-4.1.4/m4/glibc21.m4
+gawk-4.1.4/m4/ChangeLog
+gawk-4.1.4/m4/ChangeLog.0
+gawk-4.1.4/m4/printf-posix.m4
+gawk-4.1.4/m4/inttypes.m4
+gawk-4.1.4/m4/po.m4
+gawk-4.1.4/m4/lib-link.m4
+gawk-4.1.4/m4/intldir.m4
+gawk-4.1.4/m4/arch.m4
+gawk-4.1.4/m4/intl.m4
+gawk-4.1.4/m4/gettext.m4
+gawk-4.1.4/m4/codeset.m4
+gawk-4.1.4/m4/socket.m4
+gawk-4.1.4/m4/size_max.m4
+gawk-4.1.4/m4/readline.m4
+gawk-4.1.4/m4/ulonglong.m4
+gawk-4.1.4/m4/visibility.m4
+gawk-4.1.4/m4/lib-ld.m4
+gawk-4.1.4/m4/uintmax_t.m4
+gawk-4.1.4/m4/stdint_h.m4
+gawk-4.1.4/m4/wchar_t.m4
+gawk-4.1.4/m4/intlmacosx.m4
+gawk-4.1.4/m4/wint_t.m4
+gawk-4.1.4/m4/iconv.m4
+gawk-4.1.4/m4/inttypes_h.m4
+gawk-4.1.4/m4/libsigsegv.m4
+gawk-4.1.4/m4/intmax_t.m4
+gawk-4.1.4/m4/signed.m4
+gawk-4.1.4/m4/lock.m4
+gawk-4.1.4/m4/mpfr.m4
+gawk-4.1.4/m4/nls.m4
+gawk-4.1.4/m4/lib-prefix.m4
+gawk-4.1.4/m4/noreturn.m4
+gawk-4.1.4/m4/fcntl-o.m4
+gawk-4.1.4/m4/xsize.m4
+gawk-4.1.4/m4/glibc2.m4
+gawk-4.1.4/m4/progtest.m4
+gawk-4.1.4/m4/extern-inline.m4
+gawk-4.1.4/m4/inttypes-pri.m4
+gawk-4.1.4/extension/
+gawk-4.1.4/extension/time.3am
+gawk-4.1.4/extension/gawkfts.h
+gawk-4.1.4/extension/NEWS
+gawk-4.1.4/extension/inplace.3am
+gawk-4.1.4/extension/ordchr.c
+gawk-4.1.4/extension/gawkdirfd.h
+gawk-4.1.4/extension/readdir.c
+gawk-4.1.4/extension/readdir.3am
+gawk-4.1.4/extension/revoutput.c
+gawk-4.1.4/extension/ChangeLog
+gawk-4.1.4/extension/rwarray.c
+gawk-4.1.4/extension/build-aux/
+gawk-4.1.4/extension/build-aux/ChangeLog
+gawk-4.1.4/extension/build-aux/depcomp
+gawk-4.1.4/extension/build-aux/install-sh
+gawk-4.1.4/extension/build-aux/config.guess
+gawk-4.1.4/extension/build-aux/config.sub
+gawk-4.1.4/extension/build-aux/compile
+gawk-4.1.4/extension/build-aux/ltmain.sh
+gawk-4.1.4/extension/build-aux/missing
+gawk-4.1.4/extension/build-aux/config.rpath
+gawk-4.1.4/extension/build-aux/ar-lib
+gawk-4.1.4/extension/ChangeLog.0
+gawk-4.1.4/extension/time.c
+gawk-4.1.4/extension/fnmatch.3am
+gawk-4.1.4/extension/ABOUT-NLS
+gawk-4.1.4/extension/aclocal.m4
+gawk-4.1.4/extension/fts.3
+gawk-4.1.4/extension/revoutput.3am
+gawk-4.1.4/extension/revtwoway.c
+gawk-4.1.4/extension/fork.3am
+gawk-4.1.4/extension/readfile.c
+gawk-4.1.4/extension/README
+gawk-4.1.4/extension/filefuncs.c
+gawk-4.1.4/extension/configure
+gawk-4.1.4/extension/configh.in
+gawk-4.1.4/extension/revtwoway.3am
+gawk-4.1.4/extension/testext.c
+gawk-4.1.4/extension/fnmatch.c
+gawk-4.1.4/extension/README.fts
+gawk-4.1.4/extension/inplace.c
+gawk-4.1.4/extension/stack.h
+gawk-4.1.4/extension/stack.c
+gawk-4.1.4/extension/ext_custom.h
+gawk-4.1.4/extension/filefuncs.3am
+gawk-4.1.4/extension/gawkfts.c
+gawk-4.1.4/extension/fork.c
+gawk-4.1.4/extension/configure.ac
+gawk-4.1.4/extension/m4/
+gawk-4.1.4/extension/m4/ltversion.m4
+gawk-4.1.4/extension/m4/ChangeLog
+gawk-4.1.4/extension/m4/ltsugar.m4
+gawk-4.1.4/extension/m4/lib-link.m4
+gawk-4.1.4/extension/m4/libtool.m4
+gawk-4.1.4/extension/m4/dirfd.m4
+gawk-4.1.4/extension/m4/lib-ld.m4
+gawk-4.1.4/extension/m4/lt~obsolete.m4
+gawk-4.1.4/extension/m4/nls.m4
+gawk-4.1.4/extension/m4/lib-prefix.m4
+gawk-4.1.4/extension/m4/progtest.m4
+gawk-4.1.4/extension/m4/ltoptions.m4
+gawk-4.1.4/extension/rwarray.3am
+gawk-4.1.4/extension/readfile.3am
+gawk-4.1.4/extension/ordchr.3am
+gawk-4.1.4/extension/COPYING
+gawk-4.1.4/extension/INSTALL
+gawk-4.1.4/extension/AUTHORS
+gawk-4.1.4/extension/Makefile.am
+gawk-4.1.4/extension/rwarray0.c
+gawk-4.1.4/extension/Makefile.in
+gawk-4.1.4/posix/
+gawk-4.1.4/posix/ChangeLog
+gawk-4.1.4/posix/ChangeLog.0
+gawk-4.1.4/posix/gawkmisc.c
+gawk-4.1.4/COPYING
+gawk-4.1.4/INSTALL
+gawk-4.1.4/symbol.c
+gawk-4.1.4/AUTHORS
+gawk-4.1.4/debug.c
+gawk-4.1.4/ext.c
+gawk-4.1.4/Makefile.am
+gawk-4.1.4/custom.h
+gawk-4.1.4/Makefile.in
+gawk-4.1.4/regex.h
+lfs@Minty /mnt/lfs/sources $ cd gawk-4.1.4
+lfs@Minty /mnt/lfs/sources/gawk-4.1.4 $ ./configure --prefix=/tools
+checking for a BSD-compatible install... ./install-sh -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /tools/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for egrep... (cached) /bin/grep -E
+checking for bison... bison -y
+checking whether ln -s works... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking how to run the C preprocessor... gcc -E
+checking whether make sets $(MAKE)... (cached) yes
+checking for special development options... no
+checking for z/OS USS compilation... no
+checking for strerror in -lcposix... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for AIX compilation hacks... no
+checking for Linux/Alpha compilation hacks... no
+checking if we are using EBCDIC... no
+checking for a sed that does not truncate output... /bin/sed
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by gcc... /mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld
+checking if the linker (/mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking mcheck.h usability... yes
+checking mcheck.h presence... yes
+checking for mcheck.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for string.h... (cached) yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking stropts.h usability... yes
+checking stropts.h presence... yes
+checking for stropts.h... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking for ANSI C header files... (cached) yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for memory.h... (cached) yes
+checking for pid_t... yes
+checking return type of signal handlers... void
+checking for size_t... yes
+checking for uid_t in sys/types.h... yes
+checking type of array argument to getgroups... gid_t
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for unsigned long long int... (cached) yes
+checking for intmax_t... yes
+checking for uintmax_t... yes
+checking for ssize_t... yes
+checking size of unsigned int... 4
+checking size of unsigned long... 8
+checking for socklen_t... yes
+checking for sys/time.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for alarm... yes
+checking for working mktime... yes
+checking for getaddrinfo... yes
+checking for library containing fmod... -lm
+checking for library containing isinf... none required
+checking for library containing ismod... no
+checking for libsigsegv... no, consider installing GNU libsigsegv
+checking for __etoa_l... no
+checking for atexit... yes
+checking for btowc... yes
+checking for fmod... yes
+checking for getgrent... yes
+checking for getgroups... yes
+checking for grantpt... yes
+checking for isascii... yes
+checking for iswctype... yes
+checking for iswlower... yes
+checking for iswupper... yes
+checking for mbrlen... yes
+checking for memcmp... yes
+checking for memcpy... yes
+checking for memcpy_ulong... no
+checking for memmove... yes
+checking for memset... yes
+checking for memset_ulong... no
+checking for mkstemp... yes
+checking for posix_openpt... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for setsid... yes
+checking for snprintf... yes
+checking for strchr... yes
+checking for strerror... yes
+checking for strftime... yes
+checking for strcasecmp... yes
+checking for strncasecmp... yes
+checking for strcoll... yes
+checking for strtod... yes
+checking for strtoul... yes
+checking for system... yes
+checking for tmpfile... yes
+checking for towlower... yes
+checking for towupper... yes
+checking for tzset... yes
+checking for usleep... yes
+checking for wcrtomb... yes
+checking for wcscoll... yes
+checking for wctype... yes
+checking whether mbrtowc and mbstate_t are properly declared... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking for library containing dlopen... -ldl
+checking whether getpgrp requires zero arguments... yes
+checking for printf %F format... yes
+checking for gethostbyname... yes
+checking for connect... yes
+checking where to find the socket library calls... the standard library
+checking whether readline via "-lreadline" is present and sane... no
+checking whether readline via "-lreadline -ltermcap" is present and sane... no
+checking whether readline via "-lreadline -lcurses" is present and sane... no
+checking whether readline via "-lreadline -lncurses" is present and sane... no
+checking whether mpfr via "-lmpfr -lgmp" is present and usable... no
+checking for struct stat.st_blksize... yes
+checking for struct passwd.pw_passwd... yes
+checking for struct group.gr_passwd... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking whether char is unsigned... no
+checking for an ANSI C-conforming const... yes
+checking for C/C++ restrict keyword... __restrict
+checking for inline... inline
+checking for preprocessor stringizing operator... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating awklib/Makefile
+config.status: creating doc/Makefile
+config.status: creating po/Makefile.in
+config.status: creating test/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+=== configuring in extension (/mnt/lfs/sources/gawk-4.1.4/extension)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/tools'  --cache-file=/dev/null --srcdir=.
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for z/OS USS compilation... no
+checking for a BSD-compatible install... build-aux/install-sh -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /tools/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking whether make supports nested variables... yes
+checking dependency style of gcc... gcc3
+checking for struct stat.st_blksize... yes
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld
+checking if the linker (/mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /tools/bin/nm -B
+checking the name lister (/tools/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /tools/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /tools/bin/dd
+checking how to truncate binary pipes... /tools/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for special development options... no
+checking fnmatch.h usability... yes
+checking fnmatch.h presence... yes
+checking for fnmatch.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/statvfs.h usability... yes
+checking sys/statvfs.h presence... yes
+checking for sys/statvfs.h... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking whether sys/types.h defines makedev... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for fdopendir... yes
+checking for fnmatch... yes
+checking for gettimeofday... yes
+checking for getdtablesize... yes
+checking for nanosleep... yes
+checking for select... yes
+checking for statvfs... yes
+checking for GetSystemTimeAsFileTime... no
+checking for dirfd... yes
+checking whether dirfd is declared... yes
+checking whether dirfd is a macro... no
+checking how to get the file descriptor associated with an open DIR*... no_such_member
+checking for inline... inline
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+lfs@Minty /mnt/lfs/sources/gawk-4.1.4 $ make
+make 'CFLAGS=-g -O2 -DNDEBUG' 'LDFLAGS=-Wl,-export-dynamic' all-recursive
+make[1]: Entering directory '/mnt/lfs/sources/gawk-4.1.4'
+Making all in .
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4'
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT array.o -MD -MP -MF .deps/array.Tpo -c -o array.o array.c
+mv -f .deps/array.Tpo .deps/array.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT awkgram.o -MD -MP -MF .deps/awkgram.Tpo -c -o awkgram.o awkgram.c
+mv -f .deps/awkgram.Tpo .deps/awkgram.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT builtin.o -MD -MP -MF .deps/builtin.Tpo -c -o builtin.o builtin.c
+mv -f .deps/builtin.Tpo .deps/builtin.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT cint_array.o -MD -MP -MF .deps/cint_array.Tpo -c -o cint_array.o cint_array.c
+mv -f .deps/cint_array.Tpo .deps/cint_array.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT command.o -MD -MP -MF .deps/command.Tpo -c -o command.o command.c
+mv -f .deps/command.Tpo .deps/command.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT debug.o -MD -MP -MF .deps/debug.Tpo -c -o debug.o debug.c
+mv -f .deps/debug.Tpo .deps/debug.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT dfa.o -MD -MP -MF .deps/dfa.Tpo -c -o dfa.o dfa.c
+mv -f .deps/dfa.Tpo .deps/dfa.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT eval.o -MD -MP -MF .deps/eval.Tpo -c -o eval.o eval.c
+mv -f .deps/eval.Tpo .deps/eval.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT ext.o -MD -MP -MF .deps/ext.Tpo -c -o ext.o ext.c
+mv -f .deps/ext.Tpo .deps/ext.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT field.o -MD -MP -MF .deps/field.Tpo -c -o field.o field.c
+mv -f .deps/field.Tpo .deps/field.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT floatcomp.o -MD -MP -MF .deps/floatcomp.Tpo -c -o floatcomp.o floatcomp.c
+mv -f .deps/floatcomp.Tpo .deps/floatcomp.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT gawkapi.o -MD -MP -MF .deps/gawkapi.Tpo -c -o gawkapi.o gawkapi.c
+mv -f .deps/gawkapi.Tpo .deps/gawkapi.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT gawkmisc.o -MD -MP -MF .deps/gawkmisc.Tpo -c -o gawkmisc.o gawkmisc.c
+mv -f .deps/gawkmisc.Tpo .deps/gawkmisc.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT getopt.o -MD -MP -MF .deps/getopt.Tpo -c -o getopt.o getopt.c
+mv -f .deps/getopt.Tpo .deps/getopt.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT getopt1.o -MD -MP -MF .deps/getopt1.Tpo -c -o getopt1.o getopt1.c
+mv -f .deps/getopt1.Tpo .deps/getopt1.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT int_array.o -MD -MP -MF .deps/int_array.Tpo -c -o int_array.o int_array.c
+mv -f .deps/int_array.Tpo .deps/int_array.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT io.o -MD -MP -MF .deps/io.Tpo -c -o io.o io.c
+mv -f .deps/io.Tpo .deps/io.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c
+mv -f .deps/main.Tpo .deps/main.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT mpfr.o -MD -MP -MF .deps/mpfr.Tpo -c -o mpfr.o mpfr.c
+mv -f .deps/mpfr.Tpo .deps/mpfr.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT msg.o -MD -MP -MF .deps/msg.Tpo -c -o msg.o msg.c
+mv -f .deps/msg.Tpo .deps/msg.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT node.o -MD -MP -MF .deps/node.Tpo -c -o node.o node.c
+mv -f .deps/node.Tpo .deps/node.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT profile.o -MD -MP -MF .deps/profile.Tpo -c -o profile.o profile.c
+mv -f .deps/profile.Tpo .deps/profile.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT random.o -MD -MP -MF .deps/random.Tpo -c -o random.o random.c
+mv -f .deps/random.Tpo .deps/random.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT re.o -MD -MP -MF .deps/re.Tpo -c -o re.o re.c
+mv -f .deps/re.Tpo .deps/re.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT regex.o -MD -MP -MF .deps/regex.Tpo -c -o regex.o regex.c
+mv -f .deps/regex.Tpo .deps/regex.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT replace.o -MD -MP -MF .deps/replace.Tpo -c -o replace.o replace.c
+mv -f .deps/replace.Tpo .deps/replace.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT str_array.o -MD -MP -MF .deps/str_array.Tpo -c -o str_array.o str_array.c
+mv -f .deps/str_array.Tpo .deps/str_array.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT symbol.o -MD -MP -MF .deps/symbol.Tpo -c -o symbol.o symbol.c
+mv -f .deps/symbol.Tpo .deps/symbol.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DDEFLIBPATH="\"/tools/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -DNDEBUG -MT version.o -MD -MP -MF .deps/version.Tpo -c -o version.o version.c
+mv -f .deps/version.Tpo .deps/version.Po
+gcc  -g -O2 -DNDEBUG  -Wl,-export-dynamic -o gawk array.o awkgram.o builtin.o cint_array.o command.o debug.o dfa.o eval.o ext.o field.o floatcomp.o gawkapi.o gawkmisc.o getopt.o getopt1.o int_array.o io.o main.o mpfr.o msg.o node.o profile.o random.o re.o regex.o replace.o str_array.o symbol.o version.o      -ldl -lm
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4'
+Making all in extension
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+make  all-recursive
+make[3]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+make[4]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./..   -g -O2 -DNDEBUG -MT filefuncs.lo -MD -MP -MF .deps/filefuncs.Tpo -c -o filefuncs.lo filefuncs.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./.. -g -O2 -DNDEBUG -MT filefuncs.lo -MD -MP -MF .deps/filefuncs.Tpo -c filefuncs.c  -fPIC -DPIC -o .libs/filefuncs.o
+filefuncs.c: In function 'fill_stat_array':
+filefuncs.c:419:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+   array_set_numeric(array, "major", major(sbuf->st_rdev));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+filefuncs.c:420:13: warning: In the GNU C Library, "minor" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "minor", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "minor", you should undefine it after including <sys/types.h>.
+   array_set_numeric(array, "minor", minor(sbuf->st_rdev));
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mv -f .deps/filefuncs.Tpo .deps/filefuncs.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./..   -g -O2 -DNDEBUG -MT stack.lo -MD -MP -MF .deps/stack.Tpo -c -o stack.lo stack.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./.. -g -O2 -DNDEBUG -MT stack.lo -MD -MP -MF .deps/stack.Tpo -c stack.c  -fPIC -DPIC -o .libs/stack.o
+mv -f .deps/stack.Tpo .deps/stack.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./..   -g -O2 -DNDEBUG -MT gawkfts.lo -MD -MP -MF .deps/gawkfts.Tpo -c -o gawkfts.lo gawkfts.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./.. -g -O2 -DNDEBUG -MT gawkfts.lo -MD -MP -MF .deps/gawkfts.Tpo -c gawkfts.c  -fPIC -DPIC -o .libs/gawkfts.o
+mv -f .deps/gawkfts.Tpo .deps/gawkfts.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -g -O2 -DNDEBUG -module -avoid-version -no-undefined -Wl,-export-dynamic -o filefuncs.la -rpath /tools/lib/gawk filefuncs.lo stack.lo gawkfts.lo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/filefuncs.o .libs/stack.o .libs/gawkfts.o    -g -O2 -Wl,-export-dynamic   -Wl,-soname -Wl,filefuncs.so -o .libs/filefuncs.so
+libtool: link: ( cd ".libs" && rm -f "filefuncs.la" && ln -s "../filefuncs.la" "filefuncs.la" )
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./..   -g -O2 -DNDEBUG -MT fnmatch.lo -MD -MP -MF .deps/fnmatch.Tpo -c -o fnmatch.lo fnmatch.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./.. -g -O2 -DNDEBUG -MT fnmatch.lo -MD -MP -MF .deps/fnmatch.Tpo -c fnmatch.c  -fPIC -DPIC -o .libs/fnmatch.o
+mv -f .deps/fnmatch.Tpo .deps/fnmatch.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -g -O2 -DNDEBUG -module -avoid-version -no-undefined -Wl,-export-dynamic -o fnmatch.la -rpath /tools/lib/gawk fnmatch.lo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/fnmatch.o    -g -O2 -Wl,-export-dynamic   -Wl,-soname -Wl,fnmatch.so -o .libs/fnmatch.so
+libtool: link: ( cd ".libs" && rm -f "fnmatch.la" && ln -s "../fnmatch.la" "fnmatch.la" )
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./..   -g -O2 -DNDEBUG -MT fork.lo -MD -MP -MF .deps/fork.Tpo -c -o fork.lo fork.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./.. -g -O2 -DNDEBUG -MT fork.lo -MD -MP -MF .deps/fork.Tpo -c fork.c  -fPIC -DPIC -o .libs/fork.o
+mv -f .deps/fork.Tpo .deps/fork.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -g -O2 -DNDEBUG -module -avoid-version -no-undefined -Wl,-export-dynamic -o fork.la -rpath /tools/lib/gawk fork.lo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/fork.o    -g -O2 -Wl,-export-dynamic   -Wl,-soname -Wl,fork.so -o .libs/fork.so
+libtool: link: ( cd ".libs" && rm -f "fork.la" && ln -s "../fork.la" "fork.la" )
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./..   -g -O2 -DNDEBUG -MT inplace.lo -MD -MP -MF .deps/inplace.Tpo -c -o inplace.lo inplace.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./.. -g -O2 -DNDEBUG -MT inplace.lo -MD -MP -MF .deps/inplace.Tpo -c inplace.c  -fPIC -DPIC -o .libs/inplace.o
+mv -f .deps/inplace.Tpo .deps/inplace.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -g -O2 -DNDEBUG -module -avoid-version -no-undefined -Wl,-export-dynamic -o inplace.la -rpath /tools/lib/gawk inplace.lo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/inplace.o    -g -O2 -Wl,-export-dynamic   -Wl,-soname -Wl,inplace.so -o .libs/inplace.so
+libtool: link: ( cd ".libs" && rm -f "inplace.la" && ln -s "../inplace.la" "inplace.la" )
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./..   -g -O2 -DNDEBUG -MT ordchr.lo -MD -MP -MF .deps/ordchr.Tpo -c -o ordchr.lo ordchr.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./.. -g -O2 -DNDEBUG -MT ordchr.lo -MD -MP -MF .deps/ordchr.Tpo -c ordchr.c  -fPIC -DPIC -o .libs/ordchr.o
+mv -f .deps/ordchr.Tpo .deps/ordchr.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -g -O2 -DNDEBUG -module -avoid-version -no-undefined -Wl,-export-dynamic -o ordchr.la -rpath /tools/lib/gawk ordchr.lo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/ordchr.o    -g -O2 -Wl,-export-dynamic   -Wl,-soname -Wl,ordchr.so -o .libs/ordchr.so
+libtool: link: ( cd ".libs" && rm -f "ordchr.la" && ln -s "../ordchr.la" "ordchr.la" )
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./..   -g -O2 -DNDEBUG -MT readdir.lo -MD -MP -MF .deps/readdir.Tpo -c -o readdir.lo readdir.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./.. -g -O2 -DNDEBUG -MT readdir.lo -MD -MP -MF .deps/readdir.Tpo -c readdir.c  -fPIC -DPIC -o .libs/readdir.o
+mv -f .deps/readdir.Tpo .deps/readdir.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -g -O2 -DNDEBUG -module -avoid-version -no-undefined -Wl,-export-dynamic -o readdir.la -rpath /tools/lib/gawk readdir.lo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/readdir.o    -g -O2 -Wl,-export-dynamic   -Wl,-soname -Wl,readdir.so -o .libs/readdir.so
+libtool: link: ( cd ".libs" && rm -f "readdir.la" && ln -s "../readdir.la" "readdir.la" )
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./..   -g -O2 -DNDEBUG -MT readfile.lo -MD -MP -MF .deps/readfile.Tpo -c -o readfile.lo readfile.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./.. -g -O2 -DNDEBUG -MT readfile.lo -MD -MP -MF .deps/readfile.Tpo -c readfile.c  -fPIC -DPIC -o .libs/readfile.o
+mv -f .deps/readfile.Tpo .deps/readfile.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -g -O2 -DNDEBUG -module -avoid-version -no-undefined -Wl,-export-dynamic -o readfile.la -rpath /tools/lib/gawk readfile.lo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/readfile.o    -g -O2 -Wl,-export-dynamic   -Wl,-soname -Wl,readfile.so -o .libs/readfile.so
+libtool: link: ( cd ".libs" && rm -f "readfile.la" && ln -s "../readfile.la" "readfile.la" )
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./..   -g -O2 -DNDEBUG -MT revoutput.lo -MD -MP -MF .deps/revoutput.Tpo -c -o revoutput.lo revoutput.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./.. -g -O2 -DNDEBUG -MT revoutput.lo -MD -MP -MF .deps/revoutput.Tpo -c revoutput.c  -fPIC -DPIC -o .libs/revoutput.o
+mv -f .deps/revoutput.Tpo .deps/revoutput.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -g -O2 -DNDEBUG -module -avoid-version -no-undefined -Wl,-export-dynamic -o revoutput.la -rpath /tools/lib/gawk revoutput.lo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/revoutput.o    -g -O2 -Wl,-export-dynamic   -Wl,-soname -Wl,revoutput.so -o .libs/revoutput.so
+libtool: link: ( cd ".libs" && rm -f "revoutput.la" && ln -s "../revoutput.la" "revoutput.la" )
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./..   -g -O2 -DNDEBUG -MT revtwoway.lo -MD -MP -MF .deps/revtwoway.Tpo -c -o revtwoway.lo revtwoway.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./.. -g -O2 -DNDEBUG -MT revtwoway.lo -MD -MP -MF .deps/revtwoway.Tpo -c revtwoway.c  -fPIC -DPIC -o .libs/revtwoway.o
+mv -f .deps/revtwoway.Tpo .deps/revtwoway.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -g -O2 -DNDEBUG -module -avoid-version -no-undefined -Wl,-export-dynamic -o revtwoway.la -rpath /tools/lib/gawk revtwoway.lo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/revtwoway.o    -g -O2 -Wl,-export-dynamic   -Wl,-soname -Wl,revtwoway.so -o .libs/revtwoway.so
+libtool: link: ( cd ".libs" && rm -f "revtwoway.la" && ln -s "../revtwoway.la" "revtwoway.la" )
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./..   -g -O2 -DNDEBUG -MT rwarray.lo -MD -MP -MF .deps/rwarray.Tpo -c -o rwarray.lo rwarray.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./.. -g -O2 -DNDEBUG -MT rwarray.lo -MD -MP -MF .deps/rwarray.Tpo -c rwarray.c  -fPIC -DPIC -o .libs/rwarray.o
+mv -f .deps/rwarray.Tpo .deps/rwarray.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -g -O2 -DNDEBUG -module -avoid-version -no-undefined -Wl,-export-dynamic -o rwarray.la -rpath /tools/lib/gawk rwarray.lo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/rwarray.o    -g -O2 -Wl,-export-dynamic   -Wl,-soname -Wl,rwarray.so -o .libs/rwarray.so
+libtool: link: ( cd ".libs" && rm -f "rwarray.la" && ln -s "../rwarray.la" "rwarray.la" )
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./..   -g -O2 -DNDEBUG -MT testext.lo -MD -MP -MF .deps/testext.Tpo -c -o testext.lo testext.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./.. -g -O2 -DNDEBUG -MT testext.lo -MD -MP -MF .deps/testext.Tpo -c testext.c  -fPIC -DPIC -o .libs/testext.o
+mv -f .deps/testext.Tpo .deps/testext.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -g -O2 -DNDEBUG -module -avoid-version -no-undefined -Wl,-export-dynamic -o testext.la -rpath /tools/lib/gawk testext.lo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/testext.o    -g -O2 -Wl,-export-dynamic   -Wl,-soname -Wl,testext.so -o .libs/testext.so
+libtool: link: ( cd ".libs" && rm -f "testext.la" && ln -s "../testext.la" "testext.la" )
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./..   -g -O2 -DNDEBUG -MT time.lo -MD -MP -MF .deps/time.Tpo -c -o time.lo time.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./.. -g -O2 -DNDEBUG -MT time.lo -MD -MP -MF .deps/time.Tpo -c time.c  -fPIC -DPIC -o .libs/time.o
+mv -f .deps/time.Tpo .deps/time.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -g -O2 -DNDEBUG -module -avoid-version -no-undefined -Wl,-export-dynamic -o time.la -rpath /tools/lib/gawk time.lo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/time.o    -g -O2 -Wl,-export-dynamic   -Wl,-soname -Wl,time.so -o .libs/time.so
+libtool: link: ( cd ".libs" && rm -f "time.la" && ln -s "../time.la" "time.la" )
+make[4]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+make[3]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+Making all in doc
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/doc'
+Making all in awklib
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/awklib'
+rm -f pwcat.c
+ln -s ./eg/lib/pwcat.c .
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I..   -g -O2 -DNDEBUG -MT pwcat.o -MD -MP -MF .deps/pwcat.Tpo -c -o pwcat.o pwcat.c
+mv -f .deps/pwcat.Tpo .deps/pwcat.Po
+gcc  -g -O2 -DNDEBUG  -Wl,-export-dynamic -o pwcat pwcat.o  -ldl -lm
+rm -f grcat.c
+ln -s ./eg/lib/grcat.c .
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I..   -g -O2 -DNDEBUG -MT grcat.o -MD -MP -MF .deps/grcat.Tpo -c -o grcat.o grcat.c
+mv -f .deps/grcat.Tpo .deps/grcat.Po
+gcc  -g -O2 -DNDEBUG  -Wl,-export-dynamic -o grcat grcat.o  -ldl -lm
+cp ./eg/prog/igawk.sh igawk ; chmod 755 igawk
+sed 's;/usr/local/libexec/awk;/tools/libexec/awk;' < ./eg/lib/passwdawk.in > passwd.awk
+sed 's;/usr/local/libexec/awk;/tools/libexec/awk;' < ./eg/lib/groupawk.in > group.awk
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/awklib'
+Making all in po
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/po'
+Making all in test
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/test'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/test'
+make[1]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4'
+lfs@Minty /mnt/lfs/sources/gawk-4.1.4 $ make check
+Making check in .
+make[1]: Entering directory '/mnt/lfs/sources/gawk-4.1.4'
+make 'CFLAGS=-g -O2 -DNDEBUG' 'LDFLAGS=-Wl,-export-dynamic' check-local
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4'
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4'
+make[1]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4'
+Making check in extension
+make[1]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+make[1]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+Making check in doc
+make[1]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/doc'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/doc'
+Making check in awklib
+make[1]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/awklib'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/awklib'
+Making check in po
+make[1]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/po'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/po'
+Making check in test
+make[1]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/test'
+
+Any output from "cmp" is bad news, although some differences
+in floating point values are probably benign -- in particular,
+some systems may omit a leading zero and the floating point
+precision may lead to slightly different output in a few cases.
+
+Locale environment:
+	LC_ALL="C" LANG="C"
+
+======== Starting basic tests ========
+addcomma
+anchgsub
+argarray
+arrayind1
+arrayparm
+arrayprm2
+arrayprm3
+arrayref
+arrymem1
+arryref2
+arryref3
+arryref4
+arryref5
+arynasty
+arynocls
+aryprm1
+aryprm2
+aryprm3
+aryprm4
+aryprm5
+aryprm6
+aryprm7
+aryprm8
+aryprm9
+arysubnm
+asgext
+awkpath
+back89
+backgsub
+badassign1
+badbuild
+callparam
+childin
+clobber
+closebad
+clsflnam
+compare
+compare2
+concat1
+concat2
+concat3
+concat4
+convfmt
+datanonl
+defref
+delargv
+delarpm2
+delarprm
+delfunc
+dfamb1
+dfastress
+dynlj
+eofsplit
+exit2
+exitval1
+exitval2
+exitval3
+fcall_exit
+fcall_exit2
+fldchg
+fldchgnf
+fnamedat
+fnarray
+fnarray2
+fnaryscl
+fnasgnm
+fnmisc
+fordel
+forref
+forsimp
+fsbs
+fsnul1
+fsrs
+fsspcoln
+fstabplus
+funsemnl
+funsmnam
+funstack
+getline
+getline2
+getline3
+getline4
+getline5
+getlnbuf
+getnr2tb
+getnr2tm
+gsubasgn
+gsubtest
+gsubtst2
+gsubtst3
+gsubtst4
+gsubtst5
+gsubtst6
+gsubtst7
+gsubtst8
+hex
+hex2
+hsprint
+inpref
+inputred
+intest
+intprec
+iobug1
+leaddig
+leadnl
+litoct
+longsub
+longwrds
+manglprm
+math
+membug1
+messages
+minusstr
+mmap8k
+mtchi18n
+nasty
+nasty2
+negexp
+negrange
+nested
+nfldstr
+nfloop
+nfneg
+nfset
+nlfldsep
+nlinstr
+nlstrina
+noeffect
+nofile
+nofmtch
+noloop1
+noloop2
+nonl
+noparms
+nors
+nulinsrc
+nulrsend
+numindex
+numsubstr
+octsub
+ofmt
+ofmta
+ofmtbig
+ofmtfidl
+ofmts
+ofmtstrnum
+ofs1
+onlynl
+opasnidx
+opasnslf
+paramasfunc1
+paramasfunc2
+paramdup
+paramres
+paramtyp
+paramuninitglobal
+parse1
+parsefld
+parseme
+pcntplus
+posix2008sub
+prdupval
+prec
+printf0
+printf1
+prmarscl
+prmreuse
+prt1eval
+prtoeval
+rand
+range1
+readbuf
+rebrackloc
+rebt8b1
+redfilnm
+regeq
+regexpbrack
+regexpbrack2
+regexprange
+regrange
+reindops
+reparse
+resplit
+rri1
+rs
+rscompat
+rsnul1nl
+rsnulbig
+rsnulbig2
+rstest1
+rstest2
+rstest3
+rstest4
+rstest5
+rswhite
+scalar
+sclforin
+sclifin
+sigpipe1
+sortempty
+sortglos
+splitargv
+splitarr
+splitdef
+splitvar
+splitwht
+strcat1
+strnum1
+strtod
+subamp
+subback
+subi18n
+subsepnm
+subslash
+substr
+swaplns
+synerr1
+synerr2
+tradanch
+tweakfld
+uninit2
+uninit3
+uninit4
+uninit5
+uninitialized
+unterm
+uparrfs
+wideidx
+wideidx2
+widesub
+widesub2
+widesub3
+widesub4
+wjposer1
+zero2
+zeroe0
+zeroflag
+======== Done with basic tests ========
+======== Starting Unix tests ========
+fflush
+getlnhd
+localenl
+pid
+pipeio1
+pipeio2
+poundbang
+rtlen
+rtlen01
+space
+strftlng
+======== Done with Unix tests ========
+======== Starting gawk extension tests ========
+aadelete1
+aadelete2
+aarray1
+aasort
+aasorti
+argtest
+arraysort
+backw
+badargs
+beginfile1
+beginfile2
+binmode1
+charasbytes
+colonwarn
+clos1way
+clos1way2
+clos1way3
+clos1way4
+clos1way5
+crlf
+dbugeval
+delsub
+devfd
+devfd1
+devfd2
+dumpvars
+exit
+fieldwdth
+fpat1
+fpat2
+fpat3
+fpat4
+fpat5
+fpatnull
+fsfwfs
+funlen
+functab1
+functab2
+functab3
+fwtest
+fwtest2
+fwtest3
+genpot
+gensub
+gensub2
+getlndir
+gnuops2
+gnuops3
+gnureops
+icasefs
+icasers
+id
+igncdym
+igncfs
+ignrcas2
+ignrcase
+incdupe
+incdupe2
+incdupe3
+incdupe4
+incdupe5
+incdupe6
+incdupe7
+include
+include2
+indirectbuiltin
+indirectcall
+indirectcall2
+lint
+lintold
+lintwarn
+mixed1
+manyfiles
+match1
+match2
+match3
+mbstr1
+./mbstr1.ok _mbstr1 differ: char 1, line 1
+Makefile:2208: recipe for target 'mbstr1' failed
+make[1]: [mbstr1] Error 1 (ignored)
+mbstr2
+./mbstr2.ok _mbstr2 differ: char 6, line 2
+Makefile:2214: recipe for target 'mbstr2' failed
+make[1]: [mbstr2] Error 1 (ignored)
+muldimposix
+nastyparm
+negtime
+next
+nondec
+nondec2
+patsplit
+posix
+printfbad1
+printfbad2
+printfbad3
+printfbad4
+printhuge
+procinfs
+profile0
+profile1
+profile2
+profile3
+profile4
+profile5
+profile6
+profile7
+profile8
+pty1
+rebuf
+regnul1
+regnul2
+regx8bit
+reginttrad
+reint
+reint2
+rsgetline
+rsglstdin
+rsstart1
+rsstart2
+rsstart3
+rstest6
+shadow
+sortfor
+sortfor2
+sortu
+split_after_fpat
+splitarg4
+strftime
+strtonum
+switch2
+symtab1
+symtab2
+symtab3
+symtab4
+symtab5
+symtab6
+symtab7
+symtab8
+symtab9
+symtab10
+watchpoint1
+======== Done with gawk extension tests ========
+======== Starting machine-specific tests ========
+double1
+double2
+fmtspcl
+intformat
+======== Done with machine-specific tests ========
+%%%%%%%%%% Inadequate locale support: skipping charset tests.
+%%%%%%%%%% At least en_US.UTF-8, ru_RU.UTF-8 and ja_JP.UTF-8 are needed.
+======== Starting shared library tests ========
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/test'
+fnmatch
+filefuncs
+fork
+fork2
+fts
+functab4
+inplace1
+inplace2
+inplace3
+ordchr
+ordchr2
+readdir
+readfile
+readfile2
+revout
+revtwoway
+rwarray
+testext
+time
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/test'
+======== Done with shared library tests ========
+======== Starting MPFR tests ========
+MPFR tests not supported on this system
+======== Done with MPFR tests ========
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/test'
+2 TESTS FAILED
+Makefile:4128: recipe for target 'pass-fail' failed
+make[2]: *** [pass-fail] Error 1
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/test'
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/test'
+for i in _* ; \
+do  \
+	if [ "$i" != "_*" ]; then \
+	echo ============== $i ============= ; \
+	base=`echo $i | sed 's/^_//'` ; \
+	if [ -r ${base}.ok ]; then \
+	diff -c ${base}.ok $i ; \
+	else \
+	diff -c "."/${base}.ok  $i ; \
+	fi ; \
+	fi ; \
+done | more
+============== _mbstr1 =============
+*** mbstr1.ok	Mon Jan 25 16:49:20 2016
+--- _mbstr1	Sat Jun 17 03:35:23 2017
+***************
+*** 1,3 ****
+- gawk: mbstr1.awk:2: warning: Invalid multibyte data detected. There may be a mismatch between your data and your locale.
+  4
+  1
+--- 1,2 ----
+============== _mbstr2 =============
+*** mbstr2.ok	Mon Jan 25 16:49:20 2016
+--- _mbstr2	Sat Jun 17 03:35:23 2017
+***************
+*** 1,5 ****
+  2007
+- gawk: mbstr2.awk:1: (FILENAME=- FNR=2) warning: Invalid multibyte data detected. There may be a mismatch between your data a
+nd your locale.
+  2007
+  2007
+  2007
+--- 1,4 ----
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/test'
+Makefile:1651: recipe for target 'check' failed
+make[1]: *** [check] Error 1
+make[1]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/test'
+Makefile:742: recipe for target 'check-recursive' failed
+make: *** [check-recursive] Error 1
+lfs@Minty /mnt/lfs/sources/gawk-4.1.4 $ make install
+Making install in .
+make[1]: Entering directory '/mnt/lfs/sources/gawk-4.1.4'
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4'
+ /tools/bin/mkdir -p '/tools/bin'
+  ./install-sh -c gawk '/tools/bin'
+make 'CFLAGS=-g -O2 -DNDEBUG' 'LDFLAGS=-Wl,-export-dynamic' install-exec-hook
+make[3]: Entering directory '/mnt/lfs/sources/gawk-4.1.4'
+(cd /tools/bin; \
+name=`echo gawk | sed 's,x,x,'` ; \
+ln ${name} gawk-4.1.4 2>/dev/null ; \
+if [ ! -f awk ]; \
+then	ln -s ${name} awk; \
+fi; exit 0)
+make[3]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4'
+ /tools/bin/mkdir -p '/tools/include'
+ ./install-sh -c -m 644 gawkapi.h '/tools/include'
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4'
+make[1]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4'
+Making install in extension
+make[1]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+make[3]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /tools/bin/mkdir -p '/tools/share/man/man3'
+ build-aux/install-sh -c -m 644 filefuncs.3am fnmatch.3am fork.3am inplace.3am ordchr.3am readdir.3am readfile.3am revoutput.3am revtwoway.3am rwarray.3am time.3am '/tools/share/man/man3'
+ /tools/bin/mkdir -p '/tools/lib/gawk'
+ /bin/sh ./libtool   --mode=install build-aux/install-sh -c   filefuncs.la fnmatch.la fork.la inplace.la ordchr.la readdir.la readfile.la revoutput.la revtwoway.la rwarray.la testext.la time.la '/tools/lib/gawk'
+libtool: install: build-aux/install-sh -c .libs/filefuncs.so /tools/lib/gawk/filefuncs.so
+libtool: install: build-aux/install-sh -c .libs/filefuncs.lai /tools/lib/gawk/filefuncs.la
+libtool: install: build-aux/install-sh -c .libs/fnmatch.so /tools/lib/gawk/fnmatch.so
+libtool: install: build-aux/install-sh -c .libs/fnmatch.lai /tools/lib/gawk/fnmatch.la
+libtool: install: build-aux/install-sh -c .libs/fork.so /tools/lib/gawk/fork.so
+libtool: install: build-aux/install-sh -c .libs/fork.lai /tools/lib/gawk/fork.la
+libtool: install: build-aux/install-sh -c .libs/inplace.so /tools/lib/gawk/inplace.so
+libtool: install: build-aux/install-sh -c .libs/inplace.lai /tools/lib/gawk/inplace.la
+libtool: install: build-aux/install-sh -c .libs/ordchr.so /tools/lib/gawk/ordchr.so
+libtool: install: build-aux/install-sh -c .libs/ordchr.lai /tools/lib/gawk/ordchr.la
+libtool: install: build-aux/install-sh -c .libs/readdir.so /tools/lib/gawk/readdir.so
+libtool: install: build-aux/install-sh -c .libs/readdir.lai /tools/lib/gawk/readdir.la
+libtool: install: build-aux/install-sh -c .libs/readfile.so /tools/lib/gawk/readfile.so
+libtool: install: build-aux/install-sh -c .libs/readfile.lai /tools/lib/gawk/readfile.la
+libtool: install: build-aux/install-sh -c .libs/revoutput.so /tools/lib/gawk/revoutput.so
+libtool: install: build-aux/install-sh -c .libs/revoutput.lai /tools/lib/gawk/revoutput.la
+libtool: install: build-aux/install-sh -c .libs/revtwoway.so /tools/lib/gawk/revtwoway.so
+libtool: install: build-aux/install-sh -c .libs/revtwoway.lai /tools/lib/gawk/revtwoway.la
+libtool: install: build-aux/install-sh -c .libs/rwarray.so /tools/lib/gawk/rwarray.so
+libtool: install: build-aux/install-sh -c .libs/rwarray.lai /tools/lib/gawk/rwarray.la
+libtool: install: build-aux/install-sh -c .libs/testext.so /tools/lib/gawk/testext.so
+libtool: install: build-aux/install-sh -c .libs/testext.lai /tools/lib/gawk/testext.la
+libtool: install: build-aux/install-sh -c .libs/time.so /tools/lib/gawk/time.so
+libtool: install: build-aux/install-sh -c .libs/time.lai /tools/lib/gawk/time.la
+libtool: finish: PATH="/tools/bin:/bin:/usr/bin:/sbin" ldconfig -n /tools/lib/gawk
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /tools/lib/gawk
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make  install-data-hook
+make[4]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+for i in filefuncs.la fnmatch.la fork.la inplace.la ordchr.la readdir.la readfile.la revoutput.la revtwoway.la rwarray.la testext.la time.la ; do \
+	rm -f /tools/lib/gawk/$i ; \
+done
+make[4]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+make[3]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+make[1]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/extension'
+Making install in doc
+make[1]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/doc'
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /tools/bin/mkdir -p '/tools/share/info'
+ .././install-sh -c -m 644 ./gawk.info ./gawkinet.info '/tools/share/info'
+ install-info --info-dir='/tools/share/info' '/tools/share/info/gawk.info'
+ install-info --info-dir='/tools/share/info' '/tools/share/info/gawkinet.info'
+ /tools/bin/mkdir -p '/tools/share/man/man1'
+ .././install-sh -c -m 644 gawk.1 igawk.1 '/tools/share/man/man1'
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/doc'
+make[1]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/doc'
+Making install in awklib
+make[1]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/awklib'
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/awklib'
+ /tools/bin/mkdir -p '/tools/bin'
+ .././install-sh -c igawk '/tools/bin'
+ /tools/bin/mkdir -p '/tools/libexec/awk'
+  .././install-sh -c pwcat grcat '/tools/libexec/awk'
+make  install-exec-hook
+make[3]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/awklib'
+/bin/sh ../mkinstalldirs /tools/share/awk
+mkdir -p -- /tools/share/awk
+for i in passwd.awk group.awk ./eg/lib/*.awk ; do \
+	progname=`echo $i | sed 's;.*/;;'` ; \
+	.././install-sh -c -m 644 $i /tools/share/awk/$progname ; \
+done
+make[3]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/awklib'
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/awklib'
+make[1]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/awklib'
+Making install in po
+make[1]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/po'
+installing ca.gmo as /tools/share/locale/ca/LC_MESSAGES/gawk.mo
+installing da.gmo as /tools/share/locale/da/LC_MESSAGES/gawk.mo
+installing de.gmo as /tools/share/locale/de/LC_MESSAGES/gawk.mo
+installing es.gmo as /tools/share/locale/es/LC_MESSAGES/gawk.mo
+installing fi.gmo as /tools/share/locale/fi/LC_MESSAGES/gawk.mo
+installing fr.gmo as /tools/share/locale/fr/LC_MESSAGES/gawk.mo
+installing id.gmo as /tools/share/locale/id/LC_MESSAGES/gawk.mo
+installing it.gmo as /tools/share/locale/it/LC_MESSAGES/gawk.mo
+installing ja.gmo as /tools/share/locale/ja/LC_MESSAGES/gawk.mo
+installing ms.gmo as /tools/share/locale/ms/LC_MESSAGES/gawk.mo
+installing nl.gmo as /tools/share/locale/nl/LC_MESSAGES/gawk.mo
+installing pl.gmo as /tools/share/locale/pl/LC_MESSAGES/gawk.mo
+installing sv.gmo as /tools/share/locale/sv/LC_MESSAGES/gawk.mo
+installing vi.gmo as /tools/share/locale/vi/LC_MESSAGES/gawk.mo
+installing zh_CN.gmo as /tools/share/locale/zh_CN/LC_MESSAGES/gawk.mo
+if test "gawk" = "gettext-tools"; then \
+  /tools/bin/mkdir -p /tools/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    .././install-sh -c -m 644 ./$file \
+		    /tools/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /tools/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/po'
+Making install in test
+make[1]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/test'
+make[2]: Entering directory '/mnt/lfs/sources/gawk-4.1.4/test'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/test'
+make[1]: Leaving directory '/mnt/lfs/sources/gawk-4.1.4/test'
+lfs@Minty /mnt/lfs/sources/gawk-4.1.4 $

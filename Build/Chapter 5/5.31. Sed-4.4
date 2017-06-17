@@ -1,0 +1,2292 @@
+5.31. Sed-4.4
+The Sed package contains a stream editor.
+
+Approximate build time:
+0.1 SBU
+Required disk space:
+16 MB
+lfs@Minty /mnt/lfs/sources $ clear
+lfs@Minty /mnt/lfs/sources $ tar -xvf sed-4.4
+tar: sed-4.4: Cannot read: Is a directory
+tar: At beginning of tape, quitting now
+tar: Error is not recoverable: exiting now
+lfs@Minty /mnt/lfs/sources $ tar -xvf sed-4.4
+sed-4.4/        sed-4.4.tar.xz
+lfs@Minty /mnt/lfs/sources $ tar -xvf sed-4.4.tar.xz
+sed-4.4/
+sed-4.4/ABOUT-NLS
+sed-4.4/ChangeLog-2014
+sed-4.4/configure.ac
+sed-4.4/.version
+sed-4.4/THANKS.in
+sed-4.4/gnulib-tests/
+sed-4.4/gnulib-tests/test-setlocale2.sh
+sed-4.4/gnulib-tests/test-binary-io.sh
+sed-4.4/gnulib-tests/test-mbrtowc3.sh
+sed-4.4/gnulib-tests/putenv.c
+sed-4.4/gnulib-tests/dirent.in.h
+sed-4.4/gnulib-tests/test-quotearg.h
+sed-4.4/gnulib-tests/dfa-match-aux.c
+sed-4.4/gnulib-tests/test-stat.c
+sed-4.4/gnulib-tests/test-fwrite.c
+sed-4.4/gnulib-tests/test-fpending.c
+sed-4.4/gnulib-tests/test-fseeko4.c
+sed-4.4/gnulib-tests/test-btowc.c
+sed-4.4/gnulib-tests/lseek.c
+sed-4.4/gnulib-tests/test-chdir.c
+sed-4.4/gnulib-tests/test-fpending.sh
+sed-4.4/gnulib-tests/fseeko.c
+sed-4.4/gnulib-tests/test-copy-acl-2.sh
+sed-4.4/gnulib-tests/test-mbsinit.c
+sed-4.4/gnulib-tests/test-sys_types.c
+sed-4.4/gnulib-tests/test-set-mode-acl.sh
+sed-4.4/gnulib-tests/test-getprogname.c
+sed-4.4/gnulib-tests/test-link.c
+sed-4.4/gnulib-tests/test-ftello.sh
+sed-4.4/gnulib-tests/test-mbrtowc-w32-3.sh
+sed-4.4/gnulib-tests/test-copy-acl-1.sh
+sed-4.4/gnulib-tests/test-wcrtomb-w32-2.sh
+sed-4.4/gnulib-tests/test-open.h
+sed-4.4/gnulib-tests/test-fgetc.c
+sed-4.4/gnulib-tests/test-fseek2.sh
+sed-4.4/gnulib-tests/test-mbrtowc-w32-4.sh
+sed-4.4/gnulib-tests/test-getopt-main.h
+sed-4.4/gnulib-tests/localename.c
+sed-4.4/gnulib-tests/signature.h
+sed-4.4/gnulib-tests/test-setlocale1.sh
+sed-4.4/gnulib-tests/test-environ.c
+sed-4.4/gnulib-tests/test-readlink.c
+sed-4.4/gnulib-tests/test-rename.h
+sed-4.4/gnulib-tests/dirent-private.h
+sed-4.4/gnulib-tests/test-mbrtowc-w32-5.sh
+sed-4.4/gnulib-tests/test-symlink.h
+sed-4.4/gnulib-tests/getdtablesize.c
+sed-4.4/gnulib-tests/test-malloca.c
+sed-4.4/gnulib-tests/test-ftello2.sh
+sed-4.4/gnulib-tests/test-time.c
+sed-4.4/gnulib-tests/test-limits-h.c
+sed-4.4/gnulib-tests/test-pathmax.c
+sed-4.4/gnulib-tests/test-quotearg-simple.c
+sed-4.4/gnulib-tests/test-wctype-h.c
+sed-4.4/gnulib-tests/ftello.c
+sed-4.4/gnulib-tests/test-file-has-acl.c
+sed-4.4/gnulib-tests/test-copy-acl.sh
+sed-4.4/gnulib-tests/test-ftell3.c
+sed-4.4/gnulib-tests/dfa-invalid-char-class.sh
+sed-4.4/gnulib-tests/setlocale.c
+sed-4.4/gnulib-tests/fd-hook.c
+sed-4.4/gnulib-tests/opendir.c
+sed-4.4/gnulib-tests/test-version-etc.c
+sed-4.4/gnulib-tests/test-init.sh
+sed-4.4/gnulib-tests/test-fwriting.c
+sed-4.4/gnulib-tests/test-fpurge.c
+sed-4.4/gnulib-tests/test-getcwd-lgpl.c
+sed-4.4/gnulib-tests/test-update-copyright.sh
+sed-4.4/gnulib-tests/test-getdelim.c
+sed-4.4/gnulib-tests/test-xalloc-die.c
+sed-4.4/gnulib-tests/test-getopt.h
+sed-4.4/gnulib-tests/test-file-has-acl-2.sh
+sed-4.4/gnulib-tests/Makefile.am
+sed-4.4/gnulib-tests/test-fcntl-h.c
+sed-4.4/gnulib-tests/filename.h
+sed-4.4/gnulib-tests/test-mbrtowc-w32-2.sh
+sed-4.4/gnulib-tests/binary-io.c
+sed-4.4/gnulib-tests/test-memchr.c
+sed-4.4/gnulib-tests/test-fflush2.sh
+sed-4.4/gnulib-tests/test-readlink.h
+sed-4.4/gnulib-tests/test-wcrtomb.sh
+sed-4.4/gnulib-tests/test-sys_time.c
+sed-4.4/gnulib-tests/test-fseek.c
+sed-4.4/gnulib-tests/dfa-match.sh
+sed-4.4/gnulib-tests/localename.h
+sed-4.4/gnulib-tests/test-set-mode-acl.c
+sed-4.4/gnulib-tests/closedir.c
+sed-4.4/gnulib-tests/fseek.c
+sed-4.4/gnulib-tests/test-fflush.c
+sed-4.4/gnulib-tests/test-vc-list-files-git.sh
+sed-4.4/gnulib-tests/getcwd-lgpl.c
+sed-4.4/gnulib-tests/close.c
+sed-4.4/gnulib-tests/test-regex.c
+sed-4.4/gnulib-tests/test-stdio.c
+sed-4.4/gnulib-tests/zerosize-ptr.h
+sed-4.4/gnulib-tests/ftell.c
+sed-4.4/gnulib-tests/symlink.c
+sed-4.4/gnulib-tests/test-mbrtowc5.sh
+sed-4.4/gnulib-tests/fpurge.c
+sed-4.4/gnulib-tests/test-rename.c
+sed-4.4/gnulib-tests/test-wcrtomb-w32-4.sh
+sed-4.4/gnulib-tests/test-fseeko2.sh
+sed-4.4/gnulib-tests/test-fseeko3.sh
+sed-4.4/gnulib-tests/test-fseeko.c
+sed-4.4/gnulib-tests/test-sys_wait.h
+sed-4.4/gnulib-tests/test-isblank.c
+sed-4.4/gnulib-tests/test-getopt-posix.c
+sed-4.4/gnulib-tests/test-wcrtomb-w32-3.sh
+sed-4.4/gnulib-tests/binary-io.h
+sed-4.4/gnulib-tests/link.c
+sed-4.4/gnulib-tests/test-alignof.c
+sed-4.4/gnulib-tests/test-localename.c
+sed-4.4/gnulib-tests/test-read-file.c
+sed-4.4/gnulib-tests/test-dirent.c
+sed-4.4/gnulib-tests/test-stddef.c
+sed-4.4/gnulib-tests/test-strerror.c
+sed-4.4/gnulib-tests/test-fseeko.sh
+sed-4.4/gnulib-tests/test-fstat.c
+sed-4.4/gnulib-tests/test-gettimeofday.c
+sed-4.4/gnulib-tests/test-c-strncasecmp.c
+sed-4.4/gnulib-tests/test-binary-io.c
+sed-4.4/gnulib-tests/test-lseek.c
+sed-4.4/gnulib-tests/init.sh
+sed-4.4/gnulib-tests/test-stdbool.c
+sed-4.4/gnulib-tests/test-mbrtowc-w32-1.sh
+sed-4.4/gnulib-tests/test-freading.c
+sed-4.4/gnulib-tests/strdup.c
+sed-4.4/gnulib-tests/test-ftell.c
+sed-4.4/gnulib-tests/test-btowc1.sh
+sed-4.4/gnulib-tests/test-canonicalize-lgpl.c
+sed-4.4/gnulib-tests/test-link.h
+sed-4.4/gnulib-tests/test-intprops.c
+sed-4.4/gnulib-tests/test-fdopen.c
+sed-4.4/gnulib-tests/test-alloca-opt.c
+sed-4.4/gnulib-tests/Makefile.in
+sed-4.4/gnulib-tests/test-mbrtowc1.sh
+sed-4.4/gnulib-tests/test-fflush2.c
+sed-4.4/gnulib-tests/test-ftello4.c
+sed-4.4/gnulib-tests/test-strverscmp.c
+sed-4.4/gnulib-tests/test-verify.c
+sed-4.4/gnulib-tests/flexmember.h
+sed-4.4/gnulib-tests/test-ftello4.sh
+sed-4.4/gnulib-tests/test-c-strcase.sh
+sed-4.4/gnulib-tests/test-memrchr.c
+sed-4.4/gnulib-tests/test-setlocale1.c
+sed-4.4/gnulib-tests/test-fseeko4.sh
+sed-4.4/gnulib-tests/test-file-has-acl-1.sh
+sed-4.4/gnulib-tests/open.c
+sed-4.4/gnulib-tests/test-mbrtowc2.sh
+sed-4.4/gnulib-tests/test-ignore-value.c
+sed-4.4/gnulib-tests/test-getopt-gnu.c
+sed-4.4/gnulib-tests/test-open.c
+sed-4.4/gnulib-tests/test-localeconv.c
+sed-4.4/gnulib-tests/test-set-mode-acl-2.sh
+sed-4.4/gnulib-tests/test-mbsinit.sh
+sed-4.4/gnulib-tests/test-rmdir.h
+sed-4.4/gnulib-tests/test-getdtablesize.c
+sed-4.4/gnulib-tests/test-dup2.c
+sed-4.4/gnulib-tests/test-close.c
+sed-4.4/gnulib-tests/test-ftell.sh
+sed-4.4/gnulib-tests/getpagesize.c
+sed-4.4/gnulib-tests/test-locale.c
+sed-4.4/gnulib-tests/test-stat.h
+sed-4.4/gnulib-tests/fd-hook.h
+sed-4.4/gnulib-tests/test-wcrtomb-w32.c
+sed-4.4/gnulib-tests/stdio-impl.h
+sed-4.4/gnulib-tests/readdir.c
+sed-4.4/gnulib-tests/freading.h
+sed-4.4/gnulib-tests/macros.h
+sed-4.4/gnulib-tests/test-ctype.c
+sed-4.4/gnulib-tests/test-langinfo.c
+sed-4.4/gnulib-tests/file-has-acl.c
+sed-4.4/gnulib-tests/test-c-ctype.c
+sed-4.4/gnulib-tests/test-symlink.c
+sed-4.4/gnulib-tests/read-file.c
+sed-4.4/gnulib-tests/test-ftello.c
+sed-4.4/gnulib-tests/test-unsetenv.c
+sed-4.4/gnulib-tests/test-lstat.c
+sed-4.4/gnulib-tests/test-errno.c
+sed-4.4/gnulib-tests/test-lstat.h
+sed-4.4/gnulib-tests/test-fseek.sh
+sed-4.4/gnulib-tests/fdopen.c
+sed-4.4/gnulib-tests/unsetenv.c
+sed-4.4/gnulib-tests/inttypes.in.h
+sed-4.4/gnulib-tests/test-unistd.c
+sed-4.4/gnulib-tests/gnulib.mk
+sed-4.4/gnulib-tests/dirfd.c
+sed-4.4/gnulib-tests/test-file-has-acl.sh
+sed-4.4/gnulib-tests/test-stdint.c
+sed-4.4/gnulib-tests/test-wcrtomb-w32-5.sh
+sed-4.4/gnulib-tests/test-mbrtowc4.sh
+sed-4.4/gnulib-tests/test-stdalign.c
+sed-4.4/gnulib-tests/test-ftello3.c
+sed-4.4/gnulib-tests/test-string.c
+sed-4.4/gnulib-tests/test-setlocale2.c
+sed-4.4/gnulib-tests/test-btowc2.sh
+sed-4.4/gnulib-tests/test-lseek.sh
+sed-4.4/gnulib-tests/test-copy-acl.c
+sed-4.4/gnulib-tests/test-verify.sh
+sed-4.4/gnulib-tests/test-inttypes.c
+sed-4.4/gnulib-tests/test-sys_stat.c
+sed-4.4/gnulib-tests/test-stdlib.c
+sed-4.4/gnulib-tests/dup2.c
+sed-4.4/gnulib-tests/test-fseeko3.c
+sed-4.4/gnulib-tests/test-nl_langinfo.c
+sed-4.4/gnulib-tests/test-version-etc.sh
+sed-4.4/gnulib-tests/test-nl_langinfo.sh
+sed-4.4/gnulib-tests/test-wcrtomb-w32-1.sh
+sed-4.4/gnulib-tests/test-fread.c
+sed-4.4/gnulib-tests/test-c-strcasecmp.c
+sed-4.4/gnulib-tests/fflush.c
+sed-4.4/gnulib-tests/read-file.h
+sed-4.4/gnulib-tests/test-mbrtowc-w32.c
+sed-4.4/gnulib-tests/test-vc-list-files-cvs.sh
+sed-4.4/gnulib-tests/test-rmdir.c
+sed-4.4/gnulib-tests/test-getopt_long.h
+sed-4.4/gnulib-tests/test-xalloc-die.sh
+sed-4.4/gnulib-tests/test-setenv.c
+sed-4.4/gnulib-tests/test-sameacls.c
+sed-4.4/gnulib-tests/test-set-mode-acl-1.sh
+sed-4.4/gnulib-tests/freading.c
+sed-4.4/gnulib-tests/realloc.c
+sed-4.4/gnulib-tests/test-wchar.c
+sed-4.4/gnulib-tests/test-fputc.c
+sed-4.4/gnulib-tests/setenv.c
+sed-4.4/gnulib-tests/test-ftell2.sh
+sed-4.4/gnulib-tests/test-wcrtomb.c
+sed-4.4/gnulib-tests/test-mbrtowc.c
+sed-4.4/m4/
+sed-4.4/m4/fwriting.m4
+sed-4.4/m4/fstat.m4
+sed-4.4/m4/po.m4
+sed-4.4/m4/localcharset.m4
+sed-4.4/m4/getpagesize.m4
+sed-4.4/m4/lstat.m4
+sed-4.4/m4/locale-tr.m4
+sed-4.4/m4/read-file.m4
+sed-4.4/m4/btowc.m4
+sed-4.4/m4/gnulib-common.m4
+sed-4.4/m4/close.m4
+sed-4.4/m4/intlmacosx.m4
+sed-4.4/m4/wctype_h.m4
+sed-4.4/m4/strerror.m4
+sed-4.4/m4/limits-h.m4
+sed-4.4/m4/stdint.m4
+sed-4.4/m4/nls.m4
+sed-4.4/m4/malloc.m4
+sed-4.4/m4/version-etc.m4
+sed-4.4/m4/fcntl-o.m4
+sed-4.4/m4/pathmax.m4
+sed-4.4/m4/ftell.m4
+sed-4.4/m4/tempname.m4
+sed-4.4/m4/stdlib_h.m4
+sed-4.4/m4/ftello.m4
+sed-4.4/m4/progtest.m4
+sed-4.4/m4/localeconv.m4
+sed-4.4/m4/msvc-nothrow.m4
+sed-4.4/m4/warnings.m4
+sed-4.4/m4/readdir.m4
+sed-4.4/m4/gettext.m4
+sed-4.4/m4/memchr.m4
+sed-4.4/m4/fcntl_h.m4
+sed-4.4/m4/00gnulib.m4
+sed-4.4/m4/close-stream.m4
+sed-4.4/m4/realloc.m4
+sed-4.4/m4/glibc21.m4
+sed-4.4/m4/warn-on-use.m4
+sed-4.4/m4/stddef_h.m4
+sed-4.4/m4/lock.m4
+sed-4.4/m4/multiarch.m4
+sed-4.4/m4/opendir.m4
+sed-4.4/m4/configmake.m4
+sed-4.4/m4/non-recursive-gnulib-prefix-hack.m4
+sed-4.4/m4/canonicalize.m4
+sed-4.4/m4/lib-link.m4
+sed-4.4/m4/symlink.m4
+sed-4.4/m4/locale-fr.m4
+sed-4.4/m4/readlink.m4
+sed-4.4/m4/gettimeofday.m4
+sed-4.4/m4/nocrash.m4
+sed-4.4/m4/quote.m4
+sed-4.4/m4/flexmember.m4
+sed-4.4/m4/rmdir.m4
+sed-4.4/m4/string_h.m4
+sed-4.4/m4/unistd_h.m4
+sed-4.4/m4/freading.m4
+sed-4.4/m4/fdopen.m4
+sed-4.4/m4/mbrtowc.m4
+sed-4.4/m4/dup2.m4
+sed-4.4/m4/stdalign.m4
+sed-4.4/m4/fpurge.m4
+sed-4.4/m4/threadlib.m4
+sed-4.4/m4/regex.m4
+sed-4.4/m4/unlocked-io.m4
+sed-4.4/m4/wcrtomb.m4
+sed-4.4/m4/wchar_t.m4
+sed-4.4/m4/lib-prefix.m4
+sed-4.4/m4/msvc-inval.m4
+sed-4.4/m4/setlocale.m4
+sed-4.4/m4/largefile.m4
+sed-4.4/m4/dirfd.m4
+sed-4.4/m4/memrchr.m4
+sed-4.4/m4/sys_stat_h.m4
+sed-4.4/m4/stdbool.m4
+sed-4.4/m4/open.m4
+sed-4.4/m4/sys_socket_h.m4
+sed-4.4/m4/ssize_t.m4
+sed-4.4/m4/isblank.m4
+sed-4.4/m4/extern-inline.m4
+sed-4.4/m4/locale-zh.m4
+sed-4.4/m4/nl_langinfo.m4
+sed-4.4/m4/lcmessage.m4
+sed-4.4/m4/eealloc.m4
+sed-4.4/m4/codeset.m4
+sed-4.4/m4/error.m4
+sed-4.4/m4/link.m4
+sed-4.4/m4/secure_getenv.m4
+sed-4.4/m4/hard-locale.m4
+sed-4.4/m4/ctype.m4
+sed-4.4/m4/time_h.m4
+sed-4.4/m4/closedir.m4
+sed-4.4/m4/mbrlen.m4
+sed-4.4/m4/fpending.m4
+sed-4.4/m4/quotearg.m4
+sed-4.4/m4/rename.m4
+sed-4.4/m4/manywarnings.m4
+sed-4.4/m4/strverscmp.m4
+sed-4.4/m4/getdtablesize.m4
+sed-4.4/m4/obstack.m4
+sed-4.4/m4/malloca.m4
+sed-4.4/m4/alloca.m4
+sed-4.4/m4/environ.m4
+sed-4.4/m4/stdarg.m4
+sed-4.4/m4/pthread_rwlock_rdlock.m4
+sed-4.4/m4/wchar_h.m4
+sed-4.4/m4/setenv.m4
+sed-4.4/m4/localename.m4
+sed-4.4/m4/ungetc.m4
+sed-4.4/m4/mbtowc.m4
+sed-4.4/m4/mode_t.m4
+sed-4.4/m4/getopt.m4
+sed-4.4/m4/wctomb.m4
+sed-4.4/m4/stdio_h.m4
+sed-4.4/m4/mbstate_t.m4
+sed-4.4/m4/inttypes.m4
+sed-4.4/m4/xalloc.m4
+sed-4.4/m4/langinfo_h.m4
+sed-4.4/m4/getdelim.m4
+sed-4.4/m4/off_t.m4
+sed-4.4/m4/dirent_h.m4
+sed-4.4/m4/std-gnu11.m4
+sed-4.4/m4/assert.m4
+sed-4.4/m4/fseek.m4
+sed-4.4/m4/stat.m4
+sed-4.4/m4/lseek.m4
+sed-4.4/m4/mbsinit.m4
+sed-4.4/m4/dirname.m4
+sed-4.4/m4/builtin-expect.m4
+sed-4.4/m4/selinux-context-h.m4
+sed-4.4/m4/double-slash-root.m4
+sed-4.4/m4/minmax.m4
+sed-4.4/m4/absolute-header.m4
+sed-4.4/m4/errno_h.m4
+sed-4.4/m4/inttypes-pri.m4
+sed-4.4/m4/closeout.m4
+sed-4.4/m4/putenv.m4
+sed-4.4/m4/selinux-selinux-h.m4
+sed-4.4/m4/strdup.m4
+sed-4.4/m4/getcwd.m4
+sed-4.4/m4/iconv.m4
+sed-4.4/m4/wctob.m4
+sed-4.4/m4/locale_h.m4
+sed-4.4/m4/mkostemp.m4
+sed-4.4/m4/include_next.m4
+sed-4.4/m4/getprogname.m4
+sed-4.4/m4/wint_t.m4
+sed-4.4/m4/sys_types_h.m4
+sed-4.4/m4/locale-ja.m4
+sed-4.4/m4/longlong.m4
+sed-4.4/m4/mmap-anon.m4
+sed-4.4/m4/acl.m4
+sed-4.4/m4/lib-ld.m4
+sed-4.4/m4/fflush.m4
+sed-4.4/m4/gnulib-comp.m4
+sed-4.4/m4/extensions.m4
+sed-4.4/m4/fseeko.m4
+sed-4.4/m4/sys_time_h.m4
+sed-4.4/build-aux/
+sed-4.4/build-aux/git-version-gen
+sed-4.4/build-aux/gnu-web-doc-update
+sed-4.4/build-aux/config.guess
+sed-4.4/build-aux/test-driver
+sed-4.4/build-aux/prefix-gnulib-mk
+sed-4.4/build-aux/compile
+sed-4.4/build-aux/snippet/
+sed-4.4/build-aux/snippet/arg-nonnull.h
+sed-4.4/build-aux/snippet/_Noreturn.h
+sed-4.4/build-aux/snippet/unused-parameter.h
+sed-4.4/build-aux/snippet/c++defs.h
+sed-4.4/build-aux/snippet/warn-on-use.h
+sed-4.4/build-aux/update-copyright
+sed-4.4/build-aux/vc-list-files
+sed-4.4/build-aux/gendocs.sh
+sed-4.4/build-aux/gitlog-to-changelog
+sed-4.4/build-aux/texinfo.tex
+sed-4.4/build-aux/config.rpath
+sed-4.4/build-aux/announce-gen
+sed-4.4/build-aux/help2man
+sed-4.4/build-aux/useless-if-before-free
+sed-4.4/build-aux/config.sub
+sed-4.4/build-aux/gnupload
+sed-4.4/build-aux/do-release-commit-and-tag
+sed-4.4/build-aux/mdate-sh
+sed-4.4/build-aux/missing
+sed-4.4/build-aux/ar-lib
+sed-4.4/build-aux/depcomp
+sed-4.4/build-aux/install-sh
+sed-4.4/Makefile.am
+sed-4.4/doc/
+sed-4.4/doc/stamp-vti
+sed-4.4/doc/sed-dummy.1
+sed-4.4/doc/sed.1
+sed-4.4/doc/sed.x
+sed-4.4/doc/config.texi
+sed-4.4/doc/version.texi
+sed-4.4/doc/sed.info
+sed-4.4/doc/sed.texi
+sed-4.4/doc/local.mk
+sed-4.4/doc/fdl.texi
+sed-4.4/bootstrap
+sed-4.4/NEWS
+sed-4.4/thanks-gen
+sed-4.4/sed/
+sed-4.4/sed/sed.c
+sed-4.4/sed/execute.c
+sed-4.4/sed/regexp.c
+sed-4.4/sed/mbcs.c
+sed-4.4/sed/utils.h
+sed-4.4/sed/sed.h
+sed-4.4/sed/compile.c
+sed-4.4/sed/utils.c
+sed-4.4/sed/local.mk
+sed-4.4/init.cfg
+sed-4.4/INSTALL
+sed-4.4/COPYING
+sed-4.4/README
+sed-4.4/aclocal.m4
+sed-4.4/maint.mk
+sed-4.4/po/
+sed-4.4/po/gl.po
+sed-4.4/po/ChangeLog-2014
+sed-4.4/po/tr.po
+sed-4.4/po/nl.gmo
+sed-4.4/po/ko.po
+sed-4.4/po/Rules-quot
+sed-4.4/po/bg.po
+sed-4.4/po/POTFILES.in
+sed-4.4/po/fr.gmo
+sed-4.4/po/zh_TW.gmo
+sed-4.4/po/hu.gmo
+sed-4.4/po/eo.po
+sed-4.4/po/hr.gmo
+sed-4.4/po/ja.po
+sed-4.4/po/es.po
+sed-4.4/po/he.gmo
+sed-4.4/po/de.po
+sed-4.4/po/cs.po
+sed-4.4/po/pl.po
+sed-4.4/po/id.gmo
+sed-4.4/po/tr.gmo
+sed-4.4/po/da.gmo
+sed-4.4/po/boldquot.sed
+sed-4.4/po/el.po
+sed-4.4/po/fi.po
+sed-4.4/po/fi.gmo
+sed-4.4/po/eu.gmo
+sed-4.4/po/sl.po
+sed-4.4/po/insert-header.sin
+sed-4.4/po/ga.po
+sed-4.4/po/Makevars
+sed-4.4/po/et.po
+sed-4.4/po/it.gmo
+sed-4.4/po/pt_BR.gmo
+sed-4.4/po/ro.po
+sed-4.4/po/ast.po
+sed-4.4/po/quot.sed
+sed-4.4/po/sed.pot
+sed-4.4/po/en@boldquot.header
+sed-4.4/po/zh_CN.po
+sed-4.4/po/LINGUAS
+sed-4.4/po/zh_TW.po
+sed-4.4/po/sv.po
+sed-4.4/po/nb.po
+sed-4.4/po/hu.po
+sed-4.4/po/he.po
+sed-4.4/po/gl.gmo
+sed-4.4/po/pt.po
+sed-4.4/po/Makefile.in.in
+sed-4.4/po/eo.gmo
+sed-4.4/po/vi.po
+sed-4.4/po/hr.po
+sed-4.4/po/nl.po
+sed-4.4/po/sv.gmo
+sed-4.4/po/ro.gmo
+sed-4.4/po/sk.gmo
+sed-4.4/po/sr.po
+sed-4.4/po/uk.gmo
+sed-4.4/po/af.po
+sed-4.4/po/it.po
+sed-4.4/po/id.po
+sed-4.4/po/ca.po
+sed-4.4/po/et.gmo
+sed-4.4/po/es.gmo
+sed-4.4/po/zh_CN.gmo
+sed-4.4/po/ast.gmo
+sed-4.4/po/nb.gmo
+sed-4.4/po/el.gmo
+sed-4.4/po/en@quot.header
+sed-4.4/po/ca.gmo
+sed-4.4/po/sl.gmo
+sed-4.4/po/ko.gmo
+sed-4.4/po/pl.gmo
+sed-4.4/po/uk.po
+sed-4.4/po/stamp-po
+sed-4.4/po/vi.gmo
+sed-4.4/po/cs.gmo
+sed-4.4/po/eu.po
+sed-4.4/po/ja.gmo
+sed-4.4/po/pt_BR.po
+sed-4.4/po/sk.po
+sed-4.4/po/fr.po
+sed-4.4/po/ru.po
+sed-4.4/po/af.gmo
+sed-4.4/po/pt.gmo
+sed-4.4/po/da.po
+sed-4.4/po/ga.gmo
+sed-4.4/po/sr.gmo
+sed-4.4/po/remove-potcdate.sin
+sed-4.4/po/bg.gmo
+sed-4.4/po/ru.gmo
+sed-4.4/po/de.gmo
+sed-4.4/AUTHORS
+sed-4.4/lib/
+sed-4.4/lib/getdelim.c
+sed-4.4/lib/copy-acl.c
+sed-4.4/lib/version-etc-fsf.c
+sed-4.4/lib/qset-acl.c
+sed-4.4/lib/mbrtowc.c
+sed-4.4/lib/regex_internal.c
+sed-4.4/lib/wctype-h.c
+sed-4.4/lib/set-acl.c
+sed-4.4/lib/strerror.c
+sed-4.4/lib/regex_internal.h
+sed-4.4/lib/acl.h
+sed-4.4/lib/getopt.c
+sed-4.4/lib/basename-lgpl.c
+sed-4.4/lib/fcntl.in.h
+sed-4.4/lib/se-selinux.in.h
+sed-4.4/lib/getprogname.c
+sed-4.4/lib/mbtowc-impl.h
+sed-4.4/lib/get-permissions.c
+sed-4.4/lib/stdio.in.h
+sed-4.4/lib/qcopy-acl.c
+sed-4.4/lib/strverscmp.c
+sed-4.4/lib/lstat.c
+sed-4.4/lib/error.h
+sed-4.4/lib/ctype.in.h
+sed-4.4/lib/memchr.valgrind
+sed-4.4/lib/exitfail.c
+sed-4.4/lib/error.c
+sed-4.4/lib/fpending.h
+sed-4.4/lib/version-etc.c
+sed-4.4/lib/regexec.c
+sed-4.4/lib/regex.c
+sed-4.4/lib/dfa.c
+sed-4.4/lib/regex.h
+sed-4.4/lib/string.in.h
+sed-4.4/lib/time.in.h
+sed-4.4/lib/malloc.c
+sed-4.4/lib/malloca.valgrind
+sed-4.4/lib/getfilecon.c
+sed-4.4/lib/set-permissions.c
+sed-4.4/lib/localeinfo.h
+sed-4.4/lib/hard-locale.h
+sed-4.4/lib/secure_getenv.c
+sed-4.4/lib/c-ctype.h
+sed-4.4/lib/c-ctype.c
+sed-4.4/lib/mbrlen.c
+sed-4.4/lib/c-strcasecmp.c
+sed-4.4/lib/tempname.h
+sed-4.4/lib/malloca.c
+sed-4.4/lib/stdint.in.h
+sed-4.4/lib/minmax.h
+sed-4.4/lib/acl-internal.c
+sed-4.4/lib/c-strcase.h
+sed-4.4/lib/closeout.h
+sed-4.4/lib/acl-internal.h
+sed-4.4/lib/fwriting.c
+sed-4.4/lib/getprogname.h
+sed-4.4/lib/localcharset.h
+sed-4.4/lib/fstat.c
+sed-4.4/lib/config.charset
+sed-4.4/lib/sys_stat.in.h
+sed-4.4/lib/se-selinux.c
+sed-4.4/lib/gettext.h
+sed-4.4/lib/quotearg.c
+sed-4.4/lib/unlocked-io.h
+sed-4.4/lib/localeconv.c
+sed-4.4/lib/getopt1.c
+sed-4.4/lib/xmalloc.c
+sed-4.4/lib/dfa.h
+sed-4.4/lib/glthread/
+sed-4.4/lib/glthread/threadlib.c
+sed-4.4/lib/glthread/lock.h
+sed-4.4/lib/glthread/lock.c
+sed-4.4/lib/same-inode.h
+sed-4.4/lib/strerror-override.c
+sed-4.4/lib/stat-macros.h
+sed-4.4/lib/btowc.c
+sed-4.4/lib/msvc-nothrow.c
+sed-4.4/lib/stat.c
+sed-4.4/lib/getopt_int.h
+sed-4.4/lib/canonicalize-lgpl.c
+sed-4.4/lib/ref-add.sin
+sed-4.4/lib/gettimeofday.c
+sed-4.4/lib/acl-errno-valid.c
+sed-4.4/lib/strerror-override.h
+sed-4.4/lib/xalloc.h
+sed-4.4/lib/xalloc-oversized.h
+sed-4.4/lib/dosname.h
+sed-4.4/lib/fwriting.h
+sed-4.4/lib/rename.c
+sed-4.4/lib/quote.h
+sed-4.4/lib/rmdir.c
+sed-4.4/lib/wctomb.c
+sed-4.4/lib/intprops.h
+sed-4.4/lib/exitfail.h
+sed-4.4/lib/errno.in.h
+sed-4.4/lib/msvc-nothrow.h
+sed-4.4/lib/limits.in.h
+sed-4.4/lib/dirname-lgpl.c
+sed-4.4/lib/mbtowc.c
+sed-4.4/lib/localeinfo.c
+sed-4.4/lib/stdbool.in.h
+sed-4.4/lib/mkostemp.c
+sed-4.4/lib/unistd.c
+sed-4.4/lib/memchr.c
+sed-4.4/lib/wctob.c
+sed-4.4/lib/alloca.c
+sed-4.4/lib/stddef.in.h
+sed-4.4/lib/stdlib.in.h
+sed-4.4/lib/se-context.c
+sed-4.4/lib/close-stream.h
+sed-4.4/lib/ignore-value.h
+sed-4.4/lib/stdio-impl.h
+sed-4.4/lib/pathmax.h
+sed-4.4/lib/fpending.c
+sed-4.4/lib/se-context.in.h
+sed-4.4/lib/stdalign.in.h
+sed-4.4/lib/closeout.c
+sed-4.4/lib/ref-del.sin
+sed-4.4/lib/alignof.h
+sed-4.4/lib/gnulib.mk
+sed-4.4/lib/isblank.c
+sed-4.4/lib/wcrtomb.c
+sed-4.4/lib/tempname.c
+sed-4.4/lib/unistd.in.h
+sed-4.4/lib/sys_time.in.h
+sed-4.4/lib/getopt.in.h
+sed-4.4/lib/nl_langinfo.c
+sed-4.4/lib/alloca.in.h
+sed-4.4/lib/obstack.c
+sed-4.4/lib/progname.h
+sed-4.4/lib/msvc-inval.h
+sed-4.4/lib/malloca.h
+sed-4.4/lib/xalloc-die.c
+sed-4.4/lib/c-strcaseeq.h
+sed-4.4/lib/wctomb-impl.h
+sed-4.4/lib/langinfo.in.h
+sed-4.4/lib/locale.in.h
+sed-4.4/lib/memrchr.c
+sed-4.4/lib/msvc-inval.c
+sed-4.4/lib/localcharset.c
+sed-4.4/lib/readlink.c
+sed-4.4/lib/verify.h
+sed-4.4/lib/dirname.h
+sed-4.4/lib/version-etc.h
+sed-4.4/lib/regcomp.c
+sed-4.4/lib/obstack.h
+sed-4.4/lib/acl_entries.c
+sed-4.4/lib/stdarg.in.h
+sed-4.4/lib/sys_types.in.h
+sed-4.4/lib/streq.h
+sed-4.4/lib/stripslash.c
+sed-4.4/lib/local.mk
+sed-4.4/lib/quotearg.h
+sed-4.4/lib/progname.c
+sed-4.4/lib/c-strncasecmp.c
+sed-4.4/lib/wchar.in.h
+sed-4.4/lib/wctype.in.h
+sed-4.4/lib/hard-locale.c
+sed-4.4/lib/close-stream.c
+sed-4.4/lib/mbsinit.c
+sed-4.4/ChangeLog
+sed-4.4/Makefile.in
+sed-4.4/.mailmap
+sed-4.4/configure
+sed-4.4/README-release
+sed-4.4/basicdefs.h
+sed-4.4/BUGS
+sed-4.4/.tarball-version
+sed-4.4/testsuite/
+sed-4.4/testsuite/dollar.inp
+sed-4.4/testsuite/empty.inp
+sed-4.4/testsuite/amp-escape.inp
+sed-4.4/testsuite/xabcx.sed
+sed-4.4/testsuite/utf8-2.sed
+sed-4.4/testsuite/manis.inp
+sed-4.4/testsuite/classes.good
+sed-4.4/testsuite/cv-vars.sed
+sed-4.4/testsuite/help-version.sh
+sed-4.4/testsuite/noeol.inp
+sed-4.4/testsuite/zero-anchor.good
+sed-4.4/testsuite/subwrite.sed
+sed-4.4/testsuite/linecnt.inp
+sed-4.4/testsuite/tst-boost.c
+sed-4.4/testsuite/numsub2.inp
+sed-4.4/testsuite/linecnt.good
+sed-4.4/testsuite/amp-escape.sed
+sed-4.4/testsuite/enable.good
+sed-4.4/testsuite/factor.sed
+sed-4.4/testsuite/stdin-prog.sh
+sed-4.4/testsuite/amp-escape.good
+sed-4.4/testsuite/dollar.sed
+sed-4.4/testsuite/classes.sed
+sed-4.4/testsuite/8to7.sed
+sed-4.4/testsuite/noeolw.sed
+sed-4.4/testsuite/appquit.inp
+sed-4.4/testsuite/fasts.inp
+sed-4.4/testsuite/utf8-1.good
+sed-4.4/testsuite/in-place-suffix-backup.sh
+sed-4.4/testsuite/eval.good
+sed-4.4/testsuite/recall.good
+sed-4.4/testsuite/bug-regex11.c
+sed-4.4/testsuite/badenc.inp
+sed-4.4/testsuite/xabcx.good
+sed-4.4/testsuite/bug-regex27.c
+sed-4.4/testsuite/subst-replacement.sh
+sed-4.4/testsuite/compile-errors.sh
+sed-4.4/testsuite/noeol.sed
+sed-4.4/testsuite/panic-tests.sh
+sed-4.4/testsuite/y-zero.good
+sed-4.4/testsuite/xemacs.inp
+sed-4.4/testsuite/convert-number.sh
+sed-4.4/testsuite/sep.inp
+sed-4.4/testsuite/bug-regex15.c
+sed-4.4/testsuite/dc.good
+sed-4.4/testsuite/posix-mode-addr.sh
+sed-4.4/testsuite/utf8-3.good
+sed-4.4/testsuite/follow-symlinks-stdin.sh
+sed-4.4/testsuite/normalize-text.sh
+sed-4.4/testsuite/newjis.good
+sed-4.4/testsuite/bug-regex28.c
+sed-4.4/testsuite/appquit.sed
+sed-4.4/testsuite/mac-mf.sed
+sed-4.4/testsuite/y-bracket.good
+sed-4.4/testsuite/mb-y-translate.sh
+sed-4.4/testsuite/0range.sed
+sed-4.4/testsuite/zero-anchor.inp
+sed-4.4/testsuite/xemacs.sed
+sed-4.4/testsuite/flipcase.inp
+sed-4.4/testsuite/bsd.sh
+sed-4.4/testsuite/mb-bad-delim.sh
+sed-4.4/testsuite/newline-anchor.sed
+sed-4.4/testsuite/madding.good
+sed-4.4/testsuite/runtest
+sed-4.4/testsuite/recall.sed
+sed-4.4/testsuite/8to7.inp
+sed-4.4/testsuite/khadafy.good
+sed-4.4/testsuite/recursive-escape-c.sh
+sed-4.4/testsuite/linecnt.sed
+sed-4.4/testsuite/madding.sed
+sed-4.4/testsuite/execute-tests.sh
+sed-4.4/testsuite/head.good
+sed-4.4/testsuite/testcases.h
+sed-4.4/testsuite/subwrt2.good
+sed-4.4/testsuite/brackets.inp
+sed-4.4/testsuite/subst-options.sh
+sed-4.4/testsuite/nulldata.sh
+sed-4.4/testsuite/cmd-l.sh
+sed-4.4/testsuite/bug-regex12.c
+sed-4.4/testsuite/SPENCER.tests
+sed-4.4/testsuite/flipcase.sed
+sed-4.4/testsuite/y-newline.sed
+sed-4.4/testsuite/modulo.sed
+sed-4.4/testsuite/readin.good
+sed-4.4/testsuite/numsub2.sed
+sed-4.4/testsuite/bug-regex7.c
+sed-4.4/testsuite/0range.good
+sed-4.4/testsuite/insert.inp
+sed-4.4/testsuite/numsub2.good
+sed-4.4/testsuite/8to7.good
+sed-4.4/testsuite/insens.inp
+sed-4.4/testsuite/noeolw.good
+sed-4.4/testsuite/xbxcx3.inp
+sed-4.4/testsuite/sep.sed
+sed-4.4/testsuite/Makefile.tests
+sed-4.4/testsuite/bug-regex14.c
+sed-4.4/testsuite/sandbox.sh
+sed-4.4/testsuite/numsub4.sed
+sed-4.4/testsuite/recall2.inp
+sed-4.4/testsuite/fasts.good
+sed-4.4/testsuite/xbxcx3.good
+sed-4.4/testsuite/BOOST.tests
+sed-4.4/testsuite/numsub4.good
+sed-4.4/testsuite/xbxcx3.sed
+sed-4.4/testsuite/recall2.good
+sed-4.4/testsuite/binary.good
+sed-4.4/testsuite/tst-pcre.c
+sed-4.4/testsuite/allsub.good
+sed-4.4/testsuite/dc.sed
+sed-4.4/testsuite/mac-mf.inp
+sed-4.4/testsuite/binary.sed
+sed-4.4/testsuite/uniq.inp
+sed-4.4/testsuite/newjis.sed
+sed-4.4/testsuite/modulo.good
+sed-4.4/testsuite/enable.inp
+sed-4.4/testsuite/bkslashes.sed
+sed-4.4/testsuite/utf8-4.good
+sed-4.4/testsuite/title-case.sh
+sed-4.4/testsuite/binary2.sed
+sed-4.4/testsuite/cv-vars.good
+sed-4.4/testsuite/follow-symlinks.sh
+sed-4.4/testsuite/wrtout2.good
+sed-4.4/testsuite/inclib.inp
+sed-4.4/testsuite/allsub.sed
+sed-4.4/testsuite/invalid-mb-seq-UMR.sh
+sed-4.4/testsuite/posix-mode-N.sh
+sed-4.4/testsuite/unbuffered.sh
+sed-4.4/testsuite/utf8-4.sed
+sed-4.4/testsuite/numsub.inp
+sed-4.4/testsuite/distrib.inp
+sed-4.4/testsuite/y-newline.good
+sed-4.4/testsuite/uniq.sed
+sed-4.4/testsuite/posix-mode-bad-ref.sh
+sed-4.4/testsuite/posix-mode-s.sh
+sed-4.4/testsuite/y-zero.sed
+sed-4.4/testsuite/y-zero.inp
+sed-4.4/testsuite/recall.inp
+sed-4.4/testsuite/brackets.sed
+sed-4.4/testsuite/y-bracket.sed
+sed-4.4/testsuite/cmd-R.sh
+sed-4.4/testsuite/init.sh
+sed-4.4/testsuite/comment-n.sh
+sed-4.4/testsuite/numsub4.inp
+sed-4.4/testsuite/khadafy.sed
+sed-4.4/testsuite/brackets.good
+sed-4.4/testsuite/readin.inp
+sed-4.4/testsuite/y-newline.inp
+sed-4.4/testsuite/insert.good
+sed-4.4/testsuite/posix-char-class.sh
+sed-4.4/testsuite/eval.sed
+sed-4.4/testsuite/dollar.good
+sed-4.4/testsuite/PCRE.tests
+sed-4.4/testsuite/xabcx.inp
+sed-4.4/testsuite/distrib.sh
+sed-4.4/testsuite/bsd.good
+sed-4.4/testsuite/0range.inp
+sed-4.4/testsuite/utf8-1.inp
+sed-4.4/testsuite/compile-tests.sh
+sed-4.4/testsuite/space.sed
+sed-4.4/testsuite/dc.inp
+sed-4.4/testsuite/noeol.good
+sed-4.4/testsuite/readin.sed
+sed-4.4/testsuite/bug-regex16.c
+sed-4.4/testsuite/mb-charclass-non-utf8.sh
+sed-4.4/testsuite/middle.good
+sed-4.4/testsuite/empty.good
+sed-4.4/testsuite/numsub.sed
+sed-4.4/testsuite/bug-regex9.c
+sed-4.4/testsuite/numsub3.sed
+sed-4.4/testsuite/numsub3.good
+sed-4.4/testsuite/utf8-3.inp
+sed-4.4/testsuite/numsub5.sed
+sed-4.4/testsuite/middle.inp
+sed-4.4/testsuite/head.sed
+sed-4.4/testsuite/writeout.inp
+sed-4.4/testsuite/cv-vars.inp
+sed-4.4/testsuite/inclib.sed
+sed-4.4/testsuite/noeolw.1good
+sed-4.4/testsuite/utf8-2.good
+sed-4.4/testsuite/y-bracket.inp
+sed-4.4/testsuite/madding.inp
+sed-4.4/testsuite/numsub.good
+sed-4.4/testsuite/in-place-hyphen.sh
+sed-4.4/testsuite/newline-dfa-bug.sh
+sed-4.4/testsuite/mb-match-slash.sh
+sed-4.4/testsuite/uniq.good
+sed-4.4/testsuite/get-mb-cur-max.c
+sed-4.4/testsuite/binary3.sed
+sed-4.4/testsuite/empty.sed
+sed-4.4/testsuite/space.good
+sed-4.4/testsuite/wrtout1.good
+sed-4.4/testsuite/utf8-3.sed
+sed-4.4/testsuite/colon-with-no-label.sh
+sed-4.4/testsuite/tst-regex2.c
+sed-4.4/testsuite/insens.sed
+sed-4.4/testsuite/manis.good
+sed-4.4/testsuite/binary.inp
+sed-4.4/testsuite/writeout.sed
+sed-4.4/testsuite/modulo.inp
+sed-4.4/testsuite/tst-rxspencer.c
+sed-4.4/testsuite/subwrite.inp
+sed-4.4/testsuite/classes.inp
+sed-4.4/testsuite/utf8-2.inp
+sed-4.4/testsuite/runptests.c
+sed-4.4/testsuite/numsub5.good
+sed-4.4/testsuite/range-overlap.sh
+sed-4.4/testsuite/subst-mb-incomplete.sh
+sed-4.4/testsuite/eval.inp
+sed-4.4/testsuite/xbxcx.sed
+sed-4.4/testsuite/space.inp
+sed-4.4/testsuite/flipcase.good
+sed-4.4/testsuite/enable.sed
+sed-4.4/testsuite/distrib.sed
+sed-4.4/testsuite/newline-anchor.inp
+sed-4.4/testsuite/insert.sed
+sed-4.4/testsuite/sep.good
+sed-4.4/testsuite/newline-anchor.good
+sed-4.4/testsuite/noeolw.2good
+sed-4.4/testsuite/allsub.inp
+sed-4.4/testsuite/fasts.sed
+sed-4.4/testsuite/numsub3.inp
+sed-4.4/testsuite/mac-mf.good
+sed-4.4/testsuite/newjis.inp
+sed-4.4/testsuite/envvar-check
+sed-4.4/testsuite/ptestcases.h
+sed-4.4/testsuite/xemacs.good
+sed-4.4/testsuite/middle.sed
+sed-4.4/testsuite/zero-anchor.sed
+sed-4.4/testsuite/head.inp
+sed-4.4/testsuite/8bit.good
+sed-4.4/testsuite/recall2.sed
+sed-4.4/testsuite/insens.good
+sed-4.4/testsuite/appquit.good
+sed-4.4/testsuite/8bit.inp
+sed-4.4/testsuite/utf8-4.inp
+sed-4.4/testsuite/khadafy.inp
+sed-4.4/testsuite/numsub5.inp
+sed-4.4/testsuite/manis.sed
+sed-4.4/testsuite/utf8-1.sed
+sed-4.4/testsuite/distrib.good
+sed-4.4/testsuite/8bit.sed
+sed-4.4/testsuite/subwrt1.good
+sed-4.4/testsuite/runtests.c
+sed-4.4/testsuite/bug-regex8.c
+sed-4.4/testsuite/local.mk
+sed-4.4/testsuite/bug-regex13.c
+sed-4.4/testsuite/badenc.sed
+sed-4.4/testsuite/bkslashes.inp
+sed-4.4/testsuite/bkslashes.good
+sed-4.4/testsuite/badenc.good
+sed-4.4/testsuite/xbxcx.inp
+sed-4.4/testsuite/regex-errors.sh
+sed-4.4/testsuite/temp-file-cleanup.sh
+sed-4.4/testsuite/bug-regex10.c
+sed-4.4/testsuite/xbxcx.good
+sed-4.4/testsuite/inclib.good
+sed-4.4/testsuite/factor.inp
+sed-4.4/testsuite/factor.good
+sed-4.4/testsuite/test-mbrtowc.c
+sed-4.4/testsuite/bug-regex21.c
+sed-4.4/THANKS
+sed-4.4/config_h.in
+sed-4.4/GNUmakefile
+sed-4.4/bootstrap.conf
+lfs@Minty /mnt/lfs/sources $ cd sed-4.4
+lfs@Minty /mnt/lfs/sources/sed-4.4 $
+lfs@Minty /mnt/lfs/sources/sed-4.4 $
+lfs@Minty /mnt/lfs/sources/sed-4.4 $
+lfs@Minty /mnt/lfs/sources/sed-4.4 $
+lfs@Minty /mnt/lfs/sources/sed-4.4 $
+lfs@Minty /mnt/lfs/sources/sed-4.4 $ ./configure --prefix=/tools
+checking for a BSD-compatible install... /tools/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /tools/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking dependency style of gcc... gcc3
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for sys/param.h... yes
+checking for stdio_ext.h... yes
+checking for getopt.h... yes
+checking for sys/time.h... yes
+checking for sys/socket.h... yes
+checking for langinfo.h... yes
+checking for limits.h... yes
+checking for xlocale.h... yes
+checking for sys/mman.h... yes
+checking for malloc.h... yes
+checking for selinux/selinux.h... no
+checking for wchar.h... yes
+checking for features.h... yes
+checking for wctype.h... yes
+checking for dirent.h... yes
+checking for locale.h... yes
+checking for errno.h... yes
+checking for mcheck.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /tools/bin/grep
+checking for egrep... /tools/bin/grep -E
+checking for Minix Amsterdam compiler... no
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking for ar... (cached) ar
+checking for ranlib... ranlib
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for fchmod... yes
+checking for btowc... yes
+checking for canonicalize_file_name... yes
+checking for getcwd... yes
+checking for readlink... yes
+checking for realpath... yes
+checking for strerror_r... yes
+checking for symlink... yes
+checking for _set_invalid_parameter_handler... no
+checking for __fwriting... yes
+checking for getdelim... yes
+checking for getprogname... no
+checking for getexecname... no
+checking for gettimeofday... yes
+checking for isblank... yes
+checking for lstat... yes
+checking for mbsinit... yes
+checking for mbrtowc... yes
+checking for mbrlen... yes
+checking for mprotect... yes
+checking for mkostemp... yes
+checking for nl_langinfo... yes
+checking for iswctype... yes
+checking for link... yes
+checking for secure_getenv... yes
+checking for getuid... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getegid... yes
+checking for wcrtomb... yes
+checking for wctob... yes
+checking for iswcntrl... yes
+checking for fpurge... no
+checking for __fpurge... yes
+checking for __freading... yes
+checking for getdtablesize... yes
+checking for newlocale... yes
+checking for setenv... yes
+checking for strdup... yes
+checking for isatty... yes
+checking for isascii... yes
+checking for memcpy... yes
+checking for strchr... yes
+checking for strtoul... yes
+checking for popen... yes
+checking for pathconf... yes
+checking for fchown... yes
+checking for setlocale... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether <wchar.h> uses 'inline' correctly... yes
+checking for nl_langinfo and CODESET... yes
+checking for a traditional french locale... none
+checking whether // is distinct from /... no
+checking whether realpath works... yes
+checking whether the preprocessor supports include_next... yes
+checking whether system header files limit the line length... no
+checking for complete errno.h... yes
+checking how gcc reports undeclared, standard C functions... error
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking for working fcntl.h... yes
+checking for pid_t... yes
+checking for mode_t... yes
+checking whether stat file-mode macros are broken... no
+checking for nlink_t... yes
+checking whether fchmodat is declared without a macro... yes
+checking whether fstat is declared without a macro... yes
+checking whether fstatat is declared without a macro... yes
+checking whether futimens is declared without a macro... yes
+checking whether lchmod is declared without a macro... yes
+checking whether lstat is declared without a macro... yes
+checking whether mkdirat is declared without a macro... yes
+checking whether mkfifo is declared without a macro... yes
+checking whether mkfifoat is declared without a macro... yes
+checking whether mknod is declared without a macro... yes
+checking whether mknodat is declared without a macro... yes
+checking whether stat is declared without a macro... yes
+checking whether utimensat is declared without a macro... yes
+checking whether getdelim is declared... yes
+checking for getopt.h... (cached) yes
+checking for getopt_long_only... yes
+checking whether getopt is POSIX compatible... yes
+checking for working GNU getopt function... yes
+checking for working GNU getopt_long function... yes
+checking whether getenv is declared... yes
+checking for C/C++ restrict keyword... __restrict
+checking for struct timeval... yes
+checking for wide-enough struct timeval.tv_sec member... yes
+checking whether gettimeofday is declared without a macro... yes
+checking whether limits.h has ULLONG_WIDTH etc.... yes
+checking whether getc_unlocked is declared... yes
+checking whether we are using the GNU C Library >= 2.1 or uClibc... yes
+checking for wchar_t... yes
+checking for max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking for ld used by gcc... /mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld
+checking if the linker (/mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for multithread API to use... none
+checking whether lstat correctly handles trailing slash... yes
+checking for a sed that does not truncate output... /tools/bin/sed
+checking whether malloc, realloc, calloc are POSIX compliant... yes
+checking for stdlib.h... yes
+checking for GNU libc compatible malloc... yes
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for mbstate_t... yes
+checking for a traditional japanese locale... none
+checking for a transitional chinese locale... none
+checking for a french Unicode locale... none
+checking whether mbrtowc handles incomplete characters... guessing yes
+checking whether mbrtowc works as well as mbtowc... guessing yes
+checking whether mbrtowc handles a NULL pwc argument... guessing yes
+checking whether mbrtowc handles a NULL string argument... guessing yes
+checking whether mbrtowc has a correct return value... guessing yes
+checking whether mbrtowc returns 0 when parsing a NUL character... guessing yes
+checking whether mbrtowc works on empty input... yes
+checking whether the C locale is free of encoding errors... no
+checking for mmap... yes
+checking for MAP_ANONYMOUS... yes
+checking whether memchr works... yes
+checking whether memrchr is declared... yes
+checking whether <limits.h> defines MIN and MAX... no
+checking whether <sys/param.h> defines MIN and MAX... yes
+checking whether alarm is declared... yes
+checking for inline... inline
+checking for library containing setfilecon... no
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for wint_t... yes
+checking whether wint_t is too small... no
+checking whether stdint.h conforms to C99... yes
+checking whether stdint.h predates C++11... no
+checking whether stdint.h has UINTMAX_WIDTH etc.... yes
+checking whether strerror(0) succeeds... yes
+checking whether ffsl is declared without a macro... yes
+checking whether ffsll is declared without a macro... yes
+checking whether memmem is declared without a macro... yes
+checking whether mempcpy is declared without a macro... yes
+checking whether memrchr is declared without a macro... yes
+checking whether rawmemchr is declared without a macro... yes
+checking whether stpcpy is declared without a macro... yes
+checking whether stpncpy is declared without a macro... yes
+checking whether strchrnul is declared without a macro... yes
+checking whether strdup is declared without a macro... yes
+checking whether strncat is declared without a macro... yes
+checking whether strndup is declared without a macro... yes
+checking whether strnlen is declared without a macro... yes
+checking whether strpbrk is declared without a macro... yes
+checking whether strsep is declared without a macro... yes
+checking whether strcasestr is declared without a macro... yes
+checking whether strtok_r is declared without a macro... yes
+checking whether strerror_r is declared without a macro... yes
+checking whether strsignal is declared without a macro... yes
+checking whether strverscmp is declared without a macro... yes
+checking for struct timespec in <time.h>... yes
+checking whether clearerr_unlocked is declared... yes
+checking whether feof_unlocked is declared... yes
+checking whether ferror_unlocked is declared... yes
+checking whether fflush_unlocked is declared... yes
+checking whether fgets_unlocked is declared... yes
+checking whether fputc_unlocked is declared... yes
+checking whether fputs_unlocked is declared... yes
+checking whether fread_unlocked is declared... yes
+checking whether fwrite_unlocked is declared... yes
+checking whether getchar_unlocked is declared... yes
+checking whether putc_unlocked is declared... yes
+checking whether putchar_unlocked is declared... yes
+checking if environ is properly declared... yes
+checking whether stdin defaults to large file offsets... yes
+checking whether fseeko is declared... yes
+checking for fseeko... yes
+checking whether fflush works on input streams... no
+checking whether ungetc works on arbitrary bytes... yes
+checking whether ftello is declared... yes
+checking for ftello... yes
+checking whether ftello works... yes
+checking whether getcwd (NULL, 0) allocates memory for result... yes
+checking for getcwd with POSIX signature... yes
+checking whether getdtablesize is declared... yes
+checking whether imaxabs is declared without a macro... yes
+checking whether imaxdiv is declared without a macro... yes
+checking whether strtoimax is declared without a macro... yes
+checking whether strtoumax is declared without a macro... yes
+checking for inttypes.h... (cached) yes
+checking whether the inttypes.h PRIxNN macros are broken... no
+checking for LC_MESSAGES... yes
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for promoted mode_t type... mode_t
+checking whether setenv is declared... yes
+checking for search.h... yes
+checking for tsearch... yes
+checking whether strdup is declared... (cached) yes
+checking whether unsetenv is declared... yes
+checking for sys/acl.h... no
+configure: WARNING: libacl development library was not found or not usable.
+configure: WARNING: GNU sed will be built without ACL support.
+checking for alloca as a compiler built-in... yes
+checking whether to enable assertions... yes
+checking whether btowc(0) is correct... yes
+checking whether btowc(EOF) is correct... guessing yes
+checking for __builtin_expect... yes
+checking whether isblank is declared without a macro... yes
+checking whether // is distinct from /... (cached) no
+checking for error_at_line... yes
+checking whether fcntl is declared without a macro... yes
+checking whether openat is declared without a macro... yes
+checking for __fpending... yes
+checking whether __fpending is declared... yes
+checking for working getdelim function... yes
+checking whether program_invocation_name is declared... yes
+checking whether program_invocation_short_name is declared... yes
+checking whether __argv is declared... no
+checking whether gettimeofday clobbers localtime buffer... no
+checking for gettimeofday with POSIX signature... almost
+checking whether langinfo.h defines CODESET... yes
+checking whether langinfo.h defines T_FMT_AMPM... yes
+checking whether langinfo.h defines ERA... yes
+checking whether langinfo.h defines YESEXPR... yes
+checking whether nl_langinfo is declared without a macro... yes
+checking whether locale.h conforms to POSIX:2001... yes
+checking whether locale.h defines locale_t... yes
+checking whether struct lconv is properly defined... yes
+checking whether setlocale is declared without a macro... yes
+checking whether duplocale is declared without a macro... yes
+checking whether mbrtowc handles incomplete characters... (cached) guessing yes
+checking whether mbrtowc works as well as mbtowc... (cached) guessing yes
+checking whether mbrtowc handles a NULL pwc argument... (cached) guessing yes
+checking whether mbrtowc handles a NULL string argument... (cached) guessing yes
+checking whether mbrtowc has a correct return value... (cached) guessing yes
+checking whether mbrtowc returns 0 when parsing a NUL character... (cached) guessing yes
+checking whether mbrtowc works on empty input... (cached) yes
+checking whether the C locale is free of encoding errors... (cached) no
+checking whether mbrtowc handles incomplete characters... (cached) guessing yes
+checking whether mbrtowc works as well as mbtowc... (cached) guessing yes
+checking for memrchr... yes
+checking whether YESEXPR works... yes
+checking for obstacks that work with any size object... no
+checking whether program_invocation_name is declared... (cached) yes
+checking whether program_invocation_short_name is declared... (cached) yes
+checking whether readlink signature is correct... yes
+checking whether readlink handles trailing slash correctly... yes
+checking for working re_compile_pattern... yes
+checking whether rename honors trailing slash on destination... yes
+checking whether rename honors trailing slash on source... yes
+checking whether rename manages hard links correctly... yes
+checking whether rename manages existing destinations correctly... yes
+checking whether rmdir works... yes
+checking for ssize_t... yes
+checking whether stat handles trailing slashes on directories... yes
+checking whether stat handles trailing slashes on files... yes
+checking for working stdalign.h... yes
+checking for va_copy... yes
+checking for max_align_t... (cached) yes
+checking whether NULL can be used in arbitrary expressions... (cached) yes
+checking which flavor of printf attribute matches inttypes macros... system
+checking whether dprintf is declared without a macro... yes
+checking whether fpurge is declared without a macro... no
+checking whether fseeko is declared without a macro... yes
+checking whether ftello is declared without a macro... yes
+checking whether getdelim is declared without a macro... yes
+checking whether getline is declared without a macro... yes
+checking whether gets is declared without a macro... no
+checking whether pclose is declared without a macro... yes
+checking whether popen is declared without a macro... yes
+checking whether renameat is declared without a macro... yes
+checking whether snprintf is declared without a macro... yes
+checking whether tmpfile is declared without a macro... yes
+checking whether vdprintf is declared without a macro... yes
+checking whether vsnprintf is declared without a macro... yes
+checking whether _Exit is declared without a macro... yes
+checking whether atoll is declared without a macro... yes
+checking whether canonicalize_file_name is declared without a macro... yes
+checking whether getloadavg is declared without a macro... yes
+checking whether getsubopt is declared without a macro... yes
+checking whether grantpt is declared without a macro... yes
+checking whether initstate is declared without a macro... yes
+checking whether initstate_r is declared without a macro... yes
+checking whether mkdtemp is declared without a macro... yes
+checking whether mkostemp is declared without a macro... yes
+checking whether mkostemps is declared without a macro... yes
+checking whether mkstemp is declared without a macro... yes
+checking whether mkstemps is declared without a macro... yes
+checking whether posix_openpt is declared without a macro... yes
+checking whether ptsname is declared without a macro... yes
+checking whether ptsname_r is declared without a macro... yes
+checking whether qsort_r is declared without a macro... yes
+checking whether random is declared without a macro... yes
+checking whether random_r is declared without a macro... yes
+checking whether realpath is declared without a macro... yes
+checking whether rpmatch is declared without a macro... yes
+checking whether secure_getenv is declared without a macro... yes
+checking whether setenv is declared without a macro... yes
+checking whether setstate is declared without a macro... yes
+checking whether setstate_r is declared without a macro... yes
+checking whether srandom is declared without a macro... yes
+checking whether srandom_r is declared without a macro... yes
+checking whether strtod is declared without a macro... yes
+checking whether strtoll is declared without a macro... yes
+checking whether strtoull is declared without a macro... yes
+checking whether unlockpt is declared without a macro... yes
+checking whether unsetenv is declared without a macro... yes
+checking for working strerror function... yes
+checking for strverscmp... yes
+checking for nlink_t... (cached) yes
+checking whether fchmodat is declared without a macro... (cached) yes
+checking whether fstat is declared without a macro... (cached) yes
+checking whether fstatat is declared without a macro... (cached) yes
+checking whether futimens is declared without a macro... (cached) yes
+checking whether lchmod is declared without a macro... (cached) yes
+checking whether lstat is declared without a macro... (cached) yes
+checking whether mkdirat is declared without a macro... (cached) yes
+checking whether mkfifo is declared without a macro... (cached) yes
+checking whether mkfifoat is declared without a macro... (cached) yes
+checking whether mknod is declared without a macro... (cached) yes
+checking whether mknodat is declared without a macro... (cached) yes
+checking whether stat is declared without a macro... (cached) yes
+checking whether utimensat is declared without a macro... (cached) yes
+checking whether chdir is declared without a macro... yes
+checking whether chown is declared without a macro... yes
+checking whether dup is declared without a macro... yes
+checking whether dup2 is declared without a macro... yes
+checking whether dup3 is declared without a macro... yes
+checking whether environ is declared without a macro... yes
+checking whether euidaccess is declared without a macro... yes
+checking whether faccessat is declared without a macro... yes
+checking whether fchdir is declared without a macro... yes
+checking whether fchownat is declared without a macro... yes
+checking whether fdatasync is declared without a macro... yes
+checking whether fsync is declared without a macro... yes
+checking whether ftruncate is declared without a macro... yes
+checking whether getcwd is declared without a macro... yes
+checking whether getdomainname is declared without a macro... yes
+checking whether getdtablesize is declared without a macro... yes
+checking whether getgroups is declared without a macro... yes
+checking whether gethostname is declared without a macro... yes
+checking whether getlogin is declared without a macro... yes
+checking whether getlogin_r is declared without a macro... yes
+checking whether getpagesize is declared without a macro... yes
+checking whether getusershell is declared without a macro... yes
+checking whether setusershell is declared without a macro... yes
+checking whether endusershell is declared without a macro... yes
+checking whether group_member is declared without a macro... yes
+checking whether isatty is declared without a macro... yes
+checking whether lchown is declared without a macro... yes
+checking whether link is declared without a macro... yes
+checking whether linkat is declared without a macro... yes
+checking whether lseek is declared without a macro... yes
+checking whether pipe is declared without a macro... yes
+checking whether pipe2 is declared without a macro... yes
+checking whether pread is declared without a macro... yes
+checking whether pwrite is declared without a macro... yes
+checking whether readlink is declared without a macro... yes
+checking whether readlinkat is declared without a macro... yes
+checking whether rmdir is declared without a macro... yes
+checking whether sethostname is declared without a macro... yes
+checking whether sleep is declared without a macro... yes
+checking whether symlink is declared without a macro... yes
+checking whether symlinkat is declared without a macro... yes
+checking whether ttyname_r is declared without a macro... yes
+checking whether unlink is declared without a macro... yes
+checking whether unlinkat is declared without a macro... yes
+checking whether usleep is declared without a macro... yes
+checking whether btowc is declared without a macro... yes
+checking whether wctob is declared without a macro... yes
+checking whether mbsinit is declared without a macro... yes
+checking whether mbrtowc is declared without a macro... yes
+checking whether mbrlen is declared without a macro... yes
+checking whether mbsrtowcs is declared without a macro... yes
+checking whether mbsnrtowcs is declared without a macro... yes
+checking whether wcrtomb is declared without a macro... yes
+checking whether wcsrtombs is declared without a macro... yes
+checking whether wcsnrtombs is declared without a macro... yes
+checking whether wcwidth is declared without a macro... yes
+checking whether wmemchr is declared without a macro... yes
+checking whether wmemcmp is declared without a macro... yes
+checking whether wmemcpy is declared without a macro... yes
+checking whether wmemmove is declared without a macro... yes
+checking whether wmemset is declared without a macro... yes
+checking whether wcslen is declared without a macro... yes
+checking whether wcsnlen is declared without a macro... yes
+checking whether wcscpy is declared without a macro... yes
+checking whether wcpcpy is declared without a macro... yes
+checking whether wcsncpy is declared without a macro... yes
+checking whether wcpncpy is declared without a macro... yes
+checking whether wcscat is declared without a macro... yes
+checking whether wcsncat is declared without a macro... yes
+checking whether wcscmp is declared without a macro... yes
+checking whether wcsncmp is declared without a macro... yes
+checking whether wcscasecmp is declared without a macro... yes
+checking whether wcsncasecmp is declared without a macro... yes
+checking whether wcscoll is declared without a macro... yes
+checking whether wcsxfrm is declared without a macro... yes
+checking whether wcsdup is declared without a macro... yes
+checking whether wcschr is declared without a macro... yes
+checking whether wcsrchr is declared without a macro... yes
+checking whether wcscspn is declared without a macro... yes
+checking whether wcsspn is declared without a macro... yes
+checking whether wcspbrk is declared without a macro... yes
+checking whether wcsstr is declared without a macro... yes
+checking whether wcstok is declared without a macro... yes
+checking whether wcswidth is declared without a macro... yes
+checking whether mbrtowc handles incomplete characters... (cached) guessing yes
+checking whether mbrtowc works as well as mbtowc... (cached) guessing yes
+checking whether wcrtomb return value is correct... guessing yes
+checking whether wctob works... guessing yes
+checking whether wctob is declared... (cached) yes
+checking whether iswcntrl works... yes
+checking for towlower... yes
+checking for wctype_t... yes
+checking for wctrans_t... yes
+checking whether wctype is declared without a macro... yes
+checking whether iswctype is declared without a macro... yes
+checking whether wctrans is declared without a macro... yes
+checking whether towctrans is declared without a macro... yes
+checking for a traditional french locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking for a traditional french locale... (cached) none
+checking for a turkish Unicode locale... none
+checking for closedir... yes
+checking whether alphasort is declared without a macro... yes
+checking whether closedir is declared without a macro... yes
+checking whether dirfd is declared without a macro... yes
+checking whether fdopendir is declared without a macro... yes
+checking whether opendir is declared without a macro... yes
+checking whether readdir is declared without a macro... yes
+checking whether rewinddir is declared without a macro... yes
+checking whether scandir is declared without a macro... yes
+checking for dirfd... yes
+checking whether dirfd is declared... (cached) yes
+checking whether dirfd is a macro... no
+checking whether dup2 works... yes
+checking whether fdopen sets errno... yes
+checking whether fflush works on input streams... (cached) no
+checking for getxattr with XATTR_NAME_POSIX_ACL macros... yes
+checking for flexible array member... yes
+checking whether fpurge is declared... no
+checking for fseeko... (cached) yes
+checking whether fflush works on input streams... (cached) no
+checking for _fseeki64... no
+checking for ftello... (cached) yes
+checking whether ftello works... (cached) yes
+checking whether getdtablesize works... yes
+checking for getpagesize... yes
+checking whether getpagesize is declared... (cached) yes
+checking whether INT32_MAX < INTMAX_MAX... yes
+checking whether INT64_MAX == LONG_MAX... yes
+checking whether UINT32_MAX < UINTMAX_MAX... yes
+checking whether UINT64_MAX == ULONG_MAX... yes
+checking whether link obeys POSIX... yes
+checking for setlocale... (cached) yes
+checking for uselocale... yes
+checking for getlocalename_l... no
+checking whether lseek detects pipes... yes
+checking for a traditional french locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking for a traditional japanese locale... (cached) none
+checking for a transitional chinese locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking for mmap... (cached) yes
+checking for MAP_ANONYMOUS... yes
+checking for mmap... (cached) yes
+checking for MAP_ANONYMOUS... yes
+checking for a traditional french locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking whether open recognizes a trailing slash... yes
+checking for opendir... yes
+checking for putenv compatible with GNU and SVID... yes
+checking for mmap... (cached) yes
+checking for MAP_ANONYMOUS... yes
+checking for readdir... yes
+checking whether setenv validates arguments... yes
+checking for a traditional french locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking for a traditional japanese locale... (cached) none
+checking for a transitional chinese locale... (cached) none
+checking whether symlink handles trailing slash correctly... yes
+checking for unsetenv... yes
+checking for unsetenv() return type... int
+checking whether unsetenv obeys POSIX... yes
+checking for a traditional french locale... (cached) none
+checking for a french Unicode locale... (cached) none
+checking for a traditional japanese locale... (cached) none
+checking for a transitional chinese locale... (cached) none
+checking whether "rt" can be used with fopen... yes
+checking whether -lcP is needed... no
+checking for an ANSI C-conforming const... yes
+checking for size_t... (cached) yes
+checking whether NLS is requested... yes
+checking for msgfmt... /tools/bin/msgfmt
+checking for gmsgfmt... /tools/bin/msgfmt
+checking for xgettext... /tools/bin/xgettext
+checking for msgmerge... /tools/bin/msgmerge
+checking for CFPreferencesCopyAppValue... (cached) no
+checking for CFLocaleCopyCurrent... (cached) no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking whether UTF-8 case folding tests should pass... no
+checking for perl... /tools/bin/perl
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating gnulib-tests/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+lfs@Minty /mnt/lfs/sources/sed-4.4 $ make
+  GEN      lib/alloca.h
+  GEN      lib/configmake.h
+  GEN      lib/ctype.h
+  GEN      lib/fcntl.h
+  GEN      lib/langinfo.h
+  GEN      lib/limits.h
+  GEN      lib/locale.h
+  GEN      lib/selinux/selinux.h
+  GEN      lib/selinux/context.h
+  GEN      lib/stdio.h
+  GEN      lib/stdlib.h
+  GEN      lib/string.h
+  GEN      lib/sys/stat.h
+  GEN      lib/sys/time.h
+  GEN      lib/sys/types.h
+  GEN      lib/time.h
+  GEN      lib/unistd.h
+  GEN      lib/wchar.h
+  GEN      lib/wctype.h
+  GEN      sed/version.c
+  GEN      sed/version.h
+make  all-recursive
+make[1]: Entering directory '/mnt/lfs/sources/sed-4.4'
+Making all in po
+make[2]: Entering directory '/mnt/lfs/sources/sed-4.4/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/sed-4.4/po'
+Making all in .
+make[2]: Entering directory '/mnt/lfs/sources/sed-4.4'
+  CC       lib/copy-acl.o
+  CC       lib/set-acl.o
+  CC       lib/acl-errno-valid.o
+  CC       lib/acl-internal.o
+  CC       lib/get-permissions.o
+  CC       lib/set-permissions.o
+  CC       lib/c-strcasecmp.o
+  CC       lib/c-strncasecmp.o
+  CC       lib/close-stream.o
+  CC       lib/closeout.o
+  CC       lib/dfa.o
+  CC       lib/localeinfo.o
+  CC       lib/dirname-lgpl.o
+  CC       lib/basename-lgpl.o
+  CC       lib/exitfail.o
+  CC       lib/getprogname.o
+  CC       lib/hard-locale.o
+  CC       lib/localcharset.o
+  CC       lib/glthread/lock.o
+  CC       lib/malloca.o
+  CC       lib/progname.o
+  CC       lib/qcopy-acl.o
+  CC       lib/qset-acl.o
+  CC       lib/quotearg.o
+  CC       lib/se-context.o
+  CC       lib/se-selinux.o
+  CC       lib/tempname.o
+  CC       lib/unistd.o
+  CC       lib/version-etc.o
+  CC       lib/version-etc-fsf.o
+  CC       lib/wctype-h.o
+  CC       lib/xmalloc.o
+  CC       lib/xalloc-die.o
+  CC       lib/mbrlen.o
+  CC       lib/mbrtowc.o
+  CC       lib/obstack.o
+  AR       lib/libsed.a
+  CC       sed/version.o
+  AR       sed/libver.a
+  CC       sed/sed_sed-compile.o
+  CC       sed/sed_sed-execute.o
+  CC       sed/sed_sed-mbcs.o
+  CC       sed/sed_sed-regexp.o
+  CC       sed/sed_sed-sed.o
+  CC       sed/sed_sed-utils.o
+  CCLD     sed/sed
+make[2]: Leaving directory '/mnt/lfs/sources/sed-4.4'
+Making all in gnulib-tests
+make[2]: Entering directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+  GEN      dirent.h
+  GEN      inttypes.h
+make  all-recursive
+make[3]: Entering directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+Making all in .
+make[4]: Entering directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[3]: Leaving directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[2]: Leaving directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[1]: Leaving directory '/mnt/lfs/sources/sed-4.4'
+lfs@Minty /mnt/lfs/sources/sed-4.4 $ make check
+  GEN      public-submodule-commit
+make  check-recursive
+make[1]: Entering directory '/mnt/lfs/sources/sed-4.4'
+Making check in po
+make[2]: Entering directory '/mnt/lfs/sources/sed-4.4/po'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/mnt/lfs/sources/sed-4.4/po'
+Making check in .
+make[2]: Entering directory '/mnt/lfs/sources/sed-4.4'
+make  testsuite/get-mb-cur-max testsuite/test-mbrtowc
+make[3]: Entering directory '/mnt/lfs/sources/sed-4.4'
+  CC       testsuite/get-mb-cur-max.o
+  CCLD     testsuite/get-mb-cur-max
+  CC       testsuite/test-mbrtowc.o
+  CCLD     testsuite/test-mbrtowc
+make[3]: Leaving directory '/mnt/lfs/sources/sed-4.4'
+make  check-TESTS
+make[3]: Entering directory '/mnt/lfs/sources/sed-4.4'
+make[4]: Entering directory '/mnt/lfs/sources/sed-4.4'
+SKIP: testsuite/get-mb-cur-max
+SKIP: testsuite/test-mbrtowc
+PASS: testsuite/appquit
+PASS: testsuite/enable
+PASS: testsuite/sep
+PASS: testsuite/inclib
+PASS: testsuite/8bit
+PASS: testsuite/newjis
+PASS: testsuite/xabcx
+PASS: testsuite/dollar
+PASS: testsuite/noeol
+PASS: testsuite/noeolw
+PASS: testsuite/modulo
+PASS: testsuite/numsub
+PASS: testsuite/numsub2
+PASS: testsuite/numsub3
+PASS: testsuite/numsub4
+PASS: testsuite/numsub5
+PASS: testsuite/0range
+PASS: testsuite/bkslashes
+PASS: testsuite/head
+PASS: testsuite/madding
+PASS: testsuite/mac-mf
+PASS: testsuite/empty
+PASS: testsuite/xbxcx
+PASS: testsuite/xbxcx3
+PASS: testsuite/recall
+PASS: testsuite/recall2
+PASS: testsuite/xemacs
+PASS: testsuite/fasts
+PASS: testsuite/uniq
+PASS: testsuite/manis
+PASS: testsuite/khadafy
+PASS: testsuite/linecnt
+PASS: testsuite/eval
+PASS: testsuite/distrib
+PASS: testsuite/8to7
+PASS: testsuite/y-bracket
+PASS: testsuite/y-newline
+PASS: testsuite/y-zero
+PASS: testsuite/allsub
+PASS: testsuite/cv-vars
+PASS: testsuite/classes
+PASS: testsuite/middle
+PASS: testsuite/bsd
+PASS: testsuite/stdin
+PASS: testsuite/flipcase
+PASS: testsuite/insens
+PASS: testsuite/subwrite
+PASS: testsuite/writeout
+PASS: testsuite/readin
+PASS: testsuite/insert
+XFAIL: testsuite/utf8-1
+XFAIL: testsuite/utf8-2
+XFAIL: testsuite/utf8-3
+XFAIL: testsuite/utf8-4
+PASS: testsuite/badenc
+PASS: testsuite/inplace-hold
+PASS: testsuite/brackets
+PASS: testsuite/amp-escape
+PASS: testsuite/help
+PASS: testsuite/file
+PASS: testsuite/quiet
+PASS: testsuite/factor
+PASS: testsuite/binary3
+PASS: testsuite/binary2
+PASS: testsuite/binary
+PASS: testsuite/dc
+PASS: testsuite/newline-anchor
+PASS: testsuite/zero-anchor
+PASS: testsuite/cmd-l.sh
+PASS: testsuite/cmd-R.sh
+PASS: testsuite/colon-with-no-label.sh
+PASS: testsuite/comment-n.sh
+PASS: testsuite/compile-errors.sh
+PASS: testsuite/compile-tests.sh
+PASS: testsuite/convert-number.sh
+PASS: testsuite/execute-tests.sh
+PASS: testsuite/help-version.sh
+PASS: testsuite/in-place-hyphen.sh
+PASS: testsuite/in-place-suffix-backup.sh
+invalid-mb-seq-UMR.sh: skipped test: requires a working valgrind
+SKIP: testsuite/invalid-mb-seq-UMR.sh
+mb-bad-delim.sh: skipped test: en_US.UTF-8 locale not found
+SKIP: testsuite/mb-bad-delim.sh
+mb-charclass-non-utf8.sh: skipped test: ja_JP shift-jis locale not found
+SKIP: testsuite/mb-charclass-non-utf8.sh
+mb-match-slash.sh: skipped test: en_US.UTF-8 locale not found
+SKIP: testsuite/mb-match-slash.sh
+mb-y-translate.sh: skipped test: en_US.UTF-8 locale not found
+SKIP: testsuite/mb-y-translate.sh
+newline-dfa-bug.sh: skipped test: requires a working valgrind
+SKIP: testsuite/newline-dfa-bug.sh
+PASS: testsuite/normalize-text.sh
+PASS: testsuite/nulldata.sh
+PASS: testsuite/panic-tests.sh
+PASS: testsuite/posix-char-class.sh
+PASS: testsuite/posix-mode-addr.sh
+PASS: testsuite/posix-mode-bad-ref.sh
+PASS: testsuite/posix-mode-s.sh
+PASS: testsuite/posix-mode-N.sh
+PASS: testsuite/range-overlap.sh
+PASS: testsuite/recursive-escape-c.sh
+PASS: testsuite/regex-errors.sh
+PASS: testsuite/sandbox.sh
+PASS: testsuite/stdin-prog.sh
+PASS: testsuite/subst-options.sh
+subst-mb-incomplete.sh: skipped test: en_US.UTF-8 locale not found
+SKIP: testsuite/subst-mb-incomplete.sh
+PASS: testsuite/subst-replacement.sh
+PASS: testsuite/temp-file-cleanup.sh
+title-case.sh: skipped test: el_GR.iso88597 locale not found
+SKIP: testsuite/title-case.sh
+PASS: testsuite/unbuffered.sh
+PASS: testsuite/follow-symlinks.sh
+PASS: testsuite/follow-symlinks-stdin.sh
+============================================================================
+Testsuite summary for GNU sed 4.4
+============================================================================
+# TOTAL: 108
+# PASS:  94
+# SKIP:  10
+# XFAIL: 4
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[4]: Leaving directory '/mnt/lfs/sources/sed-4.4'
+make[3]: Leaving directory '/mnt/lfs/sources/sed-4.4'
+make[2]: Leaving directory '/mnt/lfs/sources/sed-4.4'
+Making check in gnulib-tests
+make[2]: Entering directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make  check-recursive
+make[3]: Entering directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+Making check in .
+make[4]: Entering directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make  libtests.a test-set-mode-acl test-copy-acl test-sameacls test-alignof test-alloca-opt test-binary-io test-btowc test-c-ctype test-c-strcasecmp test-c-strncasecmp test-canonicalize-lgpl test-chdir test-close test-ctype dfa-match-aux test-dirent test-dup2 test-environ test-errno test-fcntl-h test-fdopen test-fflush test-fflush2 test-fgetc test-file-has-acl test-fpending test-fpurge test-fputc test-fread test-freading test-fseek test-fseeko test-fseeko3 test-fseeko4 test-fstat test-ftell test-ftell3 test-ftello test-ftello3 test-ftello4 test-fwrite test-fwriting test-getcwd-lgpl test-getdelim test-getdtablesize test-getopt-gnu test-getopt-posix test-getprogname test-gettimeofday test-ignore-value test-intprops test-inttypes test-isblank test-langinfo test-limits-h test-link test-locale test-localeconv test-localename test-lseek test-lstat test-malloca test-mbrtowc test-mbrtowc-w32 test-mbsinit test-memchr test-memrchr test-nl_langinfo test-open test-pathmax test-quotearg-simple test-read-file test-readlink test-regex test-rename test-rmdir test-setenv test-setlocale1 test-setlocale2 test-stat test-stdalign test-stdbool test-stddef test-stdint test-stdio test-stdlib test-strerror test-string test-strverscmp test-symlink test-sys_stat test-sys_time test-sys_types test-time test-unistd test-unsetenv test-verify test-version-etc test-wchar test-wcrtomb test-wcrtomb-w32 test-wctype-h test-xalloc-die
+make[5]: Entering directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+  CC       binary-io.o
+  CC       fd-hook.o
+  CC       file-has-acl.o
+  CC       freading.o
+  CC       localename.o
+  CC       read-file.o
+  CC       fflush.o
+  CC       fpurge.o
+  CC       fseek.o
+  CC       fseeko.o
+  AR       libtests.a
+  CC       test-set-mode-acl.o
+  CCLD     test-set-mode-acl
+  CC       test-copy-acl.o
+  CCLD     test-copy-acl
+  CC       test-sameacls.o
+  CCLD     test-sameacls
+  CCLD     test-alignof
+  CC       test-alloca-opt.o
+  CCLD     test-alloca-opt
+  CC       test-binary-io.o
+  CCLD     test-binary-io
+  CC       test-btowc.o
+  CCLD     test-btowc
+  CC       test-c-ctype.o
+  CCLD     test-c-ctype
+  CC       test-c-strcasecmp.o
+  CCLD     test-c-strcasecmp
+  CC       test-c-strncasecmp.o
+  CCLD     test-c-strncasecmp
+  CC       test-canonicalize-lgpl.o
+  CCLD     test-canonicalize-lgpl
+  CC       test-chdir.o
+  CCLD     test-chdir
+  CC       test-close.o
+  CCLD     test-close
+  CC       test-ctype.o
+  CCLD     test-ctype
+  CC       dfa-match-aux.o
+  CCLD     dfa-match-aux
+  CC       test-dirent.o
+  CCLD     test-dirent
+  CC       test-dup2.o
+  CCLD     test-dup2
+  CC       test-environ.o
+  CCLD     test-environ
+  CCLD     test-errno
+  CC       test-fcntl-h.o
+  CCLD     test-fcntl-h
+  CC       test-fdopen.o
+  CCLD     test-fdopen
+  CC       test-fflush.o
+  CCLD     test-fflush
+  CC       test-fflush2.o
+  CCLD     test-fflush2
+  CC       test-fgetc.o
+  CCLD     test-fgetc
+  CC       test-file-has-acl.o
+  CCLD     test-file-has-acl
+  CC       test-fpending.o
+  CCLD     test-fpending
+  CC       test-fpurge.o
+  CCLD     test-fpurge
+  CC       test-fputc.o
+  CCLD     test-fputc
+  CC       test-fread.o
+  CCLD     test-fread
+  CC       test-freading.o
+  CCLD     test-freading
+  CC       test-fseek.o
+  CCLD     test-fseek
+  CC       test-fseeko.o
+  CCLD     test-fseeko
+  CC       test-fseeko3.o
+  CCLD     test-fseeko3
+  CC       test-fseeko4.o
+  CCLD     test-fseeko4
+  CC       test-fstat.o
+  CCLD     test-fstat
+  CC       test-ftell.o
+  CCLD     test-ftell
+  CC       test-ftell3.o
+  CCLD     test-ftell3
+  CC       test-ftello.o
+  CCLD     test-ftello
+  CC       test-ftello3.o
+  CCLD     test-ftello3
+  CC       test-ftello4.o
+  CCLD     test-ftello4
+  CC       test-fwrite.o
+  CCLD     test-fwrite
+  CC       test-fwriting.o
+  CCLD     test-fwriting
+  CC       test-getcwd-lgpl.o
+  CCLD     test-getcwd-lgpl
+  CC       test-getdelim.o
+  CCLD     test-getdelim
+  CC       test-getdtablesize.o
+  CCLD     test-getdtablesize
+  CC       test-getopt-gnu.o
+  CCLD     test-getopt-gnu
+  CC       test-getopt-posix.o
+  CCLD     test-getopt-posix
+  CC       test-getprogname.o
+  CCLD     test-getprogname
+  CC       test-gettimeofday.o
+  CCLD     test-gettimeofday
+  CC       test-ignore-value.o
+  CCLD     test-ignore-value
+  CC       test-intprops.o
+  CCLD     test-intprops
+  CC       test-inttypes.o
+  CCLD     test-inttypes
+  CC       test-isblank.o
+  CCLD     test-isblank
+  CC       test-langinfo.o
+  CCLD     test-langinfo
+  CC       test-limits-h.o
+  CCLD     test-limits-h
+  CC       test-link.o
+  CCLD     test-link
+  CC       test-locale.o
+  CCLD     test-locale
+  CC       test-localeconv.o
+  CCLD     test-localeconv
+  CC       test-localename.o
+  CCLD     test-localename
+  CC       test-lseek.o
+  CCLD     test-lseek
+  CC       test-lstat.o
+  CCLD     test-lstat
+  CC       test-malloca.o
+  CCLD     test-malloca
+  CC       test-mbrtowc.o
+  CCLD     test-mbrtowc
+  CC       test-mbrtowc-w32.o
+  CCLD     test-mbrtowc-w32
+  CC       test-mbsinit.o
+  CCLD     test-mbsinit
+  CC       test-memchr.o
+  CCLD     test-memchr
+  CC       test-memrchr.o
+  CCLD     test-memrchr
+  CC       test-nl_langinfo.o
+  CCLD     test-nl_langinfo
+  CC       test-open.o
+  CCLD     test-open
+  CC       test-pathmax.o
+  CCLD     test-pathmax
+  CC       test-quotearg-simple.o
+  CCLD     test-quotearg-simple
+  CC       test-read-file.o
+  CCLD     test-read-file
+  CC       test-readlink.o
+  CCLD     test-readlink
+  CC       test-regex.o
+  CCLD     test-regex
+  CC       test-rename.o
+  CCLD     test-rename
+  CC       test-rmdir.o
+  CCLD     test-rmdir
+  CC       test-setenv.o
+  CCLD     test-setenv
+  CC       test-setlocale1.o
+  CCLD     test-setlocale1
+  CC       test-setlocale2.o
+  CCLD     test-setlocale2
+  CC       test-stat.o
+  CCLD     test-stat
+  CC       test-stdalign.o
+  CCLD     test-stdalign
+  CCLD     test-stdbool
+  CCLD     test-stddef
+  CC       test-stdint.o
+  CCLD     test-stdint
+  CC       test-stdio.o
+  CCLD     test-stdio
+  CC       test-stdlib.o
+  CCLD     test-stdlib
+  CC       test-strerror.o
+  CCLD     test-strerror
+  CC       test-string.o
+  CCLD     test-string
+  CC       test-strverscmp.o
+  CCLD     test-strverscmp
+  CC       test-symlink.o
+  CCLD     test-symlink
+  CC       test-sys_stat.o
+  CCLD     test-sys_stat
+  CC       test-sys_time.o
+  CCLD     test-sys_time
+  CC       test-sys_types.o
+  CCLD     test-sys_types
+  CC       test-time.o
+  CCLD     test-time
+  CC       test-unistd.o
+  CCLD     test-unistd
+  CC       test-unsetenv.o
+  CCLD     test-unsetenv
+  CC       test-verify.o
+  CCLD     test-verify
+  CC       test-version-etc.o
+  CCLD     test-version-etc
+  CC       test-wchar.o
+  CCLD     test-wchar
+  CC       test-wcrtomb.o
+  CCLD     test-wcrtomb
+  CC       test-wcrtomb-w32.o
+  CCLD     test-wcrtomb-w32
+  CC       test-wctype-h.o
+  CCLD     test-wctype-h
+  CCLD     test-xalloc-die
+make[5]: Leaving directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make  check-TESTS
+make[5]: Entering directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[6]: Entering directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+SKIP: test-set-mode-acl.sh
+SKIP: test-set-mode-acl-1.sh
+SKIP: test-set-mode-acl-2.sh
+SKIP: test-copy-acl.sh
+SKIP: test-copy-acl-1.sh
+SKIP: test-copy-acl-2.sh
+PASS: test-alignof
+PASS: test-alloca-opt
+PASS: test-binary-io.sh
+SKIP: test-btowc1.sh
+SKIP: test-btowc2.sh
+PASS: test-c-ctype
+PASS: test-c-strcase.sh
+PASS: test-canonicalize-lgpl
+PASS: test-chdir
+PASS: test-close
+PASS: test-ctype
+PASS: dfa-invalid-char-class.sh
+PASS: dfa-match.sh
+PASS: test-dirent
+PASS: test-dup2
+PASS: test-environ
+PASS: test-errno
+PASS: test-fcntl-h
+PASS: test-fdopen
+PASS: test-fflush
+PASS: test-fflush2.sh
+PASS: test-fgetc
+SKIP: test-file-has-acl.sh
+SKIP: test-file-has-acl-1.sh
+SKIP: test-file-has-acl-2.sh
+PASS: test-fpending.sh
+PASS: test-fpurge
+PASS: test-fputc
+PASS: test-fread
+PASS: test-freading
+PASS: test-fseek.sh
+PASS: test-fseek2.sh
+PASS: test-fseeko.sh
+PASS: test-fseeko2.sh
+PASS: test-fseeko3.sh
+PASS: test-fseeko4.sh
+PASS: test-fstat
+PASS: test-ftell.sh
+PASS: test-ftell2.sh
+PASS: test-ftell3
+PASS: test-ftello.sh
+PASS: test-ftello2.sh
+PASS: test-ftello3
+PASS: test-ftello4.sh
+PASS: test-fwrite
+PASS: test-fwriting
+PASS: test-getcwd-lgpl
+PASS: test-getdelim
+PASS: test-getdtablesize
+PASS: test-getopt-gnu
+PASS: test-getopt-posix
+PASS: test-getprogname
+PASS: test-gettimeofday
+PASS: test-ignore-value
+PASS: test-intprops
+PASS: test-inttypes
+PASS: test-isblank
+PASS: test-langinfo
+PASS: test-limits-h
+PASS: test-link
+PASS: test-locale
+PASS: test-localeconv
+PASS: test-localename
+PASS: test-lseek.sh
+PASS: test-lstat
+PASS: test-malloca
+SKIP: test-mbrtowc1.sh
+SKIP: test-mbrtowc2.sh
+SKIP: test-mbrtowc3.sh
+SKIP: test-mbrtowc4.sh
+PASS: test-mbrtowc5.sh
+SKIP: test-mbrtowc-w32-1.sh
+SKIP: test-mbrtowc-w32-2.sh
+SKIP: test-mbrtowc-w32-3.sh
+SKIP: test-mbrtowc-w32-4.sh
+SKIP: test-mbrtowc-w32-5.sh
+SKIP: test-mbsinit.sh
+PASS: test-memchr
+PASS: test-memrchr
+PASS: test-nl_langinfo.sh
+PASS: test-open
+PASS: test-pathmax
+PASS: test-quotearg-simple
+PASS: test-read-file
+PASS: test-readlink
+PASS: test-regex
+PASS: test-rename
+PASS: test-rmdir
+PASS: test-setenv
+SKIP: test-setlocale1.sh
+PASS: test-setlocale2.sh
+PASS: test-stat
+PASS: test-stdalign
+PASS: test-stdbool
+PASS: test-stddef
+PASS: test-stdint
+PASS: test-stdio
+PASS: test-stdlib
+PASS: test-strerror
+PASS: test-string
+PASS: test-strverscmp
+PASS: test-symlink
+PASS: test-sys_stat
+PASS: test-sys_time
+PASS: test-sys_types
+PASS: test-init.sh
+PASS: test-time
+PASS: test-unistd
+PASS: test-unsetenv
+PASS: test-update-copyright.sh
+PASS: test-vc-list-files-git.sh
+SKIP: test-vc-list-files-cvs.sh
+PASS: test-verify
+PASS: test-verify.sh
+PASS: test-version-etc.sh
+PASS: test-wchar
+PASS: test-wcrtomb.sh
+SKIP: test-wcrtomb-w32-1.sh
+SKIP: test-wcrtomb-w32-2.sh
+SKIP: test-wcrtomb-w32-3.sh
+SKIP: test-wcrtomb-w32-4.sh
+SKIP: test-wcrtomb-w32-5.sh
+PASS: test-wctype-h
+PASS: test-xalloc-die.sh
+============================================================================
+Testsuite summary for GNU sed 4.4
+============================================================================
+# TOTAL: 130
+# PASS:  102
+# SKIP:  28
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[6]: Leaving directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[5]: Leaving directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[4]: Leaving directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[3]: Leaving directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[2]: Leaving directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[1]: Leaving directory '/mnt/lfs/sources/sed-4.4'
+lfs@Minty /mnt/lfs/sources/sed-4.4 $ make install
+make  install-recursive
+make[1]: Entering directory '/mnt/lfs/sources/sed-4.4'
+Making install in po
+make[2]: Entering directory '/mnt/lfs/sources/sed-4.4/po'
+installing af.gmo as /tools/share/locale/af/LC_MESSAGES/sed.mo
+installing ast.gmo as /tools/share/locale/ast/LC_MESSAGES/sed.mo
+installing bg.gmo as /tools/share/locale/bg/LC_MESSAGES/sed.mo
+installing ca.gmo as /tools/share/locale/ca/LC_MESSAGES/sed.mo
+installing cs.gmo as /tools/share/locale/cs/LC_MESSAGES/sed.mo
+installing da.gmo as /tools/share/locale/da/LC_MESSAGES/sed.mo
+installing de.gmo as /tools/share/locale/de/LC_MESSAGES/sed.mo
+installing el.gmo as /tools/share/locale/el/LC_MESSAGES/sed.mo
+installing eo.gmo as /tools/share/locale/eo/LC_MESSAGES/sed.mo
+installing es.gmo as /tools/share/locale/es/LC_MESSAGES/sed.mo
+installing et.gmo as /tools/share/locale/et/LC_MESSAGES/sed.mo
+installing eu.gmo as /tools/share/locale/eu/LC_MESSAGES/sed.mo
+installing fi.gmo as /tools/share/locale/fi/LC_MESSAGES/sed.mo
+installing fr.gmo as /tools/share/locale/fr/LC_MESSAGES/sed.mo
+installing ga.gmo as /tools/share/locale/ga/LC_MESSAGES/sed.mo
+installing gl.gmo as /tools/share/locale/gl/LC_MESSAGES/sed.mo
+installing he.gmo as /tools/share/locale/he/LC_MESSAGES/sed.mo
+installing hr.gmo as /tools/share/locale/hr/LC_MESSAGES/sed.mo
+installing hu.gmo as /tools/share/locale/hu/LC_MESSAGES/sed.mo
+installing id.gmo as /tools/share/locale/id/LC_MESSAGES/sed.mo
+installing it.gmo as /tools/share/locale/it/LC_MESSAGES/sed.mo
+installing ja.gmo as /tools/share/locale/ja/LC_MESSAGES/sed.mo
+installing ko.gmo as /tools/share/locale/ko/LC_MESSAGES/sed.mo
+installing nb.gmo as /tools/share/locale/nb/LC_MESSAGES/sed.mo
+installing nl.gmo as /tools/share/locale/nl/LC_MESSAGES/sed.mo
+installing pl.gmo as /tools/share/locale/pl/LC_MESSAGES/sed.mo
+installing pt.gmo as /tools/share/locale/pt/LC_MESSAGES/sed.mo
+installing pt_BR.gmo as /tools/share/locale/pt_BR/LC_MESSAGES/sed.mo
+installing ro.gmo as /tools/share/locale/ro/LC_MESSAGES/sed.mo
+installing ru.gmo as /tools/share/locale/ru/LC_MESSAGES/sed.mo
+installing sk.gmo as /tools/share/locale/sk/LC_MESSAGES/sed.mo
+installing sl.gmo as /tools/share/locale/sl/LC_MESSAGES/sed.mo
+installing sr.gmo as /tools/share/locale/sr/LC_MESSAGES/sed.mo
+installing sv.gmo as /tools/share/locale/sv/LC_MESSAGES/sed.mo
+installing tr.gmo as /tools/share/locale/tr/LC_MESSAGES/sed.mo
+installing uk.gmo as /tools/share/locale/uk/LC_MESSAGES/sed.mo
+installing vi.gmo as /tools/share/locale/vi/LC_MESSAGES/sed.mo
+installing zh_CN.gmo as /tools/share/locale/zh_CN/LC_MESSAGES/sed.mo
+installing zh_TW.gmo as /tools/share/locale/zh_TW/LC_MESSAGES/sed.mo
+if test "sed" = "gettext-tools"; then \
+  /tools/bin/mkdir -p /tools/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /tools/bin/install -c -m 644 ./$file \
+		    /tools/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /tools/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/mnt/lfs/sources/sed-4.4/po'
+Making install in .
+make[2]: Entering directory '/mnt/lfs/sources/sed-4.4'
+make[3]: Entering directory '/mnt/lfs/sources/sed-4.4'
+ /tools/bin/mkdir -p '/tools/bin'
+  /tools/bin/install -c sed/sed '/tools/bin'
+if test yes = no; then \
+  case 'linux-gnu' in \
+    darwin[56]*) \
+      need_charset_alias=true ;; \
+    darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+      need_charset_alias=false ;; \
+    *) \
+      need_charset_alias=true ;; \
+  esac ; \
+else \
+  need_charset_alias=false ; \
+fi ; \
+if $need_charset_alias; then \
+  /bin/sh /mnt/lfs/sources/sed-4.4/build-aux/install-sh -d /tools/lib ; \
+fi ; \
+if test -f /tools/lib/charset.alias; then \
+  sed -f lib/ref-add.sed /tools/lib/charset.alias > /tools/lib/charset.tmp ; \
+  /tools/bin/install -c -m 644 /tools/lib/charset.tmp /tools/lib/charset.alias ; \
+  rm -f /tools/lib/charset.tmp ; \
+else \
+  if $need_charset_alias; then \
+    sed -f lib/ref-add.sed lib/charset.alias > /tools/lib/charset.tmp ; \
+    /tools/bin/install -c -m 644 /tools/lib/charset.tmp /tools/lib/charset.alias ; \
+    rm -f /tools/lib/charset.tmp ; \
+  fi ; \
+fi
+ /tools/bin/mkdir -p '/tools/share/info'
+ /tools/bin/install -c -m 644 ./doc/sed.info '/tools/share/info'
+ install-info --info-dir='/tools/share/info' '/tools/share/info/sed.info'
+ /tools/bin/mkdir -p '/tools/share/man/man1'
+ /tools/bin/install -c -m 644 doc/sed.1 '/tools/share/man/man1'
+make[3]: Leaving directory '/mnt/lfs/sources/sed-4.4'
+make[2]: Leaving directory '/mnt/lfs/sources/sed-4.4'
+Making install in gnulib-tests
+make[2]: Entering directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make  install-recursive
+make[3]: Entering directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+Making install in .
+make[4]: Entering directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[5]: Entering directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[4]: Leaving directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[3]: Leaving directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[2]: Leaving directory '/mnt/lfs/sources/sed-4.4/gnulib-tests'
+make[1]: Leaving directory '/mnt/lfs/sources/sed-4.4'
+lfs@Minty /mnt/lfs/sources/sed-4.4 $
