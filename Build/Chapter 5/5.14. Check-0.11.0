@@ -1,0 +1,1046 @@
+5.14. Check-0.11.0
+Check is a unit testing framework for C.
+
+Approximate build time:
+0.1 SBU
+Required disk space:
+11 MB
+
+lfs@Minty /mnt/lfs/sources $ clear
+lfs@Minty /mnt/lfs/sources $ tar -xvf check-0.11.0.tar.gz
+check-0.11.0/
+check-0.11.0/aclocal.m4
+check-0.11.0/ar-lib
+check-0.11.0/AUTHORS
+check-0.11.0/ChangeLog
+check-0.11.0/check.m4
+check-0.11.0/check.pc.in
+check-0.11.0/check_stdint.h
+check-0.11.0/checkmk/
+check-0.11.0/cmake/
+check-0.11.0/CMakeLists.txt
+check-0.11.0/compile
+check-0.11.0/config.guess
+check-0.11.0/config.h.in
+check-0.11.0/config.sub
+check-0.11.0/configure
+check-0.11.0/configure.ac
+check-0.11.0/COPYING.LESSER
+check-0.11.0/depcomp
+check-0.11.0/doc/
+check-0.11.0/INSTALL
+check-0.11.0/install-sh
+check-0.11.0/lib/
+check-0.11.0/ltmain.sh
+check-0.11.0/m4/
+check-0.11.0/Makefile.am
+check-0.11.0/Makefile.in
+check-0.11.0/missing
+check-0.11.0/NEWS
+check-0.11.0/README
+check-0.11.0/src/
+check-0.11.0/test-driver
+check-0.11.0/tests/
+check-0.11.0/THANKS
+check-0.11.0/TODO
+check-0.11.0/xml/
+check-0.11.0/xml/check_unittest.xslt
+check-0.11.0/tests/check_check.h
+check-0.11.0/tests/check_check_exit.c
+check-0.11.0/tests/check_check_export_main.c
+check-0.11.0/tests/check_check_fixture.c
+check-0.11.0/tests/check_check_fork.c
+check-0.11.0/tests/check_check_limit.c
+check-0.11.0/tests/check_check_log.c
+check-0.11.0/tests/check_check_log_internal.c
+check-0.11.0/tests/check_check_main.c
+check-0.11.0/tests/check_check_master.c
+check-0.11.0/tests/check_check_msg.c
+check-0.11.0/tests/check_check_pack.c
+check-0.11.0/tests/check_check_selective.c
+check-0.11.0/tests/check_check_sub.c
+check-0.11.0/tests/check_check_tags.c
+check-0.11.0/tests/check_list.c
+check-0.11.0/tests/check_mem_leaks.c
+check-0.11.0/tests/check_nofork.c
+check-0.11.0/tests/check_nofork_teardown.c
+check-0.11.0/tests/check_stress.c
+check-0.11.0/tests/check_thread_stress.c
+check-0.11.0/tests/CMakeLists.txt
+check-0.11.0/tests/ex_output.c
+check-0.11.0/tests/Makefile.am
+check-0.11.0/tests/Makefile.in
+check-0.11.0/tests/test_check_nofork.sh
+check-0.11.0/tests/test_check_nofork_teardown.sh
+check-0.11.0/tests/test_log_output.sh
+check-0.11.0/tests/test_mem_leaks.sh
+check-0.11.0/tests/test_output.sh
+check-0.11.0/tests/test_output_strings
+check-0.11.0/tests/test_tap_output.sh
+check-0.11.0/tests/test_vars.in
+check-0.11.0/tests/test_xml_output.sh
+check-0.11.0/src/check.c
+check-0.11.0/src/check.h
+check-0.11.0/src/check.h.in
+check-0.11.0/src/check_error.c
+check-0.11.0/src/check_error.h
+check-0.11.0/src/check_impl.h
+check-0.11.0/src/check_list.c
+check-0.11.0/src/check_list.h
+check-0.11.0/src/check_log.c
+check-0.11.0/src/check_log.h
+check-0.11.0/src/check_msg.c
+check-0.11.0/src/check_msg.h
+check-0.11.0/src/check_pack.c
+check-0.11.0/src/check_pack.h
+check-0.11.0/src/check_print.c
+check-0.11.0/src/check_print.h
+check-0.11.0/src/check_run.c
+check-0.11.0/src/check_str.c
+check-0.11.0/src/check_str.h
+check-0.11.0/src/CMakeLists.txt
+check-0.11.0/src/Makefile.am
+check-0.11.0/src/Makefile.in
+check-0.11.0/m4/acx_pthread.m4
+check-0.11.0/m4/ax_c_check_flag.m4
+check-0.11.0/m4/ax_create_stdint_h.m4
+check-0.11.0/m4/librt_timers.m4
+check-0.11.0/m4/libtool.m4
+check-0.11.0/m4/._ltoptions.m4
+check-0.11.0/m4/ltoptions.m4
+check-0.11.0/m4/._ltsugar.m4
+check-0.11.0/m4/ltsugar.m4
+check-0.11.0/m4/ltversion.m4
+check-0.11.0/m4/._lt~obsolete.m4
+check-0.11.0/m4/lt~obsolete.m4
+check-0.11.0/m4/snprintf.m4
+check-0.11.0/lib/alarm.c
+check-0.11.0/lib/clock_gettime.c
+check-0.11.0/lib/CMakeLists.txt
+check-0.11.0/lib/getline.c
+check-0.11.0/lib/gettimeofday.c
+check-0.11.0/lib/libcompat.c
+check-0.11.0/lib/libcompat.h
+check-0.11.0/lib/localtime_r.c
+check-0.11.0/lib/Makefile.am
+check-0.11.0/lib/Makefile.in
+check-0.11.0/lib/malloc.c
+check-0.11.0/lib/realloc.c
+check-0.11.0/lib/snprintf.c
+check-0.11.0/lib/strdup.c
+check-0.11.0/lib/strsignal.c
+check-0.11.0/lib/timer_create.c
+check-0.11.0/lib/timer_delete.c
+check-0.11.0/lib/timer_settime.c
+check-0.11.0/doc/check.info
+check-0.11.0/doc/check.texi
+check-0.11.0/doc/example/
+check-0.11.0/doc/fdl.texi
+check-0.11.0/doc/Makefile.am
+check-0.11.0/doc/Makefile.in
+check-0.11.0/doc/mdate-sh
+check-0.11.0/doc/stamp-vti
+check-0.11.0/doc/texinfo.tex
+check-0.11.0/doc/version.texi
+check-0.11.0/doc/example/cmake/
+check-0.11.0/doc/example/CMakeLists.txt
+check-0.11.0/doc/example/configure.ac
+check-0.11.0/doc/example/Makefile.am
+check-0.11.0/doc/example/README
+check-0.11.0/doc/example/src/
+check-0.11.0/doc/example/tests/
+check-0.11.0/doc/example/tests/check_money.1.c
+check-0.11.0/doc/example/tests/check_money.2.c
+check-0.11.0/doc/example/tests/check_money.3.c
+check-0.11.0/doc/example/tests/check_money.6.c
+check-0.11.0/doc/example/tests/check_money.7.c
+check-0.11.0/doc/example/tests/check_money.c
+check-0.11.0/doc/example/tests/CMakeLists.txt
+check-0.11.0/doc/example/tests/Makefile.am
+check-0.11.0/doc/example/src/CMakeLists.txt
+check-0.11.0/doc/example/src/main.c
+check-0.11.0/doc/example/src/Makefile.am
+check-0.11.0/doc/example/src/money.1.c
+check-0.11.0/doc/example/src/money.1.h
+check-0.11.0/doc/example/src/money.2.h
+check-0.11.0/doc/example/src/money.3.c
+check-0.11.0/doc/example/src/money.4.c
+check-0.11.0/doc/example/src/money.5.c
+check-0.11.0/doc/example/src/money.6.c
+check-0.11.0/doc/example/src/money.c
+check-0.11.0/doc/example/src/money.h
+check-0.11.0/doc/example/cmake/config.h.in
+check-0.11.0/doc/example/cmake/COPYING-CMAKE-SCRIPTS.txt
+check-0.11.0/doc/example/cmake/FindCheck.cmake
+check-0.11.0/cmake/check_stdint.h.in
+check-0.11.0/cmake/CheckHeaderDirent.cmake
+check-0.11.0/cmake/CheckStructMember.cmake
+check-0.11.0/cmake/CheckTypeExists.cmake
+check-0.11.0/cmake/config.h.in
+check-0.11.0/checkmk/checkmk.in
+check-0.11.0/checkmk/doc/
+check-0.11.0/checkmk/examples/
+check-0.11.0/checkmk/Makefile.am
+check-0.11.0/checkmk/Makefile.in
+check-0.11.0/checkmk/README
+check-0.11.0/checkmk/test/
+check-0.11.0/checkmk/test/argument_ws/
+check-0.11.0/checkmk/test/basic_complete/
+check-0.11.0/checkmk/test/between_the_lines/
+check-0.11.0/checkmk/test/case_insensitive_pp/
+check-0.11.0/checkmk/test/check_checkmk
+check-0.11.0/checkmk/test/clean_mode/
+check-0.11.0/checkmk/test/declarations/
+check-0.11.0/checkmk/test/empty_input/
+check-0.11.0/checkmk/test/invalid_ucn/
+check-0.11.0/checkmk/test/main_post/
+check-0.11.0/checkmk/test/main_post_multiple/
+check-0.11.0/checkmk/test/main_pre_after_post/
+check-0.11.0/checkmk/test/main_pre_multiple/
+check-0.11.0/checkmk/test/multiple_everything/
+check-0.11.0/checkmk/test/name_enc/
+check-0.11.0/checkmk/test/no_args/
+check-0.11.0/checkmk/test/non_word_chars/
+check-0.11.0/checkmk/test/not_really_repeated/
+check-0.11.0/checkmk/test/num_start_test_name/
+check-0.11.0/checkmk/test/pass_thru/
+check-0.11.0/checkmk/test/repeated_argument_tests/
+check-0.11.0/checkmk/test/repeated_suites/
+check-0.11.0/checkmk/test/repeated_tcases/
+check-0.11.0/checkmk/test/repeated_tests/
+check-0.11.0/checkmk/test/single_test_line/
+check-0.11.0/checkmk/test/tcase_implied_repeat/
+check-0.11.0/checkmk/test/test_after_main_post/
+check-0.11.0/checkmk/test/test_after_main_pre/
+check-0.11.0/checkmk/test/test_chars/
+check-0.11.0/checkmk/test/trailing_ws/
+check-0.11.0/checkmk/test/ucn/
+check-0.11.0/checkmk/test/ucn/in
+check-0.11.0/checkmk/test/ucn/x_output
+check-0.11.0/checkmk/test/trailing_ws/in
+check-0.11.0/checkmk/test/trailing_ws/x_output
+check-0.11.0/checkmk/test/test_chars/in
+check-0.11.0/checkmk/test/test_chars/x_err
+check-0.11.0/checkmk/test/test_chars/x_output
+check-0.11.0/checkmk/test/test_after_main_pre/in
+check-0.11.0/checkmk/test/test_after_main_pre/x_err
+check-0.11.0/checkmk/test/test_after_main_pre/x_output
+check-0.11.0/checkmk/test/test_after_main_post/in
+check-0.11.0/checkmk/test/test_after_main_post/x_err
+check-0.11.0/checkmk/test/test_after_main_post/x_output
+check-0.11.0/checkmk/test/tcase_implied_repeat/in
+check-0.11.0/checkmk/test/tcase_implied_repeat/x_err
+check-0.11.0/checkmk/test/tcase_implied_repeat/x_output
+check-0.11.0/checkmk/test/single_test_line/in
+check-0.11.0/checkmk/test/single_test_line/x_output
+check-0.11.0/checkmk/test/repeated_tests/in
+check-0.11.0/checkmk/test/repeated_tests/x_err
+check-0.11.0/checkmk/test/repeated_tests/x_output
+check-0.11.0/checkmk/test/repeated_tcases/in
+check-0.11.0/checkmk/test/repeated_tcases/x_err
+check-0.11.0/checkmk/test/repeated_tcases/x_output
+check-0.11.0/checkmk/test/repeated_suites/in
+check-0.11.0/checkmk/test/repeated_suites/x_err
+check-0.11.0/checkmk/test/repeated_suites/x_output
+check-0.11.0/checkmk/test/repeated_argument_tests/in
+check-0.11.0/checkmk/test/repeated_argument_tests/x_err
+check-0.11.0/checkmk/test/repeated_argument_tests/x_output
+check-0.11.0/checkmk/test/pass_thru/in
+check-0.11.0/checkmk/test/pass_thru/x_err
+check-0.11.0/checkmk/test/pass_thru/x_output
+check-0.11.0/checkmk/test/num_start_test_name/in
+check-0.11.0/checkmk/test/num_start_test_name/x_err
+check-0.11.0/checkmk/test/num_start_test_name/x_output
+check-0.11.0/checkmk/test/not_really_repeated/in
+check-0.11.0/checkmk/test/not_really_repeated/x_output
+check-0.11.0/checkmk/test/non_word_chars/in
+check-0.11.0/checkmk/test/non_word_chars/x_output
+check-0.11.0/checkmk/test/no_args/cmd
+check-0.11.0/checkmk/test/no_args/in
+check-0.11.0/checkmk/test/no_args/x_output
+check-0.11.0/checkmk/test/name_enc/cmd
+check-0.11.0/checkmk/test/name_enc/x_output
+check-0.11.0/checkmk/test/multiple_everything/in
+check-0.11.0/checkmk/test/multiple_everything/x_output
+check-0.11.0/checkmk/test/main_pre_multiple/in
+check-0.11.0/checkmk/test/main_pre_multiple/x_err
+check-0.11.0/checkmk/test/main_pre_multiple/x_output
+check-0.11.0/checkmk/test/main_pre_after_post/in
+check-0.11.0/checkmk/test/main_pre_after_post/x_err
+check-0.11.0/checkmk/test/main_pre_after_post/x_output
+check-0.11.0/checkmk/test/main_post_multiple/in
+check-0.11.0/checkmk/test/main_post_multiple/x_err
+check-0.11.0/checkmk/test/main_post_multiple/x_output
+check-0.11.0/checkmk/test/main_post/in
+check-0.11.0/checkmk/test/main_post/x_output
+check-0.11.0/checkmk/test/invalid_ucn/in
+check-0.11.0/checkmk/test/invalid_ucn/x_err
+check-0.11.0/checkmk/test/invalid_ucn/x_output
+check-0.11.0/checkmk/test/empty_input/in
+check-0.11.0/checkmk/test/empty_input/x_err
+check-0.11.0/checkmk/test/empty_input/x_output
+check-0.11.0/checkmk/test/declarations/in
+check-0.11.0/checkmk/test/declarations/x_output
+check-0.11.0/checkmk/test/clean_mode/cmd
+check-0.11.0/checkmk/test/clean_mode/in
+check-0.11.0/checkmk/test/clean_mode/x_output
+check-0.11.0/checkmk/test/case_insensitive_pp/in
+check-0.11.0/checkmk/test/case_insensitive_pp/x_output
+check-0.11.0/checkmk/test/between_the_lines/in
+check-0.11.0/checkmk/test/between_the_lines/x_output
+check-0.11.0/checkmk/test/basic_complete/in
+check-0.11.0/checkmk/test/basic_complete/x_output
+check-0.11.0/checkmk/test/argument_ws/in
+check-0.11.0/checkmk/test/argument_ws/x_output
+check-0.11.0/checkmk/examples/basic_complete.ts
+check-0.11.0/checkmk/examples/multiple_everything.ts
+check-0.11.0/checkmk/doc/checkmk.1
+lfs@Minty /mnt/lfs/sources $ cd check-0.11.0
+lfs@Minty /mnt/lfs/sources/check-0.11.0 $ PKG_CONFIG= ./configure --prefix=/tools
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether make supports nested variables... (cached) yes
+Subunit support will enable automatically.
+checking for a sed that does not truncate output... /bin/sed
+checking for gawk... (cached) gawk
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking whether ln -s works... yes
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld
+checking if the linker (/mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /tools/bin/nm -B
+checking the name lister (/tools/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /tools/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking whether the C compiler accepts the -Wextra flag... yes
+checking whether the C compiler accepts the -Wstrict-prototypes flag... yes
+checking whether the C compiler accepts the -Wmissing-prototypes flag... yes
+checking whether the C compiler accepts the -Wwrite-strings flag... yes
+checking whether the C compiler accepts the -Wno-variadic-macros flag... yes
+checking whether the C compiler accepts the -Wimport flag... yes
+checking whether the C compiler accepts the -Wfatal-errors flag... yes
+checking whether the C compiler accepts the -Wformat=2 flag... yes
+checking whether the C compiler accepts the -Winit-self flag... yes
+checking whether the C compiler accepts the -Wmissing-include-dirs flag... yes
+checking whether the C compiler accepts the -Wswitch-default flag... yes
+checking whether the C compiler accepts the -Wunknown-pragmas flag... yes
+checking for gcov... gcov
+checking for lcov... no
+checking for genhtml... no
+checking for tex... no
+configure: WARNING: tex not installed: cannot rebuild HTML documentation.
+checking for filterdiff... filterdiff
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... no
+checking whether pthreads work with -Kthread... no
+checking whether pthreads work with -kthread... no
+checking for the pthreads library -llthread... no
+checking whether pthreads work with -pthread... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking for floor in -lm... yes
+checking for clock_gettime, timer_create, timer_settime, timer_delete in -lrt... yes
+checking for struct timespec.tv_sec... yes
+checking for struct timespec.tv_nsec... yes
+checking for struct itimerspec.it_interval... yes
+checking for struct itimerspec.it_value... yes
+checking for ANSI C header files... (cached) yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking for stdint types... stdint.h (shortcircuit)
+make use of stdint.h in check_stdint.h (assuming C99 compatible system)
+checking for an ANSI C-conforming const... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for intmax_t... yes
+checking for uintmax_t... yes
+checking for uint32_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking size of int... 4
+checking size of short... 2
+checking size of long... 8
+checking for clockid_t... yes
+checking for timer_t... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking for time.h... yes
+checking for stdarg.h... yes
+checking for timer_create... yes
+checking if timer_create is supported on the system... yes
+checking for alarm... yes
+checking for clock_gettime... yes
+checking for getline... yes
+checking for gettimeofday... yes
+checking for localtime_r... yes
+checking for strdup... yes
+checking for strsignal... yes
+checking whether alarm is declared... yes
+checking whether clock_gettime is declared... no
+checking whether getline is declared... yes
+checking whether gettimeofday is declared... no
+checking whether localtime_r is declared... no
+checking whether strdup is declared... yes
+checking whether strsignal is declared... yes
+checking whether setenv is declared... yes
+checking for setitimer... yes
+checking for fork... yes
+checking for sigaction... yes
+checking for mkstemp... yes
+checking for vsnprintf... yes
+checking whether vsnprintf is C99 compliant... yes
+checking for snprintf... yes
+checking whether snprintf is C99 compliant... yes
+checking for gawk... /usr/bin/gawk
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating checkmk/checkmk
+config.status: creating check.pc
+config.status: creating Makefile
+config.status: creating checkmk/Makefile
+config.status: creating doc/Makefile
+config.status: creating lib/Makefile
+config.status: creating src/check.h
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/test_vars
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing check_stdint.h commands
+config.status: creating check_stdint.h : _CHECK_CHECK_STDINT_H
+config.status: executing checkmk-x commands
+
+==========================================
+Summary of Check 0.11.0 options:
+
+fork mode ............................ yes
+high resolution timer replacement .... no
+snprintf replacement ................. no
+subunit support....................... no
+timeout unit tests ................... yes
+==========================================
+lfs@Minty /mnt/lfs/sources/check-0.11.0 $ make
+make  all-recursive
+make[1]: Entering directory '/mnt/lfs/sources/check-0.11.0'
+Making all in lib
+make[2]: Entering directory '/mnt/lfs/sources/check-0.11.0/lib'
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT libcompat.lo -MD -MP -MF .deps/libcompat.Tpo -c -o libcompat.lo libcompat.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT libcompat.lo -MD -MP -MF .deps/libcompat.Tpo -c libcompat.c  -fPIC -DPIC -o .libs/libcompat.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT libcompat.lo -MD -MP -MF .deps/libcompat.Tpo -c libcompat.c -o libcompat.o >/dev/null 2>&1
+mv -f .deps/libcompat.Tpo .deps/libcompat.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -no-undefined  -o libcompat.la  libcompat.lo   -lrt -lm
+libtool: link: ar cru .libs/libcompat.a .libs/libcompat.o
+libtool: link: ranlib .libs/libcompat.a
+libtool: link: ( cd ".libs" && rm -f "libcompat.la" && ln -s "../libcompat.la" "libcompat.la" )
+make[2]: Leaving directory '/mnt/lfs/sources/check-0.11.0/lib'
+Making all in src
+make[2]: Entering directory '/mnt/lfs/sources/check-0.11.0/src'
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -pthread  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check.lo -MD -MP -MF .deps/check.Tpo -c -o check.lo check.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check.lo -MD -MP -MF .deps/check.Tpo -c check.c  -fPIC -DPIC -o .libs/check.o
+In file included from check.c:29:0:
+check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+check.c:352:13: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ const char* tcase_name()
+             ^~~~~~~~~~
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check.lo -MD -MP -MF .deps/check.Tpo -c check.c -o check.o >/dev/null 2>&1
+mv -f .deps/check.Tpo .deps/check.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -pthread  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_error.lo -MD -MP -MF .deps/check_error.Tpo -c -o check_error.lo check_error.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_error.lo -MD -MP -MF .deps/check_error.Tpo -c check_error.c  -fPIC -DPIC -o .libs/check_error.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_error.lo -MD -MP -MF .deps/check_error.Tpo -c check_error.c -o check_error.o >/dev/null 2>&1
+mv -f .deps/check_error.Tpo .deps/check_error.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -pthread  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_list.lo -MD -MP -MF .deps/check_list.Tpo -c -o check_list.lo check_list.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_list.lo -MD -MP -MF .deps/check_list.Tpo -c check_list.c  -fPIC -DPIC -o .libs/check_list.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_list.lo -MD -MP -MF .deps/check_list.Tpo -c check_list.c -o check_list.o >/dev/null 2>&1
+mv -f .deps/check_list.Tpo .deps/check_list.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -pthread  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_log.lo -MD -MP -MF .deps/check_log.Tpo -c -o check_log.lo check_log.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_log.lo -MD -MP -MF .deps/check_log.Tpo -c check_log.c  -fPIC -DPIC -o .libs/check_log.o
+In file included from check_log.c:25:0:
+./check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_log.lo -MD -MP -MF .deps/check_log.Tpo -c check_log.c -o check_log.o >/dev/null 2>&1
+mv -f .deps/check_log.Tpo .deps/check_log.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -pthread  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_msg.lo -MD -MP -MF .deps/check_msg.Tpo -c -o check_msg.lo check_msg.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_msg.lo -MD -MP -MF .deps/check_msg.Tpo -c check_msg.c  -fPIC -DPIC -o .libs/check_msg.o
+In file included from check_msg.c:29:0:
+check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_msg.lo -MD -MP -MF .deps/check_msg.Tpo -c check_msg.c -o check_msg.o >/dev/null 2>&1
+mv -f .deps/check_msg.Tpo .deps/check_msg.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -pthread  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_pack.lo -MD -MP -MF .deps/check_pack.Tpo -c -o check_pack.lo check_pack.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_pack.lo -MD -MP -MF .deps/check_pack.Tpo -c check_pack.c  -fPIC -DPIC -o .libs/check_pack.o
+In file included from check_pack.c:27:0:
+check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_pack.lo -MD -MP -MF .deps/check_pack.Tpo -c check_pack.c -o check_pack.o >/dev/null 2>&1
+mv -f .deps/check_pack.Tpo .deps/check_pack.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -pthread  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_print.lo -MD -MP -MF .deps/check_print.Tpo -c -o check_print.lo check_print.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_print.lo -MD -MP -MF .deps/check_print.Tpo -c check_print.c  -fPIC -DPIC -o .libs/check_print.o
+In file included from check_print.c:27:0:
+check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+check_print.c: In function 'fprint_xml_esc':
+check_print.c:114:13: warning: switch missing default case [-Wswitch-default]
+             switch (next)
+             ^~~~~~
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_print.lo -MD -MP -MF .deps/check_print.Tpo -c check_print.c -o check_print.o >/dev/null 2>&1
+mv -f .deps/check_print.Tpo .deps/check_print.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -pthread  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_run.lo -MD -MP -MF .deps/check_run.Tpo -c -o check_run.lo check_run.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_run.lo -MD -MP -MF .deps/check_run.Tpo -c check_run.c  -fPIC -DPIC -o .libs/check_run.o
+In file included from check_run.c:32:0:
+check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_run.lo -MD -MP -MF .deps/check_run.Tpo -c check_run.c -o check_run.o >/dev/null 2>&1
+mv -f .deps/check_run.Tpo .deps/check_run.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -pthread  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_str.lo -MD -MP -MF .deps/check_str.Tpo -c -o check_str.lo check_str.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_str.lo -MD -MP -MF .deps/check_str.Tpo -c check_str.c  -fPIC -DPIC -o .libs/check_str.o
+In file included from check_str.c:26:0:
+check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_str.lo -MD -MP -MF .deps/check_str.Tpo -c check_str.c -o check_str.o >/dev/null 2>&1
+mv -f .deps/check_str.Tpo .deps/check_str.Plo
+/bin/sed -n -e 's/^..*CK_EXPORT[[:space:]][[:space:]]*\([[:alnum:]_][[:alnum:]_]*\)..*$/\1/p' ../src/check.h.in > exported.sym
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -pthread  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -no-undefined -export-symbols exported.sym  -o libcheck.la -rpath /tools/lib check.lo check_error.lo check_list.lo check_log.lo check_msg.lo check_pack.lo check_print.lo check_run.lo check_str.lo   ../lib/libcompat.la -lrt -lm
+libtool: link: echo "{ global:" > .libs/libcheck.ver
+libtool: link:  cat exported.sym | sed -e "s/\(.*\)/\1;/" >> .libs/libcheck.ver
+libtool: link:  echo "local: *; };" >> .libs/libcheck.ver
+libtool: link:  gcc -shared  -fPIC -DPIC  .libs/check.o .libs/check_error.o .libs/check_list.o .libs/check_log.o .libs/check_msg.o .libs/check_pack.o .libs/check_print.o .libs/check_run.o .libs/check_str.o  -Wl,--whole-archive ../lib/.libs/libcompat.a -Wl,--no-whole-archive  -lrt -lm  -pthread -g -O2   -pthread -Wl,-soname -Wl,libcheck.so.0 -Wl,-version-script -Wl,.libs/libcheck.ver -o .libs/libcheck.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libcheck.so.0" && ln -s "libcheck.so.0.0.0" "libcheck.so.0")
+libtool: link: (cd ".libs" && rm -f "libcheck.so" && ln -s "libcheck.so.0.0.0" "libcheck.so")
+libtool: link: (cd .libs/libcheck.lax/libcompat.a && ar x "/mnt/lfs/sources/check-0.11.0/src/../lib/.libs/libcompat.a")
+libtool: link: ar cru .libs/libcheck.a  check.o check_error.o check_list.o check_log.o check_msg.o check_pack.o check_print.o check_run.o check_str.o  .libs/libcheck.lax/libcompat.a/libcompat.o
+libtool: link: ranlib .libs/libcheck.a
+libtool: link: rm -fr .libs/libcheck.lax
+libtool: link: ( cd ".libs" && rm -f "libcheck.la" && ln -s "../libcheck.la" "libcheck.la" )
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -pthread  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -no-undefined  -o libcheckinternal.la  check.lo check_error.lo check_list.lo check_log.lo check_msg.lo check_pack.lo check_print.lo check_run.lo check_str.lo   ../lib/libcompat.la -lrt -lm
+libtool: link: (cd .libs/libcheckinternal.lax/libcompat.a && ar x "/mnt/lfs/sources/check-0.11.0/src/../lib/.libs/libcompat.a")
+libtool: link: ar cru .libs/libcheckinternal.a .libs/check.o .libs/check_error.o .libs/check_list.o .libs/check_log.o .libs/check_msg.o .libs/check_pack.o .libs/check_print.o .libs/check_run.o .libs/check_str.o   .libs/libcheckinternal.lax/libcompat.a/libcompat.o
+libtool: link: ranlib .libs/libcheckinternal.a
+libtool: link: rm -fr .libs/libcheckinternal.lax
+libtool: link: ( cd ".libs" && rm -f "libcheckinternal.la" && ln -s "../libcheckinternal.la" "libcheckinternal.la" )
+make[2]: Leaving directory '/mnt/lfs/sources/check-0.11.0/src'
+Making all in doc
+make[2]: Entering directory '/mnt/lfs/sources/check-0.11.0/doc'
+cd ../doc/example; \
+diff -U 100 src/money.1.h src/money.2.h | filterdiff --remove-timestamps > /mnt/lfs/sources/check-0.11.0/doc/money.1-2.h.diff || test $? -eq 1; \
+cd -;
+/mnt/lfs/sources/check-0.11.0/doc
+cd ../doc/example; \
+diff -U 100 src/money.1.c src/money.3.c | filterdiff --remove-timestamps > /mnt/lfs/sources/check-0.11.0/doc/money.1-3.c.diff || test $? -eq 1; \
+cd -;
+/mnt/lfs/sources/check-0.11.0/doc
+cd ../doc/example; \
+diff -U 100 src/money.3.c src/money.4.c | filterdiff --remove-timestamps > /mnt/lfs/sources/check-0.11.0/doc/money.3-4.c.diff || test $? -eq 1; \
+cd -;
+/mnt/lfs/sources/check-0.11.0/doc
+cd ../doc/example; \
+diff -U 100 src/money.4.c src/money.5.c | filterdiff --remove-timestamps > /mnt/lfs/sources/check-0.11.0/doc/money.4-5.c.diff || test $? -eq 1; \
+cd -;
+/mnt/lfs/sources/check-0.11.0/doc
+cd ../doc/example; \
+diff -U 100 src/money.5.c src/money.6.c | filterdiff --remove-timestamps > /mnt/lfs/sources/check-0.11.0/doc/money.5-6.c.diff || test $? -eq 1; \
+cd -;
+/mnt/lfs/sources/check-0.11.0/doc
+cd ../doc/example; \
+diff -U 100 tests/check_money.1.c tests/check_money.2.c | filterdiff --remove-timestamps > /mnt/lfs/sources/check-0.11.0/doc/check_money.1-2.c.diff || test $? -eq 1; \
+cd -;
+/mnt/lfs/sources/check-0.11.0/doc
+cd ../doc/example; \
+diff -U 100 tests/check_money.2.c tests/check_money.3.c | filterdiff --remove-timestamps > /mnt/lfs/sources/check-0.11.0/doc/check_money.2-3.c.diff || test $? -eq 1; \
+cd -;
+/mnt/lfs/sources/check-0.11.0/doc
+cd ../doc/example; \
+diff -U 100 tests/check_money.3.c tests/check_money.6.c | filterdiff --remove-timestamps > /mnt/lfs/sources/check-0.11.0/doc/check_money.3-6.c.diff || test $? -eq 1; \
+cd -;
+/mnt/lfs/sources/check-0.11.0/doc
+cd ../doc/example; \
+diff -U 100 tests/check_money.6.c tests/check_money.7.c | filterdiff --remove-timestamps > /mnt/lfs/sources/check-0.11.0/doc/check_money.6-7.c.diff || test $? -eq 1; \
+cd -;
+/mnt/lfs/sources/check-0.11.0/doc
+make[2]: Leaving directory '/mnt/lfs/sources/check-0.11.0/doc'
+Making all in .
+make[2]: Entering directory '/mnt/lfs/sources/check-0.11.0'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/check-0.11.0'
+Making all in checkmk
+make[2]: Entering directory '/mnt/lfs/sources/check-0.11.0/checkmk'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/check-0.11.0/checkmk'
+Making all in tests
+make[2]: Entering directory '/mnt/lfs/sources/check-0.11.0/tests'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check_export-check_check_sub.o -MD -MP -MF .deps/check_check_export-check_check_sub.Tpo -c -o check_check_export-check_check_sub.o `test -f 'check_check_sub.c' || echo './'`check_check_sub.c
+In file included from check_check_sub.c:26:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check_export-check_check_sub.Tpo .deps/check_check_export-check_check_sub.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check_export-check_check_master.o -MD -MP -MF .deps/check_check_export-check_check_master.Tpo -c -o check_check_export-check_check_master.o `test -f 'check_check_master.c' || echo './'`check_check_master.c
+In file included from check_check_master.c:26:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check_export-check_check_master.Tpo .deps/check_check_export-check_check_master.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check_export-check_check_log.o -MD -MP -MF .deps/check_check_export-check_check_log.Tpo -c -o check_check_export-check_check_log.o `test -f 'check_check_log.c' || echo './'`check_check_log.c
+In file included from check_check_log.c:26:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check_export-check_check_log.Tpo .deps/check_check_export-check_check_log.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check_export-check_check_fork.o -MD -MP -MF .deps/check_check_export-check_check_fork.Tpo -c -o check_check_export-check_check_fork.o `test -f 'check_check_fork.c' || echo './'`check_check_fork.c
+In file included from check_check_fork.c:25:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check_export-check_check_fork.Tpo .deps/check_check_export-check_check_fork.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check_export-check_check_tags.o -MD -MP -MF .deps/check_check_export-check_check_tags.Tpo -c -o check_check_export-check_check_tags.o `test -f 'check_check_tags.c' || echo './'`check_check_tags.c
+In file included from check_check_tags.c:25:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check_export-check_check_tags.Tpo .deps/check_check_export-check_check_tags.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check_export-check_check_export_main.o -MD -MP -MF .deps/check_check_export-check_check_export_main.Tpo -c -o check_check_export-check_check_export_main.o `test -f 'check_check_export_main.c' || echo './'`check_check_export_main.c
+In file included from check_check_export_main.c:25:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check_export-check_check_export_main.Tpo .deps/check_check_export-check_check_export_main.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas   -o check_check_export check_check_export-check_check_sub.o check_check_export-check_check_master.o check_check_export-check_check_log.o check_check_export-check_check_fork.o check_check_export-check_check_tags.o check_check_export-check_check_export_main.o ../src/libcheck.la ../lib/libcompat.la -lrt -lm
+libtool: link: gcc -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -o .libs/check_check_export check_check_export-check_check_sub.o check_check_export-check_check_master.o check_check_export-check_check_log.o check_check_export-check_check_fork.o check_check_export-check_check_tags.o check_check_export-check_check_export_main.o  ../src/.libs/libcheck.so ../lib/.libs/libcompat.a -lrt -lm -pthread -Wl,-rpath -Wl,/tools/lib
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check-check_list.o -MD -MP -MF .deps/check_check-check_list.Tpo -c -o check_check-check_list.o `test -f 'check_list.c' || echo './'`check_list.c
+In file included from check_list.c:26:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check-check_list.Tpo .deps/check_check-check_list.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check-check_check_sub.o -MD -MP -MF .deps/check_check-check_check_sub.Tpo -c -o check_check-check_check_sub.o `test -f 'check_check_sub.c' || echo './'`check_check_sub.c
+In file included from check_check_sub.c:26:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check-check_check_sub.Tpo .deps/check_check-check_check_sub.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check-check_check_master.o -MD -MP -MF .deps/check_check-check_check_master.Tpo -c -o check_check-check_check_master.o `test -f 'check_check_master.c' || echo './'`check_check_master.c
+In file included from check_check_master.c:26:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check-check_check_master.Tpo .deps/check_check-check_check_master.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check-check_check_msg.o -MD -MP -MF .deps/check_check-check_check_msg.Tpo -c -o check_check-check_check_msg.o `test -f 'check_check_msg.c' || echo './'`check_check_msg.c
+In file included from check_check_msg.c:27:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check-check_check_msg.Tpo .deps/check_check-check_check_msg.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check-check_check_log.o -MD -MP -MF .deps/check_check-check_check_log.Tpo -c -o check_check-check_check_log.o `test -f 'check_check_log.c' || echo './'`check_check_log.c
+In file included from check_check_log.c:26:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check-check_check_log.Tpo .deps/check_check-check_check_log.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check-check_check_log_internal.o -MD -MP -MF .deps/check_check-check_check_log_internal.Tpo -c -o check_check-check_check_log_internal.o `test -f 'check_check_log_internal.c' || echo './'`check_check_log_internal.c
+In file included from check_check_log_internal.c:28:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check-check_check_log_internal.Tpo .deps/check_check-check_check_log_internal.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check-check_check_limit.o -MD -MP -MF .deps/check_check-check_check_limit.Tpo -c -o check_check-check_check_limit.o `test -f 'check_check_limit.c' || echo './'`check_check_limit.c
+In file included from check_check_limit.c:25:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check-check_check_limit.Tpo .deps/check_check-check_check_limit.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check-check_check_fork.o -MD -MP -MF .deps/check_check-check_check_fork.Tpo -c -o check_check-check_check_fork.o `test -f 'check_check_fork.c' || echo './'`check_check_fork.c
+In file included from check_check_fork.c:25:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check-check_check_fork.Tpo .deps/check_check-check_check_fork.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check-check_check_fixture.o -MD -MP -MF .deps/check_check-check_check_fixture.Tpo -c -o check_check-check_check_fixture.o `test -f 'check_check_fixture.c' || echo './'`check_check_fixture.c
+In file included from check_check_fixture.c:27:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check-check_check_fixture.Tpo .deps/check_check-check_check_fixture.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check-check_check_pack.o -MD -MP -MF .deps/check_check-check_check_pack.Tpo -c -o check_check-check_check_pack.o `test -f 'check_check_pack.c' || echo './'`check_check_pack.c
+In file included from check_check_pack.c:27:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check-check_check_pack.Tpo .deps/check_check-check_check_pack.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check-check_check_exit.o -MD -MP -MF .deps/check_check-check_check_exit.Tpo -c -o check_check-check_check_exit.o `test -f 'check_check_exit.c' || echo './'`check_check_exit.c
+In file included from check_check_exit.c:28:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check-check_check_exit.Tpo .deps/check_check-check_check_exit.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check-check_check_selective.o -MD -MP -MF .deps/check_check-check_check_selective.Tpo -c -o check_check-check_check_selective.o `test -f 'check_check_selective.c' || echo './'`check_check_selective.c
+In file included from check_check_selective.c:25:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check-check_check_selective.Tpo .deps/check_check-check_check_selective.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check-check_check_tags.o -MD -MP -MF .deps/check_check-check_check_tags.Tpo -c -o check_check-check_check_tags.o `test -f 'check_check_tags.c' || echo './'`check_check_tags.c
+In file included from check_check_tags.c:25:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check-check_check_tags.Tpo .deps/check_check-check_check_tags.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_check-check_check_main.o -MD -MP -MF .deps/check_check-check_check_main.Tpo -c -o check_check-check_check_main.o `test -f 'check_check_main.c' || echo './'`check_check_main.c
+In file included from check_check_main.c:25:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_check-check_check_main.Tpo .deps/check_check-check_check_main.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas   -o check_check check_check-check_list.o check_check-check_check_sub.o check_check-check_check_master.o check_check-check_check_msg.o check_check-check_check_log.o check_check-check_check_log_internal.o check_check-check_check_limit.o check_check-check_check_fork.o check_check-check_check_fixture.o check_check-check_check_pack.o check_check-check_check_exit.o check_check-check_check_selective.o check_check-check_check_tags.o check_check-check_check_main.o ../src/libcheckinternal.la ../lib/libcompat.la -lrt -lm
+libtool: link: gcc -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -o check_check check_check-check_list.o check_check-check_check_sub.o check_check-check_check_master.o check_check-check_check_msg.o check_check-check_check_log.o check_check-check_check_log_internal.o check_check-check_check_limit.o check_check-check_check_fork.o check_check-check_check_fixture.o check_check-check_check_pack.o check_check-check_check_exit.o check_check-check_check_selective.o check_check-check_check_tags.o check_check-check_check_main.o  ../src/.libs/libcheckinternal.a ../lib/.libs/libcompat.a -lrt -lm -pthread
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_stress.o -MD -MP -MF .deps/check_stress.Tpo -c -o check_stress.o check_stress.c
+In file included from check_stress.c:28:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_stress.Tpo .deps/check_stress.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas   -o check_stress check_stress.o ../src/libcheck.la ../lib/libcompat.la -lrt -lm
+libtool: link: gcc -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -o .libs/check_stress check_stress.o  ../src/.libs/libcheck.so ../lib/.libs/libcompat.a -lrt -lm -pthread -Wl,-rpath -Wl,/tools/lib
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_thread_stress-check_thread_stress.o -MD -MP -MF .deps/check_thread_stress-check_thread_stress.Tpo -c -o check_thread_stress-check_thread_stress.o `test -f 'check_thread_stress.c' || echo './'`check_thread_stress.c
+In file included from check_thread_stress.c:25:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_thread_stress-check_thread_stress.Tpo .deps/check_thread_stress-check_thread_stress.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas   -o check_thread_stress check_thread_stress-check_thread_stress.o ../src/libcheck.la ../lib/libcompat.la  -lrt -lm
+libtool: link: gcc -pthread -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -o .libs/check_thread_stress check_thread_stress-check_thread_stress.o  ../src/.libs/libcheck.so ../lib/.libs/libcompat.a -lrt -lm -pthread -Wl,-rpath -Wl,/tools/lib
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_nofork.o -MD -MP -MF .deps/check_nofork.Tpo -c -o check_nofork.o check_nofork.c
+In file included from check_nofork.c:25:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_nofork.Tpo .deps/check_nofork.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas   -o check_nofork check_nofork.o ../src/libcheck.la ../lib/libcompat.la -lrt -lm
+libtool: link: gcc -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -o .libs/check_nofork check_nofork.o  ../src/.libs/libcheck.so ../lib/.libs/libcompat.a -lrt -lm -pthread -Wl,-rpath -Wl,/tools/lib
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_nofork_teardown.o -MD -MP -MF .deps/check_nofork_teardown.Tpo -c -o check_nofork_teardown.o check_nofork_teardown.c
+In file included from check_nofork_teardown.c:25:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_nofork_teardown.Tpo .deps/check_nofork_teardown.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas   -o check_nofork_teardown check_nofork_teardown.o ../src/libcheck.la ../lib/libcompat.la -lrt -lm
+libtool: link: gcc -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -o .libs/check_nofork_teardown check_nofork_teardown.o  ../src/.libs/libcheck.so ../lib/.libs/libcompat.a -lrt -lm -pthread -Wl,-rpath -Wl,/tools/lib
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -DTIMEOUT_TESTS_ENABLED=0 -DMEMORY_LEAKING_TESTS_ENABLED=0 -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_mem_leaks-check_mem_leaks.o -MD -MP -MF .deps/check_mem_leaks-check_mem_leaks.Tpo -c -o check_mem_leaks-check_mem_leaks.o `test -f 'check_mem_leaks.c' || echo './'`check_mem_leaks.c
+In file included from check_mem_leaks.c:31:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+check_mem_leaks.c:35:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ int main ()
+     ^~~~
+mv -f .deps/check_mem_leaks-check_mem_leaks.Tpo .deps/check_mem_leaks-check_mem_leaks.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -DTIMEOUT_TESTS_ENABLED=0 -DMEMORY_LEAKING_TESTS_ENABLED=0 -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_mem_leaks-check_check_log.o -MD -MP -MF .deps/check_mem_leaks-check_check_log.Tpo -c -o check_mem_leaks-check_check_log.o `test -f 'check_check_log.c' || echo './'`check_check_log.c
+In file included from check_check_log.c:26:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_mem_leaks-check_check_log.Tpo .deps/check_mem_leaks-check_check_log.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -DTIMEOUT_TESTS_ENABLED=0 -DMEMORY_LEAKING_TESTS_ENABLED=0 -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_mem_leaks-check_check_fork.o -MD -MP -MF .deps/check_mem_leaks-check_check_fork.Tpo -c -o check_mem_leaks-check_check_fork.o `test -f 'check_check_fork.c' || echo './'`check_check_fork.c
+In file included from check_check_fork.c:25:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_mem_leaks-check_check_fork.Tpo .deps/check_mem_leaks-check_check_fork.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -DTIMEOUT_TESTS_ENABLED=0 -DMEMORY_LEAKING_TESTS_ENABLED=0 -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_mem_leaks-check_check_exit.o -MD -MP -MF .deps/check_mem_leaks-check_check_exit.Tpo -c -o check_mem_leaks-check_check_exit.o `test -f 'check_check_exit.c' || echo './'`check_check_exit.c
+In file included from check_check_exit.c:28:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_mem_leaks-check_check_exit.Tpo .deps/check_mem_leaks-check_check_exit.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -DTIMEOUT_TESTS_ENABLED=0 -DMEMORY_LEAKING_TESTS_ENABLED=0 -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_mem_leaks-check_check_selective.o -MD -MP -MF .deps/check_mem_leaks-check_check_selective.Tpo -c -o check_mem_leaks-check_check_selective.o `test -f 'check_check_selective.c' || echo './'`check_check_selective.c
+In file included from check_check_selective.c:25:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_mem_leaks-check_check_selective.Tpo .deps/check_mem_leaks-check_check_selective.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -DTIMEOUT_TESTS_ENABLED=0 -DMEMORY_LEAKING_TESTS_ENABLED=0 -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_mem_leaks-check_check_tags.o -MD -MP -MF .deps/check_mem_leaks-check_check_tags.Tpo -c -o check_mem_leaks-check_check_tags.o `test -f 'check_check_tags.c' || echo './'`check_check_tags.c
+In file included from check_check_tags.c:25:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_mem_leaks-check_check_tags.Tpo .deps/check_mem_leaks-check_check_tags.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -DTIMEOUT_TESTS_ENABLED=0 -DMEMORY_LEAKING_TESTS_ENABLED=0 -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_mem_leaks-check_check_sub.o -MD -MP -MF .deps/check_mem_leaks-check_check_sub.Tpo -c -o check_mem_leaks-check_check_sub.o `test -f 'check_check_sub.c' || echo './'`check_check_sub.c
+In file included from check_check_sub.c:26:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_mem_leaks-check_check_sub.Tpo .deps/check_mem_leaks-check_check_sub.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src  -DTIMEOUT_TESTS_ENABLED=0 -DMEMORY_LEAKING_TESTS_ENABLED=0 -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT check_mem_leaks-check_check_master.o -MD -MP -MF .deps/check_mem_leaks-check_check_master.Tpo -c -o check_mem_leaks-check_check_master.o `test -f 'check_check_master.c' || echo './'`check_check_master.c
+In file included from check_check_master.c:26:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/check_mem_leaks-check_check_master.Tpo .deps/check_mem_leaks-check_check_master.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -DTIMEOUT_TESTS_ENABLED=0 -DMEMORY_LEAKING_TESTS_ENABLED=0 -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas   -o check_mem_leaks check_mem_leaks-check_mem_leaks.o check_mem_leaks-check_check_log.o check_mem_leaks-check_check_fork.o check_mem_leaks-check_check_exit.o check_mem_leaks-check_check_selective.o check_mem_leaks-check_check_tags.o check_mem_leaks-check_check_sub.o check_mem_leaks-check_check_master.o ../src/libcheck.la ../lib/libcompat.la -lrt -lm
+libtool: link: gcc -DTIMEOUT_TESTS_ENABLED=0 -DMEMORY_LEAKING_TESTS_ENABLED=0 -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -o .libs/check_mem_leaks check_mem_leaks-check_mem_leaks.o check_mem_leaks-check_check_log.o check_mem_leaks-check_check_fork.o check_mem_leaks-check_check_exit.o check_mem_leaks-check_check_selective.o check_mem_leaks-check_check_tags.o check_mem_leaks-check_check_sub.o check_mem_leaks-check_check_master.o  ../src/.libs/libcheck.so ../lib/.libs/libcompat.a -lrt -lm -pthread -Wl,-rpath -Wl,/tools/lib
+gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I../src   -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -MT ex_output.o -MD -MP -MF .deps/ex_output.Tpo -c -o ex_output.o ex_output.c
+In file included from ex_output.c:26:0:
+../src/check.h:388:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ CK_DLL_EXP const char* CK_EXPORT tcase_name();
+ ^~~~~~~~~~
+mv -f .deps/ex_output.Tpo .deps/ex_output.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas   -o ex_output ex_output.o ../src/libcheck.la ../lib/libcompat.la -lrt -lm
+libtool: link: gcc -g -O2 -Wextra -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wno-variadic-macros -Wimport -Wfatal-errors -Wformat=2 -Winit-self -Wmissing-include-dirs -Wswitch-default -Wunknown-pragmas -o .libs/ex_output ex_output.o  ../src/.libs/libcheck.so ../lib/.libs/libcompat.a -lrt -lm -pthread -Wl,-rpath -Wl,/tools/lib
+make[2]: Leaving directory '/mnt/lfs/sources/check-0.11.0/tests'
+make[1]: Leaving directory '/mnt/lfs/sources/check-0.11.0'
+lfs@Minty /mnt/lfs/sources/check-0.11.0 $ make check
+Making check in lib
+make[1]: Entering directory '/mnt/lfs/sources/check-0.11.0/lib'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/check-0.11.0/lib'
+Making check in src
+make[1]: Entering directory '/mnt/lfs/sources/check-0.11.0/src'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/check-0.11.0/src'
+Making check in doc
+make[1]: Entering directory '/mnt/lfs/sources/check-0.11.0/doc'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/mnt/lfs/sources/check-0.11.0/doc'
+Making check in .
+make[1]: Entering directory '/mnt/lfs/sources/check-0.11.0'
+make[1]: Nothing to be done for 'check-am'.
+make[1]: Leaving directory '/mnt/lfs/sources/check-0.11.0'
+Making check in checkmk
+make[1]: Entering directory '/mnt/lfs/sources/check-0.11.0/checkmk'
+make  check-TESTS
+make[2]: Entering directory '/mnt/lfs/sources/check-0.11.0/checkmk'
+make[3]: Entering directory '/mnt/lfs/sources/check-0.11.0/checkmk'
+PASS: test/check_checkmk
+============================================================================
+Testsuite summary for Check 0.11.0
+============================================================================
+# TOTAL: 1
+# PASS:  1
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[3]: Leaving directory '/mnt/lfs/sources/check-0.11.0/checkmk'
+make[2]: Leaving directory '/mnt/lfs/sources/check-0.11.0/checkmk'
+make[1]: Leaving directory '/mnt/lfs/sources/check-0.11.0/checkmk'
+Making check in tests
+make[1]: Entering directory '/mnt/lfs/sources/check-0.11.0/tests'
+make  check-TESTS
+make[2]: Entering directory '/mnt/lfs/sources/check-0.11.0/tests'
+make[3]: Entering directory '/mnt/lfs/sources/check-0.11.0/tests'
+
+
+
+PASS: check_check_export
+PASS: check_check
+PASS: test_output.sh
+PASS: test_check_nofork.sh
+PASS: test_check_nofork_teardown.sh
+PASS: test_xml_output.sh
+PASS: test_log_output.sh
+PASS: test_tap_output.sh
+============================================================================
+Testsuite summary for Check 0.11.0
+============================================================================
+# TOTAL: 8
+# PASS:  8
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[3]: Leaving directory '/mnt/lfs/sources/check-0.11.0/tests'
+make[2]: Leaving directory '/mnt/lfs/sources/check-0.11.0/tests'
+make[1]: Leaving directory '/mnt/lfs/sources/check-0.11.0/tests'
+lfs@Minty /mnt/lfs/sources/check-0.11.0 $
+lfs@Minty /mnt/lfs/sources/check-0.11.0 $
+lfs@Minty /mnt/lfs/sources/check-0.11.0 $
+lfs@Minty /mnt/lfs/sources/check-0.11.0 $ make install
+Making install in lib
+make[1]: Entering directory '/mnt/lfs/sources/check-0.11.0/lib'
+make[2]: Entering directory '/mnt/lfs/sources/check-0.11.0/lib'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/check-0.11.0/lib'
+make[1]: Leaving directory '/mnt/lfs/sources/check-0.11.0/lib'
+Making install in src
+make[1]: Entering directory '/mnt/lfs/sources/check-0.11.0/src'
+make[2]: Entering directory '/mnt/lfs/sources/check-0.11.0/src'
+ /bin/mkdir -p '/tools/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libcheck.la '/tools/lib'
+libtool: install: /usr/bin/install -c .libs/libcheck.so.0.0.0 /tools/lib/libcheck.so.0.0.0
+libtool: install: (cd /tools/lib && { ln -s -f libcheck.so.0.0.0 libcheck.so.0 || { rm -f libcheck.so.0 && ln -s libcheck.so.0.0.0 libcheck.so.0; }; })
+libtool: install: (cd /tools/lib && { ln -s -f libcheck.so.0.0.0 libcheck.so || { rm -f libcheck.so && ln -s libcheck.so.0.0.0 libcheck.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcheck.lai /tools/lib/libcheck.la
+libtool: install: /usr/bin/install -c .libs/libcheck.a /tools/lib/libcheck.a
+libtool: install: chmod 644 /tools/lib/libcheck.a
+libtool: install: ranlib /tools/lib/libcheck.a
+libtool: finish: PATH="/tools/bin:/bin:/usr/bin:/sbin" ldconfig -n /tools/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /tools/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /bin/mkdir -p '/tools/include'
+ /usr/bin/install -c -m 644 check.h '/tools/include'
+make[2]: Leaving directory '/mnt/lfs/sources/check-0.11.0/src'
+make[1]: Leaving directory '/mnt/lfs/sources/check-0.11.0/src'
+Making install in doc
+make[1]: Entering directory '/mnt/lfs/sources/check-0.11.0/doc'
+make[2]: Entering directory '/mnt/lfs/sources/check-0.11.0/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/tools/share/doc/check/example'
+ /usr/bin/install -c -m 644 example/Makefile.am example/README example/configure.ac '/tools/share/doc/check/example'
+ /bin/mkdir -p '/tools/share/doc/check/example/src'
+ /usr/bin/install -c -m 644 example/src/Makefile.am example/src/main.c example/src/money.c example/src/money.h example/src/money.1.h example/src/money.2.h example/src/money.1.c example/src/money.3.c example/src/money.4.c example/src/money.5.c example/src/money.6.c '/tools/share/doc/check/example/src'
+ /bin/mkdir -p '/tools/share/doc/check/example/tests'
+ /usr/bin/install -c -m 644 example/tests/Makefile.am example/tests/check_money.c example/tests/check_money.1.c example/tests/check_money.2.c example/tests/check_money.3.c example/tests/check_money.6.c example/tests/check_money.7.c '/tools/share/doc/check/example/tests'
+ /bin/mkdir -p '/tools/share/info'
+ /usr/bin/install -c -m 644 ./check.info '/tools/share/info'
+ install-info --info-dir='/tools/share/info' '/tools/share/info/check.info'
+make[2]: Leaving directory '/mnt/lfs/sources/check-0.11.0/doc'
+make[1]: Leaving directory '/mnt/lfs/sources/check-0.11.0/doc'
+Making install in .
+make[1]: Entering directory '/mnt/lfs/sources/check-0.11.0'
+make[2]: Entering directory '/mnt/lfs/sources/check-0.11.0'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/tools/share/doc/check'
+ /usr/bin/install -c -m 644 ChangeLog NEWS README COPYING.LESSER '/tools/share/doc/check'
+ /bin/mkdir -p '/tools/include'
+ /usr/bin/install -c -m 644 check_stdint.h '/tools/include'
+ /bin/mkdir -p '/tools/share/aclocal'
+ /usr/bin/install -c -m 644 check.m4 '/tools/share/aclocal'
+ /bin/mkdir -p '/tools/lib/pkgconfig'
+ /usr/bin/install -c -m 644 check.pc '/tools/lib/pkgconfig'
+make[2]: Leaving directory '/mnt/lfs/sources/check-0.11.0'
+make[1]: Leaving directory '/mnt/lfs/sources/check-0.11.0'
+Making install in checkmk
+make[1]: Entering directory '/mnt/lfs/sources/check-0.11.0/checkmk'
+make[2]: Entering directory '/mnt/lfs/sources/check-0.11.0/checkmk'
+ /bin/mkdir -p '/tools/bin'
+ /usr/bin/install -c checkmk '/tools/bin'
+ /bin/mkdir -p '/tools/share/man/man1'
+ /usr/bin/install -c -m 644 doc/checkmk.1 '/tools/share/man/man1'
+make[2]: Leaving directory '/mnt/lfs/sources/check-0.11.0/checkmk'
+make[1]: Leaving directory '/mnt/lfs/sources/check-0.11.0/checkmk'
+Making install in tests
+make[1]: Entering directory '/mnt/lfs/sources/check-0.11.0/tests'
+make[2]: Entering directory '/mnt/lfs/sources/check-0.11.0/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/check-0.11.0/tests'
+make[1]: Leaving directory '/mnt/lfs/sources/check-0.11.0/tests'
+lfs@Minty /mnt/lfs/sources/check-0.11.0 $

@@ -1,0 +1,491 @@
+5.13. DejaGNU-1.6
+The DejaGNU package contains a framework for testing other programs.
+
+Approximate build time:
+less than 0.1 SBU
+Required disk space:
+3.2 MB
+
+drwx------  3 benc benc 4096 May 30 14:19 .adobe
+-rw-------  1 benc benc 4045 Jun 14 20:30 .bash_history
+-rw-r--r--  1 benc benc  220 May 30 14:01 .bash_logout
+-rw-r--r--  1 root root   20 May 31 14:15 .bash_profile
+-rw-r--r--  1 benc benc 4058 Jun  5 09:49 .bashrc
+drwxr-xr-x  6 benc benc 4096 May 30 16:07 bupster
+drwx------ 16 benc benc 4096 Jun 13 20:13 .cache
+drwxr-xr-x  5 benc benc 4096 Jun 17 11:58 .cinnamon
+drwxr-xr-x 19 benc benc 4096 Jun 14 17:55 .config
+drwx------  3 benc benc 4096 May 30 14:14 .dbus
+drwxr-xr-x  2 benc benc 4096 May 30 14:14 Desktop
+-rw-------  1 benc benc   29 Jun 17 11:58 .dmrc
+drwxr-xr-x 33 benc benc 4096 May 31 14:12 Documents
+drwxr-xr-x  2 benc benc 4096 Jun 14 07:51 Downloads
+drwxr-xr-x  4 benc benc 4096 Jun 10 12:47 .dvdcss
+drwx------  2 benc benc 4096 Jun 14 11:49 .gconf
+-rw-r-----  1 benc benc    0 Jun 13 19:48 .gksu.lock
+drwx------  3 benc benc 4096 May 30 14:33 .gnome
+drwx------  2 benc benc 4096 May 30 16:08 .gnome2
+-rw-------  1 benc benc 5966 Jun 17 11:58 .ICEauthority
+drwxr-xr-x  4 benc benc 4096 May 30 14:33 .java
+-rwxr-xr-x  1 root root  330 Jun  5 09:53 LFS_chroot.sh
+-rwxr-xr-x  1 root root  202 Jun 14 13:50 LFS_Mount.sh
+-rw-r--r--  1 benc benc  167 May 31 14:13 library-check.sh
+drwxr-xr-x  4 benc benc 4096 May 30 14:14 .linuxmint
+drwxr-xr-x  3 benc benc 4096 May 30 14:14 .local
+drwxr-xr-x  6 benc benc 4096 Jun 13 19:41 .luckyBackup
+drwx------  3 benc benc 4096 May 30 14:19 .macromedia
+-rw-r--r--  1 root root 3986 Jun 13 20:16 md5sums
+drwxr-xr-x  4 benc benc 4096 May 30 14:19 .mozilla
+drwxr-xr-x  2 benc benc 4096 May 30 14:14 Music
+drwx------  3 benc benc 4096 May 31 07:52 .nv
+drwxr-xr-x  2 benc benc 4096 May 30 14:14 Pictures
+drwx------  3 benc benc 4096 May 30 15:43 .pki
+-rw-r--r--  1 benc benc  655 May 30 14:01 .profile
+drwxr-xr-x  2 benc benc 4096 May 30 14:14 Public
+drwxr-xr-x  4 benc benc 4096 May 30 14:32 .PyCharm2017.1
+drwxr-xr-x 14 benc benc 4096 May 30 16:06 PycharmProjects
+drwx------  2 benc benc 4096 May 30 16:10 .ssh
+-rw-r--r--  1 benc benc    0 May 30 14:15 .sudo_as_admin_successful
+drwxr-xr-x  2 benc benc 4096 May 30 14:14 Templates
+drwx------  4 benc benc 4096 May 30 15:45 .thunderbird
+-rw-r--r--  1 benc benc 1533 Jun 13 19:52 version-check.sh
+drwxr-xr-x  2 benc benc 4096 May 30 14:14 Videos
+-rw-r--r--  1 root root 4812 Jun 13 20:01 wget-list
+-rw-------  1 benc benc  116 Jun 17 11:58 .Xauthority
+-rw-r--r--  1 benc benc 2942 Jun 17 12:03 .xsession-errors
+benc@Minty ~ $ su -
+Password:
+root@Minty ~ #
+root@Minty ~ #
+root@Minty ~ #
+root@Minty ~ #
+root@Minty ~ #
+root@Minty ~ #
+root@Minty ~ # ls
+wget-list
+root@Minty ~ # /home/benc/
+.adobe/          Desktop/         .gnome2/         .luckyBackup/    .pki/            .thunderbird/
+bupster/         Documents/       .java/           .macromedia/     Public/          Videos/
+.cache/          Downloads/       LFS_chroot.sh    .mozilla/        .PyCharm2017.1/
+.cinnamon/       .dvdcss/         LFS_Mount.sh     Music/           PycharmProjects/
+.config/         .gconf/          .linuxmint/      .nv/             .ssh/
+.dbus/           .gnome/          .local/          Pictures/        Templates/
+root@Minty ~ # /home/benc/LFS_Mount.sh
+mount: /dev/sda5 mounted on /mnt/lfs.
+root@Minty ~ # cd $LFS
+root@Minty /mnt/lfs # ls
+lost+found  sources  tools
+root@Minty /mnt/lfs #
+root@Minty /mnt/lfs #
+root@Minty /mnt/lfs # su lfs
+lfs@Minty /mnt/lfs $
+lfs@Minty /mnt/lfs $
+lfs@Minty /mnt/lfs $
+lfs@Minty /mnt/lfs $
+lfs@Minty /mnt/lfs $ id
+uid=1001(lfs) gid=1001(lfs) groups=1001(lfs)
+lfs@Minty /mnt/lfs $ clear
+lfs@Minty /mnt/lfs $ cd $LFS/sources/
+lfs@Minty /mnt/lfs/sources $ ls -la
+total 367048
+drwxrwxrwt 2 lfs  root     4096 Jun 14 20:28 .
+drwxr-xr-x 5 root root     4096 Jun 13 20:19 ..
+-rw-r--r-- 1 root root   237377 Jan 12  2015 XML-Parser-2.44.tar.gz
+-rw-r--r-- 1 root root   386604 May 19  2013 acl-2.2.52.src.tar.gz
+-rw-r--r-- 1 root root   343692 May 20  2013 attr-2.4.47.src.tar.gz
+-rw-r--r-- 1 root root  1214744 Apr 25  2012 autoconf-2.69.tar.xz
+-rw-r--r-- 1 root root  1496708 Jan  6  2015 automake-1.15.tar.xz
+-rw-r--r-- 1 root root    16659 Feb 26 09:12 bash-4.4-upstream_fixes-1.patch
+-rw-r--r-- 1 root root  9377313 Sep 16  2016 bash-4.4.tar.gz
+-rw-r--r-- 1 root root     1414 Feb 26 09:12 bc-1.06.95-memory_leak-1.patch
+-rw-r--r-- 1 root root   290069 Sep  5  2006 bc-1.06.95.tar.bz2
+-rw-r--r-- 1 root root 26099568 Aug  3  2016 binutils-2.27.tar.bz2
+-rw-r--r-- 1 root root  1973796 Jan 24  2015 bison-3.0.4.tar.xz
+-rw-r--r-- 1 root root     1684 Feb 26 09:12 bzip2-1.0.6-install_docs-1.patch
+-rw-r--r-- 1 root root   782025 Sep 20  2010 bzip2-1.0.6.tar.gz
+-rw-r--r-- 1 root root   753535 May 25 09:28 check-0.11.0.tar.gz
+-rw-r--r-- 1 root root   171359 Feb 26 09:12 coreutils-8.26-i18n-1.patch
+-rw-r--r-- 1 root root  5810244 Dec  1  2016 coreutils-8.26.tar.xz
+-rw-r--r-- 1 root root  1985828 Nov 29  2016 dbus-1.10.14.tar.gz
+-rw-r--r-- 1 root root   523969 Apr 15  2016 dejagnu-1.6.tar.gz
+-rw-r--r-- 1 root root  1360996 Aug 21  2016 diffutils-3.5.tar.xz
+-rw-r--r-- 1 root root  7552516 Feb  1 13:10 e2fsprogs-1.43.4.tar.gz
+-rw-r--r-- 1 root root  1820514 Dec 12  2016 eudev-3.2.1.tar.gz
+-rw-r--r-- 1 root root   414352 Jun 21  2016 expat-2.2.0.tar.bz2
+-rw-r--r-- 1 root root   628808 Nov 10  2010 expect5.45.tar.gz
+-rw-r--r-- 1 root root   789345 Jun 13 20:04 file-5.30.tar.gz
+-rw-r--r-- 1 root root  3780154 Dec 29  2015 findutils-4.6.0.tar.gz
+-rw-r--r-- 1 root root  1405560 May 25 10:45 flex-2.6.3.tar.gz
+-rw-r--r-- 1 root root  2367832 Aug 26  2016 gawk-4.1.4.tar.xz
+-rw-r--r-- 1 root root 99903185 Dec 21 21:52 gcc-6.3.0.tar.bz2
+-rw-r--r-- 1 root root   841213 May 17  2016 gdbm-1.12.tar.gz
+-rw-r--r-- 1 root root  7209808 Jun 11  2016 gettext-0.19.8.1.tar.xz
+-rw-r--r-- 1 root root     2804 Feb 26 09:12 glibc-2.25-fhs-1.patch
+-rw-r--r-- 1 root root 13873900 Feb  6 03:17 glibc-2.25.tar.xz
+-rw-r--r-- 1 root root  1946336 Dec 19 07:22 gmp-6.1.2.tar.xz
+-rw-r--r-- 1 root root   983500 Feb  4  2009 gperf-3.0.4.tar.gz
+-rw-r--r-- 1 root root  1375156 Feb 10 15:29 grep-3.0.tar.xz
+-rw-r--r-- 1 root root  4188772 Nov  4  2014 groff-1.22.3.tar.gz
+-rw-r--r-- 1 root root  6030784 Feb 29  2016 grub-2.02~beta3.tar.xz
+-rw-r--r-- 1 root root   728116 Apr 27  2016 gzip-1.8.tar.xz
+-rw-r--r-- 1 root root   205618 Dec 23  2014 iana-etc-2.30.tar.bz2
+-rw-r--r-- 1 root root  1364408 Jun 11  2015 inetutils-1.9.4.tar.xz
+-rw-r--r-- 1 root root   162286 Mar  9  2015 intltool-0.51.0.tar.gz
+-rw-r--r-- 1 root root   613032 Dec 13  2016 iproute2-4.9.0.tar.xz
+-rw-r--r-- 1 root root    12640 Feb 26 09:12 kbd-2.0.4-backspace-1.patch
+-rw-r--r-- 1 root root  1031864 Jan  9 05:46 kbd-2.0.4.tar.xz
+-rw-r--r-- 1 root root   450376 Jul 20  2016 kmod-23.tar.xz
+-rw-r--r-- 1 root root   316622 Sep  1  2015 less-481.tar.gz
+-rw-r--r-- 1 root root    31568 Feb 26 09:10 lfs-bootscripts-20150222.tar.bz2
+-rw-r--r-- 1 root root    63672 Jan 31  2016 libcap-2.25.tar.xz
+-rw-r--r-- 1 root root   805172 Aug 17  2015 libpipeline-1.4.1.tar.gz
+-rw-r--r-- 1 root root   973080 Feb 16  2015 libtool-2.4.6.tar.xz
+-rw-r--r-- 1 root root 93208832 Feb  9 18:19 linux-4.9.9.tar.xz
+-rw-r--r-- 1 root root  1207688 Jan  1 09:39 m4-1.4.18.tar.xz
+-rw-r--r-- 1 root root  1407126 Jun 11  2016 make-4.2.1.tar.bz2
+-rw-r--r-- 1 root root  1541316 Dec 12  2016 man-db-2.7.6.1.tar.xz
+-rw-r--r-- 1 root root  1521560 Dec 12  2016 man-pages-4.09.tar.xz
+-rw-r--r-- 1 root root     3986 Jun 13 20:17 md5sums
+-rw-r--r-- 1 root root   669925 Jan 19  2016 mpc-1.0.3.tar.gz
+-rw-r--r-- 1 root root  1126668 Sep 27  2016 mpfr-3.1.5.tar.xz
+-rw-r--r-- 1 root root  3131891 Aug  9  2015 ncurses-6.0.tar.gz
+-rw-r--r-- 1 root root   727704 Mar  7  2015 patch-2.7.5.tar.xz
+-rw-r--r-- 1 root root 14088312 Jan 15 07:04 perl-5.24.1.tar.bz2
+-rw-r--r-- 1 root root  2013454 Mar  2  2016 pkg-config-0.29.1.tar.gz
+-rw-r--r-- 1 root root   845484 Jul 10  2016 procps-ng-3.3.12.tar.xz
+-rw-r--r-- 1 root root   457702 Feb 16  2014 psmisc-22.21.tar.gz
+-rw-r--r-- 1 root root  2910016 Sep 16  2016 readline-7.0.tar.gz
+-rw-r--r-- 1 root root  1181664 Feb  4 12:27 sed-4.4.tar.xz
+-rw-r--r-- 1 root root  1631120 May 25 09:56 shadow-4.4.tar.xz
+-rw-r--r-- 1 root root    90011 Oct  5  2014 sysklogd-1.5.1.tar.gz
+-rw-r--r-- 1 root root  4040664 Nov 18  2016 systemd-232.tar.xz
+-rw-r--r-- 1 root root     3937 Feb 26 09:12 sysvinit-2.88dsf-consolidated-1.patch
+-rw-r--r-- 1 root root   105551 Apr 14  2010 sysvinit-2.88dsf.tar.bz2
+-rw-r--r-- 1 root root  1996000 May 17  2016 tar-1.29.tar.xz
+-rw-r--r-- 1 root root  5868427 Jul 28  2016 tcl-core8.6.6-src.tar.gz
+-rw-r--r-- 1 root root  4468048 Sep 11  2016 texinfo-6.3.tar.xz
+-rw-r--r-- 1 root root   321185 Nov 24  2016 tzdata2016j.tar.gz
+-rw-r--r-- 1 root root    10575 Apr  8  2014 udev-lfs-20140408.tar.bz2
+-rw-r--r-- 1 root root  4278756 Jan 21 01:02 util-linux-2.29.1.tar.xz
+-rw-r--r-- 1 root root 10637407 Jun 13 20:14 vim-8.0.069.tar.bz2
+-rw-r--r-- 1 root root  1032248 Dec 30 23:57 xz-5.2.3.tar.xz
+-rw-r--r-- 1 root root   467960 Jan 16 05:13 zlib-1.2.11.tar.xz
+lfs@Minty /mnt/lfs/sources $
+lfs@Minty /mnt/lfs/sources $
+lfs@Minty /mnt/lfs/sources $ tar -xvf dejagnu-1.6.tar.gz
+dejagnu-1.6/
+dejagnu-1.6/missing
+dejagnu-1.6/texinfo.tex
+dejagnu-1.6/aclocal.m4
+dejagnu-1.6/doc/
+dejagnu-1.6/doc/runtest.1
+dejagnu-1.6/doc/dejagnu.info
+dejagnu-1.6/doc/dejagnu.texi
+dejagnu-1.6/lib/
+dejagnu-1.6/lib/rlogin.exp
+dejagnu-1.6/lib/dejagnu.exp
+dejagnu-1.6/lib/rsh.exp
+dejagnu-1.6/lib/telnet.exp
+dejagnu-1.6/lib/framework.exp
+dejagnu-1.6/lib/ftp.exp
+dejagnu-1.6/lib/debugger.exp
+dejagnu-1.6/lib/tip.exp
+dejagnu-1.6/lib/libgloss.exp
+dejagnu-1.6/lib/standard.exp
+dejagnu-1.6/lib/target.exp
+dejagnu-1.6/lib/utils.exp
+dejagnu-1.6/lib/kermit.exp
+dejagnu-1.6/lib/remote.exp
+dejagnu-1.6/lib/dg.exp
+dejagnu-1.6/lib/targetdb.exp
+dejagnu-1.6/MAINTAINERS
+dejagnu-1.6/contrib/
+dejagnu-1.6/contrib/sum2junit.sh
+dejagnu-1.6/contrib/mysql/
+dejagnu-1.6/contrib/mysql/make-datafile.sh
+dejagnu-1.6/contrib/mysql/importxml.sh
+dejagnu-1.6/contrib/mysql/create-db.sql
+dejagnu-1.6/contrib/mysql/sum2xml.sh
+dejagnu-1.6/contrib/mysql/plot.sh
+dejagnu-1.6/contrib/mysql/README
+dejagnu-1.6/contrib/compare_tests
+dejagnu-1.6/config.guess
+dejagnu-1.6/depcomp
+dejagnu-1.6/config/
+dejagnu-1.6/config/gdb_stub.exp
+dejagnu-1.6/config/default.exp
+dejagnu-1.6/config/vxworks.exp
+dejagnu-1.6/config/sim.exp
+dejagnu-1.6/config/gdb-comm.exp
+dejagnu-1.6/config/sid.exp
+dejagnu-1.6/config/unix.exp
+dejagnu-1.6/config/adb.exp
+dejagnu-1.6/config/aarch64-fv8.exp
+dejagnu-1.6/config/README
+dejagnu-1.6/testsuite/
+dejagnu-1.6/testsuite/libdejagnu/
+dejagnu-1.6/testsuite/libdejagnu/unit.cc
+dejagnu-1.6/testsuite/libdejagnu/tunit.exp
+dejagnu-1.6/testsuite/lib/
+dejagnu-1.6/testsuite/lib/util-defs.exp
+dejagnu-1.6/testsuite/lib/libsup.exp
+dejagnu-1.6/testsuite/runtest.all/
+dejagnu-1.6/testsuite/runtest.all/config.test
+dejagnu-1.6/testsuite/runtest.all/load_lib.exp
+dejagnu-1.6/testsuite/runtest.all/options.exp
+dejagnu-1.6/testsuite/runtest.all/stats.exp
+dejagnu-1.6/testsuite/runtest.all/target.test
+dejagnu-1.6/testsuite/runtest.all/topdir/
+dejagnu-1.6/testsuite/runtest.all/topdir/subdir1/
+dejagnu-1.6/testsuite/runtest.all/topdir/subdir1/subfile2
+dejagnu-1.6/testsuite/runtest.all/topdir/subdir1/subsubdir1/
+dejagnu-1.6/testsuite/runtest.all/topdir/subdir1/subsubdir1/subsubfile1
+dejagnu-1.6/testsuite/runtest.all/topdir/subdir1/subfile1
+dejagnu-1.6/testsuite/runtest.all/topdir/subdir2/
+dejagnu-1.6/testsuite/runtest.all/topdir/subdir2/subfile2
+dejagnu-1.6/testsuite/runtest.all/utils.test
+dejagnu-1.6/testsuite/runtest.all/default_procs.tcl
+dejagnu-1.6/testsuite/runtest.all/clone_output.test
+dejagnu-1.6/testsuite/runtest.all/stats-sub.exp
+dejagnu-1.6/testsuite/runtest.all/libs.exp
+dejagnu-1.6/testsuite/runtest.all/remote.test
+dejagnu-1.6/testsuite/config/
+dejagnu-1.6/testsuite/config/default.exp
+dejagnu-1.6/ChangeLog-1992
+dejagnu-1.6/compile
+dejagnu-1.6/Makefile.in
+dejagnu-1.6/configure
+dejagnu-1.6/AUTHORS
+dejagnu-1.6/TODO
+dejagnu-1.6/testglue.c
+dejagnu-1.6/baseboards/
+dejagnu-1.6/baseboards/arm-sid.exp
+dejagnu-1.6/baseboards/mcore-moto-sim.exp
+dejagnu-1.6/baseboards/basic-sid.exp
+dejagnu-1.6/baseboards/jmr3904-sim.exp
+dejagnu-1.6/baseboards/rx-sim.exp
+dejagnu-1.6/baseboards/v850-sim.exp
+dejagnu-1.6/baseboards/vr4111-sim.exp
+dejagnu-1.6/baseboards/mt-sid.exp
+dejagnu-1.6/baseboards/vr4100-sim.exp
+dejagnu-1.6/baseboards/fr30-sim.exp
+dejagnu-1.6/baseboards/vr4300-sim.exp
+dejagnu-1.6/baseboards/arm-sim.exp
+dejagnu-1.6/baseboards/powerpcle-sim.exp
+dejagnu-1.6/baseboards/mn10300-sim.exp
+dejagnu-1.6/baseboards/sh-sid.exp
+dejagnu-1.6/baseboards/mips-lsi-sim.exp
+dejagnu-1.6/baseboards/mips-sim-sde64.exp
+dejagnu-1.6/baseboards/mips-sim-mti32.exp
+dejagnu-1.6/baseboards/mips-sim-mti64_n32.exp
+dejagnu-1.6/baseboards/mips-sim-mti64.exp
+dejagnu-1.6/baseboards/powerpc-sim.exp
+dejagnu-1.6/baseboards/arm-ice.exp
+dejagnu-1.6/baseboards/i386-sid.exp
+dejagnu-1.6/baseboards/mips-sim-idt64.exp
+dejagnu-1.6/baseboards/mips-sim-mti64_64.exp
+dejagnu-1.6/baseboards/mips-sim-idt32.exp
+dejagnu-1.6/baseboards/gdbserver-sample.exp
+dejagnu-1.6/baseboards/sh-sim.exp
+dejagnu-1.6/baseboards/mips-lnews-sim.exp
+dejagnu-1.6/baseboards/visium-sim.exp
+dejagnu-1.6/baseboards/tx39-sim.exp
+dejagnu-1.6/baseboards/sparc64-sim.exp
+dejagnu-1.6/baseboards/linux-libremote.exp
+dejagnu-1.6/baseboards/multi-sim.exp
+dejagnu-1.6/baseboards/mips-sim.exp
+dejagnu-1.6/baseboards/m68k-sid.exp
+dejagnu-1.6/baseboards/unix.exp
+dejagnu-1.6/baseboards/am33_2.0-libremote.exp
+dejagnu-1.6/baseboards/mmixware-sim.exp
+dejagnu-1.6/baseboards/xtensa-sim.exp
+dejagnu-1.6/baseboards/sparc-sim.exp
+dejagnu-1.6/baseboards/d30v-sim.exp
+dejagnu-1.6/baseboards/iq2000-sim.exp
+dejagnu-1.6/baseboards/mips-sim-sde32.exp
+dejagnu-1.6/baseboards/sparclite-sim.exp
+dejagnu-1.6/baseboards/basic-sim.exp
+dejagnu-1.6/baseboards/linux-gdbserver.exp
+dejagnu-1.6/baseboards/frv-sim.exp
+dejagnu-1.6/baseboards/mcore-sim.exp
+dejagnu-1.6/baseboards/androideabi.exp
+dejagnu-1.6/baseboards/README
+dejagnu-1.6/baseboards/cris-sim.exp
+dejagnu-1.6/baseboards/mn10200-sim.exp
+dejagnu-1.6/baseboards/sparclite-sim-le.exp
+dejagnu-1.6/INSTALL
+dejagnu-1.6/runtest.exp
+dejagnu-1.6/Makefile.am
+dejagnu-1.6/dejagnu.h
+dejagnu-1.6/COPYING
+dejagnu-1.6/config.sub
+dejagnu-1.6/NEWS
+dejagnu-1.6/ChangeLog
+dejagnu-1.6/runtest
+dejagnu-1.6/stub-loader.c
+dejagnu-1.6/install-sh
+dejagnu-1.6/configure.ac
+dejagnu-1.6/README
+lfs@Minty /mnt/lfs/sources $ cd dejagnu-1.6
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $ ls- la
+No command 'ls-' found, did you mean:
+ Command 'ls' from package 'coreutils' (main)
+ Command 'lsx' from package 'suckless-tools' (universe)
+ Command 'lsh' from package 'lsh-client' (universe)
+ Command 'lsw' from package 'suckless-tools' (universe)
+ls-: command not found
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $ ls -la
+total 1248
+drwxr-xr-x 8 lfs lfs    4096 Apr 15  2016 .
+drwxrwxrwt 3 lfs root   4096 Jun 17 12:06 ..
+-rw-r--r-- 1 lfs lfs     161 Mar 29  2016 AUTHORS
+-rw-r--r-- 1 lfs lfs   35147 Apr  2  2016 COPYING
+-rw-r--r-- 1 lfs lfs   76073 Apr 15  2016 ChangeLog
+-rw-r--r-- 1 lfs lfs  216210 Apr  2  2016 ChangeLog-1992
+-rw-r--r-- 1 lfs lfs   15752 Apr  2  2016 INSTALL
+-rw-r--r-- 1 lfs lfs      97 Apr  2  2016 MAINTAINERS
+-rw-r--r-- 1 lfs lfs    4927 Apr 15  2016 Makefile.am
+-rw-r--r-- 1 lfs lfs   50194 Apr 15  2016 Makefile.in
+-rw-r--r-- 1 lfs lfs    4710 Apr  9  2016 NEWS
+-rw-r--r-- 1 lfs lfs    1938 Apr  2  2016 README
+-rw-r--r-- 1 lfs lfs    7850 Apr  2  2016 TODO
+-rw-r--r-- 1 lfs lfs   43584 Apr 15  2016 aclocal.m4
+drwxr-xr-x 2 lfs lfs    4096 Apr 15  2016 baseboards
+-rwxr-xr-x 1 lfs lfs    7333 Apr  2  2016 compile
+drwxr-xr-x 2 lfs lfs    4096 Apr 15  2016 config
+-rwxr-xr-x 1 lfs lfs   43764 Apr  2  2016 config.guess
+-rwxr-xr-x 1 lfs lfs   36159 Apr  2  2016 config.sub
+-rwxr-xr-x 1 lfs lfs  163202 Apr 15  2016 configure
+-rw-r--r-- 1 lfs lfs    1854 Apr 15  2016 configure.ac
+drwxr-xr-x 3 lfs lfs    4096 Apr 15  2016 contrib
+-rw-r--r-- 1 lfs lfs    6305 Apr  2  2016 dejagnu.h
+-rwxr-xr-x 1 lfs lfs   23566 Apr  2  2016 depcomp
+drwxr-xr-x 2 lfs lfs    4096 Apr 15  2016 doc
+-rwxr-xr-x 1 lfs lfs   13997 Apr  2  2016 install-sh
+drwxr-xr-x 2 lfs lfs    4096 Apr 15  2016 lib
+-rwxr-xr-x 1 lfs lfs    6872 Apr  2  2016 missing
+-rwxr-xr-x 1 lfs lfs    3835 Apr  2  2016 runtest
+-rw-r--r-- 1 lfs lfs   51618 Apr 15  2016 runtest.exp
+-rw-r--r-- 1 lfs lfs      85 Mar 29  2016 stub-loader.c
+-rw-r--r-- 1 lfs lfs    3463 Apr  2  2016 testglue.c
+drwxr-xr-x 6 lfs lfs    4096 Apr 15  2016 testsuite
+-rw-r--r-- 1 lfs lfs  376905 Apr  2  2016 texinfo.tex
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $ ./configure --prefit=/tools
+configure: error: unrecognized option: `--prefit=/tools'
+Try `./configure --help' for more information
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $ ./configure --prefix=/tools
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make sets $(MAKE)... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking for expect... /tools/bin/expect
+checking Tcl version 8.5 or greater... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: executing depfiles commands
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $ make install
+Done. Now run 'make install'.
+make[1]: Entering directory '/mnt/lfs/sources/dejagnu-1.6'
+ /bin/mkdir -p '/tools/bin'
+ /usr/bin/install -c runtest '/tools/bin'
+ /bin/mkdir -p '/tools/share/dejagnu/libexec'
+ /usr/bin/install -c config.guess '/tools/share/dejagnu/libexec'
+ /bin/mkdir -p '/tools/share/dejagnu/baseboards'
+ /usr/bin/install -c -m 644 baseboards/README baseboards/androideabi.exp baseboards/am33_2.0-libremote.exp baseboards/arm-ice.exp baseboards/arm-sid.exp baseboards/arm-sim.exp baseboards/basic-sid.exp baseboards/basic-sim.exp baseboards/cris-sim.exp baseboards/d30v-sim.exp baseboards/fr30-sim.exp baseboards/frv-sim.exp baseboards/gdbserver-sample.exp baseboards/i386-sid.exp baseboards/iq2000-sim.exp baseboards/jmr3904-sim.exp baseboards/linux-gdbserver.exp baseboards/linux-libremote.exp baseboards/m68k-sid.exp baseboards/mcore-moto-sim.exp baseboards/mcore-sim.exp baseboards/mips-lnews-sim.exp baseboards/mips-lsi-sim.exp baseboards/mips-sim-idt32.exp baseboards/mips-sim-idt64.exp baseboards/mips-sim.exp baseboards/mips-sim-mti32.exp baseboards/mips-sim-mti64.exp baseboards/mips-sim-mti64_n32.exp baseboards/mips-sim-mti64_64.exp baseboards/mips-sim-sde32.exp baseboards/mips-sim-sde64.exp baseboards/mmixware-sim.exp baseboards/mn10200-sim.exp baseboards/mn10300-sim.exp baseboards/mt-sid.exp baseboards/multi-sim.exp baseboards/powerpc-sim.exp baseboards/powerpcle-sim.exp baseboards/rx-sim.exp '/tools/share/dejagnu/baseboards'
+ /usr/bin/install -c -m 644 baseboards/sh-sid.exp baseboards/sh-sim.exp baseboards/sparc-sim.exp baseboards/sparc64-sim.exp baseboards/sparclite-sim-le.exp baseboards/sparclite-sim.exp baseboards/tx39-sim.exp baseboards/unix.exp baseboards/v850-sim.exp baseboards/visium-sim.exp baseboards/vr4100-sim.exp baseboards/vr4111-sim.exp baseboards/vr4300-sim.exp baseboards/xtensa-sim.exp '/tools/share/dejagnu/baseboards'
+ /bin/mkdir -p '/tools/share/dejagnu/config'
+ /usr/bin/install -c -m 644 config/README config/adb.exp config/aarch64-fv8.exp config/default.exp config/gdb-comm.exp config/gdb_stub.exp config/sid.exp config/sim.exp config/unix.exp config/vxworks.exp '/tools/share/dejagnu/config'
+ /bin/mkdir -p '/tools/include'
+ /usr/bin/install -c -m 644 dejagnu.h '/tools/include'
+ /bin/mkdir -p '/tools/share/info'
+ /usr/bin/install -c -m 644 ./doc/dejagnu.info '/tools/share/info'
+ install-info --info-dir='/tools/share/info' '/tools/share/info/dejagnu.info'
+ /bin/mkdir -p '/tools/share/man/man1'
+ /usr/bin/install -c -m 644 doc/runtest.1 '/tools/share/man/man1'
+ /bin/mkdir -p '/tools/share/dejagnu'
+ /usr/bin/install -c -m 644 stub-loader.c testglue.c runtest.exp lib/debugger.exp lib/dejagnu.exp lib/dg.exp lib/framework.exp lib/ftp.exp lib/kermit.exp lib/libgloss.exp lib/remote.exp lib/rlogin.exp lib/rsh.exp lib/standard.exp lib/target.exp lib/targetdb.exp lib/telnet.exp lib/tip.exp lib/utils.exp '/tools/share/dejagnu'
+make[1]: Leaving directory '/mnt/lfs/sources/dejagnu-1.6'
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $ make check
+Done. Now run 'make install'.
+make  unit
+make[1]: Entering directory '/mnt/lfs/sources/dejagnu-1.6'
+depbase=`echo testsuite/libdejagnu/unit.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DPACKAGE_NAME=\"GNU\ DejaGnu\" -DPACKAGE_TARNAME=\"dejagnu\" -DPACKAGE_VERSION=\"1.6\" -DPACKAGE_STRING=\"GNU\ DejaGnu\ 1.6\" -DPACKAGE_BUGREPORT=\"bug-dejagnu@gnu.org\" -DPACKAGE_URL=\"http://www.gnu.org/software/dejagnu/\" -DPACKAGE=\"dejagnu\" -DVERSION=\"1.6\" -I.    -I. -g -g -O2 -MT testsuite/libdejagnu/unit.o -MD -MP -MF $depbase.Tpo -c -o testsuite/libdejagnu/unit.o testsuite/libdejagnu/unit.cc &&\
+mv -f $depbase.Tpo $depbase.Po
+g++ -I. -g -g -O2   -o unit testsuite/libdejagnu/unit.o
+make[1]: Leaving directory '/mnt/lfs/sources/dejagnu-1.6'
+make  check-DEJAGNU
+make[1]: Entering directory '/mnt/lfs/sources/dejagnu-1.6'
+Making a new site.exp file ...
+srcdir='.'; export srcdir; \
+EXPECT=/tools/bin/expect; export EXPECT; \
+if /bin/sh -c "./runtest --version" > /dev/null 2>&1; then \
+  exit_status=0; l='dejagnu'; for tool in $l; do \
+    if ./runtest  --srcdir ./testsuite RUNTEST=./runtest ; \
+    then :; else exit_status=1; fi; \
+  done; \
+else echo "WARNING: could not find './runtest'" 1>&2; :;\
+fi; \
+exit $exit_status
+WARNING: No tool specified
+Test run by lfs on Sat Jun 17 02:07:24 2017
+Native configuration is x86_64-pc-linux-gnu
+
+		===  tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Using ./config/unix.exp as generic interface file for target.
+Using ./testsuite/config/default.exp as tool-and-target-specific interface file.
+Running ./testsuite/libdejagnu/tunit.exp ...
+Running ./testsuite/runtest.all/libs.exp ...
+Running ./testsuite/runtest.all/load_lib.exp ...
+Running ./testsuite/runtest.all/options.exp ...
+Running ./testsuite/runtest.all/stats-sub.exp ...
+Running ./testsuite/runtest.all/stats.exp ...
+
+		===  Summary ===
+
+# of expected passes		78
+make[1]: Leaving directory '/mnt/lfs/sources/dejagnu-1.6'
+lfs@Minty /mnt/lfs/sources/dejagnu-1.6 $

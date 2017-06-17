@@ -1,0 +1,2768 @@
+5.16. Bash-4.4
+The Bash package contains the Bourne-Again SHell.
+
+Approximate build time:
+0.4 SBU
+Required disk space:
+61 MB
+
+lfs@Minty /mnt/lfs/sources $ clear
+lfs@Minty /mnt/lfs/sources $
+lfs@Minty /mnt/lfs/sources $
+lfs@Minty /mnt/lfs/sources $ tar -xvf bash-4.4
+tar: bash-4.4: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+lfs@Minty /mnt/lfs/sources $ tar -xvf bash-4.4
+bash-4.4-upstream_fixes-1.patch  bash-4.4.tar.gz
+lfs@Minty /mnt/lfs/sources $ tar -xvf bash-4.4.tar.gz
+bash-4.4/
+bash-4.4/CWRU/
+bash-4.4/builtins/
+bash-4.4/cross-build/
+bash-4.4/doc/
+bash-4.4/examples/
+bash-4.4/include/
+bash-4.4/lib/
+bash-4.4/m4/
+bash-4.4/po/
+bash-4.4/support/
+bash-4.4/tests/
+bash-4.4/ABOUT-NLS
+bash-4.4/ChangeLog
+bash-4.4/CHANGES
+bash-4.4/COMPAT
+bash-4.4/COPYING
+bash-4.4/INSTALL
+bash-4.4/MANIFEST
+bash-4.4/NEWS
+bash-4.4/NOTES
+bash-4.4/POSIX
+bash-4.4/README
+bash-4.4/RBASH
+bash-4.4/AUTHORS
+bash-4.4/Y2K
+bash-4.4/configure.ac
+bash-4.4/Makefile.in
+bash-4.4/configure
+bash-4.4/config-top.h
+bash-4.4/config-bot.h
+bash-4.4/config.h.in
+bash-4.4/aclocal.m4
+bash-4.4/array.c
+bash-4.4/arrayfunc.c
+bash-4.4/assoc.c
+bash-4.4/eval.c
+bash-4.4/print_cmd.c
+bash-4.4/general.c
+bash-4.4/list.c
+bash-4.4/locale.c
+bash-4.4/stringlib.c
+bash-4.4/variables.c
+bash-4.4/make_cmd.c
+bash-4.4/copy_cmd.c
+bash-4.4/unwind_prot.c
+bash-4.4/dispose_cmd.c
+bash-4.4/bashhist.c
+bash-4.4/hashcmd.c
+bash-4.4/hashlib.c
+bash-4.4/parse.y
+bash-4.4/pathexp.c
+bash-4.4/subst.c
+bash-4.4/shell.c
+bash-4.4/trap.c
+bash-4.4/sig.c
+bash-4.4/siglist.c
+bash-4.4/version.c
+bash-4.4/flags.c
+bash-4.4/jobs.c
+bash-4.4/input.c
+bash-4.4/mailcheck.c
+bash-4.4/test.c
+bash-4.4/expr.c
+bash-4.4/alias.c
+bash-4.4/execute_cmd.c
+bash-4.4/findcmd.c
+bash-4.4/redir.c
+bash-4.4/bashline.c
+bash-4.4/braces.c
+bash-4.4/bracecomp.c
+bash-4.4/nojobs.c
+bash-4.4/error.c
+bash-4.4/xmalloc.c
+bash-4.4/pcomplete.c
+bash-4.4/pcomplib.c
+bash-4.4/mksyntax.c
+bash-4.4/alias.h
+bash-4.4/builtins.h
+bash-4.4/bashhist.h
+bash-4.4/bashline.h
+bash-4.4/conftypes.h
+bash-4.4/patchlevel.h
+bash-4.4/variables.h
+bash-4.4/array.h
+bash-4.4/arrayfunc.h
+bash-4.4/assoc.h
+bash-4.4/jobs.h
+bash-4.4/findcmd.h
+bash-4.4/hashlib.h
+bash-4.4/quit.h
+bash-4.4/flags.h
+bash-4.4/shell.h
+bash-4.4/syntax.h
+bash-4.4/pathexp.h
+bash-4.4/parser.h
+bash-4.4/pcomplete.h
+bash-4.4/sig.h
+bash-4.4/test.h
+bash-4.4/trap.h
+bash-4.4/general.h
+bash-4.4/unwind_prot.h
+bash-4.4/input.h
+bash-4.4/error.h
+bash-4.4/command.h
+bash-4.4/externs.h
+bash-4.4/siglist.h
+bash-4.4/subst.h
+bash-4.4/dispose_cmd.h
+bash-4.4/hashcmd.h
+bash-4.4/bashansi.h
+bash-4.4/bashjmp.h
+bash-4.4/bashintl.h
+bash-4.4/make_cmd.h
+bash-4.4/execute_cmd.h
+bash-4.4/redir.h
+bash-4.4/bashtypes.h
+bash-4.4/mailcheck.h
+bash-4.4/xmalloc.h
+bash-4.4/y.tab.c
+bash-4.4/y.tab.h
+bash-4.4/parser-built
+bash-4.4/pathnames.h.in
+bash-4.4/tests/misc/
+bash-4.4/tests/README
+bash-4.4/tests/COPYRIGHT
+bash-4.4/tests/test-glue-functions
+bash-4.4/tests/alias.tests
+bash-4.4/tests/alias1.sub
+bash-4.4/tests/alias2.sub
+bash-4.4/tests/alias.right
+bash-4.4/tests/appendop.tests
+bash-4.4/tests/appendop1.sub
+bash-4.4/tests/appendop2.sub
+bash-4.4/tests/appendop.right
+bash-4.4/tests/arith-for.tests
+bash-4.4/tests/arith-for.right
+bash-4.4/tests/arith.tests
+bash-4.4/tests/arith.right
+bash-4.4/tests/arith1.sub
+bash-4.4/tests/arith2.sub
+bash-4.4/tests/arith3.sub
+bash-4.4/tests/arith4.sub
+bash-4.4/tests/arith5.sub
+bash-4.4/tests/arith6.sub
+bash-4.4/tests/arith7.sub
+bash-4.4/tests/array.tests
+bash-4.4/tests/array.right
+bash-4.4/tests/array1.sub
+bash-4.4/tests/array2.sub
+bash-4.4/tests/array3.sub
+bash-4.4/tests/array4.sub
+bash-4.4/tests/array5.sub
+bash-4.4/tests/array6.sub
+bash-4.4/tests/array7.sub
+bash-4.4/tests/array8.sub
+bash-4.4/tests/array9.sub
+bash-4.4/tests/array10.sub
+bash-4.4/tests/array11.sub
+bash-4.4/tests/array12.sub
+bash-4.4/tests/array13.sub
+bash-4.4/tests/array14.sub
+bash-4.4/tests/array15.sub
+bash-4.4/tests/array16.sub
+bash-4.4/tests/array17.sub
+bash-4.4/tests/array18.sub
+bash-4.4/tests/array19.sub
+bash-4.4/tests/array20.sub
+bash-4.4/tests/exp1.sub
+bash-4.4/tests/array21.sub
+bash-4.4/tests/array-at-star
+bash-4.4/tests/array2.right
+bash-4.4/tests/assoc.tests
+bash-4.4/tests/assoc.right
+bash-4.4/tests/assoc1.sub
+bash-4.4/tests/assoc2.sub
+bash-4.4/tests/assoc3.sub
+bash-4.4/tests/assoc4.sub
+bash-4.4/tests/assoc5.sub
+bash-4.4/tests/assoc6.sub
+bash-4.4/tests/assoc7.sub
+bash-4.4/tests/assoc8.sub
+bash-4.4/tests/attr.tests
+bash-4.4/tests/attr.right
+bash-4.4/tests/attr1.sub
+bash-4.4/tests/attr2.sub
+bash-4.4/tests/braces.tests
+bash-4.4/tests/braces.right
+bash-4.4/tests/builtins.tests
+bash-4.4/tests/builtins.right
+bash-4.4/tests/builtins1.sub
+bash-4.4/tests/builtins2.sub
+bash-4.4/tests/builtins3.sub
+bash-4.4/tests/builtins4.sub
+bash-4.4/tests/builtins5.sub
+bash-4.4/tests/builtins6.sub
+bash-4.4/tests/source1.sub
+bash-4.4/tests/source2.sub
+bash-4.4/tests/source3.sub
+bash-4.4/tests/source4.sub
+bash-4.4/tests/source5.sub
+bash-4.4/tests/source6.sub
+bash-4.4/tests/source7.sub
+bash-4.4/tests/case.tests
+bash-4.4/tests/case.right
+bash-4.4/tests/case1.sub
+bash-4.4/tests/casemod.tests
+bash-4.4/tests/casemod.right
+bash-4.4/tests/comsub.tests
+bash-4.4/tests/comsub.right
+bash-4.4/tests/comsub1.sub
+bash-4.4/tests/comsub2.sub
+bash-4.4/tests/comsub3.sub
+bash-4.4/tests/comsub-eof.tests
+bash-4.4/tests/comsub-eof0.sub
+bash-4.4/tests/comsub-eof1.sub
+bash-4.4/tests/comsub-eof2.sub
+bash-4.4/tests/comsub-eof3.sub
+bash-4.4/tests/comsub-eof4.sub
+bash-4.4/tests/comsub-eof5.sub
+bash-4.4/tests/comsub-eof.right
+bash-4.4/tests/comsub-posix.tests
+bash-4.4/tests/comsub-posix.right
+bash-4.4/tests/comsub-posix1.sub
+bash-4.4/tests/comsub-posix2.sub
+bash-4.4/tests/comsub-posix3.sub
+bash-4.4/tests/cond.tests
+bash-4.4/tests/cond.right
+bash-4.4/tests/cond-regexp1.sub
+bash-4.4/tests/cond-regexp2.sub
+bash-4.4/tests/cond-regexp3.sub
+bash-4.4/tests/coproc.tests
+bash-4.4/tests/coproc.right
+bash-4.4/tests/cprint.tests
+bash-4.4/tests/cprint.right
+bash-4.4/tests/dbg-support.right
+bash-4.4/tests/dbg-support.sub
+bash-4.4/tests/dbg-support.tests
+bash-4.4/tests/dbg-support2.right
+bash-4.4/tests/dbg-support2.tests
+bash-4.4/tests/dbg-support3.sub
+bash-4.4/tests/dollar-at-star
+bash-4.4/tests/dollar-at-star1.sub
+bash-4.4/tests/dollar-at-star2.sub
+bash-4.4/tests/dollar-at-star3.sub
+bash-4.4/tests/dollar-at-star4.sub
+bash-4.4/tests/dollar-at-star5.sub
+bash-4.4/tests/dollar.right
+bash-4.4/tests/dollar-at-star6.sub
+bash-4.4/tests/dollar-at-star7.sub
+bash-4.4/tests/dollar-at-star8.sub
+bash-4.4/tests/dollar-at1.sub
+bash-4.4/tests/dollar-at2.sub
+bash-4.4/tests/dollar-at3.sub
+bash-4.4/tests/dollar-at4.sub
+bash-4.4/tests/dollar-at5.sub
+bash-4.4/tests/dollar-at6.sub
+bash-4.4/tests/dollar-star1.sub
+bash-4.4/tests/dollar-star2.sub
+bash-4.4/tests/dollar-star3.sub
+bash-4.4/tests/dollar-star4.sub
+bash-4.4/tests/dollar-star5.sub
+bash-4.4/tests/dollar-star6.sub
+bash-4.4/tests/dollar-star7.sub
+bash-4.4/tests/dstack.tests
+bash-4.4/tests/dstack.right
+bash-4.4/tests/dstack2.tests
+bash-4.4/tests/dstack2.right
+bash-4.4/tests/errors.tests
+bash-4.4/tests/errors.right
+bash-4.4/tests/errors1.sub
+bash-4.4/tests/errors2.sub
+bash-4.4/tests/errors3.sub
+bash-4.4/tests/errors4.sub
+bash-4.4/tests/errors5.sub
+bash-4.4/tests/errors6.sub
+bash-4.4/tests/execscript
+bash-4.4/tests/exec.right
+bash-4.4/tests/exec1.sub
+bash-4.4/tests/exec2.sub
+bash-4.4/tests/exec3.sub
+bash-4.4/tests/exec4.sub
+bash-4.4/tests/exec5.sub
+bash-4.4/tests/exec6.sub
+bash-4.4/tests/exec7.sub
+bash-4.4/tests/exec8.sub
+bash-4.4/tests/exec9.sub
+bash-4.4/tests/exec10.sub
+bash-4.4/tests/exec11.sub
+bash-4.4/tests/exec12.sub
+bash-4.4/tests/exec13.sub
+bash-4.4/tests/exp.tests
+bash-4.4/tests/exp.right
+bash-4.4/tests/exp2.sub
+bash-4.4/tests/exp3.sub
+bash-4.4/tests/exp4.sub
+bash-4.4/tests/exp5.sub
+bash-4.4/tests/exp6.sub
+bash-4.4/tests/exp7.sub
+bash-4.4/tests/exp8.sub
+bash-4.4/tests/exp9.sub
+bash-4.4/tests/exportfunc.tests
+bash-4.4/tests/exportfunc.right
+bash-4.4/tests/exportfunc1.sub
+bash-4.4/tests/exportfunc2.sub
+bash-4.4/tests/exportfunc3.sub
+bash-4.4/tests/extglob.tests
+bash-4.4/tests/extglob.right
+bash-4.4/tests/extglob1.sub
+bash-4.4/tests/extglob1a.sub
+bash-4.4/tests/extglob2.sub
+bash-4.4/tests/extglob2.tests
+bash-4.4/tests/extglob2.right
+bash-4.4/tests/extglob3.sub
+bash-4.4/tests/extglob3.tests
+bash-4.4/tests/extglob3.right
+bash-4.4/tests/extglob4.sub
+bash-4.4/tests/func.tests
+bash-4.4/tests/func.right
+bash-4.4/tests/func1.sub
+bash-4.4/tests/func2.sub
+bash-4.4/tests/func3.sub
+bash-4.4/tests/func4.sub
+bash-4.4/tests/getopts.tests
+bash-4.4/tests/getopts.right
+bash-4.4/tests/getopts1.sub
+bash-4.4/tests/getopts2.sub
+bash-4.4/tests/getopts3.sub
+bash-4.4/tests/getopts4.sub
+bash-4.4/tests/getopts5.sub
+bash-4.4/tests/getopts6.sub
+bash-4.4/tests/getopts7.sub
+bash-4.4/tests/getopts8.sub
+bash-4.4/tests/getopts9.sub
+bash-4.4/tests/getopts10.sub
+bash-4.4/tests/glob.tests
+bash-4.4/tests/glob1.sub
+bash-4.4/tests/glob.right
+bash-4.4/tests/globstar.tests
+bash-4.4/tests/globstar.right
+bash-4.4/tests/globstar1.sub
+bash-4.4/tests/globstar2.sub
+bash-4.4/tests/heredoc.tests
+bash-4.4/tests/heredoc.right
+bash-4.4/tests/heredoc1.sub
+bash-4.4/tests/heredoc2.sub
+bash-4.4/tests/heredoc3.sub
+bash-4.4/tests/herestr.tests
+bash-4.4/tests/herestr.right
+bash-4.4/tests/herestr1.sub
+bash-4.4/tests/histexp.tests
+bash-4.4/tests/histexp1.sub
+bash-4.4/tests/histexp2.sub
+bash-4.4/tests/histexp3.sub
+bash-4.4/tests/histexp4.sub
+bash-4.4/tests/histexp.right
+bash-4.4/tests/history.tests
+bash-4.4/tests/history.right
+bash-4.4/tests/history.list
+bash-4.4/tests/history1.sub
+bash-4.4/tests/history2.sub
+bash-4.4/tests/ifs.tests
+bash-4.4/tests/ifs.right
+bash-4.4/tests/ifs-posix.tests
+bash-4.4/tests/ifs-posix.right
+bash-4.4/tests/input-line.sh
+bash-4.4/tests/input-line.sub
+bash-4.4/tests/input.right
+bash-4.4/tests/intl.tests
+bash-4.4/tests/intl1.sub
+bash-4.4/tests/intl2.sub
+bash-4.4/tests/intl3.sub
+bash-4.4/tests/intl.right
+bash-4.4/tests/iquote.tests
+bash-4.4/tests/iquote1.sub
+bash-4.4/tests/iquote.right
+bash-4.4/tests/invert.tests
+bash-4.4/tests/invert.right
+bash-4.4/tests/jobs.tests
+bash-4.4/tests/jobs1.sub
+bash-4.4/tests/jobs2.sub
+bash-4.4/tests/jobs3.sub
+bash-4.4/tests/jobs4.sub
+bash-4.4/tests/jobs5.sub
+bash-4.4/tests/jobs.right
+bash-4.4/tests/lastpipe.right
+bash-4.4/tests/lastpipe.tests
+bash-4.4/tests/lastpipe1.sub
+bash-4.4/tests/lastpipe2.sub
+bash-4.4/tests/mapfile.data
+bash-4.4/tests/mapfile.right
+bash-4.4/tests/mapfile.tests
+bash-4.4/tests/mapfile1.sub
+bash-4.4/tests/mapfile2.sub
+bash-4.4/tests/more-exp.tests
+bash-4.4/tests/nameref1.sub
+bash-4.4/tests/more-exp.right
+bash-4.4/tests/nameref.tests
+bash-4.4/tests/nameref2.sub
+bash-4.4/tests/nameref3.sub
+bash-4.4/tests/nameref4.sub
+bash-4.4/tests/nameref5.sub
+bash-4.4/tests/nameref6.sub
+bash-4.4/tests/nameref7.sub
+bash-4.4/tests/nameref8.sub
+bash-4.4/tests/nameref9.sub
+bash-4.4/tests/nameref10.sub
+bash-4.4/tests/nameref11.sub
+bash-4.4/tests/nameref12.sub
+bash-4.4/tests/nameref13.sub
+bash-4.4/tests/nameref14.sub
+bash-4.4/tests/nameref15.sub
+bash-4.4/tests/nameref16.sub
+bash-4.4/tests/nameref17.sub
+bash-4.4/tests/nameref18.sub
+bash-4.4/tests/nameref.right
+bash-4.4/tests/new-exp.tests
+bash-4.4/tests/new-exp1.sub
+bash-4.4/tests/new-exp2.sub
+bash-4.4/tests/new-exp3.sub
+bash-4.4/tests/new-exp4.sub
+bash-4.4/tests/new-exp5.sub
+bash-4.4/tests/new-exp6.sub
+bash-4.4/tests/new-exp7.sub
+bash-4.4/tests/new-exp8.sub
+bash-4.4/tests/new-exp9.sub
+bash-4.4/tests/new-exp10.sub
+bash-4.4/tests/new-exp.right
+bash-4.4/tests/nquote.tests
+bash-4.4/tests/nquote.right
+bash-4.4/tests/nquote1.sub
+bash-4.4/tests/nquote2.sub
+bash-4.4/tests/nquote3.sub
+bash-4.4/tests/nquote1.tests
+bash-4.4/tests/nquote1.right
+bash-4.4/tests/nquote2.tests
+bash-4.4/tests/nquote2.right
+bash-4.4/tests/parser1.sub
+bash-4.4/tests/nquote3.tests
+bash-4.4/tests/nquote3.right
+bash-4.4/tests/nquote4.tests
+bash-4.4/tests/nquote4.right
+bash-4.4/tests/nquote5.tests
+bash-4.4/tests/nquote5.right
+bash-4.4/tests/parser.tests
+bash-4.4/tests/parser.right
+bash-4.4/tests/posix2.tests
+bash-4.4/tests/posix2.right
+bash-4.4/tests/posixexp.tests
+bash-4.4/tests/posixexp.right
+bash-4.4/tests/posixexp1.sub
+bash-4.4/tests/posixexp2.sub
+bash-4.4/tests/posixexp2.tests
+bash-4.4/tests/posixexp2.right
+bash-4.4/tests/posixpat.tests
+bash-4.4/tests/posixpat.right
+bash-4.4/tests/posixpipe.tests
+bash-4.4/tests/posixpipe.right
+bash-4.4/tests/prec.right
+bash-4.4/tests/precedence
+bash-4.4/tests/printf.tests
+bash-4.4/tests/printf.right
+bash-4.4/tests/printf1.sub
+bash-4.4/tests/printf2.sub
+bash-4.4/tests/printf3.sub
+bash-4.4/tests/printf4.sub
+bash-4.4/tests/quote.tests
+bash-4.4/tests/quote.right
+bash-4.4/tests/quote1.sub
+bash-4.4/tests/read.tests
+bash-4.4/tests/read.right
+bash-4.4/tests/read1.sub
+bash-4.4/tests/read2.sub
+bash-4.4/tests/read3.sub
+bash-4.4/tests/read4.sub
+bash-4.4/tests/read5.sub
+bash-4.4/tests/read6.sub
+bash-4.4/tests/redir.tests
+bash-4.4/tests/redir.right
+bash-4.4/tests/redir1.sub
+bash-4.4/tests/redir2.sub
+bash-4.4/tests/redir3.sub
+bash-4.4/tests/redir3.in1
+bash-4.4/tests/redir3.in2
+bash-4.4/tests/redir4.sub
+bash-4.4/tests/redir4.in1
+bash-4.4/tests/redir5.sub
+bash-4.4/tests/redir6.sub
+bash-4.4/tests/redir7.sub
+bash-4.4/tests/redir8.sub
+bash-4.4/tests/redir9.sub
+bash-4.4/tests/redir10.sub
+bash-4.4/tests/redir11.sub
+bash-4.4/tests/redir12.sub
+bash-4.4/tests/rhs-exp.tests
+bash-4.4/tests/rhs-exp.right
+bash-4.4/tests/rhs-exp1.sub
+bash-4.4/tests/rsh.tests
+bash-4.4/tests/rsh.right
+bash-4.4/tests/run-all
+bash-4.4/tests/run-minimal
+bash-4.4/tests/run-attr
+bash-4.4/tests/run-alias
+bash-4.4/tests/run-appendop
+bash-4.4/tests/run-arith-for
+bash-4.4/tests/run-arith
+bash-4.4/tests/run-array
+bash-4.4/tests/run-array2
+bash-4.4/tests/run-assoc
+bash-4.4/tests/run-braces
+bash-4.4/tests/run-builtins
+bash-4.4/tests/run-case
+bash-4.4/tests/run-casemod
+bash-4.4/tests/run-comsub
+bash-4.4/tests/run-comsub-eof
+bash-4.4/tests/run-comsub-posix
+bash-4.4/tests/run-cond
+bash-4.4/tests/run-coproc
+bash-4.4/tests/run-cprint
+bash-4.4/tests/run-dbg-support
+bash-4.4/tests/run-dbg-support2
+bash-4.4/tests/run-dirstack
+bash-4.4/tests/run-dollars
+bash-4.4/tests/run-errors
+bash-4.4/tests/run-execscript
+bash-4.4/tests/run-exp-tests
+bash-4.4/tests/run-exportfunc
+bash-4.4/tests/run-extglob
+bash-4.4/tests/run-extglob2
+bash-4.4/tests/run-extglob3
+bash-4.4/tests/run-func
+bash-4.4/tests/run-getopts
+bash-4.4/tests/run-glob-test
+bash-4.4/tests/run-globstar
+bash-4.4/tests/run-heredoc
+bash-4.4/tests/run-herestr
+bash-4.4/tests/run-histexpand
+bash-4.4/tests/run-history
+bash-4.4/tests/run-ifs
+bash-4.4/tests/run-ifs-posix
+bash-4.4/tests/run-input-test
+bash-4.4/tests/run-intl
+bash-4.4/tests/run-iquote
+bash-4.4/tests/run-invert
+bash-4.4/tests/run-jobs
+bash-4.4/tests/run-lastpipe
+bash-4.4/tests/run-mapfile
+bash-4.4/tests/run-more-exp
+bash-4.4/tests/run-nameref
+bash-4.4/tests/run-new-exp
+bash-4.4/tests/run-nquote
+bash-4.4/tests/run-nquote1
+bash-4.4/tests/run-nquote2
+bash-4.4/tests/run-nquote3
+bash-4.4/tests/run-nquote4
+bash-4.4/tests/run-nquote5
+bash-4.4/tests/run-parser
+bash-4.4/tests/run-posix2
+bash-4.4/tests/run-posixexp
+bash-4.4/tests/run-posixexp2
+bash-4.4/tests/run-posixpat
+bash-4.4/tests/run-posixpipe
+bash-4.4/tests/run-precedence
+bash-4.4/tests/run-printf
+bash-4.4/tests/run-quote
+bash-4.4/tests/run-read
+bash-4.4/tests/run-redir
+bash-4.4/tests/run-rhs-exp
+bash-4.4/tests/run-rsh
+bash-4.4/tests/run-set-e
+bash-4.4/tests/run-set-x
+bash-4.4/tests/run-shopt
+bash-4.4/tests/run-strip
+bash-4.4/tests/run-test
+bash-4.4/tests/run-tilde
+bash-4.4/tests/run-tilde2
+bash-4.4/tests/run-trap
+bash-4.4/tests/run-type
+bash-4.4/tests/run-varenv
+bash-4.4/tests/run-vredir
+bash-4.4/tests/set-e.tests
+bash-4.4/tests/set-e1.sub
+bash-4.4/tests/set-e2.sub
+bash-4.4/tests/set-e3.sub
+bash-4.4/tests/set-e3a.sub
+bash-4.4/tests/set-e.right
+bash-4.4/tests/set-x.tests
+bash-4.4/tests/set-x1.sub
+bash-4.4/tests/set-x.right
+bash-4.4/tests/shopt.tests
+bash-4.4/tests/shopt.right
+bash-4.4/tests/strip.tests
+bash-4.4/tests/strip.right
+bash-4.4/tests/test.tests
+bash-4.4/tests/test.right
+bash-4.4/tests/tilde.tests
+bash-4.4/tests/tilde.right
+bash-4.4/tests/tilde2.tests
+bash-4.4/tests/tilde2.right
+bash-4.4/tests/trap.tests
+bash-4.4/tests/trap.right
+bash-4.4/tests/trap1.sub
+bash-4.4/tests/trap2.sub
+bash-4.4/tests/trap2a.sub
+bash-4.4/tests/trap3.sub
+bash-4.4/tests/trap4.sub
+bash-4.4/tests/trap5.sub
+bash-4.4/tests/type.tests
+bash-4.4/tests/type.right
+bash-4.4/tests/type1.sub
+bash-4.4/tests/type2.sub
+bash-4.4/tests/type3.sub
+bash-4.4/tests/type4.sub
+bash-4.4/tests/unicode1.sub
+bash-4.4/tests/unicode2.sub
+bash-4.4/tests/unicode3.sub
+bash-4.4/tests/varenv.right
+bash-4.4/tests/varenv.sh
+bash-4.4/tests/varenv1.sub
+bash-4.4/tests/varenv2.sub
+bash-4.4/tests/varenv3.sub
+bash-4.4/tests/varenv4.sub
+bash-4.4/tests/varenv5.sub
+bash-4.4/tests/varenv6.sub
+bash-4.4/tests/varenv7.sub
+bash-4.4/tests/varenv8.sub
+bash-4.4/tests/version
+bash-4.4/tests/version.mini
+bash-4.4/tests/vredir.tests
+bash-4.4/tests/vredir.right
+bash-4.4/tests/vredir1.sub
+bash-4.4/tests/vredir2.sub
+bash-4.4/tests/vredir3.sub
+bash-4.4/tests/vredir4.sub
+bash-4.4/tests/vredir5.sub
+bash-4.4/tests/vredir6.sub
+bash-4.4/tests/vredir7.sub
+bash-4.4/tests/misc/dev-tcp.tests
+bash-4.4/tests/misc/perf-script
+bash-4.4/tests/misc/perftest
+bash-4.4/tests/misc/read-nchars.tests
+bash-4.4/tests/misc/redir-t2.sh
+bash-4.4/tests/misc/run-r2.sh
+bash-4.4/tests/misc/sigint-1.sh
+bash-4.4/tests/misc/sigint-2.sh
+bash-4.4/tests/misc/sigint-3.sh
+bash-4.4/tests/misc/sigint-4.sh
+bash-4.4/tests/misc/test-minus-e.1
+bash-4.4/tests/misc/test-minus-e.2
+bash-4.4/tests/misc/wait-bg.tests
+bash-4.4/support/Makefile.in
+bash-4.4/support/bash.pc.in
+bash-4.4/support/bashversion.c
+bash-4.4/support/checkbashisms
+bash-4.4/support/config.guess
+bash-4.4/support/config.rpath
+bash-4.4/support/config.sub
+bash-4.4/support/printenv.sh
+bash-4.4/support/printenv.c
+bash-4.4/support/bash.xbm
+bash-4.4/support/missing
+bash-4.4/support/mkclone
+bash-4.4/support/mkconffiles
+bash-4.4/support/mkdirs
+bash-4.4/support/mkinstalldirs
+bash-4.4/support/mkversion.sh
+bash-4.4/support/mksignames.c
+bash-4.4/support/signames.c
+bash-4.4/support/bashbug.sh
+bash-4.4/support/man2html.c
+bash-4.4/support/recho.c
+bash-4.4/support/zecho.c
+bash-4.4/support/xcase.c
+bash-4.4/support/SYMLINKS
+bash-4.4/support/fixlinks
+bash-4.4/support/install.sh
+bash-4.4/support/texi2dvi
+bash-4.4/support/texi2html
+bash-4.4/support/xenix-link.sh
+bash-4.4/support/shobj-conf
+bash-4.4/support/rlvers.sh
+bash-4.4/po/LINGUAS
+bash-4.4/po/Makefile.in.in
+bash-4.4/po/Makevars
+bash-4.4/po/POTFILES.in
+bash-4.4/po/README
+bash-4.4/po/Rules-builtins
+bash-4.4/po/Rules-quot
+bash-4.4/po/bash.pot
+bash-4.4/po/boldquot.sed
+bash-4.4/po/en@boldquot.gmo
+bash-4.4/po/en@boldquot.header
+bash-4.4/po/en@boldquot.po
+bash-4.4/po/en@quot.gmo
+bash-4.4/po/en@quot.header
+bash-4.4/po/en@quot.po
+bash-4.4/po/af.gmo
+bash-4.4/po/af.po
+bash-4.4/po/bg.gmo
+bash-4.4/po/bg.po
+bash-4.4/po/ca.gmo
+bash-4.4/po/ca.po
+bash-4.4/po/cs.gmo
+bash-4.4/po/cs.po
+bash-4.4/po/da.gmo
+bash-4.4/po/da.po
+bash-4.4/po/de.gmo
+bash-4.4/po/de.po
+bash-4.4/po/el.gmo
+bash-4.4/po/el.po
+bash-4.4/po/eo.gmo
+bash-4.4/po/eo.po
+bash-4.4/po/es.gmo
+bash-4.4/po/es.po
+bash-4.4/po/et.gmo
+bash-4.4/po/et.po
+bash-4.4/po/fi.gmo
+bash-4.4/po/fi.po
+bash-4.4/po/fr.gmo
+bash-4.4/po/fr.po
+bash-4.4/po/ga.gmo
+bash-4.4/po/ga.po
+bash-4.4/po/gl.gmo
+bash-4.4/po/gl.po
+bash-4.4/po/hr.gmo
+bash-4.4/po/hr.po
+bash-4.4/po/hu.gmo
+bash-4.4/po/hu.po
+bash-4.4/po/id.gmo
+bash-4.4/po/id.po
+bash-4.4/po/it.gmo
+bash-4.4/po/it.po
+bash-4.4/po/ja.gmo
+bash-4.4/po/ja.po
+bash-4.4/po/lt.gmo
+bash-4.4/po/lt.po
+bash-4.4/po/nl.gmo
+bash-4.4/po/nb.po
+bash-4.4/po/nb.gmo
+bash-4.4/po/nl.po
+bash-4.4/po/pl.gmo
+bash-4.4/po/pl.po
+bash-4.4/po/pt_BR.gmo
+bash-4.4/po/pt_BR.po
+bash-4.4/po/ro.gmo
+bash-4.4/po/ro.po
+bash-4.4/po/ru.gmo
+bash-4.4/po/ru.po
+bash-4.4/po/sk.gmo
+bash-4.4/po/sk.po
+bash-4.4/po/sl.gmo
+bash-4.4/po/sr.po
+bash-4.4/po/sr.gmo
+bash-4.4/po/sl.po
+bash-4.4/po/sv.gmo
+bash-4.4/po/sv.po
+bash-4.4/po/tr.gmo
+bash-4.4/po/tr.po
+bash-4.4/po/uk.gmo
+bash-4.4/po/uk.po
+bash-4.4/po/vi.gmo
+bash-4.4/po/vi.po
+bash-4.4/po/zh_CN.gmo
+bash-4.4/po/zh_CN.po
+bash-4.4/po/zh_TW.gmo
+bash-4.4/po/zh_TW.po
+bash-4.4/po/insert-header.sin
+bash-4.4/po/quot.sed
+bash-4.4/po/remove-potcdate.sin
+bash-4.4/m4/stat-time.m4
+bash-4.4/m4/timespec.m4
+bash-4.4/lib/glob/
+bash-4.4/lib/intl/
+bash-4.4/lib/malloc/
+bash-4.4/lib/readline/
+bash-4.4/lib/sh/
+bash-4.4/lib/termcap/
+bash-4.4/lib/tilde/
+bash-4.4/lib/tilde/README
+bash-4.4/lib/tilde/Makefile.in
+bash-4.4/lib/tilde/tilde.c
+bash-4.4/lib/tilde/tilde.h
+bash-4.4/lib/tilde/shell.c
+bash-4.4/lib/termcap/Makefile.in
+bash-4.4/lib/termcap/ltcap.h
+bash-4.4/lib/termcap/termcap.c
+bash-4.4/lib/termcap/termcap.h
+bash-4.4/lib/termcap/tparam.c
+bash-4.4/lib/termcap/version.c
+bash-4.4/lib/sh/Makefile.in
+bash-4.4/lib/sh/casemod.c
+bash-4.4/lib/sh/clktck.c
+bash-4.4/lib/sh/clock.c
+bash-4.4/lib/sh/dprintf.c
+bash-4.4/lib/sh/eaccess.c
+bash-4.4/lib/sh/fmtullong.c
+bash-4.4/lib/sh/fmtulong.c
+bash-4.4/lib/sh/fmtumax.c
+bash-4.4/lib/sh/fnxform.c
+bash-4.4/lib/sh/fpurge.c
+bash-4.4/lib/sh/getcwd.c
+bash-4.4/lib/sh/getenv.c
+bash-4.4/lib/sh/inet_aton.c
+bash-4.4/lib/sh/input_avail.c
+bash-4.4/lib/sh/itos.c
+bash-4.4/lib/sh/mailstat.c
+bash-4.4/lib/sh/makepath.c
+bash-4.4/lib/sh/mbscasecmp.c
+bash-4.4/lib/sh/mbschr.c
+bash-4.4/lib/sh/mbscmp.c
+bash-4.4/lib/sh/memset.c
+bash-4.4/lib/sh/mktime.c
+bash-4.4/lib/sh/netconn.c
+bash-4.4/lib/sh/oslib.c
+bash-4.4/lib/sh/netopen.c
+bash-4.4/lib/sh/pathcanon.c
+bash-4.4/lib/sh/pathphys.c
+bash-4.4/lib/sh/rename.c
+bash-4.4/lib/sh/setlinebuf.c
+bash-4.4/lib/sh/shmatch.c
+bash-4.4/lib/sh/shmbchar.c
+bash-4.4/lib/sh/shquote.c
+bash-4.4/lib/sh/shtty.c
+bash-4.4/lib/sh/snprintf.c
+bash-4.4/lib/sh/spell.c
+bash-4.4/lib/sh/strcasecmp.c
+bash-4.4/lib/sh/strcasestr.c
+bash-4.4/lib/sh/strchrnul.c
+bash-4.4/lib/sh/strdup.c
+bash-4.4/lib/sh/strerror.c
+bash-4.4/lib/sh/strftime.c
+bash-4.4/lib/sh/stringlist.c
+bash-4.4/lib/sh/stringvec.c
+bash-4.4/lib/sh/strnlen.c
+bash-4.4/lib/sh/strpbrk.c
+bash-4.4/lib/sh/strstr.c
+bash-4.4/lib/sh/strtod.c
+bash-4.4/lib/sh/strtol.c
+bash-4.4/lib/sh/strtoimax.c
+bash-4.4/lib/sh/strtoll.c
+bash-4.4/lib/sh/strtoul.c
+bash-4.4/lib/sh/strtoull.c
+bash-4.4/lib/sh/strtoumax.c
+bash-4.4/lib/sh/strtrans.c
+bash-4.4/lib/sh/times.c
+bash-4.4/lib/sh/timeval.c
+bash-4.4/lib/sh/tmpfile.c
+bash-4.4/lib/sh/uconvert.c
+bash-4.4/lib/sh/ufuncs.c
+bash-4.4/lib/sh/unicode.c
+bash-4.4/lib/sh/vprint.c
+bash-4.4/lib/sh/wcsdup.c
+bash-4.4/lib/sh/wcsnwidth.c
+bash-4.4/lib/sh/wcswidth.c
+bash-4.4/lib/sh/winsize.c
+bash-4.4/lib/sh/zcatfd.c
+bash-4.4/lib/sh/zgetline.c
+bash-4.4/lib/sh/zmapfd.c
+bash-4.4/lib/sh/zread.c
+bash-4.4/lib/sh/zwrite.c
+bash-4.4/lib/readline/doc/
+bash-4.4/lib/readline/examples/
+bash-4.4/lib/readline/COPYING
+bash-4.4/lib/readline/Makefile.in
+bash-4.4/lib/readline/ChangeLog
+bash-4.4/lib/readline/README
+bash-4.4/lib/readline/STANDALONE
+bash-4.4/lib/readline/readline.c
+bash-4.4/lib/readline/vi_mode.c
+bash-4.4/lib/readline/emacs_keymap.c
+bash-4.4/lib/readline/vi_keymap.c
+bash-4.4/lib/readline/history.c
+bash-4.4/lib/readline/histexpand.c
+bash-4.4/lib/readline/histsearch.c
+bash-4.4/lib/readline/histfile.c
+bash-4.4/lib/readline/funmap.c
+bash-4.4/lib/readline/keymaps.c
+bash-4.4/lib/readline/util.c
+bash-4.4/lib/readline/terminal.c
+bash-4.4/lib/readline/xfree.c
+bash-4.4/lib/readline/xmalloc.c
+bash-4.4/lib/readline/search.c
+bash-4.4/lib/readline/isearch.c
+bash-4.4/lib/readline/parens.c
+bash-4.4/lib/readline/rltty.c
+bash-4.4/lib/readline/compat.c
+bash-4.4/lib/readline/complete.c
+bash-4.4/lib/readline/bind.c
+bash-4.4/lib/readline/display.c
+bash-4.4/lib/readline/signals.c
+bash-4.4/lib/readline/kill.c
+bash-4.4/lib/readline/text.c
+bash-4.4/lib/readline/undo.c
+bash-4.4/lib/readline/macro.c
+bash-4.4/lib/readline/input.c
+bash-4.4/lib/readline/callback.c
+bash-4.4/lib/readline/mbutil.c
+bash-4.4/lib/readline/misc.c
+bash-4.4/lib/readline/nls.c
+bash-4.4/lib/readline/shell.c
+bash-4.4/lib/readline/colors.c
+bash-4.4/lib/readline/parse-colors.c
+bash-4.4/lib/readline/savestring.c
+bash-4.4/lib/readline/tilde.c
+bash-4.4/lib/readline/tilde.h
+bash-4.4/lib/readline/rldefs.h
+bash-4.4/lib/readline/rlconf.h
+bash-4.4/lib/readline/rlmbutil.h
+bash-4.4/lib/readline/rlshell.h
+bash-4.4/lib/readline/rltty.h
+bash-4.4/lib/readline/rltypedefs.h
+bash-4.4/lib/readline/rlwinsize.h
+bash-4.4/lib/readline/readline.h
+bash-4.4/lib/readline/tcap.h
+bash-4.4/lib/readline/keymaps.h
+bash-4.4/lib/readline/history.h
+bash-4.4/lib/readline/histlib.h
+bash-4.4/lib/readline/chardefs.h
+bash-4.4/lib/readline/posixdir.h
+bash-4.4/lib/readline/posixjmp.h
+bash-4.4/lib/readline/posixselect.h
+bash-4.4/lib/readline/posixstat.h
+bash-4.4/lib/readline/ansi_stdlib.h
+bash-4.4/lib/readline/rlstdc.h
+bash-4.4/lib/readline/rlprivate.h
+bash-4.4/lib/readline/colors.h
+bash-4.4/lib/readline/parse-colors.h
+bash-4.4/lib/readline/xmalloc.h
+bash-4.4/lib/readline/examples/Makefile
+bash-4.4/lib/readline/examples/excallback.c
+bash-4.4/lib/readline/examples/fileman.c
+bash-4.4/lib/readline/examples/manexamp.c
+bash-4.4/lib/readline/examples/histexamp.c
+bash-4.4/lib/readline/examples/rltest.c
+bash-4.4/lib/readline/examples/rl-callbacktest.c
+bash-4.4/lib/readline/examples/rl.c
+bash-4.4/lib/readline/examples/rlcat.c
+bash-4.4/lib/readline/examples/Inputrc
+bash-4.4/lib/readline/doc/Makefile
+bash-4.4/lib/readline/doc/version.texi
+bash-4.4/lib/readline/doc/rlman.texi
+bash-4.4/lib/readline/doc/rltech.texi
+bash-4.4/lib/readline/doc/rluser.texi
+bash-4.4/lib/readline/doc/rluserman.texi
+bash-4.4/lib/readline/doc/history.texi
+bash-4.4/lib/readline/doc/hstech.texi
+bash-4.4/lib/readline/doc/hsuser.texi
+bash-4.4/lib/readline/doc/fdl.texi
+bash-4.4/lib/malloc/Makefile.in
+bash-4.4/lib/malloc/getpagesize.h
+bash-4.4/lib/malloc/imalloc.h
+bash-4.4/lib/malloc/mstats.h
+bash-4.4/lib/malloc/shmalloc.h
+bash-4.4/lib/malloc/table.h
+bash-4.4/lib/malloc/watch.h
+bash-4.4/lib/malloc/alloca.c
+bash-4.4/lib/malloc/malloc.c
+bash-4.4/lib/malloc/stats.c
+bash-4.4/lib/malloc/table.c
+bash-4.4/lib/malloc/trace.c
+bash-4.4/lib/malloc/watch.c
+bash-4.4/lib/malloc/xmalloc.c
+bash-4.4/lib/malloc/xleaktrace
+bash-4.4/lib/malloc/stub.c
+bash-4.4/lib/malloc/i386-alloca.s
+bash-4.4/lib/malloc/x386-alloca.s
+bash-4.4/lib/intl/ChangeLog
+bash-4.4/lib/intl/Makefile.in
+bash-4.4/lib/intl/VERSION
+bash-4.4/lib/intl/bindtextdom.c
+bash-4.4/lib/intl/config.charset
+bash-4.4/lib/intl/dcgettext.c
+bash-4.4/lib/intl/dcigettext.c
+bash-4.4/lib/intl/dcngettext.c
+bash-4.4/lib/intl/dgettext.c
+bash-4.4/lib/intl/dngettext.c
+bash-4.4/lib/intl/eval-plural.h
+bash-4.4/lib/intl/explodename.c
+bash-4.4/lib/intl/finddomain.c
+bash-4.4/lib/intl/gettext.c
+bash-4.4/lib/intl/gettextP.h
+bash-4.4/lib/intl/gmo.h
+bash-4.4/lib/intl/hash-string.h
+bash-4.4/lib/intl/intl-compat.c
+bash-4.4/lib/intl/l10nflist.c
+bash-4.4/lib/intl/libgnuintl.h.in
+bash-4.4/lib/intl/log.c
+bash-4.4/lib/intl/loadinfo.h
+bash-4.4/lib/intl/loadmsgcat.c
+bash-4.4/lib/intl/localcharset.c
+bash-4.4/lib/intl/localcharset.h
+bash-4.4/lib/intl/locale.alias
+bash-4.4/lib/intl/localealias.c
+bash-4.4/lib/intl/localename.c
+bash-4.4/lib/intl/ngettext.c
+bash-4.4/lib/intl/os2compat.c
+bash-4.4/lib/intl/os2compat.h
+bash-4.4/lib/intl/osdep.c
+bash-4.4/lib/intl/plural-exp.c
+bash-4.4/lib/intl/plural-exp.h
+bash-4.4/lib/intl/plural.c
+bash-4.4/lib/intl/plural.y
+bash-4.4/lib/intl/ref-add.sin
+bash-4.4/lib/intl/ref-del.sin
+bash-4.4/lib/intl/relocatable.c
+bash-4.4/lib/intl/relocatable.h
+bash-4.4/lib/intl/textdomain.c
+bash-4.4/lib/glob/doc/
+bash-4.4/lib/glob/Makefile.in
+bash-4.4/lib/glob/sm_loop.c
+bash-4.4/lib/glob/smatch.c
+bash-4.4/lib/glob/strmatch.c
+bash-4.4/lib/glob/strmatch.h
+bash-4.4/lib/glob/glob.c
+bash-4.4/lib/glob/glob.h
+bash-4.4/lib/glob/glob_loop.c
+bash-4.4/lib/glob/gmisc.c
+bash-4.4/lib/glob/xmbsrtowcs.c
+bash-4.4/lib/glob/collsyms.h
+bash-4.4/lib/glob/ndir.h
+bash-4.4/lib/glob/doc/Makefile
+bash-4.4/lib/glob/doc/glob.texi
+bash-4.4/include/ansi_stdlib.h
+bash-4.4/include/chartypes.h
+bash-4.4/include/filecntl.h
+bash-4.4/include/gettext.h
+bash-4.4/include/maxpath.h
+bash-4.4/include/memalloc.h
+bash-4.4/include/ocache.h
+bash-4.4/include/posixdir.h
+bash-4.4/include/posixjmp.h
+bash-4.4/include/posixselect.h
+bash-4.4/include/posixstat.h
+bash-4.4/include/posixtime.h
+bash-4.4/include/posixwait.h
+bash-4.4/include/shmbchar.h
+bash-4.4/include/shmbutil.h
+bash-4.4/include/shtty.h
+bash-4.4/include/stat-time.h
+bash-4.4/include/stdc.h
+bash-4.4/include/systimes.h
+bash-4.4/include/typemax.h
+bash-4.4/include/unionwait.h
+bash-4.4/examples/complete/
+bash-4.4/examples/functions/
+bash-4.4/examples/scripts/
+bash-4.4/examples/startup-files/
+bash-4.4/examples/misc/
+bash-4.4/examples/loadables/
+bash-4.4/examples/INDEX.txt
+bash-4.4/examples/INDEX.html
+bash-4.4/examples/loadables/perl/
+bash-4.4/examples/loadables/README
+bash-4.4/examples/loadables/template.c
+bash-4.4/examples/loadables/loadables.h
+bash-4.4/examples/loadables/Makefile.in
+bash-4.4/examples/loadables/Makefile.inc.in
+bash-4.4/examples/loadables/necho.c
+bash-4.4/examples/loadables/hello.c
+bash-4.4/examples/loadables/print.c
+bash-4.4/examples/loadables/realpath.c
+bash-4.4/examples/loadables/setpgid.c
+bash-4.4/examples/loadables/sleep.c
+bash-4.4/examples/loadables/strftime.c
+bash-4.4/examples/loadables/truefalse.c
+bash-4.4/examples/loadables/finfo.c
+bash-4.4/examples/loadables/cat.c
+bash-4.4/examples/loadables/logname.c
+bash-4.4/examples/loadables/basename.c
+bash-4.4/examples/loadables/dirname.c
+bash-4.4/examples/loadables/tty.c
+bash-4.4/examples/loadables/pathchk.c
+bash-4.4/examples/loadables/tee.c
+bash-4.4/examples/loadables/rmdir.c
+bash-4.4/examples/loadables/head.c
+bash-4.4/examples/loadables/printenv.c
+bash-4.4/examples/loadables/push.c
+bash-4.4/examples/loadables/id.c
+bash-4.4/examples/loadables/whoami.c
+bash-4.4/examples/loadables/uname.c
+bash-4.4/examples/loadables/sync.c
+bash-4.4/examples/loadables/mkdir.c
+bash-4.4/examples/loadables/ln.c
+bash-4.4/examples/loadables/mypid.c
+bash-4.4/examples/loadables/unlink.c
+bash-4.4/examples/loadables/perl/Makefile.in
+bash-4.4/examples/loadables/perl/README
+bash-4.4/examples/loadables/perl/bperl.c
+bash-4.4/examples/loadables/perl/iperl.c
+bash-4.4/examples/misc/aliasconv.sh
+bash-4.4/examples/misc/aliasconv.bash
+bash-4.4/examples/misc/cshtobash
+bash-4.4/examples/startup-files/README
+bash-4.4/examples/startup-files/Bashrc.bfox
+bash-4.4/examples/startup-files/Bash_aliases
+bash-4.4/examples/startup-files/Bash_profile
+bash-4.4/examples/startup-files/bash-profile
+bash-4.4/examples/startup-files/bashrc
+bash-4.4/examples/scripts/cat.sh
+bash-4.4/examples/scripts/center
+bash-4.4/examples/scripts/inpath
+bash-4.4/examples/scripts/shprompt
+bash-4.4/examples/scripts/spin.bash
+bash-4.4/examples/scripts/xterm_title
+bash-4.4/examples/scripts/zprintf
+bash-4.4/examples/functions/array-stuff
+bash-4.4/examples/functions/array-to-string
+bash-4.4/examples/functions/autoload
+bash-4.4/examples/functions/autoload.v2
+bash-4.4/examples/functions/autoload.v3
+bash-4.4/examples/functions/basename
+bash-4.4/examples/functions/csh-compat
+bash-4.4/examples/functions/dirname
+bash-4.4/examples/functions/dirstack
+bash-4.4/examples/functions/exitstat
+bash-4.4/examples/functions/external
+bash-4.4/examples/functions/fact
+bash-4.4/examples/functions/fstty
+bash-4.4/examples/functions/func
+bash-4.4/examples/functions/inetaddr
+bash-4.4/examples/functions/inpath
+bash-4.4/examples/functions/isnum2
+bash-4.4/examples/functions/isvalidip
+bash-4.4/examples/functions/ksh-cd
+bash-4.4/examples/functions/ksh-compat-test
+bash-4.4/examples/functions/kshenv
+bash-4.4/examples/functions/login
+bash-4.4/examples/functions/notify.bash
+bash-4.4/examples/functions/seq
+bash-4.4/examples/functions/seq2
+bash-4.4/examples/functions/shcat
+bash-4.4/examples/functions/shcat2
+bash-4.4/examples/functions/sort-pos-params
+bash-4.4/examples/functions/substr
+bash-4.4/examples/functions/substr2
+bash-4.4/examples/functions/whatis
+bash-4.4/examples/functions/whence
+bash-4.4/examples/functions/which
+bash-4.4/examples/complete/bash_completion
+bash-4.4/examples/complete/cdfunc
+bash-4.4/examples/complete/complete-examples
+bash-4.4/examples/complete/bashcc-1.0.1.tar.gz
+bash-4.4/doc/FAQ
+bash-4.4/doc/Makefile.in
+bash-4.4/doc/bash.1
+bash-4.4/doc/bashbug.1
+bash-4.4/doc/builtins.1
+bash-4.4/doc/rbash.1
+bash-4.4/doc/README
+bash-4.4/doc/INTRO
+bash-4.4/doc/texinfo.tex
+bash-4.4/doc/bashref.texi
+bash-4.4/doc/version.texi
+bash-4.4/doc/bashref.info
+bash-4.4/doc/bash.info
+bash-4.4/doc/article.ms
+bash-4.4/doc/htmlpost.sh
+bash-4.4/doc/infopost.sh
+bash-4.4/doc/fdl.texi
+bash-4.4/doc/fdl.txt
+bash-4.4/doc/article.ps
+bash-4.4/doc/rose94.ps
+bash-4.4/doc/bash.ps
+bash-4.4/doc/bashbug.ps
+bash-4.4/doc/builtins.ps
+bash-4.4/doc/rbash.ps
+bash-4.4/doc/bashref.ps
+bash-4.4/doc/bashref.dvi
+bash-4.4/doc/bash.0
+bash-4.4/doc/bashbug.0
+bash-4.4/doc/builtins.0
+bash-4.4/doc/rbash.0
+bash-4.4/doc/article.txt
+bash-4.4/doc/bash.html
+bash-4.4/doc/bashref.html
+bash-4.4/doc/article.pdf
+bash-4.4/doc/bash.pdf
+bash-4.4/doc/bashref.pdf
+bash-4.4/doc/rose94.pdf
+bash-4.4/doc/aosa-bash.pdf
+bash-4.4/doc/aosa-bash-full.pdf
+bash-4.4/cross-build/cygwin32.cache
+bash-4.4/cross-build/x86-beos.cache
+bash-4.4/cross-build/opennt.cache
+bash-4.4/builtins/Makefile.in
+bash-4.4/builtins/alias.def
+bash-4.4/builtins/bind.def
+bash-4.4/builtins/break.def
+bash-4.4/builtins/builtin.def
+bash-4.4/builtins/caller.def
+bash-4.4/builtins/cd.def
+bash-4.4/builtins/colon.def
+bash-4.4/builtins/command.def
+bash-4.4/builtins/complete.def
+bash-4.4/builtins/common.c
+bash-4.4/builtins/declare.def
+bash-4.4/builtins/echo.def
+bash-4.4/builtins/enable.def
+bash-4.4/builtins/eval.def
+bash-4.4/builtins/evalfile.c
+bash-4.4/builtins/evalstring.c
+bash-4.4/builtins/exec.def
+bash-4.4/builtins/exit.def
+bash-4.4/builtins/fc.def
+bash-4.4/builtins/fg_bg.def
+bash-4.4/builtins/gen-helpfiles.c
+bash-4.4/builtins/getopt.c
+bash-4.4/builtins/getopt.h
+bash-4.4/builtins/getopts.def
+bash-4.4/builtins/hash.def
+bash-4.4/builtins/help.def
+bash-4.4/builtins/let.def
+bash-4.4/builtins/history.def
+bash-4.4/builtins/jobs.def
+bash-4.4/builtins/kill.def
+bash-4.4/builtins/mapfile.def
+bash-4.4/builtins/mkbuiltins.c
+bash-4.4/builtins/printf.def
+bash-4.4/builtins/pushd.def
+bash-4.4/builtins/read.def
+bash-4.4/builtins/reserved.def
+bash-4.4/builtins/return.def
+bash-4.4/builtins/set.def
+bash-4.4/builtins/setattr.def
+bash-4.4/builtins/shift.def
+bash-4.4/builtins/shopt.def
+bash-4.4/builtins/source.def
+bash-4.4/builtins/suspend.def
+bash-4.4/builtins/test.def
+bash-4.4/builtins/times.def
+bash-4.4/builtins/trap.def
+bash-4.4/builtins/type.def
+bash-4.4/builtins/ulimit.def
+bash-4.4/builtins/umask.def
+bash-4.4/builtins/wait.def
+bash-4.4/builtins/psize.c
+bash-4.4/builtins/psize.sh
+bash-4.4/builtins/inlib.def
+bash-4.4/builtins/bashgetopt.c
+bash-4.4/builtins/common.h
+bash-4.4/builtins/bashgetopt.h
+bash-4.4/CWRU/misc/
+bash-4.4/CWRU/PLATFORMS
+bash-4.4/CWRU/README
+bash-4.4/CWRU/changelog
+bash-4.4/CWRU/sh-redir-hack
+bash-4.4/CWRU/misc/open-files.c
+bash-4.4/CWRU/misc/sigs.c
+bash-4.4/CWRU/misc/sigstat.c
+bash-4.4/CWRU/misc/bison
+bash-4.4/CWRU/misc/errlist.c
+bash-4.4/CWRU/misc/hpux10-dlfcn.h
+lfs@Minty /mnt/lfs/sources $
+lfs@Minty /mnt/lfs/sources $
+lfs@Minty /mnt/lfs/sources $
+lfs@Minty /mnt/lfs/sources $
+lfs@Minty /mnt/lfs/sources $
+lfs@Minty /mnt/lfs/sources $
+lfs@Minty /mnt/lfs/sources $ ./configure --prefix=/tools --without-bash-malloc
+bash: ./configure: No such file or directory
+lfs@Minty /mnt/lfs/sources $ cd bash-4.4
+lfs@Minty /mnt/lfs/sources/bash-4.4 $ ./configure --prefix=/tools --without-bash-malloc
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+
+Beginning configuration for bash-4.4-release for x86_64-unknown-linux-gnu
+
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for strerror in -lcposix... no
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking whether gcc needs -traditional... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ar... ar
+checking for ranlib... ranlib
+checking for bison... bison -y
+checking whether make sets $(MAKE)... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking whether byte ordering is bigendian... no
+checking for preprocessor stringizing operator... yes
+checking for long double with more range or precision than double... yes
+checking for function prototypes... yes
+checking whether char is unsigned... no
+checking for working volatile... yes
+checking for C/C++ restrict keyword... __restrict
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for off_t... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... yes
+checking for sys/time.h... yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking whether we are using the GNU C Library 2.1 or newer... yes
+checking whether integer division by zero raises SIGFPE... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unsigned long long... yes
+checking for inttypes.h... yes
+checking whether the inttypes.h PRIxNN macros are broken... no
+checking for ld used by GCC... /mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld
+checking if the linker (/mnt/lfs/tools/x86_64-pc-linux-gnu/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking argz.h usability... yes
+checking argz.h presence... yes
+checking for argz.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking nl_types.h usability... yes
+checking nl_types.h presence... yes
+checking for nl_types.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for feof_unlocked... yes
+checking for fgets_unlocked... yes
+checking for getc_unlocked... yes
+checking for getcwd... yes
+checking for getegid... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getuid... yes
+checking for mempcpy... yes
+checking for munmap... yes
+checking for putenv... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for localeconv... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strtoul... yes
+checking for tsearch... yes
+checking for __argz_count... yes
+checking for __argz_stringify... yes
+checking for __argz_next... yes
+checking for __fsetlocking... yes
+checking for iconv... yes
+checking for iconv declaration...
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking for bison... bison
+checking version of bison... 3.0.4, ok
+checking whether NLS is requested... yes
+checking whether included gettext is requested... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking whether time.h and sys/time.h may both be included... yes
+checking for inttypes.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking varargs.h usability... no
+checking varargs.h presence... no
+checking for varargs.h... no
+checking for limits.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for locale.h... (cached) yes
+checking termcap.h usability... yes
+checking termcap.h presence... yes
+checking for termcap.h... yes
+checking termio.h usability... yes
+checking termio.h presence... yes
+checking for termio.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking stdbool.h usability... yes
+checking stdbool.h presence... yes
+checking for stdbool.h... yes
+checking for stddef.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking for strings.h... (cached) yes
+checking regex.h usability... yes
+checking regex.h presence... yes
+checking for regex.h... yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking ulimit.h usability... yes
+checking ulimit.h presence... yes
+checking for ulimit.h... yes
+checking sys/pte.h usability... no
+checking sys/pte.h presence... no
+checking for sys/pte.h... no
+checking sys/stream.h usability... no
+checking sys/stream.h presence... no
+checking for sys/stream.h... no
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking for sys/param.h... (cached) yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking sys/times.h usability... yes
+checking sys/times.h presence... yes
+checking for sys/times.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking for sys/ptem.h... no
+checking for sys/resource.h... yes
+checking for working alloca.h... (cached) yes
+checking for alloca... (cached) yes
+checking for uid_t in sys/types.h... yes
+checking for unistd.h... (cached) yes
+checking for working chown... yes
+checking whether getpgrp requires zero arguments... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking for working strcoll... yes
+checking return type of signal handlers... void
+checking for __setostype... no
+checking for wait3... yes
+checking for mkfifo... yes
+checking for dup2... yes
+checking for eaccess... yes
+checking for fcntl... yes
+checking for getdtablesize... yes
+checking for getgroups... yes
+checking for gethostname... yes
+checking for getpagesize... (cached) yes
+checking for getpeername... yes
+checking for getrlimit... yes
+checking for getrusage... yes
+checking for gettimeofday... yes
+checking for kill... yes
+checking for killpg... yes
+checking for lstat... yes
+checking for pselect... yes
+checking for readlink... yes
+checking for sbrk... yes
+checking for select... yes
+checking for setdtablesize... no
+checking for setitimer... yes
+checking for tcgetpgrp... yes
+checking for uname... yes
+checking for ulimit... yes
+checking for waitpid... yes
+checking for rename... yes
+checking for bcopy... yes
+checking for bzero... yes
+checking for confstr... yes
+checking for faccessat... yes
+checking for fnmatch... yes
+checking for getaddrinfo... yes
+checking for gethostbyname... yes
+checking for getservbyname... yes
+checking for getservent... yes
+checking for inet_aton... yes
+checking for imaxdiv... yes
+checking for memmove... yes
+checking for pathconf... yes
+checking for putenv... (cached) yes
+checking for raise... yes
+checking for random... yes
+checking for regcomp... yes
+checking for regexec... yes
+checking for setenv... (cached) yes
+checking for setlinebuf... yes
+checking for setlocale... (cached) yes
+checking for setvbuf... yes
+checking for siginterrupt... yes
+checking for strchr... yes
+checking for sysconf... yes
+checking for syslog... yes
+checking for tcgetattr... yes
+checking for times... yes
+checking for ttyname... yes
+checking for tzset... yes
+checking for unsetenv... yes
+checking for vasprintf... yes
+checking for asprintf... yes
+checking for isascii... yes
+checking for isblank... yes
+checking for isgraph... yes
+checking for isprint... yes
+checking for isspace... yes
+checking for isxdigit... yes
+checking for getpwent... yes
+checking for getpwnam... yes
+checking for getpwuid... yes
+checking for mkstemp... yes
+checking for getcwd... (cached) yes
+checking for memset... yes
+checking for strcasecmp... (cached) yes
+checking for strcasestr... yes
+checking for strerror... yes
+checking for strftime... yes
+checking for strnlen... yes
+checking for strpbrk... yes
+checking for strstr... yes
+checking for strtod... yes
+checking for strtol... yes
+checking for strtoul... (cached) yes
+checking for strtoll... yes
+checking for strtoull... yes
+checking for strtoimax... yes
+checking for strtoumax... yes
+checking for dprintf... yes
+checking for strchrnul... yes
+checking for strdup... (cached) yes
+checking libaudit.h usability... no
+checking libaudit.h presence... no
+checking for libaudit.h... no
+checking whether AUDIT_USER_TTY is declared... yes
+checking whether confstr is declared... yes
+checking whether printf is declared... yes
+checking whether sbrk is declared... yes
+checking whether setregid is declared... yes
+checking whether strcpy is declared... yes
+checking whether strsignal is declared... yes
+checking whether strtold is declared... yes
+checking for broken strtold... no
+checking for declaration of strtoimax... yes
+checking for declaration of strtol... yes
+checking for declaration of strtoll... yes
+checking for declaration of strtoul... yes
+checking for declaration of strtoull... yes
+checking for declaration of strtoumax... yes
+checking for alarm... yes
+checking for fpurge... no
+checking for __fpurge... yes
+checking for snprintf... yes
+checking for vsnprintf... yes
+checking for working mktime... yes
+checking for argz.h... (cached) yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for malloc.h... (cached) yes
+checking stdio_ext.h usability... yes
+checking stdio_ext.h presence... yes
+checking for stdio_ext.h... yes
+checking for getpagesize... (cached) yes
+checking for working mmap... (cached) yes
+checking for __argz_count... (cached) yes
+checking for __argz_next... (cached) yes
+checking for __argz_stringify... (cached) yes
+checking for dcgettext... yes
+checking for mempcpy... (cached) yes
+checking for munmap... (cached) yes
+checking for stpcpy... (cached) yes
+checking for strcspn... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking mbstr.h usability... no
+checking mbstr.h presence... no
+checking for mbstr.h... no
+checking for mbrlen... yes
+checking for mbscasecmp... no
+checking for mbscmp... no
+checking for mbsnrtowcs... yes
+checking for mbsrtowcs... yes
+checking for mbschr... no
+checking for wcrtomb... yes
+checking for wcscoll... yes
+checking for wcsdup... yes
+checking for wcwidth... yes
+checking for wctype... yes
+checking for wcswidth... yes
+checking whether mbrtowc and mbstate_t are properly declared... yes
+checking for iswlower... yes
+checking for iswupper... yes
+checking for towlower... yes
+checking for towupper... yes
+checking for iswctype... yes
+checking for nl_langinfo and CODESET... yes
+checking for wchar_t in wchar.h... yes
+checking for wctype_t in wctype.h... yes
+checking for wint_t in wctype.h... yes
+checking for wcwidth broken with unicode combining characters... yes
+checking for locale_charset... no
+checking for dlopen in -ldl... yes
+checking for dlopen... yes
+checking for dlclose... yes
+checking for dlsym... yes
+checking whether sys_siglist is declared... yes
+checking type of array argument to getgroups... gid_t
+checking for off_t... (cached) yes
+checking for mode_t... yes
+checking for uid_t in sys/types.h... (cached) yes
+checking for pid_t... yes
+checking for size_t... (cached) yes
+checking for uintptr_t... yes
+checking for ssize_t... yes
+checking for time_t... yes
+checking for long long... long long
+checking for unsigned long long... unsigned long long
+checking return type of signal handlers... (cached) void
+checking for sig_atomic_t in signal.h... yes
+checking size of char... 1
+checking size of short... 2
+checking size of int... 4
+checking size of long... 8
+checking size of char *... 8
+checking size of double... 8
+checking size of long long... 8
+checking for u_int... yes
+checking for u_long... yes
+checking for bits16_t... no
+checking for u_bits16_t... no
+checking for bits32_t... no
+checking for u_bits32_t... no
+checking for bits64_t... no
+checking for ptrdiff_t... yes
+checking whether stat file-mode macros are broken... no
+checking whether #! works in shell scripts... yes
+checking whether the ctype macros accept non-ascii characters... no
+checking if dup2 fails to clear the close-on-exec flag... no
+checking whether pgrps need synchronization... no
+checking for type of signal functions... posix
+checking for sys_errlist and sys_nerr... yes
+checking for sys_siglist in system C library... yes
+checking for _sys_siglist in signal.h or unistd.h... yes
+checking for _sys_siglist in system C library... yes
+checking whether signal handlers are of type void... yes
+checking for clock_t... yes
+checking for sigset_t... yes
+checking for sig_atomic_t... yes
+checking for quad_t... yes
+checking for intmax_t... yes
+checking for uintmax_t... yes
+checking for socklen_t... yes
+checking for size and type of struct rlimit fields... rlim_t
+checking size of intmax_t... 8
+checking for struct termios.c_line... yes
+checking for struct termio.c_line... yes
+checking for struct dirent.d_ino... yes
+checking for struct dirent.d_fileno... yes
+checking for struct dirent.d_namlen... no
+checking for struct winsize in sys/ioctl.h and termios.h... sys/ioctl.h
+checking for struct timeval in sys/time.h and time.h... yes
+checking for struct stat.st_blocks... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking for struct timezone in sys/time.h and time.h... yes
+checking for offset of exit status in return status from wait... 8
+checking for struct timespec in <time.h>... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for the existence of strsignal... yes
+checking if opendir() opens non-directories... no
+checking whether ulimit can substitute for getdtablesize... yes
+checking whether fpurge is declared... no
+checking to see if getenv can be redefined... yes
+checking if getcwd() will dynamically allocate memory with 0 size... yes
+checking for presence of POSIX-style sigsetjmp/siglongjmp... present
+checking whether or not strcoll and strcmp differ... no
+checking for standard-conformant snprintf... yes
+checking for standard-conformant vsnprintf... yes
+checking for standard-conformant putenv declaration... yes
+checking for standard-conformant unsetenv declaration... yes
+checking for printf floating point output in hex notation... yes
+checking if signal handlers must be reinstalled when invoked... no
+checking for presence of necessary job control definitions... present
+checking for presence of named pipes... present
+checking whether termios.h defines TIOCGWINSZ... no
+checking whether sys/ioctl.h defines TIOCGWINSZ... yes
+checking for TIOCSTAT in sys/ioctl.h... no
+checking for FIONREAD in sys/ioctl.h... yes
+checking whether WCONTINUED flag to waitpid is unavailable or available but broken... no
+checking for speed_t in sys/types.h... no
+checking whether getpw functions are declared in pwd.h... yes
+checking for unusable real-time signals due to large values... no
+checking for tgetent... no
+checking for tgetent in -ltermcap... no
+checking for tgetent in -ltinfo... no
+checking for tgetent in -lcurses... no
+checking for tgetent in -lncurses... no
+checking which library has the termcap functions... using gnutermcap
+checking whether /dev/fd is available... standard
+checking whether /dev/stdin stdout stderr are available... present
+checking for default mail directory... /var/mail
+checking shared object configuration for loadable builtins... supported
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating builtins/Makefile
+config.status: creating lib/readline/Makefile
+config.status: creating lib/glob/Makefile
+config.status: creating lib/intl/Makefile
+config.status: creating lib/malloc/Makefile
+config.status: creating lib/sh/Makefile
+config.status: creating lib/termcap/Makefile
+config.status: creating lib/tilde/Makefile
+config.status: creating doc/Makefile
+config.status: creating support/Makefile
+config.status: creating po/Makefile.in
+config.status: creating examples/loadables/Makefile
+config.status: creating examples/loadables/Makefile.inc
+config.status: creating examples/loadables/perl/Makefile
+config.status: creating support/bash.pc
+config.status: creating config.h
+config.status: executing default-1 commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing default commands
+lfs@Minty /mnt/lfs/sources/bash-4.4 $ make
+rm -f mksyntax
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security  -L./lib/termcap  -rdynamic  -g -O2 -Wno-parentheses -Wno-format-security -rdynamic -g -O2 -Wno-parentheses -Wno-format-security  -o mksyntax ./mksyntax.c
+rm -f syntax.c
+./mksyntax -o syntax.c
+/bin/sh ./support/mkversion.sh -b -S . -s release -d 4.4 -o newversion.h \
+	&& mv newversion.h version.h
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security  -DBUILDTOOL -c -o buildversion.o ./version.c
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security  -L./lib/termcap  -rdynamic  -g -O2 -Wno-parentheses -Wno-format-security -rdynamic -g -O2 -Wno-parentheses -Wno-format-security  -o bashversion ./support/bashversion.c buildversion.o
+
+	  ***********************************************************
+	  *                                                         *
+	  * GNU bash, version 4.4.0(1)-release (x86_64-unknown-linux-gnu)
+	  *                                                         *
+	  ***********************************************************
+
+rm -f shell.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c shell.c
+rm -f eval.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c eval.c
+make[1]: Entering directory '/mnt/lfs/sources/bash-4.4/builtins'
+rm -f mkbuiltins.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security  mkbuiltins.c
+gcc -L./lib/termcap -rdynamic -g -O2 -Wno-parentheses -Wno-format-security -rdynamic -g -O2 -Wno-parentheses -Wno-format-security  -o mkbuiltins mkbuiltins.o -ldl
+./mkbuiltins -externfile builtext.h -structfile builtins.c \
+    -noproduction -D .   ./alias.def ./bind.def ./break.def ./builtin.def ./caller.def ./cd.def ./colon.def ./command.def ./declare.def ./echo.def ./enable.def ./eval.def ./getopts.def ./exec.def ./exit.def ./fc.def ./fg_bg.def ./hash.def ./help.def ./history.def ./jobs.def ./kill.def ./let.def ./read.def ./return.def ./set.def ./setattr.def ./shift.def ./source.def ./suspend.def ./test.def ./times.def ./trap.def ./type.def ./ulimit.def ./umask.def ./wait.def ./reserved.def ./pushd.def ./shopt.def ./printf.def ./complete.def ./mapfile.def
+make[1]: Leaving directory '/mnt/lfs/sources/bash-4.4/builtins'
+rm -f y.tab.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c y.tab.c
+rm -f general.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c general.c
+rm -f make_cmd.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c make_cmd.c
+rm -f print_cmd.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c print_cmd.c
+rm -f dispose_cmd.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c dispose_cmd.c
+rm -f execute_cmd.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c execute_cmd.c
+rm -f variables.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c variables.c
+rm -f copy_cmd.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c copy_cmd.c
+rm -f error.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c error.c
+rm -f expr.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c expr.c
+expr.c:210:17: warning: conflicting types for built-in function 'exp2'
+ static intmax_t exp2 __P((void));
+                 ^~~~
+rm -f flags.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c flags.c
+rm -f jobs.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c jobs.c
+rm -f subst.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c subst.c
+rm -f hashcmd.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c hashcmd.c
+rm -f hashlib.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c hashlib.c
+rm -f mailcheck.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c mailcheck.c
+rm -f mksignames.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security  -DBUILDTOOL -c ./support/mksignames.c
+rm -f buildsignames.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security  -DBUILDTOOL -o buildsignames.o -c ./support/signames.c
+rm -f mksignames
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security  -L./lib/termcap  -rdynamic  -g -O2 -Wno-parentheses -Wno-format-security -rdynamic -g -O2 -Wno-parentheses -Wno-format-security  -o mksignames mksignames.o buildsignames.o
+rm -f lsignames.h
+./mksignames lsignames.h
+if cmp -s lsignames.h signames.h ; then :; else rm -f signames.h ; cp lsignames.h signames.h ; fi
+rm -f trap.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c trap.c
+rm -f input.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c input.c
+rm -f unwind_prot.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c unwind_prot.c
+rm -f pathexp.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c pathexp.c
+rm -f sig.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c sig.c
+rm -f test.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c test.c
+rm -f version.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c version.c
+rm -f alias.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c alias.c
+rm -f array.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c array.c
+rm -f arrayfunc.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c arrayfunc.c
+rm -f assoc.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c assoc.c
+rm -f braces.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c braces.c
+rm -f bracecomp.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c bracecomp.c
+rm -f bashhist.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c bashhist.c
+rm -f bashline.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c bashline.c
+rm -f list.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c list.c
+rm -f stringlib.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c stringlib.c
+rm -f locale.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c locale.c
+rm -f findcmd.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c findcmd.c
+rm -f redir.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c redir.c
+rm -f pcomplete.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c pcomplete.c
+rm -f pcomplib.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c pcomplib.c
+rm -f syntax.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c syntax.c
+rm -f xmalloc.o
+gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/tools/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib   -g -O2 -Wno-parentheses -Wno-format-security -c xmalloc.c
+make[1]: Entering directory '/mnt/lfs/sources/bash-4.4/builtins'
+rm -f builtins.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security builtins.c
+rm -f alias.o
+./mkbuiltins -D . alias.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security alias.c || ( rm -f alias.c ; exit 1 )
+rm -f alias.c
+rm -f bind.o
+./mkbuiltins -D . bind.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security bind.c || ( rm -f bind.c ; exit 1 )
+rm -f bind.c
+rm -f break.o
+./mkbuiltins -D . break.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security break.c || ( rm -f break.c ; exit 1 )
+rm -f break.c
+rm -f builtin.o
+./mkbuiltins -D . builtin.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security builtin.c || ( rm -f builtin.c ; exit 1 )
+rm -f builtin.c
+rm -f caller.o
+./mkbuiltins -D . caller.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security caller.c || ( rm -f caller.c ; exit 1 )
+rm -f caller.c
+rm -f cd.o
+./mkbuiltins -D . cd.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security cd.c || ( rm -f cd.c ; exit 1 )
+rm -f cd.c
+rm -f colon.o
+./mkbuiltins -D . colon.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security colon.c || ( rm -f colon.c ; exit 1 )
+rm -f colon.c
+rm -f command.o
+./mkbuiltins -D . command.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security command.c || ( rm -f command.c ; exit 1 )
+rm -f command.c
+rm -f common.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security common.c
+rm -f declare.o
+./mkbuiltins -D . declare.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security declare.c || ( rm -f declare.c ; exit 1 )
+rm -f declare.c
+rm -f echo.o
+./mkbuiltins -D . echo.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security echo.c || ( rm -f echo.c ; exit 1 )
+rm -f echo.c
+rm -f enable.o
+./mkbuiltins -D . enable.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security enable.c || ( rm -f enable.c ; exit 1 )
+rm -f enable.c
+rm -f eval.o
+./mkbuiltins -D . eval.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security eval.c || ( rm -f eval.c ; exit 1 )
+rm -f eval.c
+rm -f evalfile.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security evalfile.c
+rm -f evalstring.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security evalstring.c
+rm -f exec.o
+./mkbuiltins -D . exec.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security exec.c || ( rm -f exec.c ; exit 1 )
+rm -f exec.c
+rm -f exit.o
+./mkbuiltins -D . exit.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security exit.c || ( rm -f exit.c ; exit 1 )
+rm -f exit.c
+rm -f fc.o
+./mkbuiltins -D . fc.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security fc.c || ( rm -f fc.c ; exit 1 )
+rm -f fc.c
+rm -f fg_bg.o
+./mkbuiltins -D . fg_bg.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security fg_bg.c || ( rm -f fg_bg.c ; exit 1 )
+rm -f fg_bg.c
+rm -f hash.o
+./mkbuiltins -D . hash.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security hash.c || ( rm -f hash.c ; exit 1 )
+rm -f hash.c
+rm -f help.o
+./mkbuiltins -D . help.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security help.c || ( rm -f help.c ; exit 1 )
+rm -f help.c
+rm -f history.o
+./mkbuiltins -D . history.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security history.c || ( rm -f history.c ; exit 1 )
+rm -f history.c
+rm -f jobs.o
+./mkbuiltins -D . jobs.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security jobs.c || ( rm -f jobs.c ; exit 1 )
+rm -f jobs.c
+rm -f kill.o
+./mkbuiltins -D . kill.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security kill.c || ( rm -f kill.c ; exit 1 )
+rm -f kill.c
+rm -f let.o
+./mkbuiltins -D . let.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security let.c || ( rm -f let.c ; exit 1 )
+rm -f let.c
+rm -f mapfile.o
+./mkbuiltins -D . mapfile.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security mapfile.c || ( rm -f mapfile.c ; exit 1 )
+rm -f mapfile.c
+rm -f pushd.o
+./mkbuiltins -D . pushd.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security pushd.c || ( rm -f pushd.c ; exit 1 )
+rm -f pushd.c
+rm -f read.o
+./mkbuiltins -D . read.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security read.c || ( rm -f read.c ; exit 1 )
+rm -f read.c
+rm -f return.o
+./mkbuiltins -D . return.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security return.c || ( rm -f return.c ; exit 1 )
+rm -f return.c
+rm -f set.o
+./mkbuiltins -D . set.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security set.c || ( rm -f set.c ; exit 1 )
+rm -f set.c
+rm -f setattr.o
+./mkbuiltins -D . setattr.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security setattr.c || ( rm -f setattr.c ; exit 1 )
+rm -f setattr.c
+rm -f shift.o
+./mkbuiltins -D . shift.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security shift.c || ( rm -f shift.c ; exit 1 )
+rm -f shift.c
+rm -f source.o
+./mkbuiltins -D . source.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security source.c || ( rm -f source.c ; exit 1 )
+rm -f source.c
+rm -f suspend.o
+./mkbuiltins -D . suspend.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security suspend.c || ( rm -f suspend.c ; exit 1 )
+rm -f suspend.c
+rm -f test.o
+./mkbuiltins -D . test.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security test.c || ( rm -f test.c ; exit 1 )
+rm -f test.c
+rm -f times.o
+./mkbuiltins -D . times.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security times.c || ( rm -f times.c ; exit 1 )
+rm -f times.c
+rm -f trap.o
+./mkbuiltins -D . trap.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security trap.c || ( rm -f trap.c ; exit 1 )
+rm -f trap.c
+rm -f type.o
+./mkbuiltins -D . type.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security type.c || ( rm -f type.c ; exit 1 )
+rm -f type.c
+gcc  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security  -L./lib/termcap -rdynamic -g -O2 -Wno-parentheses -Wno-format-security -rdynamic -g -O2 -Wno-parentheses -Wno-format-security  -o psize.aux ./psize.c
+/bin/sh ./psize.sh > pipesize.h
+rm -f ulimit.o
+./mkbuiltins -D . ulimit.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security ulimit.c || ( rm -f ulimit.c ; exit 1 )
+rm -f ulimit.c
+rm -f umask.o
+./mkbuiltins -D . umask.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security umask.c || ( rm -f umask.c ; exit 1 )
+rm -f umask.c
+rm -f wait.o
+./mkbuiltins -D . wait.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security wait.c || ( rm -f wait.c ; exit 1 )
+rm -f wait.c
+rm -f getopts.o
+./mkbuiltins -D . getopts.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security getopts.c || ( rm -f getopts.c ; exit 1 )
+rm -f getopts.c
+rm -f shopt.o
+./mkbuiltins -D . shopt.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security shopt.c || ( rm -f shopt.c ; exit 1 )
+rm -f shopt.c
+rm -f printf.o
+./mkbuiltins -D . printf.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security printf.c || ( rm -f printf.c ; exit 1 )
+rm -f printf.c
+rm -f getopt.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security getopt.c
+rm -f bashgetopt.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security bashgetopt.c
+rm -f complete.o
+./mkbuiltins -D . complete.def
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.    -g -O2 -Wno-parentheses -Wno-format-security complete.c || ( rm -f complete.c ; exit 1 )
+rm -f complete.c
+rm -f libbuiltins.a
+ar cr libbuiltins.a builtins.o alias.o bind.o break.o builtin.o caller.o cd.o colon.o command.o common.o declare.o echo.o enable.o eval.o evalfile.o evalstring.o exec.o exit.o fc.o fg_bg.o hash.o help.o history.o jobs.o kill.o let.o mapfile.o pushd.o read.o return.o set.o setattr.o shift.o source.o suspend.o test.o times.o trap.o type.o ulimit.o umask.o wait.o getopts.o shopt.o printf.o getopt.o bashgetopt.o complete.o
+ranlib libbuiltins.a
+make[1]: Leaving directory '/mnt/lfs/sources/bash-4.4/builtins'
+making lib/glob/libglob.a in ./lib/glob
+make[1]: Entering directory '/mnt/lfs/sources/bash-4.4/lib/glob'
+rm -f glob.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib   -g -O2 -Wno-parentheses -Wno-format-security glob.c
+rm -f strmatch.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib   -g -O2 -Wno-parentheses -Wno-format-security strmatch.c
+rm -f smatch.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib   -g -O2 -Wno-parentheses -Wno-format-security smatch.c
+rm -f xmbsrtowcs.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib   -g -O2 -Wno-parentheses -Wno-format-security xmbsrtowcs.c
+rm -f gmisc.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib   -g -O2 -Wno-parentheses -Wno-format-security gmisc.c
+rm -f -f libglob.a
+ar cr libglob.a glob.o strmatch.o smatch.o xmbsrtowcs.o gmisc.o
+test -n "ranlib" && ranlib libglob.a
+make[1]: Leaving directory '/mnt/lfs/sources/bash-4.4/lib/glob'
+making lib/sh/libsh.a in ./lib/sh
+make[1]: Entering directory '/mnt/lfs/sources/bash-4.4/lib/sh'
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   clktck.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   clock.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   getenv.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   oslib.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   setlinebuf.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   strnlen.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   itos.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   zread.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   zwrite.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   shtty.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   shmatch.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   eaccess.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   netconn.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   netopen.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   timeval.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   makepath.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   pathcanon.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   pathphys.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   tmpfile.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   stringlist.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   stringvec.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   spell.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   shquote.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   strtrans.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   snprintf.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   mailstat.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   fmtulong.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   fmtullong.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   fmtumax.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   zcatfd.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   zmapfd.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   winsize.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   wcsdup.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   fpurge.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   zgetline.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   mbscmp.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   uconvert.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   ufuncs.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   casemod.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   input_avail.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   mbscasecmp.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   fnxform.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   unicode.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   shmbchar.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   wcsnwidth.c
+gcc -c  -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security   mbschr.c
+rm -f libsh.a
+ar cr libsh.a clktck.o clock.o getenv.o oslib.o setlinebuf.o strnlen.o itos.o zread.o zwrite.o shtty.o shmatch.o eaccess.o netconn.o netopen.o timeval.o makepath.o pathcanon.o pathphys.o tmpfile.o stringlist.o stringvec.o spell.o shquote.o strtrans.o snprintf.o mailstat.o fmtulong.o fmtullong.o fmtumax.o zcatfd.o zmapfd.o winsize.o wcsdup.o fpurge.o zgetline.o mbscmp.o uconvert.o ufuncs.o casemod.o input_avail.o mbscasecmp.o fnxform.o unicode.o shmbchar.o wcsnwidth.o mbschr.o
+test -n "ranlib" && ranlib libsh.a
+make[1]: Leaving directory '/mnt/lfs/sources/bash-4.4/lib/sh'
+making lib/readline/libreadline.a in ./lib/readline
+make[1]: Entering directory '/mnt/lfs/sources/bash-4.4/lib/readline'
+rm -f readline.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security readline.c
+rm -f vi_mode.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security vi_mode.c
+rm -f funmap.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security funmap.c
+rm -f keymaps.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security keymaps.c
+rm -f parens.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security parens.c
+rm -f search.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security search.c
+rm -f rltty.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security rltty.c
+rm -f complete.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security complete.c
+rm -f bind.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security bind.c
+rm -f isearch.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security isearch.c
+rm -f display.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security display.c
+rm -f signals.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security signals.c
+rm -f util.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security util.c
+rm -f kill.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security kill.c
+rm -f undo.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security undo.c
+rm -f macro.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security macro.c
+rm -f input.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security input.c
+rm -f callback.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security callback.c
+rm -f terminal.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security terminal.c
+rm -f text.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security text.c
+rm -f nls.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security nls.c
+rm -f misc.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security misc.c
+rm -f history.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security history.c
+rm -f histexpand.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security histexpand.c
+rm -f histfile.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security histfile.c
+rm -f histsearch.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security histsearch.c
+rm -f shell.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security shell.c
+rm -f savestring.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security savestring.c
+rm -f mbutil.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security mbutil.c
+rm -f tilde.o
+gcc -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security -DREADLINE_LIBRARY -c ./tilde.c
+rm -f colors.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security colors.c
+rm -f parse-colors.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security parse-colors.c
+rm -f xmalloc.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security xmalloc.c
+rm -f xfree.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security xfree.c
+rm -f compat.o
+gcc -c -DHAVE_CONFIG_H -DSHELL   -I. -I/mnt/lfs/sources/bash-4.4 -I../.. -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security compat.c
+rm -f libreadline.a
+ar cr libreadline.a readline.o vi_mode.o funmap.o keymaps.o parens.o search.o rltty.o complete.o bind.o isearch.o display.o signals.o util.o kill.o undo.o macro.o input.o callback.o terminal.o text.o nls.o misc.o history.o histexpand.o histfile.o histsearch.o shell.o savestring.o mbutil.o tilde.o colors.o parse-colors.o xmalloc.o xfree.o compat.o
+test -n "ranlib" && ranlib libreadline.a
+make[1]: Leaving directory '/mnt/lfs/sources/bash-4.4/lib/readline'
+making lib/readline/libhistory.a in ./lib/readline
+make[1]: Entering directory '/mnt/lfs/sources/bash-4.4/lib/readline'
+rm -f libhistory.a
+ar cr libhistory.a history.o histexpand.o histfile.o histsearch.o shell.o savestring.o mbutil.o xmalloc.o xfree.o
+test -n "ranlib" && ranlib libhistory.a
+make[1]: Leaving directory '/mnt/lfs/sources/bash-4.4/lib/readline'
+making lib/termcap/libtermcap.a in ./lib/termcap
+make[1]: Entering directory '/mnt/lfs/sources/bash-4.4/lib/termcap'
+gcc -c -g -O2 -Wno-parentheses -Wno-format-security -DHAVE_CONFIG_H  -I. -I../.. -I../.. -I../../lib -I. termcap.c
+gcc -c -g -O2 -Wno-parentheses -Wno-format-security -DHAVE_CONFIG_H  -I. -I../.. -I../.. -I../../lib -I. tparam.c
+tparam.c: In function 'memory_out':
+tparam.c:67:3: warning: implicit declaration of function 'write' [-Wimplicit-function-declaration]
+   write (2, "virtual memory exhausted\n", 25);
+   ^~~~~
+rm -f -f libtermcap.a
+ar cr libtermcap.a termcap.o tparam.o
+test -n "ranlib" && ranlib libtermcap.a
+make[1]: Leaving directory '/mnt/lfs/sources/bash-4.4/lib/termcap'
+making lib/tilde/libtilde.a in ./lib/tilde
+make[1]: Entering directory '/mnt/lfs/sources/bash-4.4/lib/tilde'
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I../.. -I../.. -I../../include -I../../lib  -g -O2 -Wno-parentheses -Wno-format-security tilde.c
+rm -f libtilde.a
+ar cr libtilde.a tilde.o
+test -n "ranlib" && ranlib libtilde.a
+make[1]: Leaving directory '/mnt/lfs/sources/bash-4.4/lib/tilde'
+rm -f bash
+gcc -L./builtins -L./lib/readline -L./lib/readline -L./lib/glob -L./lib/tilde  -L./lib/sh -L./lib/termcap  -rdynamic  -g -O2 -Wno-parentheses -Wno-format-security -o bash shell.o eval.o y.tab.o general.o make_cmd.o print_cmd.o  dispose_cmd.o execute_cmd.o variables.o copy_cmd.o error.o expr.o flags.o jobs.o subst.o hashcmd.o hashlib.o mailcheck.o trap.o input.o unwind_prot.o pathexp.o sig.o test.o version.o alias.o array.o arrayfunc.o assoc.o braces.o bracecomp.o bashhist.o bashline.o  list.o stringlib.o locale.o findcmd.o redir.o pcomplete.o pcomplib.o syntax.o xmalloc.o  -lbuiltins -lglob -lsh -lreadline -lhistory ./lib/termcap/libtermcap.a -ltilde     -ldl
+./lib/sh/libsh.a(tmpfile.o): In function `sh_mktmpname':
+/mnt/lfs/sources/bash-4.4/lib/sh/tmpfile.c:152: warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+ls -l bash
+-rwxr-xr-x 1 lfs lfs 4333200 Jun 17 12:21 bash
+size bash
+   text	   data	    bss	    dec	    hex	filename
+1003558	  36492	  39872	1079922	 107a72	bash
+make[1]: Entering directory '/mnt/lfs/sources/bash-4.4/support'
+rm -f man2html.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I/mnt/lfs/sources/bash-4.4 -I..   -g -O2 -Wno-parentheses -Wno-format-security man2html.c
+gcc  -DHAVE_CONFIG_H -DSHELL  -I/mnt/lfs/sources/bash-4.4 -I..   -g -O2 -Wno-parentheses -Wno-format-security man2html.o -o man2html -ldl
+make[1]: Leaving directory '/mnt/lfs/sources/bash-4.4/support'
+lfs@Minty /mnt/lfs/sources/bash-4.4 $ make tests
+
+	  ***********************************************************
+	  *                                                         *
+	  * GNU bash, version 4.4.0(1)-release (x86_64-unknown-linux-gnu)
+	  *                                                         *
+	  ***********************************************************
+
+Testing /mnt/lfs/sources/bash-4.4/bash
+version: 4.4.0(1)-release
+versinfo: 4 4 0 1 release x86_64-unknown-linux-gnu
+HOSTTYPE = x86_64
+OSTYPE = linux-gnu
+MACHTYPE = x86_64-unknown-linux-gnu
+Any output from any test, unless otherwise noted, indicates a possible anomaly
+run-alias
+run-appendop
+run-arith
+run-arith-for
+run-array
+warning: all of these tests will fail if arrays have not
+warning: been compiled into the shell
+warning: the BASH_ARGC and BASH_ARGV tests will fail if debugging support
+warning: has not been compiled into the shell
+run-array2
+warning: all of these tests will fail if arrays have not
+warning: been compiled into the shell
+run-assoc
+warning: all of these tests will fail if arrays have not
+warning: been compiled into the shell
+run-attr
+run-braces
+run-builtins
+warning: some of these tests may fail if process substitution has not
+warning: been compiled into the shell or if the OS does not provide
+warning: /dev/fd.
+108d107
+< ./source5.sub: line 1: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+run-case
+run-casemod
+run-comsub
+run-comsub-eof
+run-comsub-posix
+run-cond
+warning: all of these tests will fail if the conditional command has not
+warning: been compiled into the shell
+warning: some of these tests will fail if extended pattern matching has not
+warning: been compiled into the shell
+run-coproc
+run-cprint
+run-dbg-support
+run-dbg-support2
+run-dirstack
+run-dollars
+run-errors
+run-execscript
+warning: the text of a system error message may vary between systems and
+warning: produce diff output.
+warning: if the text of the error messages concerning `notthere' or
+warning: `/tmp/bash-notthere' not being found or `/' being a directory
+warning: produce diff output, please do not consider this a test failure
+warning: if diff output differing only in the location of the bash
+warning: binary appears, please do not consider this a test failure
+run-exp-tests
+run-exportfunc
+run-extglob
+run-extglob2
+run-extglob3
+run-func
+warning: if you have exported functions defined in your environment,
+warning: they may show up as diff output.
+warning: if so, please do not consider this a test failure
+run-getopts
+run-glob-test
+run-globstar
+run-heredoc
+warning: UNIX versions number signals and schedule processes differently.
+warning: If output differing only in line numbers is produced, please
+warning: do not consider this a test failure.
+run-herestr
+run-histexpand
+warning: all of these tests will fail if history has not been compiled
+warning: into the shell
+run-history
+warning: all of these tests will fail if history has not been compiled
+warning: into the shell
+run-ifs
+run-ifs-posix
+run-input-test
+run-intl
+warning: some of these tests will fail if you do not have UTF-8
+warning: locales installed on your system.
+./intl.tests: line 1: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+/mnt/lfs/sources/bash-4.4/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+./intl1.sub: line 1: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+/mnt/lfs/sources/bash-4.4/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+./intl2.sub: line 1: warning: setlocale: LC_NUMERIC: cannot change locale (en_AU.UTF-8): No such file or directory
+/mnt/lfs/sources/bash-4.4/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+/mnt/lfs/sources/bash-4.4/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+2c2
+< 2
+---
+> 1
+8,15c8,14
+< a�b
+< 0000000 141 303 142
+< 0000003
+< -абвгдежзиклмноп - 31
+< -абвгдежзиклмноп- 30
+< -аб�- 5
+< 1.0000
+< 1.0000
+---
+> aéb
+> 0000000 141 303 251 142
+> 0000004
+> -абвгдежзиклмноп - 16
+> -абвгдежзиклмноп- 15
+> -абвгд- 5
+> 1,0000
+20c19,20
+< 2
+---
+> 1,0000
+> 1
+53d52
+< /mnt/lfs/sources/bash-4.4/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+run-invert
+run-iquote
+run-jobs
+warning: some of these tests may fail if job control has not been compiled
+warning: into the shell
+warning: there may be a message regarding a cat process dying due to a
+warning: SIGHUP.  Please disregard.
+run-lastpipe
+run-mapfile
+run-more-exp
+run-nameref
+warning: some of these tests will fail if arrays have not
+warning: been compiled into the shell
+run-new-exp
+warning: two of these tests will fail if your OS does not support
+warning: named pipes or the /dev/fd filesystem.  If the tests of the
+warning: process substitution mechanism fail, please do not consider
+warning: this a test failure
+warning: if you have exported variables beginning with the string _Q,
+warning: diff output may be generated.  If so, please do not consider
+warning: this a test failure
+run-nquote
+run-nquote1
+warning: several of these tests will fail if arrays have not
+warning: been compiled into the shell.
+run-nquote2
+warning: several of these tests will fail if arrays have not
+warning: been compiled into the shell.
+run-nquote3
+warning: several of these tests will fail if arrays have not
+warning: been compiled into the shell.
+run-nquote4
+warning: some of these tests will fail if you do not have UTF-8
+warning: locales installed on your system
+run-nquote5
+run-parser
+run-posix2
+run-posixexp
+run-posixexp2
+run-posixpat
+run-posixpipe
+run-precedence
+run-printf
+253,254d252
+< ./printf2.sub: line 1: warning: setlocale: LC_CTYPE: cannot change locale (en_AU.UTF-8): No such file or directory
+< printf2.sub: multibyte character conversion failed
+run-quote
+run-read
+warning: please do not consider output differing only in the amount of
+warning: white space to be an error.
+run-redir
+warning: the text of a system error message may vary between systems and
+warning: produce diff output.
+warning: if the text of an error message concerning `redir1.*' not being
+warning: found or messages concerning bad file descriptors produce diff
+warning: output, please do not consider it a test failure
+run-rhs-exp
+run-rsh
+run-set-e
+run-set-x
+run-shopt
+run-strip
+run-test
+152c152
+< 1
+---
+> 0
+158c158
+< 1
+---
+> 0
+run-tilde
+run-tilde2
+run-trap
+warning: UNIX versions number signals and schedule processes differently.
+warning: If output differing only in line numbers is produced, please
+warning: do not consider this a test failure.
+71d70
+< +[8] cat
+72a72
+> +[8] cat
+run-type
+run-varenv
+run-vredir
+lfs@Minty /mnt/lfs/sources/bash-4.4 $ make install
+
+	  ***********************************************************
+	  *                                                         *
+	  * GNU bash, version 4.4.0(1)-release (x86_64-unknown-linux-gnu)
+	  *                                                         *
+	  ***********************************************************
+
+mkdir -p -- /tools/share/doc/bash
+( cd ./po/ ; make  DESTDIR= installdirs )
+make[1]: Entering directory '/mnt/lfs/sources/bash-4.4/po'
+/bin/sh /mnt/lfs/sources/bash-4.4/./support/mkinstalldirs /tools/share
+mkdir -p -- /tools/share/locale/en@quot/LC_MESSAGES
+mkdir -p -- /tools/share/locale/en@boldquot/LC_MESSAGES
+mkdir -p -- /tools/share/locale/af/LC_MESSAGES
+mkdir -p -- /tools/share/locale/et/LC_MESSAGES
+mkdir -p -- /tools/share/locale/ga/LC_MESSAGES
+mkdir -p -- /tools/share/locale/ro/LC_MESSAGES
+if test "bash" = "gettext-tools"; then \
+  /bin/sh /mnt/lfs/sources/bash-4.4/./support/mkinstalldirs /tools/share/gettext/po; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/mnt/lfs/sources/bash-4.4/po'
+/usr/bin/install -c -m 0755 bash /tools/bin/bash
+/usr/bin/install -c -m 0555 bashbug /tools/bin/bashbug
+/usr/bin/install -c -m 644 ./CHANGES ./COMPAT ./NEWS ./POSIX ./RBASH ./README /tools/share/doc/bash
+( cd ./doc ; make  \
+	man1dir=/tools/share/man/man1 man1ext=.1 \
+	man3dir=/tools/share/man/man3 man3ext=.3 \
+	infodir=/tools/share/info htmldir=/tools/share/doc/bash DESTDIR= install )
+make[1]: Entering directory '/mnt/lfs/sources/bash-4.4/doc'
+/bin/sh ../support/mkinstalldirs /tools/share/man/man1
+/bin/sh ../support/mkinstalldirs /tools/share/info
+/bin/sh ../support/mkinstalldirs /tools/share/doc/bash
+if test -n "/tools/share/doc/bash" ; then \
+	/bin/sh ../support/mkinstalldirs /tools/share/doc/bash ; \
+fi
+/usr/bin/install -c -m 644 ./bash.1 /tools/share/man/man1/bash.1
+/usr/bin/install -c -m 644 ./bashbug.1 /tools/share/man/man1/bashbug.1
+/usr/bin/install -c -m 644 ./FAQ ./INTRO /tools/share/doc/bash
+if test -f bash.info; then d=.; else d=.; fi; \
+  /usr/bin/install -c -m 644 $d/bash.info /tools/share/info/bash.info
+if /bin/sh -c 'install-info --version' >/dev/null 2>&1; then \
+	install-info --dir-file=/tools/share/info/dir /tools/share/info/bash.info; \
+else true; fi
+if test -n "/tools/share/doc/bash" ; then \
+	/usr/bin/install -c -m 644 ./bash.html /tools/share/doc/bash ; \
+	/usr/bin/install -c -m 644 ./bashref.html /tools/share/doc/bash ; \
+fi
+make[1]: Leaving directory '/mnt/lfs/sources/bash-4.4/doc'
+( cd ./builtins ; make  DESTDIR= install )
+make[1]: Entering directory '/mnt/lfs/sources/bash-4.4/builtins'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/mnt/lfs/sources/bash-4.4/builtins'
+( cd ./po/ ; make  DESTDIR= install )
+make[1]: Entering directory '/mnt/lfs/sources/bash-4.4/po'
+test -z "en@quot.gmo en@boldquot.gmo af.gmo bg.gmo ca.gmo cs.gmo da.gmo de.gmo el.gmo eo.gmo es.gmo et.gmo fi.gmo fr.gmo ga.gmo gl.gmo hr.gmo hu.gmo id.gmo it.gmo ja.gmo lt.gmo nb.gmo nl.gmo pl.gmo pt_BR.gmo ro.gmo ru.gmo sk.gmo sl.gmo sr.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo" || make en@quot.gmo en@boldquot.gmo af.gmo bg.gmo ca.gmo cs.gmo da.gmo de.gmo el.gmo eo.gmo es.gmo et.gmo fi.gmo fr.gmo ga.gmo gl.gmo hr.gmo hu.gmo id.gmo it.gmo ja.gmo lt.gmo nb.gmo nl.gmo pl.gmo pt_BR.gmo ro.gmo ru.gmo sk.gmo sl.gmo sr.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo
+make[2]: Entering directory '/mnt/lfs/sources/bash-4.4/po'
+make[2]: 'en@quot.gmo' is up to date.
+make[2]: 'en@boldquot.gmo' is up to date.
+make[2]: 'af.gmo' is up to date.
+make[2]: 'bg.gmo' is up to date.
+make[2]: 'ca.gmo' is up to date.
+make[2]: 'cs.gmo' is up to date.
+make[2]: 'da.gmo' is up to date.
+make[2]: 'de.gmo' is up to date.
+make[2]: 'el.gmo' is up to date.
+make[2]: 'eo.gmo' is up to date.
+make[2]: 'es.gmo' is up to date.
+make[2]: 'et.gmo' is up to date.
+make[2]: 'fi.gmo' is up to date.
+make[2]: 'fr.gmo' is up to date.
+make[2]: 'ga.gmo' is up to date.
+make[2]: 'gl.gmo' is up to date.
+make[2]: 'hr.gmo' is up to date.
+make[2]: 'hu.gmo' is up to date.
+make[2]: 'id.gmo' is up to date.
+make[2]: 'it.gmo' is up to date.
+make[2]: 'ja.gmo' is up to date.
+make[2]: 'lt.gmo' is up to date.
+make[2]: 'nb.gmo' is up to date.
+make[2]: 'nl.gmo' is up to date.
+make[2]: 'pl.gmo' is up to date.
+make[2]: 'pt_BR.gmo' is up to date.
+make[2]: 'ro.gmo' is up to date.
+make[2]: 'ru.gmo' is up to date.
+make[2]: 'sk.gmo' is up to date.
+make[2]: 'sl.gmo' is up to date.
+make[2]: 'sr.gmo' is up to date.
+make[2]: 'sv.gmo' is up to date.
+make[2]: 'tr.gmo' is up to date.
+make[2]: 'uk.gmo' is up to date.
+make[2]: 'vi.gmo' is up to date.
+make[2]: 'zh_CN.gmo' is up to date.
+make[2]: 'zh_TW.gmo' is up to date.
+make[2]: Leaving directory '/mnt/lfs/sources/bash-4.4/po'
+touch stamp-po
+/bin/sh /mnt/lfs/sources/bash-4.4/./support/mkinstalldirs /tools/share
+installing en@quot.gmo as /tools/share/locale/en@quot/LC_MESSAGES/bash.mo
+installing en@boldquot.gmo as /tools/share/locale/en@boldquot/LC_MESSAGES/bash.mo
+installing af.gmo as /tools/share/locale/af/LC_MESSAGES/bash.mo
+installing bg.gmo as /tools/share/locale/bg/LC_MESSAGES/bash.mo
+installing ca.gmo as /tools/share/locale/ca/LC_MESSAGES/bash.mo
+installing cs.gmo as /tools/share/locale/cs/LC_MESSAGES/bash.mo
+installing da.gmo as /tools/share/locale/da/LC_MESSAGES/bash.mo
+installing de.gmo as /tools/share/locale/de/LC_MESSAGES/bash.mo
+installing el.gmo as /tools/share/locale/el/LC_MESSAGES/bash.mo
+installing eo.gmo as /tools/share/locale/eo/LC_MESSAGES/bash.mo
+installing es.gmo as /tools/share/locale/es/LC_MESSAGES/bash.mo
+installing et.gmo as /tools/share/locale/et/LC_MESSAGES/bash.mo
+installing fi.gmo as /tools/share/locale/fi/LC_MESSAGES/bash.mo
+installing fr.gmo as /tools/share/locale/fr/LC_MESSAGES/bash.mo
+installing ga.gmo as /tools/share/locale/ga/LC_MESSAGES/bash.mo
+installing gl.gmo as /tools/share/locale/gl/LC_MESSAGES/bash.mo
+installing hr.gmo as /tools/share/locale/hr/LC_MESSAGES/bash.mo
+installing hu.gmo as /tools/share/locale/hu/LC_MESSAGES/bash.mo
+installing id.gmo as /tools/share/locale/id/LC_MESSAGES/bash.mo
+installing it.gmo as /tools/share/locale/it/LC_MESSAGES/bash.mo
+installing ja.gmo as /tools/share/locale/ja/LC_MESSAGES/bash.mo
+installing lt.gmo as /tools/share/locale/lt/LC_MESSAGES/bash.mo
+installing nb.gmo as /tools/share/locale/nb/LC_MESSAGES/bash.mo
+installing nl.gmo as /tools/share/locale/nl/LC_MESSAGES/bash.mo
+installing pl.gmo as /tools/share/locale/pl/LC_MESSAGES/bash.mo
+installing pt_BR.gmo as /tools/share/locale/pt_BR/LC_MESSAGES/bash.mo
+installing ro.gmo as /tools/share/locale/ro/LC_MESSAGES/bash.mo
+installing ru.gmo as /tools/share/locale/ru/LC_MESSAGES/bash.mo
+installing sk.gmo as /tools/share/locale/sk/LC_MESSAGES/bash.mo
+installing sl.gmo as /tools/share/locale/sl/LC_MESSAGES/bash.mo
+installing sr.gmo as /tools/share/locale/sr/LC_MESSAGES/bash.mo
+installing sv.gmo as /tools/share/locale/sv/LC_MESSAGES/bash.mo
+installing tr.gmo as /tools/share/locale/tr/LC_MESSAGES/bash.mo
+installing uk.gmo as /tools/share/locale/uk/LC_MESSAGES/bash.mo
+installing vi.gmo as /tools/share/locale/vi/LC_MESSAGES/bash.mo
+installing zh_CN.gmo as /tools/share/locale/zh_CN/LC_MESSAGES/bash.mo
+installing zh_TW.gmo as /tools/share/locale/zh_TW/LC_MESSAGES/bash.mo
+if test "bash" = "gettext-tools"; then \
+  /bin/sh /mnt/lfs/sources/bash-4.4/./support/mkinstalldirs /tools/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /tools/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /tools/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/mnt/lfs/sources/bash-4.4/po'
+( cd /mnt/lfs/sources/bash-4.4/examples/loadables && make  DESTDIR= install )
+make[1]: Entering directory '/mnt/lfs/sources/bash-4.4/examples/loadables'
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o print.o print.c
+gcc -shared -Wl,-soname,print  -L./lib/termcap  -o print print.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o truefalse.o truefalse.c
+gcc -shared -Wl,-soname,truefalse  -L./lib/termcap  -o truefalse truefalse.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o sleep.o sleep.c
+gcc -shared -Wl,-soname,sleep  -L./lib/termcap  -o sleep sleep.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o finfo.o finfo.c
+finfo.c: In function 'printst':
+finfo.c:277:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+  ma = major (st->st_rdev);
+             ^~~~~~~~~~~~~~
+finfo.c:278:13: warning: In the GNU C Library, "minor" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "minor", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "minor", you should undefine it after including <sys/types.h>.
+  mi = minor (st->st_rdev);
+             ^~~~~~~~~~~~~~
+finfo.c:280:13: warning: In the GNU C Library, "makedev" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "makedev", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "makedev", you should undefine it after including <sys/types.h>.
+  d = makedev (ma, mi);
+             ^~~~~~~~~~
+gcc -shared -Wl,-soname,finfo  -L./lib/termcap  -o finfo finfo.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o logname.o logname.c
+gcc -shared -Wl,-soname,logname  -L./lib/termcap  -o logname logname.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o basename.o basename.c
+gcc -shared -Wl,-soname,basename  -L./lib/termcap  -o basename basename.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o dirname.o dirname.c
+gcc -shared -Wl,-soname,dirname  -L./lib/termcap  -o dirname dirname.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o tty.o tty.c
+gcc -shared -Wl,-soname,tty  -L./lib/termcap  -o tty tty.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o pathchk.o pathchk.c
+gcc -shared -Wl,-soname,pathchk  -L./lib/termcap  -o pathchk pathchk.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o tee.o tee.c
+gcc -shared -Wl,-soname,tee  -L./lib/termcap  -o tee tee.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o head.o head.c
+gcc -shared -Wl,-soname,head  -L./lib/termcap  -o head head.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o mkdir.o mkdir.c
+gcc -shared -Wl,-soname,mkdir  -L./lib/termcap  -o mkdir mkdir.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o rmdir.o rmdir.c
+gcc -shared -Wl,-soname,rmdir  -L./lib/termcap  -o rmdir rmdir.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o printenv.o printenv.c
+gcc -shared -Wl,-soname,printenv  -L./lib/termcap  -o printenv printenv.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o id.o id.c
+gcc -shared -Wl,-soname,id  -L./lib/termcap  -o id id.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o whoami.o whoami.c
+gcc -shared -Wl,-soname,whoami  -L./lib/termcap  -o whoami whoami.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o uname.o uname.c
+gcc -shared -Wl,-soname,uname  -L./lib/termcap  -o uname uname.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o sync.o sync.c
+gcc -shared -Wl,-soname,sync  -L./lib/termcap  -o sync sync.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o push.o push.c
+gcc -shared -Wl,-soname,push  -L./lib/termcap  -o push push.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o ln.o ln.c
+gcc -shared -Wl,-soname,ln  -L./lib/termcap  -o ln ln.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o unlink.o unlink.c
+gcc -shared -Wl,-soname,unlink  -L./lib/termcap  -o unlink unlink.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o realpath.o realpath.c
+gcc -shared -Wl,-soname,realpath  -L./lib/termcap  -o realpath realpath.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o strftime.o strftime.c
+gcc -shared -Wl,-soname,strftime  -L./lib/termcap  -o strftime strftime.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o mypid.o mypid.c
+gcc -shared -Wl,-soname,mypid  -L./lib/termcap  -o mypid mypid.o
+gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -g -O2 -Wno-parentheses -Wno-format-security -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/mnt/lfs/sources/bash-4.4 -I/mnt/lfs/sources/bash-4.4/lib -I/mnt/lfs/sources/bash-4.4/builtins  -c -o setpgid.o setpgid.c
+gcc -shared -Wl,-soname,setpgid  -L./lib/termcap  -o setpgid setpgid.o
+mkdir -p -- /tools/lib/bash
+make[2]: Entering directory '/mnt/lfs/sources/bash-4.4'
+mkdir -p -- /tools/include/bash
+mkdir -p -- /tools/include/bash/builtins
+mkdir -p -- /tools/include/bash/include
+/usr/bin/install -c -m 644 ./support/bash.pc /tools/lib/pkgconfig/bash.pc
+make[2]: Leaving directory '/mnt/lfs/sources/bash-4.4'
+installing example loadable builtins in /tools/lib/bash
+print
+truefalse
+sleep
+finfo
+logname
+basename
+dirname
+tty
+pathchk
+tee
+head
+mkdir
+rmdir
+printenv
+id
+whoami
+uname
+sync
+push
+ln
+unlink
+realpath
+strftime
+mypid
+setpgid
+make[1]: Leaving directory '/mnt/lfs/sources/bash-4.4/examples/loadables'
+lfs@Minty /mnt/lfs/sources/bash-4.4 $ ln -sv bash /tools/bin/sh
+'/tools/bin/sh' -> 'bash'
+lfs@Minty /mnt/lfs/sources/bash-4.4 $
+lfs@Minty /mnt/lfs/sources/bash-4.4 $
+lfs@Minty /mnt/lfs/sources/bash-4.4 $
